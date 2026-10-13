@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Raindrops
+  m_Shader: {fileID: 4800000, guid: c338b1dcbf7a3e141993fecb4da412b1, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3002
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _MainTex:
+        m_Texture: {fileID: 2800000, guid: 77d387ad6945e254fbea6945691aad60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _SampleTexture2D_e984f10a7a1140a6b9392d6254a23038_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: cd16b043804c5b145af6ee8973d32522, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AmbientBlend: 0.97
+      _DepthFadeRange: 44.8
+      _DepthFadeStart: -2.5
+      _Intensity1: 1
+      _Intensity2: 1
+      _Intensity3: 1
+      _LayerOffset1: 0
+      _LayerOffset2: 0
+      _LayerOffset3: 0
+      _LayerScale1: 3
+      _LayerScale2: 4
+      _LayerScale3: 5
+      _QueueControl: 0
+      _QueueOffset: 2
+      _RainIntencity: 1
+      _RainIntensity: 1
+      _RainStep: 0.5
+      _RainStrength: 1
+      _RaindropsScale: 0.89
+      _Refract: 0.005
+      _Refraction: 0.13
+      _Speed: -4
+      _StencilRef: 0
+      _UpBottomAlpha: 18.8
+      _XRMotionVectorsPass: 1
+    m_Colors:
+      _BaseColor: {r: 1, g: 1, b: 1, a: 0.101960786}
+      _LayerTiling1: {r: 5, g: -1, b: 0, a: 0}
+      _LayerTiling2: {r: 5, g: -1, b: 0, a: 0}
+      _LayerTiling3: {r: 5, g: -1, b: 0, a: 0}
+      _Speed: {r: 0.1, g: 1.03, b: 0, a: 0}
+  m_BuildTextureStacks: []

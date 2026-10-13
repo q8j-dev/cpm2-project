@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Island_IES
+  m_Shader: {fileID: 4800000, guid: a01f7b37a66c62648be252f91f747c49, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SURFACE_TYPE_TRANSPARENT
+  - _USEVERTEXCOLOR_OFF
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
+  - MOTIONVECTORS
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 5809105f303eafe438f536cab4660c81, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      ADD_FIRST_TEX: 0
+      ADD_FOURTH_TEX: 0
+      ADD_SECOND_TEX: 0
+      ADD_THIRD_TEX: 0
+      DISABLE_SHADER: 0
+      INVERSE_A: 0
+      SHOW_MASK: 0
+      USE_A_CHANNEL: 0
+      USE_B_CHANNEL: 0
+      USE_G_CHANNEL: 0
+      USE_MASK_BLEND: 0
+      USE_THIRD_CHANNEL: 0
+      _AlphaClip: 0
+      _AlphaTex: 0
+      _AlphaToMask: 0
+      _Blend: 2
+      _BlendModePreserveSpecular: 0
+      _BlueTex: 0
+      _BumpScale: 1
+      _CastShadows: 1
+      _Cull: 2
+      _Cutoff: 0.5
+      _DetailNormalMapScale: 1
+      _DstBlend: 1
+      _EMISSION: 0
+      _FadeDistance: 1
+      _FakeOcclusion: 0
+      _GlossMapScale: 1
+      _Glossiness: 0.5
+      _GlossyReflections: 1
+      _GreenTex: 0
+      _InvFade: 1
+      _Metallic: 0
+      _Mode: 0
+      _OcclusionStrength: 1
+      _Parallax: 0.02
+      _QueueControl: 0
+      _QueueOffset: 0
+      _RainVisibility: 1
+      _ReceiveShadows: 1
+      _RedTex: 0
+      _Shininess: 0.7
+      _Smoothness: 1
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 5
+      _StencilRef: 0
+      _Surface: 1
+      _USEVERTEXCOLOR: 0
+      _UVSec: 0
+      _VERTEXAO: 0
+      _WorkflowMode: 1
+      _ZTest: 4
+      _ZWrite: 0
+      _ZWriteControl: 0
+    m_Colors:
+      _ATile: {r: 0, g: 0, b: 0, a: 0}
+      _BTile: {r: 0, g: 0, b: 0, a: 0}
+      _BaseColor: {r: 1, g: 0.9916667, b: 0.95, a: 1}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _Color0: {r: 1, g: 1, b: 1, a: 1}
+      _Color1: {r: 1, g: 1, b: 1, a: 1}
+      _Color2: {r: 1, g: 1, b: 1, a: 1}
+      _Color3: {r: 1, g: 1, b: 1, a: 1}
+      _Color4: {r: 1, g: 1, b: 1, a: 1}
+      _Color5: {r: 1, g: 1, b: 1, a: 1}
+      _Color6: {r: 1, g: 1, b: 1, a: 1}
+      _Color7: {r: 1, g: 1, b: 1, a: 1}
+      _Color8: {r: 1, g: 1, b: 1, a: 1}
+      _Color9: {r: 1, g: 1, b: 1, a: 1}
+      _ColorA: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      _ColorB: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      _ColorG: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      _ColorR: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      _EmisColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+      _Emission: {r: 0, g: 0, b: 0, a: 0}
+      _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+      _GTile: {r: 0, g: 0, b: 0, a: 0}
+      _RTile: {r: 0, g: 0, b: 0, a: 0}
+      _SpecColor: {r: 1, g: 1, b: 1, a: 0}
+      _TintColor: {r: 1, g: 1, b: 0.9444444, a: 0.4}
+  m_BuildTextureStacks: []

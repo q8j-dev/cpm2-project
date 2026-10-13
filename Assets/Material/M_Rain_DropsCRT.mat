@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Rain_DropsCRT
+  m_Shader: {fileID: 4800000, guid: 81ec6bcdec86ee04e9106233b156a6ae, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _RippleTexture:
+        m_Texture: {fileID: 2800000, guid: da9c0e853eaaaa3489aa610eed466b76, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _Amplitude: 2
+      _Blur: 0.35
+      _CRT_Delta: 0.008333334
+      _CRT_Time: 523.6917
+      _ClampMax: 3
+      _Dampen: 0.985
+      _ExtStrength: 1
+      _ExtTiling: 1
+      _Fade: 1
+      _Layers: 3
+      _PhaseMul: -5
+      _RadiusMaxPx: 10
+      _RadiusMinPx: 3
+      _RippleTiling: 1
+      _Seed: 1234
+      _SpawnScale: 12
+      _Speed: 2
+      _Strength: 1
+      _Tiling: 10
+      _TimeSpeed: 1.9199712
+      _Weight: 0.2
+      _WobbleAmp: 0.01
+      _WobbleFreq: 6
+    m_Colors:
+      _Wind: {r: 0.1, g: -0.03, b: 0, a: 0}
+  m_BuildTextureStacks: []

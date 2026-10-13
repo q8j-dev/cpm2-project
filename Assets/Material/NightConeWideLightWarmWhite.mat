@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NightConeWideLightWarmWhite
+  m_Shader: {fileID: 4800000, guid: 892e3cdf3f9ca2b44bc3f6625f3727b8, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _BaseMap:
+        m_Texture: {fileID: 2800000, guid: a2cdb46efb13dbb4caa1b832d112e350, type: 3}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 0, y: -1}
+      unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      DISABLE_SHADER: 0
+      _AlphaClip: 0
+      _AlphaToMask: 0
+      _Blend: 0
+      _BlendOp: 0
+      _BumpScale: 1
+      _Cull: 0
+      _Cutoff: 0.5
+      _DetailNormalMapScale: 1
+      _DstBlend: 10
+      _DstBlendAlpha: 10
+      _FadeDistance: 2
+      _GlossMapScale: 1
+      _Glossiness: 0.5
+      _GlossyReflections: 1
+      _InvFade: 0.933
+      _Metallic: 0
+      _Mode: 0
+      _OcclusionStrength: 1
+      _Parallax: 0.02
+      _QueueControl: 0
+      _QueueOffset: 0
+      _SampleGI: 0
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 5
+      _SrcBlendAlpha: 1
+      _Surface: 1
+      _UVSec: 0
+      _ZWrite: 0
+    m_Colors:
+      _BaseColor: {r: 0.6666667, g: 0.90588236, b: 1, a: 0.05882353}
+      _Color: {r: 0.040999997, g: 0.040196076, b: 0.03818627, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _TintColor: {r: 0.6650944, g: 0.9042798, b: 1, a: 0.05882353}
+  m_BuildTextureStacks: []

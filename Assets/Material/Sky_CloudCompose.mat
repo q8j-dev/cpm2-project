@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sky_CloudCompose
+  m_Shader: {fileID: 4800000, guid: 6293181c1fc620546af6686dc328babc, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _MainTex:
+        m_Texture: {fileID: 8600000, guid: b086d85706284284bb2e8425fd2b5c01, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _Absorption: 0.5
+      _AmbientGround: 0.317
+      _BaseFreq: 8.5E-05
+      _BaseNoiseScale: 3E-05
+      _CloudAlbedo: 0.809
+      _CloudBase: 1500
+      _CloudCoverage: 0.5
+      _CloudExtinction: 0.001
+      _CloudLayerBottom: 1500
+      _CloudLayerTop: 4000
+      _CloudSpeed: 0.79
+      _CloudTop: 4000
+      _CloudTopOffset: 500
+      _CloudType: 0.5
+      _CloudTypeBias: 0.113
+      _CoverageMultiplier: 2.02
+      _CoverageScale: 1.5E-05
+      _CoverageScrollSpeed: 0
+      _DensityScale: 1
+      _DensityThresh: 0.15
+      _DetailFreq: 0.00042
+      _DetailNoiseScale: 0.0004
+      _DetailStrength: 0.466
+      _DistanceUnitScale: 0.0001
+      _EarthRadius: 6371000
+      _LightConeRadius: 60
+      _LightStepLength: 200
+      _LightStepSize: 250
+      _LongShadowStepMul: 8
+      _MSAttenuation: 0.5
+      _MSContribution: 0.5
+      _MSEccentricity: 0.5
+      _MarchSteps: 64
+      _MaxRayDistance: 100000
+      _MaxSteps: 64
+      _MinSteps: 8
+      _PhaseBackward: -0.15
+      _PhaseBlend: 0.5
+      _PhaseForward: 0.8
+      _PhaseG: 0.7
+      _PowderStrength: 0.5
+      _PrecipDensityBoost: 1
+      _ScatterMult: 1
+      _WeatherScale: 120000
+      _WindSpeed: 8
+    m_Colors:
+      _CamPos: {r: 0, g: 0, b: 0, a: 0}
+      _CoverageOffset: {r: 0, g: 0, b: 0, a: 0}
+      _PlanetCenter: {r: 0, g: -6371000, b: 0, a: 0}
+      _SunDir: {r: 0.5, g: 0.8, b: 0, a: 0}
+      _WindDir: {r: 1, g: 0, b: 0, a: 0}
+      _WindDirection: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CPM_URP_Automotive_AutomotiveWindshieldGlass
+  m_Shader: {fileID: 4800000, guid: e38bf0b4a205de441862b964817192b7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _ALPHAPREMULTIPLY_ON
+  - _ALPHATEST_ON
+  - _EMISSION
+  - _RECEIVE_SHADOWS_OFF
+  - _SURFACE_TYPE_TRANSPARENT
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - SHADOWCASTER
+  - MOTIONVECTORS
+  - DepthOnly
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _AutomotiveRainGatedCustomFunction_c53087ed45864de2bfb6e53caabc2edd_RainDropsTex_13_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _AutomotiveRainGatedCustomFunction_c53087ed45864de2bfb6e53caabc2edd_RainStreaksTex_14_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _AutomotiveRainGatedCustomFunction_c53087ed45864de2bfb6e53caabc2edd_StillDropsTex_12_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _CracksNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTex:
+        m_Texture: {fileID: 2800000, guid: e892584f31e1618418fc03bc723df389, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MaskAddTex:
+        m_Texture: {fileID: 2800000, guid: 829b3f29799fc214ca63fddea2c6a352, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _SampleTexture2D_a7ed63fef56043cbb0ef6d5e37f4a45b_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 0fd50a58b4bd1384887fe8836c2670ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _ShatterTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AlphaClip: 1
+      _AlphaToMask: 0
+      _Blend: 0
+      _BlendModePreserveSpecular: 1
+      _CastShadows: 0
+      _Cull: 2
+      _DstBlend: 10
+      _DstBlendAlpha: 10
+      _FPRainBlend: 1
+      _FakeBottomAO: 0
+      _InvertWipers: 0
+      _MaskValue: 0
+      _QueueControl: 0
+      _QueueOffset: 0
+      _RainOverlayValue: 0.05
+      _ReceiveShadows: 0
+      _Refract: 5
+      _ShatterHole: 0
+      _Shattered: 0
+      _SrcBlend: 1
+      _SrcBlendAlpha: 1
+      _StencilRef: 1
+      _Surface: 1
+      _USEDIRT: 0
+      _VertAO: 1
+      _WIPERSDEBUG: 0
+      _WIPERSHORIZONTALINVERT: 0
+      _WIPERSVERTICALINVERT: 0
+      _WipersOffset: 0.1
+      _WipersScale: 2.09
+      _WipersValue: 0
+      _WorkflowMode: 1
+      _XRMotionVectorsPass: 1
+      _ZTest: 4
+      _ZWrite: 0
+      _ZWriteControl: 0
+    m_Colors:
+      _Color: {r: 0.22561404, g: 0.23955601, b: 0.24528289, a: 0.105882354}
+      _MaskColor: {r: 0.9058824, g: 0.7529412, b: 0.517647, a: 1}
+      _RainColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      _ShatterTileOffset: {r: 1, g: 1, b: 0, a: 0}
+      _WipersTilingOffset: {r: 0, g: 0.75, b: 0.2, a: 0}
+  m_BuildTextureStacks: []

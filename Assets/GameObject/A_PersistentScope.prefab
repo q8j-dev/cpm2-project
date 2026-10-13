@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  - component: {fileID: 114618682377417806}
+  - component: {fileID: 114703437598541787}
+  m_Layer: 0
+  m_Name: A_PersistentScope
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.968887, y: 0.4246081, z: -17.685757}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e888d3294548637071b7b4d084217a11, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  parentReference:
+    TypeName:
+  autoRun: 1
+  autoInjectGameObjects: []
+  vinylsDrawerPrefab: {fileID: 114884547391421755, guid: ad9cd11d6ce0dd24ba9dd8b4574e554e, type: 2}
+  PersistentConfigScope:
+    ratingDataCollection: {fileID: 11400000, guid: d5a396f0a0ede3240941c327f0663005, type: 2}
+    dataClassesConfig: {fileID: 11400000, guid: dec677b4bed8394429b411f44c15635c, type: 2}
+    defaultRemoteConfig: {fileID: 11400000, guid: b133134d0c2157744b830342b4ca5eb0, type: 2}
+    versionedDataClassesConfig: {fileID: 11400000, guid: c5f4a162fb2e77246a4f306d79dbe599, type: 2}
+    shadersVaultConfig: {fileID: 11400000, guid: f4dddf0c4966ac646852c14146c6cc6a, type: 2}
+    soundEventChannel: {fileID: 11400000, guid: 94f3f5df36bd084469f1c02a1076a937, type: 2}
+--- !u!114 &114618682377417806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c497284b7a5439903da01d7a2e7374f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  RController:
+    value: 0
+  DesktopControllerType: 0
+  MobileControllerType: 0
+  IsEnabled: 1
+  IgnoreAllInput: 0
+  IgnoreSteerInput: 0
+  SteerAssistance: 0
+  ForceFeedback: 0
+  FollowPoints: 0
+  DriftMode: 0
+  AutoReverse: 0
+  Ready: 0
+  CarOptions:
+    AbsLevel: 0
+    TrcLevel: 0
+    EspLevel: 0
+    Lc: 0
+    MTAssist: 0
+    ArcadeMode: 0
+    AnalogClutch: 0
+    AnalogThrottle: 0
+    AnalogBrake: 0
+  SteerAssistanceMinVelocity: 30
+  TargetSpeed: 0
+  SelectorState: 0
+  State: 0
+  SteerAutoInput: 0
+  SteerInput: 0
+  SteerOutput: 0
+  ThrottleAutoInput: 0
+  ThrottleInput: 0
+  ThrottleOutput: 0
+  BrakeAutoInput: 0
+  BrakeInput: 0
+  BrakeOutput: 0
+  ClutchInput: 0
+  ClutchOutput: 0
+  HandbrakeInput: 0
+  StarterInput: 0
+--- !u!114 &114703437598541787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e654c3423d2c082791596df574c5f11, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  UseMultithreading: 1
+  CarBufferSize: 20

@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sky_CloudHemisphere
+  m_Shader: {fileID: 4800000, guid: 50d617aac96b5ab4ea6660e19bf41e01, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _BackBuffer:
+        m_Texture: {fileID: 8600000, guid: 3aa944ebda7059a418376b50011e51a9, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _BaseNoiseTex:
+        m_Texture: {fileID: 11700000, guid: 55c5722a3b26bee4db817abeedcca2b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _BlueNoise:
+        m_Texture: {fileID: 2800000, guid: 45c1dc81199e7f4478e753eb8972dfae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _CoverageTex:
+        m_Texture: {fileID: 2800000, guid: a316d64dc41bbf84c93e8655de674525, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _DetailNoiseTex:
+        m_Texture: {fileID: 11700000, guid: 62f5d8af49f68e646afe3ee754309e85, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _Absorption: 0.5
+      _AmbientGround: 0.1
+      _BaseFreq: 8.5E-05
+      _BaseNoiseScale: 3E-05
+      _CloudAlbedo: 1
+      _CloudBase: 1500
+      _CloudCoverage: 0.5
+      _CloudExtinction: 0.008
+      _CloudLayerBottom: 2000
+      _CloudLayerTop: 5500
+      _CloudSpeed: 8
+      _CloudTop: 4000
+      _CloudTopOffset: 0
+      _CloudType: 0.5
+      _CloudTypeBias: 1
+      _CoverageMultiplier: 0.3
+      _CoverageScale: 1.5E-05
+      _CoverageScrollSpeed: 0.001
+      _DensityScale: 0.5
+      _DensityThresh: 0.15
+      _DetailFreq: 0.00042
+      _DetailNoiseScale: 0.0004
+      _DetailStrength: 1
+      _DistanceUnitScale: 0.0001
+      _EarthRadius: 6371000
+      _LightConeRadius: 60
+      _LightStepLength: 200
+      _LightStepSize: 250
+      _LongShadowStepMul: 8
+      _MSAttenuation: 0.269
+      _MSContribution: 1
+      _MSEccentricity: 0.833
+      _MarchSteps: 64
+      _MaxRayDistance: 100000
+      _MaxSteps: 64
+      _MinSteps: 8
+      _PhaseBackward: -0.099
+      _PhaseBlend: 0.811
+      _PhaseForward: 0.824
+      _PhaseG: 0.7
+      _PowderStrength: 0
+      _PrecipDensityBoost: 0
+      _ScatterMult: 1
+      _WeatherScale: 120000
+      _WindSpeed: 8
+    m_Colors:
+      _CamPos: {r: 0, g: 0, b: 0, a: 0}
+      _CoverageOffset: {r: 0, g: 0, b: 0, a: 0}
+      _PlanetCenter: {r: 0, g: -6371000, b: 0, a: 0}
+      _SunDir: {r: 0.5, g: 0.8, b: 0, a: 0}
+      _WindDir: {r: 1, g: 0, b: 0, a: 0}
+      _WindDirection: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

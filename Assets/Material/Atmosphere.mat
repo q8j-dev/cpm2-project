@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atmosphere
+  m_Shader: {fileID: 4800000, guid: 4554a4b0be5a8b74b9ed90056281b94d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _MVNORMALIZED_ON
+  - _SUNDISK_HIGH_QUALITY
+  - _USE2DASCUBE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _Clouds2D_A:
+        m_Texture: {fileID: 8900000, guid: 85effdef71d84dd428795a8b1d7a513a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _Clouds2D_B:
+        m_Texture: {fileID: 8900000, guid: 85effdef71d84dd428795a8b1d7a513a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _Tex:
+        m_Texture: {fileID: 8900000, guid: 6b592af5ddd30d4408cd88a61b5ddd4f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AlphaClip: 0
+      _AlphaThresh: 0.5
+      _AlphaToMask: 0
+      _AtlasCols: 3
+      _AtlasPadPx: 1
+      _AtlasRows: 2
+      _Blend: 0
+      _BlendModePreserveSpecular: 1
+      _BumpScale: 1
+      _ClearCoatMask: 0
+      _ClearCoatSmoothness: 0
+      _Clouds2D_SphericalFix: 0
+      _CloudsDistMul: 0.04
+      _CloudsFade: 1
+      _CloudsMorph: 0
+      _Cull: 2
+      _Cutoff: 0.5
+      _DetailAlbedoMapScale: 1
+      _DetailNormalMapScale: 1
+      _DstBlend: 0
+      _DstBlendAlpha: 0
+      _EnvironmentReflections: 1
+      _Exposure: 0
+      _ExposureOcclusion: 0.2
+      _GlossMapScale: 0
+      _Glossiness: 0
+      _GlossyReflections: 0
+      _GroundReflection: 0.2
+      _MVAmplitudeMul: 1.05
+      _MVConfPower: 3
+      _MVCubeFaceSize: 1024
+      _MVEdgeDamp: 0
+      _MVMaxShiftPx: 64
+      _MVNeighborEpsDeg: 0.2
+      _MVNormalized: 1
+      _MVPackRangePx: 64
+      _MVSearchRadiusPx: 12
+      _MVSmoothStrength: 0.5
+      _Metallic: 0
+      _Morph: 0
+      _MorphEdge: 0.01
+      _MotionUVScale: 0.001
+      _OcclusionStrength: 1
+      _Parallax: 0.005
+      _PoleFixStrength: 1
+      _PoleFixThreshold: 1
+      _PoleWarpDampen: 1
+      _QueueOffset: 0
+      _ReceiveShadows: 1
+      _Rotation: 0
+      _Smoothness: 0.5
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _SrcBlendAlpha: 1
+      _StarsPitch: 0
+      _StarsRotation: 0
+      _SunDisk: 2
+      _Surface: 0
+      _Use2DAsCube: 1
+      _UseClouds2D: 1
+      _UseCubeAB: 0
+      _UseCubeMV: 0
+      _WorkflowMode: 1
+      _ZWrite: 1
+    m_Colors:
+      _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _DenseCloudLightTint: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _MotionBias: {r: 0, g: 0, b: 0, a: 0}
+      _SkyFogDepthStartEnd: {r: 0, g: 98.1, b: 0, a: 0}
+      _SkyFogHeightMinMax: {r: 20, g: 16, b: 0, a: 0}
+      _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+  m_BuildTextureStacks: []

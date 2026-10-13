@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_TropIsland_LandscapeRoad_Array
+  m_Shader: {fileID: 4800000, guid: af7044475e279fb4180605b22ac04be2, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _EMISSIONALPHA
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _BaseMap:
+        m_Texture: {fileID: 18700000, guid: c367155656ecf284bb6da5d82bbedd5a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _EmissionMap:
+        m_Texture: {fileID: 18700000, guid: e22c2949bc91c49419a50b22983a8c22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _NormalMask:
+        m_Texture: {fileID: 18700000, guid: 3d386b05ca47afc49b55e91564cc760b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AlphaClip: 1
+      _AlphaToMask: 1
+      _ArrayRange: 100
+      _Blend: 0
+      _BlendModePreserveSpecular: 0
+      _Bump1Speed: 0.21
+      _Bump2Speed: -0.18
+      _CastShadows: 1
+      _Clip: 0.5
+      _Cull: 2
+      _Cutoff: 0.5
+      _DistortionPower: 0.014603174
+      _DistortionSpeed: 2.06
+      _DstBlend: 0
+      _EMISSION: 0
+      _EMISSIONALPHA: 1
+      _FakeBottomAO: 0
+      _FakeOcclusion: 0
+      _Gloss: 1.18
+      _HASVERTAO: 0
+      _METALNESS: 1
+      _MainTexSpeed: 0.18
+      _Metallic: 0
+      _Metalness: 0
+      _NORMALMAP1: 1
+      _NormalAScale: 0.2
+      _NormalBScale: 0.2
+      _OCCLUSIONMAP: 0
+      _OcclusionStrength: 0
+      _Opacity: 0.71
+      _QueueControl: 0
+      _QueueOffset: 0
+      _ReceiveShadows: 1
+      _ReflectPower: 0.603
+      _SMOOTHNESS: 1
+      _Smoothness: 0.5
+      _Specular: 7
+      _SrcBlend: 1
+      _Surface: 0
+      _Texture2Speed: -0.21
+      _USEVERTEXCOLOR: 0
+      _VERTAO: 0
+      _VERTEXAO: 0
+      _VERTEXCOL: 1
+      _VertAO: 0
+      _WaveSpeed: 0.25
+      _WorkflowMode: 1
+      _ZTest: 4
+      _ZWrite: 1
+      _ZWriteControl: 0
+    m_Colors:
+      _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+      _NormalATilingAndDir: {r: 0.1, g: 0.1, b: -0.005, a: -0.005}
+      _NormalBTilingAndDir: {r: 0.1, g: 0.1, b: 0.005, a: 0.008}
+      _Tiling_And_Offset: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
