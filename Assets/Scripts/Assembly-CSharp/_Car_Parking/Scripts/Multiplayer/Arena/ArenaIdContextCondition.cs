@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena
 	public sealed class ArenaIdContextCondition : MonoBehaviour, IContextCondition
 	{
 		[SerializeField]
-		private ArenaId TargetArenaId;
+		private ArenaId TargetArenaId = default;
 
 		private ArenaFlowController _arena;
 

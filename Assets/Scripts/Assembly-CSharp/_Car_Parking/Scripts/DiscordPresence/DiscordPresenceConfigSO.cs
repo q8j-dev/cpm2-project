@@ -33,7 +33,7 @@ namespace _Car_Parking.Scripts.DiscordPresence
 		[Header("Discord Application")]
 		[SerializeField]
 		[Tooltip("Numeric Application ID from the Discord developer portal (General Information). Public, not a secret.")]
-		private string _applicationId;
+		private string _applicationId = default;
 
 		[Header("Behaviour")]
 		[SerializeField]

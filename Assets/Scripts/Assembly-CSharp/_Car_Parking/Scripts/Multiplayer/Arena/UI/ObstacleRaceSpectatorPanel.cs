@@ -16,44 +16,44 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ObstacleRaceSpectatorPanel : MonoBehaviour, IBackableWindow
 	{
 		[SerializeField]
-		private Button WatchButton;
+		private Button WatchButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private Button NextButton;
+		private Button NextButton = default;
 
 		[SerializeField]
-		private Button PrevButton;
+		private Button PrevButton = default;
 
 		[Tooltip("Arrows and target name; shown only while watching.")]
 		[SerializeField]
-		private GameObject WatchingRoot;
+		private GameObject WatchingRoot = default;
 
 		[Tooltip("The standings table, collapsed while watching so the runner is visible.")]
 		[SerializeField]
-		private GameObject TableRoot;
+		private GameObject TableRoot = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TargetNameText;
+		private TextMeshProUGUI TargetNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TargetCounterText;
+		private TextMeshProUGUI TargetCounterText = default;
 
 		[SerializeField]
 		[Tooltip("Must NOT live under TableRoot: the list is how the viewer switches target while watching.")]
 		[Header("Standings list (optional — assign only what the prefab has)")]
-		private ObstacleRaceSpectatorListView StandingsList;
+		private ObstacleRaceSpectatorListView StandingsList = default;
 
 		[SerializeField]
-		private ObstacleRaceSpectatorRow LocalRow;
+		private ObstacleRaceSpectatorRow LocalRow = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlaceText;
+		private TextMeshProUGUI PlaceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlaceTotalText;
+		private TextMeshProUGUI PlaceTotalText = default;
 
 		private bool _available;
 

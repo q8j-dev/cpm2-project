@@ -12,16 +12,16 @@ namespace _Car_Parking.Scripts.EventSystem
 	public class EventZoneSpawner : MonoBehaviour
 	{
 		[SerializeField]
-		private EventType EvenType;
+		private EventType EvenType = default;
 
 		[SerializeField]
-		private GameObject Prefab;
+		private GameObject Prefab = default;
 
 		[SerializeField]
-		private SceneType SceneType;
+		private SceneType SceneType = default;
 
 		[SerializeField]
-		private EventZoneCollectiblesPosDatas EventZonesConfig;
+		private EventZoneCollectiblesPosDatas EventZonesConfig = default;
 
 		private IEventService _eventService;
 

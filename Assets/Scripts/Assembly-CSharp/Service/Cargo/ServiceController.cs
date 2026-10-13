@@ -21,7 +21,7 @@ namespace Service.Cargo
 		private NamesScriptables namesScriptables;
 
 		[SerializeField]
-		private TrailerScriptable scriptable;
+		private TrailerScriptable scriptable = default;
 
 		private FreeDriveProvider _freeDriveProvider;
 

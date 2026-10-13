@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Audio
 	public class TribuneSoundPlayer : MonoBehaviour
 	{
 		[SerializeField]
-		private SoundEventChannel SoundEventChannel;
+		private SoundEventChannel SoundEventChannel = default;
 
 		private RacingProvider _racingProvider;
 

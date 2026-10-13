@@ -40,56 +40,54 @@ public class AllPartsInventoryUIWindow : WindowScript, IBackableWindow
 	private IMenuWindowsMediator _menuWindowsMediator;
 
 	[SerializeField]
-	private AllInventoryFilterLineElement AllInventoryFilterLineElementPrefab;
+	private AllInventoryFilterLineElement AllInventoryFilterLineElementPrefab = default;
 
 	[SerializeField]
-	private AllDataInventoryElement AllDataInventoryElementPrefab;
+	private AllDataInventoryElement AllDataInventoryElementPrefab = default;
 
 	[SerializeField]
-	private AllInventoryFilterGridElement FilterGridElementPrefab;
+	private AllInventoryFilterGridElement FilterGridElementPrefab = default;
 
 	[SerializeField]
-	private TextMeshProUGUI FilterText;
+	private TextMeshProUGUI FilterText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI FilterDetailsCount;
+	private TextMeshProUGUI FilterDetailsCount = default;
 
 	[SerializeField]
-	private Button FilterButton;
+	private Button FilterButton = default;
 
 	[SerializeField]
-	private MarketInventoryShowCasePanel MarketInventoryShowCasePanel;
+	private MarketInventoryShowCasePanel MarketInventoryShowCasePanel = default;
 
 	[SerializeField]
-	private GameObject ShowcasePanel;
+	private GameObject ShowcasePanel = default;
 
 	[SerializeField]
-	private CanvasGroup InfoPanelCanvasGroup;
+	private CanvasGroup InfoPanelCanvasGroup = default;
 
 	[SerializeField]
-	private ScrollRect InventoryScrollRectPrefab;
+	private ScrollRect InventoryScrollRectPrefab = default;
 
 	[SerializeField]
-	private ScrollRect InventoryFilteredScrollRectPrefab;
+	private ScrollRect InventoryFilteredScrollRectPrefab = default;
 
 	[SerializeField]
-	private Transform ScrollRectPlace;
+	private Transform ScrollRectPlace = default;
 
 	[SerializeField]
-	private AllInventoryPopup AllInventoryPopup;
+	private AllInventoryPopup AllInventoryPopup = default;
 
 	[SerializeField]
-	private GameObject MainPanel;
+	private GameObject MainPanel = default;
 
 	[SerializeField]
-	private Button SetButton;
+	private Button SetButton = default;
 
 	[SerializeField]
-	private Button SellButton;
+	private Button SellButton = default;
 
 	private UiScrollRectOcclusiion _uiScrollRectOcclusion;
-
-	private Transform _parentTransform;
 
 	private AllParts _allParts;
 

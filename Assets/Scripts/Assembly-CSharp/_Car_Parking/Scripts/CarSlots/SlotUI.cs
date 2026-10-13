@@ -21,47 +21,44 @@ namespace _Car_Parking.Scripts.CarSlots
 	public class SlotUI : MonoBehaviour, IGridElement<SlotUI>
 	{
 		[SerializeField]
-		private TextMeshProUGUI CounterText;
+		private TextMeshProUGUI CounterText = default;
 
 		[SerializeField]
-		private RawImage CarImage;
+		private RawImage CarImage = default;
 
 		[SerializeField]
-		private Button _button;
+		private Button _button = default;
 
 		[Header("Car Class Visual")]
 		[SerializeField]
 		private Image CarClassGo;
 
 		[SerializeField]
-		private TextMeshProUGUI CarClassText;
-
-		[SerializeField]
-		private TextMeshProUGUI CarPpText;
+		private TextMeshProUGUI CarClassText = default;
 
 		[Header("Buy slot elements")]
 		[SerializeField]
-		private Image PlusImage;
+		private Image PlusImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BuySlotText;
+		private TextMeshProUGUI BuySlotText = default;
 
 		[SerializeField]
 		[Header("Buy car elements")]
-		private Image BuyCarImage;
+		private Image BuyCarImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BuyCarText;
+		private TextMeshProUGUI BuyCarText = default;
 
 		[Header("Animation")]
 		[SerializeField]
-		private bool UseAnimation;
+		private bool UseAnimation = default;
 
 		[SerializeField]
-		private GameObject AnimationTarget;
+		private GameObject AnimationTarget = default;
 
 		[SerializeField]
-		private float AnimationDuration;
+		private float AnimationDuration = default;
 
 		private Tween _tween;
 
@@ -231,15 +228,15 @@ namespace _Car_Parking.Scripts.CarSlots
 				List<int> allSlots = _slotService.GetAllSlots();
 				if (allSlots.Count == 0)
 				{
-					_managerUI.ShowNotificationWindow(new LocalizedString("DebugAccountData.SomethingWentWrong"), 3f, NotificationType.Error);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("DebugAccountData.SomethingWentWrong"), 3f, NotificationType.Error);
 				}
 				else
 				{
 					int slotId = allSlots.Last() + 2;
 					_virtualPurchaseAnalytic.LogPurchaseVirtual_CarSlot(VehicleSlotPaymentService.Price, slotId, PurchaseStatus.PURCHASE_CLICKED);
-					_managerUI.ShowConfirmWindow(() =>
+					_ = _managerUI.ShowConfirmWindow(() =>
 					{
-						BuySlot();
+						_ = BuySlot();
 					}, new LocalizedString("SlotUI.SlotPurchase"), confirmContentText.Replace("{0}", price), () =>
 					{
 						OnCancel();

@@ -8,19 +8,19 @@ namespace _Car_Parking.Scripts.UIElement
 		public const float AnimationDuration = 0.5f;
 
 		[SerializeField]
-		private Button ArrowButton;
+		private Button ArrowButton = default;
 
 		[SerializeField]
-		private Button ExtraButton;
+		private Button ExtraButton = default;
 
 		[SerializeField]
-		private DropDownListSelectedView DropDownListSelectedView;
+		private DropDownListSelectedView DropDownListSelectedView = default;
 
 		[SerializeField]
-		private DropDownListArrow DropDownListArrow;
+		private DropDownListArrow DropDownListArrow = default;
 
 		[SerializeField]
-		private DropDownListListView DropDownListListView;
+		private DropDownListListView DropDownListListView = default;
 
 		private bool _listVisible;
 

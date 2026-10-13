@@ -8,13 +8,9 @@ namespace RootMotion.FinalIK
 	{
 		public Quaternion offset;
 
-		private Quaternion defaultRotation;
-
 		private Quaternion defaultLocalRotation;
 
 		private Quaternion lastLocalRotation;
-
-		private Quaternion defaultTargetLocalRotation;
 
 		private bool initiated;
 

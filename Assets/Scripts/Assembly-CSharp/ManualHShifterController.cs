@@ -22,7 +22,7 @@ public class ManualHShifterController : MonoBehaviour, IShifterMode
 	private ManualHShifterInput _input;
 
 	[SerializeField]
-	private TextMeshProUGUI _gearLabel;
+	private TextMeshProUGUI _gearLabel = default;
 
 	private ShifterGamepadBridge _shifterGamepadBridge;
 

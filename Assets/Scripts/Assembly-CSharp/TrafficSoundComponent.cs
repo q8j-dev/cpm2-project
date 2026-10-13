@@ -51,7 +51,7 @@ public class TrafficSoundComponent : MonoBehaviour
 
 	private int _soundId;
 
-	private bool _hornPlayed;
+	private bool _hornPlayed = default;
 
 	private float _sqrDistanceToListener;
 

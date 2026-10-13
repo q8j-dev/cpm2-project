@@ -7,20 +7,20 @@ namespace CPM.Obstacles
 	{
 		[SerializeField]
 		[Tooltip("Point A of the travel. A child transform, moved by the designer in the scene.")]
-		private Transform Start;
+		private Transform Start = default;
 
 		[SerializeField]
 		[Tooltip("Point B of the travel. A child transform, moved by the designer in the scene.")]
-		private Transform Finish;
+		private Transform Finish = default;
 
 		[SerializeField]
 		[Tooltip("The object that actually moves: holds the collider and the kinematic Rigidbody. StartPosition decides where along the leg it begins.")]
-		private Transform Target;
+		private Transform Target = default;
 
 		[SerializeField]
 		[Range(0f, 1f)]
 		[Tooltip("Where along the Start->Finish leg the cycle begins: 0 = Start, 1 = Finish. In the editor Target snaps here, so the starting pose is visible without pressing Play.")]
-		private float StartPosition;
+		private float StartPosition = default;
 
 		[Tooltip("Travel speed in units per second. Zero or less parks the platform at Start. Also parks when Start and Finish coincide, with Target snapped to Start on the first physics step.")]
 		[SerializeField]

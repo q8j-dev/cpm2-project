@@ -9,31 +9,31 @@ using _Car_Parking.Scripts.EngineTuning;
 public class AllDataInventoryElement : MonoBehaviour, ICell
 {
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PartInstalledText;
+	private TextMeshProUGUI PartInstalledText = default;
 
 	[SerializeField]
-	private Image PartImage;
+	private Image PartImage = default;
 
 	[SerializeField]
-	private Image PartRarityImage;
+	private Image PartRarityImage = default;
 
 	[SerializeField]
-	private Image PartStatus;
+	private Image PartStatus = default;
 
 	[SerializeField]
-	private Image PartInstalledPlate;
+	private Image PartInstalledPlate = default;
 
 	[SerializeField]
-	private Image VendorImage;
+	private Image VendorImage = default;
 
 	[SerializeField]
-	private Image BorderImage;
+	private Image BorderImage = default;
 
 	[SerializeField]
-	private GameObject Checkbox;
+	private GameObject Checkbox = default;
 
 	public Toggle Toggle;
 

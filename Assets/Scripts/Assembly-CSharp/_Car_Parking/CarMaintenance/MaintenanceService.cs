@@ -23,7 +23,7 @@ namespace _Car_Parking.CarMaintenance
 
 		[SerializeField]
 		[Tooltip("Zone where car need enter")]
-		private TriggerZone _triggerZone;
+		private TriggerZone _triggerZone = default;
 
 		[Tooltip("How many seconds should services' execution last")]
 		[SerializeField]
@@ -31,16 +31,16 @@ namespace _Car_Parking.CarMaintenance
 
 		[SerializeField]
 		[Tooltip("Final car destination where ends services")]
-		private Transform _movePoint;
+		private Transform _movePoint = default;
 
 		[SerializeField]
 		[Tooltip("Id of that service (id have to be unique)")]
-		private int _id;
+		private int _id = default;
 
 		[SerializeField]
 		[FormerlySerializedAs("_cylinders")]
 		[Tooltip("Visual of the car wash (rotating cylinders, particles, etc.)")]
-		private CarWashVisualBase _washVisual;
+		private CarWashVisualBase _washVisual = default;
 
 		public const byte k_triggerZoneEventCode = 1;
 
@@ -51,8 +51,6 @@ namespace _Car_Parking.CarMaintenance
 		private GameObject _currentCar;
 
 		private VehicleData _currentVehicleData;
-
-		private float _carMoveSpeed;
 
 		private IPricesService _pricesService;
 

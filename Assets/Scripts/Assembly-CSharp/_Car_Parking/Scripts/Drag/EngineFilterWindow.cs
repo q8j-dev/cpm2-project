@@ -7,28 +7,28 @@ namespace _Car_Parking.Scripts.Drag
 	public class EngineFilterWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Toggle AllInstalledToggle;
+		private Toggle AllInstalledToggle = default;
 
 		[SerializeField]
-		private Toggle CompatiblePartToggle;
+		private Toggle CompatiblePartToggle = default;
 
 		[SerializeField]
-		private Toggle NotCompatiblePartToggle;
+		private Toggle NotCompatiblePartToggle = default;
 
 		[SerializeField]
-		private FilterElementToggle[] FilterElementToggles;
+		private FilterElementToggle[] FilterElementToggles = default;
 
 		[SerializeField]
-		private Toggle AllToggle;
+		private Toggle AllToggle = default;
 
 		[SerializeField]
-		private Button ApplyButton;
+		private Button ApplyButton = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button BackBackgroundButton;
+		private Button BackBackgroundButton = default;
 
 		private HashSet<EngineFilterTypeFilter> _currentEngineFilterTypeFilters = new HashSet<EngineFilterTypeFilter>();
 

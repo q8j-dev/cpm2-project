@@ -17,7 +17,7 @@ namespace _Car_Parking.Scripts.Scopes
 	public class WrongVersionScope : LifetimeScope
 	{
 		[SerializeField]
-		private ManagerUI ManagerUI;
+		private ManagerUI ManagerUI = default;
 
 		protected override void Configure(IContainerBuilder builder)
 		{

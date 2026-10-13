@@ -1338,7 +1338,7 @@ public class FreeDriveControl : MonoBehaviour
 
 	public void ShowMoneyPurchaseMenu2()
 	{
-		_managerUI.ShowNotificationWindow(new LocalizedString("FreeDriveControl.NoMoney!"), 3f, NotificationType.Error);
+		_ = _managerUI.ShowNotificationWindow(new LocalizedString("FreeDriveControl.NoMoney!"), 3f, NotificationType.Error);
 	}
 
 	public void ClosePurchaseMenu()
@@ -1379,7 +1379,7 @@ public class FreeDriveControl : MonoBehaviour
 	{
 		if ((bool)_freeDriveProvider.RacingCar2)
 		{
-			ShowNegotiationWindow();
+			_ = ShowNegotiationWindow();
 			if (PhotonUtility.TryGetPlayer(LastInvitationReceivedId, out var player))
 			{
 				GetComponent<MultiPlayer>().SendValueStrToPlayer(13, LastInvitationReceivedId.ToString(), "", player);
@@ -2137,7 +2137,7 @@ public class FreeDriveControl : MonoBehaviour
 			isPurchase = true;
 			break;
 		}
-		_managerUI.ShowActionButton(text, isPurchase, costType);
+		_ = _managerUI.ShowActionButton(text, isPurchase, costType);
 	}
 
 	public void HideActionButton()

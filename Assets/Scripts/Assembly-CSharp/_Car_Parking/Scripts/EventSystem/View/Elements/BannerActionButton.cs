@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.EventSystem.View.Elements
 	public class BannerActionButton : MonoBehaviour
 	{
 		[SerializeField]
-		private BannerButtonKind Kind;
+		private BannerButtonKind Kind = default;
 
 		private Button _button;
 

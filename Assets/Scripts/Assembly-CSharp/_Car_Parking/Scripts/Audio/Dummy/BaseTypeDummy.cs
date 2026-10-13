@@ -7,16 +7,6 @@ namespace _Car_Parking.Scripts.Audio.Dummy
 	[Serializable]
 	public abstract class BaseTypeDummy
 	{
-		[HideInInspector]
-		[SerializeField]
-		[FormerlySerializedAs("ID")]
-		private int idInternal;
-
-		[HideInInspector]
-		[SerializeField]
-		[FormerlySerializedAs("valueGuid")]
-		private byte[] valueGuidInternal;
-
 		public abstract object ObjectReference { get; set; }
 
 		public abstract object WwiseObjectType { get; }

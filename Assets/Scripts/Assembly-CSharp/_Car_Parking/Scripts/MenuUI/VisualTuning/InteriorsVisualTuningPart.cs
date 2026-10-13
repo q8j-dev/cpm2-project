@@ -44,8 +44,6 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 
 		private CameraManager _cameraManager;
 
-		private IDisposable _disableHeadDisposable;
-
 		private AssetBundleManager _assetBundleManager;
 
 		private CancellationTokenSource _downloadInteriorCancellationTokenSource;

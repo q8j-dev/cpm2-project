@@ -38,7 +38,7 @@ namespace _Car_Parking.Scripts.Offers.Reward
 		}
 
 		[SerializeField]
-		private PackEntry[] _packs;
+		private PackEntry[] _packs = default;
 
 		private Dictionary<int, PackEntry> _lookup;
 

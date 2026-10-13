@@ -5,10 +5,10 @@ namespace _Car_Parking.Scripts
 	public class GameObjectStateUpdaterGOActiveSelf : GameObjectStateUpdater
 	{
 		[SerializeField]
-		private GameObject GO;
+		private GameObject GO = default;
 
 		[SerializeField]
-		private bool Inverse;
+		private bool Inverse = default;
 
 		private GameObject GameObject
 		{

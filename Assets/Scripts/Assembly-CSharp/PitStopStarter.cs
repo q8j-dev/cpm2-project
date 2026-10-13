@@ -4,12 +4,9 @@ using UnityEngine;
 public class PitStopStarter : CircuitAiCarStateChanger
 {
 	[SerializeField]
-	private PitStopTrigger PitStopTrigger;
+	private PitStopTrigger PitStopTrigger = default;
 
 	public List<RacingWaypoint> RacingWaypoints = new List<RacingWaypoint>();
-
-	[SerializeField]
-	private Transform PitStopWaypointParent;
 
 	public BakedTrajectory PitStopBakedPath;
 

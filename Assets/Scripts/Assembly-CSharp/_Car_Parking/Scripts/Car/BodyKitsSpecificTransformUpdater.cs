@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.Car
 	public class BodyKitsSpecificTransformUpdater : MonoBehaviour
 	{
 		[SerializeField]
-		private string ID;
+		private string ID = default;
 
 		private BodyKits _bodyKits;
 

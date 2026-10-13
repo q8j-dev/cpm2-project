@@ -12,16 +12,16 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViews
 		}
 
 		[SerializeField]
-		private Scrollbar Scrollbar;
+		private Scrollbar Scrollbar = default;
 
 		[SerializeField]
-		private RectTransformEventSender Content;
+		private RectTransformEventSender Content = default;
 
 		[SerializeField]
-		private RectTransformEventSender Root;
+		private RectTransformEventSender Root = default;
 
 		[SerializeField]
-		private MoveAxisType MoveAxis;
+		private MoveAxisType MoveAxis = default;
 
 		private float RootSize
 		{

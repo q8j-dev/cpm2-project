@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 	{
 		[SerializeField]
 		[Tooltip("The hidden input-hint child to reveal while this item is selected.")]
-		private GameObject _hint;
+		private GameObject _hint = default;
 
 		private void Awake()
 		{

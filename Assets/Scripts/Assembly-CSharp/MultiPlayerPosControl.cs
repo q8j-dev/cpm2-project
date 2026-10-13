@@ -1784,7 +1784,7 @@ public class MultiPlayerPosControl : MonoBehaviourPunCallbacks, IPunInstantiateM
 			}
 			else if (FlagsStorage.IsLevelScene && base.gameObject == V.Car)
 			{
-				_levelsProvider.LevelScript.StartLevel();
+				_ = _levelsProvider.LevelScript.StartLevel();
 			}
 		}
 		else if (base.photonView.IsMine)
@@ -2679,7 +2679,7 @@ public class MultiPlayerPosControl : MonoBehaviourPunCallbacks, IPunInstantiateM
 				if (int.Parse(b) == actorNumber)
 				{
 					FreeDriveProvider.DragRacingControlMultiplayer.Reset();
-					FreeDriveProvider.FreeDriveControl.ShowNegotiationWindow();
+					_ = FreeDriveProvider.FreeDriveControl.ShowNegotiationWindow();
 					FreeDriveProvider.RacingCar2 = base.gameObject;
 					FreeDriveProvider.FreeDriveControl.InvitationHost = true;
 				}
@@ -2973,7 +2973,7 @@ public class MultiPlayerPosControl : MonoBehaviourPunCallbacks, IPunInstantiateM
 					Vector3 force = new Vector3(num, num2, num3);
 					if (!personToRagdoll2.isRagdoll)
 					{
-						personToRagdoll2.RagdollEnabler(force, origin);
+						_ = personToRagdoll2.RagdollEnabler(force, origin);
 					}
 				}
 				break;

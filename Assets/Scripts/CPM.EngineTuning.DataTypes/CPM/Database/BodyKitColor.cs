@@ -1,3 +1,4 @@
+#nullable enable annotations
 using System.Buffers;
 using System.Reflection;
 using MemoryPack;

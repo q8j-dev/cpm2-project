@@ -7,16 +7,6 @@ namespace _Car_Parking.Scripts.Audio.Dummy
 	[Serializable]
 	public abstract class BaseGroupTypeDummy : BaseTypeDummy
 	{
-		[FormerlySerializedAs("groupID")]
-		[SerializeField]
-		[HideInInspector]
-		private int groupIdInternal;
-
-		[FormerlySerializedAs("groupGuid")]
-		[HideInInspector]
-		[SerializeField]
-		private byte[] groupGuidInternal;
-
 		public object GroupWwiseObjectReference => null;
 
 		public abstract object WwiseObjectGroupType { get; }

@@ -12,9 +12,9 @@ namespace _Car_Parking.Scripts.Interior
 	{
 		private float _initialSizeAssetMb;
 
-		private Tween _tweenFirstPart;
+		private Tween _tweenFirstPart = default;
 
-		private Tween _tweenSecondPart;
+		private Tween _tweenSecondPart = default;
 
 		private bool _startContinue;
 

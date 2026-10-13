@@ -13,16 +13,16 @@ namespace _Car_Parking.Scripts.UIElement
 		private const int MaxNameTextLength = 20;
 
 		[SerializeField]
-		private Image RankIcon;
+		private Image RankIcon = default;
 
 		[SerializeField]
-		private TMP_Text RankText;
+		private TMP_Text RankText = default;
 
 		[SerializeField]
-		private Text NameText;
+		private Text NameText = default;
 
 		[SerializeField]
-		private TMP_Text IDText;
+		private TMP_Text IDText = default;
 
 		private PlayerDataStorage _playerDataStorage;
 

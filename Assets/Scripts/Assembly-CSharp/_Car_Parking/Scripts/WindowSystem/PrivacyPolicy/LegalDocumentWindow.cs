@@ -11,25 +11,25 @@ namespace _Car_Parking.Scripts.WindowSystem.PrivacyPolicy
 		public const string PrefabKey = "LegalDocumentWindow";
 
 		[SerializeField]
-		private TextMeshProUGUI Title;
+		private TextMeshProUGUI Title = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ContentText;
+		private TextMeshProUGUI ContentText = default;
 
 		[SerializeField]
-		private ScrollRect ContentScroll;
+		private ScrollRect ContentScroll = default;
 
 		[SerializeField]
-		private Button OpenLinkButton;
+		private Button OpenLinkButton = default;
 
 		[SerializeField]
-		private Button AcceptButton;
+		private Button AcceptButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI OpenLinkButtonText;
+		private TextMeshProUGUI OpenLinkButtonText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI AcceptButtonText;
+		private TextMeshProUGUI AcceptButtonText = default;
 
 		[SerializeField]
 		private float ScrollToBottomDuration = 0.3f;

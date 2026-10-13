@@ -12,13 +12,13 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 	public class OtherSmallBannerItemBase : MonoBehaviour
 	{
 		[SerializeField]
-		private string imagePath;
+		private string imagePath = default;
 
 		[SerializeField]
 		protected RawImageLoadAsync RawImageLoadAsync;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		protected ManagerUI _managerUI;
 

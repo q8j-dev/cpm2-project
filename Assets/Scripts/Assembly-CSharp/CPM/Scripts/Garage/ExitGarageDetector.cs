@@ -15,7 +15,7 @@ namespace CPM.Scripts.Garage
 	public class ExitGarageDetector : MonoBehaviour
 	{
 		[SerializeField]
-		private GarageDoor Door;
+		private GarageDoor Door = default;
 
 		private GarageController _garageController;
 

@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.GraphicsSettings
 	public class ReflectionProbeReferences : MonoBehaviour
 	{
 		[SerializeField]
-		private ReflectionProbe[] Probes;
+		private ReflectionProbe[] Probes = default;
 
 		private void Start()
 		{

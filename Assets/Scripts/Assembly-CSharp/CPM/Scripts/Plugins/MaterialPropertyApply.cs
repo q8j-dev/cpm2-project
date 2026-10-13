@@ -5,7 +5,7 @@ namespace CPM.Scripts.Plugins
 	public class MaterialPropertyApply : MonoBehaviour
 	{
 		[SerializeField]
-		private NewMatProps _newMatProps;
+		private NewMatProps _newMatProps = default;
 
 		private MaterialPropertyBlock _block;
 

@@ -11,10 +11,10 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private int GarageIndex;
 
 		[SerializeField]
-		private GameObject TextContainer;
+		private GameObject TextContainer = default;
 
 		[SerializeField]
-		private TMP_Text CarSlotsText;
+		private TMP_Text CarSlotsText = default;
 
 		private CarSlotsObserver _carSlotsObserver;
 

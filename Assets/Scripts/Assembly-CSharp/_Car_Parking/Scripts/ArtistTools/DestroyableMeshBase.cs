@@ -24,13 +24,13 @@ namespace _Car_Parking.Scripts.ArtistTools
 		public Collider MainCollider;
 
 		[SerializeField]
-		private VfxSpawner VfxSpawner;
+		private VfxSpawner VfxSpawner = default;
 
 		[SerializeField]
-		private MeshRenderer MainRenderer;
+		private MeshRenderer MainRenderer = default;
 
 		[SerializeField]
-		private LODGroup LodGroupHandler;
+		private LODGroup LodGroupHandler = default;
 
 		[SerializeField]
 		private AK.Wwise.Event CollisionSoundEvent;

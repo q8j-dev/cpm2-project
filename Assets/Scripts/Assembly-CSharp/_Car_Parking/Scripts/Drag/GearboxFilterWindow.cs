@@ -7,25 +7,25 @@ namespace _Car_Parking.Scripts.Drag
 	public class GearboxFilterWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Toggle AllGearboxTypeToggle;
+		private Toggle AllGearboxTypeToggle = default;
 
 		[SerializeField]
-		private Toggle AllTransmissionToggle;
+		private Toggle AllTransmissionToggle = default;
 
 		[SerializeField]
-		private FilterElementToggle[] GearboxTypeFilters;
+		private FilterElementToggle[] GearboxTypeFilters = default;
 
 		[SerializeField]
-		private FilterElementToggle[] GearboxTransmissionFilters;
+		private FilterElementToggle[] GearboxTransmissionFilters = default;
 
 		[SerializeField]
-		private Button ApplyButton;
+		private Button ApplyButton = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button BackBackgroundButton;
+		private Button BackBackgroundButton = default;
 
 		private HashSet<GearBoxTransmissionTypeFilter> _gearBoxTransMissionTypes = new HashSet<GearBoxTransmissionTypeFilter>();
 

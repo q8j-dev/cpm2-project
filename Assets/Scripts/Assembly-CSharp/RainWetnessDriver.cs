@@ -137,23 +137,23 @@ public sealed class RainWetnessDriver : MonoBehaviour
 
 	[Header("Render Features (Auto-Managed)")]
 	[SerializeField]
-	private RainConeRendererFeature _rainConeFeature;
+	private RainConeRendererFeature _rainConeFeature = default;
 
 	[SerializeField]
-	private RainDropsCRTFeature _rainDropsCRTFeature;
+	private RainDropsCRTFeature _rainDropsCRTFeature = default;
 
 	[Tooltip("Fullscreen pass compositing ScreenRainRT onto the screen; off outside rain.")]
 	[SerializeField]
-	private FullScreenPassRendererFeature _screenRainOverlayFeature;
+	private FullScreenPassRendererFeature _screenRainOverlayFeature = default;
 
 	[SerializeField]
 	[Tooltip("Camera rendering screen-drop particles into ScreenRainRT; off in potato and first-person view.")]
 	[Header("Screen Rain Simulation (Auto-Managed)")]
-	private Camera _screenRainSimCamera;
+	private Camera _screenRainSimCamera = default;
 
 	[SerializeField]
 	[Tooltip("Drop emitter under the sim camera; rate scales with rain intensity.")]
-	private ParticleSystem _screenRainEmitter;
+	private ParticleSystem _screenRainEmitter = default;
 
 	private GameObject _screenRainSimGO;
 

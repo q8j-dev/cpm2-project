@@ -14,16 +14,16 @@ namespace NewUI.Scripts1
 		private Slider BrakeSlider;
 
 		[SerializeField]
-		private Image HandleImage;
+		private Image HandleImage = default;
 
 		[SerializeField]
-		private GameObject BrakeActiveImage;
+		private GameObject BrakeActiveImage = default;
 
 		[SerializeField]
-		private GameObject BrakeInactiveImage;
+		private GameObject BrakeInactiveImage = default;
 
 		[SerializeField]
-		private Image ProgressOnImage;
+		private Image ProgressOnImage = default;
 
 		private Tween _progressOnTween;
 

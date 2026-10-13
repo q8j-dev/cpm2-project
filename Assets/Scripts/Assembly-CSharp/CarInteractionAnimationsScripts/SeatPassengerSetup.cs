@@ -19,12 +19,6 @@ namespace CarInteractionAnimationsScripts
 
 		private GameObject _car;
 
-		private bool _justOpenCloseDoor;
-
-		private CarAnimationType _carAnimationType;
-
-		private CarDoorType _carDoorType;
-
 		private bool _playAnimation;
 
 		private int _passengerPlace;

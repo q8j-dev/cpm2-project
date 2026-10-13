@@ -1818,7 +1818,7 @@ public class CoreGameManager : MonoBehaviour
 		}
 		finally
 		{
-			ManagerUIHelper.CloseWaitingWindow();
+			_ = ManagerUIHelper.CloseWaitingWindow();
 		}
 	}
 

@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.Police
 	public class BuyPoliceButton : PoliceButtonBase
 	{
 		[SerializeField]
-		private CombinedPriceView PriceView;
+		private CombinedPriceView PriceView = default;
 
 		private ManagerUI _managerUI;
 

@@ -12,10 +12,10 @@ namespace _Car_Parking.Scripts.Analytics.Initializer
 	public class CheckHashAnalyticsSender : IInitializable, IDisposable
 	{
 		[Inject]
-		private AnalyticEventFactory _analyticEventFactory;
+		private AnalyticEventFactory _analyticEventFactory = default;
 
 		[Inject]
-		private IConnectionManager _connectionManager;
+		private IConnectionManager _connectionManager = default;
 
 		private FirebaseConnectionService _firebaseConnectionService;
 

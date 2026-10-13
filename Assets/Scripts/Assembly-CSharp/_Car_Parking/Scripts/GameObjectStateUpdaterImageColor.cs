@@ -6,13 +6,13 @@ namespace _Car_Parking.Scripts
 	public class GameObjectStateUpdaterImageColor : GameObjectStateUpdater
 	{
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		[SerializeField]
-		private Color ColorOn;
+		private Color ColorOn = default;
 
 		[SerializeField]
-		private Color ColorOff;
+		private Color ColorOff = default;
 
 		public override bool IsOn
 		{

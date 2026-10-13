@@ -5,7 +5,7 @@ public class DebugReflection : MonoBehaviour
 {
 	private int cubemapSize = 128;
 
-	private bool oneFacePerFrame;
+	private bool oneFacePerFrame = default;
 
 	private Camera cam;
 

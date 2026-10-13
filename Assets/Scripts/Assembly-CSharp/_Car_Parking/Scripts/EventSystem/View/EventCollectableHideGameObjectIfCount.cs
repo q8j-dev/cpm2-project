@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class EventCollectableHideGameObjectIfCount : EventGameObjectViewBase
 	{
 		[SerializeField]
-		private GameObject[] GameObjects;
+		private GameObject[] GameObjects = default;
 
 		[SerializeField]
-		private int CollectCount;
+		private int CollectCount = default;
 
 		protected override void UpdateView()
 		{

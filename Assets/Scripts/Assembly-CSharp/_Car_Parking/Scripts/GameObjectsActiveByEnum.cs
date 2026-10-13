@@ -8,9 +8,9 @@ namespace _Car_Parking.Scripts
 		[Serializable]
 		private class GameObjectWithEnum
 		{
-			public T Type;
+			public T Type = default;
 
-			public GameObject[] GameObjects;
+			public GameObject[] GameObjects = default;
 
 			public void UpdateState(T type)
 			{
@@ -25,7 +25,7 @@ namespace _Car_Parking.Scripts
 		}
 
 		[SerializeField]
-		private GameObjectWithEnum[] GameObjectWithEnums;
+		private GameObjectWithEnum[] GameObjectWithEnums = default;
 
 		public void UpdateState(T type)
 		{

@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public sealed class HudSlotFollower : MonoBehaviour
 	{
 		[SerializeField]
-		private HudSlot Slot;
+		private HudSlot Slot = default;
 
 		[SerializeField]
 		private bool CanReturnHome = true;

@@ -18,8 +18,6 @@ public class TempCameraRotationDisabler : MonoBehaviour, IPointerDownHandler, IE
 
 	public static Action OnPointerUpAction;
 
-	private IDisposable _onEndDragTimer;
-
 	private bool _isTouching;
 
 	private CameraManager _cameraManager;

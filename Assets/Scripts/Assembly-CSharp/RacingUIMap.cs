@@ -20,8 +20,6 @@ public class RacingUIMap : MonoBehaviour
 
 	public Vector3 CameraDefaultPosition;
 
-	private MaterialPropertyBlock block;
-
 	private float WindowWidth = 1f;
 
 	private float WindowHeigth = 1f;
@@ -31,7 +29,7 @@ public class RacingUIMap : MonoBehaviour
 	private float? _targetFOV;
 
 	[SerializeField]
-	private float[] TracksFOV;
+	private float[] TracksFOV = default;
 
 	public Transform[] RacingTrackedObjects;
 

@@ -488,7 +488,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 		private async UniTaskVoid SetCamera()
 		{
 			RallyState = RallyState.Garage;
-			_racingCameraController.Init();
+			_ = _racingCameraController.Init();
 			_racingCameraController.SetTouchInputEnabled(value: true);
 			_racingCameraController.PrepareCarReferences();
 			if (_isDestroyed)
@@ -575,7 +575,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 			_paceNotesSoundController?.ChangePacenotesQueueCount(count);
 			_timers.StartIdleCheck((V.Car != null) ? V.Car.GetComponent<Rigidbody>() : null);
 			await UniTask.Yield();
-			RallyTriggersControl.OnStageRace(RallyTriggersControl.StartMarshall);
+			_ = RallyTriggersControl.OnStageRace(RallyTriggersControl.StartMarshall);
 			_timers.StartStageCountdown();
 		}
 
@@ -635,7 +635,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 		{
 			_paceNotesSoundController.PlayStopControl();
 			_rallyCar.StopTimer();
-			RallyTriggersControl.OnStageRace(RallyTriggersControl.FinishMarshall);
+			_ = RallyTriggersControl.OnStageRace(RallyTriggersControl.FinishMarshall);
 			_currentRallySequenceUIController.ShowSequence(show: false);
 			_currentRallySequenceUIController.RestartStopIconProgress();
 			_currentRallySequenceUIController.ShowStopIcon(state: true);

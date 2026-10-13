@@ -16,10 +16,10 @@ namespace _Car_Parking.Scripts.Multiplayer.Treasure
 		private const double TreasureIconBlinkInterval = 0.5;
 
 		[SerializeField]
-		private SpawnPointsScriptableObject TreasurePointsSO;
+		private SpawnPointsScriptableObject TreasurePointsSO = default;
 
 		[SerializeField]
-		private IconMapView _treasureIcon;
+		private IconMapView _treasureIcon = default;
 
 		private MyTreasureManager _treasureManager;
 

@@ -20,7 +20,7 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 		[CompilerGenerated]
 		private sealed class _003C_003Ec__DisplayClass17_0
 		{
-			public bool toIgnore;
+			public bool toIgnore = default;
 
 			internal void _003CSetCamera_003Eb__0(CinemachineVirtualCameraBase vc)
 			{
@@ -87,7 +87,7 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 				}
 				else if (_lastSelectedFlagIndex != -1 && _lastSelectedFlagIndex != 0)
 				{
-					TryBuyFlag();
+					_ = TryBuyFlag();
 					return;
 				}
 				SaveFlagsData();

@@ -7,22 +7,22 @@ namespace _Car_Parking.Scripts.MenuUI.TransferCaseUI
 	public class TransferCaseDiffIndicators : MonoBehaviour
 	{
 		[SerializeField]
-		private Image FrontDiff;
+		private Image FrontDiff = default;
 
 		[SerializeField]
-		private Image CenterDiff;
+		private Image CenterDiff = default;
 
 		[SerializeField]
-		private Image RearDiff;
+		private Image RearDiff = default;
 
 		[SerializeField]
-		private GameObject FrontOff;
+		private GameObject FrontOff = default;
 
 		[SerializeField]
-		private GameObject CenterOff;
+		private GameObject CenterOff = default;
 
 		[SerializeField]
-		private GameObject RearOff;
+		private GameObject RearOff = default;
 
 		private Powertrain _powertrain;
 

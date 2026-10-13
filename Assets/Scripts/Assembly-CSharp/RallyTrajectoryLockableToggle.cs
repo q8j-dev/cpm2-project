@@ -9,43 +9,40 @@ using _Car_Parking.Scripts.Rally.Data;
 public class RallyTrajectoryLockableToggle : LockableUiToggleElement
 {
 	[SerializeField]
-	private TextMeshProUGUI BestTimeText;
+	private TextMeshProUGUI BestTimeText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TimeText;
+	private TextMeshProUGUI TimeText = default;
 
 	[SerializeField]
-	private Image CupImage;
+	private Image CupImage = default;
 
 	[SerializeField]
-	private Image TimeImage;
+	private Image TimeImage = default;
 
 	[SerializeField]
-	private Color[] CupColor;
+	private Color[] CupColor = default;
 
 	[SerializeField]
-	private Sprite NightIcon;
+	private Sprite SunIcon = default;
 
 	[SerializeField]
-	private Sprite SunIcon;
+	private Sprite RainIcon = default;
 
 	[SerializeField]
-	private Sprite RainIcon;
+	private Sprite SnowIcon = default;
 
 	[SerializeField]
-	private Sprite SnowIcon;
+	private Image StarIcon = default;
 
 	[SerializeField]
-	private Image StarIcon;
+	private GameObject RewardRoot = default;
 
 	[SerializeField]
-	private GameObject RewardRoot;
+	private Image RewardIcon = default;
 
 	[SerializeField]
-	private Image RewardIcon;
-
-	[SerializeField]
-	private GameObject RewardClaimed;
+	private GameObject RewardClaimed = default;
 
 	public int Progress;
 

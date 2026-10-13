@@ -15,28 +15,26 @@ namespace _Car_Parking.Scripts.Rally
 	public class RallyPauseMenuWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button BackToMainButton;
+		private Button BackToMainButton = default;
 
 		[SerializeField]
-		private Button PickATrackButton;
+		private Button PickATrackButton = default;
 
 		[SerializeField]
-		private Button RestartButton;
+		private Button RestartButton = default;
 
 		[SerializeField]
-		private Button SettingsButton;
+		private Button SettingsButton = default;
 
 		[SerializeField]
-		private Button StageButton;
+		private Button StageButton = default;
 
 		private RallyController _rallyController;
 
 		private RaceModeController _raceModeController;
-
-		private LevelScript _levelScript;
 
 		private RallyAnalytic _rallyAnalytic;
 
@@ -141,7 +139,7 @@ namespace _Car_Parking.Scripts.Rally
 		private void OnOpenSettingsClickCallback()
 		{
 			_Car_Parking.Scripts.Audio.Audio.SetPauseSoundFilter(on: true);
-			_managerUI.ShowWindow("SettingsMenuWindow", alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: false, cleanScreen: false);
+			_ = _managerUI.ShowWindow("SettingsMenuWindow", alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: false, cleanScreen: false);
 			Close();
 		}
 

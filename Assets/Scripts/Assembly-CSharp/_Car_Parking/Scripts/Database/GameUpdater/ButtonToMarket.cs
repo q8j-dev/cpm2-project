@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Database.GameUpdater
 	{
 		[FormerlySerializedAs("linksToMarkerConfig")]
 		[SerializeField]
-		private LinksToMarketConfig LinksToMarketConfig;
+		private LinksToMarketConfig LinksToMarketConfig = default;
 
 		private void Start()
 		{

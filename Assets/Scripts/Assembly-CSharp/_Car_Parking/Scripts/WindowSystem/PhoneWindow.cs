@@ -50,153 +50,150 @@ namespace _Car_Parking.Scripts.WindowSystem
 
 		[SerializeField]
 		[Header("Phone buttons")]
-		private Button Taxi;
+		private Button Taxi = default;
 
 		[SerializeField]
-		private Button Delivery;
+		private Button Delivery = default;
 
 		[SerializeField]
-		private Button Cargo;
+		private Button Cargo = default;
 
 		[SerializeField]
-		private Button Drone;
+		private Button Drone = default;
 
 		[SerializeField]
-		private Button Draggy;
+		private Button Draggy = default;
 
 		[SerializeField]
-		private Button DailyTasks;
+		private Button DailyTasks = default;
 
 		[SerializeField]
-		private Button Bus;
+		private Button Bus = default;
 
 		[SerializeField]
-		private Button PhotoMode;
+		private Button PhotoMode = default;
 
 		[SerializeField]
-		private Button Suspension;
+		private Button Suspension = default;
 
 		[SerializeField]
-		private Button Activity;
+		private Button Activity = default;
 
 		[Header("Other buttons")]
 		[SerializeField]
-		private Button Accept;
+		private Button Accept = default;
 
 		[SerializeField]
-		private Button Cancel;
+		private Button Cancel = default;
 
 		[SerializeField]
-		private Button Reset;
+		private Button Reset = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[Header("Texts")]
 		[SerializeField]
-		private TextMeshProUGUI AcceptText;
+		private TextMeshProUGUI AcceptText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI AppName;
+		private TextMeshProUGUI AppName = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimeText;
+		private TextMeshProUGUI TimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DateText;
+		private TextMeshProUGUI DateText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI AppNameInNotification;
+		private TextMeshProUGUI AppNameInNotification = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NotificationText;
+		private TextMeshProUGUI NotificationText = default;
 
 		[Header("Images")]
 		[SerializeField]
-		private Image AppTopImage;
+		private Image AppTopImage = default;
 
 		[SerializeField]
-		private Image AppIconInNotification;
+		private Image AppIconInNotification = default;
 
 		[Header("App view elements to hide/show")]
 		[SerializeField]
-		private GameObject AppView;
+		private GameObject AppView = default;
 
 		[SerializeField]
-		private GameObject ServiceColumns;
+		private GameObject ServiceColumns = default;
 
 		[SerializeField]
-		private GameObject DraggyColumns;
+		private GameObject DraggyColumns = default;
 
 		[SerializeField]
-		private GameObject Background;
+		private GameObject Background = default;
 
 		[Header("Accept button state change sprites")]
 		[SerializeField]
-		private Sprite NormalAccept;
+		private Sprite NormalAccept = default;
 
 		[SerializeField]
-		private Sprite DisabledAccept;
+		private Sprite DisabledAccept = default;
 
 		[Header("App view header background sprites")]
 		[SerializeField]
-		private Sprite TaxiSprite;
+		private Sprite TaxiSprite = default;
 
 		[SerializeField]
-		private Sprite DeliverySprite;
+		private Sprite CargoSprite = default;
 
 		[SerializeField]
-		private Sprite CargoSprite;
-
-		[SerializeField]
-		private Sprite DraggySprite;
+		private Sprite DraggySprite = default;
 
 		[Header("App Icons")]
 		[SerializeField]
-		private Sprite TaxiIcon;
+		private Sprite TaxiIcon = default;
 
 		[SerializeField]
-		private Sprite DeliveryIcon;
+		private Sprite DeliveryIcon = default;
 
 		[SerializeField]
-		private Sprite CargoIcon;
+		private Sprite CargoIcon = default;
 
 		[SerializeField]
-		private Sprite DailyTasksIcon;
+		private Sprite DailyTasksIcon = default;
 
 		[SerializeField]
-		private Sprite CarControlIcon;
+		private Sprite CarControlIcon = default;
 
 		[SerializeField]
-		private Sprite DroneIcon;
+		private Sprite DroneIcon = default;
 
 		[SerializeField]
 		[Header("Prefabs")]
-		private ServiceOrderUI ServiceOrderUIPrefab;
+		private ServiceOrderUI ServiceOrderUIPrefab = default;
 
 		[SerializeField]
-		private DraggyUIElement DraggyUIElementPrefab;
+		private DraggyUIElement DraggyUIElementPrefab = default;
 
 		[Header("Transforms")]
 		[SerializeField]
-		private RectTransform Notification;
+		private RectTransform Notification = default;
 
 		[SerializeField]
-		private Transform OrderParent;
+		private Transform OrderParent = default;
 
 		private Tween _tween;
 
 		[Header("FullScreenPanels")]
 		[SerializeField]
-		private CarControlUIPanel СarControlUIPanel;
+		private CarControlUIPanel СarControlUIPanel = default;
 
 		[SerializeField]
-		private PhoneHorizontalVerticalRotator PhoneHorizontalVerticalRotator;
+		private PhoneHorizontalVerticalRotator PhoneHorizontalVerticalRotator = default;
 
 		[SerializeField]
 		[Tooltip("Faded from zero up to their authored alpha when the window is opened with FadeIn.")]
 		[Header("Fade in")]
-		private Fader[] FadeInFaders;
+		private Fader[] FadeInFaders = default;
 
 		[SerializeField]
 		private float FadeDuration = 0.3f;

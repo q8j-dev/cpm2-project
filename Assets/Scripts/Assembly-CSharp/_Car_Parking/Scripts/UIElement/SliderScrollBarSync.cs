@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.UIElement
 	public class SliderScrollBarSync : MonoBehaviour
 	{
 		[SerializeField]
-		private Scrollbar Scrollbar;
+		private Scrollbar Scrollbar = default;
 
 		[SerializeField]
-		private Slider Slider;
+		private Slider Slider = default;
 
 		private void Start()
 		{

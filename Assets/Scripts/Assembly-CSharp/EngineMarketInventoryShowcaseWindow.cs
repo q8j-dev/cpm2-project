@@ -13,59 +13,59 @@ using _Car_Parking.Scripts.Localization;
 public class EngineMarketInventoryShowcaseWindow : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI MaxMeshTitleText;
+	private TextMeshProUGUI MaxMeshTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DurabilitTitleText;
+	private TextMeshProUGUI DurabilitTitleText = default;
 
 	[SerializeField]
-	private Image DurabilityImage;
+	private Image DurabilityImage = default;
 
 	[SerializeField]
-	private Sprite MaxMilliageSprite;
+	private Sprite MaxMilliageSprite = default;
 
 	[SerializeField]
-	private Sprite DurabilitySprite;
+	private Sprite DurabilitySprite = default;
 
 	[SerializeField]
-	private TextMeshProUGUI EngineTitleText;
+	private TextMeshProUGUI EngineTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI EnginePriceText;
+	private TextMeshProUGUI EnginePriceText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI EngineMilliageText;
+	private TextMeshProUGUI EngineMilliageText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI EngineMassText;
+	private TextMeshProUGUI EngineMassText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI EngineMaxTorqueText;
+	private TextMeshProUGUI EngineMaxTorqueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DescriptionText;
+	private TextMeshProUGUI DescriptionText = default;
 
 	[SerializeField]
-	private Button BuyAndSetButton;
+	private Button BuyAndSetButton = default;
 
 	[SerializeField]
-	private Button BuyButton;
+	private Button BuyButton = default;
 
 	[SerializeField]
-	private Button SellButton;
+	private Button SellButton = default;
 
 	[SerializeField]
-	private Button SetButton;
+	private Button SetButton = default;
 
 	[SerializeField]
-	private Button ConfigurateEngineButton;
+	private Button ConfigurateEngineButton = default;
 
 	[SerializeField]
-	private Image InstalledButton;
+	private Image InstalledButton = default;
 
 	[SerializeField]
 	[FormerlySerializedAs("DefaultEngineMarketWindow")]
-	private DefaultEngineMarketWindow _marketWindow;
+	private DefaultEngineMarketWindow _marketWindow = default;
 
 	public GameObject Panel;
 

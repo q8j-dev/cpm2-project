@@ -20,7 +20,7 @@ namespace VLB_Samples
 		private float PositionY = 1f;
 
 		[SerializeField]
-		private bool NoiseEnabled;
+		private bool NoiseEnabled = default;
 
 		[SerializeField]
 		private bool AddLight = true;

@@ -16,7 +16,7 @@ namespace _Car_Parking.Scripts.MenuUI
 		private readonly ReactiveProperty<bool> _isClutchPressed = new ReactiveProperty<bool>();
 
 		[SerializeField]
-		private Slider ClutchSlider;
+		private Slider ClutchSlider = default;
 
 		private CarInputManager _carInputManger;
 

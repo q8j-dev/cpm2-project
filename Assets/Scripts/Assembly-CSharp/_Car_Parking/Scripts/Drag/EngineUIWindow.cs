@@ -24,16 +24,10 @@ namespace _Car_Parking.Scripts.Drag
 		public TextMeshProUGUI allWeightText;
 
 		[SerializeField]
-		private Button backButton;
+		private Button backButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI EngineHeaderText;
-
-		[SerializeField]
-		private DrawLine DrawLinePrefab;
-
-		[SerializeField]
-		private Transform DrawLineParentTransform;
+		private TextMeshProUGUI EngineHeaderText = default;
 
 		public List<ButtonsSlots> ButtonsSlotsList = new List<ButtonsSlots>();
 
@@ -44,44 +38,39 @@ namespace _Car_Parking.Scripts.Drag
 		private ICarInfoService _carInfoService;
 
 		[SerializeField]
-		private UIPartsController UIPartsController;
+		private UIPartsController UIPartsController = default;
 
 		[SerializeField]
-		private UIPartCategoryChecker BlockItemButton;
+		private UIPartCategoryChecker BlockItemButton = default;
 
 		[SerializeField]
-		private UIPartCategoryChecker HeadItemButton;
+		private UIPartCategoryChecker HeadItemButton = default;
 
 		[SerializeField]
-		private UIPartCategoryChecker RotorItemButton;
+		private UIPartCategoryChecker RotorItemButton = default;
 
 		[SerializeField]
-		private UIPartCategoryChecker IntakeExhoustItemButton;
+		private UIPartCategoryChecker IntakeExhoustItemButton = default;
 
 		[SerializeField]
-		private UIPartCategoryChecker FuelSystemItemButton;
+		private UIPartCategoryChecker FuelSystemItemButton = default;
 
 		[SerializeField]
-		private UIPartCategoryChecker CoolingItemButton;
+		private UIPartCategoryChecker CoolingItemButton = default;
 
 		[SerializeField]
-		private Button DefaultEngineButton;
+		private Button DefaultEngineButton = default;
 
 		[SerializeField]
-		private Button allInventoryDataButton;
+		private Button allInventoryDataButton = default;
 
 		[SerializeField]
-		private PartType DefaultPartTypeInNullElements;
+		private PartType DefaultPartTypeInNullElements = default;
 
 		[SerializeField]
-		private EngineImageRotator EngineImageRotator;
-
-		[SerializeField]
-		private CanvasGroup CanvasGroup;
+		private EngineImageRotator EngineImageRotator = default;
 
 		private bool _isRotor;
-
-		private Camera _camera;
 
 		private bool _isInCar;
 
@@ -123,7 +112,7 @@ namespace _Car_Parking.Scripts.Drag
 			DefaultEngineButton.onClick.AddListener(OpenDefaultEnginesMenu);
 			allInventoryDataButton.onClick.AddListener(OpenAllInventoryData);
 			CoolingItemButton.UIPartCategoryButton.onClick.AddListener(OpenCoolingTuningMenu);
-			EngineImageRotator.Init("engine_0");
+			_ = EngineImageRotator.Init("engine_0");
 		}
 
 		private async UniTaskVoid CheckEngineCategories()

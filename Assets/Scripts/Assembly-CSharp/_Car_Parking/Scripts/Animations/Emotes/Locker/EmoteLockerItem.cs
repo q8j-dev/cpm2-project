@@ -18,22 +18,22 @@ namespace _Car_Parking.Scripts.Animations.Emotes.Locker
 		private const float SelectionDuration = 0.05f;
 
 		[SerializeField]
-		private Button SelectButton;
+		private Button SelectButton = default;
 
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		[SerializeField]
-		private GameObject StarBadge;
+		private GameObject StarBadge = default;
 
 		[SerializeField]
-		private GameObject CoinBadge;
+		private GameObject CoinBadge = default;
 
 		[SerializeField]
-		private GameObject OwnedBadge;
+		private GameObject OwnedBadge = default;
 
 		[SerializeField]
-		private Image SelectionFrame;
+		private Image SelectionFrame = default;
 
 		private int _id;
 

@@ -23,47 +23,47 @@ namespace _Car_Parking.Scripts.Rally
 	public class RallyFinishWindow : WindowScript
 	{
 		[SerializeField]
-		private TextMeshProUGUI TimeText;
+		private TextMeshProUGUI TimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PenaltyText;
+		private TextMeshProUGUI PenaltyText = default;
 
 		[SerializeField]
-		private Button RestartButton;
+		private Button RestartButton = default;
 
 		[SerializeField]
-		private Button StageButton;
+		private Button StageButton = default;
 
 		[SerializeField]
-		private Button ServicePackButton;
+		private Button ServicePackButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[Header("DisqualifiedPanel")]
 		[SerializeField]
-		private GameObject DisqualifiedPanel;
+		private GameObject DisqualifiedPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DisqualifiedText;
+		private TextMeshProUGUI DisqualifiedText = default;
 
 		[SerializeField]
-		private RallyRecordsUIPanel RallyRecordsUIPanel;
+		private RallyRecordsUIPanel RallyRecordsUIPanel = default;
 
 		[SerializeField]
-		private LeaderboardListView LeaderboardListView;
+		private LeaderboardListView LeaderboardListView = default;
 
 		[SerializeField]
-		private RaceRewardItem[] RaceRewardItems;
+		private RaceRewardItem[] RaceRewardItems = default;
 
 		[SerializeField]
-		private RallyPenaltyIconElement[] PenaltyIconElements;
+		private RallyPenaltyIconElement[] PenaltyIconElements = default;
 
 		[SerializeField]
-		private GameObject PenaltyPanel;
+		private GameObject PenaltyPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PenaltyPanelText;
+		private TextMeshProUGUI PenaltyPanelText = default;
 
 		private RallyCar _rallyCar;
 
@@ -107,7 +107,7 @@ namespace _Car_Parking.Scripts.Rally
 			RallyRecordsUIPanel.SetTargetTimes(rallyController);
 			if (!isDisqualified)
 			{
-				SetRewards(_rallyCar.TotalTime);
+				_ = SetRewards(_rallyCar.TotalTime);
 			}
 			if ((bool)DisqualifiedPanel)
 			{

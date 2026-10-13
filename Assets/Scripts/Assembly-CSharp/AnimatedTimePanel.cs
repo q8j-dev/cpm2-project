@@ -21,57 +21,57 @@ public class AnimatedTimePanel : MonoBehaviour, IPopupWindow
 	private float ValueShowTime = 0.2f;
 
 	[SerializeField]
-	private RectTransform StartTransform;
+	private RectTransform StartTransform = default;
 
 	[SerializeField]
-	private float StartScale;
+	private float StartScale = default;
 
 	[SerializeField]
 	private float EndScale;
 
 	[SerializeField]
-	private Transform TargetCircle;
+	private Transform TargetCircle = default;
 
 	[SerializeField]
-	private GameObject TargetCircleParent;
+	private GameObject TargetCircleParent = default;
 
 	[SerializeField]
-	private GameObject Panel;
+	private GameObject Panel = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ValueText;
+	private TextMeshProUGUI ValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DescriptionText;
+	private TextMeshProUGUI DescriptionText = default;
 
 	[SerializeField]
-	private CanvasGroup ValueCanvasGroup;
+	private CanvasGroup ValueCanvasGroup = default;
 
 	[SerializeField]
-	private float StartAlpha;
+	private float StartAlpha = default;
 
 	[SerializeField]
-	private float EndAlpha;
+	private float EndAlpha = default;
 
 	[SerializeField]
-	private RectTransform ParentRectTransform;
+	private RectTransform ParentRectTransform = default;
 
 	[SerializeField]
-	private CanvasGroup[] CanvasGroups;
+	private CanvasGroup[] CanvasGroups = default;
 
 	[SerializeField]
-	private Image LeftBackgroundImage;
+	private Image LeftBackgroundImage = default;
 
 	[SerializeField]
-	private UnityEngine.UI.Extensions.Gradient Gradient;
+	private UnityEngine.UI.Extensions.Gradient Gradient = default;
 
 	[SerializeField]
-	private Image RightBackgroundImage;
+	private Image RightBackgroundImage = default;
 
 	[SerializeField]
-	private BlinkAnimationComponent BlinkAnimationComponent;
+	private BlinkAnimationComponent BlinkAnimationComponent = default;
 
-	private Tween _flashTween;
+	private Tween _flashTween = default;
 
 	private bool _isDestroyed;
 

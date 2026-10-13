@@ -11,8 +11,6 @@ public class ObiParticleCounter : MonoBehaviour
 
 	public Collider2D targetCollider;
 
-	private ObiSolver.ObiCollisionEventArgs frame;
-
 	private HashSet<int> particles = new HashSet<int>();
 
 	private void Awake()

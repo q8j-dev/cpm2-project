@@ -688,7 +688,7 @@ public class LevelScript : MonoBehaviour
 			StopChangingPos();
 			_startRequested = false;
 			PrepareCar().Forget();
-			LoadTrailer();
+			_ = LoadTrailer();
 			OpenFirstMenu();
 			V.CurrentCamIndex = IntitialCamIndex;
 			FlagsStorage.CamFollowCar = false;
@@ -2618,7 +2618,7 @@ public class LevelScript : MonoBehaviour
 		if (LevelsProvider.CurrentLevelData.ID == 64 && _carLifterActive)
 		{
 			string localizationKey = (((bool)CarLifter.ClosestLifter && CarLifter.ClosestLifter.Lifting) ? new LocalizedString("CarLifter.Down") : new LocalizedString("CarLifter.Lift"));
-			_managerUI.ShowActionButton(new LocalizedString(localizationKey));
+			_ = _managerUI.ShowActionButton(new LocalizedString(localizationKey));
 		}
 	}
 

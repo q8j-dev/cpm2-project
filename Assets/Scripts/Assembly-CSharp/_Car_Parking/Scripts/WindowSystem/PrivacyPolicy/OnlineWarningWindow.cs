@@ -14,7 +14,7 @@ namespace _Car_Parking.Scripts.WindowSystem.PrivacyPolicy
 		public const string PrefabKey = "OnlineWarningWindow";
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		public static bool ShouldShow()
 		{

@@ -10,10 +10,10 @@ namespace StartGameLoadingScreen
 		private readonly string _keyCurrentImage = "CurrentImage";
 
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		[SerializeField]
-		private Sprite[] Sprites;
+		private Sprite[] Sprites = default;
 
 		private void Awake()
 		{

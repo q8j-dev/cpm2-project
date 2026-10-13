@@ -12,19 +12,19 @@ namespace _Car_Parking.Scripts.EventSystem
 		private TimedActivityZoneController _timedActivityZoneController;
 
 		[SerializeField]
-		private GameObject PenaltyPanel;
+		private GameObject PenaltyPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PenaltyText;
+		private TextMeshProUGUI PenaltyText = default;
 
 		[SerializeField]
-		private GameObject MainPanel;
+		private GameObject MainPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimeText;
+		private TextMeshProUGUI TimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CurentCountText;
+		private TextMeshProUGUI CurentCountText = default;
 
 		private UiNotificationsManager _uiNotificationsManager;
 

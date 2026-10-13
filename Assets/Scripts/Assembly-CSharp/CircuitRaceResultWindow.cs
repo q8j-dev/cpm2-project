@@ -16,45 +16,24 @@ public class CircuitRaceResultWindow : WindowScript
 	private Button ExitButton;
 
 	[SerializeField]
-	private Button MenuButton;
+	private Transform MembersParent = default;
 
 	[SerializeField]
-	private Button RestartButton;
-
-	[SerializeField]
-	private Button NextButton;
-
-	[SerializeField]
-	private Transform MembersParent;
-
-	[SerializeField]
-	private LapRaceLeaderbordUiElement LeaderbordUiElementPrefab;
+	private LapRaceLeaderbordUiElement LeaderbordUiElementPrefab = default;
 
 	[Header("Status")]
 	[SerializeField]
 	private TextMeshProUGUI StatusText;
 
 	[SerializeField]
-	private Texture2D WinBorderSprite;
-
-	[SerializeField]
-	private Texture2D LooseBorderSprite;
-
-	[SerializeField]
 	[Header("Reward")]
 	private Sprite MoneySprite;
 
 	[SerializeField]
-	private Sprite CoinSprite;
+	private CircuitRewardUiElement[] RewardUiElements = default;
 
 	[SerializeField]
-	private CircuitRewardUiElement[] RewardUiElements;
-
-	[SerializeField]
-	private Color[] RewardColors;
-
-	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	private List<LapRaceLeaderbordUiElement> LeaderbordUiElements = new List<LapRaceLeaderbordUiElement>();
 
@@ -103,7 +82,7 @@ public class CircuitRaceResultWindow : WindowScript
 				ParseUserProgress(lapRaceCars[i]);
 			}
 		}
-		UIHelper.DelayedRebuildLayout(MembersParent.GetComponent<RectTransform>());
+		_ = UIHelper.DelayedRebuildLayout(MembersParent.GetComponent<RectTransform>());
 	}
 
 	private void ParseUserProgress(LapRaceCar lapRaceCar)

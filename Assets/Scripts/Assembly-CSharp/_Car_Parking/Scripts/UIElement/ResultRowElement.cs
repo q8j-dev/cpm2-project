@@ -7,32 +7,32 @@ namespace _Car_Parking.Scripts.UIElement
 	public abstract class ResultRowElement<TRow> : MonoBehaviour where TRow : IResultRow
 	{
 		[SerializeField]
-		private TMP_Text PlaceText;
+		private TMP_Text PlaceText = default;
 
 		[SerializeField]
-		private Text NickNameText;
+		private Text NickNameText = default;
 
 		[SerializeField]
-		private Image BGImage;
+		private Image BGImage = default;
 
 		[SerializeField]
-		private Image PlaceImage;
+		private Image PlaceImage = default;
 
 		[Header("Palette")]
 		[SerializeField]
-		private ResultRowColors FirstPlaceColor;
+		private ResultRowColors FirstPlaceColor = default;
 
 		[SerializeField]
-		private ResultRowColors SecondPlaceColor;
+		private ResultRowColors SecondPlaceColor = default;
 
 		[SerializeField]
-		private ResultRowColors ThirdPlaceColor;
+		private ResultRowColors ThirdPlaceColor = default;
 
 		[SerializeField]
-		private ResultRowColors YourPlaceColor;
+		private ResultRowColors YourPlaceColor = default;
 
 		[SerializeField]
-		private ResultRowColors DefaultColor;
+		private ResultRowColors DefaultColor = default;
 
 		public void Bind(int place, in TRow row)
 		{

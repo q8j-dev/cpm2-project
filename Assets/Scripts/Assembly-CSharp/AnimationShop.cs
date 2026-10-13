@@ -598,7 +598,7 @@ public class AnimationShop : WindowScript, IBackableWindow
 			CloseShop();
 			_managerUI.CloseSeveralWindows();
 			Close();
-			_managerUI.ShowBundleOfferWindow(offer);
+			_ = _managerUI.ShowBundleOfferWindow(offer);
 		}
 	}
 
@@ -626,7 +626,7 @@ public class AnimationShop : WindowScript, IBackableWindow
 			{
 				PersonWindow.canvasGroup.alpha = 0f;
 			}
-			_managerUI.ShowConfirmWindow(() =>
+			_ = _managerUI.ShowConfirmWindow(() =>
 			{
 				TryBuy().Forget();
 			}, new LocalizedString("Playerprofilewindow.Message"), string.Format(new LocalizedString("VisualTuningWindow.Buythisitemfor"), currentAnimationItem.price), () =>
@@ -654,7 +654,7 @@ public class AnimationShop : WindowScript, IBackableWindow
 		LogAnalyticEvent(PurchaseStatus.PURCHASE_CONFIRMED);
 		await _currencyManagerController.TryCoinsSpend(SpendCoinsType.Animations, price, () =>
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("AnimationShop.Success"), 2f);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("AnimationShop.Success"), 2f);
 			PlayerPrefs.SetInt("animationBought" + currentAnimationItem.id, 1);
 			CreateItems();
 			LogAnalyticEvent(PurchaseStatus.PURCHASE_COMPLETED);

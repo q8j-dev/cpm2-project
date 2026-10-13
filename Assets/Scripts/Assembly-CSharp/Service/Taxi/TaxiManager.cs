@@ -222,7 +222,7 @@ namespace Service.Taxi
 				}
 				return null;
 			}
-			handle.BindTo(result);
+			_ = handle.BindTo(result);
 			return result;
 		}
 

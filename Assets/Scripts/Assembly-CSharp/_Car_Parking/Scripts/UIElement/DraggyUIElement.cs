@@ -7,70 +7,70 @@ namespace _Car_Parking.Scripts.UIElement
 	public class DraggyUIElement : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI FirstKmhTime;
+		private TextMeshProUGUI FirstKmhTime = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FirstKmhSlope;
+		private TextMeshProUGUI FirstKmhSlope = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SecondKmhTime;
+		private TextMeshProUGUI SecondKmhTime = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SecondKmhSlope;
+		private TextMeshProUGUI SecondKmhSlope = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MphTime;
+		private TextMeshProUGUI MphTime = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MphSlope;
+		private TextMeshProUGUI MphSlope = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MileTime;
+		private TextMeshProUGUI MileTime = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MileSlope;
+		private TextMeshProUGUI MileSlope = default;
 
 		[SerializeField]
-		private Image FirstKmhIcon;
+		private Image FirstKmhIcon = default;
 
 		[SerializeField]
-		private Image SecondKmhIcon;
+		private Image SecondKmhIcon = default;
 
 		[SerializeField]
-		private Image MphIcon;
+		private Image MphIcon = default;
 
 		[SerializeField]
-		private Image MileKmhIcon;
+		private Image MileKmhIcon = default;
 
 		[SerializeField]
-		private Sprite ValidSprite;
+		private Sprite ValidSprite = default;
 
 		[SerializeField]
-		private Sprite InvalidSprite;
+		private Sprite InvalidSprite = default;
 
 		[SerializeField]
-		private GameObject FirstKmhTimeLine;
+		private GameObject FirstKmhTimeLine = default;
 
 		[SerializeField]
-		private GameObject FirstKmhSlopeLine;
+		private GameObject FirstKmhSlopeLine = default;
 
 		[SerializeField]
-		private GameObject SecondKmhTimeLine;
+		private GameObject SecondKmhTimeLine = default;
 
 		[SerializeField]
-		private GameObject SecondKmhSlopeLine;
+		private GameObject SecondKmhSlopeLine = default;
 
 		[SerializeField]
-		private GameObject MphTimeLine;
+		private GameObject MphTimeLine = default;
 
 		[SerializeField]
-		private GameObject MphSlopeLine;
+		private GameObject MphSlopeLine = default;
 
 		[SerializeField]
-		private GameObject MileTimeLine;
+		private GameObject MileTimeLine = default;
 
 		[SerializeField]
-		private GameObject MileSlopeLine;
+		private GameObject MileSlopeLine = default;
 
 		public void Init(Dragy dragy)
 		{

@@ -14,16 +14,16 @@ namespace Racing.CameraManagement.SpecificTypes
 		protected float BotInitRadius;
 
 		[SerializeField]
-		private bool KeepDistanceFromSurface;
+		private bool KeepDistanceFromSurface = default;
 
 		[SerializeField]
-		private LayerMask SurfaceLayers;
+		private LayerMask SurfaceLayers = default;
 
 		[SerializeField]
 		private float SurfaceRayStandoff = 5f;
 
 		[SerializeField]
-		private float SurfaceClearance;
+		private float SurfaceClearance = default;
 
 		private float _surfaceOffset;
 

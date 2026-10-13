@@ -23,16 +23,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private TimedActivityZoneController _timedActivityZoneController;
 
 		[Inject]
-		private FreeDriveProvider _freeDriveProvider;
+		private FreeDriveProvider _freeDriveProvider = default;
 
 		[Inject]
-		private MapIconsStarter _mapIconsStarter;
+		private MapIconsStarter _mapIconsStarter = default;
 
 		[SerializeField]
-		private Button InfoButton;
+		private Button InfoButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI InfoLimitsText;
+		private TextMeshProUGUI InfoLimitsText = default;
 
 		public void Init(int index)
 		{

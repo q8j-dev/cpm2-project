@@ -6,11 +6,11 @@ namespace CPM.Obstacles
 	{
 		[Tooltip("Drive only the obstacles under this object. Leave empty to drive every obstacle in the scene.")]
 		[SerializeField]
-		private Transform Root;
+		private Transform Root = default;
 
 		[Tooltip("Seconds to hold every obstacle at its start pose before the clock runs, so you can watch them set off together. Zero starts immediately.")]
 		[SerializeField]
-		private float StartDelaySeconds;
+		private float StartDelaySeconds = default;
 
 		private ObstacleDriver _driver;
 

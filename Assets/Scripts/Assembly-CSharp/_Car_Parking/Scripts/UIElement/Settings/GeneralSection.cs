@@ -33,37 +33,37 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 		private const string ContentRemoveAll = "Settingsmenuwindow.ContentRemoveAll";
 
 		[SerializeField]
-		private Toggle ShowFpsToggle;
+		private Toggle ShowFpsToggle = default;
 
 		[SerializeField]
-		private Toggle DarkButtonsToggle;
+		private Toggle DarkButtonsToggle = default;
 
 		[SerializeField]
-		private Toggle VibrateToggle;
+		private Toggle VibrateToggle = default;
 
 		[SerializeField]
-		private Toggle KphToggle;
+		private Toggle KphToggle = default;
 
 		[SerializeField]
-		private Toggle MphToggle;
+		private Toggle MphToggle = default;
 
 		[SerializeField]
-		private SliderValueHandler TrafficPeopleDensitySlider;
+		private SliderValueHandler TrafficPeopleDensitySlider = default;
 
 		[SerializeField]
-		private SliderValueHandler TrafficCarDensitySlider;
+		private SliderValueHandler TrafficCarDensitySlider = default;
 
 		[SerializeField]
-		private Button RemoveUnusedAssetsButton;
+		private Button RemoveUnusedAssetsButton = default;
 
 		[SerializeField]
-		private Button RemoveAllAseetsButton;
+		private Button RemoveAllAseetsButton = default;
 
 		[SerializeField]
-		private TMP_Text SizeAllDownloadedAssets;
+		private TMP_Text SizeAllDownloadedAssets = default;
 
 		[SerializeField]
-		private GameObject DownloadedFilesPanel;
+		private GameObject DownloadedFilesPanel = default;
 
 		private Camera _camera;
 

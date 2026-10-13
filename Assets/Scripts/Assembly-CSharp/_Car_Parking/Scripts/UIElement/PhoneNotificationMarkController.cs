@@ -14,10 +14,10 @@ namespace _Car_Parking.Scripts.UIElement
 		private const int MinMinutesGameplayToShow = 20;
 
 		[SerializeField]
-		private GameObject Notification;
+		private GameObject Notification = default;
 
 		[SerializeField]
-		private Button PhoneButton;
+		private Button PhoneButton = default;
 
 		private CancellationTokenSource _cancellationShowNotification;
 

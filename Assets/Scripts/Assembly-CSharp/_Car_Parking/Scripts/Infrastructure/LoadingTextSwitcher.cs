@@ -16,7 +16,7 @@ namespace _Car_Parking.Scripts.Infrastructure
 		private float Interval = 1.5f;
 
 		[SerializeField]
-		private string[] LoadingPhrasesKeys;
+		private string[] LoadingPhrasesKeys = default;
 
 		private TextMeshProUGUI _text;
 

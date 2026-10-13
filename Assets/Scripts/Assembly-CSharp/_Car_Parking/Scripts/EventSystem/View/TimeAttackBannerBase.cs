@@ -21,22 +21,22 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class TimeAttackBannerBase : EventView
 	{
 		[SerializeField]
-		private V.placeToSpawn PlaceToSpawn;
+		private V.placeToSpawn PlaceToSpawn = default;
 
 		[SerializeField]
 		protected List<TextMeshProUGUI> Points;
 
 		[SerializeField]
-		private TextMeshProUGUI QualificationCountText;
+		private TextMeshProUGUI QualificationCountText = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private CarSelectorPanel CarSelectorPanel;
+		private CarSelectorPanel CarSelectorPanel = default;
 
 		[SerializeField]
-		private TimeAttackBannerHelper TimeAttackBannerHelper;
+		private TimeAttackBannerHelper TimeAttackBannerHelper = default;
 
 		private VehicleClass _currentVehicleClass;
 

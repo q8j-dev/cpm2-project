@@ -21,13 +21,13 @@ namespace _Car_Parking.Scripts.EventSystem
 		public int Index;
 
 		[SerializeField]
-		private SpriteRenderer MapZoneSpriteRenderer;
+		private SpriteRenderer MapZoneSpriteRenderer = default;
 
 		[SerializeField]
-		private SpriteRenderer PasSpriteRenderer;
+		private SpriteRenderer PasSpriteRenderer = default;
 
 		[SerializeField]
-		private TMP_Text TimeText;
+		private TMP_Text TimeText = default;
 
 		private TimedActivityZoneController _timedActivityZoneController;
 
@@ -43,13 +43,13 @@ namespace _Car_Parking.Scripts.EventSystem
 		private Color PasCooldownTimerColor = Color.green;
 
 		[SerializeField]
-		private Vector3 PasCooldownTimerPos;
+		private Vector3 PasCooldownTimerPos = default;
 
 		[SerializeField]
 		private Color NonPasCooldownTimerColor = Color.red;
 
 		[SerializeField]
-		private Vector3 NonPasCooldownTimerPos;
+		private Vector3 NonPasCooldownTimerPos = default;
 
 		private MapIconsModel _mapIconsModel;
 

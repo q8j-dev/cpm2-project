@@ -4,9 +4,6 @@ namespace _Car_Parking.Scripts
 	{
 		protected override void HandleRequestAnswer(RequestAnswer requestAnswer)
 		{
-			switch (requestAnswer)
-			{
-			}
 			Close();
 		}
 	}

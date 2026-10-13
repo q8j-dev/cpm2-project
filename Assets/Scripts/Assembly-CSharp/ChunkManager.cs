@@ -48,11 +48,6 @@ public class ChunkManager : MonoBehaviour
 			return;
 		}
 		ObscuredPrefs.GetInt("chunks", 1);
-		if (1 == 0)
-		{
-			Debug.Log("Chunk: is 0 so return");
-			return;
-		}
 		Debug.Log("Chunk: is 1. So enable.");
 		mainCamera = V.CoreGameManager.GetComponent<Camera>();
 		UpdateState().Forget();

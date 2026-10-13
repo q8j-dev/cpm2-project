@@ -11,19 +11,16 @@ using _Car_Parking.Scripts.Other.Helpers;
 public class AchievementNotifcationWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private TextMeshProUGUI LabelName;
+	private TextMeshProUGUI LabelName = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI LabelDescription = default;
 
 	[SerializeField]
-	private TextMeshProUGUI LabelDescription;
+	private RawImage BackgroundTexture = default;
 
 	[SerializeField]
-	private RawImage BackgroundTexture;
-
-	[SerializeField]
-	private RawImage MiddleTexture;
+	private RawImage MiddleTexture = default;
 
 	[SerializeField]
 	private Button CloseButton;

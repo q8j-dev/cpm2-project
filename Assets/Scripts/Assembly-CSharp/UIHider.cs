@@ -8,13 +8,13 @@ public class UIHider : MonoBehaviour
 	public const float FadeDuration = 0.5f;
 
 	[SerializeField]
-	private CanvasGroup[] CanvasGroups;
+	private CanvasGroup[] CanvasGroups = default;
 
 	private List<Tween> _tweens = new List<Tween>();
 
 	private bool _tempCameraRotationDisablerPressed;
 
-	private bool _buyCarBodyKitsUIPressed;
+	private bool _buyCarBodyKitsUIPressed = default;
 
 	private bool _oldFade;
 

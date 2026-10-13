@@ -5,13 +5,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class RectTransformInCanvasSpace : MonoBehaviour
 	{
 		[SerializeField]
-		private RectTransform Root;
+		private RectTransform Root = default;
 
 		[SerializeField]
-		private float ExtraSizeTop;
+		private float ExtraSizeTop = default;
 
 		[SerializeField]
-		private float ExtraSizeBottom;
+		private float ExtraSizeBottom = default;
 
 		private RectTransform _canvasRectTransform;
 

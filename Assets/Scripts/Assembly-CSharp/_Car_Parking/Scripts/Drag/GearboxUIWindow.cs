@@ -25,25 +25,25 @@ namespace _Car_Parking.Scripts.Drag
 		private ICarInfoService _carInfoService;
 
 		[SerializeField]
-		private PartType[] PartDatas;
+		private PartType[] PartDatas = default;
 
 		[SerializeField]
-		private string PreviousWindowKey;
+		private string PreviousWindowKey = default;
 
 		[SerializeField]
-		private UIPartsController UIPartsController;
+		private UIPartsController UIPartsController = default;
 
 		[SerializeField]
-		private UIPartElement FrontLSDPartsElement;
+		private UIPartElement FrontLSDPartsElement = default;
 
 		[SerializeField]
-		private UIPartElement RearLSDPartsElement;
+		private UIPartElement RearLSDPartsElement = default;
 
 		[SerializeField]
-		private PartType DefaultPartTypeInNullElements;
+		private PartType DefaultPartTypeInNullElements = default;
 
 		[SerializeField]
-		private CategoryType CategoryType;
+		private CategoryType CategoryType = default;
 
 		private HashSet<int> _installedModelIds = new HashSet<int>();
 
@@ -52,15 +52,15 @@ namespace _Car_Parking.Scripts.Drag
 		private bool _isInCar;
 
 		[SerializeField]
-		private EngineImageRotator DetailImageRotator;
+		private EngineImageRotator DetailImageRotator = default;
 
 		private VehicleEntityProvider _vehicleEntityProvider;
 
 		[SerializeField]
-		private Button GearBoxConfigButton;
+		private Button GearBoxConfigButton = default;
 
 		[SerializeField]
-		private GameObject GearBoxConfigWindow;
+		private GameObject GearBoxConfigWindow = default;
 
 		protected override InputGroupsEnum WindowInputGroup => InputGroupsEnum.MenuWithRotation;
 
@@ -100,7 +100,7 @@ namespace _Car_Parking.Scripts.Drag
 			Init();
 			if ((bool)DetailImageRotator && CategoryType != CategoryType.None)
 			{
-				DetailImageRotator.Init(GetRotateImagePath());
+				_ = DetailImageRotator.Init(GetRotateImagePath());
 			}
 			GearBoxConfigButton.onClick.AddListener(EnableGearBoxConfigWindow);
 			GearBoxConfigWindow.SetActive(value: false);
@@ -162,7 +162,7 @@ namespace _Car_Parking.Scripts.Drag
 				{
 					_isInCar = _managerUI.EditingEngineKitData.EngineId.ModelId == _carTuningData.EngineKitData.EngineId.ModelId;
 				}
-				ParseDetails(_managerUI.EditingEngineKitData);
+				_ = ParseDetails(_managerUI.EditingEngineKitData);
 			}
 		}
 

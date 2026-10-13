@@ -33,7 +33,7 @@ public class ColorPicker : MonoBehaviour, IPointerDownHandler, IEventSystemHandl
 	private Shader colorPickerShader;
 
 	[SerializeField]
-	private TMP_InputField colorHexInputField;
+	private TMP_InputField colorHexInputField = default;
 
 	private Material generatedMaterial;
 

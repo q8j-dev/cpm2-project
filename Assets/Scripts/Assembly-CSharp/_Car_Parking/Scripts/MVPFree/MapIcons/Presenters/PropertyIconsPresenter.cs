@@ -27,8 +27,6 @@ namespace _Car_Parking.Scripts.MVPFree.MapIcons.Presenters
 
 		private MapIconsStarter _mapIconsStarter;
 
-		private IconDescriptionItemView _iconDescriptionItemView;
-
 		private WindowScript _popupWindow;
 
 		[Inject]

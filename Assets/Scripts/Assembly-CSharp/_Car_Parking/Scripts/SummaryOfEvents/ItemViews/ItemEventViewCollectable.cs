@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.SummaryOfEvents.ItemViews
 	public class ItemEventViewCollectable : MonoBehaviour, IItemEventView
 	{
 		[SerializeField]
-		private TMP_Text Text;
+		private TMP_Text Text = default;
 
 		public void UpdateView(_Car_Parking.Scripts.EventSystem.Data.Event @event)
 		{

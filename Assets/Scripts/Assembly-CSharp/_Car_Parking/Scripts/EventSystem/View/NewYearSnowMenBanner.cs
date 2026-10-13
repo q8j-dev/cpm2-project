@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class NewYearSnowMenBanner : EventView
 	{
 		[SerializeField]
-		private TextMeshProUGUI ProgressText;
+		private TextMeshProUGUI ProgressText = default;
 
 		public override void Init(_Car_Parking.Scripts.EventSystem.Data.Event @event)
 		{

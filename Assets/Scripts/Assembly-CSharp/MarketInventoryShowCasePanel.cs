@@ -12,82 +12,70 @@ using _Car_Parking.Scripts.Localization;
 public class MarketInventoryShowCasePanel : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI MaxMilliageTitleText;
+	private TextMeshProUGUI MaxMilliageTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DetailName;
+	private TextMeshProUGUI DetailName = default;
 
 	[SerializeField]
-	private TextMeshProUGUI WeightValueText;
+	private TextMeshProUGUI WeightValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MaxMilliageValueText;
+	private TextMeshProUGUI MaxMilliageValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DurabilityValueText;
+	private TextMeshProUGUI DurabilityValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DetailDescriptionText;
+	private TextMeshProUGUI DetailDescriptionText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI VendorTitleText;
+	private TextMeshProUGUI VendorTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PriceText;
+	private TextMeshProUGUI PriceText = default;
 
 	[SerializeField]
-	private Image VendorImage;
+	private Image VendorImage = default;
 
 	[SerializeField]
-	private Image MaxMileageImage;
+	private Image MaxMileageImage = default;
 
 	[SerializeField]
-	private Image MoneyImage;
+	private Image MoneyImage = default;
 
 	[SerializeField]
-	private Image DetailImage;
+	private Image DetailImage = default;
 
 	[SerializeField]
-	private Image DetailPanelImage;
+	private Image DetailPanelImage = default;
 
 	[SerializeField]
-	private Image InstalledButton;
+	private Image InstalledButton = default;
 
 	[SerializeField]
-	private Button SetButton;
+	private Button SetButton = default;
 
 	[SerializeField]
-	private Button SellButton;
+	private Button SellButton = default;
 
 	[SerializeField]
-	private Button BuyButton;
+	private Button BuyButton = default;
 
 	[SerializeField]
-	private Button BuyAndSetButton;
+	private Button BuyAndSetButton = default;
 
 	[SerializeField]
-	private float GearsMaxValue;
+	private Sprite CoinsSprite = default;
 
 	[SerializeField]
-	private float WeightMaxValue;
+	private Sprite MoneySprite = default;
 
 	[SerializeField]
-	private float TorqueMaxValue;
+	private Sprite MaxMilliageSprite = default;
 
 	[SerializeField]
-	private float HpMaxValue;
-
-	[SerializeField]
-	private Sprite CoinsSprite;
-
-	[SerializeField]
-	private Sprite MoneySprite;
-
-	[SerializeField]
-	private Sprite MaxMilliageSprite;
-
-	[SerializeField]
-	private Sprite DurabilitySprite;
+	private Sprite DurabilitySprite = default;
 
 	private PartData _partData;
 

@@ -6,8 +6,6 @@ public class CameraController : MonoBehaviour
 
 	public float speed = 30f;
 
-	private Vector2 currentRotation;
-
 	private void Update()
 	{
 		_ = speed;

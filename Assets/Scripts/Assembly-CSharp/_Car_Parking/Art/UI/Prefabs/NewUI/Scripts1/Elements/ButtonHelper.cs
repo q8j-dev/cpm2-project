@@ -7,28 +7,28 @@ namespace _Car_Parking.Art.UI.Prefabs.NewUI.Scripts1.Elements
 	public class ButtonHelper : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject ChildGameObject;
+		private GameObject ChildGameObject = default;
 
 		[SerializeField]
-		private Button CurrentButton;
+		private Button CurrentButton = default;
 
 		[SerializeField]
-		private bool AnimateSize;
+		private bool AnimateSize = default;
 
 		[SerializeField]
-		private Transform ChildTransform;
+		private Transform ChildTransform = default;
 
 		[SerializeField]
 		private float TargetScale = 0.9f;
 
 		[SerializeField]
-		private bool AnimateAlpha;
+		private bool AnimateAlpha = default;
 
 		[SerializeField]
-		private Image ChildImage;
+		private Image ChildImage = default;
 
 		[SerializeField]
-		private float TargetAlpha;
+		private float TargetAlpha = default;
 
 		[SerializeField]
 		private float AnimationDuration = 0.2f;

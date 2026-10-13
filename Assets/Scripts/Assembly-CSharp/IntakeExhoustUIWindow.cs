@@ -15,12 +15,12 @@ public class IntakeExhoustUIWindow : WindowScript, IClickable, IBackableWindow
 	private EngineKitData _engineKitData;
 
 	[SerializeField]
-	private UIInventory _uiInventory;
+	private UIInventory _uiInventory = default;
 
 	public TextMeshProUGUI allWeightText;
 
 	[SerializeField]
-	private Button backButton;
+	private Button backButton = default;
 
 	public List<ButtonsSlots> ButtonsSlotsList = new List<ButtonsSlots>();
 
@@ -70,7 +70,7 @@ public class IntakeExhoustUIWindow : WindowScript, IClickable, IBackableWindow
 	public void Init(EngineKitData engineKitData)
 	{
 		allWeightText.text = $"{9999:N0} KG";
-		ParseDetails(_engineKitData);
+		_ = ParseDetails(_engineKitData);
 	}
 
 	public void InitBackButton()

@@ -9,16 +9,16 @@ namespace _Car_Parking.Scripts.CommonUtility
 	public class SteamUIParentChanger : MonoBehaviour
 	{
 		[SerializeField]
-		private Transform[] MovableObjects;
+		private Transform[] MovableObjects = default;
 
 		[SerializeField]
 		private bool _move = true;
 
 		[SerializeField]
-		private UITarget[] _targets;
+		private UITarget[] _targets = default;
 
 		[SerializeField]
-		private SteamUISceneConfig _config;
+		private SteamUISceneConfig _config = default;
 
 		public static event Action OnChangesApplied;
 

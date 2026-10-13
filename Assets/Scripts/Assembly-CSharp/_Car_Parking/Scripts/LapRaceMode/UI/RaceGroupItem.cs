@@ -10,40 +10,40 @@ namespace _Car_Parking.Scripts.LapRaceMode.UI
 	public class RaceGroupItem : MonoBehaviour
 	{
 		[SerializeField]
-		private Button SelectionButton;
+		private Button SelectionButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BestTimeText;
+		private TextMeshProUGUI BestTimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FirstPlaceCount;
+		private TextMeshProUGUI FirstPlaceCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FirstPlaceReward;
+		private TextMeshProUGUI FirstPlaceReward = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SecondPlaceCount;
+		private TextMeshProUGUI SecondPlaceCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SecondPlaceReward;
+		private TextMeshProUGUI SecondPlaceReward = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ThirdPlaceCount;
+		private TextMeshProUGUI ThirdPlaceCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ThirdPlaceReward;
+		private TextMeshProUGUI ThirdPlaceReward = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Class;
+		private TextMeshProUGUI Class = default;
 
 		[SerializeField]
-		private GameObject DefaultBackground;
+		private GameObject DefaultBackground = default;
 
 		[SerializeField]
-		private GameObject BlockedBackground;
+		private GameObject BlockedBackground = default;
 
 		[SerializeField]
-		private Image GroupIcon;
+		private Image GroupIcon = default;
 
 		public void Init(CircuitRacingRecord record, int[] rewards, int id, CircuitRaceSelectMapWindow circuitRacingUIControl)
 		{

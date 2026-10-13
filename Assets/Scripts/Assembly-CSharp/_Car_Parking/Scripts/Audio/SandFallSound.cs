@@ -10,10 +10,10 @@ namespace _Car_Parking.Scripts.Audio
 
 		[Header("Wwise Events (Looped)")]
 		[SerializeField]
-		private string PlaySandLoopEvent;
+		private string PlaySandLoopEvent = default;
 
 		[SerializeField]
-		private string StopSandLoopEvent;
+		private string StopSandLoopEvent = default;
 
 		private ParticleSystem _particleSystem;
 

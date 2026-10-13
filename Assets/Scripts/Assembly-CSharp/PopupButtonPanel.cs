@@ -9,13 +9,13 @@ using _Car_Parking.Scripts.Drag;
 public class PopupButtonPanel : MonoBehaviour, IPopupWindow
 {
 	[SerializeField]
-	private Button ActionButton;
+	private Button ActionButton = default;
 
 	[SerializeField]
-	private float Duration;
+	private float Duration = default;
 
 	[SerializeField]
-	private TextMeshProUGUI Text;
+	private TextMeshProUGUI Text = default;
 
 	private UiNotificationsManager _notificationsManager;
 

@@ -18,84 +18,84 @@ namespace _Car_Parking.Scripts.Drag
 	public class GearboxConfigPanel : MonoBehaviour, IBackableWindow
 	{
 		[SerializeField]
-		private GameObject GearsPanel;
+		private GameObject GearsPanel = default;
 
 		[SerializeField]
 		[Header("Buttons")]
-		private Button SaveButton;
+		private Button SaveButton = default;
 
 		[SerializeField]
-		private Button DefaultButton;
+		private Button DefaultButton = default;
 
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		[SerializeField]
 		[Header("Sliders")]
-		private SliderValueHandler EndRatioSlider;
+		private SliderValueHandler EndRatioSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler TorqueSplitSlider;
+		private SliderValueHandler TorqueSplitSlider = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TorqueSplitTitle;
+		private TextMeshProUGUI TorqueSplitTitle = default;
 
 		[Header("Gears")]
 		[SerializeField]
-		private SliderWithCountPrefix SliderWithCountPrefixPrefab;
+		private SliderWithCountPrefix SliderWithCountPrefixPrefab = default;
 
 		[SerializeField]
-		private RectTransform GearsParent;
+		private RectTransform GearsParent = default;
 
 		[SerializeField]
 		[Header("Toggles")]
-		private Toggle GearsToggle;
+		private Toggle GearsToggle = default;
 
 		[SerializeField]
-		private Toggle LsdToggle;
+		private Toggle LsdToggle = default;
 
 		[SerializeField]
-		private GameObject LineTitle;
+		private GameObject LineTitle = default;
 
 		[Header("LSDPanel")]
 		[SerializeField]
-		private GameObject LsdPanel;
+		private GameObject LsdPanel = default;
 
 		[SerializeField]
-		private GameObject LeftLSDPanel;
+		private GameObject LeftLSDPanel = default;
 
 		[SerializeField]
-		private GameObject RightLSDPanel;
+		private GameObject RightLSDPanel = default;
 
 		[SerializeField]
-		private SliderValueHandler FrontAxselerationBiasSlider;
+		private SliderValueHandler FrontAxselerationBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler FrontBrakeBiasSlider;
+		private SliderValueHandler FrontBrakeBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler FrontMaxBiasSlider;
+		private SliderValueHandler FrontMaxBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler FrontBiasSlider;
+		private SliderValueHandler FrontBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler FrontDifferentialLockSlider;
+		private SliderValueHandler FrontDifferentialLockSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler RearAxselerationBiasSlider;
+		private SliderValueHandler RearAxselerationBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler RearBrakeBiasSlider;
+		private SliderValueHandler RearBrakeBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler RearMaxBiasSlider;
+		private SliderValueHandler RearMaxBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler RearBiasSlider;
+		private SliderValueHandler RearBiasSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler RearDifferentialLockSlider;
+		private SliderValueHandler RearDifferentialLockSlider = default;
 
 		private List<SliderWithCountPrefix> _cachedSliders = new List<SliderWithCountPrefix>();
 

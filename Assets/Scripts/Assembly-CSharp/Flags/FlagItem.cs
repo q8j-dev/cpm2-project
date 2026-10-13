@@ -9,19 +9,9 @@ namespace Flags
 	{
 		public Texture texture;
 
-		private int _internalCounterA;
-
-		private bool _systemFlagB;
-
 		public ObscuredInt price;
 
-		private float _auxiliaryValueC;
-
 		public FlagData data;
-
-		private string _reservedFieldD;
-
-		private int hiddenValueE;
 
 		public FlagItem(int id, Texture texture)
 		{

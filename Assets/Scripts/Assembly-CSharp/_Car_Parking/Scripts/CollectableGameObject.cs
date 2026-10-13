@@ -8,13 +8,13 @@ namespace _Car_Parking.Scripts
 	public class CollectableGameObject : MonoBehaviour
 	{
 		[SerializeField]
-		private VfxSpawner VfxSpawner;
+		private VfxSpawner VfxSpawner = default;
 
 		[SerializeField]
-		private AK.Wwise.Event CollisionSoundEvent;
+		private AK.Wwise.Event CollisionSoundEvent = default;
 
 		[SerializeField]
-		private CollectableGameObjectClaim[] Claims;
+		private CollectableGameObjectClaim[] Claims = default;
 
 		private bool _wasTriggerClaim;
 

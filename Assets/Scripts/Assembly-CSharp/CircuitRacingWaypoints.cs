@@ -42,8 +42,6 @@ public class CircuitRacingWaypoints : MonoBehaviour
 
 	private RaceConfigSO _raceConfig;
 
-	private bool lastState;
-
 	public bool HasBakedData
 	{
 		get

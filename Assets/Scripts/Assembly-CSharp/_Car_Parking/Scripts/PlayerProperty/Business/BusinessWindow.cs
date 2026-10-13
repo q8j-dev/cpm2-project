@@ -12,10 +12,10 @@ namespace _Car_Parking.Scripts.PlayerProperty.Business
 	public class BusinessWindow : ConfirmBuyWindowBase
 	{
 		[SerializeField]
-		private TextMeshProUGUI IncomeText;
+		private TextMeshProUGUI IncomeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LocationText;
+		private TextMeshProUGUI LocationText = default;
 
 		private FreeDriveControl _freeDriveControl;
 
@@ -54,7 +54,7 @@ namespace _Car_Parking.Scripts.PlayerProperty.Business
 
 		protected override void OnEnable()
 		{
-			_managerUI.ShowUserBalanceOnlyWindow();
+			_ = _managerUI.ShowUserBalanceOnlyWindow();
 			base.OnEnable();
 		}
 

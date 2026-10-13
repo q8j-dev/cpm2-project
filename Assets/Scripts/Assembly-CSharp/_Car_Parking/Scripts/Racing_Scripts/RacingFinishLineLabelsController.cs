@@ -15,10 +15,10 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 		public const string QuoterMile = "1/4 mile";
 
 		[SerializeField]
-		private List<TextMesh> QuoterMileLabels;
+		private List<TextMesh> QuoterMileLabels = default;
 
 		[SerializeField]
-		private List<TextMesh> OneMileLabels;
+		private List<TextMesh> OneMileLabels = default;
 
 		private void Start()
 		{

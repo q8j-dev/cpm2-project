@@ -1,3 +1,4 @@
+#nullable enable annotations
 using System;
 using Newtonsoft.Json;
 using UnityEngine;

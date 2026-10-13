@@ -34,10 +34,6 @@ namespace _Car_Parking.Scripts.Offers
 
 		private readonly ICDNDownloader _cdnDownloader;
 
-		private PurchaseItemService _purchaseItemService;
-
-		private NewCarVisualData _newCarVisualData;
-
 		private bool _isCdnProcess;
 
 		public override OfferModel[] Offers => _offers;

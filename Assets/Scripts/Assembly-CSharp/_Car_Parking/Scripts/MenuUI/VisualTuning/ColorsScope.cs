@@ -44,12 +44,6 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 
 		private VehicleData _vehicleData;
 
-		private IColorPicker _colorPicker;
-
-		private string colorPrevTitle;
-
-		private string colorTitle;
-
 		private ColorsService _colorsService;
 
 		private ColorsType _activeColorType;
@@ -65,8 +59,6 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 		private CarInfo _carInfo;
 
 		private WheelsColorType _activeWheelColorType;
-
-		private BodyKitType _activeBodyKit;
 
 		private CameraManager _cameraManager;
 

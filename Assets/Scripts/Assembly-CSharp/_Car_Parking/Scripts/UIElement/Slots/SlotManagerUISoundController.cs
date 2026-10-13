@@ -10,9 +10,9 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		[Serializable]
 		private class SoundData
 		{
-			public AK.Wwise.Event UIEvent;
+			public AK.Wwise.Event UIEvent = default;
 
-			public Switch WwiseSound;
+			public Switch WwiseSound = default;
 
 			public void Play(GameObject gameObject)
 			{
@@ -22,16 +22,16 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		}
 
 		[SerializeField]
-		private SlotManagerWindow SlotManagerWindow;
+		private SlotManagerWindow SlotManagerWindow = default;
 
 		[SerializeField]
-		private SoundData SwapCars;
+		private SoundData SwapCars = default;
 
 		[SerializeField]
-		private SoundData StartDrag;
+		private SoundData StartDrag = default;
 
 		[SerializeField]
-		private SoundData StopDrag;
+		private SoundData StopDrag = default;
 
 		private void OnEnable()
 		{

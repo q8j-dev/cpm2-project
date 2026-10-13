@@ -124,8 +124,6 @@ namespace RootMotion.FinalIK
 
 		private Vector3 headToBody;
 
-		private Vector3 shoulderCenterToHead;
-
 		private Vector3 headToLeftThigh;
 
 		private Vector3 headToRightThigh;

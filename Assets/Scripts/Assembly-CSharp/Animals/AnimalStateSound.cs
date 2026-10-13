@@ -5,10 +5,10 @@ namespace Animals
 	public class AnimalStateSound : StateMachineBehaviour
 	{
 		[SerializeField]
-		private string PlayEvent;
+		private string PlayEvent = default;
 
 		[SerializeField]
-		private string StopEvent;
+		private string StopEvent = default;
 
 		private int _lastCycle;
 

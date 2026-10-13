@@ -11,16 +11,16 @@ namespace MVPFree.MapIcons.Updaters
 		private const float MinOrtSize = 2100f;
 
 		[Inject]
-		private FreeDriveProvider _freeDriveProvider;
+		private FreeDriveProvider _freeDriveProvider = default;
 
 		[Inject]
-		private MapIconsModel _mapIconsModel;
+		private MapIconsModel _mapIconsModel = default;
 
 		[Inject]
 		private MapIconsStarter _mapIconsStarter;
 
 		[Inject]
-		private MapIconsDataSo _mapIconsDataSo;
+		private MapIconsDataSo _mapIconsDataSo = default;
 
 		private bool _prevAlphaZoom;
 

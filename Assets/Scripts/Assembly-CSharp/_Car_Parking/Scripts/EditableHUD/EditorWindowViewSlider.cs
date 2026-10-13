@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.EditableHUD
 		private Slider SliderScale;
 
 		[SerializeField]
-		private EditableHUDConfig Config;
+		private EditableHUDConfig Config = default;
 
 		protected override void OnEnable()
 		{

@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class controllerBotCar : MonoBehaviour
 {
-	private GameObject[] gos;
-
 	private int i;
 
 	private bool first_start = true;

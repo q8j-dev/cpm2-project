@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.Police
 	public class GameplayPoliceButtonsController : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		private CancellationTokenSource _updateRootCTS;
 

@@ -24,19 +24,16 @@ public class CarTuningPartsUIWindow : WindowScript, IClickable, IBackableWindow
 	private ICarInfoService _carInfoService;
 
 	[SerializeField]
-	private PartType[] PartDatas;
+	private PartType[] PartDatas = default;
 
 	[SerializeField]
-	private string PreviousWindowKey;
+	private UIPartsController UIPartsController = default;
 
 	[SerializeField]
-	private UIPartsController UIPartsController;
+	private PartType DefaultPartTypeInNullElements = default;
 
 	[SerializeField]
-	private PartType DefaultPartTypeInNullElements;
-
-	[SerializeField]
-	private CategoryType CategoryType;
+	private CategoryType CategoryType = default;
 
 	private HashSet<int> _installedModelIds = new HashSet<int>();
 
@@ -45,7 +42,7 @@ public class CarTuningPartsUIWindow : WindowScript, IClickable, IBackableWindow
 	private bool _isInCar;
 
 	[SerializeField]
-	private EngineImageRotator DetailImageRotator;
+	private EngineImageRotator DetailImageRotator = default;
 
 	protected override InputGroupsEnum WindowInputGroup => InputGroupsEnum.MenuWithRotation;
 
@@ -87,7 +84,7 @@ public class CarTuningPartsUIWindow : WindowScript, IClickable, IBackableWindow
 		Init();
 		if ((bool)DetailImageRotator && CategoryType != CategoryType.None && DetailImageRotator.gameObject.activeSelf)
 		{
-			DetailImageRotator.Init(GetRotateImagePath());
+			_ = DetailImageRotator.Init(GetRotateImagePath());
 		}
 	}
 
@@ -124,7 +121,7 @@ public class CarTuningPartsUIWindow : WindowScript, IClickable, IBackableWindow
 			{
 				_isInCar = _managerUI.EditingEngineKitData.EngineId.InstanceID == _carTuningData.EngineKitData.EngineId.InstanceID;
 			}
-			ParseDetails(_managerUI.EditingEngineKitData);
+			_ = ParseDetails(_managerUI.EditingEngineKitData);
 		}
 	}
 

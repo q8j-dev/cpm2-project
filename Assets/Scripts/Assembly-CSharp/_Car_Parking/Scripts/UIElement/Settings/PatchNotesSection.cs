@@ -14,11 +14,11 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 		[Serializable]
 		private class ScrollAndTitleData
 		{
-			public GameObject Root;
+			public GameObject Root = default;
 
-			public Transform Content;
+			public Transform Content = default;
 
-			public GameObject Title;
+			public GameObject Title = default;
 		}
 
 		private const string LocalizationSpecialEventCarKey = "Settingsmenuwindow.SpecialEventCar";
@@ -27,36 +27,7 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 
 		private const string LocalizationBackToMainMenu = "Settingsmenuwindow.ToViewReturnToMainMenu";
 
-		[SerializeField]
-		private TMP_Dropdown Dropdown;
-
-		[SerializeField]
-		private PatchNotesConfig PatchNotesConfig;
-
-		[SerializeField]
-		private PatchNotesItem PatchNotesItemPrefab;
-
-		[SerializeField]
-		private PatchNotesItemWithImage PatchNotesItemWithImagePrefab;
-
-		[SerializeField]
-		private ScrollAndTitleData FeaturesContent;
-
-		[SerializeField]
-		private ScrollAndTitleData ItemsContent;
-
-		[SerializeField]
-		private ScrollAndTitleData FixContent;
-
-		private CoreGameManager _coreGameManager;
-
 		private ManagerUI _managerUI;
-
-		private GarageController _garageController;
-
-		private OptionalDependency<GarageController> _garageControllerDep;
-
-		private IEventService _eventService;
 
 		private List<PatchNotesItemWithImage> _currentPatchNotesItemWithImages = new List<PatchNotesItemWithImage>();
 

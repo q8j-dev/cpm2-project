@@ -8,10 +8,10 @@ namespace _Car_Parking.Scripts.PlayerProperty.Trigger
 	public class HouseBuyTrigger : PropertyTrigger
 	{
 		[SerializeField]
-		private int ID;
+		private int ID = default;
 
 		[SerializeField]
-		private GameObject[] ExtraEnabledGos;
+		private GameObject[] ExtraEnabledGos = default;
 
 		public int HouseId => ID;
 

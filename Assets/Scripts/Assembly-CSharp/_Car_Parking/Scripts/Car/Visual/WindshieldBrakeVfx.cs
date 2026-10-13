@@ -5,11 +5,11 @@ namespace _Car_Parking.Scripts.Car.Visual
 	public class WindshieldBrakeVfx : MonoBehaviour
 	{
 		[SerializeField]
-		private ParticleSystem ParticleSystem;
+		private ParticleSystem ParticleSystem = default;
 
 		[SerializeField]
 		[Tooltip("May throw error if deleted within a parent")]
-		private bool ChangeParent;
+		private bool ChangeParent = default;
 
 		private Transform _rootParentTransform;
 

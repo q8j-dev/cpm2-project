@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.Audio
 	public class DragSpeaker : MonoBehaviour
 	{
 		[SerializeField]
-		private SoundEventChannel SoundEventChannel;
+		private SoundEventChannel SoundEventChannel = default;
 
 		private bool _isStartEvent;
 

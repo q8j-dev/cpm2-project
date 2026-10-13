@@ -273,7 +273,7 @@ public class DriverActionController : MonoBehaviour
 				LeftHandPoser.enabled = true;
 			}
 			AddHeadMove();
-			AddRagdoll();
+			_ = AddRagdoll();
 		}
 		else
 		{
@@ -1045,7 +1045,7 @@ public class DriverActionController : MonoBehaviour
 			else
 			{
 				_levelsProvider.LevelScript.IsRestricted = true;
-				_levelsProvider.LevelScript.StartLevel();
+				_ = _levelsProvider.LevelScript.StartLevel();
 			}
 		}
 		else if (other.CompareTag("easterEgg"))

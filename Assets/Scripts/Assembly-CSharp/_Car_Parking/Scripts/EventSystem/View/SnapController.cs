@@ -15,22 +15,22 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class SnapController : IDisposable
 	{
 		[SerializeField]
-		private HorizontalScrollSnap HorizontalScrollSnap;
+		private HorizontalScrollSnap HorizontalScrollSnap = default;
 
 		[SerializeField]
-		private UI_InfiniteScroll InfiniteScroll;
+		private UI_InfiniteScroll InfiniteScroll = default;
 
 		[SerializeField]
-		private TabIconsController TabIconsController;
+		private TabIconsController TabIconsController = default;
 
 		[SerializeField]
-		private List<GameObject> EventViewPrefabsV2;
+		private List<GameObject> EventViewPrefabsV2 = default;
 
 		[SerializeField]
-		private Transform ContentTransform;
+		private Transform ContentTransform = default;
 
 		[SerializeField]
-		private List<GameObject> NotEventViewPrefabs;
+		private List<GameObject> NotEventViewPrefabs = default;
 
 		private IPrefabFactory _prefabFactory;
 

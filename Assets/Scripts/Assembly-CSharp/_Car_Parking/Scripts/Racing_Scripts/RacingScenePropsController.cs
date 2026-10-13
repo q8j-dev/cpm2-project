@@ -15,7 +15,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 		public List<GameObject> listGO3;
 
 		[SerializeField]
-		private string otherDistanceTreeName;
+		private string otherDistanceTreeName = default;
 
 		private FreeDriveProvider _freeDriveProvider;
 

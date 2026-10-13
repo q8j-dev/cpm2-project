@@ -11,7 +11,7 @@ using _Car_Parking.Scripts.Other.Helpers;
 public class SceneTransitionWaitingWindow : WaitingWindow
 {
 	[SerializeField]
-	private GameObject Root;
+	private GameObject Root = default;
 
 	private const float CloseDeadlineSeconds = 30f;
 

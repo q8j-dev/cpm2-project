@@ -9,13 +9,13 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class NotEventViewBase : MonoBehaviour, IBigBannerView, IBackableWindow
 	{
 		[SerializeField]
-		private string BackgroundImagePath;
+		private string BackgroundImagePath = default;
 
 		[SerializeField]
 		protected RawImageLoadAsync RawImageLoadAsync;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		private int _index;
 

@@ -13,13 +13,13 @@ namespace _Car_Parking.Scripts
 		private const string DefaultCarPreviewPath = "UI/CarImages/DefaultCar";
 
 		[SerializeField]
-		private TMP_Text Text;
+		private TMP_Text Text = default;
 
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		private PatchNotesData.CarItem _carItem;
 

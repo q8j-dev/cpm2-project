@@ -14,7 +14,7 @@ namespace _Car_Parking.Scripts.EventSystem.View.Elements
 		}
 
 		[SerializeField]
-		private ClaimState State;
+		private ClaimState State = default;
 
 		public void Bind(BannerContext context)
 		{

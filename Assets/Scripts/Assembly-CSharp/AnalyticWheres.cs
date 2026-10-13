@@ -8,29 +8,9 @@ using _Car_Parking.Scripts.Other.Helpers;
 
 public class AnalyticWheres : MonoBehaviour
 {
-	private bool _tempFlag;
-
-	private string _hiddenData;
-
-	private ObscuredFloat _multiFreeDrive;
-
-	private long _backupIdentifier;
-
-	private Vector3 _hiddenVector;
-
-	private float _game;
-
 	public float level;
 
 	public ObscuredFloat multiFreeDrive;
-
-	private ObscuredFloat _accumulatedValue;
-
-	private byte _tempByte;
-
-	private long _internalChecksum;
-
-	private char _temporaryChar;
 
 	public ObscuredFloat singleFree;
 

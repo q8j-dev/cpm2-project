@@ -24,13 +24,13 @@ namespace Racing.CameraManagement.SpecificTypes
 		[Serializable]
 		private class ZoomFOVData
 		{
-			public float Max;
+			public float Max = default;
 
-			public float Min;
+			public float Min = default;
 
-			public float Speed;
+			public float Speed = default;
 
-			public bool IsEnabled;
+			public bool IsEnabled = default;
 
 			[NonSerialized]
 			public float Default;
@@ -40,17 +40,13 @@ namespace Racing.CameraManagement.SpecificTypes
 		private float MaxXAngle = 120f;
 
 		[SerializeField]
-		private ZoomFOVData ZoomFOV;
+		private ZoomFOVData ZoomFOV = default;
 
 		private CinemachinePOV _pov;
 
 		private float _origHMaxSpeed;
 
 		private float _origVMaxSpeed;
-
-		private float _velocity;
-
-		private float _lastXValue;
 
 		private float _xRecenterDelay;
 
@@ -79,18 +75,6 @@ namespace Racing.CameraManagement.SpecificTypes
 		private const float RearHeightAboveAxle = 1f;
 
 		private const float LookYawSmoothTime = 0.12f;
-
-		private Transform _backFollow;
-
-		private Vector3 _savedFollowLocalPos;
-
-		private Quaternion _savedFollowLocalRot;
-
-		private float _savedPovYaw;
-
-		private SideLook _side;
-
-		private float _sideYawVelocity;
 
 		[SerializeField]
 		private float restDownPitch = 6f;

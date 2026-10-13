@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.WindowSystem.InitializersWindows.GameOverlayWindo
 	public class GameOverlayOnlyBalanceWindowInitializer : IWindowInitializer
 	{
 		[Inject]
-		private ManagerUI _managerUI;
+		private ManagerUI _managerUI = default;
 
 		[Inject]
 		private IPrefabFactory _prefabFactory;

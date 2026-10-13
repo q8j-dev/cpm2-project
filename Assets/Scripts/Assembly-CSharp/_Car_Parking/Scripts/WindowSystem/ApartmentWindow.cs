@@ -19,7 +19,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ApartmentWindow : PropertyWindowBase<HomesConfig, HomesConfig.HomeDataItem>
 	{
 		[SerializeField]
-		private ApartmentPlaceUIItem[] spawnPlaceItems;
+		private ApartmentPlaceUIItem[] spawnPlaceItems = default;
 
 		private List<PlaceUIItem<HomesConfig, HomesConfig.HomeDataItem>> _cachedPlaceItems;
 

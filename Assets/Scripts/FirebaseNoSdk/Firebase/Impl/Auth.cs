@@ -91,9 +91,9 @@ namespace Firebase.Impl
 		[Serializable]
 		private class ResetPasswordRes
 		{
-			public string kind;
+			public string kind = default;
 
-			public string email;
+			public string email = default;
 		}
 
 		[Serializable]
@@ -111,45 +111,45 @@ namespace Firebase.Impl
 		[Serializable]
 		private class GetAccountInfoRes
 		{
-			public string kind;
+			public string kind = default;
 
-			public List<UserRes> users;
+			public List<UserRes> users = default;
 		}
 
 		[Serializable]
 		private class UserRes
 		{
-			public string localId;
+			public string localId = default;
 
-			public string email;
+			public string email = default;
 
-			public string passwordHash;
+			public string passwordHash = default;
 
-			public bool emailVerified;
+			public bool emailVerified = default;
 
-			public long passwordUpdatedAt;
+			public long passwordUpdatedAt = default;
 
-			public List<ProviderUserInfo> providerUserInfo;
+			public List<ProviderUserInfo> providerUserInfo = default;
 
-			public string validSince;
+			public string validSince = default;
 
-			public string lastLoginAt;
+			public string lastLoginAt = default;
 
-			public string createdAt;
+			public string createdAt = default;
 
-			public string lastRefreshAt;
+			public string lastRefreshAt = default;
 		}
 
 		[Serializable]
 		private class ProviderUserInfo
 		{
-			public string providerId;
+			public string providerId = default;
 
-			public string federatedId;
+			public string federatedId = default;
 
-			public string email;
+			public string email = default;
 
-			public string rawId;
+			public string rawId = default;
 		}
 
 		[Serializable]
@@ -194,37 +194,37 @@ namespace Firebase.Impl
 		[Serializable]
 		private class SignUpRes
 		{
-			public string kind;
+			public string kind = default;
 
-			public string localId;
+			public string localId = default;
 
-			public string email;
+			public string email = default;
 
-			public string idToken;
+			public string idToken = default;
 
-			public string refreshToken;
+			public string refreshToken = default;
 
-			public string expiresIn;
+			public string expiresIn = default;
 		}
 
 		[Serializable]
 		private class SignInRes
 		{
-			public string kind;
+			public string kind = default;
 
-			public string localId;
+			public string localId = default;
 
-			public string email;
+			public string email = default;
 
-			public string displayName;
+			public string displayName = default;
 
-			public string idToken;
+			public string idToken = default;
 
-			public bool registered;
+			public bool registered = default;
 
-			public string refreshToken;
+			public string refreshToken = default;
 
-			public string expiresIn;
+			public string expiresIn = default;
 		}
 
 		[Serializable]
@@ -244,11 +244,11 @@ namespace Firebase.Impl
 		[Serializable]
 		private class CustomTokenRes
 		{
-			public string idToken;
+			public string idToken = default;
 
-			public string refreshToken;
+			public string refreshToken = default;
 
-			public string expiresIn;
+			public string expiresIn = default;
 		}
 
 		[Serializable]
@@ -272,9 +272,9 @@ namespace Firebase.Impl
 		[Serializable]
 		private class ConfirmEmailRes
 		{
-			public string kind;
+			public string kind = default;
 
-			public string email;
+			public string email = default;
 		}
 
 		private const int ResetPasswordRequestType = 1;

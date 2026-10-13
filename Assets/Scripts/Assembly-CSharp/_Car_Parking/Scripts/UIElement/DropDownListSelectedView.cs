@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class DropDownListSelectedView : MonoBehaviour
 	{
 		[SerializeField]
-		private CanvasGroupStateTweener CanvasGroupStateTweener;
+		private CanvasGroupStateTweener CanvasGroupStateTweener = default;
 
 		public void UpdateVisible(bool isVisible)
 		{

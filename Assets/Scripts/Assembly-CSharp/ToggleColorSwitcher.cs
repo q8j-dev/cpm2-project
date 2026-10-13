@@ -5,34 +5,34 @@ using UnityEngine.UI;
 public class ToggleColorSwitcher : MonoBehaviour
 {
 	[SerializeField]
-	private Color SelectedBgColor;
+	private Color SelectedBgColor = default;
 
 	[SerializeField]
-	private Color UnSelectedBgColor;
+	private Color UnSelectedBgColor = default;
 
 	[SerializeField]
-	private Color SelectedTextColor;
+	private Color SelectedTextColor = default;
 
 	[SerializeField]
-	private Color UnSelectedTextColor;
+	private Color UnSelectedTextColor = default;
 
 	[SerializeField]
-	private Color SelectedSpriteColor;
+	private Color SelectedSpriteColor = default;
 
 	[SerializeField]
-	private Color UnSelectedSpriteColor;
+	private Color UnSelectedSpriteColor = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TextComponent;
+	private TextMeshProUGUI TextComponent = default;
 
 	[SerializeField]
-	private MaskableGraphic ImageComponent;
+	private MaskableGraphic ImageComponent = default;
 
 	[SerializeField]
-	private MaskableGraphic BackgroundImage;
+	private MaskableGraphic BackgroundImage = default;
 
 	[SerializeField]
-	private Toggle Toggle;
+	private Toggle Toggle = default;
 
 	private void OnEnable()
 	{

@@ -20,10 +20,10 @@ namespace CPM.Scripts.VinylDrawer
 		private SteamUIConfigApplier _steamUIConfigApplier;
 
 		[SerializeField]
-		private VinylsEditor _vinylsEditor;
+		private VinylsEditor _vinylsEditor = default;
 
 		[SerializeField]
-		private StateConfigEntry[] _stateConfigs;
+		private StateConfigEntry[] _stateConfigs = default;
 
 		private VinylsEditorInputState _lastState;
 

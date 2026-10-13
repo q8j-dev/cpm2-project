@@ -9,10 +9,10 @@ namespace _Car_Parking.Scripts.UIElement
 	public class UniqueFontSizeSetter : MonoBehaviour
 	{
 		[SerializeField]
-		private RectTransform RectForRebuild;
+		private RectTransform RectForRebuild = default;
 
 		[SerializeField]
-		private List<TextMeshProUGUI> TextMeshPros;
+		private List<TextMeshProUGUI> TextMeshPros = default;
 
 		private void Start()
 		{

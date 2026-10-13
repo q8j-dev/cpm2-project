@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.Police
 	public class PoliceSirenStatusUpdateButton : PoliceButtonBase
 	{
 		[SerializeField]
-		private GameObjectStateUpdater[] GameObjectStateUpdaters;
+		private GameObjectStateUpdater[] GameObjectStateUpdaters = default;
 
 		protected override void OnEnable()
 		{

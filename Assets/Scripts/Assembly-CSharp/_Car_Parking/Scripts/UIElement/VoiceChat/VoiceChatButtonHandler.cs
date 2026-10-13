@@ -11,13 +11,13 @@ namespace _Car_Parking.Scripts.UIElement.VoiceChat
 	public class VoiceChatButtonHandler : MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler
 	{
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		[SerializeField]
-		private Color PressedColor;
+		private Color PressedColor = default;
 
 		[SerializeField]
-		private bool CheckDefaultState;
+		private bool CheckDefaultState = default;
 
 		private Vector3 _defaultSize;
 

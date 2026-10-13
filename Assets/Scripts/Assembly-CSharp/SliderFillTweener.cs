@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class SliderFillTweener : MonoBehaviour
 {
 	[SerializeField]
-	private Slider Slider;
+	private Slider Slider = default;
 
 	[SerializeField]
-	private float Duration;
+	private float Duration = default;
 
 	[SerializeField]
-	private UnityEvent OnFinishEvent;
+	private UnityEvent OnFinishEvent = default;
 
 	[SerializeField]
-	private UnityEvent OnDisableEvent;
+	private UnityEvent OnDisableEvent = default;
 
 	private Tween _tween;
 

@@ -5,7 +5,7 @@ namespace Service.Delivery
 	public class Test : MonoBehaviour
 	{
 		[SerializeField]
-		private Collider collider;
+		private new Collider collider;
 
 		[SerializeField]
 		private GameObject prefab;

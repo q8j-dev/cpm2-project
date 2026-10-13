@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.PhotoMode.UI
 	public class ShutterSpeedParameter : PhotoModeCameraParameterWithScroll, IPointerClickHandler, IEventSystemHandler
 	{
 		[SerializeField]
-		private ToggleSwitchHandler ToggleSwitch;
+		private ToggleSwitchHandler ToggleSwitch = default;
 
 		protected override void Start()
 		{

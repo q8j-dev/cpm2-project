@@ -29,37 +29,37 @@ namespace _Car_Parking.Scripts.WindowSystem
 		}
 
 		[SerializeField]
-		private GameObject BGMenu;
+		private GameObject BGMenu = default;
 
 		[SerializeField]
-		private GameObject BGPhone;
+		private GameObject BGPhone = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private PhoneGameActivityCanvasRoot PhoneActivityCanvasRoot;
+		private PhoneGameActivityCanvasRoot PhoneActivityCanvasRoot = default;
 
 		[SerializeField]
-		private NavCanvas[] NavCanvases;
+		private NavCanvas[] NavCanvases = default;
 
 		[SerializeField]
-		private TMP_Text Title;
+		private TMP_Text Title = default;
 
 		[Header("Fade in")]
 		[Tooltip("Faded from zero up to their authored alpha when the window is opened with FadeIn.")]
 		[SerializeField]
-		private Fader[] FadeInFaders;
+		private Fader[] FadeInFaders = default;
 
 		[SerializeField]
 		private float FadeDuration = 0.3f;
 
 		[Tooltip("Plays back to the vertical phone before the phone window is reopened. Phone source only.")]
 		[SerializeField]
-		private PhoneHorizontalVerticalRotator PhoneHorizontalVerticalRotator;
+		private PhoneHorizontalVerticalRotator PhoneHorizontalVerticalRotator = default;
 
 		private OpenSourceType _openSource;
 

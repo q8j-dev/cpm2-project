@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelLoader2 : MonoBehaviour
 {
 	[SerializeField]
-	private bool isMainMenu;
+	private bool isMainMenu = default;
 
 	private void Update()
 	{

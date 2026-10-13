@@ -16,31 +16,22 @@ namespace _Car_Parking.Scripts.Drag
 		private PartData _partData;
 
 		[SerializeField]
-		private Image HintImage;
+		private TextMeshProUGUI DetailNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DetailNameText;
+		private TextMeshProUGUI MassText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MassText;
+		private TextMeshProUGUI PriceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PriceText;
+		private TextMeshProUGUI MileageText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MileageText;
+		private TextMeshProUGUI ReliabilityText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ReliabilityText;
-
-		[SerializeField]
-		private Sprite[] HintStateSprites;
-
-		[SerializeField]
-		private TextMeshProUGUI HintText;
-
-		[SerializeField]
-		private TextMeshProUGUI CapabilityText;
+		private TextMeshProUGUI CapabilityText = default;
 
 		[SerializeField]
 		private Color CompatibleColor = Color.green;
@@ -54,8 +45,6 @@ namespace _Car_Parking.Scripts.Drag
 		public PartType PartType;
 
 		private AllParts _allParts;
-
-		private ObscuredInt _currentCarId;
 
 		private ObscuredInt _carId;
 

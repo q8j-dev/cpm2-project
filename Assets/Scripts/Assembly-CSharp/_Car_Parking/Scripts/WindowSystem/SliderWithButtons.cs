@@ -12,22 +12,22 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private float Step = 1f;
 
 		[SerializeField]
-		private float MinValue;
+		private float MinValue = default;
 
 		[SerializeField]
 		private float MaxValue = 10f;
 
 		[SerializeField]
-		private Slider Slider;
+		private Slider Slider = default;
 
 		[SerializeField]
-		private Button Plus;
+		private Button Plus = default;
 
 		[SerializeField]
-		private Button Minus;
+		private Button Minus = default;
 
 		[SerializeField]
-		private TMP_InputField TextValueInput;
+		private TMP_InputField TextValueInput = default;
 
 		public event Action<float> ValueChanged;
 

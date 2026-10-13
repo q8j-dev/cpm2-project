@@ -9,25 +9,25 @@ namespace Racing.Scripts.UIGrid
 	public abstract class GridController<T> : MonoBehaviour where T : MonoBehaviour, IGridElement<T>
 	{
 		[SerializeField]
-		private T gridElementPrefab;
+		private T gridElementPrefab = default;
 
 		[SerializeField]
-		private string gridElementPrefabPath;
+		private string gridElementPrefabPath = default;
 
 		[SerializeField]
 		private bool isAutoPopulate = true;
 
 		[SerializeField]
-		private LayoutGroup layoutGroup;
+		private LayoutGroup layoutGroup = default;
 
 		[SerializeField]
-		private bool hasAddButton;
+		private bool hasAddButton = default;
 
 		[SerializeField]
 		private bool isButtonsInteractable = true;
 
 		[SerializeField]
-		private bool isElementDestroyedOnDelete;
+		private bool isElementDestroyedOnDelete = default;
 
 		public bool ignoreEmptySlots;
 

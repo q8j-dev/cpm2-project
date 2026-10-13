@@ -18,19 +18,19 @@ namespace _Car_Parking.Scripts.Drag
 		}
 
 		[SerializeField]
-		private Transform WheelImage;
+		private Transform WheelImage = default;
 
 		[SerializeField]
 		private float Duration = 1.5f;
 
 		[SerializeField]
-		private TextMeshProUGUI Description;
+		private TextMeshProUGUI Description = default;
 
 		[SerializeField]
-		private LocalizedTextMeshPro Localized;
+		private LocalizedTextMeshPro Localized = default;
 
 		[SerializeField]
-		private Canvas Canvas;
+		private Canvas Canvas = default;
 
 		[field: SerializeField]
 		public Image Background { get; private set; }

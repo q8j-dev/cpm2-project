@@ -22,7 +22,7 @@ namespace Service.Cargo
 
 		private void OnTriggerEnter(Collider other)
 		{
-			TriggerEnter(other);
+			_ = TriggerEnter(other);
 		}
 
 		private void OnTriggerExit(Collider other)

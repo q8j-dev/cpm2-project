@@ -20,28 +20,28 @@ namespace _Car_Parking.Scripts.WindowSystem
 		public const string WindowId = "FindRace";
 
 		[SerializeField]
-		private Button QuickMatchButton;
+		private Button QuickMatchButton = default;
 
 		[SerializeField]
-		private Button CreateMatchButton;
+		private Button CreateMatchButton = default;
 
 		[SerializeField]
-		private Button MainMenuButton;
+		private Button MainMenuButton = default;
 
 		[SerializeField]
-		private GameObject FreeDriveRoot;
+		private GameObject FreeDriveRoot = default;
 
 		[SerializeField]
-		private GameObject MainMenuRoot;
+		private GameObject MainMenuRoot = default;
 
 		[SerializeField]
-		private Transform Content;
+		private Transform Content = default;
 
 		[SerializeField]
-		private JoinToFriendElementView JoinToFriendElementViewPrefab;
+		private JoinToFriendElementView JoinToFriendElementViewPrefab = default;
 
 		[SerializeField]
-		private GameObject NoFriendsHint;
+		private GameObject NoFriendsHint = default;
 
 		private ArenaFlowController _arenaFlowController;
 

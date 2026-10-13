@@ -1,3 +1,4 @@
+#nullable enable annotations
 using System;
 using CPM.DailyTasks.Daily;
 using CPM.Rating;

@@ -8,16 +8,16 @@ namespace _Car_Parking.Scripts.MenuUI.TransferCaseUI
 	public class TransferCaseHudButton : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ModeLabel;
+		private TextMeshProUGUI ModeLabel = default;
 
 		[SerializeField]
-		private TransferCasePanel Panel;
+		private TransferCasePanel Panel = default;
 
 		private Powertrain _powertrain;
 

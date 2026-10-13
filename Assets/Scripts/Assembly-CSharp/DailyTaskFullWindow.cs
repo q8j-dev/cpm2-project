@@ -18,22 +18,22 @@ using _Car_Parking.Scripts.SOAP_Registry;
 public class DailyTaskFullWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Image timeProgress;
+	private Image timeProgress = default;
 
 	[SerializeField]
-	private TextMeshProUGUI timeLeftLabel;
+	private TextMeshProUGUI timeLeftLabel = default;
 
 	[SerializeField]
-	private TaskLabel TaskPrefab;
+	private TaskLabel TaskPrefab = default;
 
 	[SerializeField]
-	private Transform TaskParent;
+	private Transform TaskParent = default;
 
 	[SerializeField]
-	private Button BackButton;
+	private Button BackButton = default;
 
 	[SerializeField]
-	private GameObject NoInternetConnectionPanel;
+	private GameObject NoInternetConnectionPanel = default;
 
 	private DailyTasksManager _dailyTasksManager;
 

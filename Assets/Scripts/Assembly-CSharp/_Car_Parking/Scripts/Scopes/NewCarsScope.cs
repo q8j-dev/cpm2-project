@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Scopes
 	public class NewCarsScope : LifetimeScope
 	{
 		[SerializeField]
-		private DealerWindow DealerWindow;
+		private DealerWindow DealerWindow = default;
 
 		protected override void Configure(IContainerBuilder builder)
 		{

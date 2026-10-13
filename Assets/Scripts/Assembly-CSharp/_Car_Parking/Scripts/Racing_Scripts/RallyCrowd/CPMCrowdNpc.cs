@@ -11,7 +11,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts.RallyCrowd
 		private Animator Animator;
 
 		[SerializeField]
-		private CPMCrowdNpcConfig Config;
+		private CPMCrowdNpcConfig Config = default;
 
 		private CancellationTokenSource _cts;
 

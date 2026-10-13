@@ -20,28 +20,28 @@ public class CarTuningExchangeUIElement : MonoBehaviour
 	private const string PerfectStateLocalizedKey = "Buythiscarwindow.Perfect";
 
 	[SerializeField]
-	private TextMeshProUGUI PartName;
+	private TextMeshProUGUI PartName = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PartType;
+	private TextMeshProUGUI PartType = default;
 
 	[SerializeField]
-	private Image PartRarityImage;
+	private Image PartRarityImage = default;
 
 	[SerializeField]
-	private Image PartVendorImage;
+	private Image PartVendorImage = default;
 
 	[SerializeField]
-	private Color WarningColor;
+	private Color WarningColor = default;
 
 	[SerializeField]
-	private Color ErrorColor;
+	private Color ErrorColor = default;
 
 	[SerializeField]
-	private Color NormalColor;
+	private Color NormalColor = default;
 
 	[SerializeField]
-	private Color ExcelentColor;
+	private Color ExcelentColor = default;
 
 	[SerializeField]
 	private CarTuningUISlider CarTuningUISlider;

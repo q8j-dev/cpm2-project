@@ -15,13 +15,13 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 	public class ScrollViewSlots : ScrollViewDragAndDropItemContent
 	{
 		[SerializeField]
-		private ButtonBuySlot ButtonBuySlotPrefab;
+		private ButtonBuySlot ButtonBuySlotPrefab = default;
 
 		[SerializeField]
-		private GameObjectStateUpdaterContainer AddNewItemErrorStateUpdater;
+		private GameObjectStateUpdaterContainer AddNewItemErrorStateUpdater = default;
 
 		[SerializeField]
-		private GameObject SwapCarTip;
+		private GameObject SwapCarTip = default;
 
 		private int _garageIndex;
 
@@ -92,7 +92,7 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 			SlotCollection slotCollection = _slotService.GetSlotCollection(_garageIndex);
 			if ((int)slotCollection.Count >= slotCollection.MaxCarSpotCount)
 			{
-				_managerUI.ShowNotificationWindow(new LocalizedString("SlotManager.GarageIsFull"), 3f, NotificationType.Error);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("SlotManager.GarageIsFull"), 3f, NotificationType.Error);
 				return;
 			}
 			string text = new LocalizedString("SlotUI.DoYouWantToBuyANewSlotForSlots");
@@ -100,7 +100,7 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 			ConfirmWindow.AdditionalData additionalData = new ConfirmWindow.AdditionalData(new CombinedPrice(VehicleSlotPaymentService.Price, 0));
 			additionalData.SetBackground = true;
 			additionalData.Background = new Color(0f, 0f, 0f, 0.7f);
-			_managerUI.ShowConfirmWindow(() =>
+			_ = _managerUI.ShowConfirmWindow(() =>
 			{
 				TryBuySlot().Forget();
 			}, new LocalizedString("SlotUI.SlotPurchase"), text.Replace("{0}", newValue), () =>

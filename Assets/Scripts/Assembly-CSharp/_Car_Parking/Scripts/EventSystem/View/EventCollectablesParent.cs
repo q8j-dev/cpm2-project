@@ -10,10 +10,10 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class EventCollectablesParent : MonoBehaviour, IEventGameObjectInit
 	{
 		[SerializeField]
-		private EventCollectableObject[] CollectableObjects;
+		private EventCollectableObject[] CollectableObjects = default;
 
 		[SerializeField]
-		private bool showIfClaim;
+		private bool showIfClaim = default;
 
 		private IEventService _eventService;
 

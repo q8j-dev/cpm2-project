@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.SummaryOfEvents.ItemViews
 	public class ItemEventImageView : MonoBehaviour, IItemEventView
 	{
 		[SerializeField]
-		private EventImageKind ImageKind;
+		private EventImageKind ImageKind = default;
 
 		private RawImageLoadAsync _rawImageLoad;
 

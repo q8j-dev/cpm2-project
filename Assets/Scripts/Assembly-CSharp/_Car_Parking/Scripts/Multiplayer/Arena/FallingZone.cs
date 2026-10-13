@@ -8,10 +8,10 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena
 	public class FallingZone : Obstacle
 	{
 		[SerializeField]
-		private HexGridSpawner HexGridSpawnerPrefab;
+		private HexGridSpawner HexGridSpawnerPrefab = default;
 
 		[SerializeField]
-		private Transform GridRoot;
+		private Transform GridRoot = default;
 
 		private FallingZoneConfig _config;
 

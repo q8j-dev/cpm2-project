@@ -15,52 +15,52 @@ public class ShockAbsorberCarControlUIPart : PhoneUISubPanel
 
 	[Header("ComfortTexts")]
 	[SerializeField]
-	private TextMeshProUGUI ComfortFrontBumpValueText;
+	private TextMeshProUGUI ComfortFrontBumpValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ComfortFrontReboundValueText;
+	private TextMeshProUGUI ComfortFrontReboundValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ComfortRearBumpValueText;
+	private TextMeshProUGUI ComfortRearBumpValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ComfortRearReboundValueText;
+	private TextMeshProUGUI ComfortRearReboundValueText = default;
 
 	[SerializeField]
 	[Header("SportTexts")]
-	private TextMeshProUGUI SportFrontBumpValueText;
+	private TextMeshProUGUI SportFrontBumpValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SportFrontReboundValueText;
+	private TextMeshProUGUI SportFrontReboundValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SportRearBumpValueText;
+	private TextMeshProUGUI SportRearBumpValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SportRearReboundValueText;
+	private TextMeshProUGUI SportRearReboundValueText = default;
 
 	[SerializeField]
 	[Header("CustomTexts")]
-	private TextMeshProUGUI CustomFrontBumpValueText;
+	private TextMeshProUGUI CustomFrontBumpValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CustomFrontReboundValueText;
+	private TextMeshProUGUI CustomFrontReboundValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CustomRearBumpValueText;
+	private TextMeshProUGUI CustomRearBumpValueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CustomRearReboundValueText;
+	private TextMeshProUGUI CustomRearReboundValueText = default;
 
 	[Header("PresetsToggles")]
 	[SerializeField]
-	private Toggle ComfortToggle;
+	private Toggle ComfortToggle = default;
 
 	[SerializeField]
-	private Toggle SportToggle;
+	private Toggle SportToggle = default;
 
 	[SerializeField]
-	private Toggle CustomToggle;
+	private Toggle CustomToggle = default;
 
 	private SuspensionState _currentSuspensionState;
 

@@ -1446,7 +1446,7 @@ namespace RootMotion.FinalIK
 
 			private Quaternion chestTargetRotation = Quaternion.identity;
 
-			private int pelvisIndex;
+			private int pelvisIndex = default;
 
 			private int spineIndex = 1;
 
@@ -1455,8 +1455,6 @@ namespace RootMotion.FinalIK
 			private int neckIndex = -1;
 
 			private int headIndex = -1;
-
-			private float length;
 
 			private bool hasChest;
 
@@ -2192,8 +2190,6 @@ namespace RootMotion.FinalIK
 
 		private Vector3[] defaultLocalPositions = new Vector3[21];
 
-		private Vector3 rootV;
-
 		private Vector3 rootVelocity;
 
 		private Vector3 bodyOffset;
@@ -2234,21 +2230,9 @@ namespace RootMotion.FinalIK
 
 		private Arm[] arms = new Arm[2];
 
-		private Vector3 headPosition;
-
-		private Vector3 headDeltaPosition;
-
 		private Vector3 raycastOriginPelvis;
 
 		private Vector3 lastOffset;
-
-		private Vector3 debugPos1;
-
-		private Vector3 debugPos2;
-
-		private Vector3 debugPos3;
-
-		private Vector3 debugPos4;
 
 		[HideInInspector]
 		public VirtualBone rootBone { get; private set; }

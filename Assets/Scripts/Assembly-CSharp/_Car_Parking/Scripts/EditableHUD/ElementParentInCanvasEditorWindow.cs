@@ -12,16 +12,13 @@ namespace _Car_Parking.Scripts.EditableHUD
 		public Action<ElementParentInCanvasEditorWindow, bool> OnSelectUpdated;
 
 		[SerializeField]
-		private CanvasGroup CanvasGroup;
+		private Transform MainRoot = default;
 
 		[SerializeField]
-		private Transform MainRoot;
+		private DragUIController DragUIController = default;
 
 		[SerializeField]
-		private DragUIController DragUIController;
-
-		[SerializeField]
-		private Transform EditorRoot;
+		private Transform EditorRoot = default;
 
 		protected override Transform ElementsParent => MainRoot;
 

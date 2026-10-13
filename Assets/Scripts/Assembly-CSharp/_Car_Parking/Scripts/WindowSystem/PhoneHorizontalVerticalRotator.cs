@@ -20,10 +20,10 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private static readonly Vector3[] Corners = new Vector3[4];
 
 		[SerializeField]
-		private RectTransform Root;
+		private RectTransform Root = default;
 
 		[SerializeField]
-		private RectTransform Target;
+		private RectTransform Target = default;
 
 		[SerializeField]
 		[FormerlySerializedAs("HorizontalRotation")]
@@ -38,15 +38,15 @@ namespace _Car_Parking.Scripts.WindowSystem
 		[SerializeField]
 		[Tooltip("Faded to zero alpha along with the rotation.")]
 		[Header("Elements")]
-		private CanvasGroup[] FadeOutGroups;
+		private CanvasGroup[] FadeOutGroups = default;
 
 		[Tooltip("Disabled as soon as the rotation starts.")]
 		[SerializeField]
-		private GameObject[] HideOnStart;
+		private GameObject[] HideOnStart = default;
 
 		[Tooltip("Enabled as soon as the rotation starts: input blockers and horizontal-only content.")]
 		[SerializeField]
-		private GameObject[] ShowOnStart;
+		private GameObject[] ShowOnStart = default;
 
 		private RectTransform _parent;
 

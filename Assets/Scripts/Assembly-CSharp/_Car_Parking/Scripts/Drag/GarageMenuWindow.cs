@@ -41,78 +41,54 @@ namespace _Car_Parking.Scripts.Drag
 		public Button newCarsButton;
 
 		[SerializeField]
-		private Button ButtonInterior;
-
-		[SerializeField]
-		private TMP_Text InteriorButtonText;
+		private Button ButtonInterior = default;
 
 		public Button RideCarButton;
 
 		[SerializeField]
-		private OccupiedCarSlotsUI OccupiedCarSlotsUI;
+		private OccupiedCarSlotsUI OccupiedCarSlotsUI = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CarTitleText;
+		private Slider HorsePowerSlider = default;
 
 		[SerializeField]
-		private Slider HorsePowerSlider;
+		private Slider TorqueSlider = default;
 
 		[SerializeField]
-		private TextMeshProUGUI HorsePowerSliderValueText;
+		private Slider WeightSlider = default;
 
 		[SerializeField]
-		private Slider TorqueSlider;
+		private Slider GearsSlider = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TorqueValueText;
+		private float GearsMaxValue = default;
 
 		[SerializeField]
-		private Slider WeightSlider;
+		private float WeightMaxValue = default;
 
 		[SerializeField]
-		private TextMeshProUGUI WeightValueText;
+		private float TorqueMaxValue = default;
 
 		[SerializeField]
-		private Slider GearsSlider;
+		private float HpMaxValue = default;
 
 		[SerializeField]
-		private TextMeshProUGUI GearsValueText;
+		private ScrollRect ScrollRect = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MilliageText;
+		private RectTransform ContentPanel = default;
 
 		[SerializeField]
-		private float GearsMaxValue;
+		private Button WalkButton = default;
 
 		[SerializeField]
-		private float WeightMaxValue;
+		private CanvasGroup SettingsCanvasGroup = default;
 
 		[SerializeField]
-		private float TorqueMaxValue;
+		private CanvasGroup PoliceCanvasGroup = default;
 
 		[SerializeField]
-		private float HpMaxValue;
-
-		[SerializeField]
-		private CanvasGroup CanvasGroup;
-
-		[SerializeField]
-		private ScrollRect ScrollRect;
-
-		[SerializeField]
-		private RectTransform ContentPanel;
-
-		[SerializeField]
-		private Button WalkButton;
-
-		[SerializeField]
-		private CanvasGroup SettingsCanvasGroup;
-
-		[SerializeField]
-		private CanvasGroup PoliceCanvasGroup;
-
-		[SerializeField]
-		private CanvasGroup ManageSlotsCanvasGroup;
+		private CanvasGroup ManageSlotsCanvasGroup = default;
 
 		private CoreGameManager _coreGameManager;
 
@@ -122,9 +98,7 @@ namespace _Car_Parking.Scripts.Drag
 
 		private GarageController _garageController;
 
-		private Action<GameObject, VehicleData> _updateSpecTextOnCarEnter;
-
-		private Tween _tween;
+		private Action<GameObject, VehicleData> _updateSpecTextOnCarEnter = default;
 
 		private ITimerTuningService _timerTuningService;
 
@@ -344,7 +318,7 @@ namespace _Car_Parking.Scripts.Drag
 		public async void DeleteCar(int slotId)
 		{
 			CarSlot slot = _slotService.GetSlot(slotId);
-			_carsService.DeleteCarFull(slot);
+			_ = _carsService.DeleteCarFull(slot);
 			if (_slotService.OccupiedSlotCount > 0)
 			{
 				ShowUI(state: true);
@@ -352,7 +326,7 @@ namespace _Car_Parking.Scripts.Drag
 			}
 			await Task.Delay(10);
 			_managerUI.ShowMainMenuWindow();
-			_freeDriverService.SetupFreeDriver();
+			_ = _freeDriverService.SetupFreeDriver();
 		}
 
 		private void OnFreeWalk()

@@ -11,10 +11,10 @@ namespace _Car_Parking.Scripts.WindowSystem
 		public const string WindowId = "List";
 
 		[SerializeField]
-		private ActivityListItem ItemPrefab;
+		private ActivityListItem ItemPrefab = default;
 
 		[SerializeField]
-		private Transform Content;
+		private Transform Content = default;
 
 		private IReadOnlyList<GameActivityEntry> _entries;
 

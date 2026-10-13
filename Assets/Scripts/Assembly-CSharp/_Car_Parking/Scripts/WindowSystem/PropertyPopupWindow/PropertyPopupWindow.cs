@@ -17,28 +17,28 @@ namespace _Car_Parking.Scripts.WindowSystem.PropertyPopupWindow
 	public abstract class PropertyPopupWindow : WindowScript
 	{
 		[SerializeField]
-		private RectTransform TableRootTransform;
+		private RectTransform TableRootTransform = default;
 
 		[SerializeField]
-		private Transform MainInformationContainer;
+		private Transform MainInformationContainer = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NameText;
+		private TextMeshProUGUI NameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LocationText;
+		private TextMeshProUGUI LocationText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CostText;
+		private TextMeshProUGUI CostText = default;
 
 		[SerializeField]
-		private Image CostImage;
+		private Image CostImage = default;
 
 		[SerializeField]
-		private RealCurrencyView RealMoneyCostView;
+		private RealCurrencyView RealMoneyCostView = default;
 
 		[SerializeField]
-		private Image PropertyTypeImage;
+		private Image PropertyTypeImage = default;
 
 		private PriceStyleConfig _priceStyleConfig;
 

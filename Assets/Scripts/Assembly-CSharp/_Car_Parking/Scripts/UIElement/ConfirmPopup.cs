@@ -9,13 +9,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ConfirmPopup : MonoBehaviour
 	{
 		[SerializeField]
-		private Button ConfirmButton;
+		private Button ConfirmButton = default;
 
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		[SerializeField]
-		private RectTransform Root;
+		private RectTransform Root = default;
 
 		public event Action<ConfirmPopup> Confirmed;
 

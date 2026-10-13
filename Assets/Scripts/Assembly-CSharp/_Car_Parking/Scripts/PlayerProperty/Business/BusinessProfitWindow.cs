@@ -17,28 +17,28 @@ namespace _Car_Parking.Scripts.PlayerProperty.Business
 	public class BusinessProfitWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Image TypeMiniIcon;
+		private Image TypeMiniIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NameText;
+		private TextMeshProUGUI NameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LocationText;
+		private TextMeshProUGUI LocationText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI[] CurrentIncomeTexts;
+		private TextMeshProUGUI[] CurrentIncomeTexts = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MaxIncomeText;
+		private TextMeshProUGUI MaxIncomeText = default;
 
 		[SerializeField]
-		private RectTransform MainInformationContainer;
+		private RectTransform MainInformationContainer = default;
 
 		[SerializeField]
-		private Button CollectButton;
+		private Button CollectButton = default;
 
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		private GlobalCollectionsProvider _collectionsProvider;
 

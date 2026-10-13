@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ObstacleRaceSpectatorListView : MonoBehaviour
 	{
 		[SerializeField]
-		private RectTransform Content;
+		private RectTransform Content = default;
 
 		[SerializeField]
-		private ObstacleRaceSpectatorRow RowPrefab;
+		private ObstacleRaceSpectatorRow RowPrefab = default;
 
 		private readonly List<ObstacleRaceSpectatorRow> _rows = new List<ObstacleRaceSpectatorRow>();
 

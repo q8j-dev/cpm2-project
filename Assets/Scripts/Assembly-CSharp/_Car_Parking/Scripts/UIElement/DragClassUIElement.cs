@@ -9,36 +9,34 @@ namespace _Car_Parking.Scripts.UIElement
 	public class DragClassUIElement : MonoBehaviour
 	{
 		[SerializeField]
-		private Button ClassButton;
+		private Button ClassButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI[] ToChangeColorTexts;
+		private TextMeshProUGUI[] ToChangeColorTexts = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FirstPacesCount;
+		private TextMeshProUGUI FirstPacesCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SecondPacesCount;
+		private TextMeshProUGUI SecondPacesCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ThirdPacesCount;
+		private TextMeshProUGUI ThirdPacesCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BestTime;
+		private TextMeshProUGUI BestTime = default;
 
 		[SerializeField]
-		private GameObject BestTimeObject;
+		private GameObject BestTimeObject = default;
 
 		[SerializeField]
-		private GameObject LockObject;
+		private GameObject LockObject = default;
 
 		[SerializeField]
-		private GameObject WinStatisticObject;
+		private GameObject WinStatisticObject = default;
 
 		[SerializeField]
-		private Color DefaultColorOfTitle;
-
-		private int _classTime;
+		private Color DefaultColorOfTitle = default;
 
 		public Action OnStartButtonClicked { get; set; }
 

@@ -13,13 +13,13 @@ namespace _Car_Parking.Scripts.MenuUI.LocalizationUI
 		private TextMeshProUGUI _textMesh;
 
 		[SerializeField]
-		private bool UseStyle;
+		private bool UseStyle = default;
 
 		[SerializeField]
-		private bool SetSizeFitterMaxSize;
+		private bool SetSizeFitterMaxSize = default;
 
 		[SerializeField]
-		private ContentSizeFitter SizeFitter;
+		private ContentSizeFitter SizeFitter = default;
 
 		[SerializeField]
 		private float MaxSize = 100f;

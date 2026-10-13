@@ -12,43 +12,43 @@ using _Car_Parking.Scripts.Localization;
 public class DefaultEngineInventoryUIElement : UIElement
 {
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MilliageText;
+	private TextMeshProUGUI MilliageText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MilliageTitleText;
+	private TextMeshProUGUI MilliageTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MassText;
+	private TextMeshProUGUI MassText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PriceText;
+	private TextMeshProUGUI PriceText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MaxTorqueText;
+	private TextMeshProUGUI MaxTorqueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CompatibleText;
+	private TextMeshProUGUI CompatibleText = default;
 
 	[SerializeField]
-	private CanvasGroup CanvasGroup;
+	private CanvasGroup CanvasGroup = default;
 
 	[SerializeField]
-	private Toggle SelectButton;
+	private Toggle SelectButton = default;
 
 	[SerializeField]
-	private Image StatusEngine;
+	private Image StatusEngine = default;
 
 	[SerializeField]
-	private Image StatusPlate;
+	private Image StatusPlate = default;
 
 	[SerializeField]
-	private Image ItemImagePanel;
+	private Image ItemImagePanel = default;
 
 	[SerializeField]
-	private Image CompanyImage;
+	private Image CompanyImage = default;
 
 	private DefaultEngineMarketWindow _defaultEngineMarketWindow;
 
@@ -57,8 +57,6 @@ public class DefaultEngineInventoryUIElement : UIElement
 	private EngineKitOffer _offer;
 
 	private EngineKitData _engineKitData;
-
-	private EngineInstance _engineInstance;
 
 	private bool _isCompatible;
 

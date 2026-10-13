@@ -11,27 +11,25 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class CircuitRacePauseWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button BackToMainButton;
+		private Button BackToMainButton = default;
 
 		[SerializeField]
-		private Button PickATrackButton;
+		private Button PickATrackButton = default;
 
 		[SerializeField]
-		private Button RestartButton;
+		private Button RestartButton = default;
 
 		[SerializeField]
-		private Button SettingsButton;
+		private Button SettingsButton = default;
 
 		private CircuitRaceControlller _circuitRaceControlller;
 
 		private CircuitRacingUIControl _circuitRacingUI;
 
 		private RaceModeController _raceModeController;
-
-		private LevelScript _levelScript;
 
 		protected override InputGroupsEnum WindowInputGroup => InputGroupsEnum.Ui;
 

@@ -13,28 +13,16 @@ namespace _Car_Parking.Scripts.Drag
 		private PartData _partData;
 
 		[SerializeField]
-		private Image hintImage;
+		private TextMeshProUGUI detailNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI detailNameText;
+		private TextMeshProUGUI massText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI massText;
+		private TextMeshProUGUI priceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI priceText;
-
-		[SerializeField]
-		private TextMeshProUGUI milliageText;
-
-		[SerializeField]
-		private TextMeshProUGUI reliabilityText;
-
-		[SerializeField]
-		private Sprite[] hintStateSprites;
-
-		[SerializeField]
-		private TextMeshProUGUI hintText;
+		private TextMeshProUGUI milliageText = default;
 
 		public PartType PartType;
 

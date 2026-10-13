@@ -72,7 +72,7 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViews
 		protected RectTransformInCanvasSpace RectTransformInCanvasSpace;
 
 		[SerializeField]
-		private ScrollViewConfig ScrollViewConfig;
+		private ScrollViewConfig ScrollViewConfig = default;
 
 		[SerializeField]
 		private RectTransform TopTransform;

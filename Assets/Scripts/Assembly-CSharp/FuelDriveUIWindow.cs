@@ -27,64 +27,58 @@ public class FuelDriveUIWindow : WindowScript, IBackableWindow, IPointerDownHand
 	private const float TimeLoadKof = 0.05f;
 
 	[SerializeField]
-	private FuelTankGadget FuelTankGadget;
+	private FuelTankGadget FuelTankGadget = default;
 
 	[SerializeField]
-	private GameObject MainPanel;
+	private GameObject MainPanel = default;
 
 	[SerializeField]
-	private GameObject ConfirmationPanel;
+	private GameObject ConfirmationPanel = default;
 
 	[SerializeField]
-	private GameObject LoadingPanel;
+	private GameObject LoadingPanel = default;
 
 	[SerializeField]
-	private GameObject FuelPanel;
+	private GameObject FuelPanel = default;
 
 	[SerializeField]
-	private Button BuyFuelButton;
+	private Button BuyFuelButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI FullFuelPriceText;
+	private TextMeshProUGUI FullFuelPriceText = default;
 
 	[SerializeField]
-	private Button WatchAdButton;
+	private Button WatchAdButton = default;
 
 	[SerializeField]
-	private GameObject WatchAdPanel;
+	private GameObject WatchAdPanel = default;
 
 	[SerializeField]
-	private CanvasGroup WatchAdCanvasGroup;
+	private CanvasGroup WatchAdCanvasGroup = default;
 
 	[SerializeField]
-	private TMP_Text WatchAdCooldownLabel;
+	private TMP_Text WatchAdCooldownLabel = default;
 
 	[SerializeField]
-	private Button ConfirmButton;
+	private Button CancelButton = default;
 
 	[SerializeField]
-	private Button CancelButton;
+	private Button CancelAdButton = default;
 
 	[SerializeField]
-	private Button CancelAdButton;
+	private Button CloseButton = default;
 
 	[SerializeField]
-	private Button CloseButton;
-
-	[SerializeField]
-	private Image ProgressImage;
-
-	[SerializeField]
-	private Transform WheelImage;
+	private Image ProgressImage = default;
 
 	[SerializeField]
 	private float Duration = 1.5f;
 
 	[SerializeField]
-	private GameObject RewardedLoading;
+	private GameObject RewardedLoading = default;
 
 	[SerializeField]
-	private GameObject HideWhenLoadingRewarded;
+	private GameObject HideWhenLoadingRewarded = default;
 
 	private const int DelayStep = 10;
 

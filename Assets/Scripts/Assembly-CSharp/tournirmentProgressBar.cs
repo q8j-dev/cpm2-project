@@ -13,8 +13,6 @@ public class tournirmentProgressBar : MonoBehaviour
 
 	public Transform[] labels;
 
-	private int size;
-
 	public float sizeMultiply;
 
 	public float sizeMultiplyLocal;
@@ -22,8 +20,6 @@ public class tournirmentProgressBar : MonoBehaviour
 	public int range;
 
 	public Color highlited = Color.yellow;
-
-	private Color firstColor;
 
 	private DragRacingController _dragRacingController;
 

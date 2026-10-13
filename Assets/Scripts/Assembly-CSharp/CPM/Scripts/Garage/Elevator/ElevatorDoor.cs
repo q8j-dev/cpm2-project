@@ -10,37 +10,37 @@ namespace CPM.Scripts.Garage.Elevator
 		public int DoorId;
 
 		[SerializeField]
-		private Elevator Elevator;
+		private Elevator Elevator = default;
 
 		[SerializeField]
 		[Space]
 		private float DoorOpenTime = 1f;
 
 		[SerializeField]
-		private bool UsePosOnOpen;
+		private bool UsePosOnOpen = default;
 
 		[SerializeField]
-		private bool UseRotOnOpen;
+		private bool UseRotOnOpen = default;
 
 		[Space]
 		[SerializeField]
-		private Transform LeftDoor;
+		private Transform LeftDoor = default;
 
 		[SerializeField]
-		private Vector3 LeftDoorOpenPos;
+		private Vector3 LeftDoorOpenPos = default;
 
 		[SerializeField]
-		private Vector3 LeftDoorOpenRot;
+		private Vector3 LeftDoorOpenRot = default;
 
 		[SerializeField]
 		[Space]
-		private Transform RightDoor;
+		private Transform RightDoor = default;
 
 		[SerializeField]
-		private Vector3 RightDoorOpenPos;
+		private Vector3 RightDoorOpenPos = default;
 
 		[SerializeField]
-		private Vector3 RightDoorOpenRot;
+		private Vector3 RightDoorOpenRot = default;
 
 		private Vector3 _leftDoorClosedPos;
 

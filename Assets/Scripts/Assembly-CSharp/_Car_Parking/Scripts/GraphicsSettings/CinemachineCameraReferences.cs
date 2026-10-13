@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.GraphicsSettings
 	public class CinemachineCameraReferences : MonoBehaviour
 	{
 		[SerializeField]
-		private CinemachineVirtualCamera[] VirtualCameras;
+		private CinemachineVirtualCamera[] VirtualCameras = default;
 
 		[SerializeField]
-		private CinemachineFreeLook[] FreeLooks;
+		private CinemachineFreeLook[] FreeLooks = default;
 
 		private void Start()
 		{

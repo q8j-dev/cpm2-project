@@ -18,37 +18,37 @@ namespace _Car_Parking.Scripts.Offers
 		protected RawImageLoadAsync RawImageLoadAsync;
 
 		[SerializeField]
-		private Image BG;
+		private Image BG = default;
 
 		[SerializeField]
-		private Sprite[] BGSprites;
+		private Sprite[] BGSprites = default;
 
 		[SerializeField]
-		private TMP_Text Title;
+		private TMP_Text Title = default;
 
 		[SerializeField]
-		private TMP_Text Discount;
+		private TMP_Text Discount = default;
 
 		[SerializeField]
-		private GameObject DiscountRoot;
+		private GameObject DiscountRoot = default;
 
 		[SerializeField]
-		private TMP_Text Time;
+		private TMP_Text Time = default;
 
 		[SerializeField]
-		private GameObject TimeRoot;
+		private GameObject TimeRoot = default;
 
 		[SerializeField]
-		private Text OldPrice;
+		private Text OldPrice = default;
 
 		[SerializeField]
-		private CrossedLine OldPriceLine;
+		private CrossedLine OldPriceLine = default;
 
 		[SerializeField]
-		private GameObject OldPriceRoot;
+		private GameObject OldPriceRoot = default;
 
 		[SerializeField]
-		private Text CurrentPrice;
+		private Text CurrentPrice = default;
 
 		private IPurchaseSystem _purchaseSystem;
 

@@ -29,8 +29,6 @@ namespace RootMotion.Demos
 
 		private float deltaAngle;
 
-		private float jumpLeg;
-
 		private bool lastJump;
 
 		public override bool animationGrounded

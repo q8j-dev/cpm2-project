@@ -36,7 +36,7 @@ namespace _Car_Parking.Scripts.Other.Helpers
 				ConfirmWindow.AdditionalData additionalData = new ConfirmWindow.AdditionalData(new CombinedPrice(VehicleSlotPaymentService.Price, 0));
 				additionalData.SetBackground = true;
 				additionalData.Background = new Color(0f, 0f, 0f, 0.85f);
-				V.CoreGameManager.ManagerUI.ShowConfirmWindow(() =>
+				_ = V.CoreGameManager.ManagerUI.ShowConfirmWindow(() =>
 				{
 					waitingToBuySlot = false;
 					tryBuySlot = true;

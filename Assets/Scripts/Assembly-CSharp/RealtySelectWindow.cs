@@ -12,7 +12,7 @@ public class RealtySelectWindow : WindowScript
 	private List<RealtyPlaceUIItem> RealtyPlaceUIItems = new List<RealtyPlaceUIItem>();
 
 	[SerializeField]
-	private GameObject GarageBacklight;
+	private GameObject GarageBacklight = default;
 
 	private ISlotService _slotService;
 

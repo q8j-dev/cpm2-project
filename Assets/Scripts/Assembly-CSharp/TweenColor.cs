@@ -12,7 +12,7 @@ public class TweenColor : MonoBehaviour
 	private Material mMat;
 
 	[SerializeField]
-	private float duration;
+	private float duration = default;
 
 	private Tween _tween;
 

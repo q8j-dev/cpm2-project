@@ -12,7 +12,7 @@ namespace _Car_Parking.Scripts.SignBehaviour
 		private const string FireHydrantEvent = "Play_Fire_Hydrant";
 
 		[SerializeField]
-		private ParticleSystem WaterParticleSystem;
+		private ParticleSystem WaterParticleSystem = default;
 
 		private SignHandler _signHandler;
 

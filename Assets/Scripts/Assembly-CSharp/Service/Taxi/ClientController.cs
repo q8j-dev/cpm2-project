@@ -19,9 +19,6 @@ namespace Service.Taxi
 		[SerializeField]
 		private Animator animator;
 
-		[SerializeField]
-		private AudioClip clip;
-
 		private Queue<CancellationTokenSource> tokens = new Queue<CancellationTokenSource>();
 
 		private CancellationTokenSource shashkaToken = new CancellationTokenSource();
@@ -162,7 +159,7 @@ namespace Service.Taxi
 			SetLegAnimationFrozen(state == CLIENT_STATE.SIT_IN);
 			if (state != CLIENT_STATE.NONE)
 			{
-				LookAt(car.transform, state);
+				_ = LookAt(car.transform, state);
 			}
 			PhotonView photonView = PhotonView.Get(Global.TaskManager);
 			while (V.DriverPerson == null)

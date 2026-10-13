@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class LevelCategoryItem : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI Title;
+	private TextMeshProUGUI Title = default;
 
 	[SerializeField]
-	private Image BorderLine;
+	private Image BorderLine = default;
 
 	[SerializeField]
-	private CanvasGroup CanvasGroup;
+	private CanvasGroup CanvasGroup = default;
 
 	private Button _button;
 

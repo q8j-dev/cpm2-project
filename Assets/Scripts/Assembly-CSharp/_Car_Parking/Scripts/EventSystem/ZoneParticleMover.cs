@@ -9,15 +9,11 @@ namespace _Car_Parking.Scripts.EventSystem
 	public class ZoneParticleMover : MonoBehaviour
 	{
 		[SerializeField]
-		private ParticleSystem ParticleSystem;
+		private ParticleSystem ParticleSystem = default;
 
 		private const float MoveTimer = 0.1f;
 
 		private Transform _cameraTransform;
-
-		private Transform _child;
-
-		private int _triggerCount;
 
 		private TimedActivityZoneController _timedActivityZoneController;
 

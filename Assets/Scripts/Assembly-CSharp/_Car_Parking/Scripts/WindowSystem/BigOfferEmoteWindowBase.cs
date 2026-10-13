@@ -15,16 +15,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public abstract class BigOfferEmoteWindowBase : BigOfferWindowBase
 	{
 		[SerializeField]
-		private TextMeshProUGUI TitleText;
+		private TextMeshProUGUI TitleText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DescriptionText;
+		private TextMeshProUGUI DescriptionText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ShopButtonCaptionText;
+		private TextMeshProUGUI ShopButtonCaptionText = default;
 
 		[SerializeField]
-		private Image PreviewImage;
+		private Image PreviewImage = default;
 
 		private AnimationShopOpenRequest _animationShopOpenRequest;
 

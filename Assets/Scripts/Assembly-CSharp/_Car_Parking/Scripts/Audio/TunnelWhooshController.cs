@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Audio
 	public class TunnelWhooshController : MonoBehaviour
 	{
 		[SerializeField]
-		private List<IgnoreWhooshSoundController> IgnoreWhooshSoundsControllers;
+		private List<IgnoreWhooshSoundController> IgnoreWhooshSoundsControllers = default;
 
 		private const string ObjectsTagToPlayWhoosh = "MainCamera";
 

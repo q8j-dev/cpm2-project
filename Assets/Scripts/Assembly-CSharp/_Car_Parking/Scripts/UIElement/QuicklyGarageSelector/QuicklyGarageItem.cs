@@ -16,25 +16,25 @@ namespace _Car_Parking.Scripts.UIElement.QuicklyGarageSelector
 	public class QuicklyGarageItem : PlaceUIItem<GaragePositionsConfig, GarageData>
 	{
 		[SerializeField]
-		private RawImageLoadAsync MainImage;
+		private RawImageLoadAsync MainImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI GarageNameText;
+		private TextMeshProUGUI GarageNameText = default;
 
 		[SerializeField]
-		private RealCurrencyView GaragePriceView;
+		private RealCurrencyView GaragePriceView = default;
 
 		[SerializeField]
-		private Image SelectFrame;
+		private Image SelectFrame = default;
 
 		[SerializeField]
-		private GameObject BlockPanel;
+		private GameObject BlockPanel = default;
 
 		[SerializeField]
-		private GameObject NamePanel;
+		private GameObject NamePanel = default;
 
 		[SerializeField]
-		private GameObject SelectedIcon;
+		private GameObject SelectedIcon = default;
 
 		private Button _button;
 

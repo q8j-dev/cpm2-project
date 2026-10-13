@@ -8,8 +8,6 @@ using _Car_Parking.Scripts.Providers;
 
 public class TrailerTrigger : MonoBehaviour
 {
-	private LevelScript _levelScript;
-
 	private LevelsProvider _levelsProvider;
 
 	[Inject]

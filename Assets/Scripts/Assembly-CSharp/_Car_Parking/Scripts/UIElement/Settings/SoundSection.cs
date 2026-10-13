@@ -6,25 +6,25 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	public class SoundSection : SettingsSectionBase
 	{
 		[SerializeField]
-		private SliderValueHandler SoundVolume;
+		private SliderValueHandler SoundVolume = default;
 
 		[SerializeField]
-		private SliderValueHandler AmbienceVolume;
+		private SliderValueHandler AmbienceVolume = default;
 
 		[SerializeField]
-		private SliderValueHandler CarVolume;
+		private SliderValueHandler CarVolume = default;
 
 		[SerializeField]
-		private SliderValueHandler SfxVolume;
+		private SliderValueHandler SfxVolume = default;
 
 		[SerializeField]
-		private SliderValueHandler TiresVolume;
+		private SliderValueHandler TiresVolume = default;
 
 		[SerializeField]
-		private SliderValueHandler UIVolume;
+		private SliderValueHandler UIVolume = default;
 
 		[SerializeField]
-		private SliderValueHandler MusicVolume;
+		private SliderValueHandler MusicVolume = default;
 
 		private void Start()
 		{

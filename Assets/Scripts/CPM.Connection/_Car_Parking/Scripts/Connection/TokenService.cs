@@ -12,7 +12,7 @@ namespace _Car_Parking.Scripts.Connection
 		private class LoadTokenResponse
 		{
 			[JsonProperty("token")]
-			public string Token;
+			public string Token = default;
 
 			[UnityEngine.Scripting.Preserve]
 			public LoadTokenResponse()

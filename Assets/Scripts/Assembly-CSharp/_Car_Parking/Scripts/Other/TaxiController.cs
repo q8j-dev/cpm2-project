@@ -21,8 +21,6 @@ namespace _Car_Parking.Scripts.Other
 
 		private List<Transform> startPointList;
 
-		private List<Transform> finishPointList;
-
 		[HideInInspector]
 		public GameObject createdTaxiZone;
 

@@ -13,19 +13,19 @@ namespace _Car_Parking.Scripts.WindowSystem.ProgressWindows
 	public class ProgressWindow : WindowScript
 	{
 		[SerializeField]
-		private Slider ProgressSlider;
+		private Slider ProgressSlider = default;
 
 		[SerializeField]
-		private Transform WheelImage;
+		private Transform WheelImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ProgressNameText;
+		private TextMeshProUGUI ProgressNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ProgressValueText;
+		private TextMeshProUGUI ProgressValueText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ProgressStatusText;
+		private TextMeshProUGUI ProgressStatusText = default;
 
 		[SerializeField]
 		private float Duration = 1.5f;

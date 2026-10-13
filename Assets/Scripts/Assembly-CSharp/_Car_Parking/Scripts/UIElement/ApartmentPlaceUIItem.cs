@@ -12,31 +12,31 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ApartmentPlaceUIItem : PlaceUIItem<HomesConfig, HomesConfig.HomeDataItem>
 	{
 		[SerializeField]
-		private TextMeshProUGUI PriceText;
+		private TextMeshProUGUI PriceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LocationNameText;
+		private TextMeshProUGUI LocationNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NameText;
+		private TextMeshProUGUI NameText = default;
 
 		[SerializeField]
-		private GameObject BlockObject;
+		private GameObject BlockObject = default;
 
 		[SerializeField]
-		private Image MoneyFrame;
+		private Image MoneyFrame = default;
 
 		[SerializeField]
-		private Image MoneyImage;
+		private Image MoneyImage = default;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private RawImageLoadAsync MainImage;
+		private RawImageLoadAsync MainImage = default;
 
 		[SerializeField]
-		private Image SelectedItemPlace;
+		private Image SelectedItemPlace = default;
 
 		private PriceStyleConfig _priceStyleConfig;
 

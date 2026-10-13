@@ -55,7 +55,7 @@ namespace _Car_Parking.Scripts.Steam.UI
 		}
 
 		[SerializeField]
-		private GameObject[] _toHide;
+		private GameObject[] _toHide = default;
 
 		[Tooltip("Подсказки ввода держат свой CanvasGroup с ignoreParentGroups, поэтому их гасим общим сигналом CleanUI. Подсказка, которая должна остаться, помечается IgnoreCleanUi.")]
 		[SerializeField]
@@ -63,7 +63,7 @@ namespace _Car_Parking.Scripts.Steam.UI
 
 		[Tooltip("Запасная ссылка на случай, если на сцене нет автоматической инъекции.")]
 		[SerializeField]
-		private InputMapSetEvent _inputMapSetEventAsset;
+		private InputMapSetEvent _inputMapSetEventAsset = default;
 
 		private readonly List<HiddenTarget> _hidden = new List<HiddenTarget>();
 

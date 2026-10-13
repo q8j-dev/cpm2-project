@@ -8,37 +8,28 @@ using _Car_Parking.Scripts.Wallet.PurchaseItemProviders;
 public class IGMShopWindow : MarketPurchaseWindow
 {
 	[SerializeField]
-	private Image hintImage;
+	private Button PriceFor200k = default;
 
 	[SerializeField]
-	private Button PriceFor200k;
+	private Button PriceFor500k = default;
 
 	[SerializeField]
-	private Button PriceFor500k;
+	private Button PriceFor1000k = default;
 
 	[SerializeField]
-	private Button PriceFor1000k;
+	private Button PriceFor5000k = default;
 
 	[SerializeField]
-	private Button PriceFor5000k;
+	private Text Text200k = default;
 
 	[SerializeField]
-	private Button closeButton;
+	private Text Text500k = default;
 
 	[SerializeField]
-	private Button hiddenCloseButton;
+	private Text Text1000k = default;
 
 	[SerializeField]
-	private Text Text200k;
-
-	[SerializeField]
-	private Text Text500k;
-
-	[SerializeField]
-	private Text Text1000k;
-
-	[SerializeField]
-	private Text Text5000k;
+	private Text Text5000k = default;
 
 	private IPurchaseSystem _purchaseSystem;
 

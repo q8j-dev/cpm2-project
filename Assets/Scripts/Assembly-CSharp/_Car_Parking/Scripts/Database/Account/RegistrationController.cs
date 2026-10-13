@@ -103,7 +103,7 @@ namespace _Car_Parking.Scripts.Database.Account
 		{
 			if (!InternetHelper.HasInternetConnection())
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
 				return (SignUpResult.NoInternet, false);
 			}
 			_connectionManager.CorrectHash.Get(out var value);
@@ -122,7 +122,7 @@ namespace _Car_Parking.Scripts.Database.Account
 			}
 			if (!value)
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.DownloadLatestVersionOfTheGame"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.DownloadLatestVersionOfTheGame"), success: false);
 				return (SignUpResult.DownloadLatestVersion, false);
 			}
 			if (ScenesHelper.IsNotificationActive())
@@ -180,7 +180,7 @@ namespace _Car_Parking.Scripts.Database.Account
 				_playerStorageService.Save();
 				if ((isCreateNewAccount || ScenesHelper.IsNotificationActive()) & resultSaveData)
 				{
-					_progressContainer.EndAfterDelay(new LocalizedString("DataBase.Complete"));
+					_ = _progressContainer.EndAfterDelay(new LocalizedString("DataBase.Complete"));
 					resumeNeeded = false;
 					_bootStartData.LoadingType = BootStartLoadingType.RegistrationSignUp;
 					SceneManager.LoadScene(0);
@@ -189,7 +189,7 @@ namespace _Car_Parking.Scripts.Database.Account
 				{
 					_connectionDataHandler.ProcessUserConnectionData(UserConnectionData.Default);
 					await _balanceDocumentSynchronizer.EnsureFreshAsync(CancellationToken.None);
-					_progressContainer.EndAfterDelay(new LocalizedString("DataBase.Complete"));
+					_ = _progressContainer.EndAfterDelay(new LocalizedString("DataBase.Complete"));
 					_gameDataRepository.ExecuteAsync(GameDataRepositoryDataType.Part).Forget();
 				}
 				return (result.result, resultSaveData);
@@ -209,7 +209,7 @@ namespace _Car_Parking.Scripts.Database.Account
 			password = password.Replace("\u200b", "");
 			if (!InternetHelper.HasInternetConnection())
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
 				return false;
 			}
 			if (ScenesHelper.IsNotificationActive())
@@ -259,7 +259,7 @@ namespace _Car_Parking.Scripts.Database.Account
 				else
 				{
 					LoginInProgressContainer.PendingFullBootstrap = false;
-					_progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.CanTSignInWithThisEmailAndPass"), success: false);
+					_ = _progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.CanTSignInWithThisEmailAndPass"), success: false);
 					_profileAnalytic.LogLogin(LoginStatus.LOGIN_FAILED, email);
 				}
 				return signedIn;
@@ -286,12 +286,12 @@ namespace _Car_Parking.Scripts.Database.Account
 		{
 			if (!InternetHelper.HasInternetConnection())
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
 				return false;
 			}
 			if (!SteamManager.IsInitialized())
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString("SteamError.SteamUnavailable"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString("SteamError.SteamUnavailable"), success: false);
 				return false;
 			}
 			if (!(await TrySaveRecords()))
@@ -322,7 +322,7 @@ namespace _Car_Parking.Scripts.Database.Account
 			}
 			else
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString((steamSignInOutcome == SteamSignInOutcome.SteamUnavailable) ? "SteamError.SteamUnavailable" : "Steamauthorization.NoAccountLinkedWasFound"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString((steamSignInOutcome == SteamSignInOutcome.SteamUnavailable) ? "SteamError.SteamUnavailable" : "Steamauthorization.NoAccountLinkedWasFound"), success: false);
 				_profileAnalytic.LogLogin(LoginStatus.LOGIN_FAILED, _accountController.Email, "steam");
 			}
 			return signedIn;
@@ -332,7 +332,7 @@ namespace _Car_Parking.Scripts.Database.Account
 		{
 			if (!InternetHelper.HasInternetConnection())
 			{
-				_progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
+				_ = _progressContainer.EndAfterDelay(new LocalizedString("RegistrationController.NoInternetConnection"), success: false);
 				return;
 			}
 			await _dataBase.SendAllRecords();

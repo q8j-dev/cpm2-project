@@ -25,8 +25,6 @@ namespace _Car_Parking.Scripts.EngineTuning
 
 		private IDatabaseCarsService _databaseCarsService;
 
-		private bool _allPartsWasUpdated;
-
 		private bool _engineMissingLogged;
 
 		private static readonly Dictionary<int, VehicleStockTuningData> _defaultConfigCache = new Dictionary<int, VehicleStockTuningData>();

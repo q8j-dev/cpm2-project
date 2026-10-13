@@ -56,7 +56,7 @@ public class PersonHeadMove : MonoBehaviour
 	{
 		ik = driverActionController.ik;
 		_token = new CancellationTokenSource();
-		AddIkHead(_token);
+		_ = AddIkHead(_token);
 		_fpsDisplay = V.CoreGameManager.gameObject.GetComponent<FPSDisplay2>();
 	}
 

@@ -603,7 +603,7 @@ namespace CPM.Database
 				Debug.LogError(ex);
 				_ = ex.ExceptionCode;
 				string text = string.Concat(new LocalizedString("DataBase.Somethingiswrongsendtodevs"), ":", ex.ExceptionCode.ToString());
-				_managerUI.ShowNotificationWindow(text, 5f, NotificationType.Error);
+				_ = _managerUI.ShowNotificationWindow(text, 5f, NotificationType.Error);
 				_accountController.SignOut();
 				return;
 			}
@@ -611,7 +611,7 @@ namespace CPM.Database
 			{
 				Debug.LogError(message);
 				LocalizedString localizedString = new LocalizedString("DataBase.ErrorWhileLoadingCarsTryAgainL");
-				_managerUI.ShowNotificationWindow(localizedString, 5f, NotificationType.Error);
+				_ = _managerUI.ShowNotificationWindow(localizedString, 5f, NotificationType.Error);
 				_accountController.SignOut();
 				return;
 			}

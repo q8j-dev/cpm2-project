@@ -13,16 +13,16 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class RallyOffroadBannerView : EventView, IBigBannerView
 	{
 		[SerializeField]
-		private string BackgroundImagePath;
+		private string BackgroundImagePath = default;
 
 		[SerializeField]
 		protected RawImageLoadAsync RawImageLoadAsync;
 
 		[SerializeField]
-		private UICupElement[] CupElements;
+		private UICupElement[] CupElements = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		private bool _isDestroyed;
 
@@ -43,7 +43,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 		{
 			base.Init(@event);
 			RawImageLoadAsync.LoadFromSDN(BackgroundImagePath);
-			UIInitialize();
+			_ = UIInitialize();
 			SetupBanner().Forget();
 		}
 

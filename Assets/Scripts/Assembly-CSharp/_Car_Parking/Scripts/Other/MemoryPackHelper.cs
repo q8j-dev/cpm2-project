@@ -1,3 +1,4 @@
+#nullable enable annotations
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,6 +9,7 @@ using MemoryPack;
 using Newtonsoft.Json;
 using UnityEngine;
 using _Car_Parking.Scripts.Backend;
+using CompressionLevel = System.IO.Compression.CompressionLevel;
 
 namespace _Car_Parking.Scripts.Other
 {

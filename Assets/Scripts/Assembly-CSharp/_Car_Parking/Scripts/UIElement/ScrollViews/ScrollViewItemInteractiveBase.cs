@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViews
 		public Action<ScrollViewItemInteractiveBase, bool> OnSelectChangedEvent;
 
 		[SerializeField]
-		private RectTransform RectTransformSelf;
+		private RectTransform RectTransformSelf = default;
 
 		protected ScrollViewBase _scrollView;
 

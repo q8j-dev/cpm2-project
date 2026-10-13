@@ -43,7 +43,7 @@ namespace Racing.CameraManagement
 		protected bool IsZoomOrbitDependant;
 
 		[SerializeField]
-		private RacingCameraType RacingCameraType;
+		private RacingCameraType RacingCameraType = default;
 
 		[SerializeField]
 		private CinemachineBlendDefinition BlendMode = new CinemachineBlendDefinition(CinemachineBlendDefinition.Style.EaseInOut, 0.5f);

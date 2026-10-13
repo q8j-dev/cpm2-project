@@ -408,7 +408,7 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 			AdvancedInt price = new AdvancedInt(num);
 			if (isCoinPrice)
 			{
-				_currencyManagerController.TryCoinsSpend(SpendCoinsType.Wheels, price, () =>
+				_ = _currencyManagerController.TryCoinsSpend(SpendCoinsType.Wheels, price, () =>
 				{
 					BuyWheel(selectedWheelIndex, _vehicleData, new WheelData(), _carId);
 				}, null, allowZero);

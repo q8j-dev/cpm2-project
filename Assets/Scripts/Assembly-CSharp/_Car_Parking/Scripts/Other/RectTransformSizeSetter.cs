@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Other
 	public class RectTransformSizeSetter : MonoBehaviour
 	{
 		[SerializeField]
-		private RectTransform RectTransform;
+		private RectTransform RectTransform = default;
 
 		private CancellationTokenSource _cancellationTokenSourceSetSize;
 

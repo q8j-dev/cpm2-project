@@ -24,7 +24,7 @@ namespace _Car_Parking.Scripts.Offers.Reward
 		}
 
 		[SerializeField]
-		private BannerEntry[] _entries;
+		private BannerEntry[] _entries = default;
 
 		private Dictionary<(RewardType, int), BannerEntry> _lookup;
 

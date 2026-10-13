@@ -10,40 +10,40 @@ namespace _Car_Parking.Scripts.UIElement
 		private const float DefaultMaxAncorValue = 1f;
 
 		[SerializeField]
-		private TextMeshProUGUI LeftText;
+		private TextMeshProUGUI LeftText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ButtonPlusTopText;
+		private TextMeshProUGUI ButtonPlusTopText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ButtonMinusTopText;
+		private TextMeshProUGUI ButtonMinusTopText = default;
 
 		[SerializeField]
-		private RectTransform LeftLineLimitsLine;
+		private RectTransform LeftLineLimitsLine = default;
 
 		[SerializeField]
-		private RectTransform RightLineLimitsLine;
+		private RectTransform RightLineLimitsLine = default;
 
 		[SerializeField]
-		private GameObject RedBckgLine;
+		private GameObject RedBckgLine = default;
 
 		[SerializeField]
 		private RectTransform RectTransform;
 
 		[SerializeField]
-		private float LeftMinAncor;
+		private float LeftMinAncor = default;
 
 		[SerializeField]
-		private float LeftMaxAncor;
+		private float LeftMaxAncor = default;
 
 		[SerializeField]
-		private float RightMinAncor;
+		private float RightMinAncor = default;
 
 		[SerializeField]
-		private float RightMaxAncor;
+		private float RightMaxAncor = default;
 
 		[SerializeField]
-		private GameObject TitlePanel;
+		private GameObject TitlePanel = default;
 
 		public AlphaHidableObject AlphaHidableObject;
 

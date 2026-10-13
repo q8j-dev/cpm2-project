@@ -22,7 +22,7 @@ namespace _Car_Parking.Scripts.FirstGameSetup.Presets
 	public class PersonPresetsView : MonoBehaviour
 	{
 		[SerializeField]
-		private PersonPresetToggle PresetPrefab;
+		private PersonPresetToggle PresetPrefab = default;
 
 		private MainPerson _mainPerson;
 

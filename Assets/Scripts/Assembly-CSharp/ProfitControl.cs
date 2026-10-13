@@ -6,10 +6,7 @@ using _Car_Parking.Scripts.PlayerProperty.Business;
 public class ProfitControl : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI TextMoney;
-
-	[SerializeField]
-	private Canvas CanvasText;
+	private TextMeshProUGUI TextMoney = default;
 
 	[HideInInspector]
 	public int idOfBuilding;

@@ -14,22 +14,22 @@ namespace _Car_Parking.Scripts.UIElement
 	public class FriendsListItemUI : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI Text;
+		private TextMeshProUGUI Text = default;
 
 		[SerializeField]
-		private TMP_InputField PasswordInputLabel;
+		private TMP_InputField PasswordInputLabel = default;
 
 		[SerializeField]
-		private Button JoinButton;
+		private Button JoinButton = default;
 
 		[SerializeField]
-		private Button DeleteButton;
+		private Button DeleteButton = default;
 
 		[SerializeField]
-		private Image OnlineIndicator;
+		private Image OnlineIndicator = default;
 
 		[SerializeField]
-		private Image JoinIcon;
+		private Image JoinIcon = default;
 
 		private string _friendIDInRoom;
 

@@ -18,22 +18,22 @@ namespace _Car_Parking.Scripts.Racing_Scripts.RewardUI
 		};
 
 		[SerializeField]
-		private int PlaceEvent;
+		private int PlaceEvent = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Reward;
+		private TextMeshProUGUI Reward = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Count;
+		private TextMeshProUGUI Count = default;
 
 		[SerializeField]
-		private CombinedPriceView CombinedPriceView;
+		private CombinedPriceView CombinedPriceView = default;
 
 		[SerializeField]
-		private GameObject PassIcon;
+		private GameObject PassIcon = default;
 
 		[SerializeField]
-		private GameObject NotPassIcon;
+		private GameObject NotPassIcon = default;
 
 		private Tween _tween;
 

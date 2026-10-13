@@ -8,13 +8,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class RealCurrencyView : MonoBehaviour
 	{
 		[SerializeField]
-		private Text Text;
+		private Text Text = default;
 
 		[SerializeField]
-		private GameObject TextRoot;
+		private GameObject TextRoot = default;
 
 		[SerializeField]
-		private GameObject LoadingRoot;
+		private GameObject LoadingRoot = default;
 
 		private RectTransform _parentRectTransform;
 
@@ -41,7 +41,7 @@ namespace _Car_Parking.Scripts.UIElement
 			LoadingRoot.SetActive(!TextRoot.activeSelf);
 			if ((bool)_parentRectTransform)
 			{
-				UIHelper.DelayedRebuildLayout(_parentRectTransform);
+				_ = UIHelper.DelayedRebuildLayout(_parentRectTransform);
 			}
 		}
 

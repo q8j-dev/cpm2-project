@@ -9,13 +9,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ScrollRectItemsCenterController : MonoBehaviour, IBeginDragHandler, IEventSystemHandler, IPointerDownHandler
 	{
 		[SerializeField]
-		private ScrollRect ScrollRect;
+		private ScrollRect ScrollRect = default;
 
 		[SerializeField]
-		private RectTransform Center;
+		private RectTransform Center = default;
 
 		[SerializeField]
-		private float MoveVelocity;
+		private float MoveVelocity = default;
 
 		private int _oldItemCenterIndex = -1;
 

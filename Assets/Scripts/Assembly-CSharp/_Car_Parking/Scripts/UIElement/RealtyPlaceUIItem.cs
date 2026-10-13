@@ -10,16 +10,16 @@ namespace _Car_Parking.Scripts.UIElement
 	public class RealtyPlaceUIItem : PlaceUIItem<RealtyConfig, RealtyData>
 	{
 		[SerializeField]
-		private Button ActionButton;
+		private Button ActionButton = default;
 
 		[SerializeField]
-		private Image MainImage;
+		private Image MainImage = default;
 
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Name;
+		private TextMeshProUGUI Name = default;
 
 		public override void Init()
 		{

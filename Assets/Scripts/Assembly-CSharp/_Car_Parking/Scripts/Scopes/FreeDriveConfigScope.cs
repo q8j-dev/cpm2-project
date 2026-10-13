@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Scopes
 	public class FreeDriveConfigScope : LifetimeScope
 	{
 		[SerializeField]
-		private NamesScriptables namesScriptables;
+		private NamesScriptables namesScriptables = default;
 
 		protected override void Configure(IContainerBuilder builder)
 		{

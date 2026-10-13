@@ -17,30 +17,30 @@ namespace _Car_Parking.Scripts.NewUI
 	{
 		[Header("Texts")]
 		[SerializeField]
-		private TextMeshProUGUI TitleText;
+		private TextMeshProUGUI TitleText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NotAvalibleText;
+		private TextMeshProUGUI NotAvalibleText = default;
 
 		[Header("Tabs")]
 		[SerializeField]
-		private PneumaticCarControlUIPart PneumaticTab;
+		private PneumaticCarControlUIPart PneumaticTab = default;
 
 		[SerializeField]
-		private ShockAbsorberCarControlUIPart ShockAbsorberTab;
+		private ShockAbsorberCarControlUIPart ShockAbsorberTab = default;
 
 		[SerializeField]
-		private GameObject NotAvalibleTab;
+		private GameObject NotAvalibleTab = default;
 
 		[Header("Toggles")]
 		[SerializeField]
-		private Toggle PneumaticToggle;
+		private Toggle PneumaticToggle = default;
 
 		[SerializeField]
-		private Toggle ShockAbsorberToggle;
+		private Toggle ShockAbsorberToggle = default;
 
 		[SerializeField]
-		private GameObject PersonViewJoystickHandlerPrefab;
+		private GameObject PersonViewJoystickHandlerPrefab = default;
 
 		private Dictionary<PhoneCarControlUIPanelType, PhoneUISubPanel> _tabsDictionary;
 

@@ -158,7 +158,7 @@ public class CircuitPitStopWindow : MonoBehaviour
 	{
 		_circuitRaceControlller.RaceCrewTalkSoundController.PlayFuelPutSound();
 		_circuitRacingUIControl.CircuitPlayWindow.ShowUI(state: false);
-		_managerUI.ShowWindow(WindowScriptType.FuelDriveUIWindow.ToString(), alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: false, cleanScreen: false);
+		_ = _managerUI.ShowWindow(WindowScriptType.FuelDriveUIWindow.ToString(), alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: false, cleanScreen: false);
 	}
 
 	private async UniTaskVoid StartProgress()

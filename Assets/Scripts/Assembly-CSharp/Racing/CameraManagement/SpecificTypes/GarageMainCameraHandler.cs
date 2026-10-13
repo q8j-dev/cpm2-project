@@ -122,7 +122,7 @@ namespace Racing.CameraManagement.SpecificTypes
 
 		private AlterChaseCameraConfig _chaseFramingConfig;
 
-		public Collider collider;
+		public new Collider collider;
 
 		private bool firstSellCarOpen = true;
 

@@ -11,52 +11,52 @@ namespace _Car_Parking.Scripts.MenuUI.TransferCaseUI
 	public class TransferCasePanel : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		[SerializeField]
-		private Button ModeH2Button;
+		private Button ModeH2Button = default;
 
 		[SerializeField]
-		private Button ModeH4Button;
+		private Button ModeH4Button = default;
 
 		[SerializeField]
-		private Button ModeL4Button;
+		private Button ModeL4Button = default;
 
 		[SerializeField]
-		private GameObject ModeH2Selected;
+		private GameObject ModeH2Selected = default;
 
 		[SerializeField]
-		private GameObject ModeH4Selected;
+		private GameObject ModeH4Selected = default;
 
 		[SerializeField]
-		private GameObject ModeL4Selected;
+		private GameObject ModeL4Selected = default;
 
 		[SerializeField]
-		private Toggle FrontLockToggle;
+		private Toggle FrontLockToggle = default;
 
 		[SerializeField]
-		private Toggle RearLockToggle;
+		private Toggle RearLockToggle = default;
 
 		[SerializeField]
-		private GameObject FrontLockRoot;
+		private GameObject FrontLockRoot = default;
 
 		[SerializeField]
-		private GameObject RearLockRoot;
+		private GameObject RearLockRoot = default;
 
 		[SerializeField]
-		private Toggle CenterLockToggle;
+		private Toggle CenterLockToggle = default;
 
 		[SerializeField]
-		private GameObject CenterLockRoot;
+		private GameObject CenterLockRoot = default;
 
 		[SerializeField]
-		private GameObject LockGroupRoot;
+		private GameObject LockGroupRoot = default;
 
 		[SerializeField]
-		private Graphic LockMenuBackground;
+		private Graphic LockMenuBackground = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DenyHintLabel;
+		private TextMeshProUGUI DenyHintLabel = default;
 
 		private Powertrain _powertrain;
 

@@ -15,7 +15,7 @@ namespace _Car_Parking.WwisePrefabs.WiseSoundScripts
 		public State OntriggerExitState;
 
 		[SerializeField]
-		private List<WwiseAmbiencePart> WwiseAmbienceParts;
+		private List<WwiseAmbiencePart> WwiseAmbienceParts = default;
 
 		private IDisposable _checkTriggerEnterDisposable;
 

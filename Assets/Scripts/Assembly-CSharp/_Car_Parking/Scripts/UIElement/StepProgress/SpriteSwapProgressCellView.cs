@@ -8,17 +8,17 @@ namespace _Car_Parking.Scripts.UIElement.StepProgress
 	public class SpriteSwapProgressCellView : ProgressCellView
 	{
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		[Tooltip("Connector to the previous cell; the first cell of a row leaves it empty.")]
 		[SerializeField]
-		private Image Line;
+		private Image Line = default;
 
 		[SerializeField]
-		private Sprite FilledSprite;
+		private Sprite FilledSprite = default;
 
 		[SerializeField]
-		private Sprite EmptySprite;
+		private Sprite EmptySprite = default;
 
 		[SerializeField]
 		private Color FilledLineColor = Color.white;

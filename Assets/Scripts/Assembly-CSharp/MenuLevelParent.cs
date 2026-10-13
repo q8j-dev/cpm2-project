@@ -691,7 +691,7 @@ public class MenuLevelParent : MonoBehaviour
 		}
 		if (FlagsStorage.IsFreeDriveMode && IsLowRam())
 		{
-			_managerUI.ShowWaitingWindowDark(set: true);
+			_ = _managerUI.ShowWaitingWindowDark(set: true);
 			await UniTask.Delay(1000, ignoreTimeScale: true, PlayerLoopTiming.Update, lifetimeToken);
 			if ((bool)V.SceneControl)
 			{
@@ -704,7 +704,7 @@ public class MenuLevelParent : MonoBehaviour
 				UnityEngine.Object.Destroy(V.LastUsedCar);
 			}
 			await UniTask.Delay(1000, ignoreTimeScale: true, PlayerLoopTiming.Update, lifetimeToken);
-			PlayerDatas.UnloadUnusedAssets("LowRam OpenMainMenu");
+			_ = PlayerDatas.UnloadUnusedAssets("LowRam OpenMainMenu");
 			await UniTask.Delay(5000, ignoreTimeScale: true, PlayerLoopTiming.Update, lifetimeToken);
 		}
 		_levelScript.OpenMainMenu();

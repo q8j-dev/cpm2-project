@@ -14,31 +14,31 @@ namespace _Car_Parking.Scripts.Police
 	public class SirenSoundControlPanel : MonoBehaviour
 	{
 		[SerializeField]
-		private VisualTuningWindow VisualTuningWindow;
+		private VisualTuningWindow VisualTuningWindow = default;
 
 		[SerializeField]
-		private TMP_Text CurrentSoundName;
+		private TMP_Text CurrentSoundName = default;
 
 		[SerializeField]
-		private Button NextSoundButton;
+		private Button NextSoundButton = default;
 
 		[SerializeField]
-		private Button PrevSoundButton;
+		private Button PrevSoundButton = default;
 
 		[SerializeField]
-		private GameObject ApplyRoot;
+		private GameObject ApplyRoot = default;
 
 		[SerializeField]
-		private Button ApplyButton;
+		private Button ApplyButton = default;
 
 		[SerializeField]
-		private GameObject BuyRoot;
+		private GameObject BuyRoot = default;
 
 		[SerializeField]
-		private CombinedPriceView SoundPriceView;
+		private CombinedPriceView SoundPriceView = default;
 
 		[SerializeField]
-		private Button BuyButton;
+		private Button BuyButton = default;
 
 		private VehicleData _vehicleData;
 

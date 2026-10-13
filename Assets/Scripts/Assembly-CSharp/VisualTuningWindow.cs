@@ -66,100 +66,88 @@ public class VisualTuningWindow : WindowScript, IBackableWindow
 	public MonoBehaviour spawnerScript;
 
 	[SerializeField]
-	private VisualTuningToggle[] _visualTuningToggles;
+	private VisualTuningToggle[] _visualTuningToggles = default;
 
 	[SerializeField]
-	private Transform ScrollRectPlace;
+	private Transform ScrollRectPlace = default;
 
 	[SerializeField]
-	private ScrollRect ScrollRectPrefab;
+	private ScrollRect ScrollRectPrefab = default;
 
 	[SerializeField]
-	private VisualItemElement VisualItemElementPrefab;
+	private VisualItemElement VisualItemElementPrefab = default;
 
 	[SerializeField]
-	private DownloadAssetButton DownloadAssetButtonPrefab;
+	private DownloadAssetButton DownloadAssetButtonPrefab = default;
 
 	[SerializeField]
-	private Button applyButton;
+	private Button applyButton = default;
 
 	[SerializeField]
-	private Button discardButton;
+	private Button discardButton = default;
 
 	[SerializeField]
-	private GameObject SideMunuParent;
+	private Button SetDefaultButton = default;
 
 	[SerializeField]
-	private Button SetDefaultButton;
+	private TextMeshProUGUI axleSideText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI axleSideText;
+	private Button leftArrow = default;
 
 	[SerializeField]
-	private Button leftArrow;
+	private Button rightArrow = default;
 
 	[SerializeField]
-	private Button rightArrow;
+	private GameObject LeftRightArrowsParent = default;
 
 	[SerializeField]
-	private GameObject LeftRightArrowsParent;
+	private GameObject BrakesControlPanel = default;
 
 	[SerializeField]
-	private GameObject BrakesControlPanel;
+	private WheelUIChangerPanel WheelUIChangerPanel = default;
 
 	[SerializeField]
-	private WheelUIChangerPanel WheelUIChangerPanel;
+	private GameObject colorPanel = default;
 
 	[SerializeField]
-	private Button backButton;
+	private VisualColorPanel viusalColorPanel = default;
 
 	[SerializeField]
-	private GameObject colorPanel;
+	private VisualTuningBodyKitsPanel visualTuningBodyKitsPanel = default;
 
 	[SerializeField]
-	private Button GoToVynils;
+	private VisualPolicePanel VisualPolicePanel = default;
 
 	[SerializeField]
-	private VisualColorPanel viusalColorPanel;
+	private BrakesViusalTuningPanel BrakesViusalTuningPanel = default;
 
 	[SerializeField]
-	private VisualTuningBodyKitsPanel visualTuningBodyKitsPanel;
+	private CalipersTuningPanel CalipersVisualTuningPanel = default;
 
 	[SerializeField]
-	private VisualPolicePanel VisualPolicePanel;
+	private RectTransform LayoutGroup = default;
 
 	[SerializeField]
-	private CanvasGroup CanvasGroup;
+	private GameObject LeftPanel = default;
 
 	[SerializeField]
-	private BrakesViusalTuningPanel BrakesViusalTuningPanel;
+	private VinylsEditor VinylsPanel = default;
 
 	[SerializeField]
-	private CalipersTuningPanel CalipersVisualTuningPanel;
+	private FavouriteWheelsController FavouriteWheelsController = default;
 
 	[SerializeField]
-	private RectTransform LayoutGroup;
+	private Texture InteriorIcon = default;
 
 	[SerializeField]
-	private GameObject LeftPanel;
+	private Sprite coinIcon = default;
 
 	[SerializeField]
-	private VinylsEditor VinylsPanel;
+	private Sprite moneyIcon = default;
 
 	[SerializeField]
-	private FavouriteWheelsController FavouriteWheelsController;
-
-	[SerializeField]
-	private Texture InteriorIcon;
-
-	[SerializeField]
-	private Sprite coinIcon;
-
-	[SerializeField]
-	private Sprite moneyIcon;
-
-	[SerializeField]
-	private Button rideCarButton;
+	private Button rideCarButton = default;
 
 	private ScrollRect _scrollRect;
 
@@ -193,15 +181,11 @@ public class VisualTuningWindow : WindowScript, IBackableWindow
 
 	private bool _isDestroyed;
 
-	private string _lastScope;
-
 	private List<VisualItemElement> _cachedVisualTuningElements;
 
 	private VehicleData _vehicleData;
 
 	private Powertrain _powertrain;
-
-	private Tween _tween;
 
 	private IVisualTuningViewModelComplexOne _visualTuningViewModelComplexOne;
 
@@ -216,8 +200,6 @@ public class VisualTuningWindow : WindowScript, IBackableWindow
 	private ITimerTuningService _timerTuningService;
 
 	private CameraManager _cameraManager;
-
-	private VisualItemElement _lastVisualtuningToggle;
 
 	private WheelsDiskTuningConfig _wheelsDiskTuningConfig;
 
@@ -1122,7 +1104,7 @@ public class VisualTuningWindow : WindowScript, IBackableWindow
 				PlaySound(SoundEventsDataHelper.TuningSelectRimSwitch);
 				SetActiveControlButtons(isActive: true);
 				_selectedVisualItemElement = element;
-				OnClickExecuteWithDelay(VisualTuningTypes.Wheels, "Select", castedDiskData.index);
+				_ = OnClickExecuteWithDelay(VisualTuningTypes.Wheels, "Select", castedDiskData.index);
 			}
 		});
 		element.Button.SetIsOnWithoutNotify(castedDiskData.index == WheelUIChangerPanel.GetCurrentWheelId());
@@ -1261,7 +1243,7 @@ public class VisualTuningWindow : WindowScript, IBackableWindow
 				PlaySound(SoundEventsDataHelper.SmallClickSwitch);
 				SetActiveControlButtons(isActive: true);
 				_selectedVisualItemElement = element;
-				OnClickExecuteWithDelay(VisualTuningTypes.Flags, "Select", castedData.data.id);
+				_ = OnClickExecuteWithDelay(VisualTuningTypes.Flags, "Select", castedData.data.id);
 			}
 		});
 		element.Button.SetIsOnWithoutNotify(_carInfo.AdditionalData.FlagId == castedData.data.id);
@@ -1333,7 +1315,7 @@ public class VisualTuningWindow : WindowScript, IBackableWindow
 	{
 		if (_timerTuningService.IsCarBlocked(V.SlotID))
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("VisualTuningWindow.Yourcarcurrentlyisinservice"), 3f);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("VisualTuningWindow.Yourcarcurrentlyisinservice"), 3f);
 		}
 		else
 		{

@@ -7,16 +7,16 @@ namespace _Car_Parking.Scripts.UIElement
 	public class SurvivalTimerView : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_Text TimerText;
+		private TMP_Text TimerText = default;
 
 		[SerializeField]
-		private Image TimerBg;
+		private Image TimerBg = default;
 
 		[SerializeField]
-		private Color GoodColor;
+		private Color GoodColor = default;
 
 		[SerializeField]
-		private Color BadColor;
+		private Color BadColor = default;
 
 		public void UpdateVisibility(bool on)
 		{

@@ -6,7 +6,7 @@ namespace Gley.TrafficSystem
 {
 	public abstract class VehicleBehaviour
 	{
-		private bool _debugBehaviours;
+		private bool _debugBehaviours = default;
 
 		private bool _behaviourIsActive;
 

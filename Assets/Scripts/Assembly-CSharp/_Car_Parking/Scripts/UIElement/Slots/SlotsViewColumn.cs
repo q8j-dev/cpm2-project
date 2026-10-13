@@ -18,22 +18,22 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		}
 
 		[SerializeField]
-		private TMP_Text Title;
+		private TMP_Text Title = default;
 
 		[SerializeField]
-		private ScrollViewSlots ScrollView;
+		private ScrollViewSlots ScrollView = default;
 
 		[SerializeField]
-		private GameObject GarageIsNotAvailable;
+		private GameObject GarageIsNotAvailable = default;
 
 		[SerializeField]
-		private PositionType Position;
+		private PositionType Position = default;
 
 		[SerializeField]
-		private ButtonBuyGarage ButtonBuyGarage;
+		private ButtonBuyGarage ButtonBuyGarage = default;
 
 		[SerializeField]
-		private OccupiedCarSlotsUI OccupiedCarSlotsUI;
+		private OccupiedCarSlotsUI OccupiedCarSlotsUI = default;
 
 		private IGarageBuyService _garageBuyService;
 

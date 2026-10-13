@@ -18,20 +18,20 @@ namespace _Car_Parking.Scripts.Wallet
 		private class MoneyResponse
 		{
 			[JsonProperty("code")]
-			public int Code;
+			public int Code = default;
 
 			[JsonProperty("data")]
-			public string Data;
+			public string Data = default;
 		}
 
 		[UnityEngine.Scripting.Preserve]
 		private class CircuitRaceRewardResponse
 		{
 			[JsonProperty("coins")]
-			public int Coins;
+			public int Coins = default;
 
 			[JsonProperty("token")]
-			public string Token;
+			public string Token = default;
 
 			[UnityEngine.Scripting.Preserve]
 			public CircuitRaceRewardResponse()

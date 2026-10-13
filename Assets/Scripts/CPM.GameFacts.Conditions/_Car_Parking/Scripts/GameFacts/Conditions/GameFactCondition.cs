@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.GameFacts.Conditions
 	public sealed class GameFactCondition : ScriptableObject
 	{
 		[SerializeReference]
-		private ConditionNode Root;
+		private ConditionNode Root = default;
 
 		public bool IsMet(IGameFactManager facts)
 		{

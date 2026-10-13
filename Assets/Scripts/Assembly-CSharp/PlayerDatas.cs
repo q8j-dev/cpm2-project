@@ -127,7 +127,7 @@ public class PlayerDatas : MonoBehaviour
 			float num = 0f;
 			if (car.TryGetComponent<VehicleEntityProvider>(out var component))
 			{
-				component.SwapEngine(carValues.CarID);
+				_ = component.SwapEngine(carValues.CarID);
 				component.SetFuelInTank(chassisData.FuelTankCapacity);
 				num = component.CarEntity.MaintenanceInfo.FuelInTank * 0.73722f;
 				EngineItem baseEngine = tuning.GetBaseEngine();
@@ -1054,8 +1054,6 @@ public class PlayerDatas : MonoBehaviour
 
 	public static FriendsUtility friendsUtility;
 
-	private static bool WillUnloadAsset;
-
 	public static int countToUnload = 0;
 
 	public static int[] NotForTowCars;
@@ -1187,7 +1185,7 @@ public class PlayerDatas : MonoBehaviour
 			}
 			return null;
 		}
-		handle.BindTo(result);
+		_ = handle.BindTo(result);
 		return result;
 	}
 

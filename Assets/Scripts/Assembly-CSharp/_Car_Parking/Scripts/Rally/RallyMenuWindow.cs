@@ -15,28 +15,28 @@ namespace _Car_Parking.Scripts.Rally
 	public class RallyMenuWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private Button TyreSelectionButton;
+		private Button TyreSelectionButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private Button LeaderboardButton;
+		private Button LeaderboardButton = default;
 
 		[SerializeField]
-		private Image LocationIcon;
+		private Image LocationIcon = default;
 
 		[SerializeField]
-		private Image TrajectoriesIcon;
+		private Image TrajectoriesIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TrajectotyText;
+		private TextMeshProUGUI TrajectotyText = default;
 
 		[SerializeField]
-		private RallyRecordsUIPanel RallyRecordsUIPanel;
+		private RallyRecordsUIPanel RallyRecordsUIPanel = default;
 
 		private RallyMapDataSO _rallyMapDataSo;
 

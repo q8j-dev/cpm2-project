@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class CrossFadeImageSwitcher : MonoBehaviour
 	{
 		[SerializeField]
-		private Image ImageA;
+		private Image ImageA = default;
 
 		[SerializeField]
-		private Image ImageB;
+		private Image ImageB = default;
 
 		[SerializeField]
-		private Sprite[] Sprites;
+		private Sprite[] Sprites = default;
 
 		[SerializeField]
 		private float FadeDuration = 0.4f;

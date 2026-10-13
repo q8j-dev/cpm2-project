@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.Police
 	public class PoliceRoobarSpecificTransform : MonoBehaviour
 	{
 		[SerializeField]
-		private Transform Main;
+		private Transform Main = default;
 
 		public Vector3 GetGlobalPosition(int index)
 		{

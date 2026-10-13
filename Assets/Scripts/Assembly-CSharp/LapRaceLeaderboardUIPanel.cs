@@ -138,7 +138,7 @@ public class LapRaceLeaderboardUIPanel : WindowScript
 		_circuitRaceControlller.CircuitRacingUIControll.ShowChartList(state: false);
 		CircuitRaceControlller circuitRaceControlller2 = _circuitRaceControlller;
 		circuitRaceControlller2.OnRewardCalculated = (Action)Delegate.Combine(circuitRaceControlller2.OnRewardCalculated, new Action(OnRewardCalculated));
-		_managerUI.ShowUserBalanceOnlyWindow();
+		_ = _managerUI.ShowUserBalanceOnlyWindow();
 		SubscribeButtons();
 	}
 
@@ -288,7 +288,7 @@ public class LapRaceLeaderboardUIPanel : WindowScript
 		{
 			_circuitRaceControlller.RaceCrewTalkSoundController.PlayFinishLemanSoundEvent(lapRaceCar, isTimeExpired: true);
 		}
-		UIHelper.DelayedRebuildLayout(leaderboardParent);
+		_ = UIHelper.DelayedRebuildLayout(leaderboardParent);
 	}
 
 	private void LapInfoActive(bool isActive)
@@ -359,7 +359,7 @@ public class LapRaceLeaderboardUIPanel : WindowScript
 			LapRaceLeaderbordUiElement userLeaderbordUiElement = AddLeaderboardElement(lapRaceCar);
 			SortUsers(userLeaderbordUiElement);
 			await UniTask.Yield(this.GetCancellationTokenOnDestroy());
-			UIHelper.DelayedRebuildLayout(leaderboardParent);
+			_ = UIHelper.DelayedRebuildLayout(leaderboardParent);
 		}
 	}
 

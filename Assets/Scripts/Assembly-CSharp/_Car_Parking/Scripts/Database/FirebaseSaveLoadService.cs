@@ -37,8 +37,6 @@ namespace _Car_Parking.Scripts.Database
 
 		private PlayerDataStorage _playerDataStorage;
 
-		private List<int> _userGarages;
-
 		public event Action StartSaving;
 
 		public event Action EndSaving;

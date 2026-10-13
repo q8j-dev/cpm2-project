@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class DropDownListArrow : MonoBehaviour
 	{
 		[SerializeField]
-		private Transform OpenPosition;
+		private Transform OpenPosition = default;
 
 		[SerializeField]
-		private MoverByTween Mover;
+		private MoverByTween Mover = default;
 
 		[SerializeField]
-		private RotatorByTween Rotator;
+		private RotatorByTween Rotator = default;
 
 		public void UpdateState(bool isOpen)
 		{

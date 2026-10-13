@@ -17,31 +17,31 @@ public class TaskLabel : MonoBehaviour
 	private DailyTasksManager dailyTasksManager;
 
 	[SerializeField]
-	private Slider Slider;
+	private Slider Slider = default;
 
 	[SerializeField]
-	private TextMeshProUGUI Progress;
+	private TextMeshProUGUI Progress = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CoinLabel;
+	private TextMeshProUGUI CoinLabel = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CashLabel;
+	private TextMeshProUGUI CashLabel = default;
 
 	[SerializeField]
-	private Image BackgroundDoneImage;
+	private Image BackgroundDoneImage = default;
 
 	[SerializeField]
-	private RawImage TaskImage;
+	private RawImage TaskImage = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TaskName;
+	private TextMeshProUGUI TaskName = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TaskDescription;
+	private TextMeshProUGUI TaskDescription = default;
 
 	[SerializeField]
-	private GameObject CompletePanel;
+	private GameObject CompletePanel = default;
 
 	public const float RoundKmToMeters = 1000f;
 

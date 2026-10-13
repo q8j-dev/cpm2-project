@@ -24,7 +24,7 @@ namespace Service.Cargo
 		public List<Collider> colliders = new List<Collider>();
 
 		[SerializeField]
-		private Collider jointCollider;
+		private Collider jointCollider = default;
 
 		private Order order;
 

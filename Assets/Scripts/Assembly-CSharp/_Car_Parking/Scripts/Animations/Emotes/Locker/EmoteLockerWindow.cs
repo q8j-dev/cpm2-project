@@ -63,82 +63,82 @@ namespace _Car_Parking.Scripts.Animations.Emotes.Locker
 		private const float ScrollToSelectedMargin = 10f;
 
 		[SerializeField]
-		private Toggle MovesTabToggle;
+		private Toggle MovesTabToggle = default;
 
 		[SerializeField]
-		private Toggle EmojiTabToggle;
+		private Toggle EmojiTabToggle = default;
 
 		[SerializeField]
-		private Toggle FavoritesFilterToggle;
+		private Toggle FavoritesFilterToggle = default;
 
 		[SerializeField]
-		private Toggle ClipsFilterToggle;
+		private Toggle ClipsFilterToggle = default;
 
 		[SerializeField]
-		private Toggle DanceFilterToggle;
+		private Toggle DanceFilterToggle = default;
 
 		[SerializeField]
-		private Toggle PosesFilterToggle;
+		private Toggle PosesFilterToggle = default;
 
 		[SerializeField]
-		private GameObject ClipsNoticeDot;
+		private GameObject ClipsNoticeDot = default;
 
 		[SerializeField]
-		private GameObject DanceNoticeDot;
+		private GameObject DanceNoticeDot = default;
 
 		[SerializeField]
-		private GameObject PosesNoticeDot;
+		private GameObject PosesNoticeDot = default;
 
 		[SerializeField]
-		private GameObject MovesFilterPanel;
+		private GameObject MovesFilterPanel = default;
 
 		[SerializeField]
-		private GameObject EmojiFilterPanel;
+		private GameObject EmojiFilterPanel = default;
 
 		[SerializeField]
-		private Toggle EmojiAllFilterToggle;
+		private Toggle EmojiAllFilterToggle = default;
 
 		[SerializeField]
-		private Toggle EmojiFavoritesFilterToggle;
+		private Toggle EmojiFavoritesFilterToggle = default;
 
 		[SerializeField]
-		private EmoteLockerGrid Grid;
+		private EmoteLockerGrid Grid = default;
 
 		[SerializeField]
-		private EmoteLockerGrid EmojiGrid;
+		private EmoteLockerGrid EmojiGrid = default;
 
 		[SerializeField]
-		private Button AddButton;
+		private Button AddButton = default;
 
 		[SerializeField]
-		private Button RemoveButton;
+		private Button RemoveButton = default;
 
 		[SerializeField]
-		private Button EmojiAddButton;
+		private Button EmojiAddButton = default;
 
 		[SerializeField]
-		private Button EmojiRemoveButton;
+		private Button EmojiRemoveButton = default;
 
 		[SerializeField]
-		private Button ActionButton;
+		private Button ActionButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ActionButtonText;
+		private TextMeshProUGUI ActionButtonText = default;
 
 		[SerializeField]
-		private Button BackgroundCloseButton;
+		private Button BackgroundCloseButton = default;
 
 		[SerializeField]
-		private Button PackBuyButton;
+		private Button PackBuyButton = default;
 
 		[SerializeField]
-		private GameObject PreviewText;
+		private GameObject PreviewText = default;
 
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		[SerializeField]
-		private RectTransform GridViewport;
+		private RectTransform GridViewport = default;
 
 		private EmoteCatalog _catalog;
 
@@ -1462,7 +1462,7 @@ namespace _Car_Parking.Scripts.Animations.Emotes.Locker
 				IEmoteEntry emoteEntry = _selectedPickerEntry ?? (IsDanceShopTab ? FindUnownedDanceEntry() : null);
 				if (emoteEntry != null)
 				{
-					BuySelectedViaBundle(emoteEntry);
+					_ = BuySelectedViaBundle(emoteEntry);
 				}
 			}
 		}

@@ -32,19 +32,19 @@ public class SellCarWindow : WindowScriptAsyncResult<SellCarWindow.CarPriceData>
 	public static ObscuredInt MaxPrice = 50000000;
 
 	[SerializeField]
-	private TMP_InputField InputCarModel;
+	private TMP_InputField InputCarModel = default;
 
 	[SerializeField]
-	private TMP_InputField InputPrice;
+	private TMP_InputField InputPrice = default;
 
 	[SerializeField]
-	private TMP_Text FakePriceText;
+	private TMP_Text FakePriceText = default;
 
 	[SerializeField]
-	private Button ButtonCancel;
+	private Button ButtonCancel = default;
 
 	[SerializeField]
-	private Button ButtonSubmit;
+	private Button ButtonSubmit = default;
 
 	private InputFieldStateController _modelInputFieldState;
 

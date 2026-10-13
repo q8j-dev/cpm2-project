@@ -7,8 +7,6 @@ public class SkinedMeshCombine : MonoBehaviour
 
 	public GameObject combined;
 
-	private int combineCOunt;
-
 	public bool justPressed;
 
 	private void Start()

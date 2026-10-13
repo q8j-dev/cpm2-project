@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.Animations.UIAnimation
 	public class UIImageAnimator : MonoBehaviour
 	{
 		[SerializeField]
-		private Image ImageToAnimate;
+		private Image ImageToAnimate = default;
 
 		[SerializeField]
 		private int FrameRate;

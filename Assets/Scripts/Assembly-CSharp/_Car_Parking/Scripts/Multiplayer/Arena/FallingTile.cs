@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena
 	public class FallingTile : MonoBehaviour
 	{
 		[SerializeField]
-		private TriggerRelay TriggerRelay;
+		private TriggerRelay TriggerRelay = default;
 
 		[SerializeField]
-		private MeshRenderer MeshRenderer;
+		private MeshRenderer MeshRenderer = default;
 
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		private int _id;
 

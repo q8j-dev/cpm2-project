@@ -27,30 +27,24 @@ namespace _Car_Parking.Scripts.PlayerProperty.Trigger
 		private static readonly float ReferenceFovTangent = Mathf.Tan((float)Math.PI / 6f);
 
 		[SerializeField]
-		private DecalProjector DecalProjector;
+		private DecalProjector DecalProjector = default;
 
 		[SerializeField]
-		private MeshRenderer MainMeshRenderer;
+		private MeshRenderer MainMeshRenderer = default;
 
 		[SerializeField]
-		private ZoneTriggerHandler ZoneTriggerHandler;
+		private ZoneTriggerHandler ZoneTriggerHandler = default;
 
 		[SerializeField]
-		private RieltorModel RieltorModel;
+		private RieltorModel RieltorModel = default;
 
 		private IPropertyTriggerProcessor _propertyTriggerProcessor;
 
 		private FreeDriveProvider _freeDriveProvider;
 
-		private FreeDriveControl _freeDriveControl;
-
-		private CircleProgressBarItem _progressBarItem;
-
 		private MenuLevelParent _menuLevelParent;
 
 		private PropertyTriggerService _propertyTriggerService;
-
-		private VehicleData _vehicleData;
 
 		private Vector3 _startSize;
 

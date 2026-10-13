@@ -8,28 +8,25 @@ using _Car_Parking.Scripts.EngineTuning;
 public class CarTuningUIElement : MonoBehaviour
 {
 	[SerializeField]
-	private Button ItemButton;
+	private Button ItemButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CountText;
+	private TextMeshProUGUI CountText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI NameText;
+	private TextMeshProUGUI NameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TypeText;
+	private TextMeshProUGUI TypeText = default;
 
 	[SerializeField]
-	private Image ItemImage;
+	private Image ItemImage = default;
 
 	[SerializeField]
-	private Image ToggleImage;
+	private Image VendorImage = default;
 
 	[SerializeField]
-	private Image VendorImage;
-
-	[SerializeField]
-	private Image DetailRarityImage;
+	private Image DetailRarityImage = default;
 
 	private PartData _partData;
 

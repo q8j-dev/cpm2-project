@@ -18,58 +18,55 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ConfirmGarageSellWindow : WindowScript
 	{
 		[SerializeField]
-		private List<CombinedPriceView> CombinedPriceViews;
+		private List<CombinedPriceView> CombinedPriceViews = default;
 
 		[SerializeField]
-		private List<GameObject> ForRemoveObjects;
+		private List<GameObject> ForRemoveObjects = default;
 
 		[SerializeField]
-		private List<GameObject> ForSaleObjects;
+		private List<GameObject> ForSaleObjects = default;
 
 		[SerializeField]
-		private RawImageLoadAsync MainIcon;
+		private RawImageLoadAsync MainIcon = default;
 
 		[SerializeField]
-		private List<TextMeshProUGUI> NameTexts;
+		private List<TextMeshProUGUI> NameTexts = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Capacity;
+		private TextMeshProUGUI Capacity = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Location;
+		private TextMeshProUGUI Location = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimerForSaleText;
+		private TextMeshProUGUI TimerForSaleText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimerForRemoveText;
+		private TextMeshProUGUI TimerForRemoveText = default;
 
 		[SerializeField]
-		private Button ToSecondScreenSell;
+		private Button ToSecondScreenSell = default;
 
 		[SerializeField]
-		private Button ToSecondScreenRemove;
+		private Button ToSecondScreenRemove = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private Button SellGarageButton;
+		private Button SellGarageButton = default;
 
 		[SerializeField]
-		private List<Button> CancelButtons;
+		private List<Button> CancelButtons = default;
 
 		[SerializeField]
-		private Button RemoveButton;
+		private Button RemoveButton = default;
 
 		[SerializeField]
-		private GameObject FirstScreen;
+		private GameObject FirstScreen = default;
 
 		[SerializeField]
-		private GameObject SecondScreen;
-
-		[SerializeField]
-		private GameObject LoadingScreen;
+		private GameObject SecondScreen = default;
 
 		private IGarageSellService _garageSellService;
 

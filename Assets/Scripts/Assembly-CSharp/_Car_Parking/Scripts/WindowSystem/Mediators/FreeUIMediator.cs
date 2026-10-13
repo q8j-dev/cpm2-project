@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.WindowSystem.Mediators
 	public class FreeUIMediator : MonoBehaviour
 	{
 		[Inject]
-		private FreeDriveControl _freeDriveControl;
+		private FreeDriveControl _freeDriveControl = default;
 
 		[Inject]
-		private MapCamera _mapCamera;
+		private MapCamera _mapCamera = default;
 
 		public void HideBigMap()
 		{

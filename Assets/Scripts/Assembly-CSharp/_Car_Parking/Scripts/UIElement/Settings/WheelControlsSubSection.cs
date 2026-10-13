@@ -17,33 +17,30 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 		private const string NoDevicesKey = "-";
 
 		[SerializeField]
-		private Button KeyBindsButton;
-
-		[SerializeField]
 		[Header("Camera Multipliers")]
-		private SliderValueHandler CameraMultiplierX;
+		private SliderValueHandler CameraMultiplierX = default;
 
 		[SerializeField]
-		private Toggle InvertCameraXToggle;
+		private Toggle InvertCameraXToggle = default;
 
 		[SerializeField]
-		private SliderValueHandler CameraMultiplierY;
+		private SliderValueHandler CameraMultiplierY = default;
 
 		[SerializeField]
-		private Toggle InvertCameraYToggle;
+		private Toggle InvertCameraYToggle = default;
 
 		[Header("Steering Wheel")]
 		[SerializeField]
-		private TextMeshProUGUI ConnectedDevicesText;
+		private TextMeshProUGUI ConnectedDevicesText = default;
 
 		[SerializeField]
-		private SliderValueHandler RotationRange;
+		private SliderValueHandler RotationRange = default;
 
 		[SerializeField]
-		private Toggle RangeOverrideToggle;
+		private Toggle RangeOverrideToggle = default;
 
 		[SerializeField]
-		private SliderValueHandler FfbMultiplier;
+		private SliderValueHandler FfbMultiplier = default;
 
 		protected override LocalizedString ResetTitle => new LocalizedString("SteamControls.ResetTitleWheel");
 

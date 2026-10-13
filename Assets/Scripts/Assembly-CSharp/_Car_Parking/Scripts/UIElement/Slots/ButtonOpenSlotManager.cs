@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 	public class ButtonOpenSlotManager : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		private ManagerUI _managerUI;
 

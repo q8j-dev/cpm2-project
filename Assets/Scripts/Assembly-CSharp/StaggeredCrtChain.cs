@@ -57,7 +57,7 @@ public class StaggeredCrtChain : MonoBehaviour
 
 	[Header("Edit Mode")]
 	[Tooltip("Keep the player loop ticking in Edit Mode so the chain runs without entering Play Mode.")]
-	public bool runInEditMode = true;
+	public new bool runInEditMode = true;
 
 	[Tooltip("Repaint Scene views every editor tick so the result is visible while editing.")]
 	public bool repaintSceneViews = true;

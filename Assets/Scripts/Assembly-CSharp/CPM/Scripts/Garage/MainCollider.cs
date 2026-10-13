@@ -10,10 +10,10 @@ namespace CPM.Scripts.Garage
 	public class MainCollider : MonoBehaviour
 	{
 		[SerializeField]
-		private GarageDoor door;
+		private GarageDoor door = default;
 
 		[SerializeField]
-		private int GarageIndex;
+		private int GarageIndex = default;
 
 		private IGarageBuyService _garageBuyService;
 
@@ -25,7 +25,7 @@ namespace CPM.Scripts.Garage
 
 		private void OnTriggerEnter(Collider other)
 		{
-			if (!FlagsStorage.IsPhotoMode && (other.CompareTag("Car") || other.CompareTag("OnlineCar") || other.CompareTag("DriverPerson")) && !AdvancedBoolean.op_True(!_garageBuyService.GetGarageStatus(GarageIndex)))
+			if (!FlagsStorage.IsPhotoMode && (other.CompareTag("Car") || other.CompareTag("OnlineCar") || other.CompareTag("DriverPerson")) && (!_garageBuyService.GetGarageStatus(GarageIndex) ? false : true))
 			{
 				door.Open();
 			}

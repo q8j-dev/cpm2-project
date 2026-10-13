@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.UIElement.Chat
 	public class ChatSmileChoose : MonoBehaviour
 	{
 		[SerializeField]
-		private int Id;
+		private int Id = default;
 
 		[SerializeField]
-		private Button SmileButton;
+		private Button SmileButton = default;
 
 		[SerializeField]
-		private ChatWindow ChatWindow;
+		private ChatWindow ChatWindow = default;
 
 		private void Start()
 		{

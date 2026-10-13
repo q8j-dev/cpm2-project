@@ -15,10 +15,6 @@ namespace RootMotion.FinalIK
 
 		public Vector3 characterSpaceBendOffsetRight;
 
-		private Quaternion leftHandTargetRotation;
-
-		private Quaternion rightHandTargetRotation;
-
 		private bool initiated;
 
 		private void LateUpdate()

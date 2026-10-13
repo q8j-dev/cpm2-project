@@ -5,22 +5,22 @@ using UnityEngine.UI;
 public class FillableImage : MonoBehaviour
 {
 	[SerializeField]
-	private Image FillImage;
+	private Image FillImage = default;
 
 	[SerializeField]
-	private float Duration;
+	private float Duration = default;
 
 	[SerializeField]
-	private float StartDelay;
+	private float StartDelay = default;
 
 	[SerializeField]
-	private float EndDelay;
+	private float EndDelay = default;
 
 	[SerializeField]
-	private float StartValue;
+	private float StartValue = default;
 
 	[SerializeField]
-	private float EndValue;
+	private float EndValue = default;
 
 	private Tween _tween;
 

@@ -9,16 +9,16 @@ namespace _Car_Parking.Scripts.EditableHUD
 	public class EditableHUDController : MonoBehaviour, IInitializable
 	{
 		[SerializeField]
-		private EditableHUDCanvasGameplay CanvasGameplay;
+		private EditableHUDCanvasGameplay CanvasGameplay = default;
 
 		[SerializeField]
 		private EditableHUDCanvasEditorWindow CanvasEditor;
 
 		[SerializeField]
-		private int PriorityIndex;
+		private int PriorityIndex = default;
 
 		[SerializeField]
-		private EditableHUDConfig Config;
+		private EditableHUDConfig Config = default;
 
 		private EditableHUDElement[] _elements;
 

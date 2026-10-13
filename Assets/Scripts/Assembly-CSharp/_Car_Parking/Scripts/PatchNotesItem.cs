@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts
 	public class PatchNotesItem : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_Text Text;
+		private TMP_Text Text = default;
 
 		public void Init(string data)
 		{

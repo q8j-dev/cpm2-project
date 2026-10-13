@@ -643,7 +643,7 @@ namespace Car_Parking.Scripts.Drag.CarCompositions
 			}
 			if (_vehicle.IsRacingCar)
 			{
-				StartLoadMainBody();
+				_ = StartLoadMainBody();
 			}
 		}
 

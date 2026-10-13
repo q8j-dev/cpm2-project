@@ -34,34 +34,34 @@ namespace _Car_Parking.Scripts.Drag
 		private CarTuningData _carTuningData;
 
 		[SerializeField]
-		private GameObject RightPanel;
+		private GameObject RightPanel = default;
 
 		[Header("References")]
 		[SerializeField]
-		private ShowcaseUIItem currentElmnt;
+		private ShowcaseUIItem currentElmnt = default;
 
 		[Header("Buttons")]
 		[SerializeField]
-		private Toggle marketButton;
+		private Toggle marketButton = default;
 
 		[SerializeField]
-		private Toggle inventoryButton;
+		private Toggle inventoryButton = default;
 
 		[SerializeField]
-		private Button BuyButton;
+		private Button BuyButton = default;
 
 		[SerializeField]
-		private Button SetButton;
+		private Button SetButton = default;
 
 		[SerializeField]
-		private Button SellButton;
+		private Button SellButton = default;
 
 		[SerializeField]
 		[Header("Engine model texts")]
-		private TMP_Text PartTypeText;
+		private TMP_Text PartTypeText = default;
 
 		[SerializeField]
-		private TMP_Text EngineNameText;
+		private TMP_Text EngineNameText = default;
 
 		[Header("Spawn")]
 		public Transform ParentForButton;
@@ -81,15 +81,11 @@ namespace _Car_Parking.Scripts.Drag
 
 		private PartData _currentPart;
 
-		private UIElement _lastUsedUIDetail;
-
 		private IMenuWindowsMediator _menuWindowsMediator;
 
 		private int _engineModel;
 
 		private ObscuredInt _carId;
-
-		private int _currentPartIndexForMarket;
 
 		private ICarTuningFactory _tuningFactory;
 
@@ -116,31 +112,28 @@ namespace _Car_Parking.Scripts.Drag
 		public Color InstalledColor;
 
 		[SerializeField]
-		private MarketInventoryItem MarketInventoryItemPrefab;
+		private MarketInventoryItem MarketInventoryItemPrefab = default;
 
 		[SerializeField]
-		private MarketInventoryPopup MarketInventoryPopup;
+		private MarketInventoryPopup MarketInventoryPopup = default;
 
 		[SerializeField]
-		private MarketInventoryShowCasePanel MarketInventoryShowCasePanel;
+		private MarketInventoryShowCasePanel MarketInventoryShowCasePanel = default;
 
 		[SerializeField]
-		private RectTransform ItemsParent;
+		private Button FilterButton = default;
 
 		[SerializeField]
-		private Button FilterButton;
+		private TextMeshProUGUI FilterText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FilterText;
+		private TextMeshProUGUI FilterDetailCountText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FilterDetailCountText;
+		private ScrollRect InventoryScrollRectPrefab = default;
 
 		[SerializeField]
-		private ScrollRect InventoryScrollRectPrefab;
-
-		[SerializeField]
-		private Transform ScrollRectPlace;
+		private Transform ScrollRectPlace = default;
 
 		[SerializeField]
 		private int CellCountInOneRow = 1;
@@ -148,8 +141,6 @@ namespace _Car_Parking.Scripts.Drag
 		private float _lastGridContentWidth = -1f;
 
 		private IPrefabFactory _prefabFactory;
-
-		private MarketInventoryFilters _currentMarketInventoryFilter;
 
 		private UiScrollRectOcclusiion _uiScrollRectOcclusiion;
 
@@ -344,7 +335,7 @@ namespace _Car_Parking.Scripts.Drag
 					_lastMarketScrollPos = _mainScrollRect.content.anchoredPosition;
 				}
 			});
-			CalculateGrid();
+			_ = CalculateGrid();
 			_uiScrollRectOcclusiion = _mainScrollRect.GetComponent<UiScrollRectOcclusiion>();
 			FilterText.text = FillFilterText();
 			RightPanel.SetActive(value: false);
@@ -512,7 +503,7 @@ namespace _Car_Parking.Scripts.Drag
 				}
 			}
 			FilterDetailCountText.text = num.ToString();
-			ReloadLayout();
+			_ = ReloadLayout();
 		}
 
 		private void CheckGearboxNotCompatible(PartData partData, out bool result)
@@ -674,13 +665,13 @@ namespace _Car_Parking.Scripts.Drag
 				_ = _managerUI.GetPartToMarketIndex;
 				_tuningFactory.BuyPart(_currentPart);
 				string text = new LocalizedString("MarketInventoryWindow.YouBoughtPartGetname");
-				_managerUI.ShowNotificationWindow(text.Replace("{part.GetName}", part.GetName), 3f);
+				_ = _managerUI.ShowNotificationWindow(text.Replace("{part.GetName}", part.GetName), 3f);
 				OnSetConfirm();
 				_virtualPurchaseAnalytic.LogPurchaseVirtual_InventoryItem(part.GetName, part.GetPrice, part.TypeId.ToString(), PurchaseStatus.PURCHASE_COMPLETED);
 			}
 			else
 			{
-				_managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.NoMoney!"), 3f, NotificationType.Error);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.NoMoney!"), 3f, NotificationType.Error);
 				_virtualPurchaseAnalytic.LogPurchaseVirtual_InventoryItem(part.GetName, part.GetPrice, part.TypeId.ToString(), PurchaseStatus.INSUFFICIENT_FUNDS);
 			}
 			MarketInventoryPopup.SetActive(active: false);
@@ -697,13 +688,13 @@ namespace _Car_Parking.Scripts.Drag
 				_ = _managerUI.GetPartToMarketIndex;
 				_tuningFactory.BuyPart(_currentPart);
 				string text = new LocalizedString("MarketInventoryWindow.YouBoughtPartGetname");
-				_managerUI.ShowNotificationWindow(text.Replace("{part.GetName}", part.GetName), 3f);
+				_ = _managerUI.ShowNotificationWindow(text.Replace("{part.GetName}", part.GetName), 3f);
 				ReloadWindow();
 				_virtualPurchaseAnalytic.LogPurchaseVirtual_InventoryItem(part.GetName, part.GetPrice, part.TypeId.ToString(), PurchaseStatus.PURCHASE_COMPLETED);
 			}
 			else
 			{
-				_managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.NoMoney!"), 3f, NotificationType.Error);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.NoMoney!"), 3f, NotificationType.Error);
 				_virtualPurchaseAnalytic.LogPurchaseVirtual_InventoryItem(part.GetName, part.GetPrice, part.TypeId.ToString(), PurchaseStatus.INSUFFICIENT_FUNDS);
 			}
 			MarketInventoryShowCasePanel.gameObject.SetActive(value: true);
@@ -787,7 +778,7 @@ namespace _Car_Parking.Scripts.Drag
 				switch (_timerTuningService.TryInstallPart(V.SlotID, _currentPart))
 				{
 				case TimerInstallResult.DuplicateType:
-					_managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.PartTypeAlreadyInService"), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.PartTypeAlreadyInService"), 3f);
 					break;
 				default:
 					ShowBusyMessage();
@@ -805,10 +796,10 @@ namespace _Car_Parking.Scripts.Drag
 				switch (_timerTuningService.TryInstallPart(V.SlotID, _currentPart))
 				{
 				case TimerInstallResult.DuplicateType:
-					_managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.PartTypeAlreadyInService"), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.PartTypeAlreadyInService"), 3f);
 					break;
 				default:
-					_managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.Thisengineisintheservicenow.Pleasewait."), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("MarketInventoryWindow.Thisengineisintheservicenow.Pleasewait."), 3f);
 					break;
 				case TimerInstallResult.Started:
 				case TimerInstallResult.Extended:
@@ -830,7 +821,7 @@ namespace _Car_Parking.Scripts.Drag
 		private void ShowBusyMessage()
 		{
 			string text = ((openPanel == OpenPanelType.Market) ? new LocalizedString("MarketInventoryWindow.Thisengineisintheservicenow.Detail") : new LocalizedString("MarketInventoryWindow.Thisengineisintheservicenow.Pleasewait."));
-			_managerUI.ShowNotificationWindow(text, 3f);
+			_ = _managerUI.ShowNotificationWindow(text, 3f);
 		}
 
 		private PartData CheckOtherParts(PartData partData)

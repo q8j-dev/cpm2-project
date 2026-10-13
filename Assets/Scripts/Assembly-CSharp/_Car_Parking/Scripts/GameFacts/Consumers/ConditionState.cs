@@ -9,10 +9,10 @@ namespace _Car_Parking.Scripts.GameFacts.Consumers
 	public sealed class ConditionState : MonoBehaviour
 	{
 		[SerializeField]
-		private GameFactCondition Condition;
+		private GameFactCondition Condition = default;
 
 		[SerializeField]
-		private bool DefaultState;
+		private bool DefaultState = default;
 
 		private IGameFactManager _facts;
 

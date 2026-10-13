@@ -8,16 +8,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class MatchmakingDataView : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_Text PlayersRequaredText;
+		private TMP_Text PlayersRequaredText = default;
 
 		[SerializeField]
-		private TMP_Text MinimumToStartText;
+		private TMP_Text MinimumToStartText = default;
 
 		[SerializeField]
-		private TMP_Text AverageWaitTimeText;
+		private TMP_Text AverageWaitTimeText = default;
 
 		[SerializeField]
-		private Color SelectedColor;
+		private Color SelectedColor = default;
 
 		public void UpdateView(ArenaConfig config)
 		{

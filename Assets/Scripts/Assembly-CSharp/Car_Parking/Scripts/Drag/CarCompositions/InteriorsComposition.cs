@@ -84,7 +84,7 @@ namespace Car_Parking.Scripts.Drag.CarCompositions
 		{
 			if (!_dashboardBankHeld && _soundBankService != null)
 			{
-				_soundBankService.TryLoadBank(SoundBankType.CarDashboard);
+				_ = _soundBankService.TryLoadBank(SoundBankType.CarDashboard);
 				_dashboardBankHeld = true;
 			}
 		}
@@ -93,7 +93,7 @@ namespace Car_Parking.Scripts.Drag.CarCompositions
 		{
 			if (_dashboardBankHeld && _soundBankService != null)
 			{
-				_soundBankService.TryUnloadBank(SoundBankType.CarDashboard);
+				_ = _soundBankService.TryUnloadBank(SoundBankType.CarDashboard);
 				_dashboardBankHeld = false;
 			}
 		}
@@ -249,7 +249,7 @@ namespace Car_Parking.Scripts.Drag.CarCompositions
 		private async UniTaskVoid UnloadUnused()
 		{
 			await UniTask.Yield();
-			PlayerDatas.UnloadUnusedAssets("InteriorsComposition");
+			_ = PlayerDatas.UnloadUnusedAssets("InteriorsComposition");
 		}
 
 		private void TryCancelLoadInterior()

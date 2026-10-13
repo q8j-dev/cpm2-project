@@ -24,39 +24,39 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 		private string CompositePart;
 
 		[SerializeField]
-		private InputHintSpriteMap SpriteMap;
+		private InputHintSpriteMap SpriteMap = default;
 
 		[Tooltip("Static button hint: keep the prefab's authored icon and size (no per-device sprite swap, no resize) and force the text to the right. Use for a fixed-size button chip whose glyph never changes. Only the localized label still updates.")]
 		[SerializeField]
-		private bool StaticButton;
+		private bool StaticButton = default;
 
 		[SerializeField]
 		[Header("UI References")]
-		private RectTransform RectTransform;
+		private RectTransform RectTransform = default;
 
 		[SerializeField]
-		private CanvasGroup CanvasGroup;
+		private CanvasGroup CanvasGroup = default;
 
 		[SerializeField]
-		private HorizontalLayoutGroup HorizontalLayoutGroup;
+		private HorizontalLayoutGroup HorizontalLayoutGroup = default;
 
 		[SerializeField]
-		private Image IconImage;
+		private Image IconImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Label;
+		private TextMeshProUGUI Label = default;
 
 		[Tooltip("Optional Image shown in place of the text Label when LabelSprite is set (add it to the prefab next to Label).")]
 		[SerializeField]
-		private Image LabelIconImage;
+		private Image LabelIconImage = default;
 
 		[SerializeField]
 		[Tooltip("Optional chip root for the modifier of a modifier composite (Shift in Shift+E). Hidden when the displayed binding has no modifier.")]
-		private GameObject ModifierIconRoot;
+		private GameObject ModifierIconRoot = default;
 
 		[SerializeField]
 		[Tooltip("Optional Image (inside ModifierIconRoot) that receives the modifier binding's sprite.")]
-		private Image ModifierIconImage;
+		private Image ModifierIconImage = default;
 
 		[SerializeField]
 		private bool ShowHoldArrow;
@@ -66,13 +66,13 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 		private bool ShowPositionArrow;
 
 		[SerializeField]
-		private GameObject PositionArrow;
+		private GameObject PositionArrow = default;
 
 		[SerializeField]
-		private Image HoldArrow;
+		private Image HoldArrow = default;
 
 		[SerializeField]
-		private Image FillImage;
+		private Image FillImage = default;
 
 		[SerializeField]
 		private float HoldTime = 1f;
@@ -169,10 +169,10 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 
 		[SerializeField]
 		[Tooltip("Chip shown for a WHEEL button that has no sprite in the map AND no device fallback (WheelFallbackToDevice off). Its text becomes B<trailing digits of the binding>, e.g. .../button36 -> B36.")]
-		private GameObject UnknownBindingRoot;
+		private GameObject UnknownBindingRoot = default;
 
 		[SerializeField]
-		private TextMeshProUGUI UnknownBindingText;
+		private TextMeshProUGUI UnknownBindingText = default;
 
 		[Header("Force device type")]
 		[SerializeField]
@@ -201,15 +201,13 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 
 		private LayoutElement cachedIconLayout;
 
-		private RectTransform cachedRectTransform;
-
 		private CanvasGroup[] cachedParentGroups;
 
 		private bool lastLogicalVisible = true;
 
 		private bool uiCleaned;
 
-		private bool _debug;
+		private bool _debug = default;
 
 		private string _previewKeyPath;
 

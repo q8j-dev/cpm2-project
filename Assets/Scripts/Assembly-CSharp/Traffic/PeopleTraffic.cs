@@ -14,6 +14,7 @@ using _Car_Parking.Scripts.Other.Helpers;
 using _Car_Parking.Scripts.Steam.Pedestrians;
 using _Car_Parking.Scripts.Steam.Perf;
 using _Car_Parking.Scripts.Steam.Traffic;
+using NavMeshSurface = Unity.AI.Navigation.NavMeshSurface;
 
 namespace Traffic
 {
@@ -21,11 +22,11 @@ namespace Traffic
 	{
 		[SerializeField]
 		[Tooltip("Write name of folder containing people prefabs for people traffic")]
-		private string _peopleResourceFolderName;
+		private string _peopleResourceFolderName = default;
 
 		[SerializeField]
 		[Tooltip("Scriptable object containing people traffic points")]
-		private SpawnPointsScriptableObject _trafficPointsSO;
+		private SpawnPointsScriptableObject _trafficPointsSO = default;
 
 		[Tooltip("How frequently to check if 2 person can conversate. For performance reasons set big value (around 1)")]
 		[SerializeField]
@@ -45,7 +46,7 @@ namespace Traffic
 
 		[SerializeField]
 		[Tooltip("Layers where may spawn people")]
-		private LayerMask _spawnLayers;
+		private LayerMask _spawnLayers = default;
 
 		private readonly List<Behaviours> _allPeople = new List<Behaviours>();
 

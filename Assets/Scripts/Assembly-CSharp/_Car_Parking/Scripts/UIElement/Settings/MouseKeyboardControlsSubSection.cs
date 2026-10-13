@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	{
 		[Header("Mouse Specific")]
 		[SerializeField]
-		private SliderValueHandler MouseSteerMaxDisplacement;
+		private SliderValueHandler MouseSteerMaxDisplacement = default;
 
 		protected override ControlDevice Device => ControlDevice.MouseKeyboard;
 

@@ -4,28 +4,28 @@ using UnityEngine;
 public class BlinkAnimationComponent : MonoBehaviour
 {
 	[SerializeField]
-	private CanvasGroup BackgroundCanvasGroup;
+	private CanvasGroup BackgroundCanvasGroup = default;
 
 	[SerializeField]
-	private RectTransform BackgroundCanvasRect;
+	private RectTransform BackgroundCanvasRect = default;
 
 	[SerializeField]
-	private CanvasGroup BlinkCanvasGroup;
+	private CanvasGroup BlinkCanvasGroup = default;
 
 	[SerializeField]
-	private CanvasGroup OutlineGameObject;
+	private CanvasGroup OutlineGameObject = default;
 
 	[SerializeField]
-	private RectTransform LineGameObject;
+	private RectTransform LineGameObject = default;
 
 	[SerializeField]
-	private Transform StartPos;
+	private Transform StartPos = default;
 
 	[SerializeField]
-	private float OffsetX;
+	private float OffsetX = default;
 
 	[SerializeField]
-	private RectTransform ParentRectTransform;
+	private RectTransform ParentRectTransform = default;
 
 	private Tween _tween;
 

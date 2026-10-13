@@ -9,16 +9,16 @@ namespace CPM.Scripts.Garage
 		private GarageSpot[] SpawnPoints = new GarageSpot[0];
 
 		[SerializeField]
-		private Transform CarSpawnPoint;
+		private Transform CarSpawnPoint = default;
 
 		[SerializeField]
-		private GameObject TunnelVisuals;
+		private GameObject TunnelVisuals = default;
 
 		[SerializeField]
-		private Transform FreePersonPlace;
+		private Transform FreePersonPlace = default;
 
 		[SerializeField]
-		private Transform InnerGarageTunnelChild;
+		private Transform InnerGarageTunnelChild = default;
 
 		[Inject]
 		public void Construct(GarageController garageController)

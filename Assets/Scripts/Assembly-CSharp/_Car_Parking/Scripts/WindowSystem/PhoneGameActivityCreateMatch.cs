@@ -13,19 +13,19 @@ namespace _Car_Parking.Scripts.WindowSystem
 		public const string WindowId = "CreateMatch";
 
 		[SerializeField]
-		private Button CreateMatchButton;
+		private Button CreateMatchButton = default;
 
 		[SerializeField]
-		private Toggle AllToggle;
+		private Toggle AllToggle = default;
 
 		[SerializeField]
-		private Toggle FriendsToggle;
+		private Toggle FriendsToggle = default;
 
 		[SerializeField]
-		private TMP_InputField PasswordedInputField;
+		private TMP_InputField PasswordedInputField = default;
 
 		[SerializeField]
-		private MatchmakingDataView MatchmakingDataView;
+		private MatchmakingDataView MatchmakingDataView = default;
 
 		private ArenaFlowController _arenaFlowController;
 

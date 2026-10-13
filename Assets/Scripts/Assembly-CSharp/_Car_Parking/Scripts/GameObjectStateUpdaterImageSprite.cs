@@ -6,13 +6,13 @@ namespace _Car_Parking.Scripts
 	public class GameObjectStateUpdaterImageSprite : GameObjectStateUpdater
 	{
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		[SerializeField]
-		private Sprite On;
+		private Sprite On = default;
 
 		[SerializeField]
-		private Sprite Off;
+		private Sprite Off = default;
 
 		public override bool IsOn
 		{

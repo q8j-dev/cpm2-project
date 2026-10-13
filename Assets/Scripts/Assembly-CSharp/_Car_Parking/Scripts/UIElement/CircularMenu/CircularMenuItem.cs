@@ -10,10 +10,10 @@ namespace _Car_Parking.Scripts.UIElement.CircularMenu
 		public Action onSelectedEvent;
 
 		[SerializeField]
-		private Image _image;
+		private Image _image = default;
 
 		[SerializeField]
-		private Image _icon;
+		private Image _icon = default;
 
 		[SerializeField]
 		private float _highlightScale = 1.1f;
@@ -28,7 +28,7 @@ namespace _Car_Parking.Scripts.UIElement.CircularMenu
 
 		private Tween _scaleTween;
 
-		private Tween _colorTween;
+		private Tween _colorTween = default;
 
 		private bool _isActive = true;
 

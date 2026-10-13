@@ -13,16 +13,16 @@ namespace _Car_Parking.Scripts.EventSystem.View
 		private Ease LinesEase = Ease.OutQuad;
 
 		[SerializeField]
-		private List<Slider> Lines;
+		private List<Slider> Lines = default;
 
 		[SerializeField]
-		private List<Image> FillSlidersImages;
+		private List<Image> FillSlidersImages = default;
 
 		[SerializeField]
-		private List<Image> Knobs;
+		private List<Image> Knobs = default;
 
 		[SerializeField]
-		private Color CompleteColor;
+		private Color CompleteColor = default;
 
 		private Sequence _progressSeq;
 

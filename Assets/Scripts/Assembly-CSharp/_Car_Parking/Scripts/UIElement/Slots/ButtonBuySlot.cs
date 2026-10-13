@@ -9,13 +9,13 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 	public class ButtonBuySlot : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private TMP_Text[] SlotIDTexts;
+		private TMP_Text[] SlotIDTexts = default;
 
 		[SerializeField]
-		private GameObjectsActiveBySlotColumnPosition GameObjectsActiveBySlotColumnPosition;
+		private GameObjectsActiveBySlotColumnPosition GameObjectsActiveBySlotColumnPosition = default;
 
 		public event Action OnClickEvent;
 

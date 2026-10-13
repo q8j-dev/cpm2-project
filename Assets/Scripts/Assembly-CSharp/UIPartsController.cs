@@ -18,7 +18,7 @@ public class UIPartsController : MonoBehaviour
 	private UIPartsPlace[] UIPartsPlaces;
 
 	[SerializeField]
-	private UIPartElement UIPartElementPrefab;
+	private UIPartElement UIPartElementPrefab = default;
 
 	private List<UIPartElement> _childs = new List<UIPartElement>();
 
@@ -87,7 +87,7 @@ public class UIPartsController : MonoBehaviour
 	public void RemoveDetail(PartType partType)
 	{
 		_managerUI.ShowUI?.Invoke(obj: false);
-		_managerUI.ShowConfirmWindow(() =>
+		_ = _managerUI.ShowConfirmWindow(() =>
 		{
 			if (_isEngineInCar)
 			{

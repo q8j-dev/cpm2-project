@@ -54,7 +54,7 @@ namespace Crystal
 		private bool ConformY = true;
 
 		[SerializeField]
-		private bool Logging;
+		private bool Logging = default;
 
 		private void Awake()
 		{

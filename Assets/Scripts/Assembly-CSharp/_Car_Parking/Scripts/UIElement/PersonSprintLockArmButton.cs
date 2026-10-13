@@ -16,7 +16,7 @@ namespace _Car_Parking.Scripts.UIElement
 		private float fadeOutDuration = 0.2f;
 
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		private CanvasGroup _selfCanvasGroup;
 

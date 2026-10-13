@@ -14,7 +14,7 @@ namespace _Car_Parking.Scripts.Free_drive
 		private bool _injected;
 
 		[SerializeField]
-		private GameObject[] Prefabs;
+		private GameObject[] Prefabs = default;
 
 		private IPrefabFactory PrefabFactory
 		{

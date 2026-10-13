@@ -15,52 +15,28 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ServiceOrderUI : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI Name;
+		private TextMeshProUGUI Name = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Location;
+		private TextMeshProUGUI Location = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Distance;
+		private TextMeshProUGUI Distance = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Time;
+		private TextMeshProUGUI Time = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Award;
+		private TextMeshProUGUI Award = default;
 
 		[SerializeField]
-		private Sprite Normal;
+		private Sprite Normal = default;
 
 		[SerializeField]
-		private Sprite Selected;
+		private Sprite Selected = default;
 
 		[SerializeField]
-		private Sprite ValidIcon;
-
-		[SerializeField]
-		private Sprite InvalidIcon;
-
-		[SerializeField]
-		private GameObject Line;
-
-		[SerializeField]
-		private GameObject ServiceTitlesColumn;
-
-		[SerializeField]
-		private GameObject DraggyTitlesColumn;
-
-		[SerializeField]
-		private Image FirstKmhValidIcon;
-
-		[SerializeField]
-		private Image SecondKmhValidIcon;
-
-		[SerializeField]
-		private Image MphValidIcon;
-
-		[SerializeField]
-		private Image MileValidIcon;
+		private GameObject Line = default;
 
 		private PhoneWindow _phoneWindow;
 

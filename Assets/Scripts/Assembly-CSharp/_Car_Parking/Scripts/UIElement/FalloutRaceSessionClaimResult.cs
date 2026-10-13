@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class FalloutRaceSessionClaimResult : MonoBehaviour
 	{
 		[SerializeField]
-		private RaceRewardItem[] RaceRewardItems;
+		private RaceRewardItem[] RaceRewardItems = default;
 
 		private const float RepaintDelaySeconds = 2f;
 

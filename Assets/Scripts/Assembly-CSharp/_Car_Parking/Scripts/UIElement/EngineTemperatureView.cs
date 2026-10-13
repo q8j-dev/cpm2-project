@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class EngineTemperatureView : MonoBehaviour
 	{
 		[SerializeField]
-		private Image Fill;
+		private Image Fill = default;
 
 		[SerializeField]
 		private Gradient TemperatureColors = DefaultColors();

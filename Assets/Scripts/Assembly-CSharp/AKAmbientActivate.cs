@@ -6,7 +6,7 @@ using UnityEngine;
 public class AKAmbientActivate : MonoBehaviour
 {
 	[SerializeField]
-	private AkAmbient ambient;
+	private AkAmbient ambient = default;
 
 	private void Awake()
 	{

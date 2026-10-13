@@ -28,58 +28,58 @@ namespace _Car_Parking.Scripts.Scopes
 		private const string RallyPropCatalogPath = "Configs/RallyConfigs/RallyPropCatalogSO";
 
 		[SerializeField]
-		private ManagerUI ManagerUI;
+		private ManagerUI ManagerUI = default;
 
 		[SerializeField]
-		private CoreGameManager CoreGameManager;
+		private CoreGameManager CoreGameManager = default;
 
 		[SerializeField]
-		private PersonCameraControll PersonCameraControll;
+		private PersonCameraControll PersonCameraControll = default;
 
 		[SerializeField]
-		private CarOutInControl CarOutInControl;
+		private CarOutInControl CarOutInControl = default;
 
 		[SerializeField]
-		private Camera Camera;
+		private Camera Camera = default;
 
 		[SerializeField]
-		private RacingCameraController RacingCameraController;
+		private RacingCameraController RacingCameraController = default;
 
 		[SerializeField]
-		private QuickCarSettings QuickCarSettings;
+		private QuickCarSettings QuickCarSettings = default;
 
 		[SerializeField]
-		private MenuLevelParent MenuLevelParent;
+		private MenuLevelParent MenuLevelParent = default;
 
 		[SerializeField]
-		private LevelScript LevelScript;
+		private LevelScript LevelScript = default;
 
 		[SerializeField]
-		private RaceModeController RacingModeControl;
+		private RaceModeController RacingModeControl = default;
 
 		[SerializeField]
-		private UIReferencesMediator UIReferencesMediator;
+		private UIReferencesMediator UIReferencesMediator = default;
 
 		[SerializeField]
-		private LapRaceTrafficLightUI LapRaceTrafficLightUI;
+		private LapRaceTrafficLightUI LapRaceTrafficLightUI = default;
 
 		[SerializeField]
-		private CircuitRacingWaitingWindow CircuitRacingWaitingWindow;
+		private CircuitRacingWaitingWindow CircuitRacingWaitingWindow = default;
 
 		[SerializeField]
-		private RaceModeDataSO CircuitRacingConfig;
+		private RaceModeDataSO CircuitRacingConfig = default;
 
 		[SerializeField]
-		private RaceModeDataSO DragRacingConfig;
+		private RaceModeDataSO DragRacingConfig = default;
 
 		[SerializeField]
-		private RaceModeDataSO RallyRacingConfig;
+		private RaceModeDataSO RallyRacingConfig = default;
 
 		[SerializeField]
-		private RallyCrowdControllerConfig RallyCrowdControllerConfig;
+		private RallyCrowdControllerConfig RallyCrowdControllerConfig = default;
 
 		[SerializeField]
-		private RallyPropControllerConfig RallyPropControllerConfig;
+		private RallyPropControllerConfig RallyPropControllerConfig = default;
 
 		private void Start()
 		{

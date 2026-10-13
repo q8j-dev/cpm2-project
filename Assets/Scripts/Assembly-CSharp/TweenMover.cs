@@ -18,7 +18,7 @@ public class TweenMover : MonoBehaviour
 	private Tween _tween;
 
 	[SerializeField]
-	private bool ActivateOnEnable;
+	private bool ActivateOnEnable = default;
 
 	private bool _state;
 

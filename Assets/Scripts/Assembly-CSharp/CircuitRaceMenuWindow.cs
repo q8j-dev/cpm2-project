@@ -9,10 +9,10 @@ using _Car_Parking.Scripts.SOAP_Registry;
 public class CircuitRaceMenuWindow : WindowScript
 {
 	[SerializeField]
-	private Button StartRaceButton;
+	private Button StartRaceButton = default;
 
 	[SerializeField]
-	private Button SettingsButton;
+	private Button SettingsButton = default;
 
 	private CircuitRaceControlller _circuitRaceControlller;
 

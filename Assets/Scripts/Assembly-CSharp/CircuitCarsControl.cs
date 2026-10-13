@@ -175,7 +175,7 @@ public class CircuitCarsControl : MonoBehaviour
 	public void StartTest()
 	{
 		CircuitRaceControlller.PrepareMapForTest();
-		CreateOneTestCar();
+		_ = CreateOneTestCar();
 	}
 
 	private void changeFocusOnCam()

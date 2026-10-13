@@ -8,11 +8,11 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena
 	{
 		[Tooltip("Where the player lands. Empty means this trigger's own pivot.")]
 		[SerializeField]
-		private Transform ReturnPoint;
+		private Transform ReturnPoint = default;
 
 		[SerializeField]
 		[Tooltip("Random side-to-side offset from the point, in metres each way. 0 lands exactly on it.")]
-		private float LateralSpread;
+		private float LateralSpread = default;
 
 		private ArenaFlowController _arenaFlow;
 

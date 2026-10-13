@@ -33,9 +33,9 @@ namespace CPM.Database
 	{
 		private class car2ID
 		{
-			public int carID;
+			public int carID = default;
 
-			public string carGeneratedID;
+			public string carGeneratedID = default;
 		}
 
 		private const string AllGiftsSendKey = "AllGiftsCollectedSend";

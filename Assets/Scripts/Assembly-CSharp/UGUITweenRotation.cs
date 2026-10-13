@@ -5,10 +5,10 @@ using UnityEngine;
 public class UGUITweenRotation : UGUITweener
 {
 	[SerializeField]
-	private Vector3 from;
+	private Vector3 from = default;
 
 	[SerializeField]
-	private Vector3 to;
+	private Vector3 to = default;
 
 	private Tween _tween;
 

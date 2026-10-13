@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.ArtistTools
 	public class ProceduralAnimationRotator : TrackableWithAspects
 	{
 		[SerializeField]
-		private CoordinateAxis RotationAxis;
+		private CoordinateAxis RotationAxis = default;
 
 		[SerializeField]
-		private float RotationSpeed;
+		private float RotationSpeed = default;
 
 		[SerializeField]
 		public bool IsRandomStart;

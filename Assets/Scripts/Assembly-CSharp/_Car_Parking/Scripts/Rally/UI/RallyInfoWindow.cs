@@ -9,22 +9,22 @@ namespace _Car_Parking.Scripts.Rally.UI
 	public class RallyInfoWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private ButtonEnableDisableColor PrevButton;
+		private ButtonEnableDisableColor PrevButton = default;
 
 		[SerializeField]
-		private ButtonEnableDisableColor NextButton;
+		private ButtonEnableDisableColor NextButton = default;
 
 		[SerializeField]
-		private RectTransform Content;
+		private RectTransform Content = default;
 
 		[SerializeField]
-		private RectTransform Viewport;
+		private RectTransform Viewport = default;
 
 		[SerializeField]
-		private RectTransform[] Pages;
+		private RectTransform[] Pages = default;
 
 		[SerializeField]
 		private Ease EaseType = Ease.OutCubic;

@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.GameInput
 
 		[SerializeField]
 		[Tooltip("Invert: show the target when Back is UNavailable instead.")]
-		private bool _invert;
+		private bool _invert = default;
 
 		[SerializeField]
 		[Tooltip("Window names that suppress the hint while active (e.g. WaitingWindow), even if Back is available.")]

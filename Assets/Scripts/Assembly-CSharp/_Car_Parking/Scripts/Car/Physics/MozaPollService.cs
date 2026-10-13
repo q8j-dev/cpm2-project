@@ -8,12 +8,6 @@ namespace _Car_Parking.Scripts.Car.Physics
 	{
 		private readonly RegistryHandle<GearVariable> _gearHandle = new RegistryHandle<GearVariable>(EventRegistryIDs.Gear);
 
-		private EventRegistry _events;
-
-		private SteeringWheelValueEvent _steeringWheel;
-
-		private int _lastPhysicalGear;
-
 		public void Tick()
 		{
 		}

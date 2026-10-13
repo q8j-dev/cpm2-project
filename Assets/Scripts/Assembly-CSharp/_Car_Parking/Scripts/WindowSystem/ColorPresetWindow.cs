@@ -11,7 +11,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ColorPresetWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		private UserPreferenceAnalytic _userPreferenceAnalytic;
 

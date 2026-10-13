@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Other.Helpers
 	public class DecorsInFreeGarageController : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject[] GameObjects;
+		private GameObject[] GameObjects = default;
 
 		private List<int> _needToEnableIndex = new List<int>();
 

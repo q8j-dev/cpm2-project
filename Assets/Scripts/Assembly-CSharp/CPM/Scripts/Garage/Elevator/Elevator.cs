@@ -7,10 +7,10 @@ namespace CPM.Scripts.Garage.Elevator
 	public class Elevator : MonoBehaviour
 	{
 		[SerializeField]
-		private ElevatorDoor[] Doors;
+		private ElevatorDoor[] Doors = default;
 
 		[SerializeField]
-		private Transform Podium;
+		private Transform Podium = default;
 
 		[SerializeField]
 		private float MoveTime = 3f;

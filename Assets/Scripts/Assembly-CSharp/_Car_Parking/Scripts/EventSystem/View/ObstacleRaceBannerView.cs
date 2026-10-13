@@ -14,13 +14,13 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class ObstacleRaceBannerView : EventView
 	{
 		[SerializeField]
-		private TMP_Text ClaimedText;
+		private TMP_Text ClaimedText = default;
 
 		[SerializeField]
-		private StepProgressView Progress;
+		private StepProgressView Progress = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		private ArenaFlowController _arenaFlow;
 

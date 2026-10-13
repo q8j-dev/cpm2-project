@@ -8,10 +8,7 @@ using _Car_Parking.Scripts.MenuUI.LanguagesServers;
 public class PlayersListFlag : MonoBehaviour
 {
 	[SerializeField]
-	private Sprite[] Flags;
-
-	[SerializeField]
-	private LanguagesIconsConfig _config;
+	private LanguagesIconsConfig _config = default;
 
 	private void Start()
 	{

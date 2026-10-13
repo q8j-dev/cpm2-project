@@ -17,19 +17,5 @@ public class MouseLookAdvanced : MonoBehaviour
 
 	public float smoothSpeed = 20f;
 
-	private float verticalAcceleration;
-
-	private float rotationX;
-
-	private float smoothRotationX;
-
-	private float rotationY;
-
-	private float smoothRotationY;
-
-	private Vector3 vMousePos;
-
 	public float Speed = 100f;
-
-	private bool bActive;
 }

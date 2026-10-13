@@ -6,13 +6,13 @@ namespace _Car_Parking.Scripts.Police
 	public class GarageWindowPoliceButtonsController : PoliceUIBase
 	{
 		[SerializeField]
-		private BuyPoliceButton BuyPoliceButton;
+		private BuyPoliceButton BuyPoliceButton = default;
 
 		[SerializeField]
-		private EnablePoliceButton EnablePoliceButton;
+		private EnablePoliceButton EnablePoliceButton = default;
 
 		[SerializeField]
-		private DisablePoliceButton DisablePoliceButton;
+		private DisablePoliceButton DisablePoliceButton = default;
 
 		private void OnEnable()
 		{

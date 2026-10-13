@@ -5,7 +5,7 @@ namespace Service.Cargo
 	public class ParkingTrigger : MonoBehaviour
 	{
 		[SerializeField]
-		private FinishCollisionDetector parent;
+		private FinishCollisionDetector parent = default;
 
 		private int triggerEntered;
 

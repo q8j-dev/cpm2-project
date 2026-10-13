@@ -15,10 +15,10 @@ namespace _Car_Parking.Scripts.UIElement
 		private Toggle PlaceToggle;
 
 		[SerializeField]
-		private Image NewPlaceImage;
+		private Image NewPlaceImage = default;
 
 		[SerializeField]
-		private bool IsMultiplayerUIItem;
+		private bool IsMultiplayerUIItem = default;
 
 		public bool IsChosen
 		{

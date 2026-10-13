@@ -11,10 +11,10 @@ public class EngineImageRotator : MonoBehaviour
 	private StageRender _stageRenderHandler;
 
 	[SerializeField]
-	private RawImage RawImage;
+	private RawImage RawImage = default;
 
 	[SerializeField]
-	private CanvasGroup[] CanvasGroups;
+	private CanvasGroup[] CanvasGroups = default;
 
 	private CancellationTokenSource _tokenSource;
 

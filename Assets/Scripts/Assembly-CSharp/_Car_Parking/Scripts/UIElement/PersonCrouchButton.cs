@@ -9,10 +9,10 @@ namespace _Car_Parking.Scripts.UIElement
 	public class PersonCrouchButton : MonoBehaviour
 	{
 		[SerializeField]
-		private Image _crouchIcon;
+		private Image _crouchIcon = default;
 
 		[SerializeField]
-		private Image _slideIcon;
+		private Image _slideIcon = default;
 
 		[SerializeField]
 		private float _fadeDuration = 0.15f;

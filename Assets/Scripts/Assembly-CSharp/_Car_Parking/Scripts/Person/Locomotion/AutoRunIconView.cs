@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.Person.Locomotion
 	public class AutoRunIconView : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject _icon;
+		private GameObject _icon = default;
 
 		private GameObject _person;
 

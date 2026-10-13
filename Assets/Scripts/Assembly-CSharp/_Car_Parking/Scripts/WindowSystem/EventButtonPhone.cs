@@ -11,16 +11,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class EventButtonPhone : MonoBehaviour
 	{
 		[SerializeField]
-		private RemainingTimeView TimeView;
+		private RemainingTimeView TimeView = default;
 
 		[SerializeField]
-		private RawImageLoadAsync Icon;
+		private RawImageLoadAsync Icon = default;
 
 		[SerializeField]
-		private TMP_Text Title;
+		private TMP_Text Title = default;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		private _Car_Parking.Scripts.EventSystem.Data.Event _event;
 

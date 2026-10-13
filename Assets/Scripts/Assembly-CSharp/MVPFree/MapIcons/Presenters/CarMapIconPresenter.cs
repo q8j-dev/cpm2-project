@@ -18,13 +18,13 @@ namespace MVPFree.MapIcons.Presenters
 		private const string UI_MAPICON = "UI_mapiconcar";
 
 		[Inject]
-		private MapIconsModel _mapIconsModel;
+		private MapIconsModel _mapIconsModel = default;
 
 		[Inject]
-		private GlobalCollectionsProvider _collectionsProvider;
+		private GlobalCollectionsProvider _collectionsProvider = default;
 
 		[Inject]
-		private FreeDriveProvider _freeDriveProvider;
+		private FreeDriveProvider _freeDriveProvider = default;
 
 		private readonly CompositeDisposable _disposables = new CompositeDisposable();
 

@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		private const float DisabledSlotAlpha = 0.5f;
 
 		[SerializeField]
-		private CanvasGroup CarCanvasGroup;
+		private CanvasGroup CarCanvasGroup = default;
 
 		[SerializeField]
-		private CanvasGroup SlotCanvasGroup;
+		private CanvasGroup SlotCanvasGroup = default;
 
 		[SerializeField]
-		private GameObject LoadingGameObject;
+		private GameObject LoadingGameObject = default;
 
 		public void LockSlot(bool state)
 		{

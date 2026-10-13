@@ -10,10 +10,10 @@ namespace _Car_Parking.Scripts.Racing_Scripts.Rally.Ghost
 	public sealed class GhostToggleWidget : MonoBehaviour
 	{
 		[SerializeField]
-		private Toggle Toggle;
+		private Toggle Toggle = default;
 
 		[SerializeField]
-		private TMP_Text BestTimeLabel;
+		private TMP_Text BestTimeLabel = default;
 
 		private GhostStorage _storage;
 

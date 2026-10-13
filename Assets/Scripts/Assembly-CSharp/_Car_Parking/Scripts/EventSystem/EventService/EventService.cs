@@ -375,7 +375,7 @@ namespace _Car_Parking.Scripts.EventSystem.EventService
 					if (!rewards.Any((RewardResponseBase x) => x is RewardCarResponse rewardCarResponse && CarIdStorage.IsRewardExclusiveCar(rewardCarResponse.CarId)) && rewards.Any((RewardResponseBase x) => x.Type != "message"))
 					{
 						V.CoreGameManager.ManagerUI.ShowNotificationWindow(new LocalizedString("EventService.RewardRecieved"), 3f).Forget();
-						RateAppHelper.RateAppAsync();
+						_ = RateAppHelper.RateAppAsync();
 					}
 				}
 			}

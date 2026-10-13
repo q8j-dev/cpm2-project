@@ -25,10 +25,10 @@ namespace _Car_Parking.Scripts.Audio
 		private const float TimeToCheckTime = 0.5f;
 
 		[SerializeField]
-		private string PlayEvent;
+		private string PlayEvent = default;
 
 		[SerializeField]
-		private float DurationSound;
+		private float DurationSound = default;
 
 		[SerializeField]
 		private List<DayTime> Schedule = new List<DayTime>();

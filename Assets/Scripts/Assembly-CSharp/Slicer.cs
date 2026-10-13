@@ -10,7 +10,7 @@ public class Slicer : MonoBehaviour
 {
 	[SerializeField]
 	[Tooltip("Slicers have to work chained to properly cut the object. Put slider which should cut after this one")]
-	private Slicer nextSlicer;
+	private Slicer nextSlicer = default;
 
 	[Tooltip("Need to add rigibodies to cut parts")]
 	[SerializeField]

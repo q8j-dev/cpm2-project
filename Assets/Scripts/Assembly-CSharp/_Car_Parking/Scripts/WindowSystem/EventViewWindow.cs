@@ -41,7 +41,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private Button CloseButton;
 
 		[SerializeField]
-		private SnapController SnapController;
+		private SnapController SnapController = default;
 
 		private ParkingMenuUI _parkingMenuUI;
 

@@ -222,7 +222,7 @@ namespace CPM.Database
 			vehicleData.ColorsService.CreateFirstMat(vehicleData);
 			vehicleData.WindowComposition.CreateWindowMat();
 			bool num = ClampWheelDataToLimits(carInfo, isLocalCar);
-			WheelConstructor.SetWheel(vehicleData, carInfo.TuningData, (!isLocalCar) ? 16 : 0);
+			_ = WheelConstructor.SetWheel(vehicleData, carInfo.TuningData, (!isLocalCar) ? 16 : 0);
 			if ((num & isLocalCar) && (bool)car && car.TryGetComponent<Powertrain>(out var component))
 			{
 				component.SetWheelParams(AxleType.Front, carInfo.TuningData.FrontWheelData);

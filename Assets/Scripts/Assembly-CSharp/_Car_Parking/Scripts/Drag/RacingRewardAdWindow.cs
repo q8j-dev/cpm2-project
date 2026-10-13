@@ -19,28 +19,28 @@ namespace _Car_Parking.Scripts.Drag
 		private const int AdRewardMultiplier = 2;
 
 		[SerializeField]
-		private CircuitRewardUiElement[] CircuitRewardUiElements;
+		private CircuitRewardUiElement[] CircuitRewardUiElements = default;
 
 		[SerializeField]
-		private Button AdRewardButton;
+		private Button AdRewardButton = default;
 
 		[SerializeField]
-		private Button ContinueButton;
+		private Button ContinueButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private GameObject MoneyPanel;
+		private GameObject MoneyPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MoneyText;
+		private TextMeshProUGUI MoneyText = default;
 
 		[SerializeField]
-		private GameObject CoinPanel;
+		private GameObject CoinPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CoinText;
+		private TextMeshProUGUI CoinText = default;
 
 		private IRacingRewardAdService _racingRewardAdService;
 

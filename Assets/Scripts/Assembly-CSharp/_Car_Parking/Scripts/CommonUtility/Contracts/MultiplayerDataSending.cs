@@ -269,7 +269,7 @@ namespace _Car_Parking.Scripts.CommonUtility.Contracts
 			if (gameObject.TryGetComponent<VehicleData>(out var component2) && !multiPlayerPosControl.vinylLoaded)
 			{
 				CarInfo carInfo = component.CarInfo;
-				carFactoryService.SetVisual(carInfo, waitBodyLoad: false, gameObject, component2, isLocalCar: false);
+				_ = carFactoryService.SetVisual(carInfo, waitBodyLoad: false, gameObject, component2, isLocalCar: false);
 				multiPlayerPosControl.vinylLoaded = true;
 			}
 		}

@@ -108,8 +108,6 @@ namespace RootMotion.Demos
 
 		private RaycastHit hit;
 
-		private float jumpLeg;
-
 		private float jumpEndTime;
 
 		private float forwardMlp;

@@ -12,9 +12,9 @@ namespace _Car_Parking.Scripts.Car.Configs
 		[Serializable]
 		private class CarIdPath
 		{
-			public int carId;
+			public int carId = default;
 
-			public string path;
+			public string path = default;
 		}
 
 		[SerializeField]

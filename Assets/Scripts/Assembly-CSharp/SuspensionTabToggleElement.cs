@@ -5,13 +5,13 @@ using _Car_Parking.Scripts.WindowSystem;
 public class SuspensionTabToggleElement : MonoBehaviour
 {
 	[SerializeField]
-	private SuspensionTuningWindow SuspensionTuningWindow;
+	private SuspensionTuningWindow SuspensionTuningWindow = default;
 
 	[SerializeField]
-	private Toggle TabToggle;
+	private Toggle TabToggle = default;
 
 	[SerializeField]
-	private SuspensionTabs CurrentSuspensionTabs;
+	private SuspensionTabs CurrentSuspensionTabs = default;
 
 	private void Start()
 	{

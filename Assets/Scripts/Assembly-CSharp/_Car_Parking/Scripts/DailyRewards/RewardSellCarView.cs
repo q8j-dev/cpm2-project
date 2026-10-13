@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.DailyRewards
 	public class RewardSellCarView : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject LoadingRoot;
+		private GameObject LoadingRoot = default;
 
 		[SerializeField]
-		private CombinedPriceView PriceView;
+		private CombinedPriceView PriceView = default;
 
 		public void UpdateLoadingView(bool isOn)
 		{

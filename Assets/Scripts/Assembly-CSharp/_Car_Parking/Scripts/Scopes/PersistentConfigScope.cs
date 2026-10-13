@@ -160,7 +160,7 @@ namespace _Car_Parking.Scripts.Scopes
 		public ShadersVaultConfig shadersVaultConfig;
 
 		[SerializeField]
-		private SoundEventChannel soundEventChannel;
+		private SoundEventChannel soundEventChannel = default;
 
 		public void Configure(IContainerBuilder builder)
 		{

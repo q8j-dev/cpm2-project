@@ -8,10 +8,10 @@ namespace _Car_Parking.Scripts.Other.Helpers
 	public class RectTransformMaxWidth : MonoBehaviour, IRectTransformUpdated
 	{
 		[SerializeField]
-		private RectTransform RectTransform;
+		private RectTransform RectTransform = default;
 
 		[SerializeField]
-		private float MaxWidth;
+		private float MaxWidth = default;
 
 		private CancellationTokenSource _cancellationTokenSourceUpdateWidth;
 

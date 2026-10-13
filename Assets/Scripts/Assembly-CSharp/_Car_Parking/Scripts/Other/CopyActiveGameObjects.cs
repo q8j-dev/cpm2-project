@@ -8,13 +8,13 @@ namespace _Car_Parking.Scripts.Other
 		[Serializable]
 		private class Data
 		{
-			public GameObject Source;
+			public GameObject Source = default;
 
-			public GameObject Target;
+			public GameObject Target = default;
 		}
 
 		[SerializeField]
-		private Data[] Datas;
+		private Data[] Datas = default;
 
 		private void OnEnable()
 		{

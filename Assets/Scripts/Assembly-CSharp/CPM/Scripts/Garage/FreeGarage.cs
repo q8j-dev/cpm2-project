@@ -325,7 +325,7 @@ namespace CPM.Scripts.Garage
 				}
 				else
 				{
-					SceneManager.UnloadSceneAsync(scene);
+					_ = SceneManager.UnloadSceneAsync(scene);
 				}
 			}
 			if (!SceneControl.KeepLocationLoadedForGarage)

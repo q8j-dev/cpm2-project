@@ -23,47 +23,38 @@ public class GameModes : WindowScript, IBackableWindow
 	private const int NewModeTextShowMaxCount = 3;
 
 	[SerializeField]
-	private Button BackButton;
+	private Button BackButton = default;
 
 	[SerializeField]
 	[Header("Levels")]
-	private Button LevelsButton;
+	private Button LevelsButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI LevelsProgressText;
+	private TextMeshProUGUI LevelsProgressText = default;
 
 	[SerializeField]
-	private Image LevelsFilledImage;
+	private Image LevelsFilledImage = default;
 
 	[SerializeField]
 	[Header("Drag Racing")]
-	private Button RacingButton;
+	private Button RacingButton = default;
 
 	[SerializeField]
-	private GameObject NewModeText;
-
-	[SerializeField]
-	private TextMeshProUGUI DragProgressText;
-
-	[SerializeField]
-	private Image DragFilledImage;
-
-	[SerializeField]
-	private List<RaceWonPlacesItem> DragClassRecordsUis;
+	private GameObject NewModeText = default;
 
 	[Header("Single Player")]
 	[SerializeField]
-	private Button SinglePlayerButton;
+	private Button SinglePlayerButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DistanceText;
+	private TextMeshProUGUI DistanceText = default;
 
 	[Header("Multiplayer")]
 	[SerializeField]
-	private Button MultiplayerButton;
+	private Button MultiplayerButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PlayTimeText;
+	private TextMeshProUGUI PlayTimeText = default;
 
 	private ITimerTuningService _timerTuningService;
 

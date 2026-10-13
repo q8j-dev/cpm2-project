@@ -32,60 +32,51 @@ namespace Car_Parking.Scripts.Drag
 		private const float ToRoadButtonShowDelay = 3f;
 
 		[SerializeField]
-		private TextMeshProUGUI TimeText;
+		private TextMeshProUGUI TimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CurrentPenaltyText;
+		private TextMeshProUGUI CurrentPenaltyText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FinalPenaltyText;
+		private TextMeshProUGUI FinalPenaltyText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BestTimeText;
+		private TextMeshProUGUI BestTimeText = default;
 
 		[SerializeField]
-		private Button StopRaceButton;
+		private Button StopRaceButton = default;
 
 		[SerializeField]
-		private Button RestartRaceButton;
+		private Button RestartRaceButton = default;
 
 		[SerializeField]
-		private Button ToRoadButton;
+		private Button ToRoadButton = default;
 
 		[SerializeField]
-		private GameObject TimePanel;
-
-		[SerializeField]
-		private GameObject OutOffRoadPanel;
+		private GameObject OutOffRoadPanel = default;
 
 		[Header("MapElements")]
 		[SerializeField]
-		private MiniMapView MiniMapView;
+		private MiniMapView MiniMapView = default;
 
 		[SerializeField]
-		private Sprite UserIcon;
+		private Sprite UserIcon = default;
 
 		[SerializeField]
-		private RawImage SmallMapImage;
+		private RawImage SmallMapImage = default;
 
 		[SerializeField]
 		[Header("LightButton")]
-		private Button LightOnButton;
+		private Button LightOnButton = default;
 
 		[SerializeField]
-		private Image LightOnImage;
+		private Image LightOnImage = default;
 
 		[SerializeField]
-		private Sprite[] LightOnSprites;
+		private Sprite[] LightOnSprites = default;
 
 		[SerializeField]
-		private Sprite[] BestTimeSprites;
-
-		[SerializeField]
-		private FinishFlashController FinishFlashController;
-
-		[SerializeField]
-		private RallySequenceUIController RallySequenceUIController;
+		private FinishFlashController FinishFlashController = default;
 
 		private IDisposable ToRoadButtonShowDisposable;
 
@@ -94,8 +85,6 @@ namespace Car_Parking.Scripts.Drag
 		private FreeTimeAttackController _timeAttackController;
 
 		private Dictionary<string, Image> _otherUsersMapIconDictionary = new Dictionary<string, Image>();
-
-		private bool _timerPanelVisible;
 
 		private FreeDriveControl _freeDriveControl;
 

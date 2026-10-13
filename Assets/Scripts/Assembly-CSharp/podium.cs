@@ -200,7 +200,7 @@ public class podium : MonoBehaviour
 				NewMoveController component5 = person.GetComponent<NewMoveController>();
 				if ((bool)component5)
 				{
-					component5.SetRandomAnimator(animator, crowdAnimations, 40);
+					_ = component5.SetRandomAnimator(animator, crowdAnimations, 40);
 				}
 			}
 			Rigidbody component6 = person.GetComponent<Rigidbody>();

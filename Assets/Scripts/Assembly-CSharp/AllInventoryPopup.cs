@@ -13,45 +13,45 @@ using _Car_Parking.Scripts.UIElement;
 public class AllInventoryPopup : MonoBehaviour
 {
 	[SerializeField]
-	private InventroyPopupElement InventroyPopupElementPrefab;
+	private InventroyPopupElement InventroyPopupElementPrefab = default;
 
 	private List<InventroyPopupElement> _elements = new List<InventroyPopupElement>();
 
 	[SerializeField]
-	private Transform ContentPlace;
+	private Transform ContentPlace = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private Button ConfirmButton;
+	private Button ConfirmButton = default;
 
 	[SerializeField]
-	private Button CancelButton;
+	private Button CancelButton = default;
 
 	[SerializeField]
-	private AllPartsInventoryUIWindow AllPartsInventoryUIWindow;
+	private AllPartsInventoryUIWindow AllPartsInventoryUIWindow = default;
 
 	[SerializeField]
-	private ContentSizeFitter BuyButtonSizeFitter;
+	private ContentSizeFitter BuyButtonSizeFitter = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ConfirmText;
+	private TextMeshProUGUI ConfirmText = default;
 
 	[SerializeField]
-	private Image MoneyIcon;
+	private Image MoneyIcon = default;
 
 	[SerializeField]
-	private LayoutElement ContentLayoutElement;
+	private LayoutElement ContentLayoutElement = default;
 
 	[SerializeField]
-	private RectTransform ViewportRect;
+	private RectTransform ViewportRect = default;
 
 	private IPrefabFactory _prefabFactory;
 
 	private Action _onConfirm;
 
-	private Action _onCancel;
+	private Action _onCancel = default;
 
 	[Inject]
 	public void Construct(IPrefabFactory prefabFactory)

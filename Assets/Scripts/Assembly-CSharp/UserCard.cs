@@ -72,7 +72,7 @@ public class UserCard : MonoBehaviour
 		_powertrain = powertrain;
 		if (setFlag)
 		{
-			SetImages(carValues.CarID);
+			_ = SetImages(carValues.CarID);
 			if ((bool)flagDrawer)
 			{
 				flagDrawer.Show();
@@ -95,7 +95,7 @@ public class UserCard : MonoBehaviour
 	{
 		_powertrain = powertrain;
 		mainCarValues = carValues;
-		SetImages(carValues.CarID);
+		_ = SetImages(carValues.CarID);
 		TextMeshProUGUI[] array = userNameTexts;
 		foreach (TextMeshProUGUI textMeshProUGUI in array)
 		{

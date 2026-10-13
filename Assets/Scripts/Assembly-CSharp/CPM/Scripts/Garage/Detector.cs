@@ -21,10 +21,10 @@ namespace CPM.Scripts.Garage
 	public class Detector : MonoBehaviour
 	{
 		[SerializeField]
-		private GarageDoor door;
+		private GarageDoor door = default;
 
 		[SerializeField]
-		private int GarageIndex;
+		private int GarageIndex = default;
 
 		private GarageController _garageController;
 
@@ -68,7 +68,7 @@ namespace CPM.Scripts.Garage
 
 		private void TryBecomeResident()
 		{
-			if (ResidencyEnabled && !_isChecking && _garageBuyService != null && _garageSelectorService != null && !FlagsStorage.InGarageFree && !FlagsStorage.IsInGarageTunnel && !AdvancedBoolean.op_True(!_garageBuyService.GetGarageStatus(GarageIndex)) && RamDevice.AllowHeavyPreload())
+			if (ResidencyEnabled && !_isChecking && _garageBuyService != null && _garageSelectorService != null && !FlagsStorage.InGarageFree && !FlagsStorage.IsInGarageTunnel && (!_garageBuyService.GetGarageStatus(GarageIndex) ? false : true) && RamDevice.AllowHeavyPreload())
 			{
 				int garageSceneIndex = _garageSelectorService.GetGarageSceneIndex(GarageIndex);
 				if (garageSceneIndex >= 0 && !Resident.IsResidentFor(garageSceneIndex) && IsCloserThanResidentOwner())
@@ -206,7 +206,7 @@ namespace CPM.Scripts.Garage
 					return;
 				}
 			}
-			if (!AdvancedBoolean.op_True(!_garageBuyService.GetGarageStatus(GarageIndex)))
+			if (!_garageBuyService.GetGarageStatus(GarageIndex) ? false : true)
 			{
 				vehicleData.GetPowertrain.Rigidbody.isKinematic = true;
 				_garageSelectorService.ChangeGarageIndex(GarageIndex);

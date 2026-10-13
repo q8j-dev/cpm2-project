@@ -44,12 +44,6 @@ namespace Racing.CameraManagement.SpecificTypes
 
 		private CinemachineComposer _composer;
 
-		private Tweener _fovTween;
-
-		private Tweener _xAxisTween;
-
-		private Tweener _yAxisTween;
-
 		private Sequence _mySequence;
 
 		protected override void Awake()

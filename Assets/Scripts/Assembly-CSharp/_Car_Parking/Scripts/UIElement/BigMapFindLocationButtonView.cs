@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class BigMapFindLocationButtonView : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject Deselect;
+		private GameObject Deselect = default;
 
 		private void OnEnable()
 		{

@@ -14,22 +14,22 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ObstacleRaceResultWindow : ResultWindow<ObstacleRaceResultRow, ObstacleRaceResultRowElement, ArenaResultAction>
 	{
 		[SerializeField]
-		private Button[] ExitButtons;
+		private Button[] ExitButtons = default;
 
 		[SerializeField]
-		private Button TryAgainButton;
+		private Button TryAgainButton = default;
 
 		[SerializeField]
-		private GameObject[] PrivateGos;
+		private GameObject[] PrivateGos = default;
 
 		[SerializeField]
-		private GameObject[] PublicGos;
+		private GameObject[] PublicGos = default;
 
 		[SerializeField]
-		private FalloutRaceSessionClaimResult FalloutRaceSessionClaimResult;
+		private FalloutRaceSessionClaimResult FalloutRaceSessionClaimResult = default;
 
 		[SerializeField]
-		private ObstacleRaceSpectatorPanel SpectatorPanel;
+		private ObstacleRaceSpectatorPanel SpectatorPanel = default;
 
 		private FalloutRaceSession _raceSession;
 

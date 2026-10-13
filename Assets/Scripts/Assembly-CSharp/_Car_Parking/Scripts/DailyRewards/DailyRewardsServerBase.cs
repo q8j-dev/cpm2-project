@@ -21,8 +21,6 @@ namespace _Car_Parking.Scripts.DailyRewards
 
 		private readonly IConnectionManager _connectionManager;
 
-		private bool _initRewardsCalled;
-
 		public IReadOnlyList<DailyRewardData> Rewards => _rewards;
 
 		public int Count => _rewards.Count;
@@ -111,7 +109,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 						return FunctionStatus.UnknownError;
 					}
 					V.CoreGameManager.LoadBoughtCars();
-					RateAppHelper.RateAppAsync();
+					_ = RateAppHelper.RateAppAsync();
 				}
 				dailyRewardData.Status = DailyRewardData.StatusType.Rewarded;
 			}

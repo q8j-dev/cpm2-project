@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.Free_drive
 	public class City2PartsCollection : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject[] _parts;
+		private GameObject[] _parts = default;
 
 		[SerializeField]
-		private GameObject[] _objects;
+		private GameObject[] _objects = default;
 
 		private void Awake()
 		{

@@ -19,10 +19,6 @@ namespace CPM.Scripts.Garage
 	{
 		private const float DistanceToSetActiveDoorButton = 1f;
 
-		private Quaternion _enterRotation;
-
-		private Button _doorButton;
-
 		public override async UniTask Init(VehicleData enteredVehicle, GarageController controller, CancellationToken cancellationToken)
 		{
 			FlagsStorage.InGarageMenu = true;

@@ -5,7 +5,7 @@ public class NotificationController : MonoBehaviour
 {
 	public TextMeshProUGUI text;
 
-	public bool animation;
+	public new bool animation;
 
 	public NotificationController notificationController;
 

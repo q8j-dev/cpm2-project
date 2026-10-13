@@ -47,15 +47,9 @@ public class JoystickControlUGUI : MonoBehaviour, IPointerDownHandler, IEventSys
 
 	private Quaternion rotation;
 
-	private Vector3 FirstPosition;
-
-	private Vector3 SecondPosition;
-
 	private Vector3 delta;
 
 	private Vector3 lastOffset;
-
-	private Vector3 lastOffsettemp;
 
 	private Touchscreen screen;
 

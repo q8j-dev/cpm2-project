@@ -17,13 +17,13 @@ namespace _Car_Parking.Scripts.EditableHUD
 		public const string PlayerPrefsSplitSign = "###";
 
 		[SerializeField]
-		private RectTransform RectTransform;
+		private RectTransform RectTransform = default;
 
 		[SerializeField]
-		private EditableHUDElementIsActiveGetter[] IsActiveGetters;
+		private EditableHUDElementIsActiveGetter[] IsActiveGetters = default;
 
 		[SerializeField]
-		private EditableHUDElementEditorGraphics EditorGraphics;
+		private EditableHUDElementEditorGraphics EditorGraphics = default;
 
 		private ElementDefaultData _defaultData;
 

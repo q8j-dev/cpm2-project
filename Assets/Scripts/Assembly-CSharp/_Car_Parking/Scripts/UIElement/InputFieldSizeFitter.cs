@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public class InputFieldSizeFitter : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_InputField CurrentInputField;
+		private TMP_InputField CurrentInputField = default;
 
 		[SerializeField]
-		private RectTransform TargetRect;
+		private RectTransform TargetRect = default;
 
 		[SerializeField]
-		private RectTransform ParentRect;
+		private RectTransform ParentRect = default;
 
 		public void Init()
 		{

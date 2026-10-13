@@ -71,16 +71,16 @@ namespace _Car_Parking.Scripts.Drag
 		private ICharacterEquipmentDataService _characterEquipmentDataService;
 
 		[SerializeField]
-		private DailyTaskWindowManager DailyTaskWindowManager;
+		private DailyTaskWindowManager DailyTaskWindowManager = default;
 
 		[SerializeField]
-		private Button NeedToUpdateButton;
+		private Button NeedToUpdateButton = default;
 
 		[SerializeField]
-		private GameObject RealtyBacklight;
+		private GameObject RealtyBacklight = default;
 
 		[SerializeField]
-		private CanvasGroup CanvasGroup;
+		private CanvasGroup CanvasGroup = default;
 
 		private CurrencyManagerController _currencyManagerController;
 

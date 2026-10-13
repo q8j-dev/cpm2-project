@@ -36,7 +36,7 @@ namespace _Car_Parking.Scripts.Audio
 
 		[Tooltip("What the sound is emitted from, which is where it is heard. Left empty, this object is used. Point it at the moving part when the component has to stay on the root - a RouteRunner switches its moving part off between runs, and a component on it dies with its pending timers.")]
 		[SerializeField]
-		private GameObject Emitter;
+		private GameObject Emitter = default;
 
 		[SerializeField]
 		private List<Entry> Entries = new List<Entry>();

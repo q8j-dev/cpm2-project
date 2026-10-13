@@ -20,13 +20,13 @@ namespace _Car_Parking.Scripts.VisualTuningFavourite
 		protected Toggle AddRemoveToFavouriteToggle;
 
 		[SerializeField]
-		private Toggle ShowFavouritesViewToggle;
+		private Toggle ShowFavouritesViewToggle = default;
 
 		[SerializeField]
-		private Toggle ShowAllViewToggle;
+		private Toggle ShowAllViewToggle = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CurrentFavouriteCountLabel;
+		private TextMeshProUGUI CurrentFavouriteCountLabel = default;
 
 		private EventRegistry _eventRegistry;
 

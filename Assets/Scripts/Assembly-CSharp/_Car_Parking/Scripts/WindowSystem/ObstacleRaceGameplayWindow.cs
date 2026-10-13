@@ -16,22 +16,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ObstacleRaceGameplayWindow : WindowScript
 	{
 		[SerializeField]
-		private ChartListView ChartListView;
+		private ChartListView ChartListView = default;
 
 		[SerializeField]
-		private RacingProgressUIController RacingProgressUIController;
+		private RacingProgressUIController RacingProgressUIController = default;
 
 		[SerializeField]
-		private LapRaceTrafficLightUI LapRaceTrafficLightUI;
+		private CountdownUI CountdownUI = default;
 
 		[SerializeField]
-		private GameObject RootGameplay;
-
-		[SerializeField]
-		private CountdownUI CountdownUI;
-
-		[SerializeField]
-		private SurvivalTimerView SurvivalTimerView;
+		private SurvivalTimerView SurvivalTimerView = default;
 
 		[SerializeField]
 		private float DelayToShowListAndProgress = 2f;

@@ -632,7 +632,7 @@ public class PersonWindow : WindowScript, IBackableWindow
 		_managerUI.CloseSeveralWindows();
 		_skipShowMainMenuOnClose = true;
 		Close();
-		_managerUI.ShowBundleOfferWindow(offer);
+		_ = _managerUI.ShowBundleOfferWindow(offer);
 	}
 
 	public void BuyOrSave()
@@ -659,7 +659,7 @@ public class PersonWindow : WindowScript, IBackableWindow
 		{
 			canvasGroup.alpha = 0f;
 			LogAnalyticEvent(PurchaseStatus.PURCHASE_CLICKED);
-			_managerUI.ShowConfirmWindow(TryBuy, new LocalizedString("Playerprofilewindow.Message"), string.Format(new LocalizedString("VisualTuningWindow.Buythisitemfor"), obscuredInt), () =>
+			_ = _managerUI.ShowConfirmWindow(TryBuy, new LocalizedString("Playerprofilewindow.Message"), string.Format(new LocalizedString("VisualTuningWindow.Buythisitemfor"), obscuredInt), () =>
 			{
 				canvasGroup.alpha = 1f;
 				LogAnalyticEvent(PurchaseStatus.PURCHASE_CANCELED_BY_USER);
@@ -1427,7 +1427,7 @@ public class PersonWindow : WindowScript, IBackableWindow
 			CompletePurchase(equipmentsData);
 			if ((int)overAllCoin > 0)
 			{
-				_managerUI.ShowNotificationWindow(new LocalizedString("OneKitMenuItem.Purchased"), 2f);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("OneKitMenuItem.Purchased"), 2f);
 			}
 		}, () =>
 		{

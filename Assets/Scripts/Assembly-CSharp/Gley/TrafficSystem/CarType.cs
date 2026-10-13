@@ -7,14 +7,14 @@ namespace Gley.TrafficSystem
 	public class CarType
 	{
 		[SerializeField]
-		private GameObject vehiclePrefab;
+		private GameObject vehiclePrefab = default;
 
 		[SerializeField]
 		[Range(1f, 100f)]
 		private int percent;
 
 		[SerializeField]
-		private bool ignore;
+		private bool ignore = default;
 
 		public GameObject VehiclePrefab => vehiclePrefab;
 

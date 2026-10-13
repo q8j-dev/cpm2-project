@@ -18,8 +18,6 @@ public class RewardDayControll : MonoBehaviour
 {
 	private static DateTime startDate;
 
-	private DateTime newTime;
-
 	private ObscuredDouble SecondsLeftPrize;
 
 	public TextMeshProUGUI timeLeftLabelPrize;
@@ -47,8 +45,6 @@ public class RewardDayControll : MonoBehaviour
 	private int lastSetIndex;
 
 	private bool incrementCountOffer = true;
-
-	private bool bTemp;
 
 	public GameObject giftButton;
 

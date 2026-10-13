@@ -36,16 +36,16 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		private const string GarageMenuWindowAreYouSureYouWantToResetThisC = "GarageMenuWindow.AreYouSureYouWantToResetThisC";
 
 		[SerializeField]
-		private Button ButtonResetCarPositions;
+		private Button ButtonResetCarPositions = default;
 
 		[SerializeField]
-		private GameObject ResetCarCenterText;
+		private GameObject ResetCarCenterText = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater[] StateUpdaters;
+		private GameObjectStateUpdater[] StateUpdaters = default;
 
 		[SerializeField]
-		private ScrollViewSlots[] ScrollViewSlots;
+		private ScrollViewSlots[] ScrollViewSlots = default;
 
 		[SerializeField]
 		protected RectTransformInCanvasSpace RectTransformInCanvasSpace;

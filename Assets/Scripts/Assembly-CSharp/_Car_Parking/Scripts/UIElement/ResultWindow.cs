@@ -6,17 +6,17 @@ namespace _Car_Parking.Scripts.UIElement
 	public abstract class ResultWindow<TRow, TElement, TAction> : WindowScriptAsyncResult<TAction> where TRow : IResultRow where TElement : ResultRowElement<TRow>
 	{
 		[SerializeField]
-		private Transform Content;
+		private Transform Content = default;
 
 		[SerializeField]
-		private TElement LeaderboardElementPrefab;
+		private TElement LeaderboardElementPrefab = default;
 
 		[SerializeField]
-		private TElement SelfLeaderboardElement;
+		private TElement SelfLeaderboardElement = default;
 
 		[SerializeField]
 		[Tooltip("Give the local player a row of their own once they finish worse than this place. 0 keeps them inline in the table wherever they finished.")]
-		private int PinSelfAfterPlace;
+		private int PinSelfAfterPlace = default;
 
 		private readonly List<TElement> _elements = new List<TElement>();
 

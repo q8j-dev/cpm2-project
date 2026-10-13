@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.WindowSystem.PropertyWindow
 	public class PropertiesUISection : MonoBehaviour
 	{
 		[SerializeField]
-		private Image FrameImage;
+		private Image FrameImage = default;
 
 		private Button _selectButton;
 

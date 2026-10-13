@@ -25,7 +25,7 @@ public class TollTrigger2 : MonoBehaviour
 	public GameObject GateLod;
 
 	[SerializeField]
-	private TYPE type;
+	private TYPE type = default;
 
 	[SerializeField]
 	private int angle;

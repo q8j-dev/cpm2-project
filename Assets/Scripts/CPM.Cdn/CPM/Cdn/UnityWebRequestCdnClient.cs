@@ -18,7 +18,7 @@ namespace CPM.Cdn
 			{
 				request.SetRequestHeader("If-None-Match", etagOrNull);
 			}
-			request.SendWebRequest();
+			_ = request.SendWebRequest();
 			while (!request.isDone)
 			{
 				if (ct.IsCancellationRequested)

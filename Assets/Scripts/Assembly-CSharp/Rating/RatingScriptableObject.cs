@@ -12,7 +12,7 @@ namespace Rating
 		private string _name;
 
 		[SerializeField]
-		private string mainDescription;
+		private string mainDescription = default;
 
 		public List<Data> data;
 

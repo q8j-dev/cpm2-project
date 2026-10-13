@@ -11,19 +11,19 @@ namespace _Car_Parking.Scripts.WindowSystem.Confirmation
 	public class SimpleConfirmWindow : WindowScript
 	{
 		[SerializeField]
-		private TextMeshProUGUI Title;
+		private TextMeshProUGUI Title = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ContentText;
+		private TextMeshProUGUI ContentText = default;
 
 		[SerializeField]
-		private Button ConfirmButton;
+		private Button ConfirmButton = default;
 
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ConfirmButtonText;
+		private TextMeshProUGUI ConfirmButtonText = default;
 
 		private Action _onConfirmed;
 

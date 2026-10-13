@@ -9,19 +9,19 @@ namespace Service.Taxi
 	public class OrderLabel : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI nameLabel;
+		private TextMeshProUGUI nameLabel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI timeLabel;
+		private TextMeshProUGUI timeLabel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI distanceLabel;
+		private TextMeshProUGUI distanceLabel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI locationLabel;
+		private TextMeshProUGUI locationLabel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI priceLabel;
+		private TextMeshProUGUI priceLabel = default;
 
 		public Button buttonLabel;
 

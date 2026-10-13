@@ -90,7 +90,7 @@ namespace _Car_Parking.Windows.FirstGameWindow
 		private const string ExitGameConfirmString = "SteamSettings.ExitGameConfirm";
 
 		[SerializeField]
-		private Button ExitGameButton;
+		private Button ExitGameButton = default;
 
 		public MainPerson _mainPerson;
 

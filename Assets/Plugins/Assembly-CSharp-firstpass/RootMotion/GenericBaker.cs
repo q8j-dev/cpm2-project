@@ -22,8 +22,6 @@ namespace RootMotion
 
 		private BakerTransform[] children = new BakerTransform[0];
 
-		private BakerTransform rootChild;
-
 		private int rootChildIndex = -1;
 
 		private void Awake()

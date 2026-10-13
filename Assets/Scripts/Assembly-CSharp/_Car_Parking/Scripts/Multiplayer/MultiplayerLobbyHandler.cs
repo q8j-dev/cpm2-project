@@ -37,10 +37,6 @@ namespace _Car_Parking.Scripts.Multiplayer
 
 		private List<string> _lastInts = new List<string>();
 
-		private string _verConnect;
-
-		private string _editorVer;
-
 		private PlayerDataStorage _playerDataStorage;
 
 		private PlayerDatas.FriendsUtility _friendsUtility;
@@ -66,7 +62,7 @@ namespace _Car_Parking.Scripts.Multiplayer
 		public bool ShowPasswordInput;
 
 		[SerializeField]
-		private LobbyWindow LobbyWindow;
+		private LobbyWindow LobbyWindow = default;
 
 		private IAccountController _accountController;
 

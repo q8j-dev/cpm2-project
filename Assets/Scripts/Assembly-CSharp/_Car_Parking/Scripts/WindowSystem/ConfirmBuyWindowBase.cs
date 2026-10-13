@@ -15,31 +15,31 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ConfirmBuyWindowBase : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		[SerializeField]
-		private Button BuyButton;
+		private Button BuyButton = default;
 
 		[SerializeField]
-		private Image BuyButtonGroup;
+		private Image BuyButtonGroup = default;
 
 		[SerializeField]
-		private RawImageLoadAsync MainIconRawImage;
+		private RawImageLoadAsync MainIconRawImage = default;
 
 		[SerializeField]
-		private Image MainIcon;
+		private Image MainIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NameText;
+		private TextMeshProUGUI NameText = default;
 
 		[SerializeField]
-		private Image PriceIcon;
+		private Image PriceIcon = default;
 
 		[SerializeField]
-		private Text PriceText;
+		private Text PriceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PriceTextMesh;
+		private TextMeshProUGUI PriceTextMesh = default;
 
 		private ParkingMenuUI _parkingMenuUI;
 

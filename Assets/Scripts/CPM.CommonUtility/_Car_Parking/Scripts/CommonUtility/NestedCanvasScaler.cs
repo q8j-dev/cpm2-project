@@ -35,7 +35,7 @@ namespace _Car_Parking.Scripts.CommonUtility
 
 		[Tooltip("On enable, force the root RectTransform to center anchors/pivot and sizeDelta = reference resolution. Turn on once after setup.")]
 		[SerializeField]
-		private bool _applyReferenceRect;
+		private bool _applyReferenceRect = default;
 
 		[SerializeField]
 		[Tooltip("When this component is DISABLED, restore the RectTransform to full-stretch (anchors 0–1, sizeDelta 0, pivot center, scale 1) — the pre-scaler 'as was' state, for A/B testing. Turn off if this window's original layout was NOT full-stretch.")]

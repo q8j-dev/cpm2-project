@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Multiplayer.WorldObstacles
 	{
 		[SerializeField]
 		[Tooltip("Drive the obstacles under this object. Leave empty to drive the ones under the object the component sits on.")]
-		private Transform Root;
+		private Transform Root = default;
 
 		private static readonly List<Obstacle> Driven = new List<Obstacle>();
 

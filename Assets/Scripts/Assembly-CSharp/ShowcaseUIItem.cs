@@ -13,28 +13,25 @@ public class ShowcaseUIItem : UIElement
 	private PartData _partData;
 
 	[SerializeField]
-	private Image hintImage;
+	private TextMeshProUGUI DetailNameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DetailNameText;
+	private TextMeshProUGUI MileageText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MileageText;
+	private TextMeshProUGUI MassText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MassText;
+	private TextMeshProUGUI PriceText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PriceText;
+	private TextMeshProUGUI ReliabilityText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ReliabilityText;
+	private TextMeshProUGUI DescriptionText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DescriptionText;
-
-	[SerializeField]
-	private Button closeButton;
+	private Button closeButton = default;
 
 	private AllParts _allParts;
 
@@ -66,7 +63,7 @@ public class ShowcaseUIItem : UIElement
 	public override void Init(PartData part, IClickable clickable)
 	{
 		_partData = part;
-		ParseData();
+		_ = ParseData();
 	}
 
 	private async UniTaskVoid ParseData()

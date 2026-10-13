@@ -5,7 +5,7 @@ namespace Crystal
 {
 	public class SafeAreaLayoutElement : MonoBehaviour
 	{
-		private readonly SafeArea.SimDevice Sim;
+		private readonly SafeArea.SimDevice Sim = default;
 
 		private Rect[] NSA_iPhoneX = new Rect[2]
 		{
@@ -56,7 +56,7 @@ namespace Crystal
 		private bool IsBottom = true;
 
 		[SerializeField]
-		private bool Logging;
+		private bool Logging = default;
 
 		private void Awake()
 		{

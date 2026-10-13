@@ -9,13 +9,13 @@ namespace _Car_Parking.Scripts.Racing_Scripts.RaceInfo
 	public class RaceClassInfoView : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI BestTime;
+		private TextMeshProUGUI BestTime = default;
 
 		[SerializeField]
-		private RectTransform BestTimeParent;
+		private RectTransform BestTimeParent = default;
 
 		[SerializeField]
-		private RaceRewardItem[] RaceRewardItems;
+		private RaceRewardItem[] RaceRewardItems = default;
 
 		public void SetBestTime(float time)
 		{

@@ -9,13 +9,13 @@ using _Car_Parking.Scripts.Infrastructure;
 public class CollectiblePoolContainer : MonoBehaviour
 {
 	[SerializeField]
-	private _Car_Parking.Scripts.EventSystem.EventType EventType;
+	private _Car_Parking.Scripts.EventSystem.EventType EventType = default;
 
 	[SerializeField]
-	private GameObject CollectiblePoolPrefab;
+	private GameObject CollectiblePoolPrefab = default;
 
 	[SerializeField]
-	private int CollectiblePoolCapacity;
+	private int CollectiblePoolCapacity = default;
 
 	private List<IMovableCollectible> _collectiblePool = new List<IMovableCollectible>();
 

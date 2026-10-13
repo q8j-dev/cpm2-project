@@ -10,7 +10,7 @@ namespace _Car_Parking.Scripts.PlayerProperty.Trigger
 	public class BuyGarageTrigger : PropertyTrigger
 	{
 		[SerializeField]
-		private int ID;
+		private int ID = default;
 
 		private IGarageBuyService _garageBuyService;
 

@@ -8,7 +8,7 @@ namespace Service.Taxi
 	{
 		private void OnTriggerEnter(Collider other)
 		{
-			TriggerEnter(other);
+			_ = TriggerEnter(other);
 		}
 
 		public override async UniTask<bool> TriggerEnter(Collider other)

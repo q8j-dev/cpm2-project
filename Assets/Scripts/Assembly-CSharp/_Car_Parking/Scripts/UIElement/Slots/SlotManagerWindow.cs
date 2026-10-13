@@ -37,19 +37,19 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		private const int GarageAmount = 2;
 
 		[SerializeField]
-		private Button ButtonClose;
+		private Button ButtonClose = default;
 
 		[SerializeField]
-		private SlotsViewColumn CurrentScrollViewColumn;
+		private SlotsViewColumn CurrentScrollViewColumn = default;
 
 		[SerializeField]
-		private SlotsViewColumn OtherScrollViewColumn;
+		private SlotsViewColumn OtherScrollViewColumn = default;
 
 		[SerializeField]
-		private SlotManagerUIButtonBase[] Buttons;
+		private SlotManagerUIButtonBase[] Buttons = default;
 
 		[SerializeField]
-		private GameObject BlockInputGO;
+		private GameObject BlockInputGO = default;
 
 		private IGarageSelectorService _garageSelectorService;
 
@@ -389,7 +389,7 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 			if (slotCollection.IsAllSlotsEmpty())
 			{
 				V.CoreGameManager.CarOutInControl.OutCar(V.DriverPerson, V.Car);
-				_freeDriverService.SetupFreeDriver();
+				_ = _freeDriverService.SetupFreeDriver();
 			}
 			_currentGarage.Clear();
 			List<string> allCarInstanceIds = currentCars.GetAllCarInstanceIds();

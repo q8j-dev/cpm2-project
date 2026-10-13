@@ -7,15 +7,12 @@ public class ChooseDefaultSteeringWindow : MonoBehaviour
 {
 	private int _currentSteeringIndex;
 
-	[SerializeField]
-	private Button SetSteeringButton;
-
 	private CoreGameManager _coreGameManager;
 
 	private MenuLevelParent _menuLevelParent;
 
 	[SerializeField]
-	private Toggle[] SteeringTogglesArray;
+	private Toggle[] SteeringTogglesArray = default;
 
 	private CarInputManager _carInputManager;
 

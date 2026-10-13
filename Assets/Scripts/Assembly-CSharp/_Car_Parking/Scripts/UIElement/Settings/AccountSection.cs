@@ -36,70 +36,64 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 		private const float TimerToDeleteAccount = 10f;
 
 		[SerializeField]
-		private Button SaveButton;
+		private Button SaveButton = default;
 
 		[SerializeField]
-		private Button SignOutButton;
+		private Button SignOutButton = default;
 
 		[SerializeField]
-		private Button DeleteAccountButton;
+		private Button DeleteAccountButton = default;
 
 		[SerializeField]
-		private Button ChangeAccountButton;
+		private Button ChangeAccountButton = default;
 
 		[SerializeField]
-		private Button SignInButton;
+		private Button SignInButton = default;
 
 		[SerializeField]
-		private Button SendEmailButton;
+		private Button SendEmailButton = default;
 
 		[SerializeField]
-		private Button EditNickNameButton;
+		private Button EditNickNameButton = default;
 
 		[SerializeField]
-		private Button RestorePurchaseButton;
+		private Button SteamLinkButton = default;
 
 		[SerializeField]
-		private Button SteamLinkButton;
+		private Button SteamUnlinkButton = default;
 
 		[SerializeField]
-		private Button SteamUnlinkButton;
+		private GameObject SignInMethodsGroup = default;
 
 		[SerializeField]
-		private GameObject SignInMethodsGroup;
+		private GameObject GooglePlaySignInButton = default;
 
 		[SerializeField]
-		private GameObject GooglePlaySignInButton;
+		private TMP_InputField EditableNickName = default;
 
 		[SerializeField]
-		private TMP_InputField EditableNickName;
+		private Text NameLegacyText = default;
 
 		[SerializeField]
-		private Text NameLegacyText;
+		private InputFieldSizeFitter NickNameSizeFitter = default;
 
 		[SerializeField]
-		private InputFieldSizeFitter NickNameSizeFitter;
+		private TextMeshProUGUI RankText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RankText;
+		private TextMeshProUGUI IdText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI IdText;
+		private TextMeshProUGUI EmailText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI EmailText;
+		private RawImage RankIcon = default;
 
 		[SerializeField]
-		private RawImage RankIcon;
+		private GameObject ProgressDescription = default;
 
 		[SerializeField]
-		private GameObject ProgressDescription;
-
-		[SerializeField]
-		private GameObject Progress;
-
-		[SerializeField]
-		private GameObject Confirmation;
+		private GameObject Progress = default;
 
 		private ManagerUI _managerUI;
 
@@ -125,7 +119,7 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 
 		private IOfflineModeSystem _offlineModeSystem;
 
-		private IDisposable _purchaseInteractableWait;
+		private IDisposable _purchaseInteractableWait = default;
 
 		private IPurchaseSystem _purchaseSystem;
 

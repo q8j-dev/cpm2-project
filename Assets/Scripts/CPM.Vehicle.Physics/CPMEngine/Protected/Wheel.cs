@@ -166,16 +166,6 @@ namespace CPMEngine.Protected
 
 		private float _eps;
 
-		private bool _isPhysicInitialized;
-
-		private float _cachedRollAngle;
-
-		private float _cachedSteerAngle;
-
-		private float _cachedSpringLength;
-
-		private float _cachedCamber;
-
 		private float _initialTreadThickness = 0.01f;
 
 		private float _lastValue;
@@ -188,11 +178,7 @@ namespace CPMEngine.Protected
 
 		private readonly RB _body;
 
-		private float _maxW;
-
 		private float _tyreHealth = 1f;
-
-		private float _deformOffset;
 
 		private static readonly DisplacementMap DisplacementMap;
 

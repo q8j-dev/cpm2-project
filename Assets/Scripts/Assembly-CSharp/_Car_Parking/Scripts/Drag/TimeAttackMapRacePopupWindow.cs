@@ -20,19 +20,19 @@ namespace _Car_Parking.Scripts.Drag
 	public class TimeAttackMapRacePopupWindow : WindowScript
 	{
 		[SerializeField]
-		private Button LeaderBoardButton;
+		private Button LeaderBoardButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TitleText;
+		private TextMeshProUGUI TitleText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DescriptionText;
+		private TextMeshProUGUI DescriptionText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RecordText;
+		private TextMeshProUGUI RecordText = default;
 
 		[SerializeField]
-		private Transform EventPanelParent;
+		private Transform EventPanelParent = default;
 
 		private TimeBannersManager _timeBannersManager;
 

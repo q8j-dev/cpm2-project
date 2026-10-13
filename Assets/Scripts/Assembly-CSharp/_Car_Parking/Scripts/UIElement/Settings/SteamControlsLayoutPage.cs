@@ -22,69 +22,69 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	{
 		[Header("Layout Page")]
 		[SerializeField]
-		private GameObject LayoutRoot;
+		private GameObject LayoutRoot = default;
 
 		[SerializeField]
-		private TMP_Dropdown GroupDropdown;
+		private TMP_Dropdown GroupDropdown = default;
 
 		[SerializeField]
-		private RectTransform BindingsContainer;
+		private RectTransform BindingsContainer = default;
 
 		[Header("Middle Image")]
 		[SerializeField]
-		private GameObject MiddleImageRoot;
+		private GameObject MiddleImageRoot = default;
 
 		[SerializeField]
-		private GameObject PsDiagram;
+		private GameObject PsDiagram = default;
 
 		[SerializeField]
-		private GameObject XboxDiagram;
+		private GameObject XboxDiagram = default;
 
 		[SerializeField]
 		[Tooltip("Optional. When empty, the middle image is hidden while the page shows keyboard/mouse bindings.")]
-		private GameObject MnkDiagram;
+		private GameObject MnkDiagram = default;
 
 		[SerializeField]
 		[Tooltip("Optional. When empty, the middle image is hidden while the page shows wheel bindings.")]
-		private GameObject WheelDiagram;
+		private GameObject WheelDiagram = default;
 
 		[Header("Navigation")]
 		[SerializeField]
-		private Button MnkKeyBindsButton;
+		private Button MnkKeyBindsButton = default;
 
 		[SerializeField]
-		private Button GamepadKeyBindsButton;
+		private Button GamepadKeyBindsButton = default;
 
 		[SerializeField]
-		private Button WheelKeyBindsButton;
+		private Button WheelKeyBindsButton = default;
 
 		[Tooltip("Resets the locked device's binding overrides to defaults (confirm-gated), same style as the sub-section reset buttons.")]
 		[FormerlySerializedAs("BackButton")]
 		[SerializeField]
-		private Button ResetBindingsButton;
+		private Button ResetBindingsButton = default;
 
 		[SerializeField]
-		private GameObject MouseKeyboardSubGO;
+		private GameObject MouseKeyboardSubGO = default;
 
 		[SerializeField]
-		private GameObject GamepadSubGO;
+		private GameObject GamepadSubGO = default;
 
 		[SerializeField]
-		private GameObject WheelSubGO;
+		private GameObject WheelSubGO = default;
 
 		[Tooltip("All controls tab toggles in FIXED order: MnK, Gamepad, Wheel, Camera. Picking a device tab while the page is open retargets the page to that device; Camera closes it.")]
 		[SerializeField]
-		private Toggle[] TabToggles;
+		private Toggle[] TabToggles = default;
 
 		[SerializeField]
 		[Header("Prefabs & Config")]
-		private InputBindingsGroupSection SectionPrefab;
+		private InputBindingsGroupSection SectionPrefab = default;
 
 		[SerializeField]
-		private InputHintElement RowPrefab;
+		private InputHintElement RowPrefab = default;
 
 		[SerializeField]
-		private ControlsLayoutFilterConfig FilterConfig;
+		private ControlsLayoutFilterConfig FilterConfig = default;
 
 		[Tooltip("Row tint while a binding waits for input (pulse) and when a key is rejected (flash).")]
 		[SerializeField]

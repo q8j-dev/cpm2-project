@@ -23,7 +23,7 @@ namespace _Car_Parking.Scripts.Multiplayer.Treasure
 		private const string k_TreasurePosKey = "TrP";
 
 		[SerializeField]
-		private MyTreasure TreasurePrefab;
+		private MyTreasure TreasurePrefab = default;
 
 		private int _positionIndex;
 

@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class TyreTypeUIElement : MonoBehaviour
 {
 	[SerializeField]
-	private Toggle WheelToggle;
+	private Toggle WheelToggle = default;
 
 	[SerializeField]
-	private RacingCarChangeTyreWindow RacingCarChangeTyreWindow;
+	private RacingCarChangeTyreWindow RacingCarChangeTyreWindow = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TyreTypeText;
+	private TextMeshProUGUI TyreTypeText = default;
 
 	public TyreType TyreType;
 

@@ -10,7 +10,7 @@ namespace _Car_Parking.Scripts.WindowSystem.PropertyPopupWindow
 	public class HouseMapPopupWindow : PropertyPopupWindow
 	{
 		[SerializeField]
-		private Transform OwnedObject;
+		private Transform OwnedObject = default;
 
 		private HomesConfig _homesConfig;
 

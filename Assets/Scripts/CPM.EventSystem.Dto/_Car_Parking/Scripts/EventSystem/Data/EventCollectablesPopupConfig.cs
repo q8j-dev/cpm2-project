@@ -19,7 +19,7 @@ namespace _Car_Parking.Scripts.EventSystem.Data
 		}
 
 		[SerializeField]
-		private PopupData[] PopupDatas;
+		private PopupData[] PopupDatas = default;
 
 		public PopupData GetPopupData(EventType eventType)
 		{

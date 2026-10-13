@@ -9,10 +9,10 @@ namespace Car_Parking.Scripts.Racing
 	public class BannerView : MonoBehaviour
 	{
 		[SerializeField]
-		private int BannerIndex;
+		private int BannerIndex = default;
 
 		[SerializeField]
-		private BannerViewElement[] BannerContents;
+		private BannerViewElement[] BannerContents = default;
 
 		private List<BannerContent> _contentCollection = new List<BannerContent>();
 

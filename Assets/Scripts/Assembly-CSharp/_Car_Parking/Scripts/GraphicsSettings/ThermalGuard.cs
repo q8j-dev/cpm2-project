@@ -23,8 +23,6 @@ namespace _Car_Parking.Scripts.GraphicsSettings
 
 		private bool _throttled;
 
-		private float _timer;
-
 		private void OnEnable()
 		{
 		}

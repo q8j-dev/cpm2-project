@@ -7,25 +7,25 @@ using UnityEngine.UI;
 public class EasyHapticExample : MonoBehaviour
 {
 	[SerializeField]
-	private InputField millisecondsInput;
+	private InputField millisecondsInput = default;
 
 	[SerializeField]
-	private InputField amplitudeInput;
+	private InputField amplitudeInput = default;
 
 	[SerializeField]
-	private InputField sharpnessInput;
+	private InputField sharpnessInput = default;
 
 	[SerializeField]
-	private Text systemInfo;
+	private Text systemInfo = default;
 
 	[SerializeField]
-	private Button btnPrefab;
+	private Button btnPrefab = default;
 
 	[SerializeField]
-	private Gradient buttonsColor;
+	private Gradient buttonsColor = default;
 
 	[SerializeField]
-	private GameObject buttonsGroup;
+	private GameObject buttonsGroup = default;
 
 	private List<Button> allButtons = new List<Button>();
 

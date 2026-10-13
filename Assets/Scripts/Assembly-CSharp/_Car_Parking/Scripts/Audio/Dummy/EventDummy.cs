@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Audio.Dummy
 	{
 		public object WwiseObjectReference;
 
-		private uint m_playingId;
+		private uint m_playingId = default;
 
 		public uint PlayingId => m_playingId;
 

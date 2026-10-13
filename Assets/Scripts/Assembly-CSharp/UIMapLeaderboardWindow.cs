@@ -10,16 +10,16 @@ using _Car_Parking.Scripts.UIElement;
 public class UIMapLeaderboardWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Button CloseButton;
+	private Button CloseButton = default;
 
 	[SerializeField]
-	private UITimeBannerController UITimeBannerController;
+	private UITimeBannerController UITimeBannerController = default;
 
 	[SerializeField]
-	private Button BackgroundBackButton;
+	private Button BackgroundBackButton = default;
 
 	[SerializeField]
-	private RectTransform ContentPanel;
+	private RectTransform ContentPanel = default;
 
 	private TimeBannersManager _timeBannersManager;
 

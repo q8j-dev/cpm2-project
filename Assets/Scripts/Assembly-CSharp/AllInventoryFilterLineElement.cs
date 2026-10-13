@@ -4,7 +4,7 @@ using UnityEngine;
 public class AllInventoryFilterLineElement : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	public void SetText(string text)
 	{

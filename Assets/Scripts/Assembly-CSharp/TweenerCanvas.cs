@@ -8,19 +8,16 @@ public class TweenerCanvas : MonoBehaviour
 	public CanvasGroup _canvasGroup;
 
 	[SerializeField]
-	private float duration;
+	private float startVal = default;
 
 	[SerializeField]
-	private float startVal;
+	private float endVal = default;
 
 	[SerializeField]
-	private float endVal;
+	private float delay = default;
 
 	[SerializeField]
-	private float delay;
-
-	[SerializeField]
-	private bool ignoreEnable;
+	private bool ignoreEnable = default;
 
 	public UnityEvent onComplete;
 

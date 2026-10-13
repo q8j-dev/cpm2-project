@@ -20,10 +20,10 @@ namespace _Car_Parking.Scripts.Infrastructure
 		private const string SceneName = "LoadingSecond";
 
 		[SerializeField]
-		private Image ProgressBar;
+		private Image ProgressBar = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ProgressText;
+		private TextMeshProUGUI ProgressText = default;
 
 		public Camera Camera;
 

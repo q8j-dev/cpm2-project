@@ -13,8 +13,6 @@ namespace _Car_Parking.Scripts.Localization
 
 		public static string UrlPattern = "https://docs.google.com/spreadsheets/d/{0}/export?format=csv&gid={1}";
 
-		private static DateTime _timestamp;
-
 		private static LocalizationSettings _instance;
 
 		public static LocalizationSettings Instance

@@ -27,8 +27,6 @@ public class NewUIPlaySound : MonoBehaviour, IPointerClickHandler, IEventSystemH
 	[Range(0f, 2f)]
 	public float pitch = 1f;
 
-	private bool mIsOver;
-
 	private bool CanPlay
 	{
 		get

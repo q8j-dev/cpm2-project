@@ -19,11 +19,11 @@ public class ShifterController : MonoBehaviour, IShifterControl
 	[Header("Sub-mode containers")]
 	[Tooltip("GameObject holding manual H-pattern visuals. Toggled active by SetManual / inactive by SetAutoMatic.")]
 	[SerializeField]
-	private GameObject _manualVisuals;
+	private GameObject _manualVisuals = default;
 
 	[Tooltip("GameObject holding automatic PRNDM visuals. Toggled active by SetAutoMatic / inactive by SetManual.")]
 	[SerializeField]
-	private GameObject _autoVisuals;
+	private GameObject _autoVisuals = default;
 
 	[Header("Sub-mode controllers")]
 	[SerializeField]
@@ -34,33 +34,33 @@ public class ShifterController : MonoBehaviour, IShifterControl
 
 	[Header("Shared widgets")]
 	[SerializeField]
-	private ClutchSliderControl _clutchSlider;
+	private ClutchSliderControl _clutchSlider = default;
 
 	[Tooltip("Optional. Wire here so ShowObjects/HideObjects toggle the throttle pedal together with the shifter visuals (e.g. hide it on car-exit).")]
 	[SerializeField]
-	private ThrottleSliderControl _throttleSlider;
+	private ThrottleSliderControl _throttleSlider = default;
 
 	[Tooltip("Optional. Same as _throttleSlider but for the brake pedal.")]
 	[SerializeField]
-	private BrakeSliderControl _brakeSlider;
+	private BrakeSliderControl _brakeSlider = default;
 
 	[SerializeField]
 	[Tooltip("Wire driving widgets that don't have dedicated fields here (Horn, Key/Starter, Handbrake, gear-trace canvas, etc.). They get toggled together with the pedals on car-exit/entry. Replaces the legacy ShifterControl behavior where these siblings lived on the shifter prefab and were toggled implicitly by SetActiveObjects.")]
-	private GameObject[] _extraDriveWidgets;
+	private GameObject[] _extraDriveWidgets = default;
 
 	[SerializeField]
 	[Tooltip("Optional. HUD button whose visibility/state depends on the current car's Powertrain. Spawn paths (SetupCarDriver -> CarInputManager.AttachVehicle -> InitHUDAnalog) never raise V.OnCarEntered, so UpdateCar() cascades to it here — same pattern as the speedometer below.")]
 	[Header("Cross-widget cascades")]
-	private TransferCaseHudButton _transferCaseButton;
+	private TransferCaseHudButton _transferCaseButton = default;
 
 	[SerializeField]
 	[Tooltip("Empty anchor the InputHintsSpawner spawns the D↔M rocker hint into. Enabled only when the current car actually supports a manual (M) mode, so the hint hides on cars where the M toggle is blocked. Hint gate only — the action block itself lives in ShifterGamepadBridge.")]
 	[Header("Desktop input hint")]
-	private GameObject _manualHintAnchor;
+	private GameObject _manualHintAnchor = default;
 
 	[SerializeField]
 	[Tooltip("Widgets hidden while casual driving assist is on (clutch, H-shifter, etc.). Just drop the GameObjects here — a CanvasGroup is added automatically so the layout keeps their slot.")]
-	private GameObject[] _casualHiddenWidgets;
+	private GameObject[] _casualHiddenWidgets = default;
 
 	private CanvasGroup[] _casualGroups;
 

@@ -40,16 +40,16 @@ namespace _Car_Parking.Scripts.CarMaintenance.MaintenanceServices.CarWash
 		private float _carThrottleValue = 0.5f;
 
 		[SerializeField]
-		private Transform EnterPoint;
+		private Transform EnterPoint = default;
 
 		[SerializeField]
-		private Transform ExitPoint;
+		private Transform ExitPoint = default;
 
 		[SerializeField]
-		private List<Animator> Animators;
+		private List<Animator> Animators = default;
 
 		[SerializeField]
-		private List<ParticleSystem> Particles;
+		private List<ParticleSystem> Particles = default;
 
 		private VehicleData _currentVehicleToWash;
 

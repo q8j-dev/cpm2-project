@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.MenuUI.LocalizationUI
 		private bool UpperCase = true;
 
 		[SerializeField]
-		private bool UseStyle;
+		private bool UseStyle = default;
 
 		private void Awake()
 		{

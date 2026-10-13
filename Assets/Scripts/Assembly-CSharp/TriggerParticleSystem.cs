@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TriggerParticleSystem : MonoBehaviour
 {
-	public ParticleSystem particleSystem;
+	public new ParticleSystem particleSystem;
 
 	private void OnTriggerEnter(Collider other)
 	{

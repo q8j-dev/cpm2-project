@@ -10,26 +10,26 @@ namespace _Car_Parking.Scripts.PopUpMessage
 	public class MessageWindow : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_Text textField;
+		private TMP_Text textField = default;
 
 		[SerializeField]
-		private GameObject closeObj;
+		private GameObject closeObj = default;
 
 		[SerializeField]
-		private GameObject windowObj;
+		private GameObject windowObj = default;
 
 		[SerializeField]
-		private Image header;
+		private Image header = default;
 
 		[SerializeField]
 		[Header("Colors")]
-		private Color infoColor;
+		private Color infoColor = default;
 
 		[SerializeField]
-		private Color warningColor;
+		private Color warningColor = default;
 
 		[SerializeField]
-		private Color errorColor;
+		private Color errorColor = default;
 
 		private readonly float _duration = 0.3f;
 

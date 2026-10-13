@@ -19,7 +19,7 @@ namespace _Car_Parking.Scripts.Scopes
 	public class SecondLoadingScope : LifetimeScope
 	{
 		[SerializeField]
-		private GarageAnalyticaInitializer GarageAnalyticaInitializer;
+		private GarageAnalyticaInitializer GarageAnalyticaInitializer = default;
 
 		private void OnEnable()
 		{

@@ -9,10 +9,7 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	public class PrivacySection : SettingsSectionBase
 	{
 		[SerializeField]
-		private Button ConfirmAgeButton;
-
-		[SerializeField]
-		private MultiplayerSection MultiplayerSection;
+		private MultiplayerSection MultiplayerSection = default;
 
 		private ParentalControlUtility _parentalControlUtility;
 

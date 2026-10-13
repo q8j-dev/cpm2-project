@@ -222,7 +222,7 @@ public class DynoWindow : WindowScript, IBackableWindow
 	{
 		if (_timerTuningService.IsCarBlocked(V.SlotID))
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("DynoWindow.Yourcarcurrentlyisinservice"), 3f);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DynoWindow.Yourcarcurrentlyisinservice"), 3f);
 			return;
 		}
 		_managerUI.ShowMenuGarageControllerHUD();

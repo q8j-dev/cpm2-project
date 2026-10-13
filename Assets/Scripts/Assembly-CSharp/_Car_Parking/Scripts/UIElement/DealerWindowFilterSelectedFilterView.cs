@@ -6,16 +6,16 @@ namespace _Car_Parking.Scripts.UIElement
 	public class DealerWindowFilterSelectedFilterView : MonoBehaviour
 	{
 		[SerializeField]
-		private DealerWindowFiltersController DealerWindowFiltersController;
+		private DealerWindowFiltersController DealerWindowFiltersController = default;
 
 		[SerializeField]
-		private TMP_Text ClassText;
+		private TMP_Text ClassText = default;
 
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		[SerializeField]
-		private DealerWindow.FilterType FilterType;
+		private DealerWindow.FilterType FilterType = default;
 
 		private void Start()
 		{

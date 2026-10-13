@@ -9,22 +9,22 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent
 	public class ItemContentDraggableAnimation : ItemContentDraggable
 	{
 		[SerializeField]
-		private GameObjectStateUpdater SelectGraphics;
+		private GameObjectStateUpdater SelectGraphics = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater EmptyGO;
+		private GameObjectStateUpdater EmptyGO = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater SelectContentGO;
+		private GameObjectStateUpdater SelectContentGO = default;
 
 		[SerializeField]
-		private MoveToTransformByTween MoveToTransformByTween;
+		private MoveToTransformByTween MoveToTransformByTween = default;
 
 		[SerializeField]
-		private RectTransformSizeSetter RectTransformSizeSetter;
+		private RectTransformSizeSetter RectTransformSizeSetter = default;
 
 		[SerializeField]
-		private ItemContentDraggableAnimationConfig AnimationConfig;
+		private ItemContentDraggableAnimationConfig AnimationConfig = default;
 
 		private bool _isBackAnimation;
 

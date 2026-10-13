@@ -13,7 +13,7 @@ public class FilterElementToggle : MonoBehaviour
 	public GearBoxTransmissionTypeFilter currenGearBoxTransmissionTypeFilter;
 
 	[SerializeField]
-	private Toggle SelectToggle;
+	private Toggle SelectToggle = default;
 
 	private AllInventoryFilterWindow _allInventoryFilterWindow;
 

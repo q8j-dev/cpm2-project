@@ -7,16 +7,16 @@ namespace CPM.Scripts.Garage.Elevator
 	public class ElevatorDoorTrigger : MonoBehaviour
 	{
 		[SerializeField]
-		private int DoorId;
+		private int DoorId = default;
 
 		[SerializeField]
-		private Elevator Elevator;
+		private Elevator Elevator = default;
 
 		[SerializeField]
-		private ElevatorDoorTrigger TargetDoor;
+		private ElevatorDoorTrigger TargetDoor = default;
 
 		[SerializeField]
-		private ElevatorDoor ElevatorDoor;
+		private ElevatorDoor ElevatorDoor = default;
 
 		private CameraManager _cameraManager;
 

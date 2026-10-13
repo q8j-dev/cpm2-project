@@ -37,55 +37,52 @@ public class BuyThisCarWindow : WindowScriptAsyncResult<RequestAnswer>
 	private const int RotorId = 6;
 
 	[SerializeField]
-	private Image ImageCar;
+	private Image ImageCar = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CarTitleText;
+	private TextMeshProUGUI CarTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TextPrice;
+	private TextMeshProUGUI TextPrice = default;
 
 	[SerializeField]
-	private Button ButtonBuy;
+	private Button ButtonBuy = default;
 
 	[SerializeField]
-	private Button ButtonIgnore;
+	private Button ButtonIgnore = default;
 
 	[SerializeField]
-	private Button ButtonClose;
+	private Button ButtonClose = default;
 
 	[SerializeField]
-	private Button ButtonDetails;
+	private Button ButtonDetails = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BuyButtonText;
+	private TextMeshProUGUI BuyButtonText = default;
 
 	[SerializeField]
-	private GameObject ShortPanel;
+	private GameObject ShortPanel = default;
 
 	[SerializeField]
-	private GameObject LongPanel;
+	private GameObject LongPanel = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement[] CarTuningExchangeUIElements;
+	private CarTuningExchangeUIElement[] CarTuningExchangeUIElements = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement[] DisableIfRotor;
+	private CarTuningExchangeUIElement[] DisableIfRotor = default;
 
 	[SerializeField]
-	private CarExchangeLongInfoPanel CarExchangeLongInfoPanel;
+	private CarExchangeLongInfoPanel CarExchangeLongInfoPanel = default;
 
 	[SerializeField]
-	private RectTransform LayoutParent;
+	private RectTransform LayoutParent = default;
 
 	[SerializeField]
-	private CanvasGroup CanvasGroup;
-
-	[SerializeField]
-	private GameObject PricePanel;
+	private GameObject PricePanel = default;
 
 	private CurrencyManagerController _currencyManagerController;
 

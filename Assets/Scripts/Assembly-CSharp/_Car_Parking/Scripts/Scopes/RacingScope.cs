@@ -11,49 +11,49 @@ namespace _Car_Parking.Scripts.Scopes
 	public class RacingScope : LifetimeScope
 	{
 		[SerializeField]
-		private CoreGameManager GameManager;
+		private CoreGameManager GameManager = default;
 
 		[SerializeField]
-		private PersonCameraControll PersonCameraControl;
+		private PersonCameraControll PersonCameraControl = default;
 
 		[SerializeField]
-		private CarOutInControl CarOutInControl;
+		private CarOutInControl CarOutInControl = default;
 
 		[SerializeField]
-		private DragRacingCamera DragRacingCamera;
+		private DragRacingCamera DragRacingCamera = default;
 
 		[SerializeField]
-		private Camera MainCamera;
+		private Camera MainCamera = default;
 
 		[SerializeField]
-		private ManagerUI ManagerUI;
+		private ManagerUI ManagerUI = default;
 
 		[SerializeField]
-		private HudColorChanger HudColorChanger;
+		private HudColorChanger HudColorChanger = default;
 
 		[SerializeField]
-		private RaceFinishUI RaceFinishUI;
+		private RaceFinishUI RaceFinishUI = default;
 
 		[SerializeField]
-		private DragRacingUI DragRacingUI;
+		private DragRacingUI DragRacingUI = default;
 
 		[SerializeField]
-		private DragRacingController DragRacingController;
+		private DragRacingController DragRacingController = default;
 
 		[SerializeField]
-		private DragRacingTree DragRacingTree;
+		private DragRacingTree DragRacingTree = default;
 
 		[SerializeField]
-		private UGUISteeringWheel UGUISteeringWheel;
+		private UGUISteeringWheel UGUISteeringWheel = default;
 
 		[SerializeField]
-		private QuickCarSettings QuickCarSettings;
+		private QuickCarSettings QuickCarSettings = default;
 
 		[SerializeField]
-		private MenuLevelParent MenuLevelParent;
+		private MenuLevelParent MenuLevelParent = default;
 
 		[SerializeField]
-		private UIReferencesMediator UiReferencesMediator;
+		private UIReferencesMediator UiReferencesMediator = default;
 
 		private void Start()
 		{

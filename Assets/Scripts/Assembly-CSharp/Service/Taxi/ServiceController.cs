@@ -20,10 +20,6 @@ namespace Service.Taxi
 
 		private float offset = 320f;
 
-		private GameObject clientPrefab;
-
-		private GameObject finishPrefab;
-
 		private List<Location> closePositions = new List<Location>();
 
 		private Action<Player> SendInstantiateClient;

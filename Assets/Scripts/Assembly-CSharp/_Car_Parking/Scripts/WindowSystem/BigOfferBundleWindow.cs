@@ -13,46 +13,46 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class BigOfferBundleWindow : BigOfferWindowBase
 	{
 		[SerializeField]
-		private Button ButtonViewSuitsMale;
+		private Button ButtonViewSuitsMale = default;
 
 		[SerializeField]
-		private Button ButtonViewSuitsFemale;
+		private Button ButtonViewSuitsFemale = default;
 
 		[SerializeField]
-		private Button ButtonViewHeadwear;
+		private Button ButtonViewHeadwear = default;
 
 		[SerializeField]
-		private Image ButtonViewSuitsMaleIcon;
+		private Image ButtonViewSuitsMaleIcon = default;
 
 		[SerializeField]
-		private Image ButtonViewSuitsFemaleIcon;
+		private Image ButtonViewSuitsFemaleIcon = default;
 
 		[SerializeField]
-		private Image ButtonViewHeadwearIcon;
+		private Image ButtonViewHeadwearIcon = default;
 
 		[SerializeField]
-		private Image ButtonViewInShopIcon;
+		private Image ButtonViewInShopIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MaleDescription;
+		private TextMeshProUGUI MaleDescription = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FemaleDescription;
+		private TextMeshProUGUI FemaleDescription = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CapDescription;
+		private TextMeshProUGUI CapDescription = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CarDescription;
+		private TextMeshProUGUI CarDescription = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PackTitle;
+		private TextMeshProUGUI PackTitle = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PackDescription;
+		private TextMeshProUGUI PackDescription = default;
 
 		[SerializeField]
-		private Image ShadowImage;
+		private Image ShadowImage = default;
 
 		private BundleOfferCatalog _bundleCatalog;
 

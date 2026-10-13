@@ -9,17 +9,17 @@ namespace CPM.Obstacles
 
 		[Tooltip("The tile to clone. Its own rotation and scale are kept as authored.")]
 		[SerializeField]
-		private GameObject TilePrefab;
+		private GameObject TilePrefab = default;
 
 		[SerializeField]
 		[Tooltip("Parent for the spawned tiles. Empty means this transform.")]
-		private Transform Root;
+		private Transform Root = default;
 
 		[SerializeField]
 		private HexGridSettings Settings = HexGridSettings.Default;
 
 		[SerializeField]
-		private bool SpawnOnStart;
+		private bool SpawnOnStart = default;
 
 		private readonly List<GameObject> _tiles = new List<GameObject>();
 

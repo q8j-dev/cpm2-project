@@ -22,22 +22,22 @@ namespace _Car_Parking.Scripts.EventSystem.View
 		protected const string ViewingProgressCacheKey = "event_progress_";
 
 		[SerializeField]
-		private Ease ClaimAnimation;
+		private Ease ClaimAnimation = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimeRemainingText;
+		private TextMeshProUGUI TimeRemainingText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NameText;
+		private TextMeshProUGUI NameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DescriptionText;
+		private TextMeshProUGUI DescriptionText = default;
 
 		[SerializeField]
 		protected Button ClaimRewardButton;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		private ServerTimeService _serverTimeService;
 

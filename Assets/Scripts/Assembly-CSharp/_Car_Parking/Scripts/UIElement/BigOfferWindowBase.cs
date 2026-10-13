@@ -16,16 +16,16 @@ namespace _Car_Parking.Scripts.UIElement
 	public class BigOfferWindowBase : MonoBehaviour, IBigBannerView
 	{
 		[SerializeField]
-		private Button ButtonClose;
+		private Button ButtonClose = default;
 
 		[SerializeField]
-		private Button ButtonBuy;
+		private Button ButtonBuy = default;
 
 		[SerializeField]
 		protected Button ButtonViewInShop;
 
 		[SerializeField]
-		private bool IsDefaultBanner;
+		private bool IsDefaultBanner = default;
 
 		[SerializeField]
 		protected OfferBigBannerView OfferBigBannerView;

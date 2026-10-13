@@ -8,7 +8,7 @@ namespace Koenigz.PerfectCulling.Demos
 		[Range(30f, 150f)]
 		private float MouseSensitivity = 90f;
 
-		private float m_rotationX;
+		private float m_rotationX = default;
 
 		private float m_rotationY;
 

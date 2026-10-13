@@ -15,79 +15,79 @@ using _Car_Parking.Scripts.UIElement;
 public class MarketInventoryPopup : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject BuyPanel;
+	private GameObject BuyPanel = default;
 
 	[SerializeField]
-	private GameObject BuyAndSetPanel;
+	private GameObject BuyAndSetPanel = default;
 
 	[SerializeField]
-	private Image BuyDetailImage;
+	private Image BuyDetailImage = default;
 
 	[SerializeField]
-	private Image BuyDetailVendorImage;
+	private Image BuyDetailVendorImage = default;
 
 	[SerializeField]
-	private Image BuyDetailImagePanel;
+	private Image BuyDetailImagePanel = default;
 
 	[SerializeField]
-	private Image InstalledDetailImage;
+	private Image InstalledDetailImage = default;
 
 	[SerializeField]
-	private Image InstalledDetailVendorImage;
+	private Image InstalledDetailVendorImage = default;
 
 	[SerializeField]
-	private Image InstalledDetailImagePanel;
+	private Image InstalledDetailImagePanel = default;
 
 	[SerializeField]
-	private Image BuyAndSellDetailImage;
+	private Image BuyAndSellDetailImage = default;
 
 	[SerializeField]
-	private Image BuyAndSellDetailVendorImage;
+	private Image BuyAndSellDetailVendorImage = default;
 
 	[SerializeField]
-	private Image BuyAndSellDetailImagePanel;
+	private Image BuyAndSellDetailImagePanel = default;
 
 	[SerializeField]
-	private Button BuyButton;
+	private Button BuyButton = default;
 
 	[SerializeField]
-	private Button CancelButton;
+	private Button CancelButton = default;
 
 	[SerializeField]
-	private ContentSizeFitter BuyButtonSizeFitter;
+	private ContentSizeFitter BuyButtonSizeFitter = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BuyButtonText;
+	private TextMeshProUGUI BuyButtonText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI InstalledDetailNameText;
+	private TextMeshProUGUI InstalledDetailNameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BuyDetailNameText;
+	private TextMeshProUGUI BuyDetailNameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BuyAndSetDetailText;
+	private TextMeshProUGUI BuyAndSetDetailText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PriceText;
+	private TextMeshProUGUI PriceText = default;
 
 	[SerializeField]
-	private MarketInventoryWindow MarketInventoryWindow;
+	private MarketInventoryWindow MarketInventoryWindow = default;
 
 	[SerializeField]
-	private GameObject MoneyIcon;
+	private GameObject MoneyIcon = default;
 
 	[SerializeField]
-	private GameObject InstalledDetailPanel;
+	private GameObject InstalledDetailPanel = default;
 
 	private ManagerUI _managerUI;
 
 	private Action _onConfirm;
 
-	private Action _onCancel;
+	private Action _onCancel = default;
 
 	private CarTuningDetailRaritySpritesConfig _carTuningDetailRaritySpritesConfig;
 

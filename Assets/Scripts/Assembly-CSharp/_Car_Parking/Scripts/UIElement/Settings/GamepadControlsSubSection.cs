@@ -16,22 +16,22 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 
 		[Header("Gamepad Specific")]
 		[SerializeField]
-		private SliderValueHandler StickCursorSensitivity;
+		private SliderValueHandler StickCursorSensitivity = default;
 
 		[SerializeField]
-		private SliderValueHandler StickDeadzoneLeft;
+		private SliderValueHandler StickDeadzoneLeft = default;
 
 		[SerializeField]
-		private SliderValueHandler StickDeadzoneRight;
+		private SliderValueHandler StickDeadzoneRight = default;
 
 		[SerializeField]
-		private SliderValueHandler VibrationIntensity;
+		private SliderValueHandler VibrationIntensity = default;
 
 		[SerializeField]
-		private Toggle VibrationEnableToggle;
+		private Toggle VibrationEnableToggle = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ConnectedDevicesText;
+		private TextMeshProUGUI ConnectedDevicesText = default;
 
 		private GamepadMirrorTracker _mirrors;
 

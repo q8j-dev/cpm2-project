@@ -53,7 +53,7 @@ namespace _Car_Parking.Scripts.Database.Cars
 
 		private class CarIdForRemoveFromDatabase
 		{
-			public string CarInstanceId;
+			public string CarInstanceId = default;
 		}
 
 		public const string PlayerPrefCarSaveVersion = "CarSaveVersion0";
@@ -79,8 +79,6 @@ namespace _Car_Parking.Scripts.Database.Cars
 		private List<string> _carsToSaveUnExitedFromGarage = new List<string>();
 
 		private HashSet<string> _deletedCarIDList = new HashSet<string>();
-
-		private int _carHashInGarage;
 
 		private static CarsHashesPool _carsHashesPool = new CarsHashesPool();
 

@@ -10,7 +10,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class KeepRowImageColorSwitcher : MonoBehaviour
 	{
 		[SerializeField]
-		private Image ToggleIcon;
+		private Image ToggleIcon = default;
 
 		private readonly Color _onColor = Color.green;
 

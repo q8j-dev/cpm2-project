@@ -12,10 +12,10 @@ namespace _Car_Parking.Scripts.Police
 	public class VisualTuningPoliceElement : VisualItemElement
 	{
 		[SerializeField]
-		private CombinedPriceView CombinedPriceView;
+		private CombinedPriceView CombinedPriceView = default;
 
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		private PoliceSystemConfig _policeSystemConfig;
 

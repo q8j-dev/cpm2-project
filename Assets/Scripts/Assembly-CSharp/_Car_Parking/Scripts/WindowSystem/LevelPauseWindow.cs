@@ -9,19 +9,19 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class LevelPauseWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button BackToMainButton;
+		private Button BackToMainButton = default;
 
 		[SerializeField]
-		private Button LevelsButton;
+		private Button LevelsButton = default;
 
 		[SerializeField]
-		private Button RestartButton;
+		private Button RestartButton = default;
 
 		[SerializeField]
-		private Button SettingsButton;
+		private Button SettingsButton = default;
 
 		private LevelScript _levelScript;
 

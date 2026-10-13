@@ -205,14 +205,14 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 				{
 					UpdateWindowShowUI(state: false);
 					ConfirmWindow.AdditionalData additionalData = new ConfirmWindow.AdditionalData(new Color(0f, 0f, 0f, 0.925f));
-					_managerUI.ShowConfirmWindow(() =>
+					_ = _managerUI.ShowConfirmWindow(() =>
 					{
 						UpdateWindowShowUI(state: true);
 						AuthorizationWindow.AdditionalData value = new AuthorizationWindow.AdditionalData
 						{
 							BackWindowKey = WindowScriptType.MainMenuWindow.ToString()
 						};
-						_managerUI.ShowWindow(WindowScriptType.AuthorizationWindow.ToString(), alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: true, cleanScreen: true, JsonConvert.SerializeObject(value));
+						_ = _managerUI.ShowWindow(WindowScriptType.AuthorizationWindow.ToString(), alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: true, cleanScreen: true, JsonConvert.SerializeObject(value));
 					}, new LocalizedString("DailyRewards.SignInToGetRewards.Title"), new LocalizedString("DailyRewards.SignInToGetRewards.Content"), () =>
 					{
 						UpdateWindowShowUI(state: true);

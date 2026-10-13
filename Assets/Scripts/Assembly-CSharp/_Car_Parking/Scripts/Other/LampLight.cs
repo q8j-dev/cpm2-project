@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.Other
 	public abstract class LampLight : MonoBehaviour
 	{
 		[SerializeField]
-		private bool ForceEnableDisable;
+		private bool ForceEnableDisable = default;
 
 		private Tween _tweenIntensity;
 

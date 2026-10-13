@@ -2087,11 +2087,11 @@ namespace CPMEngine
 			{
 				if (hasAirSuspension)
 				{
-					_soundBankService.TryLoadBank(SoundBankType.CarAirSuspension);
+					_ = _soundBankService.TryLoadBank(SoundBankType.CarAirSuspension);
 				}
 				else
 				{
-					_soundBankService.TryUnloadBank(SoundBankType.CarAirSuspension);
+					_ = _soundBankService.TryUnloadBank(SoundBankType.CarAirSuspension);
 				}
 				_airSuspensionBankHeld = hasAirSuspension;
 			}
@@ -2103,11 +2103,11 @@ namespace CPMEngine
 			{
 				if (hasCompressor)
 				{
-					_soundBankService.TryLoadBank(SoundBankType.CarCompressor);
+					_ = _soundBankService.TryLoadBank(SoundBankType.CarCompressor);
 				}
 				else
 				{
-					_soundBankService.TryUnloadBank(SoundBankType.CarCompressor);
+					_ = _soundBankService.TryUnloadBank(SoundBankType.CarCompressor);
 				}
 				_compressorBankHeld = hasCompressor;
 			}

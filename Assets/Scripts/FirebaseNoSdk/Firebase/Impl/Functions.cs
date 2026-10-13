@@ -19,7 +19,7 @@ namespace Firebase.Impl
 			private class ServerFunctionResponse<TRes>
 			{
 				[JsonProperty("result")]
-				public ResultData<TRes> Result;
+				public ResultData<TRes> Result = default;
 			}
 
 			private readonly string _url;
@@ -265,20 +265,20 @@ namespace Firebase.Impl
 		private class ResultData<TRes>
 		{
 			[JsonProperty("code")]
-			public int StatusCode;
+			public int StatusCode = default;
 
 			[JsonProperty("data")]
-			public TRes Data;
+			public TRes Data = default;
 
 			[JsonProperty("errorData")]
-			public ErrorDataHolder ErrorData;
+			public ErrorDataHolder ErrorData = default;
 		}
 
 		[Preserve]
 		private class ErrorDataHolder
 		{
 			[JsonProperty("message")]
-			public string Message;
+			public string Message = default;
 		}
 
 		private const string TokenExpired = "TOKEN_EXPIRED";

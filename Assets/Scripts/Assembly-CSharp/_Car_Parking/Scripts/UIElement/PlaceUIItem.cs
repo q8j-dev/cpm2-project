@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public abstract class PlaceUIItem<TC, TD> : MonoBehaviour
 	{
 		[SerializeField]
-		private int Index;
+		private int Index = default;
 
 		private bool _isChosen;
 

@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 	public class SteamUIConfigApplier : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject _root;
+		private GameObject _root = default;
 
 		[SerializeField]
 		private Transform[] _hideableObjects;

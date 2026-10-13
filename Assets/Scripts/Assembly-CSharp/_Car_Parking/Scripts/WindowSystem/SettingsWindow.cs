@@ -22,45 +22,42 @@ namespace _Car_Parking.Scripts.WindowSystem
 	{
 		[Header("Elements to hide")]
 		[SerializeField]
-		private CanvasGroup[] MainMenuElements;
+		private CanvasGroup[] MainMenuElements = default;
 
 		[SerializeField]
-		private CanvasGroup[] FreeSceneElements;
+		private CanvasGroup[] FreeSceneElements = default;
 
 		[SerializeField]
-		private ScrollRect MainScrollRect;
+		private ScrollRect MainScrollRect = default;
 
 		[Header("Sections")]
 		[SerializeField]
-		private SettingsSectionBase[] Sections;
+		private SettingsSectionBase[] Sections = default;
 
 		[Header("Top")]
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private GameObject TopElements;
+		private GameObject TopElements = default;
 
 		[Header("Bottom buttons")]
 		[SerializeField]
-		private Button BackToMenuButton;
+		private Button BackToMenuButton = default;
 
 		[SerializeField]
-		private Button ExitGameButton;
+		private Button ExitGameButton = default;
 
 		[Header("Toggles")]
 		[SerializeField]
-		private Toggle AccountToggle;
-
-		[SerializeField]
-		private Toggle ControlsToggle;
+		private Toggle AccountToggle = default;
 
 		[Header("Sections Order")]
 		[SerializeField]
-		private Transform[] DefaultOrder;
+		private Transform[] DefaultOrder = default;
 
 		[SerializeField]
-		private Transform[] MainOrder;
+		private Transform[] MainOrder = default;
 
 		private const string ExitGameConfirmString = "SteamSettings.ExitGameConfirm";
 
@@ -72,33 +69,17 @@ namespace _Car_Parking.Scripts.WindowSystem
 
 		private string _requestedSection;
 
-		private float _screenWidth;
-
-		private float _screenHeight;
-
-		private int _qualityId;
-
-		private int _controlType;
-
-		private bool _alreadyPressedMenu;
-
 		private SettingsSectionBase _currentSection;
 
 		private MenuLevelParent _menuLevelParent;
 
 		private LevelScript _levelScript;
 
-		private IDisposable _disposableSetShadersAfter;
-
 		private DragRacingUI _dragRacingUI;
 
 		private IRaceController _raceController;
 
 		private ParkTronicControll _parkTronicControl;
-
-		private OpenWorldAnalytic _openWorldAnalytic;
-
-		private ITradeService _tradeService;
 
 		private ExitToMainMenuService _exitToMainMenu;
 

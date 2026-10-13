@@ -10,16 +10,16 @@ using _Car_Parking.Scripts.Localization;
 public class CircuitQualificationFinishWindow : WindowScript
 {
 	[SerializeField]
-	private TextMeshProUGUI resultText;
+	private TextMeshProUGUI resultText = default;
 
 	[SerializeField]
-	private Button ExitButton;
+	private Button ExitButton = default;
 
 	[SerializeField]
-	private Button ChangeButton;
+	private Button ChangeButton = default;
 
 	[SerializeField]
-	private Button RestartButton;
+	private Button RestartButton = default;
 
 	private CircuitRaceControlller _circuitRaceControlller;
 

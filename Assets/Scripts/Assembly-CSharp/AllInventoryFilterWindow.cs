@@ -6,28 +6,28 @@ using _Car_Parking.Scripts.Drag;
 public class AllInventoryFilterWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Toggle AllInstalledToggle;
+	private Toggle AllInstalledToggle = default;
 
 	[SerializeField]
-	private Toggle InstalledPartToggle;
+	private Toggle InstalledPartToggle = default;
 
 	[SerializeField]
-	private Toggle NotInstalledPartToggle;
+	private Toggle NotInstalledPartToggle = default;
 
 	[SerializeField]
-	private FilterElementToggle[] FilterElementToggles;
+	private FilterElementToggle[] FilterElementToggles = default;
 
 	[SerializeField]
-	private Toggle AllToggle;
+	private Toggle AllToggle = default;
 
 	[SerializeField]
-	private Button ApplyButton;
+	private Button ApplyButton = default;
 
 	[SerializeField]
-	private Button CloseButton;
+	private Button CloseButton = default;
 
 	[SerializeField]
-	private Button BackBackgroundButton;
+	private Button BackBackgroundButton = default;
 
 	private HashSet<AllInventoryFilters> _currentSelectedFilter = new HashSet<AllInventoryFilters>();
 

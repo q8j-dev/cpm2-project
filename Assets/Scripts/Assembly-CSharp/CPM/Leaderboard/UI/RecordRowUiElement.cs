@@ -11,40 +11,40 @@ namespace CPM.Leaderboard.UI
 	public sealed class RecordRowUiElement : MonoBehaviour
 	{
 		[SerializeField]
-		private Toggle _toggle;
+		private Toggle _toggle = default;
 
 		[SerializeField]
-		private TextMeshProUGUI _placeText;
+		private TextMeshProUGUI _placeText = default;
 
 		[SerializeField]
-		private Text _nameText;
+		private Text _nameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI _timeText;
+		private TextMeshProUGUI _timeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI _carClassText;
+		private TextMeshProUGUI _carClassText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI _weatherText;
+		private TextMeshProUGUI _weatherText = default;
 
 		[SerializeField]
-		private GameObject _ownHighlight;
+		private GameObject _ownHighlight = default;
 
 		[SerializeField]
-		private GameObject _selectedHighlight;
+		private GameObject _selectedHighlight = default;
 
 		[SerializeField]
-		private Image _weatherIcon;
+		private Image _weatherIcon = default;
 
 		[SerializeField]
-		private Sprite _sunSprite;
+		private Sprite _sunSprite = default;
 
 		[SerializeField]
-		private Sprite _cloudSprite;
+		private Sprite _cloudSprite = default;
 
 		[SerializeField]
-		private Sprite _snowSprite;
+		private Sprite _snowSprite = default;
 
 		private RacingRecord _record;
 

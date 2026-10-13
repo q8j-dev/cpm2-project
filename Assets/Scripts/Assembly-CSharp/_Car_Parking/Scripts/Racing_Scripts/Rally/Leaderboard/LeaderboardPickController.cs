@@ -15,16 +15,16 @@ namespace _Car_Parking.Scripts.Racing_Scripts.Rally.Leaderboard
 		private const string ChangeGhostButtonKey = "RallyMode.ChangeGhostText";
 
 		[SerializeField]
-		private LeaderboardListView _listView;
+		private LeaderboardListView _listView = default;
 
 		[SerializeField]
-		private Button _changeGhostButton;
+		private Button _changeGhostButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI _label;
+		private TextMeshProUGUI _label = default;
 
 		[SerializeField]
-		private GameObject _pickModeHighlight;
+		private GameObject _pickModeHighlight = default;
 
 		private GhostRaceState _raceState;
 

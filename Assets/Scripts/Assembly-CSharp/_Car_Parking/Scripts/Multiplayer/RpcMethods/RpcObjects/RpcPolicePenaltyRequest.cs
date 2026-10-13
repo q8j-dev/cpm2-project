@@ -30,7 +30,7 @@ namespace _Car_Parking.Scripts.Multiplayer.RpcMethods.RpcObjects
 			PolicePenalizeForSpeeding policePenalizeForSpeeding = freeDriveControl.PolicePenalizeForSpeeding;
 			CurrencyManagerController currencyManagerController = freeDriveControl.CurrencyManagerController;
 			RpcPolicePenaltyAnswer.ResultType resultType = RpcPolicePenaltyAnswer.ResultType.None;
-			resultType = ((multiPlayerPosControl.FreeDriveProvider.RacingCar2 != null || V.Car.TryGetComponent<FreeRaceCar>(out var _)) ? RpcPolicePenaltyAnswer.ResultType.CarInRace : (policePenalizeForSpeeding.JustPenalized ? RpcPolicePenaltyAnswer.ResultType.JustPenalized : ((!AdvancedBoolean.op_True(!currencyManagerController.IsEnoughMoney(policePenalizeForSpeeding.PoliceConfig.PenaltySystem.MoneyPenalty))) ? RpcPolicePenaltyAnswer.ResultType.Success : RpcPolicePenaltyAnswer.ResultType.NoMoney)));
+			resultType = ((multiPlayerPosControl.FreeDriveProvider.RacingCar2 != null || V.Car.TryGetComponent<FreeRaceCar>(out var _)) ? RpcPolicePenaltyAnswer.ResultType.CarInRace : (policePenalizeForSpeeding.JustPenalized ? RpcPolicePenaltyAnswer.ResultType.JustPenalized : ((!currencyManagerController.IsEnoughMoney(policePenalizeForSpeeding.PoliceConfig.PenaltySystem.MoneyPenalty)) ? RpcPolicePenaltyAnswer.ResultType.NoMoney : RpcPolicePenaltyAnswer.ResultType.Success)));
 			GameObject gameObject = multiPlayerPosControl.OnlineCollectionsProvider.GetPlayerByPlayerID(policeUserId).gameObject;
 			if ((bool)gameObject)
 			{

@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ServiceMapTouchHandler : MonoBehaviour, IDragHandler, IEventSystemHandler, IPointerUpHandler, IPointerDownHandler
 	{
 		[SerializeField]
-		private PhoneWindow PhoneWindow;
+		private PhoneWindow PhoneWindow = default;
 
 		public void OnDrag(PointerEventData eventData)
 		{

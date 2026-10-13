@@ -13,8 +13,6 @@ public class RaceIconsPresenter : IPresenter
 
 	private ManagerUI _managerUI;
 
-	private IconDescriptionItemView _iconDescriptionItemView;
-
 	private TimeAttackMapRacePopupWindow _popupWindow;
 
 	private bool _isPopupCreating;

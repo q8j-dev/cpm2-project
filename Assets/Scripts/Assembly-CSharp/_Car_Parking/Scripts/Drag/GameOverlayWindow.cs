@@ -65,22 +65,19 @@ namespace _Car_Parking.Scripts.Drag
 		public CanvasGroup LevelsMenuWindowCanvasGroup;
 
 		[SerializeField]
-		private RectTransform RankTextParent;
+		private RectTransform RankTextParent = default;
 
 		[SerializeField]
-		private RawImage IconRank;
+		private RawImage IconRank = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RankName;
+		private TextMeshProUGUI RankName = default;
 
 		[SerializeField]
-		private GameObject LoadingRankSign;
+		private GameObject LoadingRankSign = default;
 
 		[SerializeField]
-		private GameObject Social;
-
-		[SerializeField]
-		private GameObject MainHidablePanel;
+		private GameObject MainHidablePanel = default;
 
 		private IOfflineModeSystem _offlineModeSystem;
 
@@ -408,7 +405,7 @@ namespace _Car_Parking.Scripts.Drag
 				if (rank > 10)
 				{
 					rank -= 10;
-					ShowRankUpdate(rank);
+					_ = ShowRankUpdate(rank);
 				}
 				UtilsRank.SetRank((UtilsRank.RankType)rank);
 				UpdateRankUI();

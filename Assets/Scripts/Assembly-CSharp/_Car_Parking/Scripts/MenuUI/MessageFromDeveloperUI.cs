@@ -14,22 +14,19 @@ namespace _Car_Parking.Scripts.MenuUI
 		private const string PlayerPrefsKeyMessageFromDeveloperID = "PlayerPrefsKeyMessageFromDeveloperID";
 
 		[SerializeField]
-		private CanvasGroup Root;
+		private CanvasGroup Root = default;
 
 		[SerializeField]
-		private TMP_Text[] MessageTexts;
+		private TMP_Text[] MessageTexts = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private RectTransform RootSimple;
+		private RectTransform RootSimple = default;
 
 		[SerializeField]
-		private RectTransform RootScrollView;
-
-		[SerializeField]
-		private MessageFromDeveloperConfig MessageFromDeveloperConfig;
+		private RectTransform RootScrollView = default;
 
 		private IRemoteConfigManager _remoteConfigManager;
 

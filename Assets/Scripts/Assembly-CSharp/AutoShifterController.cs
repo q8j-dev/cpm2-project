@@ -31,51 +31,51 @@ public class AutoShifterController : MonoBehaviour, IShifterMode, IPointerDownHa
 
 	[SerializeField]
 	[Header("Knob & slot RectTransforms")]
-	private RectTransform _knob;
+	private RectTransform _knob = default;
 
 	[SerializeField]
-	private RectTransform _parkSlot;
+	private RectTransform _parkSlot = default;
 
 	[SerializeField]
-	private RectTransform _reverseSlot;
+	private RectTransform _reverseSlot = default;
 
 	[SerializeField]
-	private RectTransform _neutralSlot;
+	private RectTransform _neutralSlot = default;
 
 	[SerializeField]
-	private RectTransform _driveSlot;
+	private RectTransform _driveSlot = default;
 
 	[SerializeField]
-	private RectTransform _manualSlot;
+	private RectTransform _manualSlot = default;
 
 	[Tooltip("Слот Sport (S) для CVT — на месте M (CVT кажет S вместо M). Назначается в префабе.")]
 	[SerializeField]
-	private RectTransform _sportSlot;
+	private RectTransform _sportSlot = default;
 
 	[SerializeField]
 	[Tooltip("Слот Low (L) для CVT. Назначается в префабе.")]
-	private RectTransform _lowSlot;
+	private RectTransform _lowSlot = default;
 
 	[SerializeField]
 	[Tooltip("VISUAL slot above M (inside TraceCanvas/Slots). Holds the '+' label. Active only in M mode; fades in/out with knob touch via TraceCanvas CanvasGroup. Position auto-set in LayoutSlots.")]
-	private RectTransform _gearUpSlot;
+	private RectTransform _gearUpSlot = default;
 
 	[SerializeField]
 	[Tooltip("VISUAL slot below M (inside TraceCanvas/Slots). Holds the '−' label. Same behavior as _gearUpSlot.")]
-	private RectTransform _gearDownSlot;
+	private RectTransform _gearDownSlot = default;
 
 	[SerializeField]
 	[Header("Manual-mode tap buttons (always visible in M, OUTSIDE TraceCanvas)")]
 	[Tooltip("Parent GameObject toggled active by UpdateUI when in M mode. Contains _gearUpButton + _gearDownButton.")]
-	private GameObject _manualGearPanel;
+	private GameObject _manualGearPanel = default;
 
 	[SerializeField]
 	[Tooltip("Tap button positioned ABOVE M (inside _manualGearPanel). Position auto-set in LayoutSlots.")]
-	private Button _gearUpButton;
+	private Button _gearUpButton = default;
 
 	[SerializeField]
 	[Tooltip("Tap button positioned BELOW M (inside _manualGearPanel). Position auto-set in LayoutSlots.")]
-	private Button _gearDownButton;
+	private Button _gearDownButton = default;
 
 	[Header("Slot auto-layout (positions are recomputed each Activate)")]
 	[Tooltip("Vertical pitch between adjacent slot centers (P↔R, R↔N, N↔D). Slots are positioned symmetrically around (0,0).")]
@@ -120,7 +120,7 @@ public class AutoShifterController : MonoBehaviour, IShifterMode, IPointerDownHa
 
 	[Header("Trace reveal CanvasGroup (fades slot labels in/out with knob touch)")]
 	[SerializeField]
-	private CanvasGroup _traceCanvasGroup;
+	private CanvasGroup _traceCanvasGroup = default;
 
 	[SerializeField]
 	private float _traceRevealDuration = 0.15f;
@@ -133,7 +133,7 @@ public class AutoShifterController : MonoBehaviour, IShifterMode, IPointerDownHa
 
 	[Header("Label (P/R/N/D/M plus engaged gear in D/M)")]
 	[SerializeField]
-	private TextMeshProUGUI _gearLabel;
+	private TextMeshProUGUI _gearLabel = default;
 
 	private CarInputManager _carInputManager;
 

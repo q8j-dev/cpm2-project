@@ -11,13 +11,13 @@ namespace _Car_Parking.Scripts.Infrastructure
 		private const string FallbackPath = "NotoSansSCRegularSDF";
 
 		[SerializeField]
-		private TMP_FontAsset DefaultFont;
+		private TMP_FontAsset DefaultFont = default;
 
 		[SerializeField]
-		private TMP_FontAsset BebasNeue;
+		private TMP_FontAsset BebasNeue = default;
 
 		[SerializeField]
-		private TMP_FontAsset BebasNeuePro;
+		private TMP_FontAsset BebasNeuePro = default;
 
 		public static TMP_FontAsset FallbackFont;
 

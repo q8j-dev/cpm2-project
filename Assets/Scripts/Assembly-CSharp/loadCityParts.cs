@@ -7,7 +7,7 @@ public class loadCityParts : MonoBehaviour
 
 	public bool loadingNow;
 
-	public Collider collider;
+	public new Collider collider;
 
 	private AsyncOperationHandle<GameObject> _loadingHandle;
 

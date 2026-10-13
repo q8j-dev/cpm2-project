@@ -10,7 +10,7 @@ namespace _Car_Parking.Scripts.SOAP
 	public class ScriptableEvent : ScriptableObject
 	{
 		[SerializeField]
-		private bool debugLog;
+		private bool debugLog = default;
 
 		private event Action _onRaised;
 

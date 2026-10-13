@@ -8,10 +8,10 @@ public class SunnySkyboxPresetSO : ScriptableObject
 	private readonly int _tint = Shader.PropertyToID("_Tint");
 
 	[SerializeField]
-	private Cubemap _cubemap;
+	private Cubemap _cubemap = default;
 
 	[SerializeField]
-	private Color _tintColor;
+	private Color _tintColor = default;
 
 	public void SetPreset()
 	{

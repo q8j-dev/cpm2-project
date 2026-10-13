@@ -33,71 +33,71 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private const float SpacerWidthMaxVal = 15f;
 
 		[SerializeField]
-		private CanvasGroup[] InteractablePanels;
+		private CanvasGroup[] InteractablePanels = default;
 
 		[SerializeField]
-		private CanvasGroup LeftPanelCanvasGroup;
+		private CanvasGroup LeftPanelCanvasGroup = default;
 
 		[SerializeField]
 		[Header("Canvas group")]
-		private AlphaHidableObject[] AlphaHidableObjects;
+		private AlphaHidableObject[] AlphaHidableObjects = default;
 
 		[SerializeField]
 		[Header("Image panel")]
-		private TextMeshProUGUI TopLeftImageText;
+		private TextMeshProUGUI TopLeftImageText = default;
 
 		[SerializeField]
-		private Image BgImage;
+		private Image BgImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TopCenterImageText;
+		private TextMeshProUGUI TopCenterImageText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TopRightImageText;
+		private TextMeshProUGUI TopRightImageText = default;
 
 		[SerializeField]
-		private Sprite[] SpritesArray;
+		private Sprite[] SpritesArray = default;
 
 		[SerializeField]
-		private Image RightImage;
+		private Image RightImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DownLeftValueText;
+		private TextMeshProUGUI DownLeftValueText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RightLeftValueText;
+		private TextMeshProUGUI RightLeftValueText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Title;
+		private TextMeshProUGUI Title = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Description;
+		private TextMeshProUGUI Description = default;
 
 		[SerializeField]
 		[Header("Buttons")]
-		private Button ApplyButton;
+		private Button ApplyButton = default;
 
 		[SerializeField]
-		private Button DontSaveButton;
+		private Button DontSaveButton = default;
 
 		[SerializeField]
-		private Button SaveButton;
+		private Button SaveButton = default;
 
 		[SerializeField]
-		private Button ResetButton;
+		private Button ResetButton = default;
 
 		[SerializeField]
 		private float AnimationDuration = 1f;
 
 		[Header("Sliders")]
 		[SerializeField]
-		private CustomSliderValueHandler[] FrontSliderValueHandlers;
+		private CustomSliderValueHandler[] FrontSliderValueHandlers = default;
 
 		[SerializeField]
-		private CustomSliderValueHandler[] RearSliderValueHandlers;
+		private CustomSliderValueHandler[] RearSliderValueHandlers = default;
 
 		[SerializeField]
-		private CustomSliderValueHandler[] BothSliderValueHandlers;
+		private CustomSliderValueHandler[] BothSliderValueHandlers = default;
 
 		[Header("TopSliders")]
 		[SerializeField]
@@ -105,61 +105,58 @@ namespace _Car_Parking.Scripts.WindowSystem
 
 		[Header("Panels")]
 		[SerializeField]
-		private GameObject FrontPanel;
+		private GameObject FrontPanel = default;
 
 		[SerializeField]
-		private GameObject RearPanel;
+		private GameObject RearPanel = default;
 
 		[SerializeField]
-		private GameObject OtherPanel;
+		private GameObject OtherPanel = default;
 
 		[SerializeField]
 		private Toggle FrontToggle;
 
 		[SerializeField]
-		private Toggle RearToggle;
-
-		[SerializeField]
 		[Header("Panels")]
-		private GameObject MainPanel;
+		private GameObject MainPanel = default;
 
 		[SerializeField]
-		private GameObject PopupPanel;
+		private GameObject PopupPanel = default;
 
 		[SerializeField]
-		private ScrollRect LeftScrollRect;
+		private ScrollRect LeftScrollRect = default;
 
 		[SerializeField]
-		private GameObject TopBarTitleButtonsPanel;
+		private GameObject TopBarTitleButtonsPanel = default;
 
 		[SerializeField]
 		[Header("Pneumatic")]
-		private GameObject SuspensionTypeChoosePanel;
+		private GameObject SuspensionTypeChoosePanel = default;
 
 		[SerializeField]
-		private GameObject PneumaticCheckbox;
+		private GameObject PneumaticCheckbox = default;
 
 		[SerializeField]
-		private GameObject SpringCheckbox;
+		private GameObject SpringCheckbox = default;
 
 		[SerializeField]
-		private Toggle PneumaticToggle;
+		private Toggle PneumaticToggle = default;
 
 		[SerializeField]
-		private Toggle SpringToggle;
+		private Toggle SpringToggle = default;
 
 		[SerializeField]
-		private GameObject PneumaticBuyPanel;
+		private GameObject PneumaticBuyPanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PneumaticPriceText;
+		private TextMeshProUGUI PneumaticPriceText = default;
 
 		[SerializeField]
-		private Button PneumaticBuyButton;
+		private Button PneumaticBuyButton = default;
 
 		[Header("Header elements")]
 		[SerializeField]
-		private TextMeshProUGUI SpringsName;
+		private TextMeshProUGUI SpringsName = default;
 
 		private ICarInfoService _carInfoService;
 
@@ -177,7 +174,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 
 		private SuspensionTabs _currentSuspensionTab;
 
-		private Tween _tween;
+		private Tween _tween = default;
 
 		private TuningLimitsData _suspensionFrontDataLimits;
 
@@ -204,8 +201,6 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private RegistryHandle<BoolEvent> _onNextPreviousHandle = new RegistryHandle<BoolEvent>(EventRegistryIDs.OnNextPrevious);
 
 		private readonly Toggle[] _tabToggles = new Toggle[5];
-
-		private AxleType _currentAxleType;
 
 		private IAirSuspension _airSuspensionSystem;
 
@@ -297,7 +292,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 			PneumaticToggle.onValueChanged.AddListener(ShowCurrentSuspensionType);
 			PneumaticBuyButton.onClick.AddListener(() =>
 			{
-				_managerUI.ShowConfirmWindow(() =>
+				_ = _managerUI.ShowConfirmWindow(() =>
 				{
 					BuyPneumatic().Forget();
 				}, "", new LocalizedString("SuspensionWindow.BuySuspensionDescription"));

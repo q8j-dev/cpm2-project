@@ -16,10 +16,10 @@ public class FlagTrigger : MonoBehaviour, IFlagTrigger
 	private float _radius;
 
 	[SerializeField]
-	private AnimationBlinkerGO Flag;
+	private AnimationBlinkerGO Flag = default;
 
 	[SerializeField]
-	private Transform Checker;
+	private Transform Checker = default;
 
 	private LocationFlagsController _flagController;
 

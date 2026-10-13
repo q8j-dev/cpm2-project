@@ -16,13 +16,13 @@ namespace _Car_Parking.Scripts.EventSystem.View
 		private const string RequiredCarClassColorTag = "yellow";
 
 		[SerializeField]
-		private Image[] DotIcons;
+		private Image[] DotIcons = default;
 
 		[SerializeField]
-		private Color DefaultDotColor;
+		private Color DefaultDotColor = default;
 
 		[SerializeField]
-		private Color ReadyDotColor;
+		private Color ReadyDotColor = default;
 
 		protected override async UniTask SetProgress(int cachedProgress, CancellationToken token)
 		{

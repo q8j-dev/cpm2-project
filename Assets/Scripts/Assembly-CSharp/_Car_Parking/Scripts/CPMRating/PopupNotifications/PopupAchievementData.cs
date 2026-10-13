@@ -18,10 +18,6 @@ namespace _Car_Parking.Scripts.CPMRating.PopupNotifications
 
 		public string MainDescription;
 
-		private string _name;
-
-		private string _description;
-
 		public PopupAchievementData(string name, string description, string score, Texture icon, string rang, string mainDescription)
 		{
 			Name = name;

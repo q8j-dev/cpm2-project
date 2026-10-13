@@ -6,8 +6,6 @@ public class ShakeFinishGate : MonoBehaviour
 {
 	public Quaternion TargetX;
 
-	private float ref3;
-
 	private IDisposable _setNormalSpeedDisposable;
 
 	public float speedShake = 1f;

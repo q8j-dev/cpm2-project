@@ -7,10 +7,10 @@ namespace Car_Parking.Scripts.Racing
 	public class RacePropsActivator : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject[] PropsForActivate;
+		private GameObject[] PropsForActivate = default;
 
 		[SerializeField]
-		private GameObject[] PropsForDeactivate;
+		private GameObject[] PropsForDeactivate = default;
 
 		private void Start()
 		{

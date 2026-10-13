@@ -17,7 +17,7 @@ namespace _Car_Parking.Scripts.ArtistTools
 
 		[SerializeField]
 		[Range(0f, 100f)]
-		private float PhaseOffsetX;
+		private float PhaseOffsetX = default;
 
 		[SerializeField]
 		[Range(0f, 10f)]
@@ -31,7 +31,7 @@ namespace _Car_Parking.Scripts.ArtistTools
 
 		[Range(0f, 100f)]
 		[SerializeField]
-		private float PhaseOffsetZ;
+		private float PhaseOffsetZ = default;
 
 		private Quaternion _initRotation;
 

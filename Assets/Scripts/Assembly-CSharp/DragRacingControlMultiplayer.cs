@@ -296,7 +296,7 @@ public class DragRacingControlMultiplayer : MonoBehaviour
 		_carInputManager.State = 1;
 		component.racingState = RacingState.Finished;
 		_coreGameManager.CarFinished = true;
-		newRacingMultiplayerController.OnCarFinishLapRace(V.LastUsedCar);
+		_ = newRacingMultiplayerController.OnCarFinishLapRace(V.LastUsedCar);
 		_recordResultDisposable = Observable.Timer(TimeSpan.FromSeconds(0.20000000298023224)).Subscribe((long _) =>
 		{
 			RecordResult();
@@ -871,7 +871,7 @@ public class DragRacingControlMultiplayer : MonoBehaviour
 		{
 			_freeDriveProvider.FreeDriveControl.newNegotiationWindow.Close();
 		}
-		RaceBegin();
+		_ = RaceBegin();
 	}
 
 	private async UniTask RaceBegin()
@@ -988,7 +988,7 @@ public class DragRacingControlMultiplayer : MonoBehaviour
 		{
 			int num = ((newRacingMultiplayerController.LastResolvedRaceIndex >= 0) ? newRacingMultiplayerController.LastResolvedRaceIndex : selectedOwn);
 			sendValueStr(54, _freeDriveControl.LastInvitationReceivedId.ToString(), num.ToString());
-			RaceBegin();
+			_ = RaceBegin();
 		}
 		if ((bool)_freeDriveProvider.FreeDriveControl.newNegotiationWindow)
 		{
@@ -1010,7 +1010,7 @@ public class DragRacingControlMultiplayer : MonoBehaviour
 			SelectedDistance = value;
 			newRacingMultiplayerController.SetDistance();
 		}
-		RaceBegin();
+		_ = RaceBegin();
 	}
 
 	public void EnableOwnToggleDistacne(int i)

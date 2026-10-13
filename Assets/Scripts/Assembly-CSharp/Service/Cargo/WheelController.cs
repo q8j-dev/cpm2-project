@@ -7,10 +7,10 @@ namespace Service.Cargo
 		public Transform wheelTransform;
 
 		[SerializeField]
-		private WheelCollider wheelCollider;
+		private WheelCollider wheelCollider = default;
 
 		[SerializeField]
-		private MeshCollider meshCollider;
+		private MeshCollider meshCollider = default;
 
 		public int frame = 1;
 

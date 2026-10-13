@@ -9,10 +9,10 @@ namespace _Car_Parking.Scripts.DailyRewards
 	public class DailyRewardsWindowNextPrevWeek : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_Text Text;
+		private TMP_Text Text = default;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		public event Action<DailyRewardsWindowNextPrevWeek> OnClicked;
 

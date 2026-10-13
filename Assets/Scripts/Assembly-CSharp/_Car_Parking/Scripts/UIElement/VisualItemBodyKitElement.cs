@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class VisualItemBodyKitElement : VisualItemElement
 	{
 		[SerializeField]
-		private CombinedPriceView CombinedPriceView;
+		private CombinedPriceView CombinedPriceView = default;
 
 		private BodyKitUIElementData _bodyKitUIElementData;
 

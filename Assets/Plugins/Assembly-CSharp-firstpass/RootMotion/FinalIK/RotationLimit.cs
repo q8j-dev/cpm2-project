@@ -11,8 +11,6 @@ namespace RootMotion.FinalIK
 
 		private bool initiated;
 
-		private bool applicationQuit;
-
 		private bool defaultLocalRotationSet;
 
 		public Vector3 secondaryAxis => new Vector3(axis.y, axis.z, axis.x);

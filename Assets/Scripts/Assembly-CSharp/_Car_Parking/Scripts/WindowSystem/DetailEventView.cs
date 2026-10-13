@@ -16,16 +16,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class DetailEventView : MonoBehaviour
 	{
 		[SerializeField]
-		private RemainingTimeView TimeView;
+		private RemainingTimeView TimeView = default;
 
 		[SerializeField]
-		private Button ClaimButton;
+		private Button ClaimButton = default;
 
 		[SerializeField]
-		private GameObject ClaimButtonDisabled;
+		private GameObject ClaimButtonDisabled = default;
 
 		[SerializeField]
-		private GameObject ClaimButtonFinished;
+		private GameObject ClaimButtonFinished = default;
 
 		protected GameActivityEntry _entry;
 

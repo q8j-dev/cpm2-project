@@ -20,10 +20,10 @@ public class Referee : MonoBehaviour
 	private const float IKTransitionDuration = 0.5f;
 
 	[SerializeField]
-	private Transform _leftTarget;
+	private Transform _leftTarget = default;
 
 	[SerializeField]
-	private Transform _rightTarget;
+	private Transform _rightTarget = default;
 
 	private DragRacingTree _dragRacingTree;
 
@@ -35,8 +35,6 @@ public class Referee : MonoBehaviour
 
 	private float _rightCarDistance;
 
-	private float _targetZPosition;
-
 	private float _initialRightZPos;
 
 	private float _initialLeftZPos;
@@ -44,10 +42,6 @@ public class Referee : MonoBehaviour
 	private bool _movingTowardsTargetLeft = true;
 
 	private bool _movingTowardsTargetRight = true;
-
-	private bool _leftHandAnimStarted;
-
-	private bool _rightHandAnimStarted;
 
 	private bool _isLeftCarEntered;
 

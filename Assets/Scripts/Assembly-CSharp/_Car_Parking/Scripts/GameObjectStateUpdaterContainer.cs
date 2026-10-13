@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts
 	public class GameObjectStateUpdaterContainer : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObjectStateUpdater[] GameObjectStateUpdaters;
+		private GameObjectStateUpdater[] GameObjectStateUpdaters = default;
 
 		public void UpdateState(bool isOn)
 		{

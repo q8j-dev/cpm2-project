@@ -17,7 +17,7 @@ namespace _Car_Parking.Scripts.Car
 		}
 
 		[SerializeField]
-		private TypeDetail Type;
+		private TypeDetail Type = default;
 
 		private Transform _originalParent;
 

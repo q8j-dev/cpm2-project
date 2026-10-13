@@ -225,7 +225,7 @@ namespace _Car_Parking.Scripts.Drag
 					Controller.SetActive(value: false);
 				}
 			}
-			UIHelper.DelayedRebuildLayout(LayoutRpm);
+			_ = UIHelper.DelayedRebuildLayout(LayoutRpm);
 		}
 
 		private void ResetRpm()

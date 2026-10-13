@@ -13,7 +13,7 @@ public class MapIconBehaviour : MonoBehaviour
 	private float MaxDirectionZ = -30f;
 
 	[SerializeField]
-	private RacingUIMap RacingUIMap;
+	private RacingUIMap RacingUIMap = default;
 
 	private const float DistanceCamToGround = 53f;
 

@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.Police
 		private LampLightGroup LampLightGroup;
 
 		[SerializeField]
-		private PoliceCarLampsAnimationConfig AnimationConfig;
+		private PoliceCarLampsAnimationConfig AnimationConfig = default;
 
 		private CancellationTokenSource _cancellationTokenSource;
 

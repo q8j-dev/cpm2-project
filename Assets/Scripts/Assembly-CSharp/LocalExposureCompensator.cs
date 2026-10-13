@@ -11,8 +11,6 @@ public class LocalExposureCompensator : MonoBehaviour
 	[SerializeField]
 	public List<ExposureElement> ExposureElements = new List<ExposureElement>();
 
-	private float exposureVal;
-
 	private CPMGraphicsSettingsManager manager;
 
 	private float PrevHorizon;

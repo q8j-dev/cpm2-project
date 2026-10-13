@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class ModelViewControls : MonoBehaviour
 {
-	private int yMinLimit;
+	private int yMinLimit = default;
 
 	private int yMaxLimit = 80;
-
-	private Quaternion currentRotation;
 
 	private Quaternion desiredRotation;
 

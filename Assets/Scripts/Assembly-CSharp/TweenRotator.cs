@@ -6,13 +6,13 @@ public class TweenRotator : MonoBehaviour
 	private Tween _tweener;
 
 	[SerializeField]
-	private Transform Transform;
+	private Transform Transform = default;
 
 	[SerializeField]
-	private float Duration;
+	private float Duration = default;
 
 	[SerializeField]
-	private RotateMode RotateMode;
+	private RotateMode RotateMode = default;
 
 	private void OnEnable()
 	{

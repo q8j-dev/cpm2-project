@@ -9,22 +9,22 @@ using _Car_Parking.Scripts.Racing_Scripts;
 public class RallyRecordsUIPanel : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI GoldTimeText;
+	private TextMeshProUGUI GoldTimeText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SilverTimeText;
+	private TextMeshProUGUI SilverTimeText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CopperTimeText;
+	private TextMeshProUGUI CopperTimeText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI RecordText;
+	private TextMeshProUGUI RecordText = default;
 
 	[SerializeField]
-	private Image PersonalCupIcon;
+	private Image PersonalCupIcon = default;
 
 	[SerializeField]
-	private Color[] CupColors;
+	private Color[] CupColors = default;
 
 	private RallyController _rallyController;
 

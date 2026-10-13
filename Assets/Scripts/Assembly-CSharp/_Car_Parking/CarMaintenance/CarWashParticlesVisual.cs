@@ -13,13 +13,13 @@ namespace _Car_Parking.CarMaintenance
 		private List<ParticleSystem> _particles = new List<ParticleSystem>();
 
 		[SerializeField]
-		private Transform _carPlacePoint;
+		private Transform _carPlacePoint = default;
 
 		[SerializeField]
-		private string _playEvent;
+		private string _playEvent = default;
 
 		[SerializeField]
-		private string _stopEvent;
+		private string _stopEvent = default;
 
 		public override async UniTask PlayAsync(GameObject car, float duration, CancellationToken ct)
 		{

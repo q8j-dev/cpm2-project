@@ -9,11 +9,11 @@ namespace Service.Taxi
 	public class InnerCollisionDetector : CollisionDetector
 	{
 		[SerializeField]
-		private List<CollisionDetector> triggers;
+		private List<CollisionDetector> triggers = default;
 
 		private void OnTriggerEnter(Collider other)
 		{
-			TriggerEnter(other);
+			_ = TriggerEnter(other);
 		}
 
 		private void OnTriggerExit(Collider other)

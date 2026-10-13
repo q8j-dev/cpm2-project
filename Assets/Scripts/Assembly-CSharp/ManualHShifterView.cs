@@ -22,14 +22,14 @@ public class ManualHShifterView : MonoBehaviour, IManualHShifterView
 
 	[SerializeField]
 	[Header("Slots (8 RectTransforms — indices 0..7 = Slot_1, Slot_2 … Slot_7, Slot_R)")]
-	private RectTransform[] _slotTransforms;
+	private RectTransform[] _slotTransforms = default;
 
 	[Header("Channel UI lines")]
 	[SerializeField]
-	private Image[] _verticalChannels;
+	private Image[] _verticalChannels = default;
 
 	[SerializeField]
-	private Image _horizontalChannel;
+	private Image _horizontalChannel = default;
 
 	[SerializeField]
 	[Tooltip("Radius of each slot's circle visual in pixels. Vertical channels are trimmed by this amount near every slot so the line ends at the circle's edge instead of running into its center. The knob target stays at the slot center (= circle center). Set to match the actual circle radius in the prefab; 0 disables trimming (line runs into circle center).")]
@@ -37,14 +37,14 @@ public class ManualHShifterView : MonoBehaviour, IManualHShifterView
 
 	[SerializeField]
 	[Header("Knob")]
-	private RectTransform _knob;
+	private RectTransform _knob = default;
 
 	[SerializeField]
-	private CanvasGroup _gearTraceCanvasGroup;
+	private CanvasGroup _gearTraceCanvasGroup = default;
 
 	[Header("Slot gear labels (indices match _slotTransforms 0..7 = gears 1..7, R). New circle-based design: each Slot_N has a circle visual, label sits INSIDE the circle at slot center — set _slotLabelOffset = 0 in the inspector. Non-zero offset nudges the label up (top-row gears) or down (bottom-row gears) relative to the circle center.")]
 	[SerializeField]
-	private RectTransform[] _slotLabels;
+	private RectTransform[] _slotLabels = default;
 
 	[SerializeField]
 	private float _slotLabelOffset = 40f;

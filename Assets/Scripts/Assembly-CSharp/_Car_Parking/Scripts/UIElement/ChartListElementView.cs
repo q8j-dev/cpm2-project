@@ -7,23 +7,23 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ChartListElementView : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI PlaceNumberText;
+		private TextMeshProUGUI PlaceNumberText = default;
 
 		[SerializeField]
-		private Text UserNameText;
+		private Text UserNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ValueText;
+		private TextMeshProUGUI ValueText = default;
 
 		[SerializeField]
-		private RawImage RankImage;
+		private RawImage RankImage = default;
 
 		[Header("Player highlight")]
 		[SerializeField]
-		private GameObject[] PlayerGraphics;
+		private GameObject[] PlayerGraphics = default;
 
 		[SerializeField]
-		private GameObject[] NormalGraphics;
+		private GameObject[] NormalGraphics = default;
 
 		[SerializeField]
 		private Color PlayerTextColor = Color.black;

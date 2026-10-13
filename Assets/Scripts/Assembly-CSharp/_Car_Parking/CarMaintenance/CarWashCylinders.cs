@@ -13,13 +13,13 @@ namespace _Car_Parking.CarMaintenance
 		private const string CarWashStop = "Stop_SFX_Washing_Car";
 
 		[SerializeField]
-		private Transform leftCylinders;
+		private Transform leftCylinders = default;
 
 		[SerializeField]
-		private Transform rightCylinders;
+		private Transform rightCylinders = default;
 
 		[SerializeField]
-		private ParticleSystem waterParticles;
+		private ParticleSystem waterParticles = default;
 
 		private float _rotateAngle = 90f;
 

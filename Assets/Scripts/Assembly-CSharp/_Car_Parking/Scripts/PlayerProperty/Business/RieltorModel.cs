@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.PlayerProperty.Business
 	public class RieltorModel : MonoBehaviour
 	{
 		[SerializeField]
-		private bool IsNeedUpdatePositionOnSceneLoaded;
+		private bool IsNeedUpdatePositionOnSceneLoaded = default;
 
 		[SerializeField]
-		private Transform TargetObject;
+		private Transform TargetObject = default;
 
 		[SerializeField]
 		private float RaycastHeight = 2f;
@@ -18,11 +18,11 @@ namespace _Car_Parking.Scripts.PlayerProperty.Business
 		private LayerMask LayerMask = -1;
 
 		[SerializeField]
-		private float YOffset;
+		private float YOffset = default;
 
 		[Header("Icon on head")]
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		private Vector3 _lastOrigin;
 

@@ -16,7 +16,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class PhoneButtonHandler : MonoBehaviour
 	{
 		[SerializeField]
-		private Button PhoneButton;
+		private Button PhoneButton = default;
 
 		private ManagerUI _managerUI;
 

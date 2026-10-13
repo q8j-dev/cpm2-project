@@ -8,9 +8,6 @@ namespace Service.Taxi
 	public class Task : Service.Abstract.Task
 	{
 		[SerializeField]
-		private Service.Abstract.ClientController client;
-
-		[SerializeField]
 		private float collisionTime = 3f;
 
 		private float time

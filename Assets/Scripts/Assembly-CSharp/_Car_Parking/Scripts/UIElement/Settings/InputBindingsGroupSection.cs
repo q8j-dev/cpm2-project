@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	public class InputBindingsGroupSection : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI TitleLabel;
+		private TextMeshProUGUI TitleLabel = default;
 
 		[field: SerializeField]
 		public RectTransform Content { get; private set; }

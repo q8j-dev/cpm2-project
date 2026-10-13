@@ -9,97 +9,97 @@ using _Car_Parking.Scripts.Localization;
 public class CarExchangeLongInfoPanel : MonoBehaviour
 {
 	[SerializeField]
-	private CarTuningExchangeUIElement Block;
+	private CarTuningExchangeUIElement Block = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement ConnectionRod;
+	private CarTuningExchangeUIElement ConnectionRod = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Piston;
+	private CarTuningExchangeUIElement Piston = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Crankshaft;
+	private CarTuningExchangeUIElement Crankshaft = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Flywheel;
+	private CarTuningExchangeUIElement Flywheel = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement RotorHousing;
+	private CarTuningExchangeUIElement RotorHousing = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Rotor;
+	private CarTuningExchangeUIElement Rotor = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement RotorTrackingGear;
+	private CarTuningExchangeUIElement RotorTrackingGear = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement EccentricShaft;
+	private CarTuningExchangeUIElement EccentricShaft = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement CylinderHead;
+	private CarTuningExchangeUIElement CylinderHead = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement IntakeCamshaft;
+	private CarTuningExchangeUIElement IntakeCamshaft = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Exhausteamshaft;
+	private CarTuningExchangeUIElement Exhausteamshaft = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement IntakeManifold;
+	private CarTuningExchangeUIElement IntakeManifold = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement AirFilter;
+	private CarTuningExchangeUIElement AirFilter = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement ExhaustHeader;
+	private CarTuningExchangeUIElement ExhaustHeader = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement ExhaustPipe;
+	private CarTuningExchangeUIElement ExhaustPipe = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement FuelRail;
+	private CarTuningExchangeUIElement FuelRail = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement ThrottleValve;
+	private CarTuningExchangeUIElement ThrottleValve = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement FuelPump;
+	private CarTuningExchangeUIElement FuelPump = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement FuelInjector;
+	private CarTuningExchangeUIElement FuelInjector = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Radiator;
+	private CarTuningExchangeUIElement Radiator = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Intercooler;
+	private CarTuningExchangeUIElement Intercooler = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Turbo;
+	private CarTuningExchangeUIElement Turbo = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Ecu;
+	private CarTuningExchangeUIElement Ecu = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Gearbox;
+	private CarTuningExchangeUIElement Gearbox = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement Clutch;
+	private CarTuningExchangeUIElement Clutch = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement FrontLsd;
+	private CarTuningExchangeUIElement FrontLsd = default;
 
 	[SerializeField]
-	private CarTuningExchangeUIElement RearLsd;
+	private CarTuningExchangeUIElement RearLsd = default;
 
 	[SerializeField]
-	private GameObject TurboPanel;
+	private GameObject TurboPanel = default;
 
 	[SerializeField]
-	private GameObject CylinderHeaderPanel;
+	private GameObject CylinderHeaderPanel = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BlockTitle;
+	private TextMeshProUGUI BlockTitle = default;
 
 	private AllParts _allParts;
 

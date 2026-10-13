@@ -21,67 +21,61 @@ public class CoinShopWindow : MarketPurchaseWindow
 	private const int MinPercent = 0;
 
 	[SerializeField]
-	private Button PriceFor100;
+	private Button PriceFor100 = default;
 
 	[SerializeField]
-	private Button PriceFor300;
+	private Button PriceFor300 = default;
 
 	[SerializeField]
-	private Button PriceFor1000;
+	private Button PriceFor1000 = default;
 
 	[SerializeField]
-	private Button PriceFor5000;
+	private Button PriceFor5000 = default;
 
 	[SerializeField]
-	private Button PriceFor10000;
+	private Button PriceFor10000 = default;
 
 	[SerializeField]
-	private Text Text100;
+	private Text Text100 = default;
 
 	[SerializeField]
-	private MarketSpecialPriceElement SpecialPrice100Element;
+	private MarketSpecialPriceElement SpecialPrice100Element = default;
 
 	[SerializeField]
-	private Text Text300;
+	private Text Text300 = default;
 
 	[SerializeField]
-	private MarketSpecialPriceElement SpecialPrice300Element;
+	private MarketSpecialPriceElement SpecialPrice300Element = default;
 
 	[SerializeField]
-	private Text Text1000;
+	private Text Text1000 = default;
 
 	[SerializeField]
-	private MarketSpecialPriceElement SpecialPrice1000Element;
+	private MarketSpecialPriceElement SpecialPrice1000Element = default;
 
 	[SerializeField]
-	private Text Text5000;
+	private Text Text5000 = default;
 
 	[SerializeField]
-	private MarketSpecialPriceElement SpecialPrice5000Element;
+	private MarketSpecialPriceElement SpecialPrice5000Element = default;
 
 	[SerializeField]
-	private Text Text10000;
+	private Text Text10000 = default;
 
 	[SerializeField]
-	private MarketSpecialPriceElement SpecialPrice10000Element;
+	private MarketSpecialPriceElement SpecialPrice10000Element = default;
 
 	[SerializeField]
-	private Button closeButton;
+	private GameObject CoinsPanel = default;
 
 	[SerializeField]
-	private Button hiddenCloseButton;
+	private GameObject DiscountPanel = default;
 
 	[SerializeField]
-	private GameObject CoinsPanel;
+	private Button[] CoinsButtons = default;
 
 	[SerializeField]
-	private GameObject DiscountPanel;
-
-	[SerializeField]
-	private Button[] CoinsButtons;
-
-	[SerializeField]
-	private Button[] DiscountButtons;
+	private Button[] DiscountButtons = default;
 
 	private FreeDriveProvider _freeDriveProvider;
 
@@ -96,8 +90,6 @@ public class CoinShopWindow : MarketPurchaseWindow
 	private IGuestAccountCreator _guestAccountCreator;
 
 	private IPurchaseSystem _purchaseSystem;
-
-	private bool _ignoreInit;
 
 	[Inject]
 	public void Construct(FreeDriveProvider freeDriveProvider, CurrencyManagerController currencyManagerController, IRemoteConfigManager remoteConfigManager, IGuestAccountCreator guestAccountCreator, IPurchaseSystem purchaseSystem)

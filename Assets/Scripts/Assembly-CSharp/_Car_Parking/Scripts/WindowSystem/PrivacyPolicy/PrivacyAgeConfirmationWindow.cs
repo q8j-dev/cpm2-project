@@ -13,10 +13,10 @@ namespace _Car_Parking.Scripts.WindowSystem.PrivacyPolicy
 		public const string PrefabKey = "PrivacyAgeConfirmationWindow";
 
 		[SerializeField]
-		private Button ConfirmButton;
+		private Button ConfirmButton = default;
 
 		[SerializeField]
-		private Button RejectButton;
+		private Button RejectButton = default;
 
 		private ParentalControlUtility _parentalControlUtility;
 

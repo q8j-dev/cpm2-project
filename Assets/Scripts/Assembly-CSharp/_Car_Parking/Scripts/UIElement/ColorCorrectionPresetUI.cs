@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ColorCorrectionPresetUI : MonoBehaviour
 	{
 		[SerializeField]
-		private Button PickButton;
+		private Button PickButton = default;
 
 		[SerializeField]
-		private CPMGraphicsSettings.ColorCorrectionLut ColorCorrectionLut;
+		private CPMGraphicsSettings.ColorCorrectionLut ColorCorrectionLut = default;
 
 		private void Start()
 		{

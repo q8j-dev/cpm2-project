@@ -71,34 +71,34 @@ namespace _Car_Parking.Scripts.Drag
 		}
 
 		[SerializeField]
-		private TMP_Text Title;
+		private TMP_Text Title = default;
 
 		[SerializeField]
-		private TMP_Text Content;
+		private TMP_Text Content = default;
 
 		[SerializeField]
-		private TMP_Text ConfirmButtonText;
+		private TMP_Text ConfirmButtonText = default;
 
 		[SerializeField]
-		private Button ConfirmButton;
+		private Button ConfirmButton = default;
 
 		[SerializeField]
-		private Button CancelButton;
+		private Button CancelButton = default;
 
 		[SerializeField]
-		private Button WideCancelButton;
+		private Button WideCancelButton = default;
 
 		[SerializeField]
-		private RectTransform LayoutParent;
+		private RectTransform LayoutParent = default;
 
 		[SerializeField]
-		private RawImage NotificationImage;
+		private RawImage NotificationImage = default;
 
 		[SerializeField]
-		private Image Background;
+		private Image Background = default;
 
 		[SerializeField]
-		private CombinedPriceView CombinedPriceView;
+		private CombinedPriceView CombinedPriceView = default;
 
 		private List<ConfirmAdditionalController> _additionalControllers = new List<ConfirmAdditionalController>();
 

@@ -11,6 +11,7 @@ using _Car_Parking.Scripts.Analytics.Event.Contexts;
 using _Car_Parking.Scripts.Analytics.Root;
 using _Car_Parking.Scripts.PrefsKeys;
 using _Car_Parking.Scripts.Steam;
+using Application = UnityEngine.Application;
 
 namespace _Car_Parking.Scripts.Analytics.Event.CustomEvent
 {

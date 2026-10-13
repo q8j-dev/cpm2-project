@@ -17,12 +17,12 @@ namespace _Car_Parking.Scripts.Drag
 		private CarTuningData _car;
 
 		[SerializeField]
-		private UIInventory _uiInventory;
+		private UIInventory _uiInventory = default;
 
 		public TextMeshProUGUI allWeightText;
 
 		[SerializeField]
-		private Button backButton;
+		private Button backButton = default;
 
 		public List<ButtonsSlots> ButtonsSlotsFrontList = new List<ButtonsSlots>();
 
@@ -65,7 +65,7 @@ namespace _Car_Parking.Scripts.Drag
 		{
 			_car = carTuningData;
 			allWeightText.text = $"{9999:N0} KG";
-			ParseDetails(_car);
+			_ = ParseDetails(_car);
 		}
 
 		public void InitBackButton()

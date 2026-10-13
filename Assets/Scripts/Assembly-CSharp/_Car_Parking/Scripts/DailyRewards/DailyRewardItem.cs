@@ -9,25 +9,25 @@ namespace _Car_Parking.Scripts.DailyRewards
 	public class DailyRewardItem : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private TMP_Text[] DayTexts;
+		private TMP_Text[] DayTexts = default;
 
 		[SerializeField]
-		private DailyRewardItemTypeView[] DailyRewardItemTypeViews;
+		private DailyRewardItemTypeView[] DailyRewardItemTypeViews = default;
 
 		[SerializeField]
-		private DailyRewardData.TypeReward[] AvailableRewards;
+		private DailyRewardData.TypeReward[] AvailableRewards = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater LineLeft;
+		private GameObjectStateUpdater LineLeft = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater LineRight;
+		private GameObjectStateUpdater LineRight = default;
 
 		[SerializeField]
-		private DailyRewardStatusGameObjects StatusGraphics;
+		private DailyRewardStatusGameObjects StatusGraphics = default;
 
 		private DailyRewardItem _dailyRewardItemNeighbour;
 

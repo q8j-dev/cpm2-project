@@ -214,7 +214,7 @@ public class PlayersListControl : WindowScript, IBackableWindow
 			onePlayerData.MultiPersonControl = component;
 			onePlayerUI.Init(onePlayerData, () =>
 			{
-				CreateProfileWindow(onePlayerData);
+				_ = CreateProfileWindow(onePlayerData);
 			});
 		}
 	}

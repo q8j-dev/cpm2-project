@@ -33,8 +33,6 @@ namespace RootMotion.Demos
 
 		private Vector3 lastPosition;
 
-		private Vector3 defaultBodyLocalPosition;
-
 		private float sine;
 
 		private RaycastHit rootHit;

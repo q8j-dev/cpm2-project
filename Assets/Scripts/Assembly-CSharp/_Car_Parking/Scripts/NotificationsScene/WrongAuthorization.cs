@@ -16,10 +16,10 @@ namespace _Car_Parking.Scripts.NotificationsScene
 		private float DelayToShow = 0.1f;
 
 		[SerializeField]
-		private string TitleKey;
+		private string TitleKey = default;
 
 		[SerializeField]
-		private string DescriptionKey;
+		private string DescriptionKey = default;
 
 		private ManagerUI _managerUI;
 

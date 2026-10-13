@@ -28,15 +28,7 @@ namespace _Car_Parking.Scripts.CommonUtility
 
 		private string _lastResetPasswordTime;
 
-		private bool _eulaShowed0;
-
-		private bool _eulaShowed1;
-
 		private string _lastAppVersion;
-
-		private int _remainingReports;
-
-		private string _storedDate;
 
 		private string _addressablesRuntimeDataPath;
 

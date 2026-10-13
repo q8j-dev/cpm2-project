@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.Car
 	public class BodyKitsSpecificTransform : MonoBehaviour
 	{
 		[SerializeField]
-		private string[] ID;
+		private string[] ID = default;
 
 		public bool ContainsID(string id)
 		{

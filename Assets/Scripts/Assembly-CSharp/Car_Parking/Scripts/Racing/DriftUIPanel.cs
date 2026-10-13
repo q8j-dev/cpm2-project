@@ -11,10 +11,10 @@ namespace Car_Parking.Scripts.Racing
 		private const string DegreeSymbol = "°";
 
 		[SerializeField]
-		private RectTransform CarIcon;
+		private RectTransform CarIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DegreeText;
+		private TextMeshProUGUI DegreeText = default;
 
 		private DriftController _driftController;
 

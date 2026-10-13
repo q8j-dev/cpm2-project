@@ -5,10 +5,10 @@ using _Car_Parking.Scripts.NewUI;
 public class PhoneSuspensionToggle : MonoBehaviour
 {
 	[SerializeField]
-	private CarControlUIPanel carControlUIPanel;
+	private CarControlUIPanel carControlUIPanel = default;
 
 	[SerializeField]
-	private PhoneCarControlUIPanelType CurrentPanelType;
+	private PhoneCarControlUIPanelType CurrentPanelType = default;
 
 	private Toggle _toggle;
 

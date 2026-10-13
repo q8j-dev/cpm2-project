@@ -8,16 +8,16 @@ namespace NewUI.Scripts
 	public class MarketSpecialPriceElement : MonoBehaviour
 	{
 		[SerializeField]
-		private Text OldPriceText;
+		private Text OldPriceText = default;
 
 		[SerializeField]
-		private Text SpecialPriceText;
+		private Text SpecialPriceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DiscountText;
+		private TextMeshProUGUI DiscountText = default;
 
 		[SerializeField]
-		private Button BuyButton;
+		private Button BuyButton = default;
 
 		public void Init(string oldPrice, string specialPrice, string discount)
 		{

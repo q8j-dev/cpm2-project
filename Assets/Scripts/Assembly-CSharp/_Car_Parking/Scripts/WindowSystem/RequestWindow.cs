@@ -15,28 +15,28 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class RequestWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Image CarIcon;
+		private Image CarIcon = default;
 
 		[SerializeField]
-		private Image RankIcon;
+		private Image RankIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Name;
+		private TextMeshProUGUI Name = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Power;
+		private TextMeshProUGUI Power = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Turbo;
+		private TextMeshProUGUI Turbo = default;
 
 		[SerializeField]
-		private Button AcceptButton;
+		private Button AcceptButton = default;
 
 		[SerializeField]
-		private Button IgnoreButton;
+		private Button IgnoreButton = default;
 
 		[SerializeField]
-		private Button DeclineButton;
+		private Button DeclineButton = default;
 
 		private bool _isClickToClose;
 
@@ -120,7 +120,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 			if ((int)CurrencyManagerController.Money < (int)_pricesService.MultiplayerRaceLose)
 			{
 				Decline();
-				_managerUI.ShowNotificationWindow(new LocalizedString("RequestWindow.Youdon'thaveenoughmoney"), 3f);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("RequestWindow.Youdon'thaveenoughmoney"), 3f);
 				return;
 			}
 			RemoveDoorListeners();

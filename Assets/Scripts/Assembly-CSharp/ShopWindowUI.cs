@@ -41,10 +41,6 @@ public class ShopWindowUI : MonoBehaviour
 
 	public int prevMenuIndex;
 
-	private float lastCarScrollValue;
-
-	private float lastOtherScrollValue;
-
 	private AudioSource source;
 
 	private MultiPlayerMenu multiPlayerMenu;

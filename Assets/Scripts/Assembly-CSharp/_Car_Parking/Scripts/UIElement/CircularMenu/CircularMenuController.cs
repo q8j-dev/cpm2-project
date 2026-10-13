@@ -27,33 +27,33 @@ namespace _Car_Parking.Scripts.UIElement.CircularMenu
 	{
 		[Header("UI References")]
 		[SerializeField]
-		private GameObject _namePanel;
+		private GameObject _namePanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI _namePanelText;
+		private TextMeshProUGUI _namePanelText = default;
 
 		[SerializeField]
 		[Header("Panel Groups")]
-		private CircularMenuPanelGroup _carPanelGroup;
+		private CircularMenuPanelGroup _carPanelGroup = default;
 
 		[SerializeField]
 		private CircularMenuPanelGroup _carPassengerPanelGroup;
 
 		[SerializeField]
-		private CircularMenuPanelGroup _personPanelGroup;
+		private CircularMenuPanelGroup _personPanelGroup = default;
 
 		[SerializeField]
-		private CircularMenuPanelGroup _uiPanelGroup;
+		private CircularMenuPanelGroup _uiPanelGroup = default;
 
 		[Header("Initial Mode")]
 		[SerializeField]
-		private CircularMenuMode _initialMode;
+		private CircularMenuMode _initialMode = default;
 
 		private CircularMenuMode _currentMode;
 
 		[SerializeField]
 		[Header("Circular Menu Panels Config")]
-		private CircularMenuPanelsConfig _circularMenuPanelsConfig;
+		private CircularMenuPanelsConfig _circularMenuPanelsConfig = default;
 
 		[Tooltip("Which input event toggles THIS circular menu. Use a dedicated event (e.g. a camera-menu event) for a separate menu instance so it opens on its own button.")]
 		[Header("Open Trigger Event")]
@@ -63,10 +63,10 @@ namespace _Car_Parking.Scripts.UIElement.CircularMenu
 		[SerializeField]
 		[Tooltip("When true, this menu binds items by CircularMenuItem.AnimationSlot instead of ButtonActionId.")]
 		[Header("Animation Menu Mode")]
-		private bool _isAnimationMenu;
+		private bool _isAnimationMenu = default;
 
 		[SerializeField]
-		private AnimationDataSO _animationDataSo;
+		private AnimationDataSO _animationDataSo = default;
 
 		private const int ShopAnimationSlot = -2;
 

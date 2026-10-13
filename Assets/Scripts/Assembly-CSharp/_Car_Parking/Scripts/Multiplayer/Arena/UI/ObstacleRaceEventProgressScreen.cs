@@ -17,22 +17,22 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public class ObstacleRaceEventProgressScreen : WindowScriptAsyncResult<EmptyData>
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button ClaimRewardButton;
+		private Button ClaimRewardButton = default;
 
 		[SerializeField]
-		private TMP_Text ClaimedText;
+		private TMP_Text ClaimedText = default;
 
 		[SerializeField]
-		private StepProgressView Progress;
+		private StepProgressView Progress = default;
 
 		[SerializeField]
-		private GameObject GiftIcon;
+		private GameObject GiftIcon = default;
 
 		[SerializeField]
-		private RawImageLoadAsync PrizeImage;
+		private RawImageLoadAsync PrizeImage = default;
 
 		private IEventService _eventService;
 

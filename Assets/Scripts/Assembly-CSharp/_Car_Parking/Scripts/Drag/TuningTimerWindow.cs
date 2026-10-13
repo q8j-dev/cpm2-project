@@ -22,31 +22,31 @@ namespace _Car_Parking.Scripts.Drag
 	public class TuningTimerWindow : WindowScript
 	{
 		[SerializeField]
-		private RectTransform ElementsParent;
+		private RectTransform ElementsParent = default;
 
 		[SerializeField]
-		private CanvasGroup AdButtonCanvasGroup;
+		private CanvasGroup AdButtonCanvasGroup = default;
 
 		[SerializeField]
-		private Button AdButton;
+		private Button AdButton = default;
 
 		[SerializeField]
-		private Button CoinButton;
+		private Button CoinButton = default;
 
 		[SerializeField]
-		private Button SkipButton;
+		private Button SkipButton = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private TuningTimerElement TimerElementPrefab;
+		private TuningTimerElement TimerElementPrefab = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TotalTimeText;
+		private TextMeshProUGUI TotalTimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI AdCooldownText;
+		private TextMeshProUGUI AdCooldownText = default;
 
 		private const int SpendCoin = 100;
 

@@ -14,82 +14,82 @@ namespace _Car_Parking.Scripts.Scopes
 	public class ParkingLevelsScope : LifetimeScope
 	{
 		[SerializeField]
-		private CoreGameManager CoreGameManager;
+		private CoreGameManager CoreGameManager = default;
 
 		[SerializeField]
-		private LevelScript LevelScript;
+		private LevelScript LevelScript = default;
 
 		[SerializeField]
-		private Camera Camera;
+		private Camera Camera = default;
 
 		[SerializeField]
-		private ParkingMenuUI ParkingMenuUI;
+		private ParkingMenuUI ParkingMenuUI = default;
 
 		[SerializeField]
-		private HudColorChanger HudColorChanger;
+		private HudColorChanger HudColorChanger = default;
 
 		[SerializeField]
-		private UGUISteeringWheel UGUISteeringWheel;
+		private UGUISteeringWheel UGUISteeringWheel = default;
 
 		[SerializeField]
-		private MenuLevelParent MenuLevelParent;
+		private MenuLevelParent MenuLevelParent = default;
 
 		[SerializeField]
-		private QuickCarSettings QuickCarSettings;
+		private QuickCarSettings QuickCarSettings = default;
 
 		[SerializeField]
-		private ManagerUI ManagerUI;
+		private ManagerUI ManagerUI = default;
 
 		[SerializeField]
-		private UIReferencesMediator UIReferencesMediator;
+		private UIReferencesMediator UIReferencesMediator = default;
 
 		[SerializeField]
-		private ParkTronicControll ParkTronicControll;
+		private ParkTronicControll ParkTronicControll = default;
 
 		[SerializeField]
-		private VinylDrawer VinylDrawer;
+		private VinylDrawer VinylDrawer = default;
 
 		[SerializeField]
-		private TrafficCarControl TrafficCarControl;
+		private TrafficCarControl TrafficCarControl = default;
 
 		[SerializeField]
-		private TouchField TouchField;
+		private TouchField TouchField = default;
 
 		[SerializeField]
-		private LoadControl LoadControl;
+		private LoadControl LoadControl = default;
 
 		[SerializeField]
-		private ThrottleSliderControl ThrottleSliderControl;
+		private ThrottleSliderControl ThrottleSliderControl = default;
 
 		[SerializeField]
-		private FPSDisplay2 FPSDisplay2;
+		private FPSDisplay2 FPSDisplay2 = default;
 
 		[SerializeField]
-		private CarCameras CarCameras;
+		private CarCameras CarCameras = default;
 
 		[SerializeField]
-		private BirdPoint BirdPoint;
+		private BirdPoint BirdPoint = default;
 
 		[SerializeField]
-		private PedestrainCreate PedestrainCreate;
+		private PedestrainCreate PedestrainCreate = default;
 
 		[SerializeField]
-		private JoyStickControl JoyStickControl;
+		private JoyStickControl JoyStickControl = default;
 
 		[SerializeField]
-		private InputTouch InputTouch;
+		private InputTouch InputTouch = default;
 
 		[SerializeField]
-		private BrakeSliderControl BrakeSliderControl;
+		private BrakeSliderControl BrakeSliderControl = default;
 
 		[SerializeField]
-		private LevelUIController LevelUIController;
+		private LevelUIController LevelUIController = default;
 
 		[SerializeField]
-		private CarCamerasController CarCamerasController;
+		private CarCamerasController CarCamerasController = default;
 
 		[SerializeField]
-		private TouchMovePerson TouchMovePerson;
+		private TouchMovePerson TouchMovePerson = default;
 
 		protected override void Configure(IContainerBuilder builder)
 		{

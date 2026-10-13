@@ -37,7 +37,7 @@ namespace _Car_Parking.Scripts.UIElement.CircularMenu
 		[Header("Availability")]
 		[Tooltip("Panel is skipped in scroll when the current car has no transfer case (non-4WD). Use for the transfer-case / diff-lock panel.")]
 		[SerializeField]
-		private bool _requiresTransferCase;
+		private bool _requiresTransferCase = default;
 
 		private CircularMenuItem[] _cachedItems;
 

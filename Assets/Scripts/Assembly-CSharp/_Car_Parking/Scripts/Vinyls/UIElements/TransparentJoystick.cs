@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Vinyls.UIElements
 	public class TransparentJoystick : MonoBehaviour, IDragHandler, IEventSystemHandler, IPointerUpHandler, IPointerDownHandler
 	{
 		[SerializeField]
-		private Image MainImage;
+		private Image MainImage = default;
 
 		private Color _originalColor;
 

@@ -30,61 +30,61 @@ namespace _Car_Parking.Scripts.Drag
 		private VehicleEntityProvider _vehicleEntityMb;
 
 		[SerializeField]
-		private TextMeshProUGUI DisplayText;
+		private TextMeshProUGUI DisplayText = default;
 
 		[SerializeField]
-		private Slider GasSlider;
+		private Slider GasSlider = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CostText;
+		private TextMeshProUGUI CostText = default;
 
 		[SerializeField]
-		private Button BuyButton;
+		private Button BuyButton = default;
 
 		[SerializeField]
-		private Button AdButton;
+		private Button AdButton = default;
 
 		[SerializeField]
-		private GameObject AdButtonRoot;
+		private GameObject AdButtonRoot = default;
 
 		[SerializeField]
-		private CanvasGroup AdButtonCanvasGroup;
+		private CanvasGroup AdButtonCanvasGroup = default;
 
 		[SerializeField]
-		private TMP_Text AdCooldownLabel;
+		private TMP_Text AdCooldownLabel = default;
 
 		[SerializeField]
-		private Toggle[] FuelTypesToggles;
+		private Toggle[] FuelTypesToggles = default;
 
 		[SerializeField]
-		private bool IgnorePrefixText;
+		private bool IgnorePrefixText = default;
 
 		[SerializeField]
-		private Button MinusButton;
+		private Button MinusButton = default;
 
 		[SerializeField]
-		private Button PlusButton;
+		private Button PlusButton = default;
 
 		[SerializeField]
-		private Sprite CoinIcon;
+		private Sprite CoinIcon = default;
 
 		[SerializeField]
-		private Sprite MoneyIcon;
+		private Sprite MoneyIcon = default;
 
 		[SerializeField]
-		private Image MoneyIconImage;
+		private Image MoneyIconImage = default;
 
 		[SerializeField]
-		private Image MoneyPriceIconImage;
+		private Image MoneyPriceIconImage = default;
 
 		[SerializeField]
-		private Image BuyButtonBackground;
+		private Image BuyButtonBackground = default;
 
 		[SerializeField]
-		private Color MoneyButtonColor;
+		private Color MoneyButtonColor = default;
 
 		[SerializeField]
-		private Color CoinButtonColor;
+		private Color CoinButtonColor = default;
 
 		private int _maxTankCapacity;
 
@@ -115,8 +115,6 @@ namespace _Car_Parking.Scripts.Drag
 		private ObscuredInt _costCoef = 49;
 
 		private static readonly ObscuredFloat PriceInFreeCoef = 2f;
-
-		private ToggleGroup _toggleGroup;
 
 		private int _sliderStep = 1;
 

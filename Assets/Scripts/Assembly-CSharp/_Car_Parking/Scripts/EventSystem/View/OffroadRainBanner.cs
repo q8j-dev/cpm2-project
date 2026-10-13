@@ -12,7 +12,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class OffroadRainBanner : NotEventViewBase
 	{
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
 		private float RainIntensity = 0.6f;
@@ -46,12 +46,12 @@ namespace _Car_Parking.Scripts.EventSystem.View
 			{
 				if (component.CarEntity.GetValue().IsBroken)
 				{
-					_managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.CarIsBrokenPleaseRepair"), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.CarIsBrokenPleaseRepair"), 3f);
 					return;
 				}
 				if (_timerTuningService.IsCarBlocked(V.SlotID))
 				{
-					_managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.Yourcarcurrentlyisinservice"), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.Yourcarcurrentlyisinservice"), 3f);
 					return;
 				}
 			}

@@ -7,15 +7,15 @@ namespace CPM.Obstacles
 	{
 		[SerializeField]
 		[Tooltip("Raised anchor A: the open pose the gate lifts back to. A child transform, moved by the designer.")]
-		private Transform Start;
+		private Transform Start = default;
 
 		[Tooltip("Lowered anchor B: the blocking pose on the ground the gate drops onto. A child transform, moved by the designer.")]
 		[SerializeField]
-		private Transform Finish;
+		private Transform Finish = default;
 
 		[Tooltip("The object that actually moves: holds the collider and the kinematic Rigidbody. Author it at Start (raised).")]
 		[SerializeField]
-		private Transform Target;
+		private Transform Target = default;
 
 		[Tooltip("How quick the drop is, in units per second. Sets the fall duration (drop distance / FallSpeed); the slab accelerates and bounces within that time. Zero or less parks the gate.")]
 		[SerializeField]
@@ -36,7 +36,7 @@ namespace CPM.Obstacles
 		[Range(0f, 1f)]
 		[Tooltip("Where in the cycle the gate starts, 0..1 across the whole fall/hold/rise/hold loop. 0 = raised at A about to drop. Offset different gates to desync them.")]
 		[SerializeField]
-		private float InitialProgress;
+		private float InitialProgress = default;
 
 		[Tooltip("How hard the slab knocks the player down. The drop accelerates and the lift is slow, so the same settings flatten anyone under a falling gate and spare anyone it lifts.")]
 		[SerializeField]

@@ -15,53 +15,48 @@ namespace Car_Parking.Scripts.Drag
 	public class TimeAttackDriftUIController : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject DriftPanel;
+		private GameObject DriftPanel = default;
 
 		[SerializeField]
-		private GameObject DriftTotalScorePanel;
+		private GameObject DriftTotalScorePanel = default;
 
 		[SerializeField]
-		private GameObject TimePanel;
+		private GameObject TimePanel = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CurrentComboPointsText;
+		private TextMeshProUGUI CurrentComboPointsText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CurrentPointsText;
+		private TextMeshProUGUI CurrentPointsText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TotalPointsText;
+		private TextMeshProUGUI TotalPointsText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BestPointsText;
+		private Slider ProgressBar = default;
 
 		[SerializeField]
-		private Slider ProgressBar;
+		private TextMeshProUGUI DriftComboTween = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DriftComboTween;
+		private CanvasGroup DriftTextTweenCanvasGroup = default;
 
 		[SerializeField]
-		private CanvasGroup DriftTextTweenCanvasGroup;
+		private Image DriftPanelBckg = default;
 
 		[SerializeField]
-		private Image DriftPanelBckg;
+		private Color DefaultColor = default;
 
 		[SerializeField]
-		private Color DefaultColor;
+		private Color StopColor = default;
 
 		[SerializeField]
-		private Color StopColor;
+		private Color EarnPointsColor = default;
 
 		[SerializeField]
-		private Color EarnPointsColor;
-
-		[SerializeField]
-		private DriftUIPanel DriftUIPanel;
+		private DriftUIPanel DriftUIPanel = default;
 
 		private IDisposable _driftEveryFrameTick;
-
-		private Tween _tween;
 
 		private Tween _comboDriftTween;
 

@@ -9,16 +9,16 @@ namespace _Car_Parking.Scripts.MenuUI.LocalizationUI
 	public class LocalizedLanguageListUI : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject LanguageListPrefab;
+		private GameObject LanguageListPrefab = default;
 
 		[SerializeField]
-		private GameObject WindowParent;
+		private GameObject WindowParent = default;
 
 		[SerializeField]
-		private Transform ElementsParent;
+		private Transform ElementsParent = default;
 
 		[SerializeField]
-		private Texture[] AllFlags;
+		private Texture[] AllFlags = default;
 
 		private int _yPosIndex;
 

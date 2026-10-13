@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.Police
 	public class PoliceSirenSoundEnableButton : PoliceUIBase
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater[] GameObjectStateUpdaters;
+		private GameObjectStateUpdater[] GameObjectStateUpdaters = default;
 
 		public IPoliceSystem _policeSystem;
 

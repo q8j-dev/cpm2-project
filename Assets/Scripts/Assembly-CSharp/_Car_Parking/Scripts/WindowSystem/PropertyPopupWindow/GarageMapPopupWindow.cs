@@ -15,16 +15,16 @@ namespace _Car_Parking.Scripts.WindowSystem.PropertyPopupWindow
 	public class GarageMapPopupWindow : PropertyPopupWindow
 	{
 		[SerializeField]
-		private TextMeshProUGUI CapacityTexts;
+		private TextMeshProUGUI CapacityTexts = default;
 
 		[SerializeField]
-		private TextMeshProUGUI[] MaxCapacityText;
+		private TextMeshProUGUI[] MaxCapacityText = default;
 
 		[SerializeField]
-		private Transform ForSaleContainer;
+		private Transform ForSaleContainer = default;
 
 		[SerializeField]
-		private Transform BoughtContainer;
+		private Transform BoughtContainer = default;
 
 		private IGarageBuyService _garageBuyService;
 

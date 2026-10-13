@@ -6,10 +6,10 @@ using UnityEngine;
 public class RecyclableScrollerDemo : MonoBehaviour, IRecyclableScrollRectDataSource
 {
 	[SerializeField]
-	private RecyclableScrollRect _recyclableScrollRect;
+	private RecyclableScrollRect _recyclableScrollRect = default;
 
 	[SerializeField]
-	private int _dataLength;
+	private int _dataLength = default;
 
 	private List<ContactInfo> _contactList = new List<ContactInfo>();
 

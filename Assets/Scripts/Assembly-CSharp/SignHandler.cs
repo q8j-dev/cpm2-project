@@ -19,10 +19,10 @@ public class SignHandler : MonoBehaviour
 	private Slicer[] _slicers = new Slicer[0];
 
 	[SerializeField]
-	private SignHandlerBehaviourBaseSO _signHandlerBehaviour;
+	private SignHandlerBehaviourBaseSO _signHandlerBehaviour = default;
 
 	[SerializeField]
-	private BecameInvisibleEventSender[] BecameInvisibleEventSenders;
+	private BecameInvisibleEventSender[] BecameInvisibleEventSenders = default;
 
 	private Rigidbody _rb;
 

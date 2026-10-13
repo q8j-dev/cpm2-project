@@ -10,13 +10,13 @@ namespace _Car_Parking.Scripts.NewUI
 	public abstract class PhoneUISubPanel : MonoBehaviour, IBackableWindow
 	{
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
 		protected CanvasGroup CanvasGroup;
 
 		[SerializeField]
-		private bool IgnoreBackButton;
+		private bool IgnoreBackButton = default;
 
 		public Action BackButtonPressed;
 

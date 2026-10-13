@@ -11,35 +11,35 @@ namespace UnitySA.Characters.FirstPerson
 		private bool m_IsWalking;
 
 		[SerializeField]
-		private float m_WalkSpeed;
+		private float m_WalkSpeed = default;
 
 		[SerializeField]
-		private float m_RunSpeed;
+		private float m_RunSpeed = default;
 
 		[SerializeField]
 		[Range(0f, 1f)]
-		private float m_RunstepLenghten;
+		private float m_RunstepLenghten = default;
 
 		[SerializeField]
-		private float m_JumpSpeed;
+		private float m_JumpSpeed = default;
 
 		[SerializeField]
-		private float m_StickToGroundForce;
+		private float m_StickToGroundForce = default;
 
 		[SerializeField]
-		private float m_GravityMultiplier;
+		private float m_GravityMultiplier = default;
 
 		[SerializeField]
-		private MLook m_MouseLook;
+		private MLook m_MouseLook = default;
 
 		[SerializeField]
-		private bool m_UseFovKick;
+		private bool m_UseFovKick = default;
 
 		[SerializeField]
 		private FOVZoom m_FovKick = new FOVZoom();
 
 		[SerializeField]
-		private bool m_UseHeadBob;
+		private bool m_UseHeadBob = default;
 
 		[SerializeField]
 		private CurveCtrlBob m_HeadBob = new CurveCtrlBob();
@@ -48,13 +48,11 @@ namespace UnitySA.Characters.FirstPerson
 		private LerpCtrlBob m_JumpBob = new LerpCtrlBob();
 
 		[SerializeField]
-		private float m_StepInterval;
+		private float m_StepInterval = default;
 
 		private Camera m_Camera;
 
 		private bool m_Jump;
-
-		private float m_YRotation;
 
 		private Vector2 m_Input;
 

@@ -8,20 +8,20 @@ public class LockableUiToggleElement : Toggle
 	public int Index;
 
 	[SerializeField]
-	private Image IconImage;
+	private Image IconImage = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[Header("Lock")]
 	[SerializeField]
-	private float LockedAlphaValue;
+	private float LockedAlphaValue = default;
 
 	[SerializeField]
-	private CanvasGroup PanelCanvasGroup;
+	private CanvasGroup PanelCanvasGroup = default;
 
 	[SerializeField]
-	private GameObject LockIcon;
+	private GameObject LockIcon = default;
 
 	protected Action<int> _onTrue;
 

@@ -16,28 +16,28 @@ namespace _Car_Parking.Scripts.SummaryOfEvents.ItemViews.Event
 		private List<Toggle> CheckPoints = new List<Toggle>();
 
 		[SerializeField]
-		private ProgressDisplayMode ProgressDisplay;
+		private ProgressDisplayMode ProgressDisplay = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ProgressText;
+		private TextMeshProUGUI ProgressText = default;
 
 		[SerializeField]
 		private List<Image> ProgressIcons = new List<Image>();
 
 		[SerializeField]
-		private Sprite FilledIconSprite;
+		private Sprite FilledIconSprite = default;
 
 		[SerializeField]
-		private Sprite EmptyIconSprite;
+		private Sprite EmptyIconSprite = default;
 
 		[SerializeField]
-		private GameObject Claim;
+		private GameObject Claim = default;
 
 		[SerializeField]
-		private GameObject Claimed;
+		private GameObject Claimed = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimeRemainingText;
+		private TextMeshProUGUI TimeRemainingText = default;
 
 		private IDisposable _timerSubscription;
 

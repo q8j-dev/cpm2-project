@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.VisualTuningFavourite
 	public class FavouriteWheelsUI : VisualTuningFavouriteUI
 	{
 		[SerializeField]
-		private GameObject FavouriteSwitchPanel;
+		private GameObject FavouriteSwitchPanel = default;
 
 		protected override void RegisterEvents()
 		{

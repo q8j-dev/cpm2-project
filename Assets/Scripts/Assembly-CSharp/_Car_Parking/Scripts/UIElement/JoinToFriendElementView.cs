@@ -10,16 +10,16 @@ namespace _Car_Parking.Scripts.UIElement
 	public class JoinToFriendElementView : MonoBehaviour
 	{
 		[SerializeField]
-		private Text PlayerName;
+		private Text PlayerName = default;
 
 		[SerializeField]
-		private TMP_Text PlayerCountText;
+		private TMP_Text PlayerCountText = default;
 
 		[SerializeField]
-		private Button JoinButton;
+		private Button JoinButton = default;
 
 		[SerializeField]
-		private TMP_InputField PasswordInput;
+		private TMP_InputField PasswordInput = default;
 
 		private int _password;
 

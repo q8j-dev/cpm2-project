@@ -12,13 +12,13 @@ namespace _Car_Parking.Scripts.UIElement
 	public sealed class FalloutLimitsView : MonoBehaviour
 	{
 		[SerializeField]
-		private GameActivityType ActivityType;
+		private GameActivityType ActivityType = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CoinText;
+		private TextMeshProUGUI CoinText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MoneyText;
+		private TextMeshProUGUI MoneyText = default;
 
 		private FalloutLimitsCache _limits;
 

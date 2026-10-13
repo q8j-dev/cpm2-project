@@ -6,10 +6,10 @@ using _Car_Parking.Scripts.UIElement;
 public class SliderWithCountPrefix : MonoBehaviour
 {
 	[SerializeField]
-	private SliderValueHandler SliderValueHandler;
+	private SliderValueHandler SliderValueHandler = default;
 
 	[SerializeField]
-	private TextMeshProUGUI HeaderText;
+	private TextMeshProUGUI HeaderText = default;
 
 	private int _index;
 

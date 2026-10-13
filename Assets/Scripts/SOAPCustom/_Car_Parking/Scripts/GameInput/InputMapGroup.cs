@@ -10,13 +10,13 @@ namespace _Car_Parking.Scripts.GameInput
 	public class InputMapGroup
 	{
 		[SerializeField]
-		private InputGroupsEnum groupName;
+		private InputGroupsEnum groupName = default;
 
 		public bool isRootGameplayGroup;
 
 		[Tooltip("all possible maps in the group")]
 		[SerializeField]
-		private List<InputMapEnum> maps;
+		private List<InputMapEnum> maps = default;
 
 		public InputGroupsEnum GroupName => groupName;
 

@@ -6,7 +6,7 @@ public class UiCursorSpawner : MonoBehaviour
 {
 	[Header("Circular Menu")]
 	[SerializeField]
-	private GameObject cursorPrefab;
+	private GameObject cursorPrefab = default;
 
 	private IPrefabFactory _prefabFactory;
 

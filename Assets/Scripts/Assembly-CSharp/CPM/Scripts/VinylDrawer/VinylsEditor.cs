@@ -89,103 +89,97 @@ namespace CPM.Scripts.VinylDrawer
 		public const int MaxAllowedWindowVinyls = 150;
 
 		[SerializeField]
-		private FavouriteVinylsController FavouriteVinylsController;
+		private FavouriteVinylsController FavouriteVinylsController = default;
 
 		[SerializeField]
-		private GameObject VinylsSwitchPanel;
+		private GameObject VinylsSwitchPanel = default;
 
 		[SerializeField]
-		private GameObject vinylsCanvas;
+		private GameObject vinylsUIScroll = default;
 
 		[SerializeField]
-		private GameObject vinylsUIScroll;
+		private GameObject stickersScrollParent = default;
 
 		[SerializeField]
-		private GameObject stickersScrollParent;
+		private GameObject planePrefab = default;
 
 		[SerializeField]
-		private GameObject planePrefab;
+		private GameObject visualIconsPrefab = default;
 
 		[SerializeField]
-		private GameObject visualIconsPrefab;
+		private GameObject stickerParentPrefab = default;
 
 		[SerializeField]
-		private GameObject stickerParentPrefab;
+		private GameObject stickerPrefab = default;
 
 		[SerializeField]
-		private GameObject stickerPrefab;
+		private Material editLineMaterial = default;
 
 		[SerializeField]
-		private Material editLineMaterial;
+		private Transform joystickSpriteHolder = default;
 
 		[SerializeField]
-		private Transform joystickSpriteHolder;
+		private Transform allStickersHolder = default;
 
 		[SerializeField]
-		private Transform allStickersHolder;
+		private UiScrollRectOcclusiion stickersScrollOcclusion = default;
 
 		[SerializeField]
-		private UiScrollRectOcclusiion stickersScrollOcclusion;
+		private ScrollRect stickersScrollRect = default;
 
 		[SerializeField]
-		private ScrollRect stickersScrollRect;
+		private ScrollRect VinylsScrollRect = default;
 
 		[SerializeField]
-		private ScrollRect VinylsScrollRect;
+		private AnimationCurve scaleCurve = default;
 
 		[SerializeField]
-		private AnimationCurve scaleCurve;
+		private Scrollbar stickersScrollBar = default;
 
 		[SerializeField]
-		private Scrollbar stickersScrollBar;
+		private TMP_Text vinylsCountLabel = default;
 
 		[SerializeField]
-		private TMP_Text vinylsCountLabel;
+		private Transform animatedSticker = default;
 
 		[SerializeField]
-		private Transform animatedSticker;
+		private GameObject editUI = default;
 
 		[SerializeField]
-		private GameObject editUI;
+		private GameObject clickIndicator = default;
 
 		[SerializeField]
-		private GameObject clickIndicator;
+		private TMP_InputField inputText = default;
 
 		[SerializeField]
-		private TMP_InputField inputText;
+		private Toggle italicToggle = default;
 
 		[SerializeField]
-		private Toggle italicToggle;
+		private Toggle boldToggle = default;
 
 		[SerializeField]
-		private Toggle boldToggle;
+		private GameObject vinylTextUI = default;
 
 		[SerializeField]
-		private GameObject vinylTextUI;
+		private FontsInitializer fontsInitializer = default;
 
 		[SerializeField]
-		private FontsInitializer fontsInitializer;
+		private Transform fieldOfViewUI = default;
 
 		[SerializeField]
-		private Text selectedFontLabel;
+		private Joystick movePlateCameraJoystick = default;
 
 		[SerializeField]
-		private Transform fieldOfViewUI;
+		private PlateCameraMoveConfig plateCameraMoveConfig = default;
 
 		[SerializeField]
-		private Joystick movePlateCameraJoystick;
-
-		[SerializeField]
-		private PlateCameraMoveConfig plateCameraMoveConfig;
-
-		[SerializeField]
-		private Transform rightButtonsParent;
+		private Transform rightButtonsParent = default;
 
 		[SerializeField]
 		private int countToGroup = 50;
 
 		[SerializeField]
-		private PlateFreeLookWindow PlateFreeLookWindow;
+		private PlateFreeLookWindow PlateFreeLookWindow = default;
 
 		[Header("Camera Lock")]
 		[SerializeField]
@@ -193,99 +187,97 @@ namespace CPM.Scripts.VinylDrawer
 		private CameraLock LockLevel;
 
 		[SerializeField]
-		private Button lockLevelButton;
+		private Button lockLevelButton = default;
 
 		[SerializeField]
-		private TMP_Text lockLevelLabel;
+		private TMP_Text lockLevelLabel = default;
 
 		[SerializeField]
-		private AnimationCurve buttonsScaleCurve;
+		private AnimationCurve buttonsScaleCurve = default;
 
 		[SerializeField]
 		[Header("Buttons and Sliders")]
-		private VinylJoystick vinylJoystick;
+		private VinylJoystick vinylJoystick = default;
 
 		[SerializeField]
-		private ResettingSlider scaleSlider;
+		private ResettingSlider scaleSlider = default;
 
 		[SerializeField]
-		private ResettingSlider scaleSliderX;
+		private ResettingSlider scaleSliderX = default;
 
 		[SerializeField]
-		private ResettingSlider scaleSliderY;
+		private ResettingSlider scaleSliderY = default;
 
 		[SerializeField]
-		private ResettingSlider rotationSlider;
+		private ResettingSlider rotationSlider = default;
 
 		[SerializeField]
-		private ResettingSlider zoomSlider;
-
-		[Space]
-		[SerializeField]
-		private Button deleteAllStickersButton;
-
-		[SerializeField]
-		private Button groupingButton;
-
-		[SerializeField]
-		private Button saveButton;
-
-		[SerializeField]
-		private Button deleteButton;
-
-		[SerializeField]
-		private Button copyButton;
-
-		[SerializeField]
-		private Button forwardButton;
-
-		[SerializeField]
-		private Button backwardButton;
-
-		[SerializeField]
-		private Button flipButton;
-
-		[SerializeField]
-		private Button rollBackButton;
-
-		[SerializeField]
-		private Button FreeLookPlateCameraButton;
+		private ResettingSlider zoomSlider = default;
 
 		[Space]
 		[SerializeField]
-		private ColorPicker colorPicker;
+		private Button deleteAllStickersButton = default;
 
 		[SerializeField]
-		private Slider alphaSlider;
+		private Button groupingButton = default;
 
 		[SerializeField]
-		private TMP_InputField hexInputField;
+		private Button saveButton = default;
+
+		[SerializeField]
+		private Button deleteButton = default;
+
+		[SerializeField]
+		private Button copyButton = default;
+
+		[SerializeField]
+		private Button forwardButton = default;
+
+		[SerializeField]
+		private Button backwardButton = default;
+
+		[SerializeField]
+		private Button flipButton = default;
+
+		[SerializeField]
+		private Button rollBackButton = default;
+
+		[SerializeField]
+		private Button FreeLookPlateCameraButton = default;
 
 		[Space]
 		[SerializeField]
-		private Toggle showVynilScalesToggle;
+		private ColorPicker colorPicker = default;
 
 		[SerializeField]
-		private GameObject VinylTransformEditPanel;
+		private Slider alphaSlider = default;
 
 		[SerializeField]
-		private TMP_InputField AngleInputField;
+		private TMP_InputField hexInputField = default;
+
+		[Space]
+		[SerializeField]
+		private Toggle showVynilScalesToggle = default;
 
 		[SerializeField]
-		private TMP_InputField ScaleXInputField;
+		private GameObject VinylTransformEditPanel = default;
 
 		[SerializeField]
-		private TMP_InputField ScaleYInputField;
+		private TMP_InputField AngleInputField = default;
+
+		[SerializeField]
+		private TMP_InputField ScaleXInputField = default;
+
+		[SerializeField]
+		private TMP_InputField ScaleYInputField = default;
 
 		[SerializeField]
 		[Header("For text vinyl steam logic")]
-		private GameObject TextToggleInputHint;
+		private GameObject TextToggleInputHint = default;
 
 		private VinylsEditorUI _editorUI;
 
 		private int _indicatorShownCount;
-
-		private int _templateIndicatorShownCount;
 
 		private GameObject _currentVinyl;
 
@@ -373,10 +365,6 @@ namespace CPM.Scripts.VinylDrawer
 
 		private string _showMessage = "";
 
-		private int _layerId;
-
-		private int _vinylsTypeId;
-
 		private int _maxVinylsCount;
 
 		private Color _startingVinylColor;
@@ -413,8 +401,6 @@ namespace CPM.Scripts.VinylDrawer
 
 		private float _camYValue = 0.5f;
 
-		private float _timer;
-
 		public const float DEFAULT_FOV = 50f;
 
 		public const float MAX_FOV = 100f;
@@ -438,8 +424,6 @@ namespace CPM.Scripts.VinylDrawer
 		private GameObject _overrideAnchor;
 
 		private CurrencyManagerController _currencyManagerController;
-
-		private IDisposable _textDispose;
 
 		private IDisposable _disposableStopBlinkingPointer;
 
@@ -644,69 +628,69 @@ namespace CPM.Scripts.VinylDrawer
 		[SerializeField]
 		[Space]
 		[Header("UI Parts")]
-		private Button ChangeUIStateButton;
+		private Button ChangeUIStateButton = default;
 
 		[SerializeField]
-		private Button NextTypeButton;
+		private Button NextTypeButton = default;
 
 		[SerializeField]
-		private Button PrevTypeButton;
+		private Button PrevTypeButton = default;
 
 		[SerializeField]
-		private GameObject StickerSelectPrefab;
+		private GameObject StickerSelectPrefab = default;
 
 		[SerializeField]
-		private UiScrollRectOcclusiion VinylsScrollOcclusion;
+		private UiScrollRectOcclusiion VinylsScrollOcclusion = default;
 
 		[SerializeField]
-		private Transform ParentOfStickers;
+		private Transform ParentOfStickers = default;
 
 		[SerializeField]
-		private Transform ParentOfFavouriteStickers;
+		private Transform ParentOfFavouriteStickers = default;
 
 		[SerializeField]
-		private TMP_Text CurrentModeLabel;
+		private TMP_Text CurrentModeLabel = default;
 
 		[SerializeField]
-		private Material OriginPlateMaterial;
+		private Material OriginPlateMaterial = default;
 
 		[SerializeField]
-		private Scrollbar AllVinylsBar;
+		private Scrollbar AllVinylsBar = default;
 
 		[SerializeField]
-		private GameObject[] HideWhen2dEdit;
+		private GameObject[] HideWhen2dEdit = default;
 
 		[SerializeField]
-		private GameObject VisualPanel;
+		private GameObject VisualPanel = default;
 
 		[SerializeField]
-		private Color AmbientColor;
+		private Color AmbientColor = default;
 
 		[SerializeField]
-		private VisualTuningWindow VisualTuningWindow;
+		private VisualTuningWindow VisualTuningWindow = default;
 
 		[Header("Plate Related")]
 		[SerializeField]
 		[Space]
-		private Transform ParentOfPlates;
+		private Transform ParentOfPlates = default;
 
 		[SerializeField]
-		private GameObject PlateSelectPrefab;
+		private GameObject PlateSelectPrefab = default;
 
 		[SerializeField]
-		private Button ShowPlatesButton;
+		private Button ShowPlatesButton = default;
 
 		[SerializeField]
 		private GameObject[] Plates = new GameObject[2];
 
 		[SerializeField]
-		private Toggle FrontPlateToggle;
+		private Toggle FrontPlateToggle = default;
 
 		[SerializeField]
-		private Toggle RearPlateToggle;
+		private Toggle RearPlateToggle = default;
 
 		[SerializeField]
-		private GameObject PlatesUI;
+		private GameObject PlatesUI = default;
 
 		private Transform _plateCreatorTableTr;
 
@@ -1442,7 +1426,7 @@ namespace CPM.Scripts.VinylDrawer
 		private void OnDeleteAllStickersClick()
 		{
 			ConfirmWindow.AdditionalData additionalData = new ConfirmWindow.AdditionalData(setBackground: true, RemoveAllVinylsConfirmWindowBackgroundColor, new ConfirmWindow.AdditionalData.ConfirmTimerData(isEnabled: true, 10f));
-			_managerUI.ShowConfirmWindow(DeleteAllStickers, new LocalizedString("Visualtuningwindow.DeleteAllVynils"), new LocalizedString("Visualtuningwindow.SureDeleteAllVynils"), null, "", null, additionalData);
+			_ = _managerUI.ShowConfirmWindow(DeleteAllStickers, new LocalizedString("Visualtuningwindow.DeleteAllVynils"), new LocalizedString("Visualtuningwindow.SureDeleteAllVynils"), null, "", null, additionalData);
 		}
 
 		public void PlateFreeLookToggle()

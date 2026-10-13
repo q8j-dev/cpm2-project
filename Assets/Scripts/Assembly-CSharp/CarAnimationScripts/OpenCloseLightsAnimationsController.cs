@@ -14,7 +14,7 @@ namespace CarAnimationScripts
 		private const string CloseTrigger = "Close";
 
 		[SerializeField]
-		private Animator LightAnimator;
+		private Animator LightAnimator = default;
 
 		private LightController _lightController;
 

@@ -9,16 +9,16 @@ namespace _Car_Parking.Scripts.PhotoMode.UI
 	public class CameraPanningCategory : PhotoModeCategory
 	{
 		[SerializeField]
-		private Toggle StaticPanning;
+		private Toggle StaticPanning = default;
 
 		[SerializeField]
-		private Toggle FollowPanning;
+		private Toggle FollowPanning = default;
 
 		[SerializeField]
-		private Toggle AttachedPanning;
+		private Toggle AttachedPanning = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CurrentPanningName;
+		private TextMeshProUGUI CurrentPanningName = default;
 
 		private PhotoModePrototype _photoMode;
 

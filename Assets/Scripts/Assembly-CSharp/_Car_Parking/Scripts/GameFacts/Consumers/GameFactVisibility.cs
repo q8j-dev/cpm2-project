@@ -7,14 +7,14 @@ namespace _Car_Parking.Scripts.GameFacts.Consumers
 	public class GameFactVisibility : MonoBehaviour
 	{
 		[SerializeField]
-		private ConditionState State;
+		private ConditionState State = default;
 
 		[Tooltip("Graphics to toggle (Image / TMP_Text / Button / GraphicRaycaster / Canvas …). List every graphic of the element, or a Canvas to cover a whole subtree.")]
 		[SerializeField]
-		private Behaviour[] Toggle;
+		private Behaviour[] Toggle = default;
 
 		[SerializeField]
-		private GameObject[] ToggleGO;
+		private GameObject[] ToggleGO = default;
 
 		private void Start()
 		{

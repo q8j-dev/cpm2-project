@@ -14,12 +14,10 @@ public class VisualTuningElementSpawner : MonoBehaviour
 
 	private List<VisualTuningCellData> _visualTuningCellDatas = new List<VisualTuningCellData>();
 
-	private VisualTuningTypes _currentTuningType;
-
 	private VisualItemElement[] _cahchedVisualTuningElements;
 
 	[SerializeField]
-	private VisualTuningWindow VisualTuningWindow;
+	private VisualTuningWindow VisualTuningWindow = default;
 
 	[Inject]
 	public void Construct(IPrefabFactory prefabFactory)
@@ -51,7 +49,7 @@ public class VisualTuningElementSpawner : MonoBehaviour
 			visualTuningCellData.buttonSetAction = buttonSet;
 			_prefabFactory.Instantiate(prefab, VisualTuningWindow.content).Init(visualTuningCellData);
 		}
-		InitScrollRectOcclusion();
+		_ = InitScrollRectOcclusion();
 	}
 
 	private void DestroyElements()

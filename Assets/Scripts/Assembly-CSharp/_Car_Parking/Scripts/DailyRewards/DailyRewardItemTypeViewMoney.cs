@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 	public class DailyRewardItemTypeViewMoney : DailyRewardItemTypeView
 	{
 		[SerializeField]
-		private TMP_Text MoneyText;
+		private TMP_Text MoneyText = default;
 
 		public override DailyRewardData.TypeReward TypeReward => DailyRewardData.TypeReward.Money;
 

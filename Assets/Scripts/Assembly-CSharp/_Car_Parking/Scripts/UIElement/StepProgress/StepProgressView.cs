@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.UIElement.StepProgress
 
 		[SerializeField]
 		[Tooltip("Pause before the first cell lights up, in seconds.")]
-		private float StartDelay;
+		private float StartDelay = default;
 
 		[SerializeField]
 		[Tooltip("Pause between two consecutive cells lighting up, in seconds.")]

@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class TimeAttackBanner : TimeAttackBannerBase
 	{
 		[SerializeField]
-		private ProgressSlider ProgressSlider;
+		private ProgressSlider ProgressSlider = default;
 
 		protected override async UniTask SetProgress(int cachedProgress, CancellationToken token)
 		{

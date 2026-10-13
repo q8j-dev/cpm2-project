@@ -7,24 +7,24 @@ namespace _Car_Parking.Scripts.ArtistTools
 	{
 		[SerializeField]
 		[Header("Main")]
-		private ParticleSystem VfxEffect;
+		private ParticleSystem VfxEffect = default;
 
 		[SerializeField]
-		private bool IsSpawnParticle;
+		private bool IsSpawnParticle = default;
 
 		[Header("Activator settings")]
 		[SerializeField]
-		private TriggerActivator Activator;
+		private TriggerActivator Activator = default;
 
 		[Header("VFX states")]
 		[SerializeField]
-		private VfxActivatingState InitialMode;
+		private VfxActivatingState InitialMode = default;
 
 		[SerializeField]
-		private VfxActivatingState OnEnterVfxMode;
+		private VfxActivatingState OnEnterVfxMode = default;
 
 		[SerializeField]
-		private VfxActivatingState OnExitVfxMode;
+		private VfxActivatingState OnExitVfxMode = default;
 
 		private ParticleSystem _spawnedParticle;
 

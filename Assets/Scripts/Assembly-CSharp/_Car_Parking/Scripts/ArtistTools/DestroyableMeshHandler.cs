@@ -32,7 +32,7 @@ namespace _Car_Parking.Scripts.ArtistTools
 		};
 
 		[SerializeField]
-		private bool AutoDestroyAfterPlayingAnim;
+		private bool AutoDestroyAfterPlayingAnim = default;
 
 		[SerializeField]
 		private float AutoDestroyFramesCoefficient = 0.3f;

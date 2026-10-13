@@ -14,7 +14,7 @@ namespace CPM.Obstacles
 
 		[Tooltip("The object that actually spins: holds the collider and the kinematic Rigidbody. Its authored rotation is where the spin starts.")]
 		[SerializeField]
-		private Transform Target;
+		private Transform Target = default;
 
 		[SerializeField]
 		[Tooltip("Axis of rotation in the Target's authored local space.")]

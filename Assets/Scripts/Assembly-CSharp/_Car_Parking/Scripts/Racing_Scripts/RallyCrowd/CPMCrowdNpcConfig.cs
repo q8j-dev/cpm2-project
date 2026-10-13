@@ -24,7 +24,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts.RallyCrowd
 		private string idleStateName = "Idle";
 
 		[SerializeField]
-		private ActionClip[] actions;
+		private ActionClip[] actions = default;
 
 		[SerializeField]
 		[Range(0f, 1f)]

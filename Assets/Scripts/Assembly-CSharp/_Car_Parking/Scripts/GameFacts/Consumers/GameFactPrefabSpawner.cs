@@ -11,18 +11,18 @@ namespace _Car_Parking.Scripts.GameFacts.Consumers
 	public class GameFactPrefabSpawner : MonoBehaviour
 	{
 		[SerializeField]
-		private ConditionState State;
+		private ConditionState State = default;
 
 		[Tooltip("Addressable key/path of the prefab to spawn on this transform.")]
 		[SerializeField]
-		private string AddressableKey;
+		private string AddressableKey = default;
 
 		[SerializeField]
 		private bool CanDespawn = true;
 
 		[Tooltip("Seconds to keep the instance alive after the condition stops holding. 0 — destroy immediately.")]
 		[SerializeField]
-		private float DespawnDelay;
+		private float DespawnDelay = default;
 
 		private LoadAndSpawnPrefab _loader;
 

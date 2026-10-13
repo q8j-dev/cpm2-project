@@ -11,43 +11,43 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	public class CarSection : SettingsSectionBase
 	{
 		[SerializeField]
-		private Toggle ParkingSensorOnToggle;
+		private Toggle ParkingSensorOnToggle = default;
 
 		[SerializeField]
-		private Toggle ParkingSensorOffToggle;
+		private Toggle ParkingSensorOffToggle = default;
 
 		[SerializeField]
-		private SliderValueHandler TcsSlider;
+		private SliderValueHandler TcsSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler AbsSlider;
+		private SliderValueHandler AbsSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler EspSlider;
+		private SliderValueHandler EspSlider = default;
 
 		[SerializeField]
-		private Toggle StabilizationToggle;
+		private Toggle StabilizationToggle = default;
 
 		[SerializeField]
-		private CanvasGroup StabilizationCanvasGroup;
+		private CanvasGroup StabilizationCanvasGroup = default;
 
 		[SerializeField]
-		private Toggle DriftModeToggle;
+		private Toggle DriftModeToggle = default;
 
 		[SerializeField]
-		private CanvasGroup DriftModeCanvasGroup;
+		private CanvasGroup DriftModeCanvasGroup = default;
 
 		[SerializeField]
-		private Toggle ArcadeModeToggle;
+		private Toggle ArcadeModeToggle = default;
 
 		[SerializeField]
-		private CanvasGroup ArcaderCanvasGroup;
+		private CanvasGroup ArcaderCanvasGroup = default;
 
 		[SerializeField]
-		private Toggle ManualGearboxAssistToggle;
+		private Toggle ManualGearboxAssistToggle = default;
 
 		[SerializeField]
-		private CanvasGroup ManualGearboxAssistCanvasGroup;
+		private CanvasGroup ManualGearboxAssistCanvasGroup = default;
 
 		private bool _isOpened;
 

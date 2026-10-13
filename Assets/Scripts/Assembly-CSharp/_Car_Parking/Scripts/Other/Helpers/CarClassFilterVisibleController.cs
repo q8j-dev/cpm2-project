@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Other.Helpers
 	public class CarClassFilterVisibleController : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject[] GameObjects;
+		private GameObject[] GameObjects = default;
 
 		private NewCarWindowConfig _config;
 

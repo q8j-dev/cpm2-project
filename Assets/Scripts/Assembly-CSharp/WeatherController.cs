@@ -214,7 +214,7 @@ public class WeatherController : MonoBehaviour
 	private int cachedLocalId;
 
 	[NonSerialized]
-	private float debugDeltaTime;
+	private float debugDeltaTime = default;
 
 	private ReflectionCubemapLoader reflectionLoader;
 

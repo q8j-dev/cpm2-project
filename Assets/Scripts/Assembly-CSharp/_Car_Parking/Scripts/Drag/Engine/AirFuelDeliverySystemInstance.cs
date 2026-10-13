@@ -16,9 +16,9 @@ namespace _Car_Parking.Scripts.Drag.Engine
 
 		internal float time_burn = 0.1f;
 
-		internal float minComp;
+		internal float minComp = default;
 
-		internal float maxComp;
+		internal float maxComp = default;
 
 		public virtual void UpdateVariables(float condition)
 		{

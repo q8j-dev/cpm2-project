@@ -29,13 +29,13 @@ namespace _Car_Parking.Scripts.WindowSystem
 		}
 
 		[SerializeField]
-		private TextMeshProUGUI Capacity;
+		private TextMeshProUGUI Capacity = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Location;
+		private TextMeshProUGUI Location = default;
 
 		[SerializeField]
-		private RealCurrencyView GaragePriceView;
+		private RealCurrencyView GaragePriceView = default;
 
 		private GaragePositionsConfig _garageConfig;
 

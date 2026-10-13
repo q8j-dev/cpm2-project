@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.PhotoMode.UI
 	public class PhotoModeParameterItem : MonoBehaviour
 	{
 		[SerializeField]
-		private Toggle SelectToggle;
+		private Toggle SelectToggle = default;
 
 		[field: SerializeField]
 		public CPMGraphicsSettings.ColorCorrectionLut Filter { get; private set; }

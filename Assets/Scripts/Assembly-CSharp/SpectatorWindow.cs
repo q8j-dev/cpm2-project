@@ -281,7 +281,7 @@ public class SpectatorWindow : MonoBehaviour, IBackableWindow
 			}
 			else
 			{
-				_managerUI.ShowUserBalanceOnlyWindow();
+				_ = _managerUI.ShowUserBalanceOnlyWindow();
 			}
 		}
 		Background.SetActive(value: true);

@@ -30,7 +30,7 @@ namespace _Car_Parking.Scripts.EventSystem
 
 		private ActivityZoneTrigger _currentPlayerZone;
 
-		private IDisposable _zonesTimers;
+		private IDisposable _zonesTimers = default;
 
 		private EventZoneTimerComponent _timerComponent;
 
@@ -78,7 +78,7 @@ namespace _Car_Parking.Scripts.EventSystem
 			if (model != null)
 			{
 				model.MapZone.ChangeState(ZoneState.Cooldown);
-				trigger.DelayedResetCollectibles();
+				_ = trigger.DelayedResetCollectibles();
 			}
 		}
 

@@ -32,8 +32,6 @@ public class TaxiClientController : MonoBehaviourPunCallbacks
 	[HideInInspector]
 	public bool isPassenger;
 
-	private float timer;
-
 	private Rigidbody carRigidbody;
 
 	[HideInInspector]

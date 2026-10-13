@@ -64,7 +64,7 @@ namespace _Car_Parking.Scripts.Other.Helpers
 				gameObject2.transform.localPosition = localTransformData.Position;
 				gameObject2.transform.localRotation = localTransformData.Rotation;
 				gameObject2.transform.localScale = localTransformData.Scale;
-				handle.BindTo(gameObject2);
+				_ = handle.BindTo(gameObject2);
 				return gameObject2;
 			}
 			catch (Exception)

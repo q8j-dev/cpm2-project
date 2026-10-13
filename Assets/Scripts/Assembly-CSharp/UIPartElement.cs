@@ -10,52 +10,50 @@ using _Car_Parking.Scripts.Inventory;
 
 public class UIPartElement : MonoBehaviour
 {
-	private IClickable _clickable;
+	[SerializeField]
+	private Image PartImage = default;
 
 	[SerializeField]
-	private Image PartImage;
+	private Image PartRarityImage = default;
 
 	[SerializeField]
-	private Image PartRarityImage;
+	private Image PartVendorImage = default;
 
 	[SerializeField]
-	private Image PartVendorImage;
+	private TextMeshProUGUI PartText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PartText;
+	private TextMeshProUGUI PartTypeText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PartTypeText;
+	private TextMeshProUGUI WeightText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI WeightText;
+	private TextMeshProUGUI MaxTorqueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MaxTorqueText;
+	private Button PartButton = default;
 
 	[SerializeField]
-	private Button PartButton;
+	private GameObject detailsGameObject = default;
 
 	[SerializeField]
-	private GameObject detailsGameObject;
+	private Color WarningColor = default;
 
 	[SerializeField]
-	private Color WarningColor;
+	private Color ErrorColor = default;
 
 	[SerializeField]
-	private Color ErrorColor;
+	private Color NormalColor = default;
 
 	[SerializeField]
-	private Color NormalColor;
+	private Image StatusImage = default;
 
 	[SerializeField]
-	private Image StatusImage;
+	private CarTuningUISlider CarTuningUISlider = default;
 
 	[SerializeField]
-	private CarTuningUISlider CarTuningUISlider;
-
-	[SerializeField]
-	private Button RemovePartButton;
+	private Button RemovePartButton = default;
 
 	private PartData _partData;
 
@@ -68,10 +66,6 @@ public class UIPartElement : MonoBehaviour
 	private DetailVendorsConfigs _detailVendorsConfigs;
 
 	private CarTuningDetailRaritySpritesConfig _carTuningDetailRaritySpritesConfig;
-
-	private IEngineKitsInventoryService _engineKitsInventoryService;
-
-	private ICarTuningFactory _carTuningFactory;
 
 	private UIPartsController _uiPartsController;
 

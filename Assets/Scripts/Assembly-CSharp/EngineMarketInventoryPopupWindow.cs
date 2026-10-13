@@ -12,52 +12,43 @@ using _Car_Parking.Scripts.UIElement;
 public class EngineMarketInventoryPopupWindow : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject BuyPanel;
+	private GameObject BuyPanel = default;
 
 	[SerializeField]
-	private GameObject BuyAndSetPanel;
+	private GameObject BuyAndSetPanel = default;
 
 	[SerializeField]
-	private Image BuyDetailImage;
+	private Button BuyButton = default;
 
 	[SerializeField]
-	private Image InstalledDetailImage;
+	private Button CancelButton = default;
 
 	[SerializeField]
-	private Image BuyAndSellDetailImage;
+	private ContentSizeFitter BuyButtonSizeFitter = default;
 
 	[SerializeField]
-	private Button BuyButton;
+	private TextMeshProUGUI BuyButtonText = default;
 
 	[SerializeField]
-	private Button CancelButton;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private ContentSizeFitter BuyButtonSizeFitter;
+	private TextMeshProUGUI EnginePriceText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BuyButtonText;
+	private TextMeshProUGUI InstalledDetailNameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI BuyDetailNameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI EnginePriceText;
+	private TextMeshProUGUI BuyAndSetDetailText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI InstalledDetailNameText;
+	private DefaultEngineMarketWindow DefaultEngineMarketWindow = default;
 
 	[SerializeField]
-	private TextMeshProUGUI BuyDetailNameText;
-
-	[SerializeField]
-	private TextMeshProUGUI BuyAndSetDetailText;
-
-	[SerializeField]
-	private DefaultEngineMarketWindow DefaultEngineMarketWindow;
-
-	[SerializeField]
-	private GameObject MoneyIcon;
+	private GameObject MoneyIcon = default;
 
 	private VirtualPurchaseAnalytic _virtualPurchaseAnalytic;
 
@@ -65,7 +56,7 @@ public class EngineMarketInventoryPopupWindow : MonoBehaviour
 
 	private Action _onConfirm;
 
-	private Action _onCancel;
+	private Action _onCancel = default;
 
 	private void Start()
 	{

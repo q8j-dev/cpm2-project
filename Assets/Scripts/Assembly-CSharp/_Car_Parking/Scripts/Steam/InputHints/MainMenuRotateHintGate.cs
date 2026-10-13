@@ -21,7 +21,7 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 
 		[SerializeField]
 		[Tooltip("The menu's InputMapSetEvent SO (_InputMapSetEvent). Used to read the current input group.")]
-		private InputMapSetEvent MapSetEvent;
+		private InputMapSetEvent MapSetEvent = default;
 
 		[SerializeField]
 		[Tooltip("Input groups in which the showroom lets you rotate the car, with optional per-group position.")]
@@ -35,15 +35,15 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 
 		[Tooltip("Hint object to show/hide (SetActive). Leave empty and use HintCanvasGroup if you gate this same object.")]
 		[SerializeField]
-		private GameObject HintObject;
+		private GameObject HintObject = default;
 
 		[SerializeField]
 		[Tooltip("Optional: fade via CanvasGroup instead of SetActive (object stays alive — use this if the gate sits on the hint itself).")]
-		private CanvasGroup HintCanvasGroup;
+		private CanvasGroup HintCanvasGroup = default;
 
 		[SerializeField]
 		[Tooltip("Optional: RectTransform moved by per-group Position. Empty → resolved from HintCanvasGroup/HintObject.")]
-		private RectTransform HintRect;
+		private RectTransform HintRect = default;
 
 		[Tooltip("Windows that hide the hint while active (Waiting overlays don't switch the input group, so gate them by name).")]
 		[SerializeField]

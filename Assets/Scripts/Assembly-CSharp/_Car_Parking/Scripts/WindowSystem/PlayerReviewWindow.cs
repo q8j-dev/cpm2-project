@@ -12,16 +12,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private const string IOSLink = "https://apps.apple.com/app/car-parking-multiplayer-2/id6514315118";
 
 		[SerializeField]
-		private Button OpenMarketButton;
+		private Button OpenMarketButton = default;
 
 		[SerializeField]
-		private Button LaterButton;
+		private Button LaterButton = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Description;
+		private TextMeshProUGUI Description = default;
 
 		protected override void Start()
 		{

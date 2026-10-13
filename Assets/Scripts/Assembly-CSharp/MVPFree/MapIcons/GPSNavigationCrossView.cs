@@ -5,7 +5,7 @@ namespace MVPFree.MapIcons
 	public class GPSNavigationCrossView : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject CentreCircle;
+		private GameObject CentreCircle = default;
 
 		public Vector2 CentreCircleScreenPosition
 		{

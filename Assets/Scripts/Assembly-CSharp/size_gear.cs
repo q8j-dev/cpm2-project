@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class size_gear : MonoBehaviour
 {
-	public GameObject camera;
-
-	private int gear;
+	public new GameObject camera;
 
 	public Color rear;
 

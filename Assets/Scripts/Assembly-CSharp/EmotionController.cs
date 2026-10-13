@@ -12,10 +12,10 @@ using _Car_Parking.Scripts.UIElement.AnimationUI;
 public class EmotionController : MonoBehaviour
 {
 	[SerializeField]
-	private ParkingMenuUI ParkingMenuUI;
+	private ParkingMenuUI ParkingMenuUI = default;
 
 	[SerializeField]
-	private List<AnimationPresetItem> PresetItems;
+	private List<AnimationPresetItem> PresetItems = default;
 
 	private EmoteCatalog _catalog;
 

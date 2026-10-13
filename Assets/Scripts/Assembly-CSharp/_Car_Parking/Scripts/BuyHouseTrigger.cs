@@ -7,9 +7,6 @@ namespace _Car_Parking.Scripts
 {
 	public class BuyHouseTrigger : BuyBusinessTrigger
 	{
-		[SerializeField]
-		private int houseNumber;
-
 		private HomesConfig _homesConfig;
 
 		private OptionalDependency<HomesConfig> _homesConfigDep;

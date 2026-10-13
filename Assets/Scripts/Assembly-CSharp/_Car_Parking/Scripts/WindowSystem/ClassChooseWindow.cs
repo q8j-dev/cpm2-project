@@ -19,22 +19,22 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ClassChooseWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private DragClassUIElement S12;
+		private DragClassUIElement S12 = default;
 
 		[SerializeField]
-		private DragClassUIElement S11;
+		private DragClassUIElement S11 = default;
 
 		[SerializeField]
-		private DragClassUIElement S10;
+		private DragClassUIElement S10 = default;
 
 		[SerializeField]
-		private DragClassUIElement S9;
+		private DragClassUIElement S9 = default;
 
 		[SerializeField]
-		private DragClassUIElement Unlimited;
+		private DragClassUIElement Unlimited = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		private int _selectedClass = 12;
 

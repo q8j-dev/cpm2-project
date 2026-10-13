@@ -8,37 +8,37 @@ namespace _Car_Parking.Scripts.FirstGameSetup
 	public class CharacterEquipmentPreset
 	{
 		[SerializeField]
-		private int HairId;
+		private int HairId = default;
 
 		[SerializeField]
-		private int FaceId;
+		private int FaceId = default;
 
 		[SerializeField]
-		private int BeardId;
+		private int BeardId = default;
 
 		[SerializeField]
-		private int CapsId;
+		private int CapsId = default;
 
 		[SerializeField]
-		private int MaskId;
+		private int MaskId = default;
 
 		[SerializeField]
-		private int TopId;
+		private int TopId = default;
 
 		[SerializeField]
-		private int GlovesId;
+		private int GlovesId = default;
 
 		[SerializeField]
-		private int BagId;
+		private int BagId = default;
 
 		[SerializeField]
-		private int PantsId;
+		private int PantsId = default;
 
 		[SerializeField]
-		private int ShoesId;
+		private int ShoesId = default;
 
 		[SerializeField]
-		private int GlassesId;
+		private int GlassesId = default;
 
 		[field: SerializeField]
 		public Sprite Icon { get; private set; }

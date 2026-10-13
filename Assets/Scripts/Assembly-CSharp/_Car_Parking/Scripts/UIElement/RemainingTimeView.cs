@@ -11,7 +11,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class RemainingTimeView : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_Text Text;
+		private TMP_Text Text = default;
 
 		private ServerTimeService _serverTimeService;
 

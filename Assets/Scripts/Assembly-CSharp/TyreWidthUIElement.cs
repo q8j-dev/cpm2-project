@@ -6,7 +6,7 @@ public class TyreWidthUIElement : MonoBehaviour
 	public RectTransform rect;
 
 	[SerializeField]
-	private new TextMeshProUGUI name;
+	private new TextMeshProUGUI name = default;
 
 	[SerializeField]
 	private CanvasGroup canvasGroup;

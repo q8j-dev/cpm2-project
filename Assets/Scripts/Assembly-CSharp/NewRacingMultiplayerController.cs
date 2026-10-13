@@ -343,7 +343,7 @@ public class NewRacingMultiplayerController : MonoBehaviourPunCallbacks
 			PhotonView component = CurrentRacingTree.otherCar.GetComponent<PhotonView>();
 			_freeDriveControl.LastInvitationReceivedId = component.Owner.ActorNumber;
 			_freeDriveProvider.RacingCar2 = CurrentRacingTree.otherCar;
-			_freeDriveControl.ShowNegotiationWindow();
+			_ = _freeDriveControl.ShowNegotiationWindow();
 			fromTrigger = true;
 		}
 	}
@@ -572,21 +572,9 @@ public class NewRacingMultiplayerController : MonoBehaviourPunCallbacks
 		}
 	}
 
-	private async UniTask SendOtherOwnTriggerState(Player newPlayer)
+	private UniTask SendOtherOwnTriggerState(Player newPlayer)
 	{
-		int num;
-		if (num == 0)
-		{
-			UniTask.Awaiter awaiter2 = default;
-			UniTask.Awaiter awaiter = awaiter2;
-			awaiter.GetResult();
-			if (!(this == null) && (bool)CurrentRacingTree && CurrentRacingTree.ownCar == V.LastUsedCar)
-			{
-				int viewID = V.LastUsedCar.GetComponent<PhotonView>().ViewID;
-				int[] data = new int[2] { viewID, lastOwnTrigger.id };
-				CallRPC(newPlayer, 0, data);
-			}
-		}
+		return UniTask.CompletedTask;
 	}
 
 	private void OnFinishResultReceivedOtherCar(int[] result)
@@ -604,11 +592,11 @@ public class NewRacingMultiplayerController : MonoBehaviourPunCallbacks
 			Dragy component2 = V.LastUsedCar.GetComponent<Dragy>();
 			if (runDistance == DragRacingController.RunDistance.Lap || runDistance == DragRacingController.RunDistance.Rally)
 			{
-				ShowResultUILap(component2, otherCarResult);
+				_ = ShowResultUILap(component2, otherCarResult);
 			}
 			else
 			{
-				ShowResultUI(component2, otherCarResult);
+				_ = ShowResultUI(component2, otherCarResult);
 			}
 		}
 	}
@@ -693,11 +681,11 @@ public class NewRacingMultiplayerController : MonoBehaviourPunCallbacks
 		if (OtherCarResultReceived)
 		{
 			EvaluatePvpResult();
-			ShowResultUI(dragy, otherCarResult);
+			_ = ShowResultUI(dragy, otherCarResult);
 		}
 		else
 		{
-			ShowResultUI(dragy, otherCarResult);
+			_ = ShowResultUI(dragy, otherCarResult);
 			updateAfterOtherReceived = true;
 		}
 	}
@@ -779,11 +767,11 @@ public class NewRacingMultiplayerController : MonoBehaviourPunCallbacks
 		V.CoreGameManager.SetMessage("", 0f);
 		if (OtherCarResultReceived)
 		{
-			ShowResultUILap(dragy, otherCarResult);
+			_ = ShowResultUILap(dragy, otherCarResult);
 			return;
 		}
 		updateAfterOtherReceived = true;
-		ShowResultUILap(dragy, null);
+		_ = ShowResultUILap(dragy, null);
 	}
 
 	private int[] GenerateDataResult(Dragy dragy, DragRacingController.RunDistance runDistance)

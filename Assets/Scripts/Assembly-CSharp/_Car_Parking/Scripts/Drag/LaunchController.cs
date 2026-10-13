@@ -15,28 +15,28 @@ namespace _Car_Parking.Scripts.Drag
 		private VehicleEntityProvider _vehicleData;
 
 		[SerializeField]
-		private TextMeshProUGUI DisplayRpmText;
+		private TextMeshProUGUI DisplayRpmText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI DisplayTimeText;
+		private TextMeshProUGUI DisplayTimeText = default;
 
 		[SerializeField]
-		private Button MinusRpmButton;
+		private Button MinusRpmButton = default;
 
 		[SerializeField]
-		private Button PlusRpmButton;
+		private Button PlusRpmButton = default;
 
 		[SerializeField]
-		private Button MinusTimeButton;
+		private Button MinusTimeButton = default;
 
 		[SerializeField]
-		private Button PlusTimeButton;
+		private Button PlusTimeButton = default;
 
 		[SerializeField]
-		private Button ResetButton;
+		private Button ResetButton = default;
 
 		[SerializeField]
-		private GameObject Controller;
+		private GameObject Controller = default;
 
 		private float _defaultLaunchRpm;
 
@@ -45,8 +45,6 @@ namespace _Car_Parking.Scripts.Drag
 		private float _LaunchMinRpm;
 
 		private float _LaunchMaxRpm;
-
-		private float _minTime;
 
 		private float _maxTime;
 

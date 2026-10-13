@@ -84,7 +84,7 @@ namespace Firebase.Impl
 				int timeout = AttemptTimeoutsSeconds[attempt];
 				using UnityWebRequest request = UnityWebRequest.Get(uri);
 				request.timeout = timeout;
-				request.SendWebRequest();
+				_ = request.SendWebRequest();
 				while (!request.isDone)
 				{
 					await UniTask.Delay(TimeSpan.FromSeconds(0.10000000149011612), DelayType.UnscaledDeltaTime);

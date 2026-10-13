@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class NewMarkIcon : MonoBehaviour
 	{
 		[SerializeField]
-		private string Key;
+		private string Key = default;
 
 		private const int HiddenValue = 1;
 

@@ -11,10 +11,10 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class SubmitCircleWindow : WindowScript
 	{
 		[SerializeField]
-		private Button SubmitButton;
+		private Button SubmitButton = default;
 
 		[SerializeField]
-		private Image FilledCircle;
+		private Image FilledCircle = default;
 
 		public bool justTimer;
 

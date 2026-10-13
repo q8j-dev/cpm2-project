@@ -5,13 +5,13 @@ public class LockableUIButton : Button
 {
 	[Header("Lock")]
 	[SerializeField]
-	private float LockedAlphaValue;
+	private float LockedAlphaValue = default;
 
 	[SerializeField]
-	private CanvasGroup PanelCanvasGroup;
+	private CanvasGroup PanelCanvasGroup = default;
 
 	[SerializeField]
-	private GameObject LockIcon;
+	private GameObject LockIcon = default;
 
 	public void Lock(bool state)
 	{

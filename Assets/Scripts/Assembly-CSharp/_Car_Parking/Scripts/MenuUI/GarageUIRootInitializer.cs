@@ -10,22 +10,22 @@ namespace _Car_Parking.Scripts.MenuUI
 	public class GarageUIRootInitializer : MonoBehaviour
 	{
 		[SerializeField]
-		private Image LeftIndicatorArrowTC;
+		private Image LeftIndicatorArrowTC = default;
 
 		[SerializeField]
-		private Image RightIndicatorArrowTC;
+		private Image RightIndicatorArrowTC = default;
 
 		[SerializeField]
-		private Image EmergencyTC;
+		private Image EmergencyTC = default;
 
 		[SerializeField]
-		private Image HeadLampIconUI;
+		private Image HeadLampIconUI = default;
 
 		[SerializeField]
-		private PoliceSirenStatusUpdateButton _policeSirenButton;
+		private PoliceSirenStatusUpdateButton _policeSirenButton = default;
 
 		[SerializeField]
-		private SteamUIParentChanger steamUIParentChanger;
+		private SteamUIParentChanger steamUIParentChanger = default;
 
 		private MenuLevelParent _menuLevelParent;
 

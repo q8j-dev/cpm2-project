@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts
 	public class BuyGarageTrigger : BuyTrigger
 	{
 		[SerializeField]
-		private int GarageIndex;
+		private int GarageIndex = default;
 
 		private IGarageBuyService _garageBuyService;
 

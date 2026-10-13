@@ -4,10 +4,10 @@ using UnityEngine;
 public class ScreenSpacePlacement : MonoBehaviour
 {
 	[SerializeField]
-	private Camera m_Cam;
+	private Camera m_Cam = default;
 
 	[SerializeField]
-	private Transform m_FlareObject;
+	private Transform m_FlareObject = default;
 
 	private void OnGUI()
 	{

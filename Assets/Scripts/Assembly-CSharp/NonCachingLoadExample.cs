@@ -5,9 +5,9 @@ using UnityEngine;
 
 internal class NonCachingLoadExample : MonoBehaviour
 {
-	public string BundleURL;
+	public string BundleURL = default;
 
-	public string AssetName;
+	public string AssetName = default;
 
 	private async UniTaskVoid Start()
 	{
@@ -25,7 +25,7 @@ internal class NonCachingLoadExample : MonoBehaviour
 				AssetBundle assetBundle = www.assetBundle;
 				if (AssetName == "")
 				{
-					AssetBundle.LoadFromFileAsync(BundleURL);
+					_ = AssetBundle.LoadFromFileAsync(BundleURL);
 				}
 				else
 				{

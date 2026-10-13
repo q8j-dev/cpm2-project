@@ -12,19 +12,19 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 		public ScrollRect ScrollRect;
 
 		[SerializeField]
-		private GameObject Root;
+		private GameObject Root = default;
 
 		[SerializeField]
-		private Transform Content;
+		private Transform Content = default;
 
 		[SerializeField]
-		private TabIconsController TabIcons;
+		private TabIconsController TabIcons = default;
 
 		[SerializeField]
-		private UI_InfiniteScroll UIInfiniteScroll;
+		private UI_InfiniteScroll UIInfiniteScroll = default;
 
 		[SerializeField]
-		private HorizontalScrollSnap HorizontalScrollSnap;
+		private HorizontalScrollSnap HorizontalScrollSnap = default;
 
 		public Transform ContentTransform => Content;
 

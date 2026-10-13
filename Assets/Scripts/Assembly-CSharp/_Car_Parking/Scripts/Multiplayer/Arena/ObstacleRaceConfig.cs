@@ -19,7 +19,7 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena
 		}
 
 		[SerializeField]
-		private CombinedPrice[] Rewards;
+		private CombinedPrice[] Rewards = default;
 
 		[Header("Track")]
 		[Tooltip("How many random zones sit between the start and the finish.")]

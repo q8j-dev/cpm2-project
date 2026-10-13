@@ -8,9 +8,9 @@ namespace _Car_Parking.Scripts.Other.Helpers
 		[Serializable]
 		private class GameObjectsData
 		{
-			public int[] QualityLevels;
+			public int[] QualityLevels = default;
 
-			public GameObject[] GameObjects;
+			public GameObject[] GameObjects = default;
 
 			public void Update(bool isActive)
 			{
@@ -25,7 +25,7 @@ namespace _Car_Parking.Scripts.Other.Helpers
 		}
 
 		[SerializeField]
-		private GameObjectsData[] GameObjectsDatas;
+		private GameObjectsData[] GameObjectsDatas = default;
 
 		private CPMGraphicsSettingsManager _graphicSettings => CPMGraphicsSettingsManager.Instance;
 

@@ -13,31 +13,28 @@ namespace _Car_Parking.Scripts.UIElement.AnimationUI
 	public class MenuGarageAnimationPanel : MonoBehaviour
 	{
 		[SerializeField]
-		private Button EmojiButton;
+		private Button EmojiButton = default;
 
 		[SerializeField]
-		private Toggle AnimationPresetShowToggle;
+		private Toggle AnimationPresetShowToggle = default;
 
 		[SerializeField]
-		private GameObject AnimationsPreset;
+		private GameObject AnimationsPreset = default;
 
 		[SerializeField]
-		private Button AnimationShopButton;
+		private Button AnimationShopButton = default;
 
 		[SerializeField]
-		private Button AnimationsPresetCloseButton;
+		private Button AnimationsPresetCloseButton = default;
 
 		[SerializeField]
-		private MenuGarageNavigationWindow MenuGarageWindow;
+		private MenuGarageNavigationWindow MenuGarageWindow = default;
 
 		[SerializeField]
-		private GameObject OnImage;
+		private GameObject OnImage = default;
 
 		[SerializeField]
-		private GameObject OffImage;
-
-		[SerializeField]
-		private EmotionController EmotionController;
+		private GameObject OffImage = default;
 
 		private ManagerUI _managerUI;
 

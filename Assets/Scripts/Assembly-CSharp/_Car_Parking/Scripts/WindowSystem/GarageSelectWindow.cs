@@ -15,7 +15,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class GarageSelectWindow : PropertyWindowBase<GaragePositionsConfig, GarageData>
 	{
 		[SerializeField]
-		private List<GaragePlaceUIItem> GaragePlaceUIItems;
+		private List<GaragePlaceUIItem> GaragePlaceUIItems = default;
 
 		private List<PlaceUIItem<GaragePositionsConfig, GarageData>> _cachedPlaceItems;
 
@@ -24,8 +24,6 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private IGarageBuyService _garageBuyService;
 
 		private ISlotService _slotService;
-
-		private bool _inGarageLoading;
 
 		protected override List<PlaceUIItem<GaragePositionsConfig, GarageData>> PlaceUIItems
 		{

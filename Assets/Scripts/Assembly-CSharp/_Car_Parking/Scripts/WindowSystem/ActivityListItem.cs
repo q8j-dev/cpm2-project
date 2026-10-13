@@ -11,16 +11,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class ActivityListItem : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		[SerializeField]
-		private TMP_Text Title;
+		private TMP_Text Title = default;
 
 		[SerializeField]
-		private TMP_Text Description;
+		private TMP_Text Description = default;
 
 		private MapIconsDataSo _icons;
 

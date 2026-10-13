@@ -25,73 +25,73 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class LobbyWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private SpawnPlaceItemUI[] SpawnPlaces;
+		private SpawnPlaceItemUI[] SpawnPlaces = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private Button AddFriendButton;
+		private Button AddFriendButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlayersCount;
+		private TextMeshProUGUI PlayersCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlayerName;
+		private TextMeshProUGUI PlayerName = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlayerId;
+		private TextMeshProUGUI PlayerId = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RaceCount;
+		private TextMeshProUGUI RaceCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI WinCount;
+		private TextMeshProUGUI WinCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LoseCount;
+		private TextMeshProUGUI LoseCount = default;
 
 		[SerializeField]
-		private TMP_InputField FriendInputField;
+		private TMP_InputField FriendInputField = default;
 
 		[SerializeField]
-		private Transform FriendsListParent;
+		private Transform FriendsListParent = default;
 
 		[SerializeField]
-		private Transform LoadingImage;
+		private Transform LoadingImage = default;
 
 		[SerializeField]
-		private GameObject FriendsListItemPrefab;
+		private GameObject FriendsListItemPrefab = default;
 
 		[SerializeField]
-		private Toggle ForFriendOnlyToggle;
+		private Toggle ForFriendOnlyToggle = default;
 
 		[SerializeField]
-		private MultiplayerLobbyHandler LobbyHandler;
+		private MultiplayerLobbyHandler LobbyHandler = default;
 
 		[SerializeField]
-		private TMP_Dropdown LanguageDropdown;
+		private TMP_Dropdown LanguageDropdown = default;
 
 		[SerializeField]
-		private LanguagesIconsConfig LanguagesSprites;
+		private LanguagesIconsConfig LanguagesSprites = default;
 
 		[SerializeField]
-		private Slider ProgressBar;
+		private Slider ProgressBar = default;
 
 		[SerializeField]
-		private TMP_InputField RoomPassword;
+		private TMP_InputField RoomPassword = default;
 
 		[SerializeField]
-		private CanvasGroup ConnectingPanel;
+		private CanvasGroup ConnectingPanel = default;
 
 		[SerializeField]
-		private CanvasGroup LocationPanel;
+		private CanvasGroup LocationPanel = default;
 
 		[SerializeField]
-		private CanvasGroup BottomPanel;
+		private CanvasGroup BottomPanel = default;
 
 		public Button OnlinePlayerWarningButton;
 

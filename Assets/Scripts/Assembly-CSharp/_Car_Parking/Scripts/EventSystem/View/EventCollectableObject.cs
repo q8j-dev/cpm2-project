@@ -14,7 +14,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class EventCollectableObject : CollectableGameObjectClaim
 	{
 		[SerializeField]
-		private int ID;
+		private int ID = default;
 
 		private IEventService _eventService;
 

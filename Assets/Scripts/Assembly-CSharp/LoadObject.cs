@@ -6,7 +6,7 @@ public class LoadObject : MonoBehaviour
 
 	public bool loadingNow;
 
-	public Collider collider;
+	public new Collider collider;
 
 	public float LoadDistance = 10f;
 

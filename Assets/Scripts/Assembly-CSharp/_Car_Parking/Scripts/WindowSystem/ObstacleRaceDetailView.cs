@@ -12,25 +12,22 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public sealed class ObstacleRaceDetailView : GameActivityDetailView
 	{
 		[SerializeField]
-		private RectTransform LeftSide;
+		private RectTransform RightSide = default;
 
 		[SerializeField]
-		private RectTransform RightSide;
+		private RawImage MapImage = default;
 
 		[SerializeField]
-		private RawImage MapImage;
+		private Button FindRaceButton = default;
 
 		[SerializeField]
-		private Button FindRaceButton;
+		private MatchmakingDataView MatchmakingDataView = default;
 
 		[SerializeField]
-		private MatchmakingDataView MatchmakingDataView;
+		private CombinedPriceView[] CombinedPriceViews = default;
 
 		[SerializeField]
-		private CombinedPriceView[] CombinedPriceViews;
-
-		[SerializeField]
-		private GameObject MainMenuImage;
+		private GameObject MainMenuImage = default;
 
 		private FreeDriveProvider _freeDriveProvider;
 

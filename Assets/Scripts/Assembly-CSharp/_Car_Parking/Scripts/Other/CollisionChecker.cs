@@ -6,13 +6,13 @@ namespace _Car_Parking.Scripts.Other
 	public class CollisionChecker : MonoBehaviour
 	{
 		[SerializeField]
-		private string NeedTag;
+		private string NeedTag = default;
 
 		[SerializeField]
-		private UnityEvent OnTriggerEnterInvoke;
+		private UnityEvent OnTriggerEnterInvoke = default;
 
 		[SerializeField]
-		private UnityEvent OnTriggerExitInvoke;
+		private UnityEvent OnTriggerExitInvoke = default;
 
 		private void OnTriggerEnter(Collider other)
 		{

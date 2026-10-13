@@ -18,28 +18,28 @@ namespace _Car_Parking.Scripts.WindowSystem
 		public const string WindowId = "Root";
 
 		[SerializeField]
-		private GameObject EventsRoot;
+		private GameObject EventsRoot = default;
 
 		[SerializeField]
-		private RectTransform EventsContainer;
+		private RectTransform EventsContainer = default;
 
 		[SerializeField]
-		private RectTransform RebuildLayer;
+		private RectTransform RebuildLayer = default;
 
 		[SerializeField]
-		private EventButtonPhone EventButtonPrefab;
+		private EventButtonPhone EventButtonPrefab = default;
 
 		[SerializeField]
-		private Button ObstacleRaceButton;
+		private Button ObstacleRaceButton = default;
 
 		[SerializeField]
-		private Button RallyButton;
+		private Button RallyButton = default;
 
 		[SerializeField]
-		private Button DriftButton;
+		private Button DriftButton = default;
 
 		[SerializeField]
-		private Button TimeAttackButton;
+		private Button TimeAttackButton = default;
 
 		private IGameActivityCatalog _catalog;
 

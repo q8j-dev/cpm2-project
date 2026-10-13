@@ -24,16 +24,16 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		}
 
 		[SerializeField]
-		private TMP_Text[] IndexesText;
+		private TMP_Text[] IndexesText = default;
 
 		[SerializeField]
-		private RawImageLoadAsync Icon;
+		private RawImageLoadAsync Icon = default;
 
 		[SerializeField]
-		private ItemContentDraggableAnimation ItemContentDraggableAnimation;
+		private ItemContentDraggableAnimation ItemContentDraggableAnimation = default;
 
 		[SerializeField]
-		private GameObjectsActiveBySlotColumnPosition GameObjectsActiveBySlotColumnPosition;
+		private GameObjectsActiveBySlotColumnPosition GameObjectsActiveBySlotColumnPosition = default;
 
 		private string _carInstanceId = "";
 

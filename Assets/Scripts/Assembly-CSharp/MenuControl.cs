@@ -488,7 +488,7 @@ public class MenuControl : MonoBehaviour
 			{
 				SceneManager.SetActiveScene(scene);
 			}
-			_garageController.Init(V.Car);
+			_ = _garageController.Init(V.Car);
 		}
 	}
 
@@ -981,11 +981,11 @@ public class MenuControl : MonoBehaviour
 
 	private async UniTask StartLoadingFreeDriveAsync(bool loadingWindowOnTop = true)
 	{
-		ShowLoading(alwaysOnTop: false);
+		_ = ShowLoading(alwaysOnTop: false);
 		Scene sceneByBuildIndex = SceneManager.GetSceneByBuildIndex(_garageSelectorService.CurrentSceneIndex);
 		if (sceneByBuildIndex.IsValid() && sceneByBuildIndex.isLoaded)
 		{
-			SceneManager.UnloadSceneAsync(sceneByBuildIndex);
+			_ = SceneManager.UnloadSceneAsync(sceneByBuildIndex);
 		}
 		if ((bool)V.Car)
 		{
@@ -1030,7 +1030,7 @@ public class MenuControl : MonoBehaviour
 	{
 		FlagsStorage.IsMultiFree = true;
 		_inputMapSetEvent.TrySetGroup(InputGroupsEnum.CarFree, setRoot: true);
-		ShowLoading(alwaysOnTop: false);
+		_ = ShowLoading(alwaysOnTop: false);
 		SceneManager.GetSceneByBuildIndex(_garageSelectorService.CurrentSceneIndex);
 		Observable.Timer(TimeSpan.FromSeconds(0.5)).Subscribe((long _) =>
 		{

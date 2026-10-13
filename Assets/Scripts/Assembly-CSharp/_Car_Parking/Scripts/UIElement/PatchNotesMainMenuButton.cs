@@ -10,10 +10,10 @@ namespace _Car_Parking.Scripts.UIElement
 		private const string PlayerPrefsConfigHash = "PatchNotesConfigHash";
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private PatchNotesConfig Config;
+		private PatchNotesConfig Config = default;
 
 		private ManagerUI _managerUI;
 

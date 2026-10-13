@@ -223,8 +223,6 @@ public class AutoFenceCreator : MonoBehaviour
 	[Range(0f, 0.2f)]
 	public float randomness;
 
-	private Vector3 preCloseEndPost;
-
 	public bool showControls;
 
 	public List<AutoFencePreset> presets = new List<AutoFencePreset>();

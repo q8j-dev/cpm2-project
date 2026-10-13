@@ -6,16 +6,16 @@ namespace _Car_Parking.Scripts.UIElement
 	public class MaxContentSizeFitter : ContentSizeFitter
 	{
 		[SerializeField]
-		private bool _useMaxHorizontal;
+		private bool _useMaxHorizontal = default;
 
 		[SerializeField]
-		private float _maxHorizontal;
+		private float _maxHorizontal = default;
 
 		[SerializeField]
-		private bool _useMaxVertical;
+		private bool _useMaxVertical = default;
 
 		[SerializeField]
-		private float _maxVertical;
+		private float _maxVertical = default;
 
 		private RectTransform _rect;
 

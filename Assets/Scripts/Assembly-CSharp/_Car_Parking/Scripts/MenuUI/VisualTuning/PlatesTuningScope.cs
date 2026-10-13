@@ -34,7 +34,7 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 
 		private bool _changingPlate;
 
-		private Transform lastSelectedPlateTransform;
+		private Transform lastSelectedPlateTransform = default;
 
 		private ICarInfoService _carInfoService;
 

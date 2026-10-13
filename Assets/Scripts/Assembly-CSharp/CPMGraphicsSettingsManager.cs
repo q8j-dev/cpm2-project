@@ -20,6 +20,7 @@ using _Car_Parking.Scripts.PhotoMode;
 using _Car_Parking.Scripts.Providers;
 using _Car_Parking.Scripts.Steam.Perf;
 using _Car_Parking.Scripts.Steam.Traffic;
+using ShadowResolution = UnityEngine.Rendering.Universal.ShadowResolution;
 
 public class CPMGraphicsSettingsManager : MonoBehaviour
 {
@@ -65,8 +66,6 @@ public class CPMGraphicsSettingsManager : MonoBehaviour
 	public LayerMask RealtimeReflectionLayerMask;
 
 	private int _quality;
-
-	private int _displayMode;
 
 	private FullScreenMode _fullScreenMode;
 

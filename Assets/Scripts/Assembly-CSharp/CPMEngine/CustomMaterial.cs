@@ -5,30 +5,28 @@ namespace CPMEngine
 	public class CustomMaterial : MonoBehaviour
 	{
 		[SerializeField]
-		private Surface SurfaceType;
+		private Surface SurfaceType = default;
 
 		[SerializeField]
-		private Surface VertexRsurfaceType;
+		private Surface VertexRsurfaceType = default;
 
 		[SerializeField]
-		private Surface VertexGsurfaceType;
+		private Surface VertexGsurfaceType = default;
 
 		[SerializeField]
-		private Surface VertexBsurfaceType;
+		private Surface VertexBsurfaceType = default;
 
 		[SerializeField]
-		private Surface VertexAsurfaceType;
+		private Surface VertexAsurfaceType = default;
 
 		[SerializeField]
 		private bool LogActive = true;
 
-		private MeshCollider _meshCollider;
+		private Mesh _mesh = default;
 
-		private Mesh _mesh;
+		private Color[] _vertexColors = default;
 
-		private Color[] _vertexColors;
-
-		private int[] _triangles;
+		private int[] _triangles = default;
 
 		public Surface Surface => SurfaceType;
 

@@ -9,13 +9,13 @@ namespace _Car_Parking.Scripts.EventSystem
 	public class EventObjectPrefabSpawner : MonoBehaviour
 	{
 		[SerializeField]
-		private EventType EventType;
+		private EventType EventType = default;
 
 		[SerializeField]
-		private GameObject Prefab;
+		private GameObject Prefab = default;
 
 		[SerializeField]
-		private bool SkipSubscribe;
+		private bool SkipSubscribe = default;
 
 		private IEventService _eventService;
 

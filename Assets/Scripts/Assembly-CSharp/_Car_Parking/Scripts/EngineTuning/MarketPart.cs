@@ -11,26 +11,26 @@ namespace _Car_Parking.Scripts.EngineTuning
 
 		[SerializeField]
 		[Header("Sell properties")]
-		private string Name;
+		private string Name = default;
 
 		[TextArea]
 		public string Description;
 
 		[HideInInspector]
 		[SerializeField]
-		private long _partValA;
+		private long _partValA = default;
 
 		[SerializeField]
 		[HideInInspector]
-		private long _partValB;
+		private long _partValB = default;
 
 		[SerializeField]
 		[HideInInspector]
-		private long _partValC;
+		private long _partValC = default;
 
 		[HideInInspector]
 		[SerializeField]
-		private long _partValD;
+		private long _partValD = default;
 
 		public virtual string GetName => Name;
 

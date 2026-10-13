@@ -4,13 +4,10 @@ using UnityEngine;
 public class SpawnScaler : MonoBehaviour
 {
 	[SerializeField]
-	private float EndScale;
+	private float EndScale = default;
 
 	[SerializeField]
-	private float Duration;
-
-	[SerializeField]
-	private float Delay;
+	private float Duration = default;
 
 	private Tween _spawnTween;
 

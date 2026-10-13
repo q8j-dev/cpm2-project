@@ -8,13 +8,13 @@ using _Car_Parking.Scripts.EngineTuning;
 public class InventroyPopupElement : MonoBehaviour
 {
 	[SerializeField]
-	private Image PartImage;
+	private Image PartImage = default;
 
 	[SerializeField]
-	private Image PartRarityColor;
+	private Image PartRarityColor = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PartName;
+	private TextMeshProUGUI PartName = default;
 
 	private AllParts _allParts;
 

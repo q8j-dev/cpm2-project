@@ -27,31 +27,28 @@ public class LevelsMenuWindow : WindowScript, IBackableWindow
 	private const string PreviewsConfigPath = "LevelPreviewsConfig";
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private LevelLoader PrefabLevel;
+	private LevelLoader PrefabLevel = default;
 
 	[SerializeField]
-	private LevelCategoryItem PrefabCategory;
+	private LevelCategoryItem PrefabCategory = default;
 
 	[SerializeField]
-	private Transform LevelsParentTransform;
+	private Transform LevelsParentTransform = default;
 
 	[SerializeField]
-	private Transform CategoriesParentTransform;
+	private Transform CategoriesParentTransform = default;
 
 	[SerializeField]
-	private ContentSizeFitter ContentSizeFitter;
+	private ContentSizeFitter ContentSizeFitter = default;
 
 	[SerializeField]
-	private ScrollRect LevelssScrollRect;
+	private ScrollRect LevelssScrollRect = default;
 
 	[SerializeField]
-	private Button BackButton;
-
-	[SerializeField]
-	private UiScrollRectOcclusiion UiScrollRectOcclusiion;
+	private Button BackButton = default;
 
 	[SerializeField]
 	private int CellCountInOneRow = 1;
@@ -65,7 +62,7 @@ public class LevelsMenuWindow : WindowScript, IBackableWindow
 	private List<LevelCategoryItem> _cachedCategoryItems;
 
 	[SerializeField]
-	private Slider Slider;
+	private Slider Slider = default;
 
 	[Header("Colors")]
 	public Color SelectedColor;
@@ -85,8 +82,6 @@ public class LevelsMenuWindow : WindowScript, IBackableWindow
 	private int _currentCategoryIndex = -1;
 
 	private int _lastCategoryIndex;
-
-	private GameOverlayWindow _gameOverlayWindow;
 
 	private LevelScript _levelScript;
 

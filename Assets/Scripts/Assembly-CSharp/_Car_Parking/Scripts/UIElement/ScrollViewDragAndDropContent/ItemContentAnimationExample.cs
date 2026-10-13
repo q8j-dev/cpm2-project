@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent
 	public class ItemContentAnimationExample : ItemContentDraggableContent
 	{
 		[SerializeField]
-		private Image Image;
+		private Image Image = default;
 
 		public override void CopyContent(ItemContentDraggableContent content)
 		{

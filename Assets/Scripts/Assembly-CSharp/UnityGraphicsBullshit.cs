@@ -2,6 +2,7 @@ using System;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using ShadowResolution = UnityEngine.Rendering.Universal.ShadowResolution;
 
 public static class UnityGraphicsBullshit
 {

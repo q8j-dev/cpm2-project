@@ -19,24 +19,24 @@ public class LevelLoader : MonoBehaviour
 	public TextMeshProUGUI bestTimeLabel;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleLabel;
+	private TextMeshProUGUI TitleLabel = default;
 
 	[SerializeField]
-	private Image SelectedLine;
+	private Image SelectedLine = default;
 
 	[SerializeField]
-	private Image LevelNamePanel;
+	private Image LevelNamePanel = default;
 
 	[SerializeField]
-	private GameObject lockedPanel;
+	private GameObject lockedPanel = default;
 
 	public GameObject DoneMark;
 
 	[SerializeField]
-	private RawImage MainTexture;
+	private RawImage MainTexture = default;
 
 	[SerializeField]
-	private CanvasGroup CanvasGroup;
+	private CanvasGroup CanvasGroup = default;
 
 	private Button _button;
 
@@ -90,7 +90,7 @@ public class LevelLoader : MonoBehaviour
 			CanvasGroup.blocksRaycasts = true;
 			if (levelDataScript.ID % 10 == 0)
 			{
-				RateAppHelper.RateAppAsync();
+				_ = RateAppHelper.RateAppAsync();
 			}
 		}
 		bestTimeLabel.text = text;

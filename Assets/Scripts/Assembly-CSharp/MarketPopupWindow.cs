@@ -15,31 +15,28 @@ public class MarketPopupWindow : WindowScript
 	private PartItem _partItem;
 
 	[SerializeField]
-	private Image hintImage;
+	private TextMeshProUGUI detailNameText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI detailNameText;
+	private TextMeshProUGUI milliageText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI milliageText;
+	private TextMeshProUGUI massText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI massText;
+	private TextMeshProUGUI priceText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI priceText;
+	private TextMeshProUGUI descriptionText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI descriptionText;
+	private Button confirmButton = default;
 
 	[SerializeField]
-	private Button confirmButton;
+	private Button closeButton = default;
 
 	[SerializeField]
-	private Button closeButton;
-
-	[SerializeField]
-	private Button hiddenCloseButton;
+	private Button hiddenCloseButton = default;
 
 	private AllParts _allParts;
 
@@ -80,7 +77,7 @@ public class MarketPopupWindow : WindowScript
 	{
 		_onBuyConfirmed = onBuyConfirmed;
 		_partItem = _allParts.GetPart<PartItem>(partData);
-		ParseData();
+		_ = ParseData();
 	}
 
 	public void InitEngine(EngineItem engine, Action onBuyConfirmed)

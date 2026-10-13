@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.MenuUI.LocalizationUI
 	public class LocalizedDropdown : MonoBehaviour
 	{
 		[SerializeField]
-		private string[] LocalizationKeys;
+		private string[] LocalizationKeys = default;
 
 		public void Start()
 		{

@@ -10,10 +10,10 @@ using _Car_Parking.Scripts.SOAP_Registry;
 public class RacingCarChangeTyreWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Button BackButton;
+	private Button BackButton = default;
 
 	[SerializeField]
-	private TyreTypeUIElement[] TyreTypes;
+	private TyreTypeUIElement[] TyreTypes = default;
 
 	private VehicleEntityProvider _vehicleEntityProvider;
 
@@ -66,7 +66,7 @@ public class RacingCarChangeTyreWindow : WindowScript, IBackableWindow
 	public void ChangeTyre(TyreType tyreType)
 	{
 		_vehicleEntityProvider.CarEntity.FrontWheel.tyreType = tyreType;
-		WheelConstructor.SetWheelModel(V.Car, AxleType.Front, _vehicleEntityProvider.CarEntity.FrontWheel);
-		WheelConstructor.SetWheelModel(V.Car, AxleType.Rear, _vehicleEntityProvider.CarEntity.FrontWheel);
+		_ = WheelConstructor.SetWheelModel(V.Car, AxleType.Front, _vehicleEntityProvider.CarEntity.FrontWheel);
+		_ = WheelConstructor.SetWheelModel(V.Car, AxleType.Rear, _vehicleEntityProvider.CarEntity.FrontWheel);
 	}
 }

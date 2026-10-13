@@ -339,7 +339,7 @@ public class CircuitRacingUIControl : MonoBehaviour
 	{
 		if ((bool)_lapRaceLeaderboardUIPanel)
 		{
-			_lapRaceLeaderboardUIPanel.FinishInit(lapRaceCar);
+			_ = _lapRaceLeaderboardUIPanel.FinishInit(lapRaceCar);
 		}
 	}
 
@@ -541,13 +541,13 @@ public class CircuitRacingUIControl : MonoBehaviour
 	public void ShowCrashWithTimeMessage(float penaltyCrashSecs)
 	{
 		string format = new LocalizedString("CircuitPlayWindow.CrashPenaltyTime");
-		_managerUI.ShowNotificationWindow(string.Format(format, penaltyCrashSecs), 2f, NotificationType.Error);
+		_ = _managerUI.ShowNotificationWindow(string.Format(format, penaltyCrashSecs), 2f, NotificationType.Error);
 	}
 
 	public void ShowCrashWithDistanceMessage(float penaltyCrashDistance)
 	{
 		string format = new LocalizedString("CircuitPlayWindow.CrashPenaltyDistance");
-		_managerUI.ShowNotificationWindow(string.Format(format, penaltyCrashDistance), 2f, NotificationType.Error);
+		_ = _managerUI.ShowNotificationWindow(string.Format(format, penaltyCrashDistance), 2f, NotificationType.Error);
 	}
 
 	public void ResetTimer(bool isPlaySound = false)

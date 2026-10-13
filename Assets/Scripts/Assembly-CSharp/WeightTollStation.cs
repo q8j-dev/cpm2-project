@@ -20,7 +20,7 @@ public class WeightTollStation : MonoBehaviour
 	public ElectronicRoadSignScript display;
 
 	[SerializeField]
-	private List<GameObject> _objectsList;
+	private List<GameObject> _objectsList = default;
 
 	private int _totalMass;
 

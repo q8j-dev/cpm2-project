@@ -246,7 +246,7 @@ namespace Gley.TrafficSystem.Internal
 
 		private PlayerWaypointsManager _playerWaypointsManager;
 
-		private DebugManager _debugManager;
+		private DebugManager _debugManager = default;
 
 		private IBehaviourImplementation _behaviourImplementation;
 

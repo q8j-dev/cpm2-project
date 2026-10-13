@@ -46,7 +46,7 @@ namespace CPM.Scripts.VinylDrawer
 
 		public static long Pack(bool isText, bool italic, bool bold, bool flipX, int fontIndex, int stickerIndex, int xAngle, int yAngle)
 		{
-			return (long)(0uL | (ulong)(isText ? 1 : 0) | (ulong)(italic ? 2 : 0) | (ulong)(bold ? 4 : 0) | (ulong)(flipX ? 8 : 0) | (((ulong)fontIndex & 0x1FuL) << 4) | (((ulong)stickerIndex & 0x1FFuL) << 9) | (((ulong)xAngle & 0x1FFuL) << 18) | (((ulong)yAngle & 0x1FFuL) << 27));
+			return (long)(0uL | (isText ? 1uL : 0uL) | (italic ? 2uL : 0uL) | (bold ? 4uL : 0uL) | (flipX ? 8uL : 0uL) |(((ulong)fontIndex & 0x1FuL) << 4) | (((ulong)stickerIndex & 0x1FFuL) << 9) | (((ulong)xAngle & 0x1FFuL) << 18) | (((ulong)yAngle & 0x1FFuL) << 27));
 		}
 
 		public static void Unpack(long bitmask, out bool isText, out bool italic, out bool bold, out bool flipX, out int fontIndex, out int stickerIndex, out int xAngle, out int yAngle)

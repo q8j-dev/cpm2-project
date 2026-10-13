@@ -2,8 +2,6 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 {
 	public class MainScope : VisualTuningScope
 	{
-		private int _currentIndex;
-
 		private int currentRowSelected;
 
 		public int MaxRowIndex { get; set; }

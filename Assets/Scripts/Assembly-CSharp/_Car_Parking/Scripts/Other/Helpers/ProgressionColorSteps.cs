@@ -9,9 +9,9 @@ namespace _Car_Parking.Scripts.Other.Helpers
 		[Serializable]
 		private class ColorStepData
 		{
-			public float Progression;
+			public float Progression = default;
 
-			public Color Color;
+			public Color Color = default;
 		}
 
 		public Image Image;
@@ -19,7 +19,7 @@ namespace _Car_Parking.Scripts.Other.Helpers
 		public SpriteRenderer SpriteRenderer;
 
 		[SerializeField]
-		private ColorStepData[] ColorStepDatas;
+		private ColorStepData[] ColorStepDatas = default;
 
 		private float _progression;
 

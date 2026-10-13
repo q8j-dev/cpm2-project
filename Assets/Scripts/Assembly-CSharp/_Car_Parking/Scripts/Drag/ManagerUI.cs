@@ -1444,7 +1444,7 @@ namespace _Car_Parking.Scripts.Drag
 			else
 			{
 				GameObject target = _prefabFactory.Instantiate(result);
-				asyncOperationHandle.BindTo(target);
+				_ = asyncOperationHandle.BindTo(target);
 				UnityEngine.Object.DontDestroyOnLoad(target);
 			}
 		}

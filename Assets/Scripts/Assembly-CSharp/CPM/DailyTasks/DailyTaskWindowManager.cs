@@ -129,7 +129,7 @@ namespace CPM.DailyTasks
 			if (num == 3)
 			{
 				AnaliticsGoogleOwn.OnAllTaskDone();
-				RateAppHelper.RateAppAsync();
+				_ = RateAppHelper.RateAppAsync();
 			}
 			base.gameObject.SetActive(value: true);
 		}

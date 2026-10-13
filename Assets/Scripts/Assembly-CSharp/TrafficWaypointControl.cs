@@ -29,9 +29,9 @@ public class TrafficWaypointControl : MonoBehaviour
 
 	public Rigidbody rb;
 
-	private bool ReCreateBody;
+	private bool ReCreateBody = default;
 
-	private AudioSource audioSource;
+	private AudioSource audioSource = default;
 
 	public TraffiCarDataBody trafficCarDataBody;
 
@@ -40,8 +40,6 @@ public class TrafficWaypointControl : MonoBehaviour
 	public bool HornPlayed;
 
 	public TriggerScriptTrafficCarWaypoint tstcw;
-
-	private IDisposable _resetHornPlayedDisposable;
 
 	private IDisposable _resetCarDisposable;
 

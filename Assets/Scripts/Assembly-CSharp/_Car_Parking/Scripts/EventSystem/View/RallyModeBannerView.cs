@@ -9,7 +9,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class RallyModeBannerView : NotEventViewBase
 	{
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		protected override void Start()
 		{

@@ -41,8 +41,6 @@ public class DashBoard : MonoBehaviour
 
 	public float tachoMeterNeedleAngle;
 
-	private float actualtachoMeterNeedleAngle;
-
 	public float RPMFactor = 3.5714f;
 
 	public Texture2D speedoMeter;
@@ -64,8 +62,6 @@ public class DashBoard : MonoBehaviour
 
 	public float speedoMeterNeedleAngle;
 
-	private float actualspeedoMeterNeedleAngle;
-
 	public float speedoMeterFactor;
 
 	public Vector2 torqueMeterPosition;
@@ -79,8 +75,6 @@ public class DashBoard : MonoBehaviour
 	public Vector2 torqueMeterNeedleSize;
 
 	public float torqueMeterNeedleAngle;
-
-	private float actualtorqueMeterNeedleAngle;
 
 	public float torqueMeterFactor;
 
@@ -97,8 +91,6 @@ public class DashBoard : MonoBehaviour
 	public Docking digitalSpeedoDocking;
 
 	public GUIStyle gearMonitorStyle;
-
-	private GUIStyle gearMonitorStyle2;
 
 	public Vector2 gearMonitorPosition;
 
@@ -141,45 +133,7 @@ public class DashBoard : MonoBehaviour
 	[HideInInspector]
 	public bool showGUIDashboard = true;
 
-	private Powertrain _powertrain;
-
-	private VehicleData _vehicleData;
-
-	private MultiPlayerPosControl mppc;
-
-	private Rect tachoMeterRect;
-
-	private Rect tachoMeterNeedleRect;
-
-	private Rect speedoMeterRect;
-
-	private Rect speedoMeterNeedleRect;
-
-	private Rect torqueMeterRect;
-
-	private Rect torqueMeterNeedleRect;
-
-	private Rect instrumentalPanelRect;
-
-	private Rect gearRect;
-
-	private Rect speedoRect;
-
-	private Vector2 pivot;
-
-	private Vector2 piv_t;
-
-	private Vector2 piv_s;
-
-	private float speedoMeterVelo;
-
-	private float torqueMeterVelo;
-
-	private float digitalSpeedoVelo;
-
 	private float factor;
-
-	private float absVelo;
 
 	private int sign = 1;
 
@@ -192,14 +146,6 @@ public class DashBoard : MonoBehaviour
 	public float kf;
 
 	public float kf2;
-
-	private float dampSpeedAnge;
-
-	private float dampTachoAnge;
-
-	private float yVelocity;
-
-	private float yVelocity2;
 
 	public float tachoDiff;
 

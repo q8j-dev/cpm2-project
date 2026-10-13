@@ -9,15 +9,15 @@ namespace _Car_Parking.Scripts.GameInput.Rebinding
 		[Serializable]
 		private sealed class Entry
 		{
-			public string action;
+			public string action = default;
 
-			public string id;
+			public string id = default;
 
-			public string path;
+			public string path = default;
 
-			public string interactions;
+			public string interactions = default;
 
-			public string processors;
+			public string processors = default;
 		}
 
 		[Serializable]

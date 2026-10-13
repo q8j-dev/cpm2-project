@@ -17,31 +17,31 @@ namespace _Car_Parking.Scripts.Drag
 	public class EventMapPopupPanel : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI EventButtonText;
+		private TextMeshProUGUI EventButtonText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ChallengeText;
+		private TextMeshProUGUI ChallengeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ChallengeDescriptionText;
+		private TextMeshProUGUI ChallengeDescriptionText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI EventTimeExpiredText;
+		private TextMeshProUGUI EventTimeExpiredText = default;
 
 		[SerializeField]
-		private GameObject[] ButtonBackgrounds;
+		private GameObject[] ButtonBackgrounds = default;
 
 		[SerializeField]
-		private GameObject[] ButtonOutlines;
+		private GameObject[] ButtonOutlines = default;
 
 		[SerializeField]
-		private GameObject CanClaimIcon;
+		private GameObject CanClaimIcon = default;
 
 		[SerializeField]
-		private GameObject EventDoneIcon;
+		private GameObject EventDoneIcon = default;
 
 		[SerializeField]
-		private Button EventButton;
+		private Button EventButton = default;
 
 		private TimeUnitSuffixes _timeUnitSuffixes;
 

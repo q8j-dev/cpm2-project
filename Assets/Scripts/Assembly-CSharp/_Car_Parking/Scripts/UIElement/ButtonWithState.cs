@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ButtonWithState : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater StateUpdater;
+		private GameObjectStateUpdater StateUpdater = default;
 
 		public bool Interactable
 		{

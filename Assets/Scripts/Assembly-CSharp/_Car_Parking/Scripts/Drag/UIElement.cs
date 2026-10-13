@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Drag
 	{
 		[Header("Main Image")]
 		[SerializeField]
-		internal Image detailImage;
+		internal Image detailImage = default;
 
 		public virtual void Init(PartData part, IClickable clickable)
 		{

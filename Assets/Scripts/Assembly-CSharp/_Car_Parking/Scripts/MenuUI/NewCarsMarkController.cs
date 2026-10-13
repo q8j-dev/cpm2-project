@@ -69,7 +69,7 @@ namespace _Car_Parking.Scripts.MenuUI
 			if (IsCarNew(carID))
 			{
 				_cancellationTokenSourceTrySetOldCar = new CancellationTokenSource();
-				SetOldCarAsync(carID, _cancellationTokenSourceTrySetOldCar.Token);
+				_ = SetOldCarAsync(carID, _cancellationTokenSourceTrySetOldCar.Token);
 			}
 		}
 

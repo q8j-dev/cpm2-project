@@ -6,19 +6,19 @@ namespace _Car_Parking.Scripts
 	public class GameObjectStateUpdaterFader : GameObjectStateUpdater
 	{
 		[SerializeField]
-		private Fader Fader;
+		private Fader Fader = default;
 
 		[SerializeField]
-		private float AlphaOn;
+		private float AlphaOn = default;
 
 		[SerializeField]
-		private float TimeOn;
+		private float TimeOn = default;
 
 		[SerializeField]
-		private float AlphaOff;
+		private float AlphaOff = default;
 
 		[SerializeField]
-		private float TimeOff;
+		private float TimeOff = default;
 
 		public override bool IsOn
 		{

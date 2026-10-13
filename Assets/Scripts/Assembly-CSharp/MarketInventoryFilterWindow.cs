@@ -6,19 +6,19 @@ using _Car_Parking.Scripts.Drag;
 public class MarketInventoryFilterWindow : WindowScript
 {
 	[SerializeField]
-	private Toggle AllToggle;
+	private Toggle AllToggle = default;
 
 	[SerializeField]
-	private Toggle CompatibleToggle;
+	private Toggle CompatibleToggle = default;
 
 	[SerializeField]
-	private Toggle NotCompatibleToggle;
+	private Toggle NotCompatibleToggle = default;
 
 	[SerializeField]
-	private Button ApplyButton;
+	private Button ApplyButton = default;
 
 	[SerializeField]
-	private Button BackBackgroundButton;
+	private Button BackBackgroundButton = default;
 
 	private WindowScript _inventoryWindow;
 

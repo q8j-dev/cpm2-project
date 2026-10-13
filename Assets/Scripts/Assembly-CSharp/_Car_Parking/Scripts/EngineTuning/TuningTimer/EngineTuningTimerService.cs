@@ -98,7 +98,7 @@ namespace _Car_Parking.Scripts.EngineTuning.TuningTimer
 			}
 			if (CheckEngineBlocked(engineId))
 			{
-				_managerUI.ShowNotificationWindow(new LocalizedString("EngineTuningTimerService.Thisengineisintheservicenow.Wait."), 3f);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("EngineTuningTimerService.Thisengineisintheservicenow.Wait."), 3f);
 				return;
 			}
 			foreach (PartData partData in partsToSet)

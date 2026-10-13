@@ -9,16 +9,16 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 	public class SummaryOfEventsNavButton : Button
 	{
 		[SerializeField]
-		private HorizontalScrollSnap ScrollSnap;
+		private HorizontalScrollSnap ScrollSnap = default;
 
 		[SerializeField]
-		private RectTransform Content;
+		private RectTransform Content = default;
 
 		[SerializeField]
-		private RectTransform Viewport;
+		private RectTransform Viewport = default;
 
 		[SerializeField]
-		private Selectable UpTarget;
+		private Selectable UpTarget = default;
 
 		protected override void Awake()
 		{

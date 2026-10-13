@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.EditableHUD
 	public class EditableHUDCanvasGameplay : EditableHUDCanvasBase
 	{
 		[SerializeField]
-		private ElementParentInCanvasGameplay Prefab;
+		private ElementParentInCanvasGameplay Prefab = default;
 
 		public override void AddElement(EditableHUDElement element, FakeElement fakeElementPrefab, EditableHUDConfig config)
 		{

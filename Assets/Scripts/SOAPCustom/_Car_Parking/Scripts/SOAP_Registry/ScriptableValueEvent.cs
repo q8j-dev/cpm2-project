@@ -18,9 +18,7 @@ namespace _Car_Parking.Scripts.SOAP_Registry
 		protected bool assignAfterInvoke;
 
 		[SerializeField]
-		private T initialValue;
-
-		private object _onRaised;
+		private T initialValue = default;
 
 		public T StoredValue { get; private set; }
 

@@ -67,8 +67,6 @@ namespace RootMotion
 		[Range(0f, 1f)]
 		public float blockedOffset = 0.5f;
 
-		private Vector3 targetDistance;
-
 		private Vector3 position;
 
 		private Quaternion rotation = Quaternion.identity;

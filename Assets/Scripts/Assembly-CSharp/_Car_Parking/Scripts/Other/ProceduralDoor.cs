@@ -11,7 +11,7 @@ namespace _Car_Parking.Scripts.Other
 	public abstract class ProceduralDoor : MonoBehaviour
 	{
 		[SerializeField]
-		private bool IsGarageDoor;
+		private bool IsGarageDoor = default;
 
 		public Collider Front;
 

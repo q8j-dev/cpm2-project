@@ -9,8 +9,6 @@ public class loadOffroadParts : MonoBehaviour
 
 	public List<GameObject> allOffroadParts;
 
-	private Coroutine coroutine;
-
 	public GameObject Parent;
 
 	public bool stop;

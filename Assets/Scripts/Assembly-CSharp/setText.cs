@@ -23,19 +23,15 @@ public class setText : MonoBehaviour
 
 	private string mass;
 
-	private string Cd;
+	private string Cd = default;
 
 	private string maxRpm;
 
-	private string DrivingWheel;
+	private string DrivingWheel = default;
 
 	private string gears;
 
-	private string FrontGrip;
-
-	private string RearGrip;
-
-	private string shiftTime;
+	private string shiftTime = default;
 
 	public ObscuredFloat hpInput = 0f;
 
@@ -63,21 +59,17 @@ public class setText : MonoBehaviour
 
 	public ObscuredFloat price = 0f;
 
-	private float engineMass;
-
 	private float brakeInput;
 
-	private string brake;
+	private string brake = default;
 
 	private string TDR;
 
 	private Powertrain _powertrain;
 
-	private Rigidbody rigidbody;
+	private new Rigidbody rigidbody;
 
 	private Axles axles;
-
-	private CoreGameManager MainC;
 
 	private PlayerDatas playerDatas;
 

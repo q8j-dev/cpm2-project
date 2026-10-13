@@ -25,10 +25,10 @@ namespace _Car_Parking.Scripts
 		}
 
 		[SerializeField]
-		private TrimType[] RequiredInstall;
+		private TrimType[] RequiredInstall = default;
 
 		[SerializeField]
-		private TrimData[] TrimDatas;
+		private TrimData[] TrimDatas = default;
 
 		[Preserve]
 		public BodyKitsTrimConfigs()

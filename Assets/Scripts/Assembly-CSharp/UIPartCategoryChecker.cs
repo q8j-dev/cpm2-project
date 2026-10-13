@@ -7,34 +7,34 @@ using _Car_Parking.Scripts.EngineTuning;
 public class UIPartCategoryChecker : MonoBehaviour
 {
 	[SerializeField]
-	private RawImage StatusRawImage;
+	private RawImage StatusRawImage = default;
 
 	[SerializeField]
-	private Texture2D WarningTexture;
+	private Texture2D WarningTexture = default;
 
 	[SerializeField]
-	private Texture2D ErrorTexture;
+	private Texture2D ErrorTexture = default;
 
 	[SerializeField]
-	private Image StatusImage;
+	private Image StatusImage = default;
 
 	[SerializeField]
-	private Color WarningColor;
+	private Color WarningColor = default;
 
 	[SerializeField]
-	private Color ErrorColor;
+	private Color ErrorColor = default;
 
 	[SerializeField]
-	private Color NormalColor;
+	private Color NormalColor = default;
 
 	[SerializeField]
-	private CarTuningUISlider CarTuningUISlider;
+	private CarTuningUISlider CarTuningUISlider = default;
 
 	[SerializeField]
-	private bool DontUseSlider;
+	private bool DontUseSlider = default;
 
 	[SerializeField]
-	private bool DontChangeColor;
+	private bool DontChangeColor = default;
 
 	public Button UIPartCategoryButton;
 

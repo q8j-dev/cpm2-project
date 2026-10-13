@@ -21,7 +21,7 @@ public class CameraSetupMove : MonoBehaviour
 	private RacingCameraController _racingCameraController;
 
 	[SerializeField]
-	private RacingCarControllerUI racingCarControllerUI;
+	private RacingCarControllerUI racingCarControllerUI = default;
 
 	[SerializeField]
 	private GameObject trackedObject;

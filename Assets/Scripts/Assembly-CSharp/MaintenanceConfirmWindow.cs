@@ -23,85 +23,85 @@ public class MaintenanceConfirmWindow : MonoBehaviour
 	private const int DelayStep = 10;
 
 	[SerializeField]
-	private MaintenanceUIWindow MaintenanceUIWindow;
+	private MaintenanceUIWindow MaintenanceUIWindow = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private Button CancelButton;
+	private Button CancelButton = default;
 
 	[SerializeField]
-	private Button SetDefaultButton;
+	private Button SetDefaultButton = default;
 
 	[SerializeField]
-	private Button ConfirmButton;
+	private Button ConfirmButton = default;
 
 	[SerializeField]
-	private Button AddButton;
+	private Button AddButton = default;
 
 	[SerializeField]
-	private Sprite TireSprite;
+	private Sprite TireSprite = default;
 
 	[SerializeField]
-	private Sprite TirePressure;
+	private Sprite TirePressure = default;
 
 	[SerializeField]
-	private Sprite OilSprite;
+	private Sprite OilSprite = default;
 
 	[SerializeField]
-	private Sprite FuelSprite;
+	private Sprite FuelSprite = default;
 
 	[SerializeField]
-	private Sprite CarWashSprite;
+	private Sprite CarWashSprite = default;
 
 	[SerializeField]
 	[Header("ConfirmPanel")]
-	private GameObject ConfirmPanel;
+	private GameObject ConfirmPanel = default;
 
 	[SerializeField]
-	private Image ConfirmDetailImage;
+	private Image ConfirmDetailImage = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ConfirmDetailText;
+	private TextMeshProUGUI ConfirmDetailText = default;
 
 	[SerializeField]
-	private Image ProgressImage;
+	private Image ProgressImage = default;
 
 	[SerializeField]
 	[Header("ChangingTirePanel")]
-	private GameObject ChangingTirePanel;
+	private GameObject ChangingTirePanel = default;
 
 	[SerializeField]
-	private Toggle FrontWheelToggle;
+	private Toggle FrontWheelToggle = default;
 
 	[SerializeField]
-	private Toggle RearWheelToggle;
+	private Toggle RearWheelToggle = default;
 
 	[SerializeField]
 	[Header("TirePressurePanel")]
-	private GameObject TirePressurePanel;
+	private GameObject TirePressurePanel = default;
 
 	[SerializeField]
-	private SliderValueHandler FrontWheelSlider;
+	private SliderValueHandler FrontWheelSlider = default;
 
 	[SerializeField]
-	private SliderValueHandler RearWheelSlider;
+	private SliderValueHandler RearWheelSlider = default;
 
 	[Header("OilPanel")]
 	[SerializeField]
-	private GameObject OilPanel;
+	private GameObject OilPanel = default;
 
 	[Header("CarWashPanel")]
 	[SerializeField]
-	private GameObject CarWashPanel;
+	private GameObject CarWashPanel = default;
 
 	[SerializeField]
 	[Header("FuelPanel")]
-	private GameObject FuelPanel;
+	private GameObject FuelPanel = default;
 
 	[SerializeField]
-	private FuelTankGadget FuelTankGadget;
+	private FuelTankGadget FuelTankGadget = default;
 
 	private VehicleEntityProvider _vehicleEntityProvider;
 

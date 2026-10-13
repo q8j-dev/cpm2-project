@@ -13,19 +13,19 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class CarSelectorPanel : MonoBehaviour
 	{
 		[SerializeField]
-		private RawImage CarImage;
+		private RawImage CarImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CarClassText;
+		private TextMeshProUGUI CarClassText = default;
 
 		[SerializeField]
-		private Button SelectCarButton;
+		private Button SelectCarButton = default;
 
 		[SerializeField]
-		private Image GroupImage;
+		private Image GroupImage = default;
 
 		[SerializeField]
-		private Sprite[] GroupSprites;
+		private Sprite[] GroupSprites = default;
 
 		private ICarInfoService _carInfoService;
 

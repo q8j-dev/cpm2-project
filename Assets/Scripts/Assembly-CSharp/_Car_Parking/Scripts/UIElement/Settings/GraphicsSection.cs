@@ -26,189 +26,180 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 
 		[Header("Quality toggles")]
 		[SerializeField]
-		private Toggle VeryLowSettingsToggle;
+		private Toggle VeryLowSettingsToggle = default;
 
 		[SerializeField]
-		private Toggle LowSettingsToggle;
+		private Toggle LowSettingsToggle = default;
 
 		[SerializeField]
-		private Toggle NormalSettingsToggle;
+		private Toggle NormalSettingsToggle = default;
 
 		[SerializeField]
-		private Toggle HighSettingsToggle;
+		private Toggle HighSettingsToggle = default;
 
 		[SerializeField]
 		[Header("Display mode toggles")]
-		private Toggle WindowedToggle;
+		private Toggle WindowedToggle = default;
 
 		[SerializeField]
-		private Toggle FullscreenWindowToggle;
+		private Toggle FullscreenWindowToggle = default;
 
 		[SerializeField]
-		private Toggle FullscreenToggle;
+		private Toggle FullscreenToggle = default;
 
 		[Header("Shadow toggles")]
 		[SerializeField]
-		private Toggle ShadowOffToggle;
+		private Toggle ShadowOffToggle = default;
 
 		[SerializeField]
-		private Toggle LowShadowToggle;
+		private Toggle LowShadowToggle = default;
 
 		[SerializeField]
-		private Toggle NormalShadowToggle;
+		private Toggle NormalShadowToggle = default;
 
 		[SerializeField]
-		private Toggle HighShadowToggle;
+		private Toggle HighShadowToggle = default;
 
 		[SerializeField]
 		[Header("Fog toggles")]
-		private Toggle FogOffToggle;
+		private Toggle FogOffToggle = default;
 
 		[SerializeField]
-		private Toggle FogOnToggle;
+		private Toggle FogOnToggle = default;
 
 		[Header("Shader toggles")]
 		[SerializeField]
-		private Toggle ShadersLowToggle;
+		private Toggle ShadersLowToggle = default;
 
 		[SerializeField]
-		private Toggle ShadersHighToggle;
+		private Toggle ShadersHighToggle = default;
 
 		[SerializeField]
-		private Toggle ShadersUltraToggle;
+		private Toggle ShadersUltraToggle = default;
 
 		[Header("Additional Detail toggles")]
 		[SerializeField]
-		private Toggle DetailsLowToggle;
+		private Toggle DetailsLowToggle = default;
 
 		[SerializeField]
-		private Toggle DetailMidToggle;
+		private Toggle DetailMidToggle = default;
 
 		[SerializeField]
-		private Toggle DetailHighToggle;
+		private Toggle DetailHighToggle = default;
 
 		[SerializeField]
 		[Header("Decal toggles")]
-		private Toggle DecalsOnToggle;
+		private Toggle DecalsOnToggle = default;
 
 		[SerializeField]
-		private Toggle DecalsOffToggle;
+		private Toggle DecalsOffToggle = default;
 
 		[SerializeField]
 		[Tooltip("Визуальная деформация шины в пятне контакта. Пресет Ultra включает её сам, остальные выключают, но переключить можно на любом.")]
 		[Header("Tyre deformation toggles")]
-		private Toggle TyreDeformationOnToggle;
+		private Toggle TyreDeformationOnToggle = default;
 
 		[SerializeField]
-		private Toggle TyreDeformationOffToggle;
+		private Toggle TyreDeformationOffToggle = default;
 
 		[SerializeField]
 		[Header("Rain effects toggles")]
 		[Tooltip("Off — только лужи и мокрые поверхности; Minimal — рипплы, всплески от колёс, конус капель; All — плюс капли на кузове/стекле, дворники и капли на экране.")]
-		private Toggle RainEffectsOffToggle;
+		private Toggle RainEffectsOffToggle = default;
 
 		[SerializeField]
-		private Toggle RainEffectsMinimalToggle;
+		private Toggle RainEffectsMinimalToggle = default;
 
 		[SerializeField]
-		private Toggle RainEffectsAllToggle;
+		private Toggle RainEffectsAllToggle = default;
 
 		[Header("Battery save toggles")]
 		[SerializeField]
-		private Toggle BatterySavingOnToggle;
+		private Toggle BatterySavingOnToggle = default;
 
 		[SerializeField]
-		private Toggle BatterySavingOffToggle;
+		private Toggle BatterySavingOffToggle = default;
 
 		[SerializeField]
 		[Header("Resolution toggles")]
-		private Toggle[] ResolutionToggles;
+		private Toggle[] ResolutionToggles = default;
 
 		[Header("Resolution texts")]
 		[SerializeField]
-		private TextMeshProUGUI[] ResolutionTexts;
+		private TextMeshProUGUI[] ResolutionTexts = default;
 
 		[Header("Resolution")]
 		[SerializeField]
-		private SliderValueHandler ResolutionSlider;
+		private SliderValueHandler ResolutionSlider = default;
 
 		[Header("Choose display")]
 		[SerializeField]
-		private TMP_Dropdown DisplayDropdown;
+		private TMP_Dropdown DisplayDropdown = default;
 
 		[SerializeField]
-		private GameObject DisplayDropdownObject;
+		private GameObject DisplayDropdownObject = default;
 
 		[SerializeField]
 		[Header("Distance sliders")]
-		private SliderValueHandler RenderDistanceSlider;
+		private SliderValueHandler RenderDistanceSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler PropsDistanceSlider;
+		private SliderValueHandler PropsDistanceSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler CarDetailDistanceSlider;
+		private SliderValueHandler CarDetailDistanceSlider = default;
 
 		[Header("Framerate")]
 		[SerializeField]
-		private SliderValueHandler FrameRate;
+		private SliderValueHandler FrameRate = default;
 
 		[SerializeField]
 		[Tooltip("Строка слайдера кадров целиком: гаснет, пока включён VSync.")]
-		private CanvasGroup FrameRateCanvasGroup;
+		private CanvasGroup FrameRateCanvasGroup = default;
 
 		[Header("VSync toggles")]
 		[SerializeField]
 		[Tooltip("При включённом VSync кадры синхронизируются с развёрткой монитора, а слайдер Frame rate ни на что не влияет.")]
-		private Toggle VSyncOnToggle;
+		private Toggle VSyncOnToggle = default;
 
 		[SerializeField]
-		private Toggle VSyncOffToggle;
+		private Toggle VSyncOffToggle = default;
 
 		[Header("Canvas groups")]
 		[SerializeField]
-		private CanvasGroup FarClippingCanvasGroup;
+		private CanvasGroup FarClippingCanvasGroup = default;
 
 		[SerializeField]
-		private CanvasGroup ShortClippingCanvasGroup;
+		private CanvasGroup ShortClippingCanvasGroup = default;
 
 		[SerializeField]
-		private CanvasGroup CarDetailCanvasGroup;
+		private CanvasGroup CarDetailCanvasGroup = default;
 
 		[SerializeField]
-		private CanvasGroup DisplayModeCanvasGroup;
+		private CanvasGroup DisplayModeCanvasGroup = default;
 
 		[SerializeField]
-		private CanvasGroup ResolutionCanvasGroup;
-
-		[SerializeField]
-		private CanvasGroup ResolutionNumbersCanvasGroup;
+		private CanvasGroup ResolutionNumbersCanvasGroup = default;
 
 		[Header("Real-time Reflection")]
 		[SerializeField]
-		private Toggle RealtimeReflectionOnToggle;
+		private Toggle RealtimeReflectionOnToggle = default;
 
 		[SerializeField]
-		private Toggle RealtimeReflectionOffToggle;
+		private Toggle RealtimeReflectionOffToggle = default;
 
 		[SerializeField]
 		[Header("Static Reflection")]
-		private Toggle StaticReflectionOnToggle;
+		private Toggle StaticReflectionOnToggle = default;
 
 		[SerializeField]
-		private Toggle StaticReflectionOffToggle;
+		private Toggle StaticReflectionOffToggle = default;
 
 		private float _renderDistanceStartValue;
 
 		private float _propsRenderDistanceStartValue;
 
 		private float _carRenderDistanceStartValue;
-
-		private int _qualityId;
-
-		private float _screenWidth;
-
-		private float _screenHeight;
 
 		private Camera _camera;
 

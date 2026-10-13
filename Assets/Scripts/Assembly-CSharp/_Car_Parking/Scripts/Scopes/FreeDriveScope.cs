@@ -39,136 +39,136 @@ namespace _Car_Parking.Scripts.Scopes
 	public class FreeDriveScope : RootSceneScope
 	{
 		[SerializeField]
-		private MapIconsDataSo _mapIconsDataSo;
+		private MapIconsDataSo _mapIconsDataSo = default;
 
 		[SerializeField]
-		private MapIconPositionsDataSo _mapIconPositionsDataSo;
+		private MapIconPositionsDataSo _mapIconPositionsDataSo = default;
 
 		[SerializeField]
-		private TimeAttackDataSO _timeAttackDataSo;
+		private TimeAttackDataSO _timeAttackDataSo = default;
 
 		[SerializeField]
-		private NamesScriptables _namesScriptables;
+		private NamesScriptables _namesScriptables = default;
 
 		[SerializeField]
-		private MapIconsStarter _mapIconsStarter;
+		private MapIconsStarter _mapIconsStarter = default;
 
 		[SerializeField]
-		private WwiseFreeContainer _wwiseFreeContainer;
+		private WwiseFreeContainer _wwiseFreeContainer = default;
 
 		[SerializeField]
-		private WindshieldBrakeVfx _windshieldBrakeVfx;
+		private WindshieldBrakeVfx _windshieldBrakeVfx = default;
 
 		[SerializeField]
-		private RpcRrService _rpcRrService;
+		private RpcRrService _rpcRrService = default;
 
 		[SerializeField]
-		private AnimationShop AnimationShop;
+		private AnimationShop AnimationShop = default;
 
 		[SerializeField]
-		private FreeDriveDB FreeDriveDB;
+		private FreeDriveDB FreeDriveDB = default;
 
 		[SerializeField]
-		private GarageController GarageController;
+		private GarageController GarageController = default;
 
 		[SerializeField]
-		private CameraManager CameraManager;
+		private CameraManager CameraManager = default;
 
 		[SerializeField]
-		private GPSNavigationCrossView GPSNavigationCrossView;
+		private GPSNavigationCrossView GPSNavigationCrossView = default;
 
 		[SerializeField]
-		private CoreGameManager CoreGameManager;
+		private CoreGameManager CoreGameManager = default;
 
 		[SerializeField]
-		private FreeDriveControl FreeDriveControl;
+		private FreeDriveControl FreeDriveControl = default;
 
 		[SerializeField]
-		private FreeDriveTraffic FreeDriveTraffic;
+		private FreeDriveTraffic FreeDriveTraffic = default;
 
 		[SerializeField]
-		private MapControl MapControl;
+		private MapControl MapControl = default;
 
 		[SerializeField]
-		private ChatControl ChatControl;
+		private ChatControl ChatControl = default;
 
 		[SerializeField]
-		private SkyboxBlender SkyboxBlender;
+		private SkyboxBlender SkyboxBlender = default;
 
 		[SerializeField]
-		private CarCamerasController CarCamerasController;
+		private CarCamerasController CarCamerasController = default;
 
 		[SerializeField]
-		private CarCameras CarCameras;
+		private CarCameras CarCameras = default;
 
 		[SerializeField]
-		private MultiPlayer MultiPlayer;
+		private MultiPlayer MultiPlayer = default;
 
 		[SerializeField]
-		private FreeCameraController FreeCameraController;
+		private FreeCameraController FreeCameraController = default;
 
 		[SerializeField]
-		private SceneControl SceneControl;
+		private SceneControl SceneControl = default;
 
 		[SerializeField]
-		private LevelScript LevelScript;
+		private LevelScript LevelScript = default;
 
 		[SerializeField]
-		private Camera MainCamera;
+		private Camera MainCamera = default;
 
 		[SerializeField]
-		private ObiSolverProvider ObiSolverProvider;
+		private ObiSolverProvider ObiSolverProvider = default;
 
 		[SerializeField]
-		private TriggerCore TriggerCore;
+		private TriggerCore TriggerCore = default;
 
 		[SerializeField]
-		private Sort2 Sort2;
+		private Sort2 Sort2 = default;
 
 		[SerializeField]
-		private MapCamera MapCamera;
+		private MapCamera MapCamera = default;
 
 		[SerializeField]
-		private MoveElements MoveElements;
+		private MoveElements MoveElements = default;
 
 		[SerializeField]
-		private ParkingMenuUI ParkingMenuUI;
+		private ParkingMenuUI ParkingMenuUI = default;
 
 		[SerializeField]
-		private HudColorChanger HudColorChanger;
+		private HudColorChanger HudColorChanger = default;
 
 		[SerializeField]
-		private PhoneController PhoneController;
+		private PhoneController PhoneController = default;
 
 		[SerializeField]
-		private SceneCollidersContainer SceneCollidersContainer;
+		private SceneCollidersContainer SceneCollidersContainer = default;
 
 		[SerializeField]
-		private CollectiblePoolContainer CollectiblePoolContainer;
+		private CollectiblePoolContainer CollectiblePoolContainer = default;
 
 		[SerializeField]
-		private SpawnPointsContainer SpawnPointsContainer;
+		private SpawnPointsContainer SpawnPointsContainer = default;
 
 		[SerializeField]
-		private UGUISteeringWheel UGUISteeringWheel;
+		private UGUISteeringWheel UGUISteeringWheel = default;
 
 		[SerializeField]
-		private TimeBannersManager TimeBannersManager;
+		private TimeBannersManager TimeBannersManager = default;
 
 		[SerializeField]
-		private MenuLevelParent MenuLevelParent;
+		private MenuLevelParent MenuLevelParent = default;
 
 		[SerializeField]
-		private QuickCarSettings QuickCarSettings;
+		private QuickCarSettings QuickCarSettings = default;
 
 		[SerializeField]
-		private ManagerUI ManagerUi;
+		private ManagerUI ManagerUi = default;
 
 		[SerializeField]
-		private UIReferencesMediator UIReferencesMediator;
+		private UIReferencesMediator UIReferencesMediator = default;
 
 		[SerializeField]
-		private ParkTronicControll ParkTronicControll;
+		private ParkTronicControll ParkTronicControll = default;
 
 		protected override void Awake()
 		{

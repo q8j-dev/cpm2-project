@@ -16,8 +16,6 @@ public class waterAnimation : MonoBehaviour
 
 	private int BumpMap2;
 
-	private int _DistortionMap1;
-
 	public int skip;
 
 	private void Start()

@@ -22,25 +22,25 @@ public class WheelUIChangerPanel : MonoBehaviour
 	private const int MaxWheelAxleType = 3;
 
 	[SerializeField]
-	private TextMeshProUGUI tyreTypeTitle;
+	private TextMeshProUGUI tyreTypeTitle = default;
 
 	[SerializeField]
-	private SimpleScrollSnap wheelDiameterScrollRect;
+	private SimpleScrollSnap wheelDiameterScrollRect = default;
 
 	[SerializeField]
-	private SimpleScrollSnap rimWidthScrollRect;
+	private SimpleScrollSnap rimWidthScrollRect = default;
 
 	[SerializeField]
-	private SimpleScrollSnap tyreWidthScrollRect;
+	private SimpleScrollSnap tyreWidthScrollRect = default;
 
 	[SerializeField]
-	private SimpleScrollSnap tyreProfileScrollRect;
+	private SimpleScrollSnap tyreProfileScrollRect = default;
 
 	[SerializeField]
-	private SimpleScrollSnap tyreTypeScrollRect;
+	private SimpleScrollSnap tyreTypeScrollRect = default;
 
 	[SerializeField]
-	private TyreWidthUIElement wheelConfigurationElement;
+	private TyreWidthUIElement wheelConfigurationElement = default;
 
 	private VisualTuningWindow _visualTuningWindow;
 
@@ -66,14 +66,10 @@ public class WheelUIChangerPanel : MonoBehaviour
 
 	private IPrefabFactory _prefabFactory;
 
-	private WheelData _wheelData;
-
 	private IVisualTuningViewModelComplexOne _visualTuningViewModelComplexOne;
 
 	[HideInInspector]
 	public WheelTuningAxleType currentWheelAxleType;
-
-	private ICarInfoService _carInfoService;
 
 	private IWheelsDataService _wheelsDataService;
 

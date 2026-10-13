@@ -8,11 +8,11 @@ namespace CPM.Obstacles
 	{
 		[Tooltip("The route, in order: at least two transforms the designer moves in the scene. Their positions are read once at startup.")]
 		[SerializeField]
-		private Transform[] Waypoints;
+		private Transform[] Waypoints = default;
 
 		[Tooltip("The object that actually moves: holds the collider and the kinematic Rigidbody. It is switched off between runs, so everything under it vanishes with it.")]
 		[SerializeField]
-		private Transform Target;
+		private Transform Target = default;
 
 		[SerializeField]
 		[Tooltip("Travel speed in units per second along the smoothed path. With an ease it is the average speed: the trip always takes route length / Speed. Zero or less parks the runner at the first waypoint.")]
@@ -36,12 +36,12 @@ namespace CPM.Obstacles
 
 		[SerializeField]
 		[Tooltip("Seconds the runner stays hidden before its very first run, counted from the match start.")]
-		private float StartDelaySeconds;
+		private float StartDelaySeconds = default;
 
 		[SerializeField]
 		[Range(0f, 1f)]
 		[Tooltip("Where in the cycle the runner starts, 0..1 across the whole run/hold/hide loop. 0 = about to set off from the first waypoint. Offset copies to desync them.")]
-		private float InitialProgress;
+		private float InitialProgress = default;
 
 		[SerializeField]
 		[Range(1f, 32f)]

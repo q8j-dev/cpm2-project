@@ -5,7 +5,7 @@ namespace _Car_Parking.Scripts.Police
 	public abstract class PoliceCarBodyKit : MonoBehaviour
 	{
 		[SerializeField]
-		private PoliceCarLampsController[] Lamps;
+		private PoliceCarLampsController[] Lamps = default;
 
 		public abstract PoliceBodyKitType BodyKitType { get; }
 

@@ -23,13 +23,13 @@ namespace _Car_Parking.Scripts.Infrastructure.Start
 		private const int SceneID = 1;
 
 		[SerializeField]
-		private Slider LoadingBar;
+		private Slider LoadingBar = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LoadingProgressText;
+		private TextMeshProUGUI LoadingProgressText = default;
 
 		[SerializeField]
-		private ShaderPrewarmer ShaderPrewarmer;
+		private ShaderPrewarmer ShaderPrewarmer = default;
 
 		private PreMenuState _preMenuState;
 

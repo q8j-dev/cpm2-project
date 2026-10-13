@@ -4,13 +4,13 @@ using UnityEngine.UI;
 public class DynorunUIElement : MonoBehaviour
 {
 	[SerializeField]
-	private DynoWindowPanels Panel;
+	private DynoWindowPanels Panel = default;
 
 	[SerializeField]
-	private Toggle PanelToggle;
+	private Toggle PanelToggle = default;
 
 	[SerializeField]
-	private DynoWindow DynoWindow;
+	private DynoWindow DynoWindow = default;
 
 	private void Start()
 	{

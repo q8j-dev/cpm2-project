@@ -30,7 +30,7 @@ namespace Firebase
 					r.SetRequestHeader(header.Key, header.Value);
 				}
 			}
-			r.SendWebRequest();
+			_ = r.SendWebRequest();
 			while (!r.isDone)
 			{
 				await UniTask.Delay(TimeSpan.FromSeconds(0.10000000149011612), DelayType.UnscaledDeltaTime);
@@ -61,7 +61,7 @@ namespace Firebase
 					r.SetRequestHeader(header.Key, header.Value);
 				}
 			}
-			r.SendWebRequest();
+			_ = r.SendWebRequest();
 			while (!r.isDone)
 			{
 				await UniTask.Delay(TimeSpan.FromSeconds(0.10000000149011612), DelayType.UnscaledDeltaTime);
@@ -92,7 +92,7 @@ namespace Firebase
 					r.SetRequestHeader(header.Key, header.Value);
 				}
 			}
-			r.SendWebRequest();
+			_ = r.SendWebRequest();
 			while (!r.isDone)
 			{
 				await UniTask.Delay(TimeSpan.FromSeconds(0.10000000149011612), DelayType.UnscaledDeltaTime);

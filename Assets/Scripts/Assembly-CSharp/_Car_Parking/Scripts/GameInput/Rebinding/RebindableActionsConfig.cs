@@ -29,7 +29,7 @@ namespace _Car_Parking.Scripts.GameInput.Rebinding
 
 		[Tooltip("GameInputController.inputactions. Overrides are mirrored onto it for its other readers.")]
 		[SerializeField]
-		private InputActionAsset _authoredAsset;
+		private InputActionAsset _authoredAsset = default;
 
 		[Tooltip("Visible actions that can't be rebound; nothing that can fire together with them may take their keys.")]
 		[SerializeField]

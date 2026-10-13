@@ -6,7 +6,7 @@ namespace Service.Delivery
 	public class ItemScriptables : ScriptableObject
 	{
 		[SerializeField]
-		private GameObject items;
+		private GameObject items = default;
 
 		public GameObject GetItems(bool isMine = true)
 		{

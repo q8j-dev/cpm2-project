@@ -67,7 +67,7 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 				return;
 			}
 			AdvancedInt price = new AdvancedInt(_visualTuningPricesService.GetColorPrice());
-			_currencyManagerController.TryCoinsSpend(SpendCoinsType.Colors, price, () =>
+			_ = _currencyManagerController.TryCoinsSpend(SpendCoinsType.Colors, price, () =>
 			{
 				_paintDataService.SetPaintBought(carPaintColor.CarMatType);
 				SaveColor(carPaintColor);

@@ -28,10 +28,10 @@ public class UISelectionCursor : MonoBehaviour
 	private GameObject defaultTarget;
 
 	[SerializeField]
-	private GameObject cursorImagePrefab;
+	private GameObject cursorImagePrefab = default;
 
 	[SerializeField]
-	private Canvas cursorTempCanvas;
+	private Canvas cursorTempCanvas = default;
 
 	[SerializeField]
 	[Header("Settings")]
@@ -49,31 +49,31 @@ public class UISelectionCursor : MonoBehaviour
 	[SerializeField]
 	[Header("ImagesForCursor")]
 	[Tooltip("The selection image for key navigation.")]
-	private Sprite square;
+	private Sprite square = default;
 
 	[SerializeField]
-	private Sprite idleStill;
+	private Sprite idleStill = default;
 
 	[SerializeField]
-	private Sprite idleStillHover;
+	private Sprite idleStillHover = default;
 
 	[SerializeField]
-	private Sprite idleMove;
+	private Sprite idleMove = default;
 
 	[SerializeField]
-	private Sprite idleMoveHover;
+	private Sprite idleMoveHover = default;
 
 	[SerializeField]
-	private Sprite pressedStill;
+	private Sprite pressedStill = default;
 
 	[SerializeField]
-	private Sprite pressedStillHover;
+	private Sprite pressedStillHover = default;
 
 	[SerializeField]
-	private Sprite pressedMove;
+	private Sprite pressedMove = default;
 
 	[SerializeField]
-	private Sprite pressedMoveHover;
+	private Sprite pressedMoveHover = default;
 
 	[SerializeField]
 	[Header("Auto Scroll")]
@@ -116,9 +116,9 @@ public class UISelectionCursor : MonoBehaviour
 
 	private RegistryHandle<ScriptableEvent> _confirmPerformedHandle = new RegistryHandle<ScriptableEvent>(EventRegistryIDs.Accept);
 
-	private Transform _debugSheetRoot;
+	private Transform _debugSheetRoot = default;
 
-	private Transform _debugConsoleRoot;
+	private Transform _debugConsoleRoot = default;
 
 	[Inject]
 	public void Construct(EventRegistry eventRegistry, InputMapSetEvent inputMapSetEvent, GamepadHapticService gamepadHaptics, UiNavigationValueEvent uiNavigationValueEvent)

@@ -7,10 +7,7 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	public class LanguageSection : SettingsSectionBase
 	{
 		[SerializeField]
-		private UILanguageListElement LanguageForTest;
-
-		[SerializeField]
-		private UILanguageListElement[] LanguageListElements;
+		private UILanguageListElement[] LanguageListElements = default;
 
 		private void Start()
 		{

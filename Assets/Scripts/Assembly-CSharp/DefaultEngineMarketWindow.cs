@@ -35,37 +35,37 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 	private AllParts _allParts;
 
 	[SerializeField]
-	private RectTransform ItemsParent;
+	private RectTransform ItemsParent = default;
 
 	[SerializeField]
-	private DefaultEngineInventoryUIElement DefaultEngineInventoryUIElementPrefab;
+	private DefaultEngineInventoryUIElement DefaultEngineInventoryUIElementPrefab = default;
 
 	[SerializeField]
-	private Button FilterButton;
+	private Button FilterButton = default;
 
 	[SerializeField]
-	private Toggle MarketToggle;
+	private Toggle MarketToggle = default;
 
 	[SerializeField]
-	private Toggle InventoryToggle;
+	private Toggle InventoryToggle = default;
 
 	[SerializeField]
-	private EngineMarketInventoryShowcaseWindow EngineMarketInventoryShowcaseWindow;
+	private EngineMarketInventoryShowcaseWindow EngineMarketInventoryShowcaseWindow = default;
 
 	[SerializeField]
-	private EngineMarketInventoryPopupWindow EngineMarketInventoryPopupWindow;
+	private EngineMarketInventoryPopupWindow EngineMarketInventoryPopupWindow = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SelectedFilterText;
+	private TextMeshProUGUI SelectedFilterText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SelectedFilterDetailsCount;
+	private TextMeshProUGUI SelectedFilterDetailsCount = default;
 
 	[SerializeField]
-	private ScrollRect InventoryScrollRectPrefab;
+	private ScrollRect InventoryScrollRectPrefab = default;
 
 	[SerializeField]
-	private Transform ScrollRectPlace;
+	private Transform ScrollRectPlace = default;
 
 	[SerializeField]
 	private int CellCountInOneRow = 1;
@@ -73,7 +73,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 	private float _lastGridContentWidth = -1f;
 
 	[SerializeField]
-	private GameObject MainPanel;
+	private GameObject MainPanel = default;
 
 	private EngineItem _selectedEngine;
 
@@ -184,7 +184,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 
 	private void CreateScrollRect()
 	{
-		ResetCachedEngineItems();
+		_ = ResetCachedEngineItems();
 		_mainScrollRect = _prefabFactory.Instantiate(InventoryScrollRectPrefab, ScrollRectPlace);
 		_mainScrollRect.onValueChanged.AddListener((Vector2 _) =>
 		{
@@ -197,7 +197,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 				_lastMarketScrollPos = _mainScrollRect.content.anchoredPosition;
 			}
 		});
-		CalculateGrid();
+		_ = CalculateGrid();
 		_uiScrollRectOcclusiion = _mainScrollRect.GetComponent<UiScrollRectOcclusiion>();
 	}
 
@@ -433,7 +433,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 		_currencyManagerController.AddMoney(_selectedEngineKit.GetPrize(_allParts));
 		_engineKitsInventoryService.Remove(_selectedEngineKit);
 		string text = new LocalizedString("DefaultEngineMarketWindow.EngineSelectedenginekitEnginei");
-		_managerUI.ShowNotificationWindow(text.Replace("{0}", _selectedEngineKit.EngineId.GetName()), 3f);
+		_ = _managerUI.ShowNotificationWindow(text.Replace("{0}", _selectedEngineKit.EngineId.GetName()), 3f);
 		InitInventory();
 	}
 
@@ -460,13 +460,13 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 				text2 = text2 + text3 + enginePartsNotCopmatibleToCar[i];
 			}
 			string text4 = new LocalizedString("DefaultEngineMarketWindow.EngineSelectedengineEngineidGe");
-			_managerUI.ShowNotificationWindow(text4.Replace("{0}", _selectedOffer.Base.EngineId.GetName).Replace("{partsNames}", text2), 8f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(text4.Replace("{0}", _selectedOffer.Base.EngineId.GetName).Replace("{partsNames}", text2), 8f, NotificationType.Error);
 			return;
 		}
 		ECUPart effectiveECU = _selectedOffer.GetEffectiveECU(_allParts, _carInfo.CarID);
 		if (!effectiveECU)
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.YouCanTInstallSelectedengineGe"), 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.YouCanTInstallSelectedengineGe"), 3f, NotificationType.Error);
 			return;
 		}
 		_selectedOffer.GetFullPrice(_allParts, _carInfo.CarID, out var total);
@@ -484,7 +484,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 		}
 		else
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.Youdon'thaveenoughmoney!"), 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.Youdon'thaveenoughmoney!"), 3f, NotificationType.Error);
 			_virtualPurchaseAnalytic.LogPurchaseVirtual_Engine(_selectedOffer.Base.EngineId.GetName, _selectedOffer.Base.GetPrice, PurchaseStatus.INSUFFICIENT_FUNDS);
 		}
 	}
@@ -500,7 +500,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 		ECUPart effectiveECU = _selectedOffer.GetEffectiveECU(_allParts, _carInfo.CarID);
 		if (!effectiveECU)
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.YouCanTInstallSelectedengineGe"), 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.YouCanTInstallSelectedengineGe"), 3f, NotificationType.Error);
 			return;
 		}
 		_selectedOffer.GetFullPrice(_allParts, _carInfo.CarID, out var total);
@@ -513,13 +513,13 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 			_inventoryPartsService.Add(effectiveECU.CreateNewPartDataFromPart());
 			_engineKitsInventoryService.Add(engineKit);
 			string text = new LocalizedString("DefaultEngineMarketWindow.EngineSelectedengineNameWasBou");
-			_managerUI.ShowNotificationWindow(text.Replace("{0}", _selectedOffer.GetDisplayName()), 3f);
+			_ = _managerUI.ShowNotificationWindow(text.Replace("{0}", _selectedOffer.GetDisplayName()), 3f);
 			_virtualPurchaseAnalytic.LogPurchaseVirtual_Engine(_selectedOffer.Base.EngineId.GetName, _selectedOffer.Base.GetPrice, PurchaseStatus.PURCHASE_COMPLETED);
 		}
 		else
 		{
 			_virtualPurchaseAnalytic.LogPurchaseVirtual_Engine(_selectedOffer.Base.EngineId.GetName, _selectedOffer.Base.GetPrice, PurchaseStatus.INSUFFICIENT_FUNDS);
-			_managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.Youdon'thaveenoughmoney!"), 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DefaultEngineMarketWindow.Youdon'thaveenoughmoney!"), 3f, NotificationType.Error);
 		}
 	}
 
@@ -564,7 +564,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 				text2 = text2 + text3 + enginePartsNotCopmatibleToCar[i];
 			}
 			string text4 = new LocalizedString("DefaultEngineMarketWindow.EngineSelectedenginekitEnginei");
-			_managerUI.ShowNotificationWindow(text4.Replace("{0}", _selectedEngine.EngineId.GetName).Replace("{partsNames}", text2), 8f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(text4.Replace("{0}", _selectedEngine.EngineId.GetName).Replace("{partsNames}", text2), 8f, NotificationType.Error);
 		}
 		else
 		{
@@ -573,7 +573,7 @@ public class DefaultEngineMarketWindow : WindowScript, IBackableWindow
 			if (!value)
 			{
 				string text5 = ((_openPanel == MarketInventoryWindow.OpenPanelType.Market) ? new LocalizedString("DefaultEngineMarketWindow.ThisEngineIsInTheServiceNowDet") : new LocalizedString("DefaultEngineMarketWindow.ThisEngineIsInTheServiceNowPle"));
-				_managerUI.ShowNotificationWindow(text5, 3f);
+				_ = _managerUI.ShowNotificationWindow(text5, 3f);
 			}
 			else
 			{

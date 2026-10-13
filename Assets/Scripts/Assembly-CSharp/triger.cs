@@ -8,12 +8,6 @@ public class triger : MonoBehaviour
 
 	public string street;
 
-	private string str1;
-
-	private string str2;
-
-	private string str3;
-
 	private GameObject parent;
 
 	private void Start()

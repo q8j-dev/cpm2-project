@@ -8,8 +8,6 @@ using _Car_Parking.Scripts.SOAP_Registry;
 
 public class InteractableRaceMapHandler : MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler
 {
-	private bool _isCheckIcons;
-
 	private RectTransform _mapRawImageRT;
 
 	private Camera _targetCamera;
@@ -37,7 +35,7 @@ public class InteractableRaceMapHandler : MonoBehaviour, IPointerDownHandler, IE
 	public Transform cubeTransform;
 
 	[SerializeField]
-	private RawImage MapImage;
+	private RawImage MapImage = default;
 
 	[SerializeField]
 	private float SmoothTime = 0.2f;

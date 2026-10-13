@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Scopes
 	public class DynoRunScope : LifetimeScope
 	{
 		[SerializeField]
-		private DynoRunController DynoRunController;
+		private DynoRunController DynoRunController = default;
 
 		protected override void Configure(IContainerBuilder builder)
 		{

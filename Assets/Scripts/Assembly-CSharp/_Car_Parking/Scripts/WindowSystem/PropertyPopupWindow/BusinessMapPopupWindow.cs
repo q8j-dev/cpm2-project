@@ -17,13 +17,13 @@ namespace _Car_Parking.Scripts.WindowSystem.PropertyPopupWindow
 	public class BusinessMapPopupWindow : PropertyPopupWindow
 	{
 		[SerializeField]
-		private TextMeshProUGUI CurrentIncomeStoredText;
+		private TextMeshProUGUI CurrentIncomeStoredText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI MaxIncomeStoredText;
+		private TextMeshProUGUI MaxIncomeStoredText = default;
 
 		[SerializeField]
-		private Transform StoredContainer;
+		private Transform StoredContainer = default;
 
 		private BusinessStorage _businessStorage;
 

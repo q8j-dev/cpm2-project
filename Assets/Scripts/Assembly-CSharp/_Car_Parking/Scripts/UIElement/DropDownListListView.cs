@@ -13,13 +13,13 @@ namespace _Car_Parking.Scripts.UIElement
 		private const float k_AnimationCloseKof = 1.5f;
 
 		[SerializeField]
-		private CanvasGroupStateTweener CanvasGroupStateTweener;
+		private CanvasGroupStateTweener CanvasGroupStateTweener = default;
 
 		[SerializeField]
-		private Transform ClosePosition;
+		private Transform ClosePosition = default;
 
 		[SerializeField]
-		private MoverByTween[] Items;
+		private MoverByTween[] Items = default;
 
 		private void Start()
 		{

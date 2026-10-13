@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.Animations.Emotes.Locker
 	public class EmoteLockerGrid : MonoBehaviour
 	{
 		[SerializeField]
-		private Transform Content;
+		private Transform Content = default;
 
 		[SerializeField]
-		private EmoteLockerItem ItemPrefab;
+		private EmoteLockerItem ItemPrefab = default;
 
 		private readonly List<EmoteLockerItem> _cards = new List<EmoteLockerItem>();
 

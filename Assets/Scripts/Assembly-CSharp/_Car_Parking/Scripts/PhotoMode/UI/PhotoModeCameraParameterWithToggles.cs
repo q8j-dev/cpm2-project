@@ -8,13 +8,13 @@ namespace _Car_Parking.Scripts.PhotoMode.UI
 	public class PhotoModeCameraParameterWithToggles : PhotoModeCameraParameter
 	{
 		[SerializeField]
-		private GameObject TogglesParent;
+		private GameObject TogglesParent = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ValueText;
+		private TextMeshProUGUI ValueText = default;
 
 		[SerializeField]
-		private PhotoModeParameterItem[] Items;
+		private PhotoModeParameterItem[] Items = default;
 
 		private CPMGraphicsSettings.ColorCorrectionLut _currentFilter;
 

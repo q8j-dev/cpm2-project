@@ -3,10 +3,10 @@ using UnityEngine;
 public class PopulationSystemManager : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject planePrefab;
+	private GameObject planePrefab = default;
 
 	[SerializeField]
-	private GameObject circlePrefab;
+	private GameObject circlePrefab = default;
 
 	public GameObject pointPrefab;
 

@@ -7,28 +7,28 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ToggleAnimation : MonoBehaviour
 	{
 		[SerializeField]
-		private Toggle TargetToggle;
+		private Toggle TargetToggle = default;
 
 		[SerializeField]
-		private Transform ObjectToMove;
+		private Transform ObjectToMove = default;
 
 		[SerializeField]
-		private bool Horizontal;
+		private bool Horizontal = default;
 
 		[SerializeField]
-		private bool Vertical;
+		private bool Vertical = default;
 
 		[SerializeField]
-		private float OffsetToEnd;
+		private float OffsetToEnd = default;
 
 		[SerializeField]
-		private float AnimDuration;
+		private float AnimDuration = default;
 
 		[SerializeField]
-		private bool SwitchImageColor;
+		private bool SwitchImageColor = default;
 
 		[SerializeField]
-		private ToggleSwitchHandler.ToggleImageElements ColorSwitchElements;
+		private ToggleSwitchHandler.ToggleImageElements ColorSwitchElements = default;
 
 		private Vector3 _offPos;
 

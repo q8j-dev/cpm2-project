@@ -13,28 +13,28 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ArenaLobbyWindow : WindowScript
 	{
 		[SerializeField]
-		private TextMeshProUGUI Title;
+		private TextMeshProUGUI Title = default;
 
 		[SerializeField]
-		private TextMeshProUGUI TimeText;
+		private TextMeshProUGUI TimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI StatusText;
+		private TextMeshProUGUI StatusText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlayersText;
+		private TextMeshProUGUI PlayersText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PlayersMinText;
+		private TextMeshProUGUI PlayersMinText = default;
 
 		[SerializeField]
-		private Button StartNowButton;
+		private Button StartNowButton = default;
 
 		[SerializeField]
-		private Color SearchPlayerColor;
+		private Color SearchPlayerColor = default;
 
 		[SerializeField]
-		private Color MatchGuaranteedColor;
+		private Color MatchGuaranteedColor = default;
 
 		private IArenaNetwork _net;
 

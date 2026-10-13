@@ -14,10 +14,10 @@ namespace Car_Parking.Scripts.Racing
 		private IGameFactManager _gameFactManager;
 
 		[SerializeField]
-		private GameObject Prefab;
+		private GameObject Prefab = default;
 
 		[SerializeField]
-		private bool SpawnOnlyInMultiplayerMode;
+		private bool SpawnOnlyInMultiplayerMode = default;
 
 		private bool _wasSpawn;
 

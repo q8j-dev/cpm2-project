@@ -7,23 +7,23 @@ namespace _Car_Parking.Scripts.UIElement
 	public class ChartListView : MonoBehaviour
 	{
 		[SerializeField]
-		private ChartListElementView[] Rows;
+		private ChartListElementView[] Rows = default;
 
 		[Header("Header (optional — assign only what the prefab has)")]
 		[SerializeField]
-		private TextMeshProUGUI PlaceText;
+		private TextMeshProUGUI PlaceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI AllPlaceCount;
+		private TextMeshProUGUI AllPlaceCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI LapText;
+		private TextMeshProUGUI LapText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI AllLapCount;
+		private TextMeshProUGUI AllLapCount = default;
 
 		[SerializeField]
-		private GameObject Panel;
+		private GameObject Panel = default;
 
 		private readonly List<int> _visible = new List<int>();
 

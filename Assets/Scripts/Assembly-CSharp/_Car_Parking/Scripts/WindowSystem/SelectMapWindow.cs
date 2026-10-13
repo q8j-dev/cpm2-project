@@ -14,13 +14,13 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class SelectMapWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private SpawnPlaceItemUI[] SpawnPlaces;
+		private SpawnPlaceItemUI[] SpawnPlaces = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		private MultiPlayerMenu _multiPlayerMenu;
 
@@ -151,12 +151,12 @@ namespace _Car_Parking.Scripts.WindowSystem
 			{
 				if (component.CarEntity.GetValue().IsBroken)
 				{
-					_managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.CarIsBrokenPleaseRepair"), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.CarIsBrokenPleaseRepair"), 3f);
 					return;
 				}
 				if (_timerTuningService.IsCarBlocked(V.SlotID))
 				{
-					_managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.Yourcarcurrentlyisinservice"), 3f);
+					_ = _managerUI.ShowNotificationWindow(new LocalizedString("SelectMapWindow.Yourcarcurrentlyisinservice"), 3f);
 					return;
 				}
 			}

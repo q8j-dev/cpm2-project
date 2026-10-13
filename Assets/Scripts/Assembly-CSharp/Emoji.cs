@@ -12,9 +12,9 @@ public class Emoji : MonoBehaviourPunCallbacks
 
 	public List<GameObject> emojies;
 
-	private GameObject passenger;
+	private GameObject passenger = default;
 
-	private int _zoneNumber;
+	private int _zoneNumber = default;
 
 	private OnlineCollectionsProvider _onlineCollectionsProvider;
 

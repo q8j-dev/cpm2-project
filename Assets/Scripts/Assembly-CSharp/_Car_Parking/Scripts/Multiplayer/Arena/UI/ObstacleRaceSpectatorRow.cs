@@ -8,32 +8,32 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ObstacleRaceSpectatorRow : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private TextMeshProUGUI[] PlaceTexts;
+		private TextMeshProUGUI[] PlaceTexts = default;
 
 		[SerializeField]
-		private Text[] NameTexts;
+		private Text[] NameTexts = default;
 
 		[SerializeField]
-		private TextMeshProUGUI[] ValueTexts;
+		private TextMeshProUGUI[] ValueTexts = default;
 
 		[SerializeField]
-		private GameObject WatchableGraphic;
+		private GameObject WatchableGraphic = default;
 
 		[Header("Selection")]
 		[SerializeField]
-		private GameObject[] SelectedGraphics;
+		private GameObject[] SelectedGraphics = default;
 
 		[SerializeField]
-		private GameObject[] NormalGraphics;
+		private GameObject[] NormalGraphics = default;
 
 		[SerializeField]
-		private Color SelectedColor;
+		private Color SelectedColor = default;
 
 		[SerializeField]
-		private Color NormalColor;
+		private Color NormalColor = default;
 
 		private int _actor;
 

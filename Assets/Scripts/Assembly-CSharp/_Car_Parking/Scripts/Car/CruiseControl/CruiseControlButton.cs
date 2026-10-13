@@ -24,8 +24,6 @@ namespace _Car_Parking.Scripts.Car.CruiseControl
 
 		private CruiseControl _cruiseControl;
 
-		private IDisposable _waitToCloseEditUi;
-
 		private HudColorChanger _hudColorChanger;
 
 		[Inject]

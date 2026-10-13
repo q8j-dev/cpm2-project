@@ -7,17 +7,17 @@ namespace _Car_Parking.Scripts.PlayerProperty.Business
 	public class BusinessRoot : MonoBehaviour
 	{
 		[SerializeField]
-		private int Id;
+		private int Id = default;
 
 		[SerializeField]
 		[Space(20f)]
-		private BusinessBuyTrigger BuyTrigger;
+		private BusinessBuyTrigger BuyTrigger = default;
 
 		[SerializeField]
-		private ProfitCollectTrigger ProfitTrigger;
+		private ProfitCollectTrigger ProfitTrigger = default;
 
 		[SerializeField]
-		private ProfitControl ProfitControl;
+		private ProfitControl ProfitControl = default;
 
 		private FreeDriveControl _freeDriveControl;
 

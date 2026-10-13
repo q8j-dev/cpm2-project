@@ -10,19 +10,19 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class MoneySetter : WindowScript
 	{
 		[SerializeField]
-		private CurrencyItemView[] CurrencyItemViews;
+		private CurrencyItemView[] CurrencyItemViews = default;
 
 		[SerializeField]
-		private Button CreditsBtn;
+		private Button CreditsBtn = default;
 
 		[SerializeField]
-		private Button MoneyBtn;
+		private Button MoneyBtn = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private RectTransform LayoutParent;
+		private RectTransform LayoutParent = default;
 
 		protected override void Start()
 		{

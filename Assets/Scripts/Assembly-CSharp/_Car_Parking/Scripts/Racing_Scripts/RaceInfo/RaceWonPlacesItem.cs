@@ -7,25 +7,25 @@ namespace _Car_Parking.Scripts.Racing_Scripts.RaceInfo
 	public class RaceWonPlacesItem : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI FirstPlacesCount;
+		private TextMeshProUGUI FirstPlacesCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SecondPlacesCount;
+		private TextMeshProUGUI SecondPlacesCount = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ThirdPlacesCount;
+		private TextMeshProUGUI ThirdPlacesCount = default;
 
 		[SerializeField]
 		private bool ShowStatusIcon = true;
 
 		[SerializeField]
-		private Image StatusIconImage;
+		private Image StatusIconImage = default;
 
 		[SerializeField]
-		private Sprite DoneIcon;
+		private Sprite DoneIcon = default;
 
 		[SerializeField]
-		private Sprite DefaultIcon;
+		private Sprite DefaultIcon = default;
 
 		[field: SerializeField]
 		public int TimeClass { get; private set; }

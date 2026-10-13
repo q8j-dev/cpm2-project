@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.Other
 	public class LampLightVolumetricLightBeam : LampLight
 	{
 		[SerializeField]
-		private VolumetricLightBeam LightBeam;
+		private VolumetricLightBeam LightBeam = default;
 
 		[SerializeField]
 		private float MaxBeamIntensity = 6f;

@@ -8,22 +8,22 @@ namespace _Car_Parking.Scripts.UIElement
 	public class VynilStickerUI : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private TMP_Text Price;
+		private TMP_Text Price = default;
 
 		[SerializeField]
-		private Image VynilSprite;
+		private Image VynilSprite = default;
 
 		[SerializeField]
-		private Image BorderSprite;
+		private Image BorderSprite = default;
 
 		[SerializeField]
-		private Color SelectColor;
+		private Color SelectColor = default;
 
 		[SerializeField]
-		private bool IsVinyl;
+		private bool IsVinyl = default;
 
 		private Color _defaultColor;
 

@@ -21,119 +21,119 @@ public class MaintenanceUIWindow : WindowScript, IBackableWindow
 	private static readonly int MaskValue = Shader.PropertyToID("_MaskValue");
 
 	[SerializeField]
-	private GameObject TiresGraphPanel;
+	private GameObject TiresGraphPanel = default;
 
 	[SerializeField]
-	private GameObject OilGraphPanel;
+	private GameObject OilGraphPanel = default;
 
 	[SerializeField]
-	private GameObject CarWashPanel;
+	private GameObject CarWashPanel = default;
 
 	[SerializeField]
-	private GameObject FuelPanel;
+	private GameObject FuelPanel = default;
 
 	[SerializeField]
-	private GameObject PricePanel;
+	private GameObject PricePanel = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TitleText;
+	private TextMeshProUGUI TitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DescriptionText;
+	private TextMeshProUGUI DescriptionText = default;
 
 	[SerializeField]
-	private Slider SliderTop;
+	private Slider SliderTop = default;
 
 	[SerializeField]
-	private Slider SliderDown;
+	private Slider SliderDown = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SliderTopText;
+	private TextMeshProUGUI SliderTopText = default;
 
 	[SerializeField]
-	private Image SliderTopFillImage;
+	private Image SliderTopFillImage = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SliderDownText;
+	private TextMeshProUGUI SliderDownText = default;
 
 	[SerializeField]
-	private Image SliderDownFillImage;
+	private Image SliderDownFillImage = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PriceText;
+	private TextMeshProUGUI PriceText = default;
 
 	[SerializeField]
-	private ForceRebuildLayoutImmediate ForceRebuildLayoutPrice;
+	private ForceRebuildLayoutImmediate ForceRebuildLayoutPrice = default;
 
 	[SerializeField]
-	private Button ConfirmButton;
+	private Button ConfirmButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SliderTopTitleText;
+	private TextMeshProUGUI SliderTopTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SliderDownTitleText;
+	private TextMeshProUGUI SliderDownTitleText = default;
 
 	[SerializeField]
-	private MaintenanceConfirmWindow MaintenanceConfirmWindow;
+	private MaintenanceConfirmWindow MaintenanceConfirmWindow = default;
 
 	[SerializeField]
-	private GameObject MainPanel;
+	private GameObject MainPanel = default;
 
 	[Header("TiresPanel")]
 	[SerializeField]
-	private Slider FrontLeftWheelSlider;
+	private Slider FrontLeftWheelSlider = default;
 
 	[SerializeField]
-	private Slider FrontRightWheelSlider;
+	private Slider FrontRightWheelSlider = default;
 
 	[SerializeField]
-	private Slider RearLeftWheelSlider;
+	private Slider RearLeftWheelSlider = default;
 
 	[SerializeField]
-	private Slider RearRightWheelSlider;
+	private Slider RearRightWheelSlider = default;
 
 	[SerializeField]
-	private TextMeshProUGUI FrontLeftWheelSliderText;
+	private TextMeshProUGUI FrontLeftWheelSliderText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI FrontRightWheelSliderText;
+	private TextMeshProUGUI FrontRightWheelSliderText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI RearLeftWheelSliderText;
+	private TextMeshProUGUI RearLeftWheelSliderText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI RearRightWheelSliderText;
+	private TextMeshProUGUI RearRightWheelSliderText = default;
 
 	[SerializeField]
 	[Header("OilPanel")]
-	private Slider OilSlider;
+	private Slider OilSlider = default;
 
 	[Header("Toggles")]
 	[SerializeField]
-	private UIPartCategoryChecker TireConditionToggle;
+	private UIPartCategoryChecker TireConditionToggle = default;
 
 	[SerializeField]
-	private UIPartCategoryChecker TirePressureToggle;
+	private UIPartCategoryChecker TirePressureToggle = default;
 
 	[SerializeField]
-	private UIPartCategoryChecker OilToggle;
+	private UIPartCategoryChecker OilToggle = default;
 
 	[SerializeField]
-	private UIPartCategoryChecker CarWashToggle;
+	private UIPartCategoryChecker CarWashToggle = default;
 
 	[SerializeField]
-	private UIPartCategoryChecker FuelToggle;
+	private UIPartCategoryChecker FuelToggle = default;
 
 	[SerializeField]
 	[Header("Color")]
-	private Color ErrorColor;
+	private Color ErrorColor = default;
 
 	[SerializeField]
-	private Color WarningColor;
+	private Color WarningColor = default;
 
 	[SerializeField]
-	private Color NormalColor;
+	private Color NormalColor = default;
 
 	private VehicleEntityProvider _vehicleEntityProvider;
 

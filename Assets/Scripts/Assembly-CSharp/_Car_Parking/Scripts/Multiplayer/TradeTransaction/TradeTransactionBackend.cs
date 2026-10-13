@@ -16,17 +16,17 @@ namespace _Car_Parking.Scripts.Multiplayer.TradeTransaction
 		private class CreateTransactionResponse
 		{
 			[JsonProperty("status")]
-			public string Status;
+			public string Status = default;
 
 			[JsonProperty("transactionId")]
-			public string TransactionId;
+			public string TransactionId = default;
 		}
 
 		[UnityEngine.Scripting.Preserve]
 		private class ConfirmTransactionResponse
 		{
 			[JsonProperty("status")]
-			public string Status;
+			public string Status = default;
 		}
 
 		private const string CreateUrl = "check-service/v1/p2p/create";

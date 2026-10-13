@@ -17,7 +17,7 @@ namespace _Car_Parking.Scripts.Other.Accessories
 
 		[SerializeField]
 		[Header("View")]
-		private Transform localObjectTransform;
+		private Transform localObjectTransform = default;
 
 		[Header("Distance to root")]
 		[SerializeField]
@@ -25,15 +25,15 @@ namespace _Car_Parking.Scripts.Other.Accessories
 
 		[SerializeField]
 		[Header("Another type of physics calculation. More active.")]
-		private bool useAcceleration;
+		private bool useAcceleration = default;
 
 		[SerializeField]
 		[Header("Use local Rotation")]
-		private bool useLocalRotation;
+		private bool useLocalRotation = default;
 
 		[Header("Prefab physics toy reference. Probably contains hinge joint.")]
 		[SerializeField]
-		private ReferencePhysicsObject referencePhysicsObjectPrefab;
+		private ReferencePhysicsObject referencePhysicsObjectPrefab = default;
 
 		private Rigidbody _carRb;
 

@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 public class AutoLoadPipelineAsset : MonoBehaviour
 {
 	[SerializeField]
-	private UniversalRenderPipelineAsset m_PipelineAsset;
+	private UniversalRenderPipelineAsset m_PipelineAsset = default;
 
 	private RenderPipelineAsset m_PreviousPipelineAsset;
 

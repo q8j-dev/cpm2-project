@@ -8,13 +8,13 @@ namespace _Car_Parking.Scripts.PhotoMode.UI
 	public class PhotoModeCategoryWithScrolls : PhotoModeCategory
 	{
 		[SerializeField]
-		private ScrollRect Scroll;
+		private ScrollRect Scroll = default;
 
 		[SerializeField]
-		private GameObject ScrollPanel;
+		private GameObject ScrollPanel = default;
 
 		[SerializeField]
-		private List<PhotoModeCameraParameter> Parameters;
+		private List<PhotoModeCameraParameter> Parameters = default;
 
 		private PhotoModeCameraParameter _currentParameter;
 

@@ -8,9 +8,6 @@ namespace CPM.Scripts.Garage
 		private float CheckDistance = 100f;
 
 		[SerializeField]
-		private GarageController Controller;
-
-		[SerializeField]
 		private Transform CheckPoint;
 	}
 }

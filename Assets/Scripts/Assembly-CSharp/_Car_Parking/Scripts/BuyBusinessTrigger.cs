@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts
 	public class BuyBusinessTrigger : BuyTrigger
 	{
 		[SerializeField]
-		private int businessNumber;
+		private int businessNumber = default;
 
 		protected FreeDriveProvider FreeDriveProvider;
 

@@ -10,7 +10,7 @@ namespace _Car_Parking.Scripts.EventSystem.View.Elements
 	public class BannerTextElement : MonoBehaviour, IBannerElement
 	{
 		[SerializeField]
-		private BannerTextKind Kind;
+		private BannerTextKind Kind = default;
 
 		[SerializeField]
 		private bool HideWhenEmpty = true;

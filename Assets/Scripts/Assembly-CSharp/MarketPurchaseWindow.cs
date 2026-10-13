@@ -3,7 +3,7 @@ using UnityEngine;
 public class MarketPurchaseWindow : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject LoadingIcon;
+	private GameObject LoadingIcon = default;
 
 	public virtual void Reload()
 	{

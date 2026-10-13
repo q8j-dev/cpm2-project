@@ -15,19 +15,19 @@ namespace Racing.Scripts.UserColors
 	public class SavedColorUIElement : MonoBehaviour, IGridElement<SavedColorUIElement>, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler
 	{
 		[SerializeField]
-		private Button button;
+		private Button button = default;
 
 		[SerializeField]
-		private GameObject background;
+		private GameObject background = default;
 
 		[SerializeField]
-		private Image image;
+		private Image image = default;
 
 		[SerializeField]
-		private GameObject plusIcon;
+		private GameObject plusIcon = default;
 
 		[SerializeField]
-		private GameObject removeIcon;
+		private GameObject removeIcon = default;
 
 		private SavedColorUIHandler _gridController;
 

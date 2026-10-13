@@ -11,16 +11,16 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class PhotoModePauseWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button ExitButton;
+		private Button ExitButton = default;
 
 		[SerializeField]
-		private Button ResetSettingsButton;
+		private Button ResetSettingsButton = default;
 
 		[SerializeField]
-		private Button SettingsButton;
+		private Button SettingsButton = default;
 
 		private LevelScript _levelScript;
 

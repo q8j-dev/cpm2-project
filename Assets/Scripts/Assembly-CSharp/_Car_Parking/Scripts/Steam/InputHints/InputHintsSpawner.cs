@@ -7,13 +7,13 @@ namespace _Car_Parking.Scripts.Steam.InputHints
 	public class InputHintsSpawner : MonoBehaviour
 	{
 		[SerializeField]
-		private InputHintElement InputHintElementPrefab;
+		private InputHintElement InputHintElementPrefab = default;
 
 		[SerializeField]
-		private UITarget[] TargetsForHints;
+		private UITarget[] TargetsForHints = default;
 
 		[SerializeField]
-		private InputHintsSpawnerConfig Config;
+		private InputHintsSpawnerConfig Config = default;
 
 		private void Start()
 		{

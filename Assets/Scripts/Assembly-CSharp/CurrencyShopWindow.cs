@@ -12,25 +12,25 @@ using _Car_Parking.Scripts.SOAP_Registry;
 public class CurrencyShopWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Button CoinsMarketButton;
+	private Button CoinsMarketButton = default;
 
 	[SerializeField]
-	private Button MoneyMarketButton;
+	private Button MoneyMarketButton = default;
 
 	[SerializeField]
-	private MarketPurchaseWindow MoneyMarketWindow;
+	private MarketPurchaseWindow MoneyMarketWindow = default;
 
 	[SerializeField]
-	private MarketPurchaseWindow CoinMarketWindow;
+	private MarketPurchaseWindow CoinMarketWindow = default;
 
 	[SerializeField]
-	private CurrencyItemView[] CurrencyItemViews;
+	private CurrencyItemView[] CurrencyItemViews = default;
 
 	[SerializeField]
-	private RectTransform LayoutParent;
+	private RectTransform LayoutParent = default;
 
 	[SerializeField]
-	private TextMeshProUGUI titleText;
+	private TextMeshProUGUI titleText = default;
 
 	private bool _isDestroyed;
 

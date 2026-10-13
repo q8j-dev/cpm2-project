@@ -28,86 +28,80 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 	{
 		[SerializeField]
 		[Header("NGPlusPanel")]
-		private GameObject ScrollView;
+		private GameObject ScrollView = default;
 
 		[SerializeField]
-		private LockableUiToggleElement NGPlusToggle;
+		private LockableUiToggleElement NGPlusToggle = default;
 
 		[SerializeField]
-		private TextMeshProUGUI NgCountdownText;
+		private TextMeshProUGUI NgCountdownText = default;
 
 		[SerializeField]
-		private GameObject NGPlusPanel;
+		private GameObject NGPlusPanel = default;
 
 		[SerializeField]
-		private GameObject ScrollBar;
+		private GameObject ScrollBar = default;
 
 		[SerializeField]
-		private GameObject RightCarPanel;
+		private GameObject RightCarPanel = default;
 
 		[SerializeField]
-		private GameObject WaitingWindow;
+		private GameObject WaitingWindow = default;
 
 		[SerializeField]
-		private GameObject TimePanel;
+		private GameObject TimePanel = default;
 
 		[SerializeField]
-		private RallyMapDataSO RallyMapDataSo;
+		private RallyMapDataSO RallyMapDataSo = default;
 
 		[SerializeField]
-		private RallyTrajectoryWeatherDataSO RallyTrajectoryWeatherDataSO;
+		private RallyTrajectoryWeatherDataSO RallyTrajectoryWeatherDataSO = default;
 
 		[SerializeField]
-		private RallyCarsDatasSO RallyCarsDatasSo;
+		private RallyCarsDatasSO RallyCarsDatasSo = default;
 
 		[Header("Progress")]
 		[SerializeField]
 		private TextMeshProUGUI GoldRewardText;
 
 		[SerializeField]
-		private TextMeshProUGUI SilverRewardText;
+		private TextMeshProUGUI PersonalRecordTimeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CopperRewardText;
-
-		[SerializeField]
-		private TextMeshProUGUI PersonalRecordTimeText;
-
-		[SerializeField]
-		private RaceRewardItem[] RaceRewardItems;
+		private RaceRewardItem[] RaceRewardItems = default;
 
 		[Header("All Rewards Panel")]
 		[SerializeField]
-		private TextMeshProUGUI GoldCupsCountText;
+		private TextMeshProUGUI GoldCupsCountText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI SilverCupsCountText;
+		private TextMeshProUGUI SilverCupsCountText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI CopperCupsCountText;
+		private TextMeshProUGUI CopperCupsCountText = default;
 
 		[Header("Location")]
 		[SerializeField]
-		private RallyLockableUiToggleElement LocationElementPrefab;
+		private RallyLockableUiToggleElement LocationElementPrefab = default;
 
 		[SerializeField]
-		private ScrollRect LocationScrollRect;
+		private ScrollRect LocationScrollRect = default;
 
 		[SerializeField]
-		private ToggleGroup LocationGroup;
+		private ToggleGroup LocationGroup = default;
 
 		[SerializeField]
-		private CrossFadeImageSwitcher LocationBackgroundSwitcher;
+		private CrossFadeImageSwitcher LocationBackgroundSwitcher = default;
 
 		[Header("Trajectory")]
 		[SerializeField]
-		private ScrollRect TrajectoryScrollRect;
+		private ScrollRect TrajectoryScrollRect = default;
 
 		[SerializeField]
-		private RallyTrajectoryLockableToggle TrajectoryElementPrefab;
+		private RallyTrajectoryLockableToggle TrajectoryElementPrefab = default;
 
 		[SerializeField]
-		private ToggleGroup TrajectoryGroup;
+		private ToggleGroup TrajectoryGroup = default;
 
 		private List<RallyTrajectoryLockableToggle> _cachedTrajectoryElements = new List<RallyTrajectoryLockableToggle>();
 
@@ -117,33 +111,33 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 
 		[SerializeField]
 		[Header("UI")]
-		private Button SelectcarButton;
+		private Button SelectcarButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private Button SettingsButton;
+		private Button SettingsButton = default;
 
 		[SerializeField]
-		private Button InfoButton;
+		private Button InfoButton = default;
 
 		[SerializeField]
-		private UIPulseAnimator InfoButtonAnimator;
+		private UIPulseAnimator InfoButtonAnimator = default;
 
 		[SerializeField]
-		private CanvasGroup MainPanel;
+		private CanvasGroup MainPanel = default;
 
 		[SerializeField]
 		[Header("StartButton")]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private TextMeshProUGUI StartButtonText;
+		private TextMeshProUGUI StartButtonText = default;
 
 		[Header("CarPanel")]
 		[SerializeField]
-		private CarSelectorPanel CarSelectorPanel;
+		private CarSelectorPanel CarSelectorPanel = default;
 
 		private RallyController _rallyController;
 
@@ -235,7 +229,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 			if (PlayerPrefs.GetInt("InfoAutoShowed", 0) != 1)
 			{
 				PlayerPrefs.SetInt("InfoAutoShowed", 1);
-				_managerUI.ShowRallyInfoWindow();
+				_ = _managerUI.ShowRallyInfoWindow();
 			}
 			ManagerUI managerUI = _managerUI;
 			managerUI.OnRallyPopupShowed = (Action<bool>)Delegate.Combine(managerUI.OnRallyPopupShowed, new Action<bool>(HideMainPanel));
@@ -361,7 +355,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 				return;
 			}
 			string text = new LocalizedString("RallyMode.NGPlusNotAvailble");
-			_managerUI.ShowNotificationWindow(text, 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(text, 3f, NotificationType.Error);
 		}
 
 		private async UniTaskVoid SetNewGamePlusAsync()
@@ -562,7 +556,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 			}
 			else
 			{
-				_rallyController.InitRally(_placeToSpawn, _selectedLocationId, _selectedTrajectoryId, RallyMapDataSo.RallyLocationDatas[_selectedLocationId].TrajectoryData);
+				_ = _rallyController.InitRally(_placeToSpawn, _selectedLocationId, _selectedTrajectoryId, RallyMapDataSo.RallyLocationDatas[_selectedLocationId].TrajectoryData);
 			}
 			Close();
 		}

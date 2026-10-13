@@ -64,8 +64,6 @@ namespace ExitGames.Client.Photon.LoadBalancing
 
 		private bool isFetchingFriendList;
 
-		private byte[] encryptionSecret;
-
 		public string AppVersion { get; set; }
 
 		public string AppId { get; set; }

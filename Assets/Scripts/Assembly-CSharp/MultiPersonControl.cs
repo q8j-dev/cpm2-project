@@ -573,7 +573,7 @@ public class MultiPersonControl : MonoBehaviourPun, IPunInstantiateMagicCallback
 				{
 					mainPerson.LoadMultiPlayerPersonSkin();
 					driverActionController.AddHeadMove();
-					driverActionController.AddRagdoll();
+					_ = driverActionController.AddRagdoll();
 					if ((bool)currentCar)
 					{
 						currentCar.GetComponent<DriverController>().PreSetPerson(base.gameObject, placeOnCar);

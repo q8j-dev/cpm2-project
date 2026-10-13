@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.UIElement.Emoji
 	public class EmojiElement : MonoBehaviour
 	{
 		[SerializeField]
-		private Button CurrentButton;
+		private Button CurrentButton = default;
 
 		[SerializeField]
-		private int Id;
+		private int Id = default;
 
 		private MenuLevelParent _menuLevelParent;
 

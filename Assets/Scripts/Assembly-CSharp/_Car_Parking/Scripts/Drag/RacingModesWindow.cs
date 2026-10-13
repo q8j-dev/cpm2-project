@@ -35,81 +35,75 @@ namespace _Car_Parking.Scripts.Drag
 
 		[Header("Drag racing")]
 		[SerializeField]
-		private GameObject DragRacingStatusStatistics;
+		private GameObject DragRacingStatusStatistics = default;
 
 		[SerializeField]
-		private GameObject AutoDragClassesPanel;
+		private GameObject AutoDragClassesPanel = default;
 
 		[SerializeField]
-		private GameObject ManualDragClassesPanel;
+		private GameObject ManualDragClassesPanel = default;
 
 		[SerializeField]
-		private Toggle AutomaticDragModeToggle;
+		private Toggle AutomaticDragModeToggle = default;
 
 		[SerializeField]
-		private Toggle ManualDragModeToggle;
+		private Toggle ManualDragModeToggle = default;
 
 		[SerializeField]
-		private List<RaceWonPlacesItem> DragClassRecordsUis;
+		private List<RaceWonPlacesItem> DragClassRecordsUis = default;
 
 		[SerializeField]
-		private List<RaceWonPlacesItem> ManualDragClassRecordsUis;
+		private List<RaceWonPlacesItem> ManualDragClassRecordsUis = default;
 
 		[Header("Circuit racing")]
 		[SerializeField]
-		private GameObject CircuitRacingStatusStatistics;
+		private GameObject CircuitRacingStatusStatistics = default;
 
 		[SerializeField]
-		private List<RaceWonPlacesItem> CircuitRaceWonPlacesItems;
+		private List<RaceWonPlacesItem> CircuitRaceWonPlacesItems = default;
 
 		[Header("Other")]
 		[SerializeField]
-		private Image RaceModeImage;
+		private Image RaceModeImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RacingTitleText;
+		private TextMeshProUGUI RacingTitleText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RacingModeDescriptionText;
+		private TextMeshProUGUI RacingModeDescriptionText = default;
 
 		[SerializeField]
-		private Toggle CircuitRacingModeToggle;
+		private Toggle CircuitRacingModeToggle = default;
 
 		[SerializeField]
-		private Toggle DragRacingModeToggle;
+		private Toggle DragRacingModeToggle = default;
 
 		[SerializeField]
-		private Toggle RallyRacingModeToggle;
+		private Toggle RallyRacingModeToggle = default;
 
 		[SerializeField]
-		private NewMarkIcon RallyNewMarkIcon;
+		private NewMarkIcon RallyNewMarkIcon = default;
 
 		[SerializeField]
-		private TextMeshProUGUI StartButtonText;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Sprite[] Sprites = default;
 
 		[SerializeField]
-		private Sprite[] Sprites;
+		private RectTransform RightPanlelRectTransform = default;
 
 		[SerializeField]
-		private string[] RaceModeDescriptions;
+		private CarSelectorPanel CarSelectorPanel = default;
 
 		[SerializeField]
-		private RectTransform RightPanlelRectTransform;
+		private CircuitRacingConfig CircuitRacingConfig = default;
 
 		[SerializeField]
-		private CarSelectorPanel CarSelectorPanel;
-
-		[SerializeField]
-		private CircuitRacingConfig CircuitRacingConfig;
-
-		[SerializeField]
-		private GameObject LoadingPanel;
+		private GameObject LoadingPanel = default;
 
 		private ITimerTuningService _timerTuningService;
 

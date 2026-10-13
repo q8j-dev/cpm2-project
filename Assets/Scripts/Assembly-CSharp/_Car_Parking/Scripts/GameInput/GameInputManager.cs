@@ -342,7 +342,7 @@ namespace _Car_Parking.Scripts.GameInput
 
 		private readonly Color _debugColor = new Color(0.69f, 0.84f, 0f, 1f);
 
-		private InputField _chatInputField;
+		private InputField _chatInputField = default;
 
 		private InputActionPhase _throttleActionPhase = InputActionPhase.Canceled;
 

@@ -36,59 +36,51 @@ public class VisualColorPanel : MonoBehaviour
 	public BodyKitType currentBodyKitType;
 
 	[SerializeField]
-	private VisualTuningWindow _visualTuningWindow;
+	private VisualTuningWindow _visualTuningWindow = default;
 
 	[FormerlySerializedAs("visualTuningColorElementPrefab")]
 	[SerializeField]
-	private VisualItemColorElement VisualItemColorElementPrefab;
+	private VisualItemColorElement VisualItemColorElementPrefab = default;
 
 	private CarInfo _carInfo;
 
 	[SerializeField]
-	private Button resetButton;
+	private Button resetButton = default;
 
 	[SerializeField]
-	private TMP_Dropdown wheelDropdown;
+	private TMP_Dropdown wheelDropdown = default;
 
 	[SerializeField]
-	private GameObject subMeshPickPanel;
+	private GameObject subMeshPickPanel = default;
 
 	[SerializeField]
-	private Button leftButton;
+	private TextMeshProUGUI colorCategoryTitle = default;
 
 	[SerializeField]
-	private Button rightButton;
+	private SliderValueHandler ThicknessSlider = default;
 
 	[SerializeField]
-	private TextMeshProUGUI colorCategoryTitle;
+	private SliderValueHandler PowerSlider = default;
 
 	[SerializeField]
-	private SliderValueHandler ThicknessSlider;
+	private GameObject SliderPanel = default;
 
 	[SerializeField]
-	private SliderValueHandler PowerSlider;
+	private GameObject AlphaPanel = default;
 
 	[SerializeField]
-	private GameObject SliderPanel;
+	private SliderValueHandler AlphaSlider = default;
 
 	[SerializeField]
-	private GameObject AlphaPanel;
+	private Toggle WheelAllColorToggle = default;
 
 	[SerializeField]
-	private SliderValueHandler AlphaSlider;
+	private Toggle WheelFirstColorToggle = default;
 
 	[SerializeField]
-	private Toggle WheelAllColorToggle;
-
-	[SerializeField]
-	private Toggle WheelFirstColorToggle;
-
-	[SerializeField]
-	private Toggle WheelSecondColorToggle;
+	private Toggle WheelSecondColorToggle = default;
 
 	private VisualItemColorElement[] _visualTuningColorElements;
-
-	private int _currentColorWibdowIndex;
 
 	private int _currentColorIndex;
 

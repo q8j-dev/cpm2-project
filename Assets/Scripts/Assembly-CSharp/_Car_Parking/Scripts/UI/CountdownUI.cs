@@ -12,7 +12,7 @@ namespace _Car_Parking.Scripts.UI
 	{
 		[SerializeField]
 		[Header("References")]
-		private TMP_Text Label;
+		private TMP_Text Label = default;
 
 		[Tooltip("Optional root toggled on/off around the countdown. Defaults to this GameObject.")]
 		[SerializeField]
@@ -42,7 +42,7 @@ namespace _Car_Parking.Scripts.UI
 
 		[Tooltip("Extra pause between steps. Set 0 for a continuous rhythm.")]
 		[SerializeField]
-		private float GapDuration;
+		private float GapDuration = default;
 
 		[Tooltip("Cap on the animated countdown. If the requested duration exceeds it, the excess is spent waiting up front, then the countdown runs for MaxDuration. Negative → no cap.")]
 		[SerializeField]
@@ -51,7 +51,7 @@ namespace _Car_Parking.Scripts.UI
 		[Header("Sound")]
 		[Tooltip("Posted once per step - on 3, on 2, on 1 and again on GO! - so the event itself decides what each beat sounds like. Left empty the countdown is silent: this component is shared, so only the modes that want the beeps assign it.")]
 		[SerializeField]
-		private AK.Wwise.Event StartSound;
+		private AK.Wwise.Event StartSound = default;
 
 		[SerializeField]
 		[Header("Animation")]

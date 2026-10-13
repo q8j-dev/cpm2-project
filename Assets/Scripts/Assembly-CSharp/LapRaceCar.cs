@@ -259,7 +259,7 @@ public class LapRaceCar : MonoBehaviour
 		_powertrain.FixVehicle(stop: false);
 		if (!isUser)
 		{
-			CreateMapIcon();
+			_ = CreateMapIcon();
 		}
 		UtilsRank.RankType rankType = UtilsRank.RankType.Beginner;
 		if (isUser)

@@ -22,25 +22,25 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 		private const string SteamLink = "https://store.steampowered.com/";
 
 		[SerializeField]
-		private Button TikTokButton;
+		private Button TikTokButton = default;
 
 		[SerializeField]
-		private Button InstagramButton;
+		private Button InstagramButton = default;
 
 		[SerializeField]
-		private Button TelegramButton;
+		private Button TelegramButton = default;
 
 		[SerializeField]
-		private Button DiscordButton;
+		private Button DiscordButton = default;
 
 		[SerializeField]
-		private Button YouTubeButton;
+		private Button YouTubeButton = default;
 
 		[SerializeField]
-		private Button LeaveAReviewButton;
+		private Button LeaveAReviewButton = default;
 
 		[SerializeField]
-		private GameObject TitleReview;
+		private GameObject TitleReview = default;
 
 		private void Start()
 		{

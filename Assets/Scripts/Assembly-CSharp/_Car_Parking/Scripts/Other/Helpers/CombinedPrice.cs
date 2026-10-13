@@ -140,6 +140,16 @@ namespace _Car_Parking.Scripts.Other.Helpers
 			return !(a == b);
 		}
 
+		public override bool Equals(object obj)
+		{
+			return base.Equals(obj);
+		}
+
+		public override int GetHashCode()
+		{
+			return base.GetHashCode();
+		}
+
 		public void AddCoin(int amount)
 		{
 			Coin = (int)Coin + amount;

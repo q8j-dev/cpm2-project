@@ -15,53 +15,49 @@ namespace _Car_Parking.Scripts.UIElement
 	public class GaragePlaceUIItem : PlaceUIItem<GaragePositionsConfig, GarageData>
 	{
 		[SerializeField]
-		private TextMeshProUGUI Name;
+		private TextMeshProUGUI Name = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Capacity;
+		private TextMeshProUGUI Capacity = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Location;
+		private TextMeshProUGUI Location = default;
 
 		[SerializeField]
-		private RawImageLoadAsync Icon;
+		private RawImageLoadAsync Icon = default;
 
 		[SerializeField]
-		private Button ManageGarage;
+		private Button ManageGarage = default;
 
 		[SerializeField]
-		private GameObject BlockObject;
+		private GameObject BlockObject = default;
 
 		[SerializeField]
-		private Text PriceText;
+		private Text PriceText = default;
 
 		[SerializeField]
-		private RealCurrencyView GaragePriceView;
+		private RealCurrencyView GaragePriceView = default;
 
 		[SerializeField]
-		private TextMeshProUGUI FreeSpotsText;
+		private TextMeshProUGUI FreeSpotsText = default;
 
 		[SerializeField]
-		private GameObject FreeSpotsPlace;
+		private GameObject FreeSpotsPlace = default;
 
 		[SerializeField]
-		private Image SelectedItemPlace;
+		private Image SelectedItemPlace = default;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private OccupiedCarSlotsUI OccupiedCarSlotsUI;
+		private OccupiedCarSlotsUI OccupiedCarSlotsUI = default;
 
 		private IGarageBuyService _garageBuyService;
 
 		private IPurchaseSystem _purchaseSystem;
 
 		private IGarageSellService _garageSellService;
-
-		private bool _isChosen;
-
-		private bool _isSell;
 
 		public bool IsBought
 		{

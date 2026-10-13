@@ -12,28 +12,28 @@ namespace _Car_Parking.Scripts.Racing_Scripts.RaceInfo
 	public class RaceInfoDropdown : MonoBehaviour
 	{
 		[SerializeField]
-		private Button OpenCloseButton;
+		private Button OpenCloseButton = default;
 
 		[SerializeField]
-		private RotatorByTween ArrowRotator;
+		private RotatorByTween ArrowRotator = default;
 
 		[SerializeField]
 		private float ArrowDefaultAngle = 180f;
 
 		[SerializeField]
-		private RaceWonPlacesItem AllClassesInfo;
+		private RaceWonPlacesItem AllClassesInfo = default;
 
 		[SerializeField]
-		private RaceWonPlacesItem[] RaceWonPlaces;
+		private RaceWonPlacesItem[] RaceWonPlaces = default;
 
 		[SerializeField]
-		private CanvasGroupStateTweener CanvasGroupStateTweener;
+		private CanvasGroupStateTweener CanvasGroupStateTweener = default;
 
 		[SerializeField]
-		private Transform ClosePosition;
+		private Transform ClosePosition = default;
 
 		[SerializeField]
-		private MoverByTween[] Items;
+		private MoverByTween[] Items = default;
 
 		private bool _isOpen;
 

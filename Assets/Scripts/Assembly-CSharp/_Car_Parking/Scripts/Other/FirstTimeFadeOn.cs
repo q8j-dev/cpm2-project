@@ -5,10 +5,10 @@ namespace _Car_Parking.Scripts.Other
 	public class FirstTimeFadeOn : MonoBehaviour
 	{
 		[SerializeField]
-		private Fader Fader;
+		private Fader Fader = default;
 
 		[SerializeField]
-		private float Duration;
+		private float Duration = default;
 
 		private void Start()
 		{

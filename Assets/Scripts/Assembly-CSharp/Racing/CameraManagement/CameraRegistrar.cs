@@ -9,7 +9,7 @@ namespace Racing.CameraManagement
 	public class CameraRegistrar : MonoBehaviour
 	{
 		[SerializeField]
-		private CinemachineVirtualCameraBase VirtualCamera;
+		private CinemachineVirtualCameraBase VirtualCamera = default;
 
 		[SerializeField]
 		private float MinZoomDistance = -3f;

@@ -9,8 +9,6 @@ namespace _Car_Parking.Scripts.Car
 {
 	public class SoundObjectTrigger : MonoBehaviour
 	{
-		private Transform _target;
-
 		private SoundController _soundController;
 
 		private List<Transform> _leavesTransforms;

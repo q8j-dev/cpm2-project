@@ -8,19 +8,19 @@ namespace _Car_Parking.Scripts.UIElement
 		public const float AnimationDuration = 0.5f;
 
 		[SerializeField]
-		private Button ArrowButton;
+		private Button ArrowButton = default;
 
 		[SerializeField]
-		private Button ExtraButton;
+		private Button ExtraButton = default;
 
 		[SerializeField]
-		private DealerWindowFilterSelectedClassView DealerWindowFilterSelectedClassView;
+		private DealerWindowFilterSelectedClassView DealerWindowFilterSelectedClassView = default;
 
 		[SerializeField]
-		private DealerWindowFilterClassArrow DealerWindowFilterClassArrow;
+		private DealerWindowFilterClassArrow DealerWindowFilterClassArrow = default;
 
 		[SerializeField]
-		private DealerWindowFilterClassListView DealerWindowFilterClassListView;
+		private DealerWindowFilterClassListView DealerWindowFilterClassListView = default;
 
 		private bool _classVisible;
 

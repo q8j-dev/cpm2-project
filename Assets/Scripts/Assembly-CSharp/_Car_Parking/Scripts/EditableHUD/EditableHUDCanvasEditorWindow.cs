@@ -8,25 +8,25 @@ namespace _Car_Parking.Scripts.EditableHUD
 	public class EditableHUDCanvasEditorWindow : EditableHUDCanvasBase
 	{
 		[SerializeField]
-		private Button ButtonVisible;
+		private Button ButtonVisible = default;
 
 		[SerializeField]
-		private Button ButtonDefault;
+		private Button ButtonDefault = default;
 
 		[SerializeField]
-		private Button ButtonDefaultAll;
+		private Button ButtonDefaultAll = default;
 
 		[SerializeField]
-		private Button ButtonSaveAndExit;
+		private Button ButtonSaveAndExit = default;
 
 		[SerializeField]
-		private Slider SliderScale;
+		private Slider SliderScale = default;
 
 		[SerializeField]
-		private ElementParentInCanvasEditorWindow ElementParentInCanvasPrefab;
+		private ElementParentInCanvasEditorWindow ElementParentInCanvasPrefab = default;
 
 		[SerializeField]
-		private RectTransform ElementsParent;
+		private RectTransform ElementsParent = default;
 
 		private ElementParentInCanvasEditorWindow _elementActive;
 

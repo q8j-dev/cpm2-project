@@ -5,16 +5,16 @@ namespace _Car_Parking.Scripts.Other
 	public class LampLightMaterialColor : LampLight
 	{
 		[SerializeField]
-		private MeshRenderer MeshRenderer;
+		private MeshRenderer MeshRenderer = default;
 
 		[SerializeField]
-		private string ColorName;
+		private string ColorName = default;
 
 		[SerializeField]
-		private Color ColorStart;
+		private Color ColorStart = default;
 
 		[SerializeField]
-		private Color ColorFinish;
+		private Color ColorFinish = default;
 
 		private Material _material;
 

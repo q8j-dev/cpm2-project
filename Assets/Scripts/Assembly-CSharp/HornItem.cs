@@ -26,8 +26,6 @@ public class HornItem : MonoBehaviour
 
 	public GameObject setThisHornButton;
 
-	private int _lastHornID;
-
 	private bool _isPlaying;
 
 	private IDisposable _disposableStopHorn;

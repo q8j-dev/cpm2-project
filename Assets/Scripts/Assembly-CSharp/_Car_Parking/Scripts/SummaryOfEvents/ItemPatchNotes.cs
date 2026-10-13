@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 		private const string PlayerPrefsConfigHash = "PatchNotesConfigHashV6";
 
 		[SerializeField]
-		private GameObject NewMark;
+		private GameObject NewMark = default;
 
 		[SerializeField]
-		private PatchNotesConfig PatchNotesConfig;
+		private PatchNotesConfig PatchNotesConfig = default;
 
 		protected override void OnEnable()
 		{

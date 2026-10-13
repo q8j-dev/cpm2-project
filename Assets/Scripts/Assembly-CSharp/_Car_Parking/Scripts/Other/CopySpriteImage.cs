@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.Other
 	public class CopySpriteImage : MonoBehaviour
 	{
 		[SerializeField]
-		private Image Source;
+		private Image Source = default;
 
 		[SerializeField]
-		private Image Target;
+		private Image Target = default;
 
 		private void OnEnable()
 		{

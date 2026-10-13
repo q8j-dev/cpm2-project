@@ -19,35 +19,35 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 		[Header("Steam Controls")]
 		[Header("Toggles")]
 		[SerializeField]
-		private Toggle MouseKeyboardTab;
+		private Toggle MouseKeyboardTab = default;
 
 		[SerializeField]
-		private Toggle GamepadTab;
+		private Toggle GamepadTab = default;
 
 		[SerializeField]
-		private Toggle WheelTab;
+		private Toggle WheelTab = default;
 
 		[SerializeField]
-		private Toggle CameraTab;
+		private Toggle CameraTab = default;
 
 		[SerializeField]
-		private SteamControlsSubSectionBase MouseKeyboardSub;
+		private SteamControlsSubSectionBase MouseKeyboardSub = default;
 
 		[SerializeField]
-		private SteamControlsSubSectionBase GamepadSub;
+		private SteamControlsSubSectionBase GamepadSub = default;
 
 		[SerializeField]
-		private WheelControlsSubSection WheelSub;
+		private WheelControlsSubSection WheelSub = default;
 
 		[SerializeField]
-		private CameraControlsSubSection CameraSub;
+		private CameraControlsSubSection CameraSub = default;
 
 		private ControlsTab _currentTab;
 
 		private RegistryHandle<BoolEvent> _onNextPrevious = new RegistryHandle<BoolEvent>(EventRegistryIDs.OnNextPrevious);
 
 		[Inject]
-		private EventRegistry _eventRegistry;
+		private EventRegistry _eventRegistry = default;
 
 		public override void Init()
 		{

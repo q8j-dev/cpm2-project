@@ -20,7 +20,7 @@ namespace _Car_Parking.Scripts.VinylsAi
 		private static readonly Color LogColor = new Color(0.83f, 0.6f, 1f);
 
 		[SerializeField]
-		private ModelAsset Model;
+		private ModelAsset Model = default;
 
 		[SerializeField]
 		private int TextureSize = 244;

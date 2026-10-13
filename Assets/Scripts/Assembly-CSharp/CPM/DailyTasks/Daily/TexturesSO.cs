@@ -7,7 +7,7 @@ namespace CPM.DailyTasks.Daily
 	public class TexturesSO : ScriptableObject
 	{
 		[SerializeField]
-		private List<TextureData> textures;
+		private List<TextureData> textures = default;
 
 		private Dictionary<string, Texture> _dict;
 

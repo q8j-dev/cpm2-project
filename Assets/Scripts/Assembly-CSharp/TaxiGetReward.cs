@@ -7,15 +7,13 @@ using _Car_Parking.Scripts.Other;
 
 public class TaxiGetReward : MonoBehaviourPunCallbacks
 {
-	private VehicleData _vehicleData;
-
 	public int reward;
 
 	public Rigidbody carRigidbody;
 
 	public Transform icon;
 
-	private bool isDone;
+	private bool isDone = default;
 
 	private Collider carCollider;
 

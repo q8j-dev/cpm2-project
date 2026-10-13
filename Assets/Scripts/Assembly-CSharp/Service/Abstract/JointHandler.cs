@@ -5,7 +5,7 @@ namespace Service.Abstract
 	public abstract class JointHandler : MonoBehaviour, IJointHandler
 	{
 		[SerializeField]
-		protected Collider collider;
+		protected new Collider collider;
 
 		[SerializeField]
 		protected GameObject prefab;

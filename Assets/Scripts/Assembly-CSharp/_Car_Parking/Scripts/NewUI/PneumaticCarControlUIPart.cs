@@ -37,48 +37,42 @@ namespace _Car_Parking.Scripts.NewUI
 
 		[SerializeField]
 		[Header("Texts")]
-		private TextMeshProUGUI FrontPneumaticValueText;
+		private TextMeshProUGUI FrontPneumaticValueText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI RearPneumaticValueText;
+		private TextMeshProUGUI RearPneumaticValueText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI BothPneumaticValueText;
+		private TextMeshProUGUI BothPneumaticValueText = default;
 
 		[SerializeField]
 		[Header("Buttons")]
-		private ButtonUpDown FrontUpButton;
+		private ButtonUpDown FrontUpButton = default;
 
 		[SerializeField]
-		private ButtonUpDown FrontDownButton;
+		private ButtonUpDown FrontDownButton = default;
 
 		[SerializeField]
-		private ButtonUpDown RearUpButton;
+		private ButtonUpDown RearUpButton = default;
 
 		[SerializeField]
-		private ButtonUpDown RearDownButton;
+		private ButtonUpDown RearDownButton = default;
 
 		[SerializeField]
-		private ButtonUpDown BothUpButton;
+		private ButtonUpDown BothUpButton = default;
 
 		[SerializeField]
-		private ButtonUpDown BothDownButton;
+		private ButtonUpDown BothDownButton = default;
 
 		[SerializeField]
-		private Toggle BothAxlesToggle;
+		private Toggle BothAxlesToggle = default;
 
 		[SerializeField]
-		private Button ResetButton;
+		private Button ResetButton = default;
 
 		[SerializeField]
 		[Header("Outlines")]
-		private FillableImage[] BorderImages;
-
-		[SerializeField]
-		private Color ActiveColor;
-
-		[SerializeField]
-		private Color DeactiveColor;
+		private FillableImage[] BorderImages = default;
 
 		private float _commonDelta;
 

@@ -739,14 +739,6 @@ namespace _Car_Parking.Scripts.Person.Locomotion.Input
 			bool flag = (_triggerHeldLast = triggerHeldLast);
 			triggerHeldLast = (!_walkMode | flag) || _autoRun;
 			_sprintTierLatched = flag || _autoRun;
-			if (false)
-			{
-				if (Time.time - _lastRunPressTime <= 0.3f)
-				{
-					_sprintTierLatched = true;
-				}
-				_lastRunPressTime = Time.time;
-			}
 			if (!triggerHeldLast)
 			{
 				_sprintTierLatched = false;

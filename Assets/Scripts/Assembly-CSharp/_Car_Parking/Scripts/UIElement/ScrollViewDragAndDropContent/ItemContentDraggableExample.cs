@@ -6,16 +6,16 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent
 	public class ItemContentDraggableExample : ItemContentDraggable
 	{
 		[SerializeField]
-		private GameObject SelectGraphics;
+		private GameObject SelectGraphics = default;
 
 		[SerializeField]
-		private GameObject EmptyGO;
+		private GameObject EmptyGO = default;
 
 		[SerializeField]
-		private GameObject SelectContentGO;
+		private GameObject SelectContentGO = default;
 
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		public override bool CanDrag => !IsEmpty;
 

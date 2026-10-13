@@ -18,36 +18,31 @@ using _Car_Parking.Scripts.SOAP_Registry;
 public class CircuitCarSelectWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Button StartButton;
+	private Button StartButton = default;
 
 	[SerializeField]
-	private Button BackButton;
+	private Button BackButton = default;
 
 	[SerializeField]
-	private Transform ContentPanel;
+	private Transform ContentPanel = default;
 
 	[SerializeField]
-	private ScrollRect ScrollRect;
+	private TextMeshProUGUI TransmissionText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TransmissionText;
+	private TextMeshProUGUI WeightText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI WeightText;
+	private TextMeshProUGUI ClassText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ClassText;
+	private SimpleScrollSnap SimpleScrollSnap = default;
 
 	[SerializeField]
-	private SimpleScrollSnap SimpleScrollSnap;
+	private CircuitSlotCollectionUIHandler SlotCollectionUI = default;
 
 	[SerializeField]
-	private CircuitSlotCollectionUIHandler SlotCollectionUI;
-
-	[SerializeField]
-	private ScrollSnapSoundComponent ScrollSnapSound;
-
-	private IPrefabFactory _prefabFactory;
+	private ScrollSnapSoundComponent ScrollSnapSound = default;
 
 	private GarageController _garageController;
 

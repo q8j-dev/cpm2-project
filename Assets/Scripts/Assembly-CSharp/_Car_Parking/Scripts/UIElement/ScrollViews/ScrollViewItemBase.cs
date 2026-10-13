@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViews
 	public abstract class ScrollViewItemBase : MonoBehaviour
 	{
 		[SerializeField]
-		private RectTransformInCanvasSpace RectTransformInCanvasSpace;
+		private RectTransformInCanvasSpace RectTransformInCanvasSpace = default;
 
 		public Rect RectInCanvasSpace
 		{

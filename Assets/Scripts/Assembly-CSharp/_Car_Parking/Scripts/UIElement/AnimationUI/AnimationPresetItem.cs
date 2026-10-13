@@ -17,7 +17,7 @@ namespace _Car_Parking.Scripts.UIElement.AnimationUI
 		private Button SelectButton;
 
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		private IEmoteEntry _entry;
 

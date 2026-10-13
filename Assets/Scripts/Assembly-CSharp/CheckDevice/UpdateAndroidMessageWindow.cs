@@ -7,7 +7,7 @@ namespace CheckDevice
 	public class UpdateAndroidMessageWindow : WindowScript
 	{
 		[SerializeField]
-		private Button AcceptButton;
+		private Button AcceptButton = default;
 
 		protected override void Start()
 		{

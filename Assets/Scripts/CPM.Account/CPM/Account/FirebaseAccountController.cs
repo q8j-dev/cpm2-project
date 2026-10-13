@@ -57,8 +57,6 @@ namespace CPM.Account
 
 		private readonly SessionBackend _sessionBackend;
 
-		private float _startProgress;
-
 		private bool _isSteamSession;
 
 		public bool Started;

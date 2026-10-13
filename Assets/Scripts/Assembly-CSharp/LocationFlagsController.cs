@@ -9,7 +9,7 @@ public class LocationFlagsController : MonoBehaviour
 	private int CheckStepsAhead = 3;
 
 	[SerializeField]
-	private float CheckRadius;
+	private float CheckRadius = default;
 
 	private FlagNode<IFlagTrigger> _firstNode;
 

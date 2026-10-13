@@ -13,7 +13,7 @@ namespace _Car_Parking.Scripts.SOAP
 		protected bool debugLogRead;
 
 		[SerializeField]
-		private T initialValue;
+		private T initialValue = default;
 
 		[NonSerialized]
 		protected T _runtimeValue;

@@ -88,8 +88,6 @@ namespace UI
 
 		private float _min;
 
-		private float _center;
-
 		private Coroutine? _backInertiaCoroutine;
 
 		private Coroutine? _fadeCoroutine;
@@ -101,12 +99,7 @@ namespace UI
 		private Dictionary<int, int>? _carOrder;
 
 		[SerializeField]
-		private GameObject carImage;
-
-		[SerializeField]
-		private GameObject carImageIndexed;
-
-		private List<Transform>? _transform;
+		private GameObject carImage = default;
 
 		private Vector3 prevTouchPos;
 

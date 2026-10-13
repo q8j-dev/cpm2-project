@@ -11,52 +11,52 @@ using _Car_Parking.Scripts.Localization;
 public class MarketInventoryItem : MonoBehaviour
 {
 	[SerializeField]
-	private TextMeshProUGUI PriceText;
+	private TextMeshProUGUI PriceText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI WeightText;
+	private TextMeshProUGUI WeightText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MaxMiliageText;
+	private TextMeshProUGUI MaxMiliageText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MiliageTitleText;
+	private TextMeshProUGUI MiliageTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DurabilityText;
+	private TextMeshProUGUI DurabilityText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI PartItemName;
+	private TextMeshProUGUI PartItemName = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CompatibleInstalledText;
+	private TextMeshProUGUI CompatibleInstalledText = default;
 
 	[SerializeField]
-	private Image MoneyImage;
+	private Image MoneyImage = default;
 
 	[SerializeField]
-	private Image ItemImage;
+	private Image ItemImage = default;
 
 	[SerializeField]
-	private Image ItemImagePanel;
+	private Image ItemImagePanel = default;
 
 	[SerializeField]
-	private Image CompanyImage;
+	private Image CompanyImage = default;
 
 	[SerializeField]
-	private Image CompatiblePanel;
+	private Image CompatiblePanel = default;
 
 	[SerializeField]
-	private Toggle ItemToggle;
+	private Toggle ItemToggle = default;
 
 	[SerializeField]
-	private Image StatusImage;
+	private Image StatusImage = default;
 
 	[SerializeField]
-	private Color WarningColor;
+	private Color WarningColor = default;
 
 	[SerializeField]
-	private Color ErrorColor;
+	private Color ErrorColor = default;
 
 	private PartData _partData;
 

@@ -10,13 +10,13 @@ using _Car_Parking.Scripts.EngineTuning;
 public class CoolingUIWindow : WindowScript, IClickable, IBackableWindow
 {
 	[SerializeField]
-	private UIPartsController UIPartsController;
+	private UIPartsController UIPartsController = default;
 
 	[SerializeField]
-	private PartType DefaultPartTypeInNullElements;
+	private PartType DefaultPartTypeInNullElements = default;
 
 	[SerializeField]
-	private EngineImageRotator DetailImageRotator;
+	private EngineImageRotator DetailImageRotator = default;
 
 	private bool _isInCar;
 
@@ -75,7 +75,7 @@ public class CoolingUIWindow : WindowScript, IClickable, IBackableWindow
 		ParseDetails(_managerUI.EditingEngineKitData).Forget();
 		if ((bool)DetailImageRotator)
 		{
-			DetailImageRotator.Init("Intercooler_0");
+			_ = DetailImageRotator.Init("Intercooler_0");
 		}
 	}
 

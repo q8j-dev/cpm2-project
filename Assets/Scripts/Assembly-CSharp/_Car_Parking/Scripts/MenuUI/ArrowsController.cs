@@ -6,10 +6,10 @@ namespace _Car_Parking.Scripts.MenuUI
 	public class ArrowsController : MonoBehaviour
 	{
 		[SerializeField]
-		private PointerEnterExitHandler LeftArrow;
+		private PointerEnterExitHandler LeftArrow = default;
 
 		[SerializeField]
-		private PointerEnterExitHandler RightArrow;
+		private PointerEnterExitHandler RightArrow = default;
 
 		private CarInputManager _carInputManger;
 

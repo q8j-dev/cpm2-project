@@ -19,64 +19,59 @@ using _Car_Parking.Scripts.SOAP_Registry;
 public class CarTuningWindow : WindowScript, IBackableWindow
 {
 	[SerializeField]
-	private Button backButton;
+	private Button backButton = default;
 
 	[Header("Toggles")]
 	[SerializeField]
-	private Toggle tuningButton;
+	private Toggle tuningButton = default;
 
 	[SerializeField]
-	private Toggle exteriorButton;
+	private Toggle exteriorButton = default;
 
 	[SerializeField]
-	private Toggle dynoRunButton;
+	private Toggle dynoRunButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MileageText;
+	private TextMeshProUGUI MileageText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TorqueText;
+	private TextMeshProUGUI TorqueText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TorqueTitleText;
+	private TextMeshProUGUI TorqueTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI HPText;
+	private TextMeshProUGUI HPText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI HPTitleText;
+	private TextMeshProUGUI HPTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI WeightText;
+	private TextMeshProUGUI WeightText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI GearsText;
+	private TextMeshProUGUI GearsText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TransmissionText;
+	private TextMeshProUGUI TransmissionText = default;
 
 	[Header("Buttons for windows")]
 	[SerializeField]
-	private UIPartCategoryChecker EngineButton;
+	private UIPartCategoryChecker EngineButton = default;
 
 	[SerializeField]
-	private Button SuspensionButton;
+	private Button SuspensionButton = default;
 
 	[SerializeField]
-	private UIPartCategoryChecker GearboxButton;
+	private UIPartCategoryChecker GearboxButton = default;
 
 	[SerializeField]
-	private UIPartCategoryChecker MaintenanceButtonChecker;
+	private UIPartCategoryChecker MaintenanceButtonChecker = default;
 
 	[Header("Other setttings")]
 	public VisualButtonHandler OnPanelOpened;
 
 	public int openPanel = 1;
-
-	private CanvasGroup[] _panels;
-
-	[SerializeField]
-	private TextMeshProUGUI AllWeightText;
 
 	private ITimerTuningService _timerTuningService;
 

@@ -41,12 +41,6 @@ namespace _Car_Parking.Scripts.Car.Physics
 
 		private static float? _lastSteerAngle;
 
-		private static int? _lastBrake;
-
-		private static int? _lastThrottle;
-
-		private static int? _lastClutch;
-
 		private static ERRORCODE _errorcode;
 
 		private static float _wheelHalfRangeDeg = 270f;
@@ -82,8 +76,6 @@ namespace _Car_Parking.Scripts.Car.Physics
 		private static readonly bool[] ButtonClicks = new bool[40];
 
 		public static readonly Action<bool>[] ButtonCallbacks = new Action<bool>[40];
-
-		private static IDisposable _reset;
 
 		public static bool SdkInstalled { get; private set; }
 

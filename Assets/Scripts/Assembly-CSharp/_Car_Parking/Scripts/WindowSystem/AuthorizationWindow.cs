@@ -45,37 +45,37 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private const string PersonCustomizationCompletedPrefsKey = "PersonCustomizationCompleted";
 
 		[SerializeField]
-		private ButtonEnableDisableColor SignInButton;
+		private ButtonEnableDisableColor SignInButton = default;
 
 		[SerializeField]
-		private CanvasGroup CurrentCanvasGroup;
+		private CanvasGroup CurrentCanvasGroup = default;
 
 		[SerializeField]
-		private Button ResetPasswordButton;
+		private Button ResetPasswordButton = default;
 
 		[SerializeField]
-		private Button SteamSignInButton;
+		private Button SteamSignInButton = default;
 
 		[SerializeField]
 		private string BackWindowKey;
 
 		[SerializeField]
-		private GameObject TopBoth;
+		private GameObject TopBoth = default;
 
 		[SerializeField]
-		private GameObject TopOnlySignIn;
+		private GameObject TopOnlySignIn = default;
 
 		[SerializeField]
-		private GameObject TopOnlySignUp;
+		private GameObject TopOnlySignUp = default;
 
 		[SerializeField]
-		private GameObject SteamSignInObject;
+		private GameObject SteamSignInObject = default;
 
 		[SerializeField]
-		private TMP_Text[] SignInTitles;
+		private TMP_Text[] SignInTitles = default;
 
 		[SerializeField]
-		private TMP_Text[] SignUpTitles;
+		private TMP_Text[] SignUpTitles = default;
 
 		private bool _isAllInputEmpty = true;
 
@@ -92,8 +92,6 @@ namespace _Car_Parking.Scripts.WindowSystem
 		private IRegistrationController _registrationController;
 
 		private ITimerTuningService _timerTuningService;
-
-		private ProgressContainer _progressContainer;
 
 		private IEngineTuningTimerService _engineTuningTimerService;
 

@@ -40,13 +40,7 @@ namespace _Car_Parking.Scripts.EventSystem
 		public bool UseRandomPosition;
 
 		[SerializeField]
-		private Transform[] CollectablePlaces;
-
-		[SerializeField]
-		private EventZoneCollectible ZoneCollectiblePrefab;
-
-		[SerializeField]
-		private EventZoneCollectiblesPosDatas EventZoneCollectiblesConfig;
+		private EventZoneCollectiblesPosDatas EventZoneCollectiblesConfig = default;
 
 		private List<(Vector3, Quaternion)> _collectablePlaces = new List<(Vector3, Quaternion)>();
 
@@ -62,17 +56,11 @@ namespace _Car_Parking.Scripts.EventSystem
 
 		private OptionalDependency<MapCamera> _mapCameraDep;
 
-		private IDisposable _soundEventObservable;
-
-		private bool _isStarted;
-
 		private int _collectablesCount;
 
 		private FreeDriveProvider _freeDriveProvider;
 
 		private MapCamera _mapCamera;
-
-		private int _currentGiggleStep;
 
 		private bool _isDestroyed;
 

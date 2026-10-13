@@ -15,19 +15,19 @@ namespace CPM.Leaderboard.UI
 	public sealed class LeaderboardListView : MonoBehaviour
 	{
 		[SerializeField]
-		private ScrollRect _scrollRect;
+		private ScrollRect _scrollRect = default;
 
 		[SerializeField]
-		private RecordRowUiElement _rowPrefab;
+		private RecordRowUiElement _rowPrefab = default;
 
 		[SerializeField]
-		private RecordRowUiElement _selfRow;
+		private RecordRowUiElement _selfRow = default;
 
 		[SerializeField]
-		private GameObject _emptyState;
+		private GameObject _emptyState = default;
 
 		[SerializeField]
-		private UiScrollRectOcclusiion _scrollRectOcclusion;
+		private UiScrollRectOcclusiion _scrollRectOcclusion = default;
 
 		private PlayerDataStorage _playerData;
 

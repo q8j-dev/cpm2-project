@@ -22,10 +22,10 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 		public List<ItemEvent> ItemEventPrefab;
 
 		[SerializeField]
-		private ItemOffer ItemOfferPrefabDefault;
+		private ItemOffer ItemOfferPrefabDefault = default;
 
 		[SerializeField]
-		private ItemOffer[] ItemOfferPrefabs;
+		private ItemOffer[] ItemOfferPrefabs = default;
 
 		[SerializeField]
 		private OtherSmallBannerItemBase[] _otherUpdateItemPrefabs = Array.Empty<OtherSmallBannerItemBase>();

@@ -33,67 +33,67 @@ namespace _Car_Parking.Scripts.Scopes
 		private const string VisualTuningSmokeConfigPath = "Configs/VisualTuning/ColorsScopeSmokeConfig";
 
 		[SerializeField]
-		private GarageAnalyticaInitializer GarageAnalyticaInitializer;
+		private GarageAnalyticaInitializer GarageAnalyticaInitializer = default;
 
 		[SerializeField]
-		private AnimationShop AnimationShop;
+		private AnimationShop AnimationShop = default;
 
 		[SerializeField]
-		private CarSelectorByTouch CarSelectorByTouch;
+		private CarSelectorByTouch CarSelectorByTouch = default;
 
 		[SerializeField]
-		private GarageController GarageController;
+		private GarageController GarageController = default;
 
 		[SerializeField]
-		private LightForChangeRoom LightForChangeRoom;
+		private LightForChangeRoom LightForChangeRoom = default;
 
 		[SerializeField]
-		private MenuControl MenuControl;
+		private MenuControl MenuControl = default;
 
 		[SerializeField]
-		private Camera MainCameraNew;
+		private Camera MainCameraNew = default;
 
 		[SerializeField]
-		private CoreGameManager CoreGameManager;
+		private CoreGameManager CoreGameManager = default;
 
 		[SerializeField]
-		private SceneControl SceneControl;
+		private SceneControl SceneControl = default;
 
 		[SerializeField]
-		private ExteriorTuning ExteriorTuning;
+		private ExteriorTuning ExteriorTuning = default;
 
 		[SerializeField]
-		private MultiPlayerMenu MultiPlayerMenu;
+		private MultiPlayerMenu MultiPlayerMenu = default;
 
 		[SerializeField]
-		private CarCameras CarCameras;
+		private CarCameras CarCameras = default;
 
 		[SerializeField]
-		private CinemachineBrain CinemachineBrain;
+		private CinemachineBrain CinemachineBrain = default;
 
 		[SerializeField]
-		private ManagerUI ManagerUI;
+		private ManagerUI ManagerUI = default;
 
 		[SerializeField]
-		private CameraManager CameraManager;
+		private CameraManager CameraManager = default;
 
 		[SerializeField]
-		private FreeDriveDB FreeDriveDB;
+		private FreeDriveDB FreeDriveDB = default;
 
 		[SerializeField]
-		private StageRender StageRender;
+		private StageRender StageRender = default;
 
 		[SerializeField]
-		private MenuLevelParent MenuLevelParent;
+		private MenuLevelParent MenuLevelParent = default;
 
 		[SerializeField]
-		private VinylsEditorDependencyProvider VinylsEditorDependencyProvider;
+		private VinylsEditorDependencyProvider VinylsEditorDependencyProvider = default;
 
 		[SerializeField]
-		private SetStaticData SetStaticData;
+		private SetStaticData SetStaticData = default;
 
 		[SerializeField]
-		private LeaderBoard LeaderBoard;
+		private LeaderBoard LeaderBoard = default;
 
 		protected override void Awake()
 		{

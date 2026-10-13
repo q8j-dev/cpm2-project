@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.Other
 	public class FaderRawImage : Fader
 	{
 		[SerializeField]
-		private RawImage RawImage;
+		private RawImage RawImage = default;
 
 		public override float Alpha
 		{

@@ -9,13 +9,13 @@ namespace _Car_Parking.StartGameLoadingScreen.Scripts
 	public class SetterImage : MonoBehaviour
 	{
 		[SerializeField]
-		private Image ImageA;
+		private Image ImageA = default;
 
 		[SerializeField]
-		private Image ImageB;
+		private Image ImageB = default;
 
 		[SerializeField]
-		private Sprite[] Sprites;
+		private Sprite[] Sprites = default;
 
 		[SerializeField]
 		private float FadeDuration = 1f;

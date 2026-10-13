@@ -17,7 +17,7 @@ public class EventPositionConfiner : MonoBehaviour
 	public AK.Wwise.Event StopEvent = new AK.Wwise.Event();
 
 	[SerializeField]
-	private SoundBankType _soundBank;
+	private SoundBankType _soundBank = default;
 
 	private SoundBankLoadService _soundBankService;
 

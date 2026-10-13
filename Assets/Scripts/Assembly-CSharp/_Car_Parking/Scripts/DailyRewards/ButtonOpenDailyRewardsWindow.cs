@@ -17,13 +17,13 @@ namespace _Car_Parking.Scripts.DailyRewards
 		private const float ConfirmWindowBackgroundAlpha = 0.925f;
 
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		[SerializeField]
-		private GameObject AmountRewardsRoot;
+		private GameObject AmountRewardsRoot = default;
 
 		[SerializeField]
-		private TMP_Text AmountRewardsText;
+		private TMP_Text AmountRewardsText = default;
 
 		private IDailyRewardsServer _dailyRewardsServer;
 

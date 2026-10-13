@@ -53,8 +53,6 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 
 		private FlagsVisualScope _flagsVisualScope;
 
-		private VehicleData _vehicleData;
-
 		private VinylDrawer _vinylDrawer;
 
 		private BodyKitsVisualScope _bodyKitsVisualScope;

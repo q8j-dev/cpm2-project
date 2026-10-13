@@ -12,16 +12,16 @@ namespace _Car_Parking.Scripts.MenuUI
 	public class VisualPolicePanel : MonoBehaviour
 	{
 		[SerializeField]
-		private VisualTuningPoliceElement VisualTuningPoliceElementPrefab;
+		private VisualTuningPoliceElement VisualTuningPoliceElementPrefab = default;
 
 		[SerializeField]
-		private VisualTuningWindow VisualTuningWindow;
+		private VisualTuningWindow VisualTuningWindow = default;
 
 		[SerializeField]
-		private GameObject BuyPoliceButtonPrefab;
+		private GameObject BuyPoliceButtonPrefab = default;
 
 		[SerializeField]
-		private SirenSoundControlPanel SirenSoundControlPanel;
+		private SirenSoundControlPanel SirenSoundControlPanel = default;
 
 		private List<VisualTuningPoliceElement> _elements = new List<VisualTuningPoliceElement>();
 

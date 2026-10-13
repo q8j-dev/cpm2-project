@@ -12,8 +12,6 @@ namespace _Car_Parking.Scripts.Infrastructure
 	{
 		private readonly IRemoteConfigManager _remoteConfigManager;
 
-		private ConfigValuesStorage _remoteConfigData;
-
 		private int _parentalControlStatus;
 
 		public bool IsParentalControlEnabled => _parentalControlStatus == 0;

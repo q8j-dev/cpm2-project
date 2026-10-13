@@ -958,11 +958,11 @@ public class DragRacingController : MonoBehaviour
 			}
 			if (car.GameObject == leftCar)
 			{
-				_raceFinishUI.ShowResults(car.GameObject, null, flag, num);
+				_ = _raceFinishUI.ShowResults(car.GameObject, null, flag, num);
 			}
 			else
 			{
-				_raceFinishUI.ShowResults(null, car.GameObject, flag, num);
+				_ = _raceFinishUI.ShowResults(null, car.GameObject, flag, num);
 			}
 			if (num != 0)
 			{
@@ -971,7 +971,7 @@ public class DragRacingController : MonoBehaviour
 		}
 		else if (rivalCar.GetComponent<VehicleData>().racingState != RacingState.OnRacing && vehicleData.racingState != RacingState.OnRacing)
 		{
-			_raceFinishUI.ShowResults(leftCar, rightCar, flag);
+			_ = _raceFinishUI.ShowResults(leftCar, rightCar, flag);
 		}
 		_inputMapSetEvent.TrySetGroup(InputGroupsEnum.Ui);
 	}

@@ -16,16 +16,16 @@ public class VisualTuningBodyKitsPanel : MonoBehaviour
 	public VisualItemBodyKitElement VisualItemBodyKitPrefab;
 
 	[SerializeField]
-	private VisualTuningWindow VisualTuningWindow;
+	private VisualTuningWindow VisualTuningWindow = default;
 
 	[SerializeField]
-	private Texture2D[] AirIntakes;
+	private Texture2D[] AirIntakes = default;
 
 	[SerializeField]
-	private Texture2D[] DefaultBodyTextures;
+	private Texture2D[] DefaultBodyTextures = default;
 
 	[SerializeField]
-	private Texture2D[] Spoilers;
+	private Texture2D[] Spoilers = default;
 
 	private bool _arrayInitialized;
 

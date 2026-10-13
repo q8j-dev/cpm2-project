@@ -3,7 +3,7 @@ using UnityEngine;
 public class PitStopController : MonoBehaviour
 {
 	[SerializeField]
-	private PitStopTrigger[] PitStopTriggers;
+	private PitStopTrigger[] PitStopTriggers = default;
 
 	public PitStopTrigger GetAvaliblePitStopTrigger()
 	{

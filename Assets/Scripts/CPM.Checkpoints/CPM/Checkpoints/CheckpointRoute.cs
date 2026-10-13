@@ -6,7 +6,7 @@ namespace CPM.Checkpoints
 	public sealed class CheckpointRoute : MonoBehaviour
 	{
 		[SerializeField]
-		private Collider[] _checkpoints;
+		private Collider[] _checkpoints = default;
 
 		public IReadOnlyList<Collider> Checkpoints => _checkpoints;
 

@@ -9,16 +9,16 @@ using _Car_Parking.Scripts.Localization;
 public class CircuitDisqualifiedWindow : WindowScript
 {
 	[SerializeField]
-	private Button ExitButton;
+	private Button ExitButton = default;
 
 	[SerializeField]
-	private Button MenuButton;
+	private Button MenuButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ReasonDisqualificationText;
+	private TextMeshProUGUI ReasonDisqualificationText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DisqualificationText;
+	private TextMeshProUGUI DisqualificationText = default;
 
 	private CircuitRaceControlller _circuitRaceControlller;
 

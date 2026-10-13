@@ -9,16 +9,16 @@ namespace _Car_Parking.Scripts.Scopes
 	public class SummaryOfEventsScope : LifetimeScope
 	{
 		[SerializeField]
-		private SummaryOfEventsView summaryOfEventsView;
+		private SummaryOfEventsView summaryOfEventsView = default;
 
 		[SerializeField]
-		private SummaryOfEventsConfig summaryOfEventsConfig;
+		private SummaryOfEventsConfig summaryOfEventsConfig = default;
 
 		[SerializeField]
-		private PatchNotesConfig patchNotesConfig;
+		private PatchNotesConfig patchNotesConfig = default;
 
 		[SerializeField]
-		private MainMenuWindow MainMenuWindow;
+		private MainMenuWindow MainMenuWindow = default;
 
 		protected override void Configure(IContainerBuilder builder)
 		{

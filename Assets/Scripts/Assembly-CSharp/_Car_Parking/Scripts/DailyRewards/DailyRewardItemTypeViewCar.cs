@@ -7,10 +7,10 @@ namespace _Car_Parking.Scripts.DailyRewards
 	public class DailyRewardItemTypeViewCar : DailyRewardItemTypeView
 	{
 		[SerializeField]
-		private RawImageLoadAsync CarIcon;
+		private RawImageLoadAsync CarIcon = default;
 
 		[SerializeField]
-		private GameObject CarMisteryIcon;
+		private GameObject CarMisteryIcon = default;
 
 		public override DailyRewardData.TypeReward TypeReward => DailyRewardData.TypeReward.Car;
 

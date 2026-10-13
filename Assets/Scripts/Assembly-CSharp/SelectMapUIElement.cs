@@ -8,13 +8,13 @@ public class SelectMapUIElement : MonoBehaviour
 	private Toggle SelectToggle;
 
 	[SerializeField]
-	private Image CupImage;
+	private Image CupImage = default;
 
 	[SerializeField]
 	private int MapIndex;
 
 	[SerializeField]
-	private TextMeshProUGUI TrackName;
+	private TextMeshProUGUI TrackName = default;
 
 	private CircuitRaceSelectMapWindow _сircuitRaceSelectMapWindow;
 

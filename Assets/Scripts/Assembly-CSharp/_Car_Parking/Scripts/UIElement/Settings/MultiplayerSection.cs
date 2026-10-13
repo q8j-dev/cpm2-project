@@ -13,46 +13,43 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	public class MultiplayerSection : SettingsSectionBase
 	{
 		[SerializeField]
-		private Toggle IgnoreFriendRequestToggle;
+		private Toggle IgnoreFriendRequestToggle = default;
 
 		[SerializeField]
-		private Toggle IgnoreRacingRequestToggle;
+		private Toggle IgnoreRacingRequestToggle = default;
 
 		[SerializeField]
-		private Toggle IgnoreCarSellingRequestToggle;
+		private Toggle IgnoreCarSellingRequestToggle = default;
 
 		[SerializeField]
-		private Toggle HideChatToggle;
+		private Toggle HideChatToggle = default;
 
 		[SerializeField]
-		private Toggle HideVinylsToggle;
+		private Toggle HideVinylsToggle = default;
 
 		[SerializeField]
-		private Toggle HideNickToggle;
+		private Toggle HideNickToggle = default;
 
 		[SerializeField]
-		private Toggle VoiceChatToggle;
+		private Toggle VoiceChatToggle = default;
 
 		[SerializeField]
-		private Toggle ReduceNoisesToggle;
+		private Toggle ReduceNoisesToggle = default;
 
 		[SerializeField]
-		private ToggleSwitchHandler NoisesToggleInteractable;
+		private ToggleSwitchHandler NoisesToggleInteractable = default;
 
 		[SerializeField]
-		private ToggleSwitchHandler VoiceChatToggleInteractable;
+		private ToggleSwitchHandler VoiceChatToggleInteractable = default;
 
 		[SerializeField]
-		private ToggleSwitchHandler HideChatToggleInteractable;
+		private ToggleSwitchHandler HideChatToggleInteractable = default;
 
 		[SerializeField]
-		private ToggleSwitchHandler HideVinylsToggleInteractable;
+		private ToggleSwitchHandler HideVinylsToggleInteractable = default;
 
 		[SerializeField]
-		private CanvasGroup CurrentCanvasGroup;
-
-		[SerializeField]
-		private GameObject PrivacySection;
+		private GameObject PrivacySection = default;
 
 		private MultiPlayer _multiPlayer;
 

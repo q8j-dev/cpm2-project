@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ObstacleRaceResultRowElement : ResultRowElement<ObstacleRaceResultRow>
 	{
 		[SerializeField]
-		private TMP_Text TimeText;
+		private TMP_Text TimeText = default;
 
 		protected override void OnBind(in ObstacleRaceResultRow row)
 		{

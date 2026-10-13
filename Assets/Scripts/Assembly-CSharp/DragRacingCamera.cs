@@ -40,9 +40,9 @@ public class DragRacingCamera : MonoBehaviour
 	[Serializable]
 	private class CameraRotationData
 	{
-		public float x;
+		public float x = default;
 
-		public float y;
+		public float y = default;
 	}
 
 	private enum LookMode

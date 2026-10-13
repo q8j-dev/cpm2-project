@@ -85,7 +85,7 @@ namespace VLB
 
 		[SerializeField]
 		[FormerlySerializedAs("noiseEnabled")]
-		private bool _DEPRECATED_NoiseEnabled;
+		private bool _DEPRECATED_NoiseEnabled = default;
 
 		[Range(0f, 1f)]
 		public float noiseIntensity = 0.5f;

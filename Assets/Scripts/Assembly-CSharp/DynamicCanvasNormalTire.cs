@@ -38,8 +38,6 @@ public class DynamicCanvasNormalTire : MonoBehaviour
 
 	private GlobalCollectionsProvider _collectionsProvider;
 
-	private IDisposable _clearAllVinylsDisposable;
-
 	private IDisposable _renderDisposable;
 
 	[Inject]

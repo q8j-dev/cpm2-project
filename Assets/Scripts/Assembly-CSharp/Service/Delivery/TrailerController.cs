@@ -22,7 +22,7 @@ namespace Service.Delivery
 		public GameObject trigger;
 
 		[SerializeField]
-		private Collider jointCollider;
+		private Collider jointCollider = default;
 
 		public ContainerController containerController;
 
@@ -66,8 +66,6 @@ namespace Service.Delivery
 		private FreeDriveProvider _freeDriveProvider;
 
 		private MenuLevelParent _menuLevelParent;
-
-		private Axles _axles;
 
 		[Inject]
 		public void Construct(OnlineCollectionsProvider onlineCollectionsProvider, FreeDriveProvider freeDriveProvider, MenuLevelParent menuLevelParent)

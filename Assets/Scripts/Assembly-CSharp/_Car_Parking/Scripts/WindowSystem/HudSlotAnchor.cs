@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public sealed class HudSlotAnchor : MonoBehaviour
 	{
 		[SerializeField]
-		private HudSlot Slot;
+		private HudSlot Slot = default;
 
 		private RectTransform _rect;
 

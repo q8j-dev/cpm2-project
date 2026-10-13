@@ -16,106 +16,106 @@ namespace _Car_Parking.Scripts.UIElement.Settings
 	{
 		[Header("Tonemapping toggles")]
 		[SerializeField]
-		private Toggle TonemappingOffToggle;
+		private Toggle TonemappingOffToggle = default;
 
 		[SerializeField]
-		private Toggle TonemappingGtToggle;
+		private Toggle TonemappingGtToggle = default;
 
 		[SerializeField]
-		private Toggle TonemappingAgxToggle;
+		private Toggle TonemappingAgxToggle = default;
 
 		[SerializeField]
-		private Toggle TonemappingAcesToggle;
+		private Toggle TonemappingAcesToggle = default;
 
 		[SerializeField]
-		private SliderValueHandler EVCompensationSlider;
+		private SliderValueHandler EVCompensationSlider = default;
 
 		[SerializeField]
-		private SliderValueHandler WBCompensationSlider;
+		private SliderValueHandler WBCompensationSlider = default;
 
 		[SerializeField]
 		[Header("Other stuff")]
-		private Toggle AntiAliasingToggle;
+		private Toggle AntiAliasingToggle = default;
 
 		[SerializeField]
-		private Toggle VignetteToggle;
+		private Toggle VignetteToggle = default;
 
 		[SerializeField]
-		private Toggle BloomToggle;
+		private Toggle BloomToggle = default;
 
 		[SerializeField]
-		private Toggle BlurToggle;
+		private Toggle BlurToggle = default;
 
 		[SerializeField]
-		private Toggle HideSmokeToggle;
+		private Toggle HideSmokeToggle = default;
 
 		[SerializeField]
-		private Toggle HideSkidMarksToggle;
+		private Toggle HideSkidMarksToggle = default;
 
 		[SerializeField]
-		private Toggle HideWheelDirtToggle;
+		private Toggle HideWheelDirtToggle = default;
 
 		[SerializeField]
-		private Toggle MirrorsStateToggle;
+		private Toggle MirrorsStateToggle = default;
 
 		[SerializeField]
-		private Toggle MotionBlurToggle;
+		private Toggle MotionBlurToggle = default;
 
 		[Header("Time of day")]
 		[SerializeField]
-		private Toggle Day;
+		private Toggle Day = default;
 
 		[SerializeField]
-		private Toggle Evening;
+		private Toggle Evening = default;
 
 		[SerializeField]
-		private Toggle Night;
+		private Toggle Night = default;
 
 		[SerializeField]
-		private Toggle DayNightCycle;
+		private Toggle DayNightCycle = default;
 
 		[SerializeField]
-		private Toggle CustomTimeToggle;
+		private Toggle CustomTimeToggle = default;
 
 		[SerializeField]
-		private Button ColorCorrectionButton;
+		private Button ColorCorrectionButton = default;
 
 		[SerializeField]
-		private SliderValueHandler TimeSlider;
+		private SliderValueHandler TimeSlider = default;
 
 		[SerializeField]
-		private GameObject TimesSection;
+		private GameObject TimesSection = default;
 
 		[SerializeField]
-		private Toggle CustomTimeFormat12;
+		private Toggle CustomTimeFormat12 = default;
 
 		[SerializeField]
-		private Toggle CustomTimeFormat24;
+		private Toggle CustomTimeFormat24 = default;
 
 		[Header("Weather")]
 		[SerializeField]
-		private GameObject WeatherSection;
+		private GameObject WeatherSection = default;
 
 		[SerializeField]
-		private Toggle DynamicWeatherToggle;
+		private Toggle DynamicWeatherToggle = default;
 
 		[SerializeField]
-		private Toggle ClearWeatherToggle;
+		private Toggle ClearWeatherToggle = default;
 
 		[SerializeField]
-		private Toggle HazedWeatherToggle;
+		private Toggle HazedWeatherToggle = default;
 
 		[SerializeField]
-		private Toggle CloudyWeatherToggle;
+		private Toggle CloudyWeatherToggle = default;
 
 		[SerializeField]
-		private Toggle OvercastWeatherToggle;
+		private Toggle OvercastWeatherToggle = default;
 
 		[SerializeField]
-		private Toggle RainyWeatherToggle;
+		private Toggle RainyWeatherToggle = default;
 
 		[SerializeField]
-		private Toggle StormyWeatherToggle;
+		private Toggle StormyWeatherToggle = default;
 
 		private UserPreferenceAnalytic _userPreferenceAnalytic;
 

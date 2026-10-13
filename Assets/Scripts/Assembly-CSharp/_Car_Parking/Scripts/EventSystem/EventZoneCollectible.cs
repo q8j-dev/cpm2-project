@@ -14,10 +14,10 @@ namespace _Car_Parking.Scripts.EventSystem
 		public int Index;
 
 		[SerializeField]
-		private VfxSpawner VfxSpawner;
+		private VfxSpawner VfxSpawner = default;
 
 		[SerializeField]
-		private GameObject MeshObject;
+		private GameObject MeshObject = default;
 
 		private MapCamera _mapCamera;
 

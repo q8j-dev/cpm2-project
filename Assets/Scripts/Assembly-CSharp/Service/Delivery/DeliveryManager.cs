@@ -18,10 +18,6 @@ namespace Service.Delivery
 
 		public Gradient gradient;
 
-		private Vector3 trailerPos;
-
-		private Vector3 playerPos;
-
 		private List<int> ids = new List<int>();
 
 		public void AddTrailer(int OwnerActorNr, TrailerController trailerController)

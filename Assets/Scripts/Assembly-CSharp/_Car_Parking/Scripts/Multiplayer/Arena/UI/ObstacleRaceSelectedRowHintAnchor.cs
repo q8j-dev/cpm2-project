@@ -5,15 +5,15 @@ namespace _Car_Parking.Scripts.Multiplayer.Arena.UI
 	public sealed class ObstacleRaceSelectedRowHintAnchor : MonoBehaviour
 	{
 		[SerializeField]
-		private ObstacleRaceSpectatorListView List;
+		private ObstacleRaceSpectatorListView List = default;
 
 		[Tooltip("Spawner target the hints are spawned into; moved and resized to cover the selected row.")]
 		[SerializeField]
-		private RectTransform Frame;
+		private RectTransform Frame = default;
 
 		[SerializeField]
 		[Tooltip("The list's scroll viewport; the hints hide while the selected row is outside it.")]
-		private RectTransform Viewport;
+		private RectTransform Viewport = default;
 
 		private static readonly Vector2 Center = new Vector2(0.5f, 0.5f);
 

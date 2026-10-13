@@ -14,13 +14,13 @@ namespace _Car_Parking.Scripts.WindowSystem
 	public class SingleEventViewWindow : WindowScript
 	{
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private List<GameObject> EventViewPrefabsV2;
+		private List<GameObject> EventViewPrefabsV2 = default;
 
 		[SerializeField]
-		private Transform Parent;
+		private Transform Parent = default;
 
 		private IPrefabFactory _prefabFactory;
 

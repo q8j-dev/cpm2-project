@@ -10,16 +10,16 @@ namespace _Car_Parking.Scripts.WindowSystem.PropertyWindow
 	public class PropertyWindow : WindowScript
 	{
 		[SerializeField]
-		private VerticalLayoutGroup MainFraneGroup;
+		private VerticalLayoutGroup MainFraneGroup = default;
 
 		[SerializeField]
-		private List<PropertiesUISection> PropertiesSections;
+		private List<PropertiesUISection> PropertiesSections = default;
 
 		[SerializeField]
-		private List<PropertyUIObject> PropertiesHandlers;
+		private List<PropertyUIObject> PropertiesHandlers = default;
 
 		[SerializeField]
-		private List<float> FrameSpacings;
+		private List<float> FrameSpacings = default;
 
 		private PropertiesUISection _currentSection;
 

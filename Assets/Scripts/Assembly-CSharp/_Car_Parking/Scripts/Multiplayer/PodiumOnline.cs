@@ -5,19 +5,19 @@ namespace _Car_Parking.Scripts.Multiplayer
 	public class PodiumOnline : MonoBehaviour
 	{
 		[SerializeField]
-		private Transform EntryTarget;
+		private Transform EntryTarget = default;
 
 		[Tooltip("Authored stands, best place first: element 0 is 1st place. Places past the last element go to OtherPlaces.")]
 		[SerializeField]
-		private Transform[] FirstPlaces;
+		private Transform[] FirstPlaces = default;
 
 		[SerializeField]
 		[Tooltip("Layout the remaining places are spread over, starting right after the last stand.")]
-		private SpawnLayoutProvider OtherPlaces;
+		private SpawnLayoutProvider OtherPlaces = default;
 
 		[SerializeField]
 		[Tooltip("The camera takes this pose once the run ends and holds it. Empty: the camera keeps following the player.")]
-		private Transform CameraPosition;
+		private Transform CameraPosition = default;
 
 		public Transform CameraMount => CameraPosition;
 

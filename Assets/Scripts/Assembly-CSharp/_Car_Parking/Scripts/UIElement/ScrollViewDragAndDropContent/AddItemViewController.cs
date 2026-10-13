@@ -12,10 +12,10 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent
 		}
 
 		[SerializeField]
-		private GameObject AddItemBack;
+		private GameObject AddItemBack = default;
 
 		[SerializeField]
-		private GameObject AddItemFront;
+		private GameObject AddItemFront = default;
 
 		public AddType CurrentAddType
 		{

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class DragThresholdUtil : MonoBehaviour
 {
 	[SerializeField]
-	private EventSystem EventSystem;
+	private EventSystem EventSystem = default;
 
 	private void Start()
 	{

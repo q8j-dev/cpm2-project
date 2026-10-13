@@ -12,10 +12,10 @@ namespace _Car_Parking.Scripts.WindowSystem
 		public const string WindowId = "Info";
 
 		[SerializeField]
-		private Transform ViewContainer;
+		private Transform ViewContainer = default;
 
 		[SerializeField]
-		private GameActivityDetailView[] ViewPrefabs;
+		private GameActivityDetailView[] ViewPrefabs = default;
 
 		private IPrefabFactory _prefabFactory;
 

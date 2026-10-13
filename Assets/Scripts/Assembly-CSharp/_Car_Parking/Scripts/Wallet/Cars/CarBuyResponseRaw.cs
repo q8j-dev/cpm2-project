@@ -1,3 +1,4 @@
+#nullable enable annotations
 using UnityEngine.Scripting;
 
 namespace _Car_Parking.Scripts.Wallet.Cars

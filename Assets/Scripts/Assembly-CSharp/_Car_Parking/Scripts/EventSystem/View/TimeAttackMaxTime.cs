@@ -11,7 +11,7 @@ namespace _Car_Parking.Scripts.EventSystem.View
 	public class TimeAttackMaxTime : MonoBehaviour
 	{
 		[SerializeField]
-		private TextMeshProUGUI TimeText;
+		private TextMeshProUGUI TimeText = default;
 
 		private IEventService _eventService;
 

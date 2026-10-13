@@ -7,7 +7,7 @@ namespace _Car_Parking.Scripts.SummaryOfEvents
 	public class SummaryOfEventItem : MonoBehaviour
 	{
 		[SerializeField]
-		private Button Button;
+		private Button Button = default;
 
 		public event Action<SummaryOfEventItem> OnClickEvent;
 

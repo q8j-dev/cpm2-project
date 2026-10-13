@@ -5,10 +5,10 @@ namespace _Car_Parking.Scripts.Other
 	public class LampLightMaterialColorAlpha : LampLight
 	{
 		[SerializeField]
-		private MeshRenderer MeshRenderer;
+		private MeshRenderer MeshRenderer = default;
 
 		[SerializeField]
-		private string ColorName;
+		private string ColorName = default;
 
 		[SerializeField]
 		private float AlphaMax = 1f;

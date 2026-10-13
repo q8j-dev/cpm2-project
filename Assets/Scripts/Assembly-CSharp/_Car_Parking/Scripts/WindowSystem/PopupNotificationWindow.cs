@@ -18,40 +18,40 @@ namespace _Car_Parking.Scripts.WindowSystem
 
 		[Header("Texts")]
 		[SerializeField]
-		private TextMeshProUGUI Title;
+		private TextMeshProUGUI Title = default;
 
 		[SerializeField]
-		private TextMeshProUGUI Content;
+		private TextMeshProUGUI Content = default;
 
 		[SerializeField]
-		private TextMeshProUGUI ImageText;
+		private TextMeshProUGUI ImageText = default;
 
 		[Header("Service icons to change")]
 		[SerializeField]
-		private Sprite TaxiIcon;
+		private Sprite TaxiIcon = default;
 
 		[SerializeField]
-		private Sprite DeliveryIcon;
+		private Sprite DeliveryIcon = default;
 
 		[SerializeField]
-		private Sprite CargoIcon;
+		private Sprite CargoIcon = default;
 
 		[SerializeField]
 		[Header("Movable elements")]
-		private RectTransform RectToMove;
+		private RectTransform RectToMove = default;
 
 		[Header("Other")]
 		[SerializeField]
-		private Button HideButton;
+		private Button HideButton = default;
 
 		[SerializeField]
-		private Image Icon;
+		private Image Icon = default;
 
 		[SerializeField]
-		private RawImage BckgRawImage;
+		private RawImage BckgRawImage = default;
 
 		[SerializeField]
-		private RawImage MainRawImage;
+		private RawImage MainRawImage = default;
 
 		private float _waitTime;
 

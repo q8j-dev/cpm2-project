@@ -16,27 +16,25 @@ namespace _Car_Parking.Scripts.Racing_Scripts.Rally.Leaderboard
 	public sealed class RallyLeaderboardWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private RaceRewardItem[] RaceRewardItems;
+		private RaceRewardItem[] RaceRewardItems = default;
 
 		[SerializeField]
-		private LeaderboardListView ListView;
+		private LeaderboardListView ListView = default;
 
 		[SerializeField]
-		private Button BackButton;
+		private Button BackButton = default;
 
 		[SerializeField]
-		private Button StartButton;
+		private Button StartButton = default;
 
 		[SerializeField]
-		private RallyRecordsUIPanel RecordsPanel;
+		private RallyRecordsUIPanel RecordsPanel = default;
 
 		private RaceModeController _raceModeController;
 
 		private RallyRecordsBank _bank;
 
 		private GhostStorage _storage;
-
-		private RallyCar _rallyCar;
 
 		private RallyController _rallyController;
 

@@ -7,11 +7,9 @@ using _Car_Parking.Scripts.Providers;
 public class PhoneController : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject[] pages;
+	private GameObject[] pages = default;
 
 	private GameObject _currentApp;
-
-	private float _volume;
 
 	private FreeDriveProvider _freeDriveProvider;
 

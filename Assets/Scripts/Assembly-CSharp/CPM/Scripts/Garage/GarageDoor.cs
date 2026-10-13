@@ -16,7 +16,7 @@ namespace CPM.Scripts.Garage
 		private Animation animationComp;
 
 		[SerializeField]
-		private BoxCollider checkCollider;
+		private BoxCollider checkCollider = default;
 
 		[SerializeField]
 		private LayerMask obstaclesLayers;
@@ -30,9 +30,6 @@ namespace CPM.Scripts.Garage
 
 		[HideInInspector]
 		public Collider[] checkResults;
-
-		[HideInInspector]
-		private RaycastHit[] _results;
 
 		private CancellationTokenSource _autoCloseCts;
 

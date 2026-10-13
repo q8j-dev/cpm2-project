@@ -23,7 +23,7 @@ namespace _Car_Parking.Scripts.UIElement
 		private Ease MoveEase = Ease.InBack;
 
 		[SerializeField]
-		private Transform[] Arrows;
+		private Transform[] Arrows = default;
 
 		private float _firstDefaultPos;
 

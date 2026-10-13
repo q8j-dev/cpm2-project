@@ -727,7 +727,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 		public void onMileReached(GameObject car)
 		{
 			dragy.on800mReached();
-			controller.OnCarFinish(car);
+			_ = controller.OnCarFinish(car);
 			distanceCarToFinish = 0f;
 			SetBannerLeft(car);
 		}
@@ -737,7 +737,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 			if (controller.runDistance == DragRacingController.RunDistance.QuaterMile)
 			{
 				dragy.on402Reached();
-				controller.OnCarFinish(car);
+				_ = controller.OnCarFinish(car);
 				distanceCarToFinish = 0f;
 				SetBannerLeft(car);
 			}
@@ -1131,7 +1131,7 @@ namespace _Car_Parking.Scripts.Racing_Scripts
 				{
 					toLook = treeTransform.transform.position;
 				}
-				controller.Podium.PopulateCrowd(square, toLook, myPersonLose: false);
+				_ = controller.Podium.PopulateCrowd(square, toLook, myPersonLose: false);
 			}
 		}
 

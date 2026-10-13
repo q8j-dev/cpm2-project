@@ -8,7 +8,7 @@ namespace _Car_Parking.Scripts.Drag
 	public class FlashPopup : MonoBehaviour, IPopupWindow
 	{
 		[SerializeField]
-		private FinishFlashController _finishFlashController;
+		private FinishFlashController _finishFlashController = default;
 
 		private IDisposable _flash;
 

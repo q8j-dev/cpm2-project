@@ -167,7 +167,7 @@ namespace _Car_Parking.Scripts.Steam.Purchase
 			isPurchasing = false;
 			pendingApplyHandler = null;
 			lastSteamPurchaseData = null;
-			ManagerUIHelper.CloseWaitingWindow();
+			_ = ManagerUIHelper.CloseWaitingWindow();
 		}
 
 		private void OnMicroTxnAuthorizationResponseGet(AppId appId, ulong orderId, bool authorized)

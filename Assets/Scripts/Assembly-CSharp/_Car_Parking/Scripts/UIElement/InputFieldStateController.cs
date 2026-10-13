@@ -8,43 +8,43 @@ namespace _Car_Parking.Scripts.UIElement
 	public class InputFieldStateController : MonoBehaviour
 	{
 		[SerializeField]
-		private TMP_InputField TMPInputField;
+		private TMP_InputField TMPInputField = default;
 
 		[SerializeField]
-		private Image Background;
+		private Image Background = default;
 
 		[SerializeField]
-		private Sprite Normal;
+		private Sprite Normal = default;
 
 		[SerializeField]
-		private Sprite Active;
+		private Sprite Active = default;
 
 		[SerializeField]
-		private Sprite Error;
+		private Sprite Error = default;
 
 		[SerializeField]
-		private Color NormalTextColor;
+		private Color NormalTextColor = default;
 
 		[SerializeField]
-		private Color ErrorTextColor;
+		private Color ErrorTextColor = default;
 
 		[SerializeField]
-		private bool IsEmail;
+		private bool IsEmail = default;
 
 		[SerializeField]
-		private Button ClearButton;
+		private Button ClearButton = default;
 
 		[SerializeField]
-		private bool IsPassword;
+		private bool IsPassword = default;
 
 		[SerializeField]
-		private Toggle PasswordHideToggle;
+		private Toggle PasswordHideToggle = default;
 
 		[SerializeField]
-		private Sprite On;
+		private Sprite On = default;
 
 		[SerializeField]
-		private Sprite Off;
+		private Sprite Off = default;
 
 		private bool _isEmpty = true;
 

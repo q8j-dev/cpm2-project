@@ -87,7 +87,7 @@ namespace _Car_Parking.Scripts.MenuUI.VisualTuning
 			}
 			else
 			{
-				TryBuy();
+				_ = TryBuy();
 			}
 		}
 

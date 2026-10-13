@@ -12,13 +12,13 @@ namespace _Car_Parking.Scripts.Free_drive
 	public class ToRoadIconUpdater : MonoBehaviour
 	{
 		[SerializeField]
-		private Sprite ToRoadIcon;
+		private Sprite ToRoadIcon = default;
 
 		[SerializeField]
 		private Vector2 SizeToRoadIcon = new Vector2(90f, 80f);
 
 		[SerializeField]
-		private Sprite ResetToSlotPositionIcon;
+		private Sprite ResetToSlotPositionIcon = default;
 
 		[SerializeField]
 		private Vector2 SizeResetToSlotPositionIcon = new Vector2(80f, 80f);

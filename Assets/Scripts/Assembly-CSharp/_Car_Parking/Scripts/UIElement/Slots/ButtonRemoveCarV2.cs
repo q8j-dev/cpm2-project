@@ -36,13 +36,13 @@ namespace _Car_Parking.Scripts.UIElement.Slots
 		private CancellationTokenSource _cancellationTokenSourceCheck;
 
 		[SerializeField]
-		private GameObject RemoveCarCenterText;
+		private GameObject RemoveCarCenterText = default;
 
 		[SerializeField]
-		private GameObjectStateUpdater StateUpdater;
+		private GameObjectStateUpdater StateUpdater = default;
 
 		[SerializeField]
-		private ScrollViewSlots[] ScrollViewSlots;
+		private ScrollViewSlots[] ScrollViewSlots = default;
 
 		[SerializeField]
 		protected RectTransformInCanvasSpace RectTransformInCanvasSpace;

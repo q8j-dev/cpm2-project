@@ -24,31 +24,31 @@ namespace _Car_Parking.Scripts.DailyRewards
 		private const int DaysInWeek = 7;
 
 		[SerializeField]
-		private CanvasGroup MainPanel;
+		private CanvasGroup MainPanel = default;
 
 		[SerializeField]
-		private DailyRewardItem DailyRewardItemSimplePrefab;
+		private DailyRewardItem DailyRewardItemSimplePrefab = default;
 
 		[SerializeField]
-		private DailyRewardItem DailyRewardItemDay7Prefab;
+		private DailyRewardItem DailyRewardItemDay7Prefab = default;
 
 		[SerializeField]
-		private ScrollRect ScrollRect;
+		private ScrollRect ScrollRect = default;
 
 		[SerializeField]
-		private TMP_Text WeekText;
+		private TMP_Text WeekText = default;
 
 		[SerializeField]
-		private ScrollRectItemsCenterController ScrollRectItemsCenterController;
+		private ScrollRectItemsCenterController ScrollRectItemsCenterController = default;
 
 		[SerializeField]
-		private DailyRewardsWindowNextPrevWeek ButtonWeekNext;
+		private DailyRewardsWindowNextPrevWeek ButtonWeekNext = default;
 
 		[SerializeField]
-		private DailyRewardsWindowNextPrevWeek ButtonWeekPrevius;
+		private DailyRewardsWindowNextPrevWeek ButtonWeekPrevius = default;
 
 		[SerializeField]
-		private TabIconsController WeekTabs;
+		private TabIconsController WeekTabs = default;
 
 		private IDailyRewardsServer _dailyRewardsServer;
 

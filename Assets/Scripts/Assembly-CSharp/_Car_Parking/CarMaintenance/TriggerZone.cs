@@ -11,10 +11,10 @@ namespace _Car_Parking.CarMaintenance
 
 		private CapsuleCollider _collider;
 
-		private RaycastHit[] _results;
+		private RaycastHit[] _results = default;
 
 		[SerializeField]
-		private LayerMask _carLayer;
+		private LayerMask _carLayer = default;
 
 		public event Action<GameObject> OnZoneTriggerred;
 

@@ -4,13 +4,13 @@ using UnityEngine;
 public class SideMenuArrowTweener : MonoBehaviour
 {
 	[SerializeField]
-	private Vector3 startPos;
+	private Vector3 startPos = default;
 
 	[SerializeField]
-	private Vector3 endPos;
+	private Vector3 endPos = default;
 
 	[SerializeField]
-	private float duration;
+	private float duration = default;
 
 	private bool state;
 

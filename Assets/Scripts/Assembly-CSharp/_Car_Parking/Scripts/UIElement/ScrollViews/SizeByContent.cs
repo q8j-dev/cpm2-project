@@ -20,7 +20,7 @@ namespace _Car_Parking.Scripts.UIElement.ScrollViews
 		private RectTransformEventSender ContentRectTransformEventSender;
 
 		[SerializeField]
-		private Mode ModeUpdate;
+		private Mode ModeUpdate = default;
 
 		private CancellationTokenSource _cancellationTokenSource;
 

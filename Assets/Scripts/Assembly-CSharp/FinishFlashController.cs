@@ -8,7 +8,7 @@ public sealed class FinishFlashController : MonoBehaviour
 	private static readonly int SID_Intensity = Shader.PropertyToID("_FinishFlash_Intensity");
 
 	[SerializeField]
-	private FinishFlashFeature featureInRenderer;
+	private FinishFlashFeature featureInRenderer = default;
 
 	[SerializeField]
 	private Volume volume;

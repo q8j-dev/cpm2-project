@@ -113,7 +113,7 @@ public class LemanRaceController : MonoBehaviour
 
 	public void LeaderFinishLeman()
 	{
-		_managerUI.ShowNotificationWindow("Leader finished race. This lap is Final", 3f);
+		_ = _managerUI.ShowNotificationWindow("Leader finished race. This lap is Final", 3f);
 		CancelCountdown();
 		FinishRaceMembersAfterLeader();
 		CircuitRacingUIControl.SetLap("Final Lap", "");
@@ -191,7 +191,7 @@ public class LemanRaceController : MonoBehaviour
 	public void SetPenaltyLap(LapRaceCar lapRaceCar)
 	{
 		string text = (lapRaceCar.IsUser() ? "You finished before time expired! Added Final Lap" : "Leader Ffnished before time expired! Added Final Lap");
-		_managerUI.ShowNotificationWindow(text, 3f);
+		_ = _managerUI.ShowNotificationWindow(text, 3f);
 	}
 
 	public void FinishRaceMembersAfterLeader()

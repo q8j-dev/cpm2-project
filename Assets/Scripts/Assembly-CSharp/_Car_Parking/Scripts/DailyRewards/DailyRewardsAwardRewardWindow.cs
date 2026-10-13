@@ -25,48 +25,48 @@ namespace _Car_Parking.Scripts.DailyRewards
 		{
 			public const float AnimationDuration = 0.3f;
 
-			public GameObject ButtonsRoot;
+			public GameObject ButtonsRoot = default;
 
-			public Button ButtonExchange;
+			public Button ButtonExchange = default;
 
-			public Button ButtonPlaceToSlot;
+			public Button ButtonPlaceToSlot = default;
 
-			public Button ButtonGoToGarage;
+			public Button ButtonGoToGarage = default;
 
-			public CombinedPriceView CombinedPriceView;
+			public CombinedPriceView CombinedPriceView = default;
 
-			public Transform IconRoot;
+			public Transform IconRoot = default;
 
-			public Button ButtonExchangeTapAnywhere;
+			public Button ButtonExchangeTapAnywhere = default;
 
-			public GameObject CancelExchangeCarRoot;
+			public GameObject CancelExchangeCarRoot = default;
 
-			public Button ButtonCancelExchange;
+			public Button ButtonCancelExchange = default;
 
 			[NonSerialized]
 			public CombinedPrice CarPrice;
 		}
 
 		[SerializeField]
-		private GameObject TapAnywhereRoot;
+		private GameObject TapAnywhereRoot = default;
 
 		[SerializeField]
-		private Button TapAnywhereButton;
+		private Button TapAnywhereButton = default;
 
 		[SerializeField]
-		private CombinedPriceView CombinedPriceView;
+		private CombinedPriceView CombinedPriceView = default;
 
 		[SerializeField]
-		private RawImageLoadAsync CarImage;
+		private RawImageLoadAsync CarImage = default;
 
 		[SerializeField]
-		private DailyRewardTypeGameObjects DailyRewardTypeGameObjects;
+		private DailyRewardTypeGameObjects DailyRewardTypeGameObjects = default;
 
 		[SerializeField]
-		private CarPanelData CarPanel;
+		private CarPanelData CarPanel = default;
 
 		[SerializeField]
-		private TMP_Text[] DayTexts;
+		private TMP_Text[] DayTexts = default;
 
 		private IDailyRewardsServer _dailyRewardsServer;
 
@@ -184,7 +184,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 		private void OnGoToGarageButtonClick()
 		{
 			RemoveCarButtonsListeners();
-			_managerUI.ShowNotificationWindow(new LocalizedString("DailyRewards.Message.ClearSlot"), 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DailyRewards.Message.ClearSlot"), 3f, NotificationType.Error);
 			_managerUI.ShowGarageWindow();
 			Close();
 		}
@@ -268,7 +268,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 
 		private async UniTaskVoid InitCarUIAsync()
 		{
-			_managerUI.ShowWaitingWindow(set: true, backButtonState: true);
+			_ = _managerUI.ShowWaitingWindow(set: true, backButtonState: true);
 			TapAnywhereRoot.SetActive(value: false);
 			CarPanel.CarPrice = null;
 			CarPanelData carPanel = CarPanel;
@@ -304,7 +304,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 			{
 				CarPanel.ButtonPlaceToSlot.gameObject.SetActive(value: false);
 				CarPanel.ButtonGoToGarage.gameObject.SetActive(value: true);
-				_managerUI.ShowNotificationWindow(new LocalizedString("DailyRewards.Message.ClearSlot"), 3f, NotificationType.Error);
+				_ = _managerUI.ShowNotificationWindow(new LocalizedString("DailyRewards.Message.ClearSlot"), 3f, NotificationType.Error);
 			}
 		}
 
@@ -312,7 +312,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 		{
 			int carIdBeforeExchange = _dailyRewardData.Car;
 			int dayNumber = _dailyRewardData.Day + 1;
-			_managerUI.ShowWaitingWindow(set: true, backButtonState: true);
+			_ = _managerUI.ShowWaitingWindow(set: true, backButtonState: true);
 			FunctionStatus num = await _dailyRewardsServer.ExchangeRewardCarAsync(_dailyRewardData.Day);
 			if (num != FunctionStatus.Success)
 			{
@@ -372,7 +372,7 @@ namespace _Car_Parking.Scripts.DailyRewards
 
 		private void ShowServerIsNotAvailableMessage()
 		{
-			_managerUI.ShowNotificationWindow(new LocalizedString("DailyRewards.Message.ServerIsNotAvailable"), 3f, NotificationType.Error);
+			_ = _managerUI.ShowNotificationWindow(new LocalizedString("DailyRewards.Message.ServerIsNotAvailable"), 3f, NotificationType.Error);
 		}
 	}
 }

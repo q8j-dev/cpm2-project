@@ -8,22 +8,22 @@ namespace _Car_Parking.Scripts.Rally.UI
 	public class RallySettingsWindow : WindowScript, IBackableWindow
 	{
 		[SerializeField]
-		private Slider ManeuverIconsSlider;
+		private Slider ManeuverIconsSlider = default;
 
 		[SerializeField]
-		private Slider PaceNotesSlider;
+		private Slider PaceNotesSlider = default;
 
 		[SerializeField]
-		private TextMeshProUGUI PaceNotesValue;
+		private TextMeshProUGUI PaceNotesValue = default;
 
 		[SerializeField]
-		private Button CloseButton;
+		private Button CloseButton = default;
 
 		[SerializeField]
-		private Button MinusButton;
+		private Button MinusButton = default;
 
 		[SerializeField]
-		private Button PlusButton;
+		private Button PlusButton = default;
 
 		private readonly float _step = 1f;
 

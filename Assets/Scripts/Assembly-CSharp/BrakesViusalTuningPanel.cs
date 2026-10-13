@@ -15,35 +15,35 @@ public class BrakesViusalTuningPanel : MonoBehaviour
 	private BrakeTuningConfig _brakeTuningConfig;
 
 	[SerializeField]
-	private VisualTuningWindow VisualTuningWindow;
+	private VisualTuningWindow VisualTuningWindow = default;
 
 	[SerializeField]
 	[FormerlySerializedAs("visualTuningElementPrefab")]
-	private VisualItemElement VisualItemElementPrefab;
+	private VisualItemElement VisualItemElementPrefab = default;
 
 	[SerializeField]
-	private TextMeshProUGUI SideText;
+	private TextMeshProUGUI SideText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI typeText;
+	private TextMeshProUGUI typeText = default;
 
 	[SerializeField]
-	private SliderValueHandler BrakesDiameterSlider;
+	private SliderValueHandler BrakesDiameterSlider = default;
 
 	[SerializeField]
-	private Button WheelAxleLeftButton;
+	private Button WheelAxleLeftButton = default;
 
 	[SerializeField]
-	private Button WheelAxleRightButton;
+	private Button WheelAxleRightButton = default;
 
 	[SerializeField]
-	private Button BrakeTypeLeftButton;
+	private Button BrakeTypeLeftButton = default;
 
 	[SerializeField]
-	private Button BrakeTypeRightButton;
+	private Button BrakeTypeRightButton = default;
 
 	[SerializeField]
-	private CalipersTuningPanel CalipersVisualTuningPanel;
+	private CalipersTuningPanel CalipersVisualTuningPanel = default;
 
 	public WheelTuningAxleType CurrentAxleType;
 

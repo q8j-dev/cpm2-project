@@ -16,8 +16,6 @@ namespace _Car_Parking.CarMaintenance
 
 		private VehicleData _vehicleData;
 
-		private float _dirtReductionValue;
-
 		public override bool IsServiceConditionsMet(out ServiceMessages messages)
 		{
 			if (ObscuredPrefs.GetFloat("money", 25000f) < _serviceCost)

@@ -10,7 +10,7 @@ namespace Services.PriceStyleService
 	public class PriceStyleConfig : ScriptableObject
 	{
 		[SerializeField]
-		private List<PriceStyleData> _priceStyleData;
+		private List<PriceStyleData> _priceStyleData = default;
 
 		[Preserve]
 		public PriceStyleConfig()

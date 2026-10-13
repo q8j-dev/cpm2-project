@@ -46,13 +46,13 @@ public class RaceFinishUI : MonoBehaviour
 			{
 				Dragy component = carLeft.GetComponent<Dragy>();
 				Dragy component2 = carRight.GetComponent<Dragy>();
-				leftElmnt.ParseDatas(component, component2, quaterMile);
-				rightElmnt.ParseDatas(component2, component, quaterMile);
+				_ = leftElmnt.ParseDatas(component, component2, quaterMile);
+				_ = rightElmnt.ParseDatas(component2, component, quaterMile);
 			}
 			else
 			{
-				rightElmnt.ParseDatas(carRight, quaterMile);
-				leftElmnt.ParseDatas(carLeft, quaterMile);
+				_ = rightElmnt.ParseDatas(carRight, quaterMile);
+				_ = leftElmnt.ParseDatas(carLeft, quaterMile);
 			}
 			if (carLeft == V.LastUsedCar || carRight == V.LastUsedCar || _racingProvider.DragRacingController.focusOnOtherCar)
 			{

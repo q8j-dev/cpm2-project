@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.UIElement
 	public class TabIconsController : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObjectStateUpdaterContainer TabIconPrefab;
+		private GameObjectStateUpdaterContainer TabIconPrefab = default;
 
 		private List<GameObjectStateUpdaterContainer> _tabIcons = new List<GameObjectStateUpdaterContainer>();
 

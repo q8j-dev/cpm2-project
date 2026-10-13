@@ -16,7 +16,7 @@ namespace _Car_Parking.Scripts.Multiplayer.Chat
 		private const int MaxMessageCharCount = 50;
 
 		[SerializeField]
-		private ChatMessagesConfig chatMessagesConfig;
+		private ChatMessagesConfig chatMessagesConfig = default;
 
 		private MultiPersonControl _multiPersonControl;
 

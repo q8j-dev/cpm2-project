@@ -12,38 +12,32 @@ namespace _Car_Parking.Scripts.Drag
 	{
 		[Header("Texts")]
 		[SerializeField]
-		private TextMeshProUGUI ItemTypeText;
+		private TextMeshProUGUI ItemTypeText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI detailNameText;
+		private TextMeshProUGUI detailNameText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI massText;
+		private TextMeshProUGUI massText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI priceText;
+		private TextMeshProUGUI priceText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI milliageText;
+		private TextMeshProUGUI milliageText = default;
 
 		[SerializeField]
-		private TextMeshProUGUI reliabilityText;
+		private TextMeshProUGUI reliabilityText = default;
 
 		[SerializeField]
 		[Header("Hints")]
 		private Sprite[] hintStateSprites;
 
 		[SerializeField]
-		private Image hintImage;
+		private Image PlusImage = default;
 
 		[SerializeField]
-		private TextMeshProUGUI hintText;
-
-		[SerializeField]
-		private Image PlusImage;
-
-		[SerializeField]
-		private CanvasGroup[] CanvasGroups;
+		private CanvasGroup[] CanvasGroups = default;
 
 		private Toggle _toggle;
 

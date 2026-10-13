@@ -30,13 +30,13 @@ public class ClusterOsd : MonoBehaviour
 	private float MaxRpm = 8000f;
 
 	[SerializeField]
-	private float MinRpmAngle;
+	private float MinRpmAngle = default;
 
 	[SerializeField]
-	private float MaxRpmAngle;
+	private float MaxRpmAngle = default;
 
 	[SerializeField]
-	private List<SpeedAnglePoint> TachoCalibration;
+	private List<SpeedAnglePoint> TachoCalibration = default;
 
 	private float _lerpedRpm;
 
@@ -52,23 +52,21 @@ public class ClusterOsd : MonoBehaviour
 	private GameObject SpeedometerNeedle;
 
 	[SerializeField]
-	private bool Mph;
+	private bool Mph = default;
 
 	[SerializeField]
 	private float MaxSpeed = 200f;
 
 	[SerializeField]
-	private float MinSpeedometerAngle;
+	private float MinSpeedometerAngle = default;
 
 	[SerializeField]
-	private float MaxSpeedometerAngle;
+	private float MaxSpeedometerAngle = default;
 
 	[SerializeField]
-	private List<SpeedAnglePoint> SpeedoCalibration;
+	private List<SpeedAnglePoint> SpeedoCalibration = default;
 
 	private float _lerpedSpeedo;
-
-	private float _valueSpeed;
 
 	private float _speedoAngle;
 

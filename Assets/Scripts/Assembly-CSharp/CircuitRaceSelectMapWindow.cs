@@ -41,127 +41,113 @@ public class CircuitRaceSelectMapWindow : WindowScript, IBackableWindow
 	private const int MaxRaceCarsCount = 10;
 
 	[SerializeField]
-	private TextMeshProUGUI MapTitleText;
+	private TextMeshProUGUI MapTitleText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TargetTitleText;
+	private Button StartButton = default;
 
 	[SerializeField]
-	private TextMeshProUGUI WinCupsTitleText;
+	private Transform ButtonsParent = default;
 
 	[SerializeField]
-	private Button StartButton;
+	private Transform OnMapButtonsParent = default;
 
 	[SerializeField]
-	private Transform ButtonsParent;
+	private SelectMapUIElement SelectMapUIElementPrefab = default;
 
 	[SerializeField]
-	private Transform OnMapButtonsParent;
+	private GameObject SelectClassPanel = default;
 
 	[SerializeField]
-	private SelectMapUIElement SelectMapUIElementPrefab;
+	private GameObject SelectMapPanel = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MapStatusText;
+	private Button BackButton = default;
 
 	[SerializeField]
-	private GameObject SelectClassPanel;
+	private Button BackClassButton = default;
 
 	[SerializeField]
-	private GameObject SelectMapPanel;
+	private Button MapDirection = default;
 
 	[SerializeField]
-	private Button BackButton;
+	private TextMeshProUGUI DirectionText = default;
 
 	[SerializeField]
-	private Button BackClassButton;
+	private SliderValueHandler ApponentsCountSlider = default;
 
 	[SerializeField]
-	private Button MapDirection;
+	private TextMeshProUGUI LapsCount = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DirectionText;
+	private TextMeshProUGUI Distance = default;
 
 	[SerializeField]
-	private SliderValueHandler ApponentsCountSlider;
+	private TextMeshProUGUI TimeDurationText = default;
 
 	[SerializeField]
-	private TextMeshProUGUI LapsCount;
+	private SelectMapUIElement OnMapElementPrefab = default;
 
 	[SerializeField]
-	private TextMeshProUGUI Distance;
+	private TextMeshProUGUI CoinsLimit = default;
 
 	[SerializeField]
-	private TextMeshProUGUI ApponentsCountText;
+	private TextMeshProUGUI MoneyLimit = default;
 
 	[SerializeField]
-	private TextMeshProUGUI TimeDurationText;
+	private CircuitRacingConfig CircuitRacingConfig = default;
 
 	[SerializeField]
-	private SelectMapUIElement OnMapElementPrefab;
+	private TextMeshProUGUI DescriptionLeman = default;
 
 	[SerializeField]
-	private TextMeshProUGUI CoinsLimit;
+	private RaceConfigSO[] RaceConfigs = default;
 
 	[SerializeField]
-	private TextMeshProUGUI MoneyLimit;
+	private RaceGroupItem[] RaceGroups = default;
 
 	[SerializeField]
-	private CircuitRacingConfig CircuitRacingConfig;
+	private Toggle QualificationToggle = default;
 
 	[SerializeField]
-	private TextMeshProUGUI DescriptionLeman;
+	private GameObject LapsPanel = default;
 
 	[SerializeField]
-	private RaceConfigSO[] RaceConfigs;
+	private GameObject TimeDurationPanel = default;
 
 	[SerializeField]
-	private RaceGroupItem[] RaceGroups;
-
-	[SerializeField]
-	private Toggle QualificationToggle;
-
-	[SerializeField]
-	private GameObject LapsPanel;
-
-	[SerializeField]
-	private GameObject TimeDurationPanel;
-
-	[SerializeField]
-	private ScrollRect GroupsScroll;
+	private ScrollRect GroupsScroll = default;
 
 	[SerializeField]
 	private float AutoScrollingDuration = 0.5f;
 
 	[SerializeField]
-	private CanvasGroup BudgetPanelCanvasGroup;
+	private CanvasGroup BudgetPanelCanvasGroup = default;
 
 	[SerializeField]
-	private CanvasGroup CoinsLimitCanvasGroup;
+	private CanvasGroup CoinsLimitCanvasGroup = default;
 
 	[SerializeField]
-	private Toggle CWToggle;
+	private Toggle CWToggle = default;
 
 	[SerializeField]
-	private Toggle CCWToggle;
+	private Toggle CCWToggle = default;
 
 	[SerializeField]
-	private RaceClassInfoView ClassInfoView;
+	private RaceClassInfoView ClassInfoView = default;
 
 	[SerializeField]
-	private CarSelectorPanel CarSelectorPanel;
+	private CarSelectorPanel CarSelectorPanel = default;
 
 	[SerializeField]
-	private RaceInfoDropdown RaceInfoDropdown;
+	private RaceInfoDropdown RaceInfoDropdown = default;
 
 	[SerializeField]
-	private GameObject LoadingPanel;
+	private GameObject LoadingPanel = default;
 
 	private List<SelectMapUIElement> _togglesOnMap;
 
 	private List<SelectMapUIElement> _togglesUI;
-
-	private CircuitRaceMapController _circuitRaceMapController;
 
 	private IPrefabFactory _prefabFactory;
 
@@ -189,7 +175,7 @@ public class CircuitRaceSelectMapWindow : WindowScript, IBackableWindow
 
 	private CircuitRaceControlller _circuitRaceControlller;
 
-	private IDisposable _groupPositionChecker;
+	private IDisposable _groupPositionChecker = default;
 
 	private LevelScript _levelScript;
 
@@ -409,7 +395,7 @@ public class CircuitRaceSelectMapWindow : WindowScript, IBackableWindow
 			if ((bool)_circuitRaceControlller && _circuitRaceControlller.GetRaceState() == RaceState.RaceFinished)
 			{
 				_levelScript?.UnCleanScreen();
-				_managerUI.ShowUserBalanceOnlyWindow();
+				_ = _managerUI.ShowUserBalanceOnlyWindow();
 				LapRaceLeaderboardUIPanel lapRaceLeaderboardUI = _circuitRaceControlller.CircuitRacingUIControll.GetLapRaceLeaderboardUI();
 				if ((bool)lapRaceLeaderboardUI)
 				{
@@ -422,11 +408,11 @@ public class CircuitRaceSelectMapWindow : WindowScript, IBackableWindow
 			}
 			else if (_backWindow == WindowScriptType.CircuitRacePauseWindow.ToString())
 			{
-				_managerUI.ShowWindow(_backWindow, alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: false, cleanScreen: false);
+				_ = _managerUI.ShowWindow(_backWindow, alwaysOnTop: false, show: true, null, fadeBlack: false, enableBackButton: false, cleanScreen: false);
 			}
 			else
 			{
-				_managerUI.ShowWindow(_backWindow);
+				_ = _managerUI.ShowWindow(_backWindow);
 			}
 		}
 		Close();

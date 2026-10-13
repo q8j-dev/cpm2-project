@@ -11,10 +11,10 @@ namespace _Car_Parking.Scripts.Scopes
 	public class A_PersistentScope : LifetimeScope
 	{
 		[SerializeField]
-		private VinylDrawer vinylsDrawerPrefab;
+		private VinylDrawer vinylsDrawerPrefab = default;
 
 		[SerializeField]
-		private PersistentConfigScope PersistentConfigScope;
+		private PersistentConfigScope PersistentConfigScope = default;
 
 		protected override void Awake()
 		{

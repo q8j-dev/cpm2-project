@@ -18,8 +18,6 @@ namespace _Car_Parking.Scripts.CpmCustomFeatures.BenchmarkUsers
 		[SerializeField]
 		private AnimationCurve SteerCurve = AnimationCurve.Constant(0f, 1f, 0f);
 
-		private float? _startTime;
-
 		public static bool BenchmarkDrive { get; set; }
 
 		public static float BenchmarkSteerInput { get; set; }

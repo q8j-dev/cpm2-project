@@ -6,7 +6,7 @@ namespace _Car_Parking.Scripts.VisualTuningFavourite
 	public class FavouriteVinylsController : VisualTuningFavouriteControllerBase
 	{
 		[SerializeField]
-		private VinylsEditor VinylsEditor;
+		private VinylsEditor VinylsEditor = default;
 
 		private bool _isShowAll;
 

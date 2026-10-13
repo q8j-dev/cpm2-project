@@ -687,7 +687,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 			}
 			_circuitRacingWaitingWindow.gameObject.SetActive(value: false);
 		}
-		DelayedStartRaceAfterCarsCreated(cancellationToken);
+		_ = DelayedStartRaceAfterCarsCreated(cancellationToken);
 	}
 
 	private async UniTaskVoid DelayedStartRaceAfterCarsCreated(CancellationToken cancellationToken)
@@ -890,7 +890,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 		{
 			CurrentRaceConfig = RaceMapModels[0].RaceConfig;
 		}
-		DelayedInit();
+		_ = DelayedInit();
 		if (FirebaseAuth.DefaultInstance.CurrentUser != null)
 		{
 			_tokenService.LoadToken().Forget();
@@ -943,7 +943,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 			OnGarageOpen();
 			await circuitCarsControl.CreateSeveralRaceCars();
 			IsCarsLoaded = true;
-			_cameraController.Init();
+			_ = _cameraController.Init();
 			_cameraController.PrepareCarReferences();
 			_cameraController.SetCameraForGarage(V.LastUsedCar);
 			_circuitRacingWaitingWindow.DelayedDisableWindow(1.5f).Forget();
@@ -1089,7 +1089,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 			}
 			if (isFinishLine && !component.IsCrossWrongFinishSide)
 			{
-				OnFinishLap(component);
+				_ = OnFinishLap(component);
 			}
 			if (component.IsUser())
 			{
@@ -1231,7 +1231,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 						{
 							RaceCrewTalkSoundController.PlayFinishLemanSoundEvent(lapRaceCar, isTimeExpired: true);
 						}
-						LemanRaceController.FinishRace(lapRaceCar, secs);
+						_ = LemanRaceController.FinishRace(lapRaceCar, secs);
 						LemanRaceController.LeaderFinishLeman();
 						return;
 					}
@@ -1255,7 +1255,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 				}
 				else
 				{
-					LemanRaceController.FinishRace(lapRaceCar, secs);
+					_ = LemanRaceController.FinishRace(lapRaceCar, secs);
 				}
 			}
 			else if (lapRaceCar.IsFinalLap())
@@ -1368,7 +1368,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 			{
 				circuitCarsControl.SetIgnoreCollisionWithCollider(lapRaceCar, ignore: true);
 			}
-			CalculateRaceResults();
+			_ = CalculateRaceResults();
 		}
 		else
 		{
@@ -2029,7 +2029,7 @@ public class CircuitRaceControlller : MonoBehaviour, IRaceController
 		Cancel();
 		ShowPitStopTriggers(state: false);
 		UnsubscribeMethods();
-		DelayedInit();
+		_ = DelayedInit();
 		if ((bool)_freeDriveProvider.QuickCarSettings)
 		{
 			_freeDriveProvider.QuickCarSettings.RepairCar();

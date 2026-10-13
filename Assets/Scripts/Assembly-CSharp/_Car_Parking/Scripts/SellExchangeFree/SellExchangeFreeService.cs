@@ -54,7 +54,7 @@ namespace _Car_Parking.Scripts.SellExchangeFree
 
 		private readonly CarSellTriggerExitHandler _carSellTriggerExitHandler;
 
-		private GameObject _buyCarOnTrigger;
+		private GameObject _buyCarOnTrigger = default;
 
 		private CancellationTokenSource _sellCarOnTriggerCts;
 

@@ -14,7 +14,7 @@ namespace CPM.Obstacles
 
 		[Tooltip("The object that actually swings: holds the collider and the kinematic Rigidbody. Its origin is the pivot, and its authored rotation is the centre of the swing.")]
 		[SerializeField]
-		private Transform Target;
+		private Transform Target = default;
 
 		[Tooltip("Axis of rotation in the Target's authored local space. Default Z rocks a normally oriented arm left and right.")]
 		[SerializeField]
@@ -27,11 +27,11 @@ namespace CPM.Obstacles
 		[SerializeField]
 		[Tooltip("Where in the swing the cycle begins: 0 = -amplitude, 0.5 = the centre, 1 = +amplitude. In the editor Target snaps here, so the starting pose is visible without pressing Play.")]
 		[Range(0f, 1f)]
-		private float StartPosition;
+		private float StartPosition = default;
 
 		[Tooltip("Time shift within the shared cycle, in seconds. Positive values delay this platform relative to the shared clock; negative values advance it. The cycle duration is unchanged.")]
 		[SerializeField]
-		private float PhaseOffsetSeconds;
+		private float PhaseOffsetSeconds = default;
 
 		[Tooltip("Seconds for one full swing: out to one extreme, across to the other, and back. Counts sweeping only - HoldSeconds is added on top. Zero or less parks the arm at the start pose.")]
 		[SerializeField]
@@ -39,19 +39,19 @@ namespace CPM.Obstacles
 
 		[Tooltip("Seconds the arm waits at each extreme before sweeping back. Zero reverses on arrival. Used for both sides unless Use Separate Side Holds is enabled. Zero also removes the FinishMove / FinishReturn sounds; the centre passes stay either way.")]
 		[SerializeField]
-		private float HoldSeconds;
+		private float HoldSeconds = default;
 
 		[SerializeField]
 		[Tooltip("Use separate waits for the +amplitude and -amplitude extremes instead of Hold Seconds.")]
-		private bool UseSeparateSideHolds;
+		private bool UseSeparateSideHolds = default;
 
 		[Tooltip("Seconds the arm waits at +amplitude before sweeping back toward -amplitude.")]
 		[SerializeField]
-		private float PositiveHoldSeconds;
+		private float PositiveHoldSeconds = default;
 
 		[SerializeField]
 		[Tooltip("Seconds the arm waits at -amplitude before sweeping back toward +amplitude.")]
-		private float NegativeHoldSeconds;
+		private float NegativeHoldSeconds = default;
 
 		[Tooltip("Shapes the sweep. 1 = constant speed with a hard reversal; 2 = quadratic ease; 3 and up whip through the centre and linger longer at each end (a soft stop). Below 1 is clamped to 1.")]
 		[SerializeField]
