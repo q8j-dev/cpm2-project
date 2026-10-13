@@ -1,0 +1,20 @@
+local compiler = require 'metalua.compiler'.New()
+local tags = require "metalua.srcify.tags"
+local worker = require 'metalua.srcify.worker'(tags)
+
+asth = setmetatable({}, {__index = function(self, k)
+         return function(t)
+            t.tag = k
+            return setmetatable(t, {__tostring = function(self) return string.format("`%s %q", self.tag, self[1]) end})
+         end
+      end})
+
+local function process(src)
+    local ast = compiler:src_to_ast(src)
+    worker:clear()
+    worker:block(ast)
+    return ast, worker.text
+end
+
+return process
+

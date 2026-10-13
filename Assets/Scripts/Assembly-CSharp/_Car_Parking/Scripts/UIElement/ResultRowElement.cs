@@ -1,0 +1,91 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace _Car_Parking.Scripts.UIElement
+{
+	public abstract class ResultRowElement<TRow> : MonoBehaviour where TRow : IResultRow
+	{
+		[SerializeField]
+		private TMP_Text PlaceText;
+
+		[SerializeField]
+		private Text NickNameText;
+
+		[SerializeField]
+		private Image BGImage;
+
+		[SerializeField]
+		private Image PlaceImage;
+
+		[Header("Palette")]
+		[SerializeField]
+		private ResultRowColors FirstPlaceColor;
+
+		[SerializeField]
+		private ResultRowColors SecondPlaceColor;
+
+		[SerializeField]
+		private ResultRowColors ThirdPlaceColor;
+
+		[SerializeField]
+		private ResultRowColors YourPlaceColor;
+
+		[SerializeField]
+		private ResultRowColors DefaultColor;
+
+		public void Bind(int place, in TRow row)
+		{
+			if ((bool)PlaceText)
+			{
+				PlaceText.text = place.ToString();
+			}
+			if ((bool)NickNameText)
+			{
+				NickNameText.text = row.UserName;
+			}
+			ApplyPalette(place, row.IsLocal);
+			OnBind(in row);
+		}
+
+		public void Show(bool visible)
+		{
+			base.gameObject.SetActive(visible);
+		}
+
+		protected abstract void OnBind(in TRow row);
+
+		protected void SetNickName(string value)
+		{
+			if ((bool)NickNameText)
+			{
+				NickNameText.text = value;
+			}
+		}
+
+		private void ApplyPalette(int place, bool isLocal)
+		{
+			ResultRowColors resultRowColors = (isLocal ? YourPlaceColor : DefaultColor);
+			switch (place)
+			{
+			case 1:
+				resultRowColors = FirstPlaceColor;
+				break;
+			case 2:
+				resultRowColors = SecondPlaceColor;
+				break;
+			case 3:
+				resultRowColors = ThirdPlaceColor;
+				break;
+			}
+			if ((bool)BGImage)
+			{
+				BGImage.color = resultRowColors.BG;
+			}
+			if ((bool)PlaceImage)
+			{
+				PlaceImage.color = resultRowColors.Place;
+			}
+		}
+	}
+}

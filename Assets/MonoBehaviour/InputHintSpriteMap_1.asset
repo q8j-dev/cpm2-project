@@ -1,0 +1,849 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb80471c2bb4f5a5c050fdacd090ca72, type: 3}
+  m_Name: InputHintSpriteMap
+  m_EditorClassIdentifier:
+  Bindings:
+  - BindingPath: '<Keyboard>/w'
+    KeyboardSprite: {fileID: 21300000, guid: cac5a033677fb5e409132d99ee061bd6, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/s'
+    KeyboardSprite: {fileID: 21300000, guid: 3b7f6e6d9f49784489f111dc1dc87228, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/a'
+    KeyboardSprite: {fileID: 21300000, guid: 6f7e25b6367964e41a1927e06a1baf2c, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/d'
+    KeyboardSprite: {fileID: 21300000, guid: a047e2a6487f10644a677fcb01c40dfa, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/v'
+    KeyboardSprite: {fileID: 21300000, guid: 0b0b3ccfda0af0548b7aa30ab56e1e4f, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/g'
+    KeyboardSprite: {fileID: 21300000, guid: 23238969305e0ed42859ee3291fd9416, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/q'
+    KeyboardSprite: {fileID: 21300000, guid: 8daf5846ea64ccb47bf1d7f50a9012ee, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/e'
+    KeyboardSprite: {fileID: 21300000, guid: f0244d785c1341e4e80a3706eaec0339, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/r'
+    KeyboardSprite: {fileID: 21300000, guid: 30665902c4ecd75409e9014e62da45b3, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/t'
+    KeyboardSprite: {fileID: 21300000, guid: 3552f9c0f270b7d43a0150fd214283c9, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/y'
+    KeyboardSprite: {fileID: 21300000, guid: 94ea067369049184587d6c2c8b2ee61d, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/u'
+    KeyboardSprite: {fileID: 21300000, guid: 5745d065c2051a24fba0712dedab7fe5, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/i'
+    KeyboardSprite: {fileID: 21300000, guid: 6bd1c35c61b5dbe409b1d3a7aece4e39, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/o'
+    KeyboardSprite: {fileID: 21300000, guid: b70480ee47fca5844a7c3913e1809a0c, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/p'
+    KeyboardSprite: {fileID: 21300000, guid: 4df3e3ec5506df34cace0fe07fba683e, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f'
+    KeyboardSprite: {fileID: 21300000, guid: a399df6fac9a83349ab4a3160c42a3b4, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/h'
+    KeyboardSprite: {fileID: 21300000, guid: 4ba5a0ad46ccca14e8d14197a5c09613, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/j'
+    KeyboardSprite: {fileID: 21300000, guid: 81ddb7fa4a489444ca049fc5f7552048, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/k'
+    KeyboardSprite: {fileID: 21300000, guid: f96ac1b25a6a1f04a827c7cfd78d6f62, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/l'
+    KeyboardSprite: {fileID: 21300000, guid: 4681efff90939a64b90e6ed280f4fc1d, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/z'
+    KeyboardSprite: {fileID: 21300000, guid: ef81763023223cd48ba9371eac47defe, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/x'
+    KeyboardSprite: {fileID: 21300000, guid: 19494afdc6bc22a4ab465db9e4643c34, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/c'
+    KeyboardSprite: {fileID: 21300000, guid: dc8bfc53477bf90488054940eb8528c9, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/b'
+    KeyboardSprite: {fileID: 21300000, guid: c369bb3e2cbe90b4587d6925bdd02a47, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/n'
+    KeyboardSprite: {fileID: 21300000, guid: 13d762e48f96eed42a9bc82e905c72de, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/m'
+    KeyboardSprite: {fileID: 21300000, guid: 0b025de6c2afbd946b93176f6a6e4e64, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Mouse>/scroll/y'
+    KeyboardSprite: {fileID: 21300000, guid: 9e2cef3cf292627429d083e4831bf3f5, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Mouse>/middleButton'
+    KeyboardSprite: {fileID: 21300000, guid: 9e2cef3cf292627429d083e4831bf3f5, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Mouse>/leftButton'
+    KeyboardSprite: {fileID: 21300000, guid: 06378df943956174fbfe407de7368828, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Mouse>/rightButton'
+    KeyboardSprite: {fileID: 21300000, guid: 78c66e9bd0c325d43b46a52d4ccc11b2, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/escape'
+    KeyboardSprite: {fileID: 21300000, guid: 7cf1f82289667eb42b6720b6c9790c23, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/enter'
+    KeyboardSprite: {fileID: 21300000, guid: d17c1d764a751cc42a5860a44081c5c1, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/tab'
+    KeyboardSprite: {fileID: 21300000, guid: 7eecbbfa246a7e143882f588acdc75cb, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/backspace'
+    KeyboardSprite: {fileID: 21300000, guid: 7ff6ec1269fd95244b663f901d5bf360, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/capsLock'
+    KeyboardSprite: {fileID: 21300000, guid: c56e83a1652ffa24ab21c732fda08e80, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/alt'
+    KeyboardSprite: {fileID: 21300000, guid: 514002d4d59023c46a0b40fab35b2333, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/space'
+    KeyboardSprite: {fileID: 21300000, guid: 7838164d02401f64eb637d90b38ce982, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/ctrl'
+    KeyboardSprite: {fileID: 21300000, guid: 5a6b456839be4574eb0d47df7c8ff4c0, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/leftCtrl'
+    KeyboardSprite: {fileID: 21300000, guid: 5a6b456839be4574eb0d47df7c8ff4c0, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/shift'
+    KeyboardSprite: {fileID: 21300000, guid: 6eedbf1d62b2a964aa8d72c67191572e, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/leftShift'
+    KeyboardSprite: {fileID: 21300000, guid: 6eedbf1d62b2a964aa8d72c67191572e, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/upArrow'
+    KeyboardSprite: {fileID: 21300000, guid: a4c90c43c78ac894c84e65c882ab18af, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/downArrow'
+    KeyboardSprite: {fileID: 21300000, guid: 6181fce30ee454f42803e130d85eb7aa, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/leftArrow'
+    KeyboardSprite: {fileID: 21300000, guid: 74a3c258928a7b84fb0a094a502c4c41, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/rightArrow'
+    KeyboardSprite: {fileID: 21300000, guid: 10ff29d8f8deb0b4faec86e3efe04d5c, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/semicolon'
+    KeyboardSprite: {fileID: 21300000, guid: 03653132a927e434080177511d6978d9, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/quote'
+    KeyboardSprite: {fileID: 21300000, guid: 6d02269c630e14942b44235a184cb47c, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/comma'
+    KeyboardSprite: {fileID: 21300000, guid: 843105e7ea40a6745bc5f18954fe1aa6, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/period'
+    KeyboardSprite: {fileID: 21300000, guid: 6b91ed3a149f6a5498a600acd1ad3bc8, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/slash'
+    KeyboardSprite: {fileID: 21300000, guid: 726cca4900afef046875a3cd26451c6a, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/backquote'
+    KeyboardSprite: {fileID: 21300000, guid: b4c4635ced6392344ac299c4324e5f8e, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/leftBracket'
+    KeyboardSprite: {fileID: 21300000, guid: 131defe4c12ead64abd0b1560ebc347f, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/rightBracket'
+    KeyboardSprite: {fileID: 21300000, guid: 2e3aaf80b8d9bde488649c2bc7e4db3d, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/backslash'
+    KeyboardSprite: {fileID: 21300000, guid: 0ee628ed3be21cd49822f99850323661, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/minus'
+    KeyboardSprite: {fileID: 21300000, guid: 7411077e97a80c247ac022546293587f, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/equals'
+    KeyboardSprite: {fileID: 21300000, guid: 9dac06669a3e1694b9fd743b7f58fd7c, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f1'
+    KeyboardSprite: {fileID: 21300000, guid: e3625d33371979b4cae0eb1f334e85d2, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f2'
+    KeyboardSprite: {fileID: 21300000, guid: 8c13b9ad3cc65dc4aaf8dac385a56a27, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f3'
+    KeyboardSprite: {fileID: 21300000, guid: 4aae184e08f3e3845a9c08e317860997, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f4'
+    KeyboardSprite: {fileID: 21300000, guid: 22279dcdbdfd00f48a1c5e70e8eac0ca, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f5'
+    KeyboardSprite: {fileID: 21300000, guid: 735aa409880cc074f839574b9c5bf86e, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f6'
+    KeyboardSprite: {fileID: 21300000, guid: b05ae9728efaf7548b414f20bb575da4, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f7'
+    KeyboardSprite: {fileID: 21300000, guid: 90c1c35c024a5854aae6119d554a27f3, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f8'
+    KeyboardSprite: {fileID: 21300000, guid: c68e6897ca2809242a8453685b8def95, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f9'
+    KeyboardSprite: {fileID: 21300000, guid: b0e56bfecbd7fca439a730a34f2ae63f, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f10'
+    KeyboardSprite: {fileID: 21300000, guid: f76a0053082728b4c828f41e1b281133, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f11'
+    KeyboardSprite: {fileID: 21300000, guid: edce6baf05d86864e97d5ec7038c8ab6, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/f12'
+    KeyboardSprite: {fileID: 21300000, guid: 42db823a52d56b7488b42ee749bbd295, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/1'
+    KeyboardSprite: {fileID: 21300000, guid: 25060952b45fc3c4b835f200c06b0313, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/2'
+    KeyboardSprite: {fileID: 21300000, guid: 1f720a08bf3455049a4cfc9ef18ce8a4, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/3'
+    KeyboardSprite: {fileID: 21300000, guid: 63e8711f8544eaf42b9cb7238d78373b, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/4'
+    KeyboardSprite: {fileID: 21300000, guid: 149665159c6a88a44aabd216f92a39b4, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/5'
+    KeyboardSprite: {fileID: 21300000, guid: 6e4ce718e788ac04abc877e5f5084e41, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/6'
+    KeyboardSprite: {fileID: 21300000, guid: 4fc0d084143ba17438faef957f4b5017, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/7'
+    KeyboardSprite: {fileID: 21300000, guid: 5b59256491eca3849baf0412df6cf30f, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/8'
+    KeyboardSprite: {fileID: 21300000, guid: c0377413fb2a23e41b7acb65c63c0bb6, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/9'
+    KeyboardSprite: {fileID: 21300000, guid: b02ab0d8653685b44b9a43f8a4db7e3a, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Keyboard>/0'
+    KeyboardSprite: {fileID: 21300000, guid: 9ba01b7774f163744a7ecbfb12576a47, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/buttonSouth'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 7ab2fdfcc6024a144aabf99822f2b609, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 54f32ee8a7b040e42a63fc1208ddf5c3, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 7ab2fdfcc6024a144aabf99822f2b609, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/buttonEast'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: a8dcf717cb4034d4b80a269b6d743468, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 953e2e7b7a0ff4742b072833dc62d39e, type: 2}
+    GenericSprite: {fileID: 21300000, guid: a8dcf717cb4034d4b80a269b6d743468, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/buttonWest'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: af7e4aed3d6d38045929c43ecaa5b32a, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 8c95a3d311dad0d4b9b34e751ff24261, type: 2}
+    GenericSprite: {fileID: 21300000, guid: af7e4aed3d6d38045929c43ecaa5b32a, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/buttonNorth'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 39dc2b5f902ee4f4fa4faf75a3a2a72d, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 217cb8d43dbf1164bb55540d3aabce70, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 39dc2b5f902ee4f4fa4faf75a3a2a72d, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftTrigger'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: dd3152b2f998f5b45a5b4fb0e919ee43, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 1ac3c5452741545499378d2c0170a4ff, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 1ac3c5452741545499378d2c0170a4ff, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightTrigger'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: fa0c3dde2bc29b54d9b099280f2b351c, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 5e49d19c25020fe47a4b850f7dd4451d, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 5e49d19c25020fe47a4b850f7dd4451d, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftShoulder'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 4217e4fa50e96d249ae653a73c59f62a, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 7be96fc4bd8ecb946bfe72994326e814, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 7be96fc4bd8ecb946bfe72994326e814, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightShoulder'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 40ca4f50c5db2df4da5cf5e9ab68ccf9, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: e2045fb5909ca3642909929e6c115924, type: 2}
+    GenericSprite: {fileID: 21300000, guid: e2045fb5909ca3642909929e6c115924, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStickPress'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: f2ca8da4b7ece35479e9519bf9a3f4df, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: d966281f83c5bd64eb00a8495bb8a849, type: 2}
+    GenericSprite: {fileID: 21300000, guid: f2ca8da4b7ece35479e9519bf9a3f4df, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStickPress'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 1f0c74f520ced9a46aea46e3156c2875, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 7dc9351854005c2459e47a8c1ebd8274, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 1f0c74f520ced9a46aea46e3156c2875, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/start'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 561f7f45f64e4a247829b09e744c9750, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 561f7f45f64e4a247829b09e744c9750, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 561f7f45f64e4a247829b09e744c9750, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/select'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 8d0907cf1e2d1df4aa783d512ab2c214, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: a8bc1af105194f941b7c317cab7bbf82, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 8d0907cf1e2d1df4aa783d512ab2c214, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/dpad/up'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 5444a740efcc93f4aa1e29b24f4534cf, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 1fafe3129989a8e47a799771f3312386, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 5444a740efcc93f4aa1e29b24f4534cf, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/dpad/down'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 444a485676d782d4cab19714a9350ae0, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 26f75411ec9b6fc41972f76e06d32649, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 444a485676d782d4cab19714a9350ae0, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/dpad/left'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 92a40f1646a93784da2224544e28dd45, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 491b801d0d63a83418cb4ea525c231ca, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 92a40f1646a93784da2224544e28dd45, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/dpad/right'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: be3e7e07b6824e844a55fd22b8839c89, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 3697d8e751c182444a64870faa902b44, type: 2}
+    GenericSprite: {fileID: 21300000, guid: be3e7e07b6824e844a55fd22b8839c89, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/trigger'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 7ab2fdfcc6024a144aabf99822f2b609, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button2'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: a8dcf717cb4034d4b80a269b6d743468, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button3'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: af7e4aed3d6d38045929c43ecaa5b32a, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button4'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 39dc2b5f902ee4f4fa4faf75a3a2a72d, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button5'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 5444a740efcc93f4aa1e29b24f4534cf, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button6'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: be3e7e07b6824e844a55fd22b8839c89, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button7'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 444a485676d782d4cab19714a9350ae0, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button8'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 92a40f1646a93784da2224544e28dd45, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button13'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 9e5e86edaf4548647b368f545f46e928, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button14'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 22cd57126e3a3844884b3bd9af649d5f, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button19'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: c0e8f07d70e81414890eaa0647ffaee9, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button20'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 331b2f05276c4924ab59515578f836a6, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button21'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 5b2d3577ee0b66c43a71c5c48cab7772, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button22'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 1ec9cb9d0daec1d4abd4843369ca1245, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button23'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 2f0e502570230ea45ba28b6e85f13068, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button24'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 90f2c4a83689e324db3dbd8b84dc6c63, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button25'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 19c08d8f55c911946bfccf21618267e1, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button32'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: ac64e4a511ef0904f9e0ea697b087f63, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button33'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: ef5136befd9991448bfc7de3df40e05c, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button34'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: b6cce97a285b2404eb60d7eaa73b02c0, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button35'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: a8892cfa8b423d04497514f517fb386d, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button36'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: ef015b04f3b0d534f9c05ac62488cf8c, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button37'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 258ef0adc50a85642a89c11cf6a4507e, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/button38'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 1654e5b65ed143548af96c6d4444ef22, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/z'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 30ab74551decc4f4db13739e3b70c7d5, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/rz'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 346e04bcd235ba443b0f88191347c2d5, type: 2}
+  - BindingPath: '<HID::Gudsen MOZA R5 Base>/slider'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 21300000, guid: 1cc56b4c68ae99041aa2f01cadea75a3, type: 2}
+  - BindingPath: '<Mouse>/delta'
+    KeyboardSprite: {fileID: 21300000, guid: f5cdcd390a40df64f9ed135e72836536, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 4a8f900a2e92fbc4cb66947b63c64480, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 4a8f900a2e92fbc4cb66947b63c64480, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 4a8f900a2e92fbc4cb66947b63c64480, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: cca4733c78e74e4469777e578a3b650d, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: cca4733c78e74e4469777e578a3b650d, type: 2}
+    GenericSprite: {fileID: 21300000, guid: cca4733c78e74e4469777e578a3b650d, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/{Primary2DMotion}'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 4a8f900a2e92fbc4cb66947b63c64480, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 4a8f900a2e92fbc4cb66947b63c64480, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 4a8f900a2e92fbc4cb66947b63c64480, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/{Secondary2DMotion}'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: cca4733c78e74e4469777e578a3b650d, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: cca4733c78e74e4469777e578a3b650d, type: 2}
+    GenericSprite: {fileID: 21300000, guid: cca4733c78e74e4469777e578a3b650d, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick/up'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 679378ea37e24ad47a29b904aad71fd0, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 679378ea37e24ad47a29b904aad71fd0, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 679378ea37e24ad47a29b904aad71fd0, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick/right'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 5f514b09ed2d2bb4a9f22da597c6dd62, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 5f514b09ed2d2bb4a9f22da597c6dd62, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 5f514b09ed2d2bb4a9f22da597c6dd62, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick/down'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: a1ecc1bb36562004abe76daf9417f34c, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: a1ecc1bb36562004abe76daf9417f34c, type: 2}
+    GenericSprite: {fileID: 21300000, guid: a1ecc1bb36562004abe76daf9417f34c, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick/left'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 4aadb98399974104dbe6801191e70332, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 4aadb98399974104dbe6801191e70332, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 4aadb98399974104dbe6801191e70332, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick/up'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 6d02365b648a8b44c9d819f82bafe05e, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 6d02365b648a8b44c9d819f82bafe05e, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 6d02365b648a8b44c9d819f82bafe05e, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick/right'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 5b0b16430ed05994d8c50accdad8a374, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 5b0b16430ed05994d8c50accdad8a374, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 5b0b16430ed05994d8c50accdad8a374, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick/left'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: edef3d59f95ad4246a10f4a5b2dc7cf4, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: edef3d59f95ad4246a10f4a5b2dc7cf4, type: 2}
+    GenericSprite: {fileID: 21300000, guid: edef3d59f95ad4246a10f4a5b2dc7cf4, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick/down'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 4fc94a2e46a4614468dcb4e6c09897e1, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 4fc94a2e46a4614468dcb4e6c09897e1, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 4fc94a2e46a4614468dcb4e6c09897e1, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick/x'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: 48f1a1276a089694ea950a268f288d63, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: 48f1a1276a089694ea950a268f288d63, type: 2}
+    GenericSprite: {fileID: 21300000, guid: 48f1a1276a089694ea950a268f288d63, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick/x'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: cc081a7c65fa866478dea69e28f15436, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: cc081a7c65fa866478dea69e28f15436, type: 2}
+    GenericSprite: {fileID: 21300000, guid: cc081a7c65fa866478dea69e28f15436, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/leftStick/y'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: a870c07c8f244f0499de5e0f55636bd8, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: a870c07c8f244f0499de5e0f55636bd8, type: 2}
+    GenericSprite: {fileID: 21300000, guid: a870c07c8f244f0499de5e0f55636bd8, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Gamepad>/rightStick/y'
+    KeyboardSprite: {fileID: 0}
+    XboxSprite: {fileID: 21300000, guid: cc081a7c65fa866478dea69e28f15436, type: 2}
+    PlayStationSprite: {fileID: 21300000, guid: cc081a7c65fa866478dea69e28f15436, type: 2}
+    GenericSprite: {fileID: 21300000, guid: cc081a7c65fa866478dea69e28f15436, type: 2}
+    WheelSprite: {fileID: 0}
+  - BindingPath: '<Mouse>/position'
+    KeyboardSprite: {fileID: 21300000, guid: f5cdcd390a40df64f9ed135e72836536, type: 2}
+    XboxSprite: {fileID: 0}
+    PlayStationSprite: {fileID: 0}
+    GenericSprite: {fileID: 0}
+    WheelSprite: {fileID: 0}

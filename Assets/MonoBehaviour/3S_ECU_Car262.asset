@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: 3S_ECU_Car262
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: 3S ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: 1279538566079202023
+  _partValB: 7826931020601795472
+  _partValC: 72821599530176095
+  _partValD: -420127178100407492
+  TypeId: 21
+  ModelId: 20321002
+  NoticeAboutPart: Good model id
+  Mass: 0.93
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 0
+  _partLinkKeysA: e3b9e74102ca696a
+  _partLinkKeysB: 30a5a4a50c9d22a0
+  _partLinkKeysC:
+  _partLinkStamp: 3149150222794018432
+  _partSourceRef: 203
+  FuelMap:
+  - RPM: 500
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.829
+  - RPM: 1000
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.309
+  - RPM: 1500
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.713
+  - RPM: 2000
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.724
+  - RPM: 2500
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.605
+  - RPM: 3000
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.527
+  - RPM: 3500
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.428
+  - RPM: 4000
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.306
+  - RPM: 4500
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.168
+  - RPM: 5000
+    pressure: 3.5
+    Time: 2
+    Fuel: 1.036
+  - RPM: 5500
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.916
+  - RPM: 6000
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.805
+  - RPM: 6500
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.611
+  - RPM: 7000
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.428
+  - RPM: 7500
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.306
+  - RPM: 8000
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.174
+  - RPM: 8500
+    pressure: 3.5
+    Time: 2
+    Fuel: 0.049
+  speedLimit: 255
+  RpmIdle:
+    currentCryptoKey: 2100318613
+    hiddenValue: 961640597
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1444253642
+    hiddenValue: 302984906
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 750
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1370106851
+    hiddenValue: 355193059
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1549827649
+    hiddenValue: 427731009
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 6400
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1903724853
+    hiddenValue: 881426997
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

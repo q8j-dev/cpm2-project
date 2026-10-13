@@ -1,0 +1,907 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c5383ceb1edf7d7d68572e32d4e813, type: 3}
+  m_Name: FlagsData
+  m_EditorClassIdentifier:
+  textures:
+  - {fileID: 10916, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2800000, guid: 63b72c0ab06550b4bb392e4f9d02ffff, type: 3}
+  - {fileID: 2800000, guid: 7bd38039fc1877346af67128c10e00e4, type: 3}
+  - {fileID: 2800000, guid: 9b4512f7f35269348a0399a507ac8a4d, type: 3}
+  - {fileID: 2800000, guid: 01ba8a0f0982c0d47be3905b4a4cd26b, type: 3}
+  - {fileID: 2800000, guid: b2f6f4d9132c51f4ea6c9249822c4a92, type: 3}
+  - {fileID: 2800000, guid: 7332c98b78f9f334498ee2b4891e94ef, type: 3}
+  - {fileID: 2800000, guid: 406c06881a8d8604a8edb2951e18806a, type: 3}
+  - {fileID: 2800000, guid: f046f2b6e657dd54c83793227ba015a8, type: 3}
+  - {fileID: 2800000, guid: bfdf007667eeb6b41a097d9ca32678b9, type: 3}
+  - {fileID: 2800000, guid: 9c9f4340374ec4c44b54fb3d5851b3ed, type: 3}
+  - {fileID: 2800000, guid: b679ae14a8df4334882a9912b887f57a, type: 3}
+  - {fileID: 2800000, guid: 731f0d5488ac1a3479b0b85e8366ed88, type: 3}
+  - {fileID: 2800000, guid: 8439f31dd757b7e4da4a1c859b5c7d60, type: 3}
+  - {fileID: 2800000, guid: 013c08694b56871438b3990df9c1b844, type: 3}
+  - {fileID: 2800000, guid: 786ca1e55d993074588b1321ebbed410, type: 3}
+  - {fileID: 2800000, guid: 2257ff3fd15c10a4eb653a6ae0543d9a, type: 3}
+  - {fileID: 2800000, guid: cc6e05d68c511e048a0da84f87655cc8, type: 3}
+  - {fileID: 2800000, guid: c9a9b5fca5fb1424a8d7dbf0ee330b55, type: 3}
+  - {fileID: 2800000, guid: ad4a69cfac2e1e9478c81210b306e794, type: 3}
+  - {fileID: 2800000, guid: 990dbf31527657f4dbb594780bc33bd4, type: 3}
+  - {fileID: 2800000, guid: 913c4146945eb7b4ea11590483820cca, type: 3}
+  - {fileID: 2800000, guid: 4ef6d330eac88d0458e6ec9951ad6875, type: 3}
+  - {fileID: 2800000, guid: 4bf78a5fc098d45479b59f73b43205b9, type: 3}
+  - {fileID: 2800000, guid: a032c28a8c2c6094fa0bff50b46e8095, type: 3}
+  - {fileID: 2800000, guid: 97c75db3821304a499ea79c934678434, type: 3}
+  - {fileID: 2800000, guid: d72e65b74ba8da8498f64e4e66984b2f, type: 3}
+  - {fileID: 2800000, guid: 8e8ef3efd454bbc4cbfea9063a3ce785, type: 3}
+  - {fileID: 2800000, guid: 55cb616979f640f45a1a6d901ac0b32c, type: 3}
+  - {fileID: 2800000, guid: 4a360bfd8d38ac542859905d4e33fa25, type: 3}
+  - {fileID: 2800000, guid: f8e0ac37d45ccc947848d888411c26ab, type: 3}
+  - {fileID: 2800000, guid: 31f3f02df035d0f4092933ad2a576b35, type: 3}
+  - {fileID: 2800000, guid: 6544e9494cce8cd4a800a29aab284022, type: 3}
+  - {fileID: 2800000, guid: d8702aa4a5364934892f251ab30fd7c0, type: 3}
+  - {fileID: 2800000, guid: c0eaca3add89f6040ad10b030480b8cb, type: 3}
+  - {fileID: 2800000, guid: a9d15f2fc1977c64aafecc653402820a, type: 3}
+  - {fileID: 2800000, guid: fd9cc01f5b1d1de4fa574f975b386794, type: 3}
+  - {fileID: 2800000, guid: 763c8a44f401d15448d0ea5b40c53672, type: 3}
+  - {fileID: 2800000, guid: 846b8297d03d6b54fb105e6c3bd3d619, type: 3}
+  - {fileID: 2800000, guid: a7f6196c8bc446a42aae32e41f11e337, type: 3}
+  - {fileID: 2800000, guid: 72d3385d6b2522d4da2fff7fe53aba2c, type: 3}
+  - {fileID: 2800000, guid: 538d5f2e61801ee4ab28512256ad958a, type: 3}
+  - {fileID: 2800000, guid: da5b604f1c1deea46a669d4e5cc7bace, type: 3}
+  - {fileID: 2800000, guid: 81a6742725d42cd4ca69f3a278dda0ba, type: 3}
+  - {fileID: 2800000, guid: 562efcffd80c9b24e9fec37e90b3738a, type: 3}
+  - {fileID: 2800000, guid: 096f5a176a772694fa23072331a69372, type: 3}
+  - {fileID: 2800000, guid: a761ca0b29ea7e642afad4d52e73b531, type: 3}
+  - {fileID: 2800000, guid: 21ea16094a0351144bf7e2bee50082e4, type: 3}
+  - {fileID: 2800000, guid: 0695845e6b929544ca6205f0247a32fd, type: 3}
+  - {fileID: 2800000, guid: 41b8f59cd9078b748aa23fdb568289dd, type: 3}
+  - {fileID: 2800000, guid: c14ef938b0c8e7e47ac85bda648b7c5b, type: 3}
+  - {fileID: 2800000, guid: a63bfd8961a7bd648bfd242ac0d07b18, type: 3}
+  - {fileID: 2800000, guid: f8b16ec6a7cbac949b58debd09e2dcd6, type: 3}
+  - {fileID: 2800000, guid: b00673be0f60b6b4ab58d6aecaa994fe, type: 3}
+  - {fileID: 2800000, guid: c0d96941045ca2247953e21ca7330967, type: 3}
+  - {fileID: 2800000, guid: cf8943c41ab98784f99cc29b5a07027b, type: 3}
+  - {fileID: 2800000, guid: 3f762518e2102464c8830a981544dda2, type: 3}
+  - {fileID: 2800000, guid: c8e789a0564b0ec46a9b1dc3dad9a901, type: 3}
+  - {fileID: 2800000, guid: a0f8f0783e5772a48b96e42dffdc454f, type: 3}
+  - {fileID: 2800000, guid: 5beff910034fb364faa67cbecd56a93e, type: 3}
+  - {fileID: 2800000, guid: 8dcefca17eb22b640984b3fa2946e660, type: 3}
+  - {fileID: 2800000, guid: d0d1f33461102884cb4b5870dc910bb5, type: 3}
+  - {fileID: 2800000, guid: 9fbe60baaa5fc9648a8bf27371df87d8, type: 3}
+  - {fileID: 2800000, guid: 9a418dd1d5009584f976da2aea4f7bb4, type: 3}
+  - {fileID: 2800000, guid: 03ded64b626d54340bbcd4313ba29f45, type: 3}
+  - {fileID: 2800000, guid: 37fc0f1b63c8b0a42846cc8b4ea3aa8b, type: 3}
+  - {fileID: 2800000, guid: 51849246702a818408b117c99ffe09fb, type: 3}
+  - {fileID: 2800000, guid: a2d48de336c9f1c4c86351c085665562, type: 3}
+  - {fileID: 2800000, guid: 694808ecf9900dc449b3c6572577f6c3, type: 3}
+  - {fileID: 2800000, guid: 7dd9d03605da04347a03aba3fea4b659, type: 3}
+  - {fileID: 2800000, guid: 11d5a735c0c5e014e8f0d939b272d721, type: 3}
+  - {fileID: 2800000, guid: dd8cc7bfe474d3e45a118fece24c828d, type: 3}
+  - {fileID: 2800000, guid: 2f08a2d99d6f74d48b33b1625f539a26, type: 3}
+  - {fileID: 2800000, guid: 60f1fe106db5d2141beddf12cecbb899, type: 3}
+  - {fileID: 2800000, guid: de5ac71f98fc6d940b3888b8241d6023, type: 3}
+  - {fileID: 2800000, guid: 50ffa77848a9c25459cd853dbd70ae00, type: 3}
+  - {fileID: 2800000, guid: 97819f84e70481e48824eaab59a8a9c7, type: 3}
+  flags:
+  - texture: {fileID: 10916, guid: 0000000000000000f000000000000000, type: 0}
+    price:
+      currentCryptoKey: 1869843164
+      hiddenValue: 1869843128
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 0
+      count: 0
+  - texture: {fileID: 2800000, guid: 63b72c0ab06550b4bb392e4f9d02ffff, type: 3}
+    price:
+      currentCryptoKey: 1123210427
+      hiddenValue: 1123210463
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 1
+      count: 0
+  - texture: {fileID: 2800000, guid: 7bd38039fc1877346af67128c10e00e4, type: 3}
+    price:
+      currentCryptoKey: 1066502212
+      hiddenValue: 1066502176
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 2
+      count: 0
+  - texture: {fileID: 2800000, guid: 9b4512f7f35269348a0399a507ac8a4d, type: 3}
+    price:
+      currentCryptoKey: 1519347915
+      hiddenValue: 1519347887
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 3
+      count: 0
+  - texture: {fileID: 2800000, guid: 01ba8a0f0982c0d47be3905b4a4cd26b, type: 3}
+    price:
+      currentCryptoKey: 1808308949
+      hiddenValue: 1808308913
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 4
+      count: 0
+  - texture: {fileID: 2800000, guid: b2f6f4d9132c51f4ea6c9249822c4a92, type: 3}
+    price:
+      currentCryptoKey: 1530995415
+      hiddenValue: 1530995379
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 5
+      count: 0
+  - texture: {fileID: 2800000, guid: 7332c98b78f9f334498ee2b4891e94ef, type: 3}
+    price:
+      currentCryptoKey: 1566808295
+      hiddenValue: 1566808195
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 6
+      count: 0
+  - texture: {fileID: 2800000, guid: 406c06881a8d8604a8edb2951e18806a, type: 3}
+    price:
+      currentCryptoKey: 1675912587
+      hiddenValue: 1675912687
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 7
+      count: 0
+  - texture: {fileID: 2800000, guid: f046f2b6e657dd54c83793227ba015a8, type: 3}
+    price:
+      currentCryptoKey: 1295699211
+      hiddenValue: 1295699311
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 8
+      count: 0
+  - texture: {fileID: 2800000, guid: bfdf007667eeb6b41a097d9ca32678b9, type: 3}
+    price:
+      currentCryptoKey: 1883279243
+      hiddenValue: 1883279343
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 9
+      count: 0
+  - texture: {fileID: 2800000, guid: 9c9f4340374ec4c44b54fb3d5851b3ed, type: 3}
+    price:
+      currentCryptoKey: 1927387782
+      hiddenValue: 1927387874
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 10
+      count: 0
+  - texture: {fileID: 2800000, guid: b679ae14a8df4334882a9912b887f57a, type: 3}
+    price:
+      currentCryptoKey: 1222320398
+      hiddenValue: 1222320490
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 11
+      count: 0
+  - texture: {fileID: 2800000, guid: 731f0d5488ac1a3479b0b85e8366ed88, type: 3}
+    price:
+      currentCryptoKey: 1623610101
+      hiddenValue: 1623610001
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 12
+      count: 0
+  - texture: {fileID: 2800000, guid: 8439f31dd757b7e4da4a1c859b5c7d60, type: 3}
+    price:
+      currentCryptoKey: 2133294333
+      hiddenValue: 2133294233
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 13
+      count: 0
+  - texture: {fileID: 2800000, guid: 013c08694b56871438b3990df9c1b844, type: 3}
+    price:
+      currentCryptoKey: 2065142249
+      hiddenValue: 2065142157
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 14
+      count: 0
+  - texture: {fileID: 2800000, guid: 786ca1e55d993074588b1321ebbed410, type: 3}
+    price:
+      currentCryptoKey: 1226265393
+      hiddenValue: 1226265429
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 15
+      count: 0
+  - texture: {fileID: 2800000, guid: 2257ff3fd15c10a4eb653a6ae0543d9a, type: 3}
+    price:
+      currentCryptoKey: 1294780948
+      hiddenValue: 1294781040
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 16
+      count: 0
+  - texture: {fileID: 2800000, guid: cc6e05d68c511e048a0da84f87655cc8, type: 3}
+    price:
+      currentCryptoKey: 2064960555
+      hiddenValue: 2064960591
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 17
+      count: 0
+  - texture: {fileID: 2800000, guid: c9a9b5fca5fb1424a8d7dbf0ee330b55, type: 3}
+    price:
+      currentCryptoKey: 2012150847
+      hiddenValue: 2012150875
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 18
+      count: 0
+  - texture: {fileID: 2800000, guid: ad4a69cfac2e1e9478c81210b306e794, type: 3}
+    price:
+      currentCryptoKey: 1832114620
+      hiddenValue: 1832114648
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 19
+      count: 0
+  - texture: {fileID: 2800000, guid: 990dbf31527657f4dbb594780bc33bd4, type: 3}
+    price:
+      currentCryptoKey: 1295964639
+      hiddenValue: 1295964603
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 20
+      count: 0
+  - texture: {fileID: 2800000, guid: 913c4146945eb7b4ea11590483820cca, type: 3}
+    price:
+      currentCryptoKey: 1540686717
+      hiddenValue: 1540686617
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 21
+      count: 0
+  - texture: {fileID: 2800000, guid: 4ef6d330eac88d0458e6ec9951ad6875, type: 3}
+    price:
+      currentCryptoKey: 1647188928
+      hiddenValue: 1647188900
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 22
+      count: 0
+  - texture: {fileID: 2800000, guid: 4bf78a5fc098d45479b59f73b43205b9, type: 3}
+    price:
+      currentCryptoKey: 1699655459
+      hiddenValue: 1699655495
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 23
+      count: 0
+  - texture: {fileID: 2800000, guid: a032c28a8c2c6094fa0bff50b46e8095, type: 3}
+    price:
+      currentCryptoKey: 1143942592
+      hiddenValue: 1143942564
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 24
+      count: 0
+  - texture: {fileID: 2800000, guid: 97c75db3821304a499ea79c934678434, type: 3}
+    price:
+      currentCryptoKey: 1250940748
+      hiddenValue: 1250940712
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 25
+      count: 0
+  - texture: {fileID: 2800000, guid: d72e65b74ba8da8498f64e4e66984b2f, type: 3}
+    price:
+      currentCryptoKey: 1218430536
+      hiddenValue: 1218430508
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 26
+      count: 0
+  - texture: {fileID: 2800000, guid: 8e8ef3efd454bbc4cbfea9063a3ce785, type: 3}
+    price:
+      currentCryptoKey: 1017403450
+      hiddenValue: 1017403486
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 27
+      count: 0
+  - texture: {fileID: 2800000, guid: 55cb616979f640f45a1a6d901ac0b32c, type: 3}
+    price:
+      currentCryptoKey: 1630955055
+      hiddenValue: 1630955083
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 28
+      count: 0
+  - texture: {fileID: 2800000, guid: 4a360bfd8d38ac542859905d4e33fa25, type: 3}
+    price:
+      currentCryptoKey: 1467196721
+      hiddenValue: 1467196757
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 29
+      count: 0
+  - texture: {fileID: 2800000, guid: f8e0ac37d45ccc947848d888411c26ab, type: 3}
+    price:
+      currentCryptoKey: 1320315468
+      hiddenValue: 1320315432
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 30
+      count: 0
+  - texture: {fileID: 2800000, guid: 31f3f02df035d0f4092933ad2a576b35, type: 3}
+    price:
+      currentCryptoKey: 2113576965
+      hiddenValue: 2113577057
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 31
+      count: 0
+  - texture: {fileID: 2800000, guid: 6544e9494cce8cd4a800a29aab284022, type: 3}
+    price:
+      currentCryptoKey: 1847351242
+      hiddenValue: 1847351214
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 32
+      count: 0
+  - texture: {fileID: 2800000, guid: d8702aa4a5364934892f251ab30fd7c0, type: 3}
+    price:
+      currentCryptoKey: 1692326852
+      hiddenValue: 1692326816
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 33
+      count: 0
+  - texture: {fileID: 2800000, guid: c0eaca3add89f6040ad10b030480b8cb, type: 3}
+    price:
+      currentCryptoKey: 1101838205
+      hiddenValue: 1101838105
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 34
+      count: 0
+  - texture: {fileID: 2800000, guid: a9d15f2fc1977c64aafecc653402820a, type: 3}
+    price:
+      currentCryptoKey: 1246280712
+      hiddenValue: 1246280812
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 35
+      count: 0
+  - texture: {fileID: 2800000, guid: fd9cc01f5b1d1de4fa574f975b386794, type: 3}
+    price:
+      currentCryptoKey: 1862948468
+      hiddenValue: 1862948368
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 36
+      count: 0
+  - texture: {fileID: 2800000, guid: 763c8a44f401d15448d0ea5b40c53672, type: 3}
+    price:
+      currentCryptoKey: 1608102892
+      hiddenValue: 1608102792
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 37
+      count: 0
+  - texture: {fileID: 2800000, guid: 846b8297d03d6b54fb105e6c3bd3d619, type: 3}
+    price:
+      currentCryptoKey: 2054319100
+      hiddenValue: 2054319000
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 38
+      count: 0
+  - texture: {fileID: 2800000, guid: a7f6196c8bc446a42aae32e41f11e337, type: 3}
+    price:
+      currentCryptoKey: 1191684673
+      hiddenValue: 1191684645
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 39
+      count: 0
+  - texture: {fileID: 2800000, guid: 72d3385d6b2522d4da2fff7fe53aba2c, type: 3}
+    price:
+      currentCryptoKey: 1851262206
+      hiddenValue: 1851262106
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 40
+      count: 0
+  - texture: {fileID: 2800000, guid: 538d5f2e61801ee4ab28512256ad958a, type: 3}
+    price:
+      currentCryptoKey: 1464055349
+      hiddenValue: 1464055377
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 41
+      count: 0
+  - texture: {fileID: 2800000, guid: da5b604f1c1deea46a669d4e5cc7bace, type: 3}
+    price:
+      currentCryptoKey: 1491628165
+      hiddenValue: 1491628257
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 42
+      count: 0
+  - texture: {fileID: 2800000, guid: 81a6742725d42cd4ca69f3a278dda0ba, type: 3}
+    price:
+      currentCryptoKey: 1778294458
+      hiddenValue: 1778294494
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 43
+      count: 0
+  - texture: {fileID: 2800000, guid: 562efcffd80c9b24e9fec37e90b3738a, type: 3}
+    price:
+      currentCryptoKey: 1196975165
+      hiddenValue: 1196975193
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 44
+      count: 0
+  - texture: {fileID: 2800000, guid: 096f5a176a772694fa23072331a69372, type: 3}
+    price:
+      currentCryptoKey: 1830105554
+      hiddenValue: 1830105526
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 45
+      count: 0
+  - texture: {fileID: 2800000, guid: a761ca0b29ea7e642afad4d52e73b531, type: 3}
+    price:
+      currentCryptoKey: 1804408746
+      hiddenValue: 1804408782
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 46
+      count: 0
+  - texture: {fileID: 2800000, guid: 21ea16094a0351144bf7e2bee50082e4, type: 3}
+    price:
+      currentCryptoKey: 1227672650
+      hiddenValue: 1227672622
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 47
+      count: 0
+  - texture: {fileID: 2800000, guid: 0695845e6b929544ca6205f0247a32fd, type: 3}
+    price:
+      currentCryptoKey: 1108683217
+      hiddenValue: 1108683189
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 48
+      count: 0
+  - texture: {fileID: 2800000, guid: 41b8f59cd9078b748aa23fdb568289dd, type: 3}
+    price:
+      currentCryptoKey: 1106358302
+      hiddenValue: 1106358394
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 49
+      count: 0
+  - texture: {fileID: 2800000, guid: c14ef938b0c8e7e47ac85bda648b7c5b, type: 3}
+    price:
+      currentCryptoKey: 1259835925
+      hiddenValue: 1259836017
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 50
+      count: 0
+  - texture: {fileID: 2800000, guid: a63bfd8961a7bd648bfd242ac0d07b18, type: 3}
+    price:
+      currentCryptoKey: 1548298773
+      hiddenValue: 1548298865
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 51
+      count: 0
+  - texture: {fileID: 2800000, guid: f8b16ec6a7cbac949b58debd09e2dcd6, type: 3}
+    price:
+      currentCryptoKey: 1663838229
+      hiddenValue: 1663838321
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 52
+      count: 0
+  - texture: {fileID: 2800000, guid: b00673be0f60b6b4ab58d6aecaa994fe, type: 3}
+    price:
+      currentCryptoKey: 1839406468
+      hiddenValue: 1839406560
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 53
+      count: 0
+  - texture: {fileID: 2800000, guid: c0d96941045ca2247953e21ca7330967, type: 3}
+    price:
+      currentCryptoKey: 1501160702
+      hiddenValue: 1501160602
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 54
+      count: 0
+  - texture: {fileID: 2800000, guid: cf8943c41ab98784f99cc29b5a07027b, type: 3}
+    price:
+      currentCryptoKey: 1329156447
+      hiddenValue: 1329156411
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 55
+      count: 0
+  - texture: {fileID: 2800000, guid: 3f762518e2102464c8830a981544dda2, type: 3}
+    price:
+      currentCryptoKey: 1623505146
+      hiddenValue: 1623505054
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 56
+      count: 0
+  - texture: {fileID: 2800000, guid: c8e789a0564b0ec46a9b1dc3dad9a901, type: 3}
+    price:
+      currentCryptoKey: 1514330399
+      hiddenValue: 1514330491
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 57
+      count: 0
+  - texture: {fileID: 2800000, guid: a0f8f0783e5772a48b96e42dffdc454f, type: 3}
+    price:
+      currentCryptoKey: 1375405322
+      hiddenValue: 1375405422
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 58
+      count: 0
+  - texture: {fileID: 2800000, guid: 5beff910034fb364faa67cbecd56a93e, type: 3}
+    price:
+      currentCryptoKey: 1557368201
+      hiddenValue: 1557368301
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 59
+      count: 0
+  - texture: {fileID: 2800000, guid: 8dcefca17eb22b640984b3fa2946e660, type: 3}
+    price:
+      currentCryptoKey: 1312564879
+      hiddenValue: 1312564971
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 60
+      count: 0
+  - texture: {fileID: 2800000, guid: d0d1f33461102884cb4b5870dc910bb5, type: 3}
+    price:
+      currentCryptoKey: 1549404845
+      hiddenValue: 1549404873
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 61
+      count: 0
+  - texture: {fileID: 2800000, guid: 9fbe60baaa5fc9648a8bf27371df87d8, type: 3}
+    price:
+      currentCryptoKey: 1044957532
+      hiddenValue: 1044957496
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 62
+      count: 0
+  - texture: {fileID: 2800000, guid: 9a418dd1d5009584f976da2aea4f7bb4, type: 3}
+    price:
+      currentCryptoKey: 1975986136
+      hiddenValue: 1975986108
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 63
+      count: 0
+  - texture: {fileID: 2800000, guid: 03ded64b626d54340bbcd4313ba29f45, type: 3}
+    price:
+      currentCryptoKey: 1562963775
+      hiddenValue: 1562963803
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 64
+      count: 0
+  - texture: {fileID: 2800000, guid: 37fc0f1b63c8b0a42846cc8b4ea3aa8b, type: 3}
+    price:
+      currentCryptoKey: 1961294463
+      hiddenValue: 1961294363
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 65
+      count: 0
+  - texture: {fileID: 2800000, guid: 51849246702a818408b117c99ffe09fb, type: 3}
+    price:
+      currentCryptoKey: 1522452802
+      hiddenValue: 1522452774
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 66
+      count: 0
+  - texture: {fileID: 2800000, guid: a2d48de336c9f1c4c86351c085665562, type: 3}
+    price:
+      currentCryptoKey: 2078766895
+      hiddenValue: 2078766923
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 67
+      count: 0
+  - texture: {fileID: 2800000, guid: 694808ecf9900dc449b3c6572577f6c3, type: 3}
+    price:
+      currentCryptoKey: 2031456128
+      hiddenValue: 2031456228
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 68
+      count: 0
+  - texture: {fileID: 2800000, guid: 7dd9d03605da04347a03aba3fea4b659, type: 3}
+    price:
+      currentCryptoKey: 1818861537
+      hiddenValue: 1818861445
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 69
+      count: 0
+  - texture: {fileID: 2800000, guid: 11d5a735c0c5e014e8f0d939b272d721, type: 3}
+    price:
+      currentCryptoKey: 1510800572
+      hiddenValue: 1510800600
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 70
+      count: 0
+  - texture: {fileID: 2800000, guid: dd8cc7bfe474d3e45a118fece24c828d, type: 3}
+    price:
+      currentCryptoKey: 1834161703
+      hiddenValue: 1834161731
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 71
+      count: 0
+  - texture: {fileID: 2800000, guid: 2f08a2d99d6f74d48b33b1625f539a26, type: 3}
+    price:
+      currentCryptoKey: 1010641454
+      hiddenValue: 1010641482
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 72
+      count: 0
+  - texture: {fileID: 2800000, guid: 60f1fe106db5d2141beddf12cecbb899, type: 3}
+    price:
+      currentCryptoKey: 1820466174
+      hiddenValue: 1820466074
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 73
+      count: 0
+  - texture: {fileID: 2800000, guid: de5ac71f98fc6d940b3888b8241d6023, type: 3}
+    price:
+      currentCryptoKey: 2128336061
+      hiddenValue: 2128336089
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 74
+      count: 0
+  - texture: {fileID: 2800000, guid: 50ffa77848a9c25459cd853dbd70ae00, type: 3}
+    price:
+      currentCryptoKey: 1979392937
+      hiddenValue: 1979392973
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 75
+      count: 0
+  - texture: {fileID: 2800000, guid: 97819f84e70481e48824eaab59a8a9c7, type: 3}
+    price:
+      currentCryptoKey: 1049058551
+      hiddenValue: 1049058451
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    data:
+      id: 76
+      count: 0
+  languageTextures:
+  - {fileID: 2800000, guid: 9fbe60baaa5fc9648a8bf27371df87d8, type: 3}
+  - {fileID: 2800000, guid: 62b2bb0fd13e224438103a5eca26b7c4, type: 3}
+  - {fileID: 2800000, guid: 41cb355653ecf9b4388d1db0e6a21a01, type: 3}
+  - {fileID: 2800000, guid: 809e0d2a88f5bcf42b191f37dbb61f81, type: 3}
+  - {fileID: 2800000, guid: 1510e420479ecc741b44828347cc3bf0, type: 3}
+  - {fileID: 2800000, guid: d82b2c79d78cec442980235262b11612, type: 3}
+  - {fileID: 2800000, guid: 786ca1e55d993074588b1321ebbed410, type: 3}
+  - {fileID: 2800000, guid: c9a9b5fca5fb1424a8d7dbf0ee330b55, type: 3}
+  - {fileID: 2800000, guid: ad4a69cfac2e1e9478c81210b306e794, type: 3}
+  - {fileID: 2800000, guid: 0695845e6b929544ca6205f0247a32fd, type: 3}
+  - {fileID: 2800000, guid: 2f08a2d99d6f74d48b33b1625f539a26, type: 3}
+  - {fileID: 2800000, guid: 4ef6d330eac88d0458e6ec9951ad6875, type: 3}
+  - {fileID: 2800000, guid: ee5d69d01d225744390571ec30e8274f, type: 3}
+  - {fileID: 2800000, guid: 4bf78a5fc098d45479b59f73b43205b9, type: 3}
+  - {fileID: 2800000, guid: a032c28a8c2c6094fa0bff50b46e8095, type: 3}
+  - {fileID: 2800000, guid: d72e65b74ba8da8498f64e4e66984b2f, type: 3}
+  - {fileID: 2800000, guid: 8e8ef3efd454bbc4cbfea9063a3ce785, type: 3}
+  - {fileID: 2800000, guid: 188697d29cbe3e243836b18d4cf4024c, type: 3}
+  - {fileID: 2800000, guid: 55cb616979f640f45a1a6d901ac0b32c, type: 3}
+  - {fileID: 2800000, guid: 4a360bfd8d38ac542859905d4e33fa25, type: 3}
+  - {fileID: 2800000, guid: 31f3f02df035d0f4092933ad2a576b35, type: 3}
+  - {fileID: 2800000, guid: a9d15f2fc1977c64aafecc653402820a, type: 3}
+  - {fileID: 2800000, guid: 763c8a44f401d15448d0ea5b40c53672, type: 3}
+  - {fileID: 2800000, guid: 9a418dd1d5009584f976da2aea4f7bb4, type: 3}
+  - {fileID: 2800000, guid: da5b604f1c1deea46a669d4e5cc7bace, type: 3}
+  - {fileID: 2800000, guid: 562efcffd80c9b24e9fec37e90b3738a, type: 3}
+  - {fileID: 2800000, guid: 41b8f59cd9078b748aa23fdb568289dd, type: 3}
+  - {fileID: 2800000, guid: f8b16ec6a7cbac949b58debd09e2dcd6, type: 3}
+  - {fileID: 2800000, guid: b00673be0f60b6b4ab58d6aecaa994fe, type: 3}
+  - {fileID: 2800000, guid: cf8943c41ab98784f99cc29b5a07027b, type: 3}
+  - {fileID: 2800000, guid: 3f762518e2102464c8830a981544dda2, type: 3}
+  - {fileID: 2800000, guid: a0f8f0783e5772a48b96e42dffdc454f, type: 3}
+  - {fileID: 2800000, guid: 8dcefca17eb22b640984b3fa2946e660, type: 3}
+  - {fileID: 2800000, guid: d0d1f33461102884cb4b5870dc910bb5, type: 3}
+  - {fileID: 2800000, guid: 03ded64b626d54340bbcd4313ba29f45, type: 3}
+  - {fileID: 2800000, guid: 37fc0f1b63c8b0a42846cc8b4ea3aa8b, type: 3}
+  - {fileID: 2800000, guid: a2d48de336c9f1c4c86351c085665562, type: 3}
+  - {fileID: 2800000, guid: 7dd9d03605da04347a03aba3fea4b659, type: 3}
+  - {fileID: 2800000, guid: 11d5a735c0c5e014e8f0d939b272d721, type: 3}
+  - {fileID: 2800000, guid: 50ffa77848a9c25459cd853dbd70ae00, type: 3}
+  - {fileID: 2800000, guid: 786ca1e55d993074588b1321ebbed410, type: 3}
+  - {fileID: 2800000, guid: 786ca1e55d993074588b1321ebbed410, type: 3}
+  - {fileID: 2800000, guid: dbc82de1ad453544b80011338c43af1a, type: 3}

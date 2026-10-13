@@ -1,0 +1,576 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842591b80f463b58fd308c8727806c37, type: 3}
+  m_Name: FreeSceneSteamUIConfig
+  m_EditorClassIdentifier:
+  items:
+  - name: Speedometer
+    ignorePosition: 0
+    anchoredPosition: {x: -265, y: 10}
+    sizeDelta: {x: 390, y: 390}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 0}
+    anchorMax: {x: 1, y: 0}
+    pivot: {x: 0.5, y: 0}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: mapBackground
+    ignorePosition: 0
+    anchoredPosition: {x: 35, y: 380}
+    sizeDelta: {x: 350, y: 350}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0, y: 0}
+    anchorMax: {x: 0, y: 0}
+    pivot: {x: 0, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: Phone
+    ignorePosition: 0
+    anchoredPosition: {x: -100, y: -55}
+    sizeDelta: {x: 65, y: 65}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 1}
+    anchorMax: {x: 1, y: 1}
+    pivot: {x: 1, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: Mic
+    ignorePosition: 0
+    anchoredPosition: {x: 145, y: -90}
+    sizeDelta: {x: 50, y: 50}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0, y: 0.5}
+    anchorMax: {x: 0, y: 0.5}
+    pivot: {x: 0, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: StartEngine
+    ignorePosition: 0
+    anchoredPosition: {x: 535, y: 65}
+    sizeDelta: {x: 45, y: 45}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0}
+    anchorMax: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: HandBrake
+    ignorePosition: 0
+    anchoredPosition: {x: 600, y: 160}
+    sizeDelta: {x: 90, y: 90}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0}
+    anchorMax: {x: 0.5, y: 0}
+    pivot: {x: 0, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.5, y: 0.5, z: 0.5}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: HandBrakeOnImage
+    ignorePosition: 0
+    anchoredPosition: {x: 0, y: -45}
+    sizeDelta: {x: 90, y: 90}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: HandBrakeOffImage
+    ignorePosition: 0
+    anchoredPosition: {x: 0, y: 45}
+    sizeDelta: {x: 90, y: 90}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: HandBrakeFill
+    ignorePosition: 0
+    anchoredPosition: {x: -5, y: -45}
+    sizeDelta: {x: 10, y: 90}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0, y: 0.5}
+    anchorMax: {x: 0, y: 0.5}
+    pivot: {x: 1, y: 0}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: KeepRowButton
+    ignorePosition: 0
+    anchoredPosition: {x: -725, y: 160}
+    sizeDelta: {x: 70, y: 70}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0}
+    anchorMax: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: CruiseControl
+    ignorePosition: 0
+    anchoredPosition: {x: -795.5, y: 160}
+    sizeDelta: {x: 100, y: 150}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0}
+    anchorMax: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.6, y: 0.6, z: 0.6}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: MechanicGear
+    ignorePosition: 0
+    anchoredPosition: {x: -70, y: 150}
+    sizeDelta: {x: 480, y: 380}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 0.5}
+    anchorMax: {x: 1, y: 0.5}
+    pivot: {x: 1, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 1
+    wideAnchoredPosition: {x: -400, y: 150}
+    wideSizeDelta: {x: 480, y: 380}
+    wideAnchorMin: {x: 1, y: 0.5}
+    wideAnchorMax: {x: 1, y: 0.5}
+    widePivot: {x: 1, y: 0.5}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 0.7, y: 0.7, z: 1}
+  - name: Selector
+    ignorePosition: 0
+    anchoredPosition: {x: -110, y: 125}
+    sizeDelta: {x: 115, y: 340}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 0.5}
+    anchorMax: {x: 1, y: 0.5}
+    pivot: {x: 1, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 1
+    wideAnchoredPosition: {x: -350, y: 245}
+    wideSizeDelta: {x: 115, y: 340}
+    wideAnchorMin: {x: 1, y: 0.5}
+    wideAnchorMax: {x: 1, y: 0.5}
+    widePivot: {x: 1, y: 0.5}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: Knob1
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: AnimationToggle
+    ignorePosition: 0
+    anchoredPosition: {x: 197.5, y: 30}
+    sizeDelta: {x: 50, y: 50}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0, y: 0.5}
+    anchorMax: {x: 0, y: 0.5}
+    pivot: {x: 1, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: ParkSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: ReverseSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: NeutralSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: DriveSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: ManualSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: GearUpSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: GearDownSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: ExitRaceButton
+    ignorePosition: 0
+    anchoredPosition: {x: -645, y: 162}
+    sizeDelta: {x: 70, y: 50}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0}
+    anchorMax: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: SportSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: LowSlot
+    ignorePosition: 1
+    anchoredPosition: {x: 0, y: 0}
+    sizeDelta: {x: 100, y: 100}
+    forceCornerAnchors: 0
+    anchorMin: {x: 0.5, y: 0.5}
+    anchorMax: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.5}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: Turbo
+    ignorePosition: 0
+    anchoredPosition: {x: 43.5, y: 20}
+    sizeDelta: {x: 96, y: 96}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 1}
+    anchorMax: {x: 1, y: 1}
+    pivot: {x: 1, y: 1}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 1, y: 1, z: 1}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: TransferCaseHud
+    ignorePosition: 0
+    anchoredPosition: {x: -65, y: 220}
+    sizeDelta: {x: 80, y: 80}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 0}
+    anchorMax: {x: 1, y: 0}
+    pivot: {x: 0.5, y: 0}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.8, y: 0.8, z: 0.8}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  - name: StminaRoot
+    ignorePosition: 0
+    anchoredPosition: {x: -330, y: 80}
+    sizeDelta: {x: 720, y: 55}
+    forceCornerAnchors: 0
+    anchorMin: {x: 1, y: 0}
+    anchorMax: {x: 1, y: 0}
+    pivot: {x: 0.5, y: 0}
+    disableRaycastTargets: 1
+    rotation: {x: 0, y: 0, z: 0}
+    ignoreScale: 0
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+    useWideAspectOverride: 0
+    wideAnchoredPosition: {x: 0, y: 0}
+    wideSizeDelta: {x: 0, y: 0}
+    wideAnchorMin: {x: 0, y: 0}
+    wideAnchorMax: {x: 0, y: 0}
+    widePivot: {x: 0, y: 0}
+    wideRotation: {x: 0, y: 0, z: 0}
+    wideScale: {x: 1, y: 1, z: 1}
+  wideAspectThreshold: 2

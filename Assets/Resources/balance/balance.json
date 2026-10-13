@@ -1,0 +1,3332 @@
+{
+  "ads": {
+    "enabled": true,
+    "globalDailyCap": 10,
+    "globalSessionCap": 5,
+    "successCooldownSec": 60,
+    "technicalCooldownSec": 30,
+    "noFillLockSec": 300,
+    "placements": [
+      {
+        "id": "ParkingContinue",
+        "enabled": true,
+        "dailyCap": 3,
+        "perContextCap": 1,
+        "rewards": [ { "type": "Time", "amount": 60 } ]
+      },
+      {
+        "id": "FuelRefill",
+        "enabled": true,
+        "dailyCap": 2,
+        "perContextCap": 1,
+        "rewards": []
+      },
+      {
+        "id": "EngineTimerReduce",
+        "enabled": true,
+        "dailyCap": 3,
+        "perContextCap": 1,
+        "rewards": [ { "type": "Time", "amount": 18000 } ]
+      },
+        {
+        "id": "Competition",
+        "enabled": true,
+        "dailyCap": 3,
+        "perContextCap": 1,
+        "rewards": []
+      }
+    ]
+  },
+  "tuning": {
+    "installTimes": [
+      { "partType": "Engine", "seconds": 1200 },
+      { "partType": "Block_Inline", "seconds": 5 },
+      { "partType": "Block_Vee", "seconds": 5 },
+      { "partType": "Crankshaft", "seconds": 5 },
+      { "partType": "ConnectionRod", "seconds": 5 },
+      { "partType": "Pistons", "seconds": 5 },
+      { "partType": "Flywheel", "seconds": 5 },
+      { "partType": "SOHC_CylinderHead", "seconds": 5 },
+      { "partType": "DOHC_CylinderHead", "seconds": 5 },
+      { "partType": "OHV_CylinderHead", "seconds": 5 },
+      { "partType": "SOHC_Camshaft", "seconds": 5 },
+      { "partType": "DOHC_Camshaft_Intake", "seconds": 5 },
+      { "partType": "DOHC_Camshaft_Exhaust", "seconds": 5 },
+      { "partType": "OHV_Camshaft", "seconds": 5 },
+      { "partType": "IntakeManifold", "seconds": 5 },
+      { "partType": "AirFilter", "seconds": 5 },
+      { "partType": "FuelRail", "seconds": 5 },
+      { "partType": "FuelPump", "seconds": 5 },
+      { "partType": "FuelInjectors", "seconds": 5 },
+      { "partType": "ExhaustHeader", "seconds": 5 },
+      { "partType": "ExhaustPipe", "seconds": 5 },
+      { "partType": "ThrottleValve", "seconds": 5 },
+      { "partType": "GearBox", "seconds": 5 },
+      { "partType": "Clutch", "seconds": 5 },
+      { "partType": "ECU", "seconds": 5 },
+      { "partType": "TurboCharger", "seconds": 5 },
+      { "partType": "SuperCharger", "seconds": 5 },
+      { "partType": "Radiator", "seconds": 5 },
+      { "partType": "Intercooler", "seconds": 5 },
+      { "partType": "FrontLSD", "seconds": 5 },
+      { "partType": "RearLSD", "seconds": 5 },
+      { "partType": "RotorHousing", "seconds": 5 },
+      { "partType": "EccentricShaft", "seconds": 5 },
+      { "partType": "RotorTrackingGear", "seconds": 5 },
+      { "partType": "Rotor", "seconds": 5 }
+    ]
+  },
+  "shop": {
+    "items": [
+      {
+        "id": "0",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 0,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "1",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 1,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 18000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 2,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 3,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 4,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 5,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 6,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 7,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 8,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 9,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 10,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 11,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 12,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 12000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 13,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 14,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 15,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "17",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 17,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 19,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 20,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 21,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 22,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 200000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 23,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 24,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 27,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "28",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 28,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "29",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 80000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 29,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 30,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "31",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 31,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "32",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 32,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "35",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 35,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "39",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 39,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "40",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 40,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "41",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 41,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 43,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 70000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 45,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 47,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 500000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 48,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 49,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "51",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 51,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "53",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 250000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 53,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "54",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 54,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "55",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 60000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 55,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "56",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 56,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "57",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 50000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 57,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "58",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 58,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "59",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 59,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "60",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 60,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "61",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 61,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "62",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 62,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "66",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 220000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 66,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "74",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 18000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 74,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "76",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 76,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "77",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 20000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 77,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "81",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 81,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "82",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 82,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "85",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 85,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "86",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 86,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "87",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 87,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "88",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 88,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "89",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 90000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 89,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "99",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 12000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 99,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "100",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 60000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 100,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "102",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 30000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 102,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "103",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 103,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "104",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 104,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "105",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 105,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "106",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 150000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 106,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "107",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 107,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "108",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 108,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "109",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 109,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "110",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 110,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "111",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 111,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "112",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 112,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "113",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 113,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "114",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 114,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "115",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 115,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "116",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 116,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "117",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 117,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "118",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 118,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "120",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 300000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 120,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "121",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 121,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "123",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 123,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "124",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 124,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "126",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 126,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "127",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 127,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "128",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 128,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "130",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 130,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "131",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 280000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 131,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "132",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 132,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "133",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 50000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 133,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "134",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 134,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "135",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 135,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "136",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 136,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "137",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 18000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 137,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "139",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 40000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 139,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "140",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 35000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 140,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "141",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 141,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "142",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 142,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "143",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 143,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "144",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 144,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "145",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 145,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "146",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 35000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 146,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "147",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 147,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "148",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 148,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "149",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 25000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 149,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "150",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 150,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "151",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 151,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "152",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 12000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 152,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "153",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 153,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "154",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 154,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "155",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 15000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 155,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "156",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 156,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "157",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 260000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 157,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "158",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 170000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 158,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "160",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 160,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "161",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 161,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "162",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 162,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "163",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 320000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 163,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "165",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 165,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "166",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 166,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "168",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 168,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "169",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 169,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "172",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 172,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "175",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 175,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "176",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 25000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 176,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "177",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 177,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "178",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 178,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "179",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 120000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 179,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "180",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 180,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "181",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 181,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "182",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 182,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "183",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 183,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "184",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 190000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 184,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "185",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 185,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "186",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 60000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 186,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "187",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 370000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 187,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "188",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 188,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "189",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 189,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "190",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 45000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 190,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "192",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 192,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "193",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 193,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "194",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 194,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "196",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 196,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "197",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 80000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 197,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "198",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 198,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "199",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 199,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "200",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 200,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "201",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 201,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "202",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 202,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "203",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 203,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "205",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 205,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "206",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 206,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "208",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 350000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 208,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "209",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 209,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "210",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 210,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "211",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 211,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "212",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 212,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "213",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 213,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "214",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 214,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "215",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 215,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "216",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 216,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "217",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 217,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "219",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 219,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "220",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 220,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "221",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 221,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "223",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 223,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "224",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 224,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "225",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 225,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "226",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 150000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 226,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "228",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 228,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "229",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 229,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "230",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 230,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "231",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 500000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 231,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "232",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 232,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "233",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 233,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "234",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 234,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "238",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 238,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "239",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 239,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "241",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 241,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "243",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 243,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "244",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 244,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "245",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 245,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "248",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 248,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "249",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 249,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "250",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 250,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "251",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1500
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 251,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "252",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 150000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 252,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "253",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 5000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 253,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "254",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 15000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 254,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "255",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 255,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "256",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 2000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 256,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "257",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 257,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "259",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 259,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "262",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 262,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "263",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 263,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "265",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1200
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 265,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "266",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 266,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "267",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 1200
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 267,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "268",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 700
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 268,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "274",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 274,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "275",
+        "prices": [
+          {
+            "type": "Money",
+            "amount": 100000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 275,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "276",
+        "prices": [
+          {
+            "type": "RealWorldCash",
+            "amount": 0
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 276,
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "277",
+        "prices": [
+          {
+            "type": "Coins",
+            "amount": 10000
+          }
+        ],
+        "contents": [
+          {
+            "type": "Car",
+            "id": 277,
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  "version": 1
+}

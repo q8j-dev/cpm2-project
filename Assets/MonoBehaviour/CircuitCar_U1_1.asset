@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8c4f2c08c271e9cde836d8bb5dc6d4, type: 3}
+  m_Name: CircuitCar_U1
+  m_EditorClassIdentifier:
+  driver: {fileID: 0}
+  gender: 0
+  timeClass: 9
+  CarID: 250
+  WheelInwardOffset: 0
+  Class: 5
+  PerformanceScore: 683
+  torque: 706
+  torqueRPM: 5000
+  redlineRPM: 8600
+  IdleRPM: 850
+  maxRPM: 9000
+  EngineInertiaRatio: 0.36
+  GearBoxLoss: 0
+  drivingWheel: 1
+  ShiftTime: 0.1
+  LCrpm: 4500
+  bodyMass: 1050
+  Induction: 0
+  turboPressure: 1.1
+  minTurboRPM: 1300
+  maxTurboRPM: 2700
+  FrontLsd: 0
+  FrontLsdLockPercent: 0
+  RearLsd: 4
+  RearLsdLockPercent: 75
+  gears:
+  - 2.86
+  - 0
+  - 3.2
+  - 1.87
+  - 1.36
+  - 1.07
+  - 0.91
+  - 0.75
+  finalGearRatio: 4.44
+  TorqueSplit4Wd: 0.5
+  Options:
+    AbsLevel: 10
+    TrcLevel: 7
+    EspLevel: 3
+    Lc: 1
+    MTAssist: 0
+    ArcadeMode: 0
+    AnalogClutch: 0
+    AnalogThrottle: 0
+    AnalogBrake: 0
+  UseStockFrontData: 0
+  FrontWheelData:
+    BrakesData:
+      Diameter: 380
+      DiscType: 6
+      Pistons: 6
+      PistonDiameter: 20
+      CaliperMeshIndex: 2
+    Pressure: 2.1
+    tyreType: 2
+    RimModelId: 187
+    wheelSize: 19
+    tyreWidth: 265
+    tyreProfile: 35
+    rimWidth: 95
+    SpacerWidth: 0
+    Color1:
+      Color: {r: 0, g: 0, b: 0, a: 0}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0, g: 0, b: 0, a: 0}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 2
+      SpringLength: 8.5
+      SpringRate: 8
+      Bump: 7000
+      Rebound: 12000
+      AntiSwayBarForce: 20000
+      Camber: -1
+      ToeIn: -0.1
+      Caster: 8.5
+      Ackerman: 45
+      MaxSteerAngle: 38
+  UseStockRearData: 0
+  RearWheelData:
+    BrakesData:
+      Diameter: 360
+      DiscType: 5
+      Pistons: 4
+      PistonDiameter: 22
+      CaliperMeshIndex: 2
+    Pressure: 2.4
+    tyreType: 2
+    RimModelId: 160
+    wheelSize: 20
+    tyreWidth: 335
+    tyreProfile: 30
+    rimWidth: 125
+    SpacerWidth: 0
+    Color1:
+      Color: {r: 0, g: 0, b: 0, a: 0}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0, g: 0, b: 0, a: 0}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 2
+      SpringLength: 8.5
+      SpringRate: 9
+      Bump: 6500
+      Rebound: 10000
+      AntiSwayBarForce: 14000
+      Camber: -1.8
+      ToeIn: 0.1
+  MaxSpeedTurnCoefficient: 44
+  MinSpeedTurnCoefficient: 39
+  BodyKitTypeInstall:
+  Gearbox: 1
+  steeringToSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 4.370475
+      value: 0.5804191
+      inSlope: -0.019399727
+      outSlope: -0.019399727
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.24008037
+    - serializedVersion: 3
+      time: 8.360096
+      value: 0.31774846
+      inSlope: -0.0031916543
+      outSlope: -0.0031916543
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 105.53689
+      value: 0.1776928
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  speedAdjustmentCoefficient: 0
+  GripForwardPressureMultiplier: 0.8
+  GripSidewaysPressureMultiplier: 0.5
+  IsUser: 0
+  RallyTransmission: 0

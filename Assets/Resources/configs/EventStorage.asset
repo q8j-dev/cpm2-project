@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400d43531baaed708872850af6244e6c, type: 3}
+  m_Name: EventStorage
+  m_EditorClassIdentifier:
+  EventsConfigs:
+  - Type: 0
+    NameKey: EventViewWindow.TimeAttack
+    DescriptionKey:
+    MaxProgress: 3
+    PointsKeys:
+    - Complete 3 lap
+    - 'Car class: C or lower'
+    - Time of the lap is less
+    UnlockCarId: 0
+  - Type: 2
+    NameKey: EventName.SnowmanUprising
+    DescriptionKey: EventDescription.SnowmanUprising
+    MaxProgress: 18
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 3
+    NameKey: EventBigBaner.GiftsTitle
+    DescriptionKey: EventBigBaner.GiftDescription
+    MaxProgress: 60
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 4
+    NameKey: EventBigBaner.DecorationsTitle
+    DescriptionKey: EventBigBaner.DecorationDescription
+    MaxProgress: 10
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 5
+    NameKey: EventBigBaner.DriftTimeAttack
+    DescriptionKey: EventBigBaner.DriftDescription
+    MaxProgress: 1
+    PointsKeys:
+    - EventBigBanner.Points.Drift.Condition1
+    - EventBigBanner.Points.Drift.Condition2
+    UnlockCarId: 0
+  - Type: 6
+    NameKey: EventBigBaner.NurbTimeAttack
+    DescriptionKey: EventBigBaner.NurbDescription
+    MaxProgress: 3
+    PointsKeys:
+    - EventBigBanner.Points.Nurb.Condition1
+    - EventBigBanner.Points.Nurb.Condition2
+    - EventBigBanner.Points.Nurb.Condition4
+    UnlockCarId: 0
+  - Type: 1000
+    NameKey: SteamPromo.SpecialOffer
+    DescriptionKey: SteamPromo.ExclusiveCarDescription
+    MaxProgress: 0
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 7
+    NameKey: EventBigBaner.RallyOffroad
+    DescriptionKey:
+    MaxProgress: 5
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 8
+    NameKey: SurvivorRace.Title
+    DescriptionKey: SurvivorRace.Description
+    MaxProgress: 20
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 9
+    NameKey: SteamPromo.SpecialOffer
+    DescriptionKey:
+    MaxProgress: 0
+    PointsKeys: []
+    UnlockCarId: 0
+  - Type: 10
+    NameKey: SteamPromo.SpecialOffer
+    DescriptionKey:
+    MaxProgress: 0
+    PointsKeys: []
+    UnlockCarId: 277

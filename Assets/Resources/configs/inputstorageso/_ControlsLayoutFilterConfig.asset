@@ -1,0 +1,458 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7474fc81f7c8e030a03e9bf9c4ae1579, type: 3}
+  m_Name: _ControlsLayoutFilterConfig
+  m_EditorClassIdentifier:
+  SelectableGroups:
+  - LocalizationKey:
+    Groups: 110b1d0a20
+  - LocalizationKey:
+    Groups: 031e
+  - LocalizationKey:
+    Groups: 06
+  - LocalizationKey:
+    Groups: 08
+  - LocalizationKey:
+    Groups: 09
+  - LocalizationKey:
+    Groups: 1f
+  ExcludedMaps: 0f23013d34
+  ExcludedActions:
+  - {fileID: 11400000, guid: dd845e612c35a6a4daa60a99f7e91427, type: 2}
+  - {fileID: 11400000, guid: 5600ee0e1aa28644da9b67b77577bd00, type: 2}
+  - {fileID: 11400000, guid: 4cafd4250ba2d394c89a10b545aeb9d7, type: 2}
+  - {fileID: 11400000, guid: f35cdf94d11d9714a8b69aecaee9655e, type: 2}
+  - {fileID: 11400000, guid: bba92ff2c7896534c88e0ca11cd39835, type: 2}
+  - {fileID: 11400000, guid: 9ae0a11ccf08598478538058021e4ad8, type: 2}
+  - {fileID: 11400000, guid: 2c7d0a46ad6d27543abd185cab8168bb, type: 2}
+  - {fileID: 11400000, guid: 30d64ddd2eb7953499ccff604e6d07b8, type: 2}
+  - {fileID: 11400000, guid: 44b6fb9bc3d7f3e49997339890f2f7a7, type: 2}
+  - {fileID: 11400000, guid: c61a812d157897c48bb1b82790b8cd32, type: 2}
+  - {fileID: 11400000, guid: cd2e15908da955847af9234773ee4bcb, type: 2}
+  - {fileID: 11400000, guid: 0f1215c4d61453d43a46ed462d3203ba, type: 2}
+  - {fileID: 11400000, guid: d9a22148f6f2ebf42b0bbcba563b8c62, type: 2}
+  - {fileID: 11400000, guid: 635cc54c0ee4e4349bb4ae096acaa663, type: 2}
+  CombineMapsWithMaxActions: 1
+  GroupsWithMiddleImage:
+  ActionLabelOverrides:
+  - Action: {fileID: 11400000, guid: 04f57b5396a40304295bad961dc1a20d, type: 2}
+    CompositePart:
+    LocalizationKey: Sellcarwindow.Submit
+  - Action: {fileID: 11400000, guid: 53f0ee59e35cea3449828ae29e31a775, type: 2}
+    CompositePart:
+    LocalizationKey: Sellcarwindow.Cancel
+  - Action: {fileID: 11400000, guid: 688304611d43d434db9e6bdfd8901598, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Next
+  - Action: {fileID: 11400000, guid: 992d27e51936f9142bf17c7173585294, type: 2}
+    CompositePart:
+    LocalizationKey: RallyMode.Previous
+  - Action: {fileID: 11400000, guid: 0aff241788a128549b632b22aa066f2b, type: 2}
+    CompositePart:
+    LocalizationKey: UiRootForLevels.Menu
+  - Action: {fileID: 11400000, guid: b412841908e43eb4e88c42c89b24e644, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Map
+  - Action: {fileID: 11400000, guid: 344075b1440c50341bf06b9358624a48, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.HideShiw
+  - Action: {fileID: 11400000, guid: 8a9620275d49ed54cbc6d5fd2a596dbd, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.HideShowAll
+  - Action: {fileID: 11400000, guid: e5002dd47a98b95429efa12c58fa417b, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Expand
+  - Action: {fileID: 11400000, guid: c5908b4d098c87849ab030ad99f9044a, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.CloseMap
+  - Action: {fileID: 11400000, guid: 2d107f957a006494e805a107f6e59811, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Mark
+  - Action: {fileID: 11400000, guid: a19d3de05cd9ed045ae724423e225afa, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ShowMarkDetaild
+  - Action: {fileID: 11400000, guid: a140eefa029a0364dba47ada6065268a, type: 2}
+    CompositePart: Up
+    LocalizationKey: Level.Up
+  - Action: {fileID: 11400000, guid: a140eefa029a0364dba47ada6065268a, type: 2}
+    CompositePart: Down
+    LocalizationKey: Level.Down
+  - Action: {fileID: 11400000, guid: a140eefa029a0364dba47ada6065268a, type: 2}
+    CompositePart: Left
+    LocalizationKey: SteamControls.Left
+  - Action: {fileID: 11400000, guid: a140eefa029a0364dba47ada6065268a, type: 2}
+    CompositePart: Right
+    LocalizationKey: SteamControls.Right
+  - Action: {fileID: 11400000, guid: a140eefa029a0364dba47ada6065268a, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.MouseMapMove
+  - Action: {fileID: 11400000, guid: c03c5364a3ef88d4ca6de2cea243fe9e, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.MouseMapMove
+  - Action: {fileID: 11400000, guid: 01be901fa45eaf442922a344001ff09e, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.MouseMapMove
+  - Action: {fileID: 11400000, guid: a6747a60a4ac7bf4abd950f329509150, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.SpeedToggle
+  - Action: {fileID: 11400000, guid: 3c71f365c0be2624899a3543b7612c44, type: 2}
+    CompositePart: negative
+    LocalizationKey: SteamControls.TiltNegative
+  - Action: {fileID: 11400000, guid: 3c71f365c0be2624899a3543b7612c44, type: 2}
+    CompositePart: positive
+    LocalizationKey: SteamControls.TiltPositive
+  - Action: {fileID: 11400000, guid: c5587ae6902da3a4b9ed4c2ae8448d88, type: 2}
+    CompositePart:
+    LocalizationKey: UiRootForLevels.HideUi
+  - Action: {fileID: 11400000, guid: b8a6e823ff5db3943a5c970bdfe8a047, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Center
+  - Action: {fileID: 11400000, guid: 5cfc38b8688d1684f8a60e9b825de9fa, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Backward
+  - Action: {fileID: 11400000, guid: 74adc0322226fa34995107b394d0b00b, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Chat
+  - Action: {fileID: 11400000, guid: d64f6637dc398c440b2dd949d4521006, type: 2}
+    CompositePart:
+    LocalizationKey: Dynowindow.Reset
+  - Action: {fileID: 11400000, guid: 387e3c1a07a6f1140af3f12994ab25b8, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Snapshot
+  - Action: {fileID: 11400000, guid: 109a7daa9ca25144c821ecac1633dc51, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Help
+  - Action: {fileID: 11400000, guid: bd7f6658e815d244c8e589aa7bf9b691, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ToggleFocus
+  - Action: {fileID: 11400000, guid: c2bdfce0ce261d34582b9725dff43534, type: 2}
+    CompositePart: negative
+    LocalizationKey: SteamControls.TogglesNegative
+  - Action: {fileID: 11400000, guid: c2bdfce0ce261d34582b9725dff43534, type: 2}
+    CompositePart: positive
+    LocalizationKey: SteamControls.TogglesPositive
+  - Action: {fileID: 11400000, guid: 32fdcb472e1958e4cb74be36cd81804c, type: 2}
+    CompositePart: negative
+    LocalizationKey: SteamControls.NavigateSettingsNegative
+  - Action: {fileID: 11400000, guid: 32fdcb472e1958e4cb74be36cd81804c, type: 2}
+    CompositePart: positive
+    LocalizationKey: SteamControls.NavigateSettingsPositive
+  - Action: {fileID: 11400000, guid: 6967b8580f24d8048bec3c1d7c4084be, type: 2}
+    CompositePart:
+    LocalizationKey: Paintbox.Color
+  - Action: {fileID: 11400000, guid: ea5c4e75cd7d2d44fa592e8245fa9d24, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Optica
+  - Action: {fileID: 11400000, guid: 2ba1093d8ad33084bafdd61912098b0e, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Camera
+  - Action: {fileID: 11400000, guid: 84162cf96769c9540a0866c56328faf1, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ResetFilter
+  - Action: {fileID: 11400000, guid: 9c14e238513c8274bb4093aa1937420c, type: 2}
+    CompositePart: up
+    LocalizationKey: SteamControls.Forward
+  - Action: {fileID: 11400000, guid: 9c14e238513c8274bb4093aa1937420c, type: 2}
+    CompositePart: down
+    LocalizationKey: SteamControls.Backward
+  - Action: {fileID: 11400000, guid: 9c14e238513c8274bb4093aa1937420c, type: 2}
+    CompositePart: left
+    LocalizationKey: SteamControls.Left
+  - Action: {fileID: 11400000, guid: 9c14e238513c8274bb4093aa1937420c, type: 2}
+    CompositePart: right
+    LocalizationKey: SteamControls.Right
+  - Action: {fileID: 11400000, guid: 9c14e238513c8274bb4093aa1937420c, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Move
+  - Action: {fileID: 11400000, guid: f7de6afdd4a2b6548983d017dc8de8bf, type: 2}
+    CompositePart: negative
+    LocalizationKey: SteamControls.Steering
+  - Action: {fileID: 11400000, guid: f7de6afdd4a2b6548983d017dc8de8bf, type: 2}
+    CompositePart: positive
+    LocalizationKey: SteamControls.Steering
+  - Action: {fileID: 11400000, guid: 5fc339156bfe1ff4c90620830aa07dc2, type: 2}
+    CompositePart: negative
+    LocalizationKey: Level.Down
+  - Action: {fileID: 11400000, guid: 5fc339156bfe1ff4c90620830aa07dc2, type: 2}
+    CompositePart: positive
+    LocalizationKey: Level.Up
+  - Action: {fileID: 11400000, guid: afbfbc633cffbbd428370acd9d12888c, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Zoom
+  - Action: {fileID: 11400000, guid: dce8fabd2f2a67549924f937764afcd3, type: 2}
+    CompositePart: negative
+    LocalizationKey: SteamControls.Zoom
+  - Action: {fileID: 11400000, guid: dce8fabd2f2a67549924f937764afcd3, type: 2}
+    CompositePart: positive
+    LocalizationKey: SteamControls.Zoom
+  - Action: {fileID: 11400000, guid: f3c32415fcf1b0548b029407e5ed1a68, type: 2}
+    CompositePart: Negative
+    LocalizationKey: SteamControls.Zoom
+  - Action: {fileID: 11400000, guid: f3c32415fcf1b0548b029407e5ed1a68, type: 2}
+    CompositePart: Positive
+    LocalizationKey: SteamControls.Zoom
+  - Action: {fileID: 11400000, guid: 5a045733ffb68f749b9eb0ef9a707d77, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.CameraLookLeft
+  - Action: {fileID: 11400000, guid: 5a045733ffb68f749b9eb0ef9a707d77, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.CameraLookLeft
+  - Action: {fileID: 11400000, guid: 4a3bb8feef2004c41a2097b937f46fb8, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.CameraLookRight
+  - Action: {fileID: 11400000, guid: 4a3bb8feef2004c41a2097b937f46fb8, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.CameraLookRight
+  - Action: {fileID: 11400000, guid: 803d9f20c3fa9fe489772242f50b551d, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.CameraLookBack
+  - Action: {fileID: 11400000, guid: 803d9f20c3fa9fe489772242f50b551d, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.CameraLookBack
+  - Action: {fileID: 11400000, guid: 7b2b45d6a7f58be498ec5c202965ea43, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.AimAt
+  - Action: {fileID: 11400000, guid: 38ddab6b308443f43b4ab8c7a04476cc, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.ChangeCamera
+  - Action: {fileID: 11400000, guid: aa0e4daf560193e4a9f1f9f41cec28ce, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Photomode
+  - Action: {fileID: 11400000, guid: ec81489400fc03b4ea87c408d43e8f7d, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Timer
+  - Action: {fileID: 11400000, guid: d4e537ac54482964e94dce1299acb029, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Burnout
+  - Action: {fileID: 11400000, guid: 742f35342c5ebf94aac908ad41cfef53, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.KeepLane
+  - Action: {fileID: 11400000, guid: 811462573cebe0b49b91819fb0a74a55, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.BackToCar
+  - Action: {fileID: 11400000, guid: a9db1f4c46c6cf74587a2440a4db97dc, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ToRoad
+  - Action: {fileID: 11400000, guid: dbad612376841f3449e99d1c8fccb180, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ToRoad
+  - Action: {fileID: 11400000, guid: e034a865f744c9e41bffffd34132bfc5, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.HeadlightsRacing
+  - Action: {fileID: 11400000, guid: 90ffc544ed0347e46ad958fe703825d4, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.OpenDoor
+  - Action: {fileID: 11400000, guid: 001d160c73146db45a480ba778c48fdd, type: 2}
+    CompositePart:
+    LocalizationKey: UiRootForLevels.Restart
+  - Action: {fileID: 11400000, guid: 8d4b2da128dcf2941be3e4efc178bb52, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.CancelRace
+  - Action: {fileID: 11400000, guid: c330dc189bba03d4393ae035498f4ca4, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.Phone
+  - Action: {fileID: 11400000, guid: 2ace047fe0cb92b43961913bf0041dde, type: 2}
+    CompositePart:
+    LocalizationKey: Settingsmenuwindow.Voicechat
+  - Action: {fileID: 11400000, guid: c71e2598a3691d2428774523fc2de509, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Chat
+  - Action: {fileID: 11400000, guid: 45804bc0c0b385a4cad460a80473d269, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Chat
+  - Action: {fileID: 11400000, guid: 6cefbab9f53b74e4e9ff60b1da9cf359, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.CircularMenu
+  - Action: {fileID: 11400000, guid: 5d4ee803a4fe770488b2f131d7e59f55, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.CircularMenuCam
+  - Action: {fileID: 11400000, guid: 94368bc664b20e24cba1c50c61a318d5, type: 2}
+    CompositePart: negative
+    LocalizationKey: SteamControls.SteeringNegative
+  - Action: {fileID: 11400000, guid: 94368bc664b20e24cba1c50c61a318d5, type: 2}
+    CompositePart: positive
+    LocalizationKey: SteamControls.SteeringPositive
+  - Action: {fileID: 11400000, guid: 94368bc664b20e24cba1c50c61a318d5, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Steering
+  - Action: {fileID: 11400000, guid: a1bb1a8b610252640b787a6daa9fd90c, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.Throttle
+  - Action: {fileID: 11400000, guid: 70966edd3afae9c4d9819d5bbec04a2f, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.Brake
+  - Action: {fileID: 11400000, guid: 72192264ff5f22e499d2a969f05dcdcc, type: 2}
+    CompositePart:
+    LocalizationKey: Buythiscarwindow.Clutch
+  - Action: {fileID: 11400000, guid: 3e191cfe56b1fb3479d9ee9b4916b1d9, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.Handbrake
+  - Action: {fileID: 11400000, guid: 2a40bb64345e6274f9c098298a5403c2, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.HandBrakeHold
+  - Action: {fileID: 11400000, guid: cfd1264845f56ff4bb45aa913557a81f, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.StartEngine
+  - Action: {fileID: 11400000, guid: 13022e2a80b7b23489deba53c9d7ffcf, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.Horn
+  - Action: {fileID: 11400000, guid: c759b901b21350b4c94f4b8d53b24647, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.NextGear
+  - Action: {fileID: 11400000, guid: 9c83674f1f16853488c73b661fdf58cd, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ToggleMA
+  - Action: {fileID: 11400000, guid: 12b717e5a3e380640a994b9406e1c7c4, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.PrevGear
+  - Action: {fileID: 11400000, guid: 7bc304e8f60bfde45aa5a9ec1dab7a7b, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.LeftSignal
+  - Action: {fileID: 11400000, guid: 187ac8432cb5c3341ba9da7f5c7bc697, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.RightSignal
+  - Action: {fileID: 11400000, guid: fce8d4797f7e4c94a808481099daffa3, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.EmergencySignal
+  - Action: {fileID: 11400000, guid: 0592e64b9c78c1148ba105f3295c5a97, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.ToggleMA
+  - Action: {fileID: 11400000, guid: da0f9fbfe77da184fb9ceca90bb0af0e, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.ToggleMA
+  - Action: {fileID: 11400000, guid: 1576c31a79e88494d91084f9e844b4d2, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.PrevGear
+  - Action: {fileID: 11400000, guid: 1576c31a79e88494d91084f9e844b4d2, type: 2}
+    CompositePart: binding
+    LocalizationKey: Steaminputhint.PrevGear
+  - Action: {fileID: 11400000, guid: 26816afefd729a44aaf3e3b92247fa4a, type: 2}
+    CompositePart:
+    LocalizationKey: Steaminputhint.NextGear
+  - Action: {fileID: 11400000, guid: 26816afefd729a44aaf3e3b92247fa4a, type: 2}
+    CompositePart: binding
+    LocalizationKey: Steaminputhint.NextGear
+  - Action: {fileID: 11400000, guid: 54d74f1cc614dd14785dbc235b22e5c3, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.ShiftPRND
+  - Action: {fileID: 11400000, guid: 269c266c9a7de8145a13d4258d7e512c, type: 2}
+    CompositePart: binding
+    LocalizationKey: SteamControls.ShifterMove
+  - Action: {fileID: 11400000, guid: 1046ec429ec11fb488087f8b98c76a33, type: 2}
+    CompositePart:
+    LocalizationKey: UiRootForLevels.HideUi
+  - Action: {fileID: 11400000, guid: 343b77d37472dee43b7125ffdfb1f74f, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Run
+  - Action: {fileID: 11400000, guid: 24798184ac80f5147a5df3925f4cbc01, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Crouch
+  - Action: {fileID: 11400000, guid: 1120a30ff4230a3408c5044ddada370a, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.Jump
+  - Action: {fileID: 11400000, guid: 451817bd1ea09204f8f48337dde274e0, type: 2}
+    CompositePart:
+    LocalizationKey: SteamControls.SlowMoveToggle
+  GroupLabelOverrides:
+  - Group: 17
+    LocalizationKey: SteamControls.CarFree
+  - Group: 3
+    LocalizationKey: SteamControls.Person
+  - Group: 6
+    LocalizationKey: SteamControls.Map
+  - Group: 8
+    LocalizationKey: SteamControls.Drone
+  - Group: 9
+    LocalizationKey: SteamControls.Photomode
+  - Group: 31
+    LocalizationKey: SteamControls.Spectator
+  MapLabelOverrides:
+  - Map: 7
+    LocalizationKey: SteamControls.Map
+  - Map: 8
+    LocalizationKey: SteamControls.Drone
+  - Map: 10
+    LocalizationKey: SteamControls.Photomode
+  - Map: 20
+    LocalizationKey: SteamControls.CarFree
+  - Map: 45
+    LocalizationKey: SteamSettings.Wheel
+  - Map: 37
+    LocalizationKey: SteamControls.ShifterMove
+  - Map: 36
+    LocalizationKey: Steaminputhint.CircularMenu
+  - Map: 51
+    LocalizationKey: Settingsmenuwindow.Voicechat
+  - Map: 55
+    LocalizationKey: SteamControls.CarCamera
+  - Map: 17
+    LocalizationKey: SteamControls.CarDrag
+  - Map: 16
+    LocalizationKey: SteamControls.CarRacing
+  - Map: 49
+    LocalizationKey: SteamControls.CarFreeRace
+  - Map: 58
+    LocalizationKey: SteamControls.Move
+  - Map: 60
+    LocalizationKey: SteamControls.MouseMapMove
+  - Map: 22
+    LocalizationKey: SteamControls.Camera
+  - Map: 2
+    LocalizationKey: SteamControls.Navigation
+  OtherActionsKey: SteamControls.OtherActions
+  UnusedRows:
+  - Action: {fileID: 11400000, guid: 1959ac3d448a26942bd366fc449ba236, type: 2}
+    CompositePart:
+    Groups: 031e13
+  SectionMerges:
+  - Map: 21
+    IntoMap: 58
+  - Map: 56
+    IntoMap: 17
+  HoldArrowOverrides:
+  - Action: {fileID: 11400000, guid: c12460e4f32106545ad3609041ac2d86, type: 2}
+    CompositePart:
+    Devices: 1
+    Mode: 0
+  - Action: {fileID: 11400000, guid: 2520bfb8ee7f79049adfb40c220644f6, type: 2}
+    CompositePart:
+    Devices: 2
+    Mode: 1
+  - Action: {fileID: 11400000, guid: ef14c2998e92357438f27afa33384064, type: 2}
+    CompositePart:
+    Devices: 7
+    Mode: 0
+  - Action: {fileID: 11400000, guid: 661e52dd480a4d84caffad113d633999, type: 2}
+    CompositePart:
+    Devices: 7
+    Mode: 0
+  - Action: {fileID: 11400000, guid: 118dbd6809a0b0542ba6e7f0e5c2598f, type: 2}
+    CompositePart:
+    Devices: 7
+    Mode: 0
+  - Action: {fileID: 11400000, guid: 73c84f583b677b14b85809897fdbdee4, type: 2}
+    CompositePart:
+    Devices: 7
+    Mode: 0
+  - Action: {fileID: 11400000, guid: 8013fb89c16477c46981eb141b0f5b5d, type: 2}
+    CompositePart:
+    Devices: 7
+    Mode: 0
+  - Action: {fileID: 11400000, guid: 76f3667c8ad35b94abd285b9d5fc3e5b, type: 2}
+    CompositePart:
+    Devices: 7
+    Mode: 0
+  DeviceExcludedActions:
+  - Action: {fileID: 11400000, guid: cfe0705f34359d24891bd99b87856412, type: 2}
+    Devices: 3
+  SourceAsset: {fileID: 11400000, guid: abb56f1412364864ab53539776f59745, type: 2}
+  MapGroupsSource: {fileID: 11400000, guid: b0a8517f0ca490a46b9bd0226207b75a, type: 2}

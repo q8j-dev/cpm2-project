@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbe06d9f7ba283548d68f132a5506b5, type: 3}
+  m_Name: _DesktopControlsSettings
+  m_EditorClassIdentifier:
+  Cameras:
+    Car:
+      Look:
+        Min: {x: 0.01, y: 0.01}
+        Default: {x: 0.18, y: 0.153}
+        Max: {x: 0.8, y: 0.8}
+        Current: {x: 0.18, y: 0.153}
+        DisplayRawValue: 0
+        Step: 0
+        InvertX:
+          Default: 0
+          Current: 0
+        InvertY:
+          Default: 0
+          Current: 0
+    CarFpv:
+      Look:
+        Min: {x: 0.1, y: 0.1}
+        Default: {x: 1, y: 1}
+        Max: {x: 4, y: 4}
+        Current: {x: 1, y: 1}
+        DisplayRawValue: 0
+        Step: 0
+        InvertX:
+          Default: 0
+          Current: 0
+        InvertY:
+          Default: 0
+          Current: 0
+    Person:
+      Look:
+        Min: {x: 0.02, y: 0.02}
+        Default: {x: 1.035, y: 0.828}
+        Max: {x: 1.5, y: 1.5}
+        Current: {x: 1.035, y: 0.828}
+        DisplayRawValue: 0
+        Step: 0
+        InvertX:
+          Default: 0
+          Current: 0
+        InvertY:
+          Default: 0
+          Current: 0
+      TurnSpeed:
+        Min: 0.5
+        Default: 2
+        Max: 20
+        Current: 2
+        DisplayRawValue: 0
+        Step: 0
+      InvertTurn:
+        Default: 0
+        Current: 0
+    Garage:
+      Look:
+        Min: {x: 0.1, y: 0.1}
+        Default: {x: 1, y: 1}
+        Max: {x: 4, y: 4}
+        Current: {x: 1, y: 1}
+        DisplayRawValue: 0
+        Step: 0
+        InvertX:
+          Default: 0
+          Current: 0
+        InvertY:
+          Default: 0
+          Current: 0
+    Drone:
+      Look:
+        Min: {x: 0.1, y: 0.1}
+        Default: {x: 1, y: 1}
+        Max: {x: 4, y: 4}
+        Current: {x: 1, y: 1}
+        DisplayRawValue: 0
+        Step: 0
+        InvertX:
+          Default: 0
+          Current: 0
+        InvertY:
+          Default: 0
+          Current: 0
+      MoveSpeed:
+        Min: 1
+        Default: 10
+        Max: 30
+        Current: 10
+        DisplayRawValue: 0
+        Step: 0
+      VerticalSpeed:
+        Min: 1
+        Default: 20
+        Max: 40
+        Current: 20
+        DisplayRawValue: 0
+        Step: 0
+      TiltSpeed:
+        Min: 1
+        Default: 10
+        Max: 30
+        Current: 10
+        DisplayRawValue: 0
+        Step: 0
+    Map:
+      Look:
+        Min: {x: 1, y: 1}
+        Default: {x: 7, y: 7}
+        Max: {x: 20, y: 20}
+        Current: {x: 11.050505, y: 11.050505}
+        DisplayRawValue: 0
+        Step: 0
+        InvertX:
+          Default: 0
+          Current: 0
+        InvertY:
+          Default: 0
+          Current: 0
+  MouseKeyboard:
+    CameraMultiplier:
+      Min: {x: 0, y: 0}
+      Default: {x: 0.025, y: 0.05}
+      Max: {x: 0.2, y: 0.2}
+      Current: {x: 0.025, y: 0.05}
+      DisplayRawValue: 0
+      Step: 0
+      InvertX:
+        Default: 0
+        Current: 0
+      InvertY:
+        Default: 0
+        Current: 0
+    ZoomSpeed:
+      Min: 1
+      Default: 25
+      Max: 100
+      Current: 25
+      DisplayRawValue: 0
+      Step: 0
+    ZoomInvert:
+      Default: 0
+      Current: 0
+    CarControls:
+      SteeringSensitivity:
+        Min: 0
+        Default: 0.5
+        Max: 1
+        Current: 0.5
+        DisplayRawValue: 0
+        Step: 0
+      InvertSteering:
+        Default: 0
+        Current: 0
+      ShifterKnobScale:
+        Min: 10
+        Default: 200
+        Max: 800
+        Current: 200
+        DisplayRawValue: 0
+        Step: 0
+  Gamepad:
+    CameraMultiplier:
+      Min: {x: 0, y: 0}
+      Default: {x: 200, y: 200}
+      Max: {x: 400, y: 400}
+      Current: {x: 100, y: 200}
+      DisplayRawValue: 0
+      Step: 0
+      InvertX:
+        Default: 0
+        Current: 0
+      InvertY:
+        Default: 0
+        Current: 0
+    ZoomSpeed:
+      Min: 1
+      Default: 25
+      Max: 100
+      Current: 25
+      DisplayRawValue: 0
+      Step: 0
+    ZoomInvert:
+      Default: 0
+      Current: 0
+    CarControls:
+      SteeringSensitivity:
+        Min: 0
+        Default: 0.5
+        Max: 1
+        Current: 0.5
+        DisplayRawValue: 0
+        Step: 0
+      InvertSteering:
+        Default: 0
+        Current: 0
+      ShifterKnobScale:
+        Min: 200
+        Default: 400
+        Max: 800
+        Current: 400
+        DisplayRawValue: 0
+        Step: 0
+  Wheel:
+    CameraMultiplier:
+      Min: {x: 0, y: 0}
+      Default: {x: 100, y: 200}
+      Max: {x: 400, y: 400}
+      Current: {x: 100, y: 200}
+      DisplayRawValue: 0
+      Step: 0
+      InvertX:
+        Default: 0
+        Current: 0
+      InvertY:
+        Default: 0
+        Current: 0
+    ZoomSpeed:
+      Min: 1
+      Default: 25
+      Max: 100
+      Current: 25
+      DisplayRawValue: 0
+      Step: 0
+    ZoomInvert:
+      Default: 0
+      Current: 0
+    CarControls:
+      SteeringSensitivity:
+        Min: 0.1
+        Default: 1
+        Max: 4
+        Current: 1
+        DisplayRawValue: 0
+        Step: 0
+      InvertSteering:
+        Default: 0
+        Current: 0
+      ShifterKnobScale:
+        Min: 0.1
+        Default: 1
+        Max: 4
+        Current: 1
+        DisplayRawValue: 0
+        Step: 0
+  GamepadOnly:
+    CursorSensitivity:
+      Min: 0
+      Default: 4
+      Max: 10
+      Current: 4
+      DisplayRawValue: 0
+      Step: 0
+    StickDeadzoneLeft:
+      Min: 0.01
+      Default: 0.1
+      Max: 0.5
+      Current: 0.1
+      DisplayRawValue: 0
+      Step: 0
+    StickDeadzoneRight:
+      Min: 0.01
+      Default: 0.1
+      Max: 0.5
+      Current: 0.1
+      DisplayRawValue: 0
+      Step: 0
+    VibrationIntensity:
+      Min: 0
+      Default: 1
+      Max: 1
+      Current: 1
+      DisplayRawValue: 0
+      Step: 0
+    VibrationEnabled:
+      Default: 1
+      Current: 1
+  WheelOnly:
+    RotationRange:
+      Min: 40
+      Default: 900
+      Max: 900
+      Current: 900
+      DisplayRawValue: 1
+      Step: 10
+    RangeOverrideEnabled:
+      Default: 1
+      Current: 1
+    FfbMultiplier:
+      Min: 0
+      Default: 1
+      Max: 3
+      Current: 1
+      DisplayRawValue: 1
+      Step: 0.05
+    MozaBaseMoment: 0.01
+    MozaBaseMultiplier: 0.1
+    LogitechBaseMoment: 0.4
+    LogitechBaseMultiplier: 0.07
+  MouseKeyboardOnly:
+    MouseSteerMaxDisplacement:
+      Min: 50
+      Default: 400
+      Max: 2000
+      Current: 0
+      DisplayRawValue: 1
+      Step: 10
+    MouseSteerReturnRate: 6
+    UiScrollDeltaPerTick: 2
+  CasualMode:
+    Default: 0
+    Current: 0

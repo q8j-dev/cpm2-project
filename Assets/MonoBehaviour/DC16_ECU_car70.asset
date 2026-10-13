@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: DC16_ECU_car70
+  m_EditorClassIdentifier:
+  IsNotForSale: 1
+  Name: DC16 ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: 9187853406427689944
+  _partValB: 6261365343721084575
+  _partValC: 2792335455153943402
+  _partValD: -8840346824622222965
+  TypeId: 21
+  ModelId: 80021001
+  NoticeAboutPart: Good model id
+  Mass: 0.96
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 2fefb9c1a2fb7e25
+  _partLinkKeysB: f561478be8b6b7ee
+  _partLinkKeysC:
+  _partLinkStamp: 572180516551964809
+  _partSourceRef: 800
+  FuelMap:
+  - RPM: 500
+    pressure: 9
+    Time: 1
+    Fuel: 96.188
+  - RPM: 1000
+    pressure: 9
+    Time: 1
+    Fuel: 133.83
+  - RPM: 1500
+    pressure: 9
+    Time: 1
+    Fuel: 90.799
+  - RPM: 2000
+    pressure: 9
+    Time: 1
+    Fuel: 50.024
+  - RPM: 2500
+    pressure: 9
+    Time: 1
+    Fuel: 25.56
+  - RPM: 3000
+    pressure: 9
+    Time: 1
+    Fuel: 7.852
+  - RPM: 3500
+    pressure: 9
+    Time: 1
+    Fuel: 2.624
+  - RPM: 4000
+    pressure: 9
+    Time: 1
+    Fuel: 2.624
+  - RPM: 4500
+    pressure: 9
+    Time: 1
+    Fuel: 2.624
+  speedLimit: 240
+  RpmIdle:
+    currentCryptoKey: 1287381673
+    hiddenValue: 140673193
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 750
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1114093547
+    hiddenValue: 112685547
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 600
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1500013022
+    hiddenValue: 501339102
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1500
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 2035251868
+    hiddenValue: 1010455452
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 2500
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1830548323
+    hiddenValue: 682821475
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 2500
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

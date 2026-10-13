@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: S58_ECU_ST2
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: S58 WiscoPro ECU
+  Description: ECU.Description.St2
+  _partValA: -7236770841160922725
+  _partValB: -4876257529528312620
+  _partValC: 4698310556693535551
+  _partValD: 1899613340498353884
+  TypeId: 21
+  ModelId: 10021002
+  NoticeAboutPart: Good model id
+  Mass: 0.69
+  MaxMileage: 1000000
+  VendorId: 1
+  Rarity: 4
+  _partLinkKeysA: 860ff3a00b2826ac
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: -6785127129661096132
+  _partSourceRef: 100
+  FuelMap:
+  - RPM: 500
+    pressure: 3.8
+    Time: 4
+    Fuel: 0.34
+  - RPM: 1000
+    pressure: 3.8
+    Time: 1
+    Fuel: 1.15
+  - RPM: 1500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.97
+  - RPM: 2000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.78
+  - RPM: 2500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.7
+  - RPM: 3000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.63
+  - RPM: 3500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.55
+  - RPM: 4000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.49
+  - RPM: 4500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.44
+  - RPM: 5000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.39
+  - RPM: 5500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.34
+  - RPM: 6000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.29
+  - RPM: 6500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.25
+  - RPM: 7000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.21
+  - RPM: 7500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.17
+  - RPM: 8000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.13
+  - RPM: 8500
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.08
+  - RPM: 9000
+    pressure: 3.8
+    Time: 1
+    Fuel: 0.03
+  - RPM: 9500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 10000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 10500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 11000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 11500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 12000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 12500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  speedLimit: 255
+  RpmIdle:
+    currentCryptoKey: 1853655864
+    hiddenValue: 705382200
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 750
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1545282314
+    hiddenValue: 404960266
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 2017254628
+    hiddenValue: 1021069028
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1711823689
+    hiddenValue: 593228361
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8000
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 2037772377
+    hiddenValue: 1062238553
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 9000
+    fakeValueActive: 1
+  canTuning: 1
+  unlockRpmRedline: 1
+  unlockSpeedLimit: 1

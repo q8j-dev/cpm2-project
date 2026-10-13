@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a38839d99867f45d4d8425867b0101, type: 3}
+  m_Name: MapIconsData
+  m_EditorClassIdentifier:
+  <SelectIcon>k__BackingField:
+    clickDuration: 0.2
+    clickDistance: 5
+    selectDistance: 25
+    moveVelocity: 1200
+    maxMoveDuration: 0.75
+    hapticsEnabled: 1
+    hapticsDuration: 0.075
+    hapticsIntensity: 0.03
+    uiEvent:
+      idInternal: 0
+      valueGuidInternal:
+      WwiseObjectReference: {fileID: 11400000, guid: 5a4650e2341eea74daee1f3d631ff45d, type: 2}
+    wwiseSound:
+      idInternal: 0
+      valueGuidInternal:
+      groupIdInternal: 0
+      groupGuidInternal:
+      WwiseObjectReference: {fileID: 11400000, guid: 0d19c3eb521720a44aa1cd649d2befca, type: 2}
+  <DescriptionSelectColor>k__BackingField: {r: 1, g: 0.74179316, b: 0.06400001, a: 0.6392157}
+  <NotSelectedAlpha>k__BackingField: 1
+  <IconHide>k__BackingField: {fileID: 21300000, guid: 81dae200f14bc434c887a38206c2f7e6, type: 2}
+  <IconShow>k__BackingField: {fileID: 21300000, guid: 46aa4513e18796e40b50d67eec62b6ea, type: 2}
+  <DistanceToCheckNearIcons>k__BackingField: 200
+  <TimeIntervalCheckNearIcons>k__BackingField: 0.5
+  <MapIconPrefab>k__BackingField: {fileID: 114587765826080250, guid: 7ed66a3fdb0cd9240b3c2134356e42f7, type: 2}
+  <UIMapDescriptionItemPrefab>k__BackingField: {fileID: 114161607090078389, guid: 9308912df2cafad46ae72a3e07d09652, type: 2}
+  <InitIconRotation>k__BackingField: {x: 90, y: 0, z: 0}
+  <InitIconPositionY>k__BackingField: {x: 0, y: 100, z: 0}
+  <RotationImageArrowDown>k__BackingField: {x: 0, y: 0, z: -90}
+  <RotationImageArrowUp>k__BackingField: {x: 0, y: 0, z: 90}
+  <MapIconsData>k__BackingField:
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: a28b70bc3494c8048b528fe6df7cb34d, type: 2}
+    <IconType>k__BackingField: 32
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Rally
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 0
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: b22e8b06d4cb0d548bd4d06a0af27260, type: 2}
+    <IconType>k__BackingField: 31
+    <EventType>k__BackingField: 5
+    <LocalizeKey>k__BackingField: MapGlossary.TimeAttackDrift
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 0
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 61cba0f8590594b4a909946004702a02, type: 2}
+    <IconType>k__BackingField: 26
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.TimeAttackRace
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 8046e130f395d6647bed511774e6ad5c, type: 2}
+    <IconType>k__BackingField: 22
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Player
+    <ScaleIcon>k__BackingField: {x: 10, y: 10, z: 10}
+    <SortingOrder>k__BackingField: 5
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 0dd62ea23161a83458320a6995772ba0, type: 2}
+    <IconType>k__BackingField: 25
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.OtherPlayers
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 5
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 03f7ed007359eaa488cdd67953012a4c, type: 2}
+    <IconType>k__BackingField: 23
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField:
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 2
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 28fe58b1102ac654fb39b826aa46a6a0, type: 2}
+    <IconType>k__BackingField: 0
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Car
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 3
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: ceb253818eae7e147a00019748fc7208, type: 2}
+    <IconType>k__BackingField: 1
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.YourGarage
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 659e78808bc321e459c0f550c8acd541, type: 2}
+    <IconType>k__BackingField: 2
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.PurchaseGarage
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 79113802478a0cb4494bfcaf636d1401, type: 2}
+    <IconType>k__BackingField: 3
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.YourHouse
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 8a277ed6062e04647a871d20166b6648, type: 2}
+    <IconType>k__BackingField: 4
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.PurchaseHouse
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 2b18acec17db0424fa1e7d2c832ec66c, type: 2}
+    <IconType>k__BackingField: 5
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.YourHotel
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 44deea96022e9cb49b935b7afc18c3c3, type: 2}
+    <IconType>k__BackingField: 6
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.PurchaseHotel
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 46de4eae6c9b6a9449b4d093448ea5c8, type: 2}
+    <IconType>k__BackingField: 7
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.YourRestaurant
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: f8fafebd8f8a56b49b5199832c9e98f5, type: 2}
+    <IconType>k__BackingField: 8
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.PurchaseRestaurant
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 3ce7747c98867d24d99115e5ee35e2a3, type: 2}
+    <IconType>k__BackingField: 9
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.YourGasStation
+    <ScaleIcon>k__BackingField: {x: 0.9, y: 0.9, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 505da5167b0dd1e4e9760a5ad8fc5a99, type: 2}
+    <IconType>k__BackingField: 10
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.PurchaseGasStation
+    <ScaleIcon>k__BackingField: {x: 0.9, y: 0.9, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: a9fbbc78e3fae524ebd0e881a0fa5537, type: 2}
+    <IconType>k__BackingField: 19
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.CarSell
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 4
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 4487e25392231ef43bcb8575cccdc391, type: 2}
+    <IconType>k__BackingField: 11
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.GasStation
+    <ScaleIcon>k__BackingField: {x: 0.9, y: 0.9, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: a1a3f8131cedbce41b6218c92ce5338e, type: 2}
+    <IconType>k__BackingField: 12
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: HomesConfig.Money
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 3
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 67b25f98c9937e64daa7249aee6a925c, type: 2}
+    <IconType>k__BackingField: 14
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.CarWash
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 1968f6d4e57f4f24fa3befdce1357db9, type: 2}
+    <IconType>k__BackingField: 20
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.CarService
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 8a9e8cbf14de14c40a1ac0039a47b21e, type: 2}
+    <IconType>k__BackingField: 17
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.TireService
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 9250e930ee0d00e4bb1a17ee9f943e0c, type: 2}
+    <IconType>k__BackingField: 24
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Ramp
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 3e65216b6e0f8174c995a7bff3935423, type: 2}
+    <IconType>k__BackingField: 13
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Airport
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 0c63df00a5f1fcb4689c2ea90f0378c7, type: 2}
+    <IconType>k__BackingField: 15
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.FireStation
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 875274b1925c2f945b86186609eebb45, type: 2}
+    <IconType>k__BackingField: 16
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Hospital
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: a169a5b0e4426d945a5206c03871db47, type: 2}
+    <IconType>k__BackingField: 18
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: MapGlossary.Police
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 8c76816012375f24f8292d0d1a5211ed, type: 2}
+    <IconType>k__BackingField: 27
+    <EventType>k__BackingField: -1
+    <LocalizeKey>k__BackingField: Event.EbentCollectible
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 2
+  <MapIconsDatasForEvents>k__BackingField:
+  - <SpriteIcon>k__BackingField: {fileID: 21300000, guid: 4d7724748b7db914492c8d7f59dff03e, type: 2}
+    <IconType>k__BackingField: 29
+    <EventType>k__BackingField: 2
+    <LocalizeKey>k__BackingField: EventName.SnowmanUprising
+    <ScaleIcon>k__BackingField: {x: 1, y: 1, z: 1}
+    <SortingOrder>k__BackingField: 1
+  <CurrentEvents>k__BackingField: 02000000
+  <IconsToIgnoreToAddDescriptionList>k__BackingField: 170000001b000000
+  <IconsToDisableWhenZoomCam>k__BackingField: 0b0000000e0000001400000011000000
+  <IconsDescriptionsToIgnoreCreateInSinglePlayer>k__BackingField: 19000000

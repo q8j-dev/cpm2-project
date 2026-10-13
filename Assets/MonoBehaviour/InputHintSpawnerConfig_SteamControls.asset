@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ec3d9418ab41dba4812c7fa78c92e8, type: 3}
+  m_Name: InputHintSpawnerConfig_SteamControls
+  m_EditorClassIdentifier:
+  Hints:
+  - DontSpawn: 0
+    ObjectName: Camera
+    ActionReference: {fileID: 11400000, guid: 6aefd6ec413282545b2a033477e1b3b8, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 0
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 1
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 11400000, guid: 6aefd6ec413282545b2a033477e1b3b8, type: 2}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 50
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 0
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 1
+    IgnoreCleanUi: 0
+    DisableNavigation: 1
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: 15, y: 0}
+    AnchorMin: {x: 1, y: 0.5}
+    AnchorMax: {x: 1, y: 0.5}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: MnK
+    ActionReference: {fileID: 11400000, guid: 093ce88e3e1c56c408504de6150f7ab4, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 0
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 1
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 11400000, guid: 093ce88e3e1c56c408504de6150f7ab4, type: 2}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 50
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 0
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 1
+    IgnoreCleanUi: 0
+    DisableNavigation: 1
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -65, y: 0}
+    AnchorMin: {x: 0, y: 0.5}
+    AnchorMax: {x: 0, y: 0.5}
+    Pivot: {x: 0, y: 0.5}

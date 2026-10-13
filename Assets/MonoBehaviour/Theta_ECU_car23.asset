@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: Theta_ECU_car23
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: Theta ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: 3109973568117512228
+  _partValB: -6269632395368921613
+  _partValC: -6012597485172617398
+  _partValD: -4237000074769862997
+  TypeId: 21
+  ModelId: 14521001
+  NoticeAboutPart: Good model id
+  Mass: 0.96
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 0c8b92b3becc8356
+  _partLinkKeysB: b2e90cfdae7a60b0
+  _partLinkKeysC:
+  _partLinkStamp: -6729155411704833841
+  _partSourceRef: 145
+  FuelMap:
+  - RPM: 500
+    pressure: 6
+    Time: 1
+    Fuel: 5.255
+  - RPM: 1000
+    pressure: 6
+    Time: 1
+    Fuel: 4.561
+  - RPM: 1500
+    pressure: 6
+    Time: 1
+    Fuel: 3.789
+  - RPM: 2000
+    pressure: 6
+    Time: 1
+    Fuel: 2.713
+  - RPM: 2500
+    pressure: 6
+    Time: 1
+    Fuel: 2.118
+  - RPM: 3000
+    pressure: 6
+    Time: 1
+    Fuel: 1.721
+  - RPM: 3500
+    pressure: 6
+    Time: 1
+    Fuel: 1.438
+  - RPM: 4000
+    pressure: 6
+    Time: 1
+    Fuel: 1.225
+  - RPM: 4500
+    pressure: 6
+    Time: 1
+    Fuel: 1.052
+  - RPM: 5000
+    pressure: 6
+    Time: 1
+    Fuel: 0.903
+  - RPM: 5500
+    pressure: 6
+    Time: 1
+    Fuel: 0.772
+  - RPM: 6000
+    pressure: 6
+    Time: 1
+    Fuel: 0.652
+  - RPM: 6500
+    pressure: 6
+    Time: 1
+    Fuel: 0.436
+  - RPM: 7000
+    pressure: 6
+    Time: 1
+    Fuel: 0.056
+  - RPM: 7500
+    pressure: 6
+    Time: 1
+    Fuel: 0
+  - RPM: 8000
+    pressure: 6
+    Time: 1
+    Fuel: 0
+  - RPM: 8500
+    pressure: 6
+    Time: 1
+    Fuel: 0.1
+  - RPM: 9000
+    pressure: 6
+    Time: 1
+    Fuel: 0.1
+  - RPM: 9500
+    pressure: 6
+    Time: 1
+    Fuel: 0.1
+  speedLimit: 240
+  RpmIdle:
+    currentCryptoKey: 1357678323
+    hiddenValue: 335992819
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 750
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1701200384
+    hiddenValue: 558002176
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 600
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1889165163
+    hiddenValue: 878698603
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1384208214
+    hiddenValue: 393693782
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 6500
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1840461126
+    hiddenValue: 676682054
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7500
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

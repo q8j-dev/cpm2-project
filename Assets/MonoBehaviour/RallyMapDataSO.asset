@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae48983e0bb6729bbb3aabfe34a750, type: 3}
+  m_Name: RallyMapDataSO
+  m_EditorClassIdentifier:
+  RallyLocationDatas:
+  - Id: 3
+    NameKey: Lobbywindow.Desert
+    AnalyticsId: desert
+    LocationLogo: {fileID: 21300000, guid: 1f27e34d37a5088429a0369e73a581bc, type: 2}
+    PlaceToSpawn: 2
+    TrajectoryData: {fileID: 11400000, guid: 9de7e047bdcc4334395823974b088902, type: 2}
+  - Id: 0
+    NameKey: Lobbywindow.Road
+    AnalyticsId: offroad
+    LocationLogo: {fileID: 21300000, guid: f1c863fc6f65b4549aeaadaa4d0278d5, type: 2}
+    PlaceToSpawn: 15
+    TrajectoryData: {fileID: 11400000, guid: 080198742b06843488dfd6040d949c70, type: 2}
+  - Id: 1
+    NameKey: Lobbywindow.JapanSuburban
+    AnalyticsId: japan
+    LocationLogo: {fileID: 21300000, guid: 4095188fcd36b814fa8e7b34c7163922, type: 2}
+    PlaceToSpawn: 10
+    TrajectoryData: {fileID: 11400000, guid: 68b2c6d347d6c544397c381238b59916, type: 2}
+  - Id: 2
+    NameKey: Selectlocationwindow.Italy
+    AnalyticsId: italy
+    LocationLogo: {fileID: 21300000, guid: d0cad85e730d03e48bc2110bf6d9dacb, type: 2}
+    PlaceToSpawn: 14
+    TrajectoryData: {fileID: 11400000, guid: b966e8629532a2944a01383b8ed35761, type: 2}
+  - Id: 4
+    NameKey: Selectlocationwindow.Tropic
+    AnalyticsId: tropical
+    LocationLogo: {fileID: 21300000, guid: 0276688ae236aef4d8f64b973693992e, type: 2}
+    PlaceToSpawn: 12
+    TrajectoryData: {fileID: 11400000, guid: 53e2c1620ed06824381b470e76f54241, type: 2}
+  - Id: 5
+    NameKey: Lobbywindow.Island
+    AnalyticsId: island
+    LocationLogo: {fileID: 21300000, guid: eb06a1e10cfda8743845cbc0455e60b4, type: 2}
+    PlaceToSpawn: 11
+    TrajectoryData: {fileID: 11400000, guid: 301db3f43ab054d479301237e042a7f4, type: 2}
+  - Id: 6
+    NameKey: Lobbywindow.Offroad
+    AnalyticsId: offroad
+    LocationLogo: {fileID: 21300000, guid: e725bc14edd9ece4eb1d078689e4f11a, type: 2}
+    PlaceToSpawn: 6
+    TrajectoryData: {fileID: 11400000, guid: dca8edb2e59b33f469d98bfd17618eda, type: 2}
+  TrajectoryWeatherData: {fileID: 11400000, guid: 8b03c7a7c6d590247a465d9399d78a60, type: 2}

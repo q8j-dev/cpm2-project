@@ -1,0 +1,130 @@
+local prevMatch = string['match']
+string._match = prevMatch
+
+---------------------------------------------------------------------------
+-- Copyright (c) 2006-2013 Fabien Fleutot and others.
+--
+-- All rights reserved.
+--
+-- This program and the accompanying materials are made available
+-- under the terms of the Eclipse Public License v1.0 which
+-- accompanies this distribution, and is available at
+-- http://www.eclipse.org/legal/epl-v10.html
+--
+-- This program and the accompanying materials are also made available
+-- under the terms of the MIT public license which accompanies this
+-- distribution, and is available at http://www.lua.org/license.html
+--
+-- Contributors:
+--     Fabien Fleutot - API and implementation
+--
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--
+-- Convert between various code representation formats. Atomic
+-- converters are written in extenso, others are composed automatically
+-- by chaining the atomic ones together in a closure.
+--
+-- Supported formats are:
+--
+-- * srcfile:    the name of a file containing sources.
+-- * src:        these sources as a single string.
+-- * lexstream:  a stream of lexemes.
+-- * ast:        an abstract syntax tree.
+-- * function:   an executable lua function in RAM.
+--
+--------------------------------------------------------------------------------
+
+local M  = { }
+
+--------------------------------------------------------------------------------
+-- Order of the transformations. if 'a' is on the left of 'b', then a 'a' can
+-- be transformed into a 'b' (but not the other way around).
+-- M.sequence goes for numbers to format names, M.order goes from format
+-- names to numbers.
+--------------------------------------------------------------------------------
+M.sequence = {
+	'src', 'lexstream', 'ast', 'function' }
+
+local arg_types = {
+	srcfile    = { 'string', '?string' },
+	src        = { 'string', '?string' },
+	lexstream  = { 'lexer.stream', '?string' },
+	ast        = { 'table', '?string' },
+}
+
+M.order= { }; for a,b in pairs(M.sequence) do M.order[b]=a end
+
+local CONV = { } -- conversion metatable __index
+
+function CONV :src_to_lexstream(src, name)
+	local r = self.parser.lexer :newstream (src, name)
+	return r, name
+end
+
+function CONV :lexstream_to_ast(lx, name)
+	local r = self.parser.chunk(lx)
+	r.source = name
+    if M.check_ast then M.check_ast (r) end
+	return r, name
+end
+
+function CONV :ast_to_function(ast, name)
+	return function(name2)
+		local function extend(...)
+			print('extend', name, name2, ...)
+		end
+		return extend
+	end
+end
+
+INDENT = 0
+INDENT_PRINT = function(msg)
+	if 1 then return end
+	local b = ""
+	for i = 1, INDENT do
+		b = b .. "    "
+	end
+	print(b .. msg)
+end
+-- Create all sensible combinations
+for i=1,#M.sequence do
+	local src = M.sequence[i]
+	for j=i+2, #M.sequence do
+		local dst = M.sequence[j]
+		local dst_name = src.."_to_"..dst
+		local my_arg_types = arg_types[src]
+		local functions = { }
+		local functionNames = {}
+		for k=i, j-1 do
+			local name =  M.sequence[k].."_to_"..M.sequence[k+1]
+			local f = assert(CONV[name], name)
+			table.insert (functions, f)
+			table.insert (functionNames, name)
+		end
+		CONV[dst_name] = function(self, a, b)
+			INDENT_PRINT('C:' ..tostring(dst_name))
+			INDENT = INDENT + 1
+			for i, f in ipairs(functions) do
+				INDENT_PRINT(functionNames[i])
+				a, b = f(self, a, b)
+			end
+			INDENT = INDENT - 1
+			return a, b
+		end
+	end
+end
+
+local MT = { __index=CONV, __type='metalua.compiler' }
+
+function M.New()
+	local parser = require 'metalua.compiler.parser' .New()
+	local self = { parser = parser }
+	setmetatable(self, MT)
+	return self
+end
+
+
+
+return M

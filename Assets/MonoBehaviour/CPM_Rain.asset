@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -349573080, guid: c4497fe1cd352472b1311792dfe7edc3, type: 3}
+  m_Name: CPM_Rain
+  m_EditorClassIdentifier:
+  m_dataPerPlatformList:
+  - WwisePlatform: Android
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 9fb0a857f613f4a4b8fdf0af2b0c3e92
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: e8716fae097b26742a08e34d22387972
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14230214
+        - m_AssetGUID: adc7aab1926268d4f9bc603c4d9d7fcd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 131504776
+        - m_AssetGUID: 88c1b651438d7ce44860007663e5b3e4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 337162710
+        - m_AssetGUID: 634368f627a14ae43a17641d849b01e3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410770020
+        - m_AssetGUID: 90aae09a6cafd104aa370cb507315a9c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 414594123
+        - m_AssetGUID: 1b81fa023aeeffa4b9855ea56bd222e1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 597404453
+        - m_AssetGUID: f2755c82575ec5f4792dba8595564d8d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 632695724
+        - m_AssetGUID: 67b46aaa260699c448b3294218cea47a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 726828252
+        - m_AssetGUID: f4d3ceb86a9d3b341b78e69ca7118440
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1057123166
+  - WwisePlatform: Mac
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 211df479176087d49adbd498cd71e321
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 9533a5e8f5bb531458ad2cd0cf4a8f98
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14230214
+        - m_AssetGUID: 0313b930369068a438ebfbf122f0f872
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 131504776
+        - m_AssetGUID: 10ba0d764931e504a84f59e55b1ca6d7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 337162710
+        - m_AssetGUID: 2894e94e6486de345913911e95e5b248
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410770020
+        - m_AssetGUID: 4324586d726c6264596b6aa29aa21393
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 414594123
+        - m_AssetGUID: a03cf76bc06be934291ca135e6b5246e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 597404453
+        - m_AssetGUID: be6bf9473cd176545810e2969eac6a1a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 632695724
+        - m_AssetGUID: a39276793f589334a9bd38108e5ada1b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 726828252
+        - m_AssetGUID: 685d8b869983c514eb0cfb49515cbc3e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1057123166
+  - WwisePlatform: Windows
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: fa8ad72a368746d49953d7b59b7e953b
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: faf8f3ff73941a947be8f2016598c709
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14230214
+        - m_AssetGUID: 006a6755f18243e4b940e237b1a005a8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 131504776
+        - m_AssetGUID: 26bc4769ab5f56b4c8c5b0647f46935c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 337162710
+        - m_AssetGUID: 955df2a1a24c0b24ab4efe2d5af6d92b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410770020
+        - m_AssetGUID: f87e00074a843974f8edad5d4d82e655
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 414594123
+        - m_AssetGUID: 2897500ce0e922c4a869a1fdc1512db6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 597404453
+        - m_AssetGUID: 96837aeb3a588c74e8aafc4b639795ee
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 632695724
+        - m_AssetGUID: 8f4d015159edcf74badbde10a16c27cf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 726828252
+        - m_AssetGUID: 98bf7f52963ceb24f8a454718495409d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1057123166
+  - WwisePlatform: iOS
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 263dcc61536d69846ab2b50e438885cf
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 032952a7730c73247a87753a4677155e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14230214
+        - m_AssetGUID: 12c2c87ecd24159408e050108cde65ed
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 131504776
+        - m_AssetGUID: 0389482d78d7ca84cab55682e559da58
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 337162710
+        - m_AssetGUID: ab789acd13892fb44b0863a56fdb643e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410770020
+        - m_AssetGUID: 6ce2361d650e63e43a8a6670b3c9f2fa
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 414594123
+        - m_AssetGUID: f6a097bff7545a34286ab937dbd10ebb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 597404453
+        - m_AssetGUID: d11918729323f0e47bb4d3ddfca62d56
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 632695724
+        - m_AssetGUID: c41afe963852dc842986be1ce465798e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 726828252
+        - m_AssetGUID: b4aace9960e6cba4697a2be28d2abe4b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1057123166
+  - WwisePlatform: Linux
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: fa496db84e88781489d07f2afbb0d1d0
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 018107731f676e341a5fed0f74c2bddf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14230214
+        - m_AssetGUID: 62244d5263311a64e957dac55a2c6f66
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 131504776
+        - m_AssetGUID: e35d4ba64a8a72a45a757ae8b9454525
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 337162710
+        - m_AssetGUID: aeb4b71d789c0374ab5f2d5e3f1ee312
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410770020
+        - m_AssetGUID: fc27b6cbae9b57444991ae29112840de
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 414594123
+        - m_AssetGUID: 0f460ada89cae9146a79efe7f499af21
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 597404453
+        - m_AssetGUID: d61562c92c3efec49b702740e6dc2e16
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 632695724
+        - m_AssetGUID: fb3b580036393af47accc5076fc2d5e6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 726828252
+        - m_AssetGUID: 2af8ca13cd96e4f4984e9c4f6b5320a9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1057123166
+  currentPlatformAssets:
+    WwisePlatform: Windows
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: fa8ad72a368746d49953d7b59b7e953b
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: faf8f3ff73941a947be8f2016598c709
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14230214
+        - m_AssetGUID: 006a6755f18243e4b940e237b1a005a8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 131504776
+        - m_AssetGUID: 26bc4769ab5f56b4c8c5b0647f46935c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 337162710
+        - m_AssetGUID: 955df2a1a24c0b24ab4efe2d5af6d92b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410770020
+        - m_AssetGUID: f87e00074a843974f8edad5d4d82e655
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 414594123
+        - m_AssetGUID: 2897500ce0e922c4a869a1fdc1512db6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 597404453
+        - m_AssetGUID: 96837aeb3a588c74e8aafc4b639795ee
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 632695724
+        - m_AssetGUID: 8f4d015159edcf74badbde10a16c27cf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 726828252
+        - m_AssetGUID: 98bf7f52963ceb24f8a454718495409d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1057123166

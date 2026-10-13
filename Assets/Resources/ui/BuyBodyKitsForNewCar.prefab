@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4724804207875695}
+  - component: {fileID: 114618682377417806}
+  - component: {fileID: 114703437598541787}
+  m_Layer: 0
+  m_Name: BuyBodyKitsForNewCar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1730242686860875
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 224884547391421755}
+  - component: {fileID: 114099118695303065}
+  - component: {fileID: 223243736805655561}
+  - component: {fileID: 114061268324235159}
+  - component: {fileID: 225587765826080250}
+  - component: {fileID: 114709867586078768}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4724804207875695
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 224884547391421755}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114618682377417806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadab7095a5855b270df2c4437412a1d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ButtonPhysicsClickerController: {fileID: 0}
+  BodyKitsUpdater: {fileID: 114703437598541787}
+  BuyCarBodyKitsUI: {fileID: 114099118695303065}
+  UIButtonPositionHelper:
+    Positions:
+    - BodyKitType: 0
+      Side: 2
+      Offsets:
+      - Dir: 2
+        Length: 0.15
+    - BodyKitType: 1
+      Side: 4
+      Offsets:
+      - Dir: 4
+        Length: 0.25
+    - BodyKitType: 2
+      Side: 5
+      Offsets:
+      - Dir: 5
+        Length: 0.25
+    - BodyKitType: 3
+      Side: 0
+      Offsets:
+      - Dir: 0
+        Length: 0.25
+      - Dir: 2
+        Length: 0.1
+    - BodyKitType: 3
+      Side: 1
+      Offsets:
+      - Dir: 1
+        Length: 0.25
+      - Dir: 2
+        Length: 0.1
+    - BodyKitType: 4
+      Side: 2
+      Offsets:
+      - Dir: 2
+        Length: 0.05
+      - Dir: 4
+        Length: 0.3
+    - BodyKitType: 5
+      Side: 2
+      Offsets:
+      - Dir: 2
+        Length: 0.2
+    - BodyKitType: 6
+      Side: 2
+      Offsets:
+      - Dir: 2
+        Length: 0.1
+    - BodyKitType: 7
+      Side: 0
+      Offsets:
+      - Dir: 0
+        Length: 0.15
+    - BodyKitType: 7
+      Side: 1
+      Offsets:
+      - Dir: 1
+        Length: 0.15
+--- !u!114 &114703437598541787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4270f444fe002d0c9df847ececa27f4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!224 &224884547391421755
+RectTransform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4724804207875695}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114099118695303065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36159076ec57b873c7068b3a4c960a54, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Canvas: {fileID: 223243736805655561}
+  ButtonPrefab: {fileID: 114589667821646929, guid: d170f01b50e28af4abcd72b157bfec4b, type: 2}
+  FaderCanvas: {fileID: 114061268324235159}
+--- !u!223 &223243736805655561
+Canvas:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &114061268324235159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f812dde1e0248b496f64145a869b48, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CanvasGroup: {fileID: 225587765826080250}
+--- !u!225 &225587765826080250
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &114709867586078768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04db42b67766235af341e342b19917f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:

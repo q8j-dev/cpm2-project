@@ -1,0 +1,286 @@
+local gg = require 'metalua.grammar.generator'
+
+local function extend(M)
+    local function attr(lx)
+        local id = M.id(lx)
+        if lx:peek_keyword"(" then
+            lx:next()
+            local args = M.func_args_content(lx)
+            lx:next()
+            return asth.Attr {id[1], args}
+        end
+
+        return asth.Attr {id[1]}
+    end
+    local attrList = gg.list{
+        primary = attr,
+        separators = ',',
+        terminators = "]",
+        builder = "AttrList"
+    }
+    local function classMember(lx)
+        local attributes = asth.AttrList{}
+        if lx:peek_keyword"[" then
+            lx:next()
+            attributes = attrList(lx)
+            lx:next()
+        end
+
+        if lx:peek_keyword"static" then
+            lx:next()
+            table.insert(attributes , asth.Attr {'static'})
+        end
+
+        if lx:peek_keyword"async" then
+            lx:next()
+            table.insert(attributes , asth.Attr {'Async'})
+        end
+        
+        if lx:peek_keyword"function" then
+            lx:next()
+            local name = lx:next()
+            return asth.MethodDef {name, M.func_val(lx), attributes}
+        end
+        local id = M.id(lx)
+        if lx:peek_keyword "=" then
+            lx:next()
+            table.insert(attributes , asth.Attr {'default', {M.expr(lx)}})
+        end
+        return asth.FieldDef {id, attributes}
+    end
+
+    
+    local _M = gg.future(M)
+    M.lexer:add{ "class", "new", "async", "await" , 'attribute', 'static', 'using', 'guard', 'breakGuard', 'using', 'continue'}
+    local classMembers = gg.list{
+        primary = classMember,
+        separators = {';'},
+        terminators = {"}"},
+        builder = "ClassMembersList"
+    }
+
+    local function opf2 (op) return
+        function (a,_,b) return { tag="Op", op, a, b } end end
+    
+    M.expr:add{
+        name = "construction expr",
+        "new",
+        _M.id,
+        "(",  _M.func_args_content, ")",
+        builder = "ConstructorExpr"
+    }
+
+    M.expr:add{
+        name = "await expression",
+        "await",
+        _M.expr,
+        builder = 'AwaitExpr'
+    }
+    M.stat:add{
+        name = "await statement",
+        "await",
+        _M.expr,
+        builder = 'AwaitStmt'
+    }
+    M.expr:add{
+        name = "async function",
+        "async",
+        "function",
+        _M.func_val,
+        builder = 'AsyncFunction'
+    }
+
+    M.stat:add{
+        name = 'attribute function',
+        'attribute',
+        M.id,
+        M.func_val,
+        builder = 'Attribute'
+    }
+
+--     M.stat:add{
+--         name = 'using statement',
+--         'using',
+--         _M.expr,
+--         gg.onkeyword{'in', _M.expr, consume = true},
+--         'do',
+--         _M.block,
+--         'end',
+--         builder = 'Using'
+--     }
+
+    M.stat:add{
+        'using',
+        _M.id,
+        '=',
+        gg.list{ _M.id, separators = {".", '+'}, useSeparators = true },
+        builder = 'Using'
+    }
+
+    M.stat:add{
+        name = 'guard',
+        'guard', 
+        _M.expr,
+        builder = 'Guard'
+    }
+    M.stat:add{
+        name = 'breakGuard',
+        'breakGuard', 
+        _M.expr,
+        builder = 'BreakGuard'
+    }
+    M.stat:add{
+        name = 'continue',
+        'continue',
+        builder = 'Continue'
+    }
+    
+    M.lexer :add ('[+]')
+    M.assignments['[+]'] = 'AddToList'
+
+    M.lexer:add("??=")
+    M.assignments['??='] = 'NilCoalescingSet'
+
+    
+    M.lexer:add(":=")
+    M.expr.infix:add{
+        name=':=',
+        ':=',
+        prec = 35, assoc="left",
+        builder =  opf2('Walrus')
+    }
+
+    M.lexer :add ('[-]')
+    M.lexer :add ('+=')
+    M.lexer :add ('-=')
+    M.lexer :add ('*=')
+    M.lexer :add ('/=')
+    M.lexer :add ('..=')
+    M.lexer :add ('::')
+    
+    M.assignments['[-]'] = 'RemoveFromList'
+    M.assignments['+='] = 'CompoundAdd'
+    M.assignments['-='] = 'CompoundSub'
+    M.assignments['*='] = 'CompoundMul'
+    M.assignments['/='] = 'CompoundDiv'
+    M.assignments['..='] = 'CompoundConcat'
+
+    M.lexer:add("|~")    
+    M.lexer:add("|:")    
+    M.lexer:add(":|")   
+
+    M.lexer:add("is")    
+
+    M.expr.infix :add{ name = "pipe",
+        "|~", prec = 10, assoc="left",
+        builder =  opf2'Pipe' }
+
+    M.lexer:add("contains")   
+
+    M.expr.infix :add{ name = "does table contain value",
+        "contains", prec = 200, assoc="left",
+        builder = opf2'Contains'
+    }
+    M.expr.infix :add{ name = "is (deprecated)",
+        "is", prec = 200, assoc="left",
+        builder = opf2'Is'
+    }
+    M.expr.infix :add{ name = "cached closure",
+        "::", prec = 300, assoc="left",
+        builder = opf2'CachedClosure'
+    }
+
+    -- M.lexer:add("is")   
+
+    -- M.expr.infix :add{ name = "check is type",
+    --     "is", prec = 200, assoc="left",
+    --     builder = opf2'Is'
+    -- }
+
+    function M.expr_in_backquotes (lx) return M.expr(lx, 35) end -- 35=limited precedence
+    M.expr.infix :add{ name = "infix function",
+        "`", _M.expr_in_backquotes, "`", prec = 35, assoc="left",
+        builder = function(...) 
+            return asth.CallInfixFunction{...}
+        end }
+
+    M.lambda_expr = gg.sequence{
+        "|", _M.func_params_content, "|", _M.expr,
+        builder = 'Lambda' }
+
+    M.void_lambda_expr = gg.sequence{
+        "|:", _M.func_params_content, ":|", _M.stat,
+        builder = 'VoidLambda' }
+
+    M.expr.primary :add (M.lambda_expr)
+    M.expr.primary :add (M.void_lambda_expr)
+
+    local function primaryCtorArgs(lx)
+        local args = {}
+        while not lx:peek_keyword')' do
+            local attrs = asth.AttrList{}
+            if lx:peek_keyword'[' then
+                lx:next()
+                attrs = attrList(lx)
+                lx:next()
+            end
+            local id = M.id(lx)
+
+            if lx:peek_keyword',' then
+                lx:next()
+            end
+
+            table.insert(args, asth.FieldDef{id, attrs})
+        end
+        return args
+    end
+
+    M.extended_statement = function(lx)
+        local attrs = asth.AttrList{}
+        if lx:peek_keyword'[' then
+            lx:next()
+            attrs = attrList(lx)
+            lx:next()
+        end
+        if lx:peek_keyword'static' then
+            lx:next()
+            table.insert(attrs, asth.Attr{'static'})
+        end
+        if lx:peek_keyword'class' then
+            lx:next()
+            local id = M.id(lx)
+            local primaryCtor = nil
+            if lx:peek_keyword '(' then
+                lx:next()
+                local args = primaryCtorArgs(lx)
+                primaryCtor = asth.PrimaryCtor{args}
+                lx:next()
+            end
+            local inheritance = nil
+            if lx:peek_keyword':' then
+                lx:next()
+                local inherited = {}
+                while lx:peek().tag == 'Id' do
+                    table.insert(inherited, lx:next())
+                    if lx:peek_keyword ',' then
+                        lx:next()
+                    end
+                end
+                inheritance = asth.Inheritance{inherited}
+            end
+            if lx:peek_keyword ';' then
+                lx:next()
+                return asth.Class{id, asth.ClassMembersList{}, attrs, primaryCtor, inheritance}
+            elseif lx:peek_keyword '{' then
+                lx:next()
+                local members = classMembers(lx)
+                lx:next()
+                return asth.Class{id, members, attrs, primaryCtor, inheritance}
+            else
+                error('missing { / ; in class declaration')
+            end
+        end
+    end
+end
+
+return extend

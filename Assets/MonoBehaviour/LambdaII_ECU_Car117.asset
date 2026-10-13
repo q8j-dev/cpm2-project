@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: LambdaII_ECU_Car117
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: Lambda II ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: -6814676163937226720
+  _partValB: 2903879585888363863
+  _partValC: 2195682488326163190
+  _partValD: -1355368574990636449
+  TypeId: 21
+  ModelId: 18721005
+  NoticeAboutPart: Good model id
+  Mass: 0.82
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 0
+  _partLinkKeysA: ca0d96bcc8662444
+  _partLinkKeysB: c33c88904b53fa0d
+  _partLinkKeysC:
+  _partLinkStamp: -195054753110129116
+  _partSourceRef: 187
+  FuelMap:
+  - RPM: 500
+    pressure: 3.5
+    Time: 2
+    Fuel: 1
+  - RPM: 1000
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.61
+  - RPM: 1500
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.356
+  - RPM: 2000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.947
+  - RPM: 2500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.702
+  - RPM: 3000
+    pressure: 4
+    Time: 1
+    Fuel: 0.54
+  - RPM: 3500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.425
+  - RPM: 4000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.339
+  - RPM: 4500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.281
+  - RPM: 5000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.24
+  - RPM: 5500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.195
+  - RPM: 6000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.151
+  - RPM: 6500
+    pressure: 3.5
+    Time: 0.5
+    Fuel: 0.2
+  - RPM: 7000
+    pressure: 3.5
+    Time: 0.4
+    Fuel: 0.12
+  - RPM: 7500
+    pressure: 3.5
+    Time: 0.3
+    Fuel: 0.01
+  - RPM: 8000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 8500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 9000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 9500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 10000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 10500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 11000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 11500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 12000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 12500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1604199852
+    hiddenValue: 455464620
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1076460946
+    hiddenValue: 75302546
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1222989597
+    hiddenValue: 207068957
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1359356769
+    hiddenValue: 337890913
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 6400
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 2040811845
+    hiddenValue: 1009864261
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7500
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

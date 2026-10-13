@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac856918b7d228be11a51735ecece9b2, type: 3}
+  m_Name: CarControlValuesConfig
+  m_EditorClassIdentifier:
+  steeringCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.001663208
+      value: 0.99786377
+      inSlope: -0.3957026
+      outSlope: -0.3957026
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.009816512
+      value: 0.7975227
+      inSlope: -5.331208
+      outSlope: -5.331208
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.107533254
+    - serializedVersion: 3
+      time: 0.14593777
+      value: 0.34277737
+      inSlope: -0.23653066
+      outSlope: -0.23653066
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.17133659
+    - serializedVersion: 3
+      time: 1.0447693
+      value: 0.26079774
+      inSlope: -0.022367245
+      outSlope: -0.022367245
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.16274142
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  steeringCurveByInput:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.13496856
+      outSlope: -0.13496856
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.47018167
+    - serializedVersion: 3
+      time: 0.46710497
+      value: 1.8339958
+      inSlope: 3.455182
+      outSlope: 3.455182
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.089969106
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  TimeToOnHandBrake: 0.45

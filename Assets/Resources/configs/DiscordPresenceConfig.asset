@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70042ee5877c920d7566d74536cda9b8, type: 3}
+  m_Name: DiscordPresenceConfig
+  m_EditorClassIdentifier:
+  _applicationId: 1552572424678014976
+  _enabled: 1
+  _minUpdateIntervalSeconds: 15
+  _smallImageKey: logo_main
+  _smallImageTooltip: Car Parking Multiplayer 2
+  _entries:
+  - Kind: 0
+    LargeImageKey: logo_main
+    LargeImageTooltip: Car Parking Multiplayer 2
+    Details: Loading
+    DetailsWithLocation:
+    State:
+    StateWithLaps:
+  - Kind: 1
+    LargeImageKey: mode_menu
+    LargeImageTooltip: Main Menu
+    Details: In the Main Menu
+    DetailsWithLocation:
+    State:
+    StateWithLaps:
+  - Kind: 2
+    LargeImageKey: mode_garage
+    LargeImageTooltip: Garage
+    Details: In the Garage
+    DetailsWithLocation:
+    State:
+    StateWithLaps:
+  - Kind: 3
+    LargeImageKey: mode_tuning
+    LargeImageTooltip: Car Tuning
+    Details: Tuning a Car
+    DetailsWithLocation:
+    State:
+    StateWithLaps:
+  - Kind: 4
+    LargeImageKey: mode_levels
+    LargeImageTooltip: Parking Levels
+    Details: Parking Levels
+    DetailsWithLocation: Parking Levels - {0}
+    State:
+    StateWithLaps:
+  - Kind: 5
+    LargeImageKey: mode_freeroam
+    LargeImageTooltip: Free Roam
+    Details: Singleplayer
+    DetailsWithLocation: Singleplayer - {0}
+    State: Free Roam
+    StateWithLaps:
+  - Kind: 6
+    LargeImageKey: mode_multiplayer
+    LargeImageTooltip: Multiplayer
+    Details: Multiplayer
+    DetailsWithLocation: Multiplayer - {0}
+    State: Free Roam
+    StateWithLaps:
+  - Kind: 7
+    LargeImageKey: mode_drag
+    LargeImageTooltip: Drag Racing
+    Details: Drag Racing
+    DetailsWithLocation: Drag Racing - {0}
+    State:
+    StateWithLaps:
+  - Kind: 8
+    LargeImageKey: mode_circuit
+    LargeImageTooltip: Circuit Racing
+    Details: Circuit Racing
+    DetailsWithLocation: Circuit Racing - {0}
+    State:
+    StateWithLaps: Lap {0}/{1}
+  - Kind: 9
+    LargeImageKey: mode_rally
+    LargeImageTooltip: Rally
+    Details: Rally
+    DetailsWithLocation: Rally - {0}
+    State:
+    StateWithLaps:

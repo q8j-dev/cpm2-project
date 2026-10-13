@@ -1,0 +1,1888 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -349573080, guid: c4497fe1cd352472b1311792dfe7edc3, type: 3}
+  m_Name: Amb_Main
+  m_EditorClassIdentifier:
+  m_dataPerPlatformList:
+  - WwisePlatform: iOS
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: f1225ce54571d524abf054bfd9cdb871
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 5fa1bb94bd29111429651527c45e2e91
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 103236
+        - m_AssetGUID: 1aad911df0c49314a8224f49a40afd49
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 8388611
+        - m_AssetGUID: 8b191dab846d1d7469b01a2dc99e17dd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14957668
+        - m_AssetGUID: 3f8ab2a9758a1394cba5b0f87bb04cce
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 33683458
+        - m_AssetGUID: d2f5c59350b756040a9ca55cfdc0cee2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 39559033
+        - m_AssetGUID: 28bbb1308d2e1ee4ea2962a9dfbd8e0a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 45733104
+        - m_AssetGUID: 76a23f162fa4bf54795478dc787ee222
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 49477751
+        - m_AssetGUID: acd8eb6968d3ac144b7ed2e87ad4172d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 53673734
+        - m_AssetGUID: a60e5d10e5d2a9446a65b1535013c07b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 102929164
+        - m_AssetGUID: 7f7fb8c871df9b44fad4db6c3b8d2a99
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 104827316
+        - m_AssetGUID: 73935666eb814694890fc7b2ee51f6b4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 116719180
+        - m_AssetGUID: 24b251fc3e35a5b40ad9c4db62cd1577
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 119353648
+        - m_AssetGUID: b1f95eee9f52afd499557370841a15ee
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 132771513
+        - m_AssetGUID: 50bcba51e92263d4bb67cb03fa5b1d07
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 143965204
+        - m_AssetGUID: 09ae913396b20184a8b2da6cdb9c6898
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 153014722
+        - m_AssetGUID: 4cf99fbcef96a094caf8422cf692421b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 178588001
+        - m_AssetGUID: bbf002872154a354889b5fdb902ce8b9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 202225574
+        - m_AssetGUID: 832481dac7f2f7847b43a513d33430b4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 266145881
+        - m_AssetGUID: d29705e6dbdd62841a9da2c0114865e2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 296360161
+        - m_AssetGUID: 66bcc44e880ad3543bb684325649e9ec
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 322755194
+        - m_AssetGUID: 8150c8e342f231348a6cfc04e1eb738a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 342499831
+        - m_AssetGUID: 0de6004ac9998f240a3675dd1c25a284
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 344446625
+        - m_AssetGUID: a47c76505aff47c44b3f7fb5870244ae
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356390903
+        - m_AssetGUID: 6410af76a0104fa4abc8655fa18b683d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 364272523
+        - m_AssetGUID: c9993f6e841bd3341b11506b8472912c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 365930505
+        - m_AssetGUID: d7fa4484aeb437b449e1f10497fa04fa
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 385822932
+        - m_AssetGUID: fad0b42afedad6a48a912505c58220ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 407520934
+        - m_AssetGUID: ea8dae17f1334594a8b3a7a446aeb6dc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410336900
+        - m_AssetGUID: b026e11f090e8b24fbd49befe9fbea6f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 429931429
+        - m_AssetGUID: 6635cb532241da14995aa73c609c870f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 453492115
+        - m_AssetGUID: 4acc44ec3e25c7b49aeb45b2eac9d314
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 455740515
+        - m_AssetGUID: 0c162f8bc91204b459be3a6b1e3a0aed
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496826085
+        - m_AssetGUID: 6878b9c376a3e054698c61492dbbc6fa
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496903958
+        - m_AssetGUID: 1e28186df6542ca4da5d82824d906833
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496928831
+        - m_AssetGUID: 67ec7e488cab2a4419b7dcab1a1d3159
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 522318198
+        - m_AssetGUID: 44662ccbc047d514cb0e69e86ccb3878
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 525305578
+        - m_AssetGUID: 39e3fbf11b25cb84d99764a5346cff7f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 530532429
+        - m_AssetGUID: ba974da935997964aa874baf868aa489
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 540855564
+        - m_AssetGUID: 5b7f24f75d4a7454a88b256cb8b0f4bd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554911929
+        - m_AssetGUID: dd4856e95ad0f574b9acbf07a3949b71
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 577803606
+        - m_AssetGUID: 7fbe706fd5d6f894d9c772dc45a2f492
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 583901935
+        - m_AssetGUID: 6cb87d77db2e8f846acff4e3d4b0503c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 635987238
+        - m_AssetGUID: c1f8a4a82ee30e048b171eda88f77c60
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 637273291
+        - m_AssetGUID: 2af6bbb2a6aceda4da9bac547a3db512
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 667068337
+        - m_AssetGUID: 191ce7719cb67e743bfb1f6e3c9ce2cb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 696644053
+        - m_AssetGUID: b695bfccbe507ee4aa53337a99770c17
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 703595723
+        - m_AssetGUID: e2746eb697a8b274b8e1a48a62035429
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 732378326
+        - m_AssetGUID: b1dbc4bab3862054aad305767b083a44
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 752075389
+        - m_AssetGUID: 2a8238c9a4b78204d888ac459a39c7f6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 753765783
+        - m_AssetGUID: 86c3ba2472c2a3641bcdefe13ea096d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 757959569
+        - m_AssetGUID: 4ebb4d129d3792a4db8dae04b7ea8e31
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 760464939
+        - m_AssetGUID: d0fd777585aa6f742b1b01549cc6d8fb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 792378000
+        - m_AssetGUID: 084bdec16e79f9f46bc61c6c8d73288e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 801526079
+        - m_AssetGUID: a351c8c0cbc977444b47f5ee67f5eec2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 822197007
+        - m_AssetGUID: 6efc1af4ef1e08e4ea71761792f1a28e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 837771189
+        - m_AssetGUID: 50a625780cfcbae4eb21be58dbcf6abf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 854276690
+        - m_AssetGUID: 9e9f4354ba8916d4c9332a1546d83991
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 883974701
+        - m_AssetGUID: 3dd9e2186d04be54c8ab21d95dbf8947
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910587157
+        - m_AssetGUID: 8e04c185fb9f4be4c994a090f539d982
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910681776
+        - m_AssetGUID: c3e32c694c1ab484d82ca161fe91632a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 913403874
+        - m_AssetGUID: 2938c632a3d510f4d983b3ad8b55c163
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 921153053
+        - m_AssetGUID: c5ca16eadafd5cf44b03a80eab9fca0a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 922231197
+        - m_AssetGUID: 1685a07d1e433ed48923030be955bc3e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 931613254
+        - m_AssetGUID: a035c161c71dc7a4faf1ec88f7a485ef
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 982384280
+        - m_AssetGUID: fc4edf041c8424e41ba2a204a970f4db
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 983831217
+        - m_AssetGUID: 9b7324ab4af0c834c872f259951c222a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 990652976
+        - m_AssetGUID: 34322ea8669fdb04ab393021749ae4b1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 997161285
+        - m_AssetGUID: b202e50e1a0b53f4d9d51a022dcf7d84
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1014240788
+        - m_AssetGUID: 9f48bd3b25ea9f844962cacaad802197
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1015351870
+        - m_AssetGUID: 8069e90d407ec4e4a8f17269e04c9464
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1030372648
+        - m_AssetGUID: 46a43381bcbcc3d4c8e2c388a647adaf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1031198508
+        - m_AssetGUID: ac786c0ae9906474cb4a67718ffec8f5
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055316309
+        - m_AssetGUID: 0b5dfbbcce7d18b42a7782968d341e3a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055878033
+        - m_AssetGUID: 2b10896e1ee43294c841b63553196f91
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1059427751
+        - m_AssetGUID: 9239f0eed0ae4e943aabb020d60c81f0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1072553374
+  - WwisePlatform: Android
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 74f8566c02afed942a7381af93253c97
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: ad25f01329273954e81df34975dab4f1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 103236
+        - m_AssetGUID: 220c939621b3fd1489df7ff6e4a138d1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 8388611
+        - m_AssetGUID: 964ada99e99a4a448926eb8aad6953cc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14957668
+        - m_AssetGUID: 0e262daa173b37244a37867d77bc2bdf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 33683458
+        - m_AssetGUID: 71e65ff57120da9418754e11e2358ac7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 39559033
+        - m_AssetGUID: 4cbba463dacd6ad4890ff2375128f865
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 45733104
+        - m_AssetGUID: 741dff1ccd67fd44c86ed38cdf0faa4d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 49477751
+        - m_AssetGUID: 319e1d1728281ab4dbaa02312276f088
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 53673734
+        - m_AssetGUID: ae2074f14c2ab24468a2c9d4f24eb019
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 102929164
+        - m_AssetGUID: afa8db29431617c43b9661af934e8955
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 104827316
+        - m_AssetGUID: 5e9f878e5b1d39c43a552e1305ba5ad8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 116719180
+        - m_AssetGUID: 5e49028932a383c4eb03e826f4ecb421
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 119353648
+        - m_AssetGUID: 28fc282416d596f4ea5c514a7df302b2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 132771513
+        - m_AssetGUID: 10c1e53214a47084882cb1eb4b915c14
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 143965204
+        - m_AssetGUID: 0b2d95b58a94d2c49962ecc0d6f34242
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 153014722
+        - m_AssetGUID: c58b237c83e10c142bb821c71bc68952
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 178588001
+        - m_AssetGUID: db69e7dddc92eaa4aabcd7fc10ecc2d4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 202225574
+        - m_AssetGUID: fafe5b3a2160e324da074a92cab4337a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 266145881
+        - m_AssetGUID: 62c65f14db6ffee45972c65cbdeb7683
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 296360161
+        - m_AssetGUID: b5be4538c93131b4bb793ccd5f44a60f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 322755194
+        - m_AssetGUID: 96d9762ac45a65a40bbaed48c937e4df
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 342499831
+        - m_AssetGUID: bdb9384394df34b4a88bd8352fd30164
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 344446625
+        - m_AssetGUID: b52c82c7a8412e44080ccf3527254e9c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356390903
+        - m_AssetGUID: 5417e1680f6d83b48bc74a9879ccca8c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 364272523
+        - m_AssetGUID: c14cf21d12a95024b818ea5f7e0111cf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 365930505
+        - m_AssetGUID: d784810bc1cad4949b21adb7426410ad
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 385822932
+        - m_AssetGUID: b6da252c4b3d17443b191852aab4f95f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 407520934
+        - m_AssetGUID: 6f3354f672a50784e9e2d17a75de7f01
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410336900
+        - m_AssetGUID: 7fa42532feb7bfc458270fac39e8babf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 429931429
+        - m_AssetGUID: 482c5ebe395897649bf353bbf735c187
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 453492115
+        - m_AssetGUID: 321fa7a5553335940b89c1328f96c6b7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 455740515
+        - m_AssetGUID: 4740c38cfd26be84893fc6af1f862d11
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496826085
+        - m_AssetGUID: d5af51cdf0d7c984b80f98fad05f2d39
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496903958
+        - m_AssetGUID: 9f73638a8b446f047bc6d93b3fadebd4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496928831
+        - m_AssetGUID: ad54af8dc3643f641baa1840710cc1fc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 522318198
+        - m_AssetGUID: f7d3dfcabc5b442489f5e62f0443182b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 525305578
+        - m_AssetGUID: cda519766a57fb64b8f740690fa774d1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 530532429
+        - m_AssetGUID: 3f0c7cf3217bcb646aadbb30ae73a06f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 540855564
+        - m_AssetGUID: e9657821711a19b4791aaaf7253c4c1c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554911929
+        - m_AssetGUID: 89f455ff8c03a7e4ca52a7873b89f2f4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 577803606
+        - m_AssetGUID: 13dc0339f04e5b64dadab8277f581465
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 583901935
+        - m_AssetGUID: e7b5c5294bc00c048b0e7f6780267ec6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 635987238
+        - m_AssetGUID: 324d7c042ebabb0449e64a26f3d5be3b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 637273291
+        - m_AssetGUID: 2fcf947b139c2964b9ea3ff64d96d80c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 667068337
+        - m_AssetGUID: fad3a6e61214ed9438e78b20f6275eea
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 696644053
+        - m_AssetGUID: e2e1d2b9e69a6f8499ed6e1a5de169b8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 703595723
+        - m_AssetGUID: 9d9fc691b21d099489644c10aeda3013
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 732378326
+        - m_AssetGUID: face4976c7609dc4d83dcf76f55c0fab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 752075389
+        - m_AssetGUID: 086c7c7cd00227e45ad0e007d221ea48
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 753765783
+        - m_AssetGUID: c78a5c6e9301ad746bcbeb93d530cd78
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 757959569
+        - m_AssetGUID: 7447b7999dd198941a415be7a6de7f13
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 760464939
+        - m_AssetGUID: bb01f138da196854ea7989a0e1fe58c5
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 792378000
+        - m_AssetGUID: 3f25d2cb580d17b48a78b5fdd39973b2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 801526079
+        - m_AssetGUID: 1ad09dea295551d46985d7951d14e409
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 822197007
+        - m_AssetGUID: d89be0c735d2ac74b997925970d26199
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 837771189
+        - m_AssetGUID: bcbf25b3e0e4c5e42a2191f1c573951f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 854276690
+        - m_AssetGUID: dabbbd9547706d3439423e13be2d11c6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 883974701
+        - m_AssetGUID: 4040417c33050804693f28c77b7d3dd9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910587157
+        - m_AssetGUID: 05145961498d1544fb2bce5bf41bb040
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910681776
+        - m_AssetGUID: 950fb63120c08f04b82d34cb4e4c5e32
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 913403874
+        - m_AssetGUID: d43edca344fc2fd49bb13b015d8f3ca4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 921153053
+        - m_AssetGUID: db0dad129c0c3504b9bc4693af29ecf3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 922231197
+        - m_AssetGUID: afbbef60b8e242a4faf5526998199a49
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 931613254
+        - m_AssetGUID: ebf64b273053d88458c87cb7153c1c3a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 982384280
+        - m_AssetGUID: b0f60902ab252d2449a24622f7a56500
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 983831217
+        - m_AssetGUID: 381651883ae930941901449b3906e10d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 990652976
+        - m_AssetGUID: b3bf8c3f4b118e344a4092108760ca06
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 997161285
+        - m_AssetGUID: 35c9512a16bf8d748a2c6503fe51e3f6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1014240788
+        - m_AssetGUID: 7abadf4c1c66d2c45a91d0cfe3dc9b6a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1015351870
+        - m_AssetGUID: 58cdbb4fc34c4a0459f29962fc6530b3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1030372648
+        - m_AssetGUID: 640bbbf5339654b4d941632c42f20ab9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1031198508
+        - m_AssetGUID: dd8024645d1f5e94c9cee06b113e2654
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055316309
+        - m_AssetGUID: 877fbfb3731e8ee4e897015cc4bcd79d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055878033
+        - m_AssetGUID: 633b7a2af6b7ca54a9563df8cd8bcb3f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1059427751
+        - m_AssetGUID: 336cc0ab126e1254ab5a23278046fb36
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1072553374
+  - WwisePlatform: Windows
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 93c9d84b6669daa42bfc6af9fa673e79
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 47fbf6a2da5d90f4dbe4f314aedb842f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 103236
+        - m_AssetGUID: 61731704319c8b34aa32462e0e9498e3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 8388611
+        - m_AssetGUID: 290ad103990f0144dae0fcfc5e844cab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14957668
+        - m_AssetGUID: 1f298685649759b4ba6760fc4bb9a1e5
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 33683458
+        - m_AssetGUID: bc74071f79a1d324da0cd235bf3ab95e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 39559033
+        - m_AssetGUID: 85c2c68fe2c0fea4e95c3aff639dcabb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 45733104
+        - m_AssetGUID: d82171c479777d64489d0992a912f117
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 49477751
+        - m_AssetGUID: 9e3d90433dfb75a43900b40a80910b00
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 53673734
+        - m_AssetGUID: 047bd8fe8be0aef43894de368db284d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 102929164
+        - m_AssetGUID: c905c5dd7df3fe649a9e9f0f34619575
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 104827316
+        - m_AssetGUID: 15808939240524444b7f7db0885ef4c8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 116719180
+        - m_AssetGUID: 637e8ceec4b798f49a7b180ca362ced3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 119353648
+        - m_AssetGUID: 8d1aa2c03d4e38241bd3884cfdaecb73
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 132771513
+        - m_AssetGUID: 744af6b5ba11e204489fcfb57fbc4d5f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 143965204
+        - m_AssetGUID: 630fd26772ad2fd409fd31c5628bc372
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 153014722
+        - m_AssetGUID: 9865d2c8e9ee7e84991ba6b751740ee1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 178588001
+        - m_AssetGUID: f03f80bf08d47624da9a609474316a1f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 202225574
+        - m_AssetGUID: 99f21f1c48f4b30478f2b6872bcb2e55
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 266145881
+        - m_AssetGUID: 37eedab1aafc57c449cd5353d6b24391
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 296360161
+        - m_AssetGUID: 16975f0056d4fa940ac123f6d8ab7ea8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 322755194
+        - m_AssetGUID: fd873b463c9c12249a89f75504a12b50
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 342499831
+        - m_AssetGUID: 386ab3513b40d094195c4a856004d7c8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 344446625
+        - m_AssetGUID: e085d60dcf44c8743a151be68744aa7e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356390903
+        - m_AssetGUID: 583fa269137754a488c03efd857238fd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 364272523
+        - m_AssetGUID: 6b2fc99540d885647b8f605bb5d1d43a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 365930505
+        - m_AssetGUID: d23e63213bab8ec46bb574206aabc8e9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 385822932
+        - m_AssetGUID: 9d154a1986e7c1547a45e09175138518
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 407520934
+        - m_AssetGUID: b61af141392b98544a98296c1a595a98
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410336900
+        - m_AssetGUID: 3955ac51c220d4d48ab58e7c424a6b23
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 429931429
+        - m_AssetGUID: bd64ab8c543825b4097560c4271b7f4f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 453492115
+        - m_AssetGUID: 419183259207a5048b1ca71237a8707b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 455740515
+        - m_AssetGUID: d22c397a825bd74429c450767f0c29f1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496826085
+        - m_AssetGUID: 944351ada9efd4a408e5c286f64b3346
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496903958
+        - m_AssetGUID: e80021aebf1e61c4d86ac76a5852ac52
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496928831
+        - m_AssetGUID: 82029477787d5094d9f9222b93c7920a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 522318198
+        - m_AssetGUID: b85cb9322d7406f48924eb2dbbe5dc23
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 525305578
+        - m_AssetGUID: e545acff9fdad27499a15ce0489397ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 530532429
+        - m_AssetGUID: f493609da90dd8c4089caddc115b2009
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 540855564
+        - m_AssetGUID: 122ce82a6ab3ac449960d3fd3e7e8371
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554911929
+        - m_AssetGUID: b2e4a9c2076e9964e9be0dbb54bd1533
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 577803606
+        - m_AssetGUID: 1bd5874cf6fcf40409559d4e2d5c60cc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 583901935
+        - m_AssetGUID: 4b1cbbb12c5b88b4989e1378fbed9801
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 635987238
+        - m_AssetGUID: 2f6fe00f583dc2f4e92f807de26ce2ac
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 637273291
+        - m_AssetGUID: a6fb780ac953c024894823eb0c57bb60
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 667068337
+        - m_AssetGUID: 3cbf0886a0ea9e24086561a9ca140909
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 696644053
+        - m_AssetGUID: c8eb981ec5344524296628748f4af7fc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 703595723
+        - m_AssetGUID: 8ae4e86b5a2271a478b91c07e8c75eab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 732378326
+        - m_AssetGUID: 859da3d35564dce41bc5b9db2cf09fb6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 752075389
+        - m_AssetGUID: 38f1c98e2e67c3c40a5e66713d2173df
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 753765783
+        - m_AssetGUID: 38db25484ecc2ad41b492fe1a149805d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 757959569
+        - m_AssetGUID: 43246d43ffabf9a4dbe0c2c7a3f8bdfe
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 760464939
+        - m_AssetGUID: fb11fc72a93a734448f83f8f67a82047
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 792378000
+        - m_AssetGUID: c838eac86e3c9484d9e22b2707c68afd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 801526079
+        - m_AssetGUID: 9d92d94037daa784d8af2c3e61074e50
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 822197007
+        - m_AssetGUID: 7502081c3b83c9a4991d21e8aa756fe0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 837771189
+        - m_AssetGUID: 46b44d7df7915f04f978d81f575b5f85
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 854276690
+        - m_AssetGUID: 61298069a46e88d44b088d2cbd475ecd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 883974701
+        - m_AssetGUID: 9edc5e267360cd3498ec513a816381f7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910587157
+        - m_AssetGUID: ff839e80901f7564282fd40a39a2ca8a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910681776
+        - m_AssetGUID: 4ea603a428a583a49bd4093dd957d93b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 913403874
+        - m_AssetGUID: e058b7f0b829450428dc330b0a158448
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 921153053
+        - m_AssetGUID: bf027e181b69b6343a9ddc6d5b0f56f7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 922231197
+        - m_AssetGUID: 0c016eb6928f4b94caa077df019113ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 931613254
+        - m_AssetGUID: 56953fb61631cfa498d09d249d5144d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 982384280
+        - m_AssetGUID: 00284bac4b8ff6b469fdd184cd72a85e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 983831217
+        - m_AssetGUID: 3038edb06550f544ea30e7baab1b4213
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 990652976
+        - m_AssetGUID: 6a9a389f7c0cccd4bade42b9172feb15
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 997161285
+        - m_AssetGUID: 0e3ce45ae006b174b918e56789e886b0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1014240788
+        - m_AssetGUID: c3ce2a0eb07eddc4dbf3b6a7b4bdb3ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1015351870
+        - m_AssetGUID: c0c8b16fbac9d424d94afaa9c75ff116
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1030372648
+        - m_AssetGUID: 35e68a93ccf6fc340807778830daa7ab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1031198508
+        - m_AssetGUID: 9455feff7411901448423771ece61051
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055316309
+        - m_AssetGUID: cb0795c09e45e864b80f09adebd512b0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055878033
+        - m_AssetGUID: 89495ac0f5950554abd338bd70f6f35f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1059427751
+        - m_AssetGUID: de894f1fd7d781a44a276ed51e131f6e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1072553374
+  - WwisePlatform: Mac
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 482542f2c91b82c4594e2864df0f34b6
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 39f07780d5b7419478d21bad957099c1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 103236
+        - m_AssetGUID: e1fd04345bed39f479ae773541340161
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 8388611
+        - m_AssetGUID: 14c38eacbccc3d84082235ef6952c53a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14957668
+        - m_AssetGUID: aea75f239f93b9743a8d1ca8e0e58877
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 33683458
+        - m_AssetGUID: bf8c50dab88e45c42ba45ddad807675a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 39559033
+        - m_AssetGUID: e3f6151612d273749a3c6110c34fd62f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 45733104
+        - m_AssetGUID: 59bdc2a507747f141a24b7155b2e4462
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 49477751
+        - m_AssetGUID: 63f454a1271c53a4e8f5b85c3f3f6256
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 53673734
+        - m_AssetGUID: b88b7be899453ac4eb002cb2788755d1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 102929164
+        - m_AssetGUID: 36a2d1e0af3eaa745ae0ae151de4d58e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 104827316
+        - m_AssetGUID: f8e5d3a882599e14a84c779d6f3a6fc0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 116719180
+        - m_AssetGUID: 22242f8d7723e3f4a90a19501b1ba435
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 119353648
+        - m_AssetGUID: f6a5a32e5a0fb0f44b3ceba7a071e9c1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 132771513
+        - m_AssetGUID: d02c616e202cd7841907cb0009ecd11a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 143965204
+        - m_AssetGUID: 3c409796924b7064db189fb0b8d64123
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 153014722
+        - m_AssetGUID: f9a9bd8fb0994b04095edf27c8f0ab7d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 178588001
+        - m_AssetGUID: d9d31c04cfb047747969dc0c936156f3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 202225574
+        - m_AssetGUID: a52df4b08be69554f82902ee8eacec28
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 266145881
+        - m_AssetGUID: d0d8e33010e7f194abc819f401545daa
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 296360161
+        - m_AssetGUID: dd444f92cc7f6ac41b538b9ea67384c3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 322755194
+        - m_AssetGUID: b2a16f7d345f9b641b45b4ed00f221a6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 342499831
+        - m_AssetGUID: 07a702cc84296ea439b0d629ab29a59c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 344446625
+        - m_AssetGUID: f9e369505016f5747bfb9eaf3cf4a22e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356390903
+        - m_AssetGUID: 51341297aef3d574ba3817aa3cf8dfcd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 364272523
+        - m_AssetGUID: abc7198a10db43e41807e95550280d9a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 365930505
+        - m_AssetGUID: ee14384599dfdd94ab2512221ad5f451
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 385822932
+        - m_AssetGUID: ed67e2c7f7f5bfb448d16261532d4d7a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 407520934
+        - m_AssetGUID: 67ae85227de46da4bb39336f7677a993
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410336900
+        - m_AssetGUID: a9e1b047874725246b49331b670ea31b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 429931429
+        - m_AssetGUID: 3e612ec905b47d4408139a8863e9f5eb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 453492115
+        - m_AssetGUID: 9d017f417f437c444bcbae5ccc33dbfe
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 455740515
+        - m_AssetGUID: 38f02322f02991b458958424a2185c0d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496826085
+        - m_AssetGUID: 7d0858d5c00a9304fa1e0754bbe3ae5e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496903958
+        - m_AssetGUID: 7f7529f0deb839e45807b4198c5338b0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496928831
+        - m_AssetGUID: 0223f147075715d40b95a1b8c3dc89dc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 522318198
+        - m_AssetGUID: 11c38498b53205846b0d5e23d5d73cc2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 525305578
+        - m_AssetGUID: 3c4b74c7c3ef21444bc64679c29e7911
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 530532429
+        - m_AssetGUID: e6dee901406031e4db0d95d626967f07
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 540855564
+        - m_AssetGUID: 2f52e8fdba55b184195d2094a66f6ba9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554911929
+        - m_AssetGUID: c1caa85b4b0fa384ab8e27aead82b87f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 577803606
+        - m_AssetGUID: 51294f022d3854c408c1692c8f031f29
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 583901935
+        - m_AssetGUID: 555ff5c5f2823a04491c1d0b6a1f7170
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 635987238
+        - m_AssetGUID: c2a8df1ef6878fc4ebb404c83fdbfb90
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 637273291
+        - m_AssetGUID: ea0f9205f757b324284927841430115d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 667068337
+        - m_AssetGUID: 153bdfdcd59c21149bdb2e57a53a97c3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 696644053
+        - m_AssetGUID: 8fc80bad6e838474eb3f489b440626af
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 703595723
+        - m_AssetGUID: d0def5c2c6f481842b05cc456677b505
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 732378326
+        - m_AssetGUID: 9d0c1629aeda1a74bb405d1ccc322b8f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 752075389
+        - m_AssetGUID: 36b728d834f75f54fb997a2892a9f0bb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 753765783
+        - m_AssetGUID: 89a7317b304ee41409ccb3a57ff1e709
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 757959569
+        - m_AssetGUID: 7003441bd1ff82a4aa714c3aaadd4500
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 760464939
+        - m_AssetGUID: 3c0c0228f657e82459182a9b40e2ff82
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 792378000
+        - m_AssetGUID: 5a12229c9e467e14d909beedc6e6e6bc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 801526079
+        - m_AssetGUID: 713371f8ff5ffaa4c8ea80daaaee9b1f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 822197007
+        - m_AssetGUID: 805ec670413052243be9c8e3399d7487
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 837771189
+        - m_AssetGUID: 8ddbc5f61aadef14da13d1fa166fdcda
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 854276690
+        - m_AssetGUID: b2b14b3dd1e97f04b96e5fa2dd648d53
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 883974701
+        - m_AssetGUID: f37bb5ad9ee1267469615cbc89695ce8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910587157
+        - m_AssetGUID: e7f9c4db7c966bd40a141dd9fdbaed73
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910681776
+        - m_AssetGUID: 56e3e80e71155594590b214dcf758ef3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 913403874
+        - m_AssetGUID: f063d6ba6039d194ebb627a4b428fb2a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 921153053
+        - m_AssetGUID: 6f4cb28f35e896c4eaf29916a1f5a225
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 922231197
+        - m_AssetGUID: 847ed7391d03d53479790e0ef0606ff6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 931613254
+        - m_AssetGUID: ee848dddd07da3049b12bcae7192bfd8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 982384280
+        - m_AssetGUID: 49346e7f94ea4b54c8b42f3ccd2338c3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 983831217
+        - m_AssetGUID: 055f29be6cadde74ebe3202c25e0f790
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 990652976
+        - m_AssetGUID: 12ce265232976dc43867ab317094b082
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 997161285
+        - m_AssetGUID: 71df9ab4c96178a4cbf029ab68c822c3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1014240788
+        - m_AssetGUID: 6104d7ce455fd0b418285f27ea62513f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1015351870
+        - m_AssetGUID: e6c850ca0d6c9564db0e7de6d14a8035
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1030372648
+        - m_AssetGUID: 6dbfcc0c7a7896c438259de1b76f1a05
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1031198508
+        - m_AssetGUID: dc48dab4f173dda48a0b3a2bd726b1fa
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055316309
+        - m_AssetGUID: 3cc53d39348448046ab8b7b246db4321
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055878033
+        - m_AssetGUID: c3a25df715d87e04c82386d732982104
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1059427751
+        - m_AssetGUID: 3598531e268047d4f9d0d2399b2d4dc1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1072553374
+  - WwisePlatform: Linux
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 3f42672b88e9b5d4f8ea4abb0af13b8a
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: f5dcfb5943adfb9488b9e4693dbf96f2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 103236
+        - m_AssetGUID: 62d961d9a94960649a79062f3e5adab4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 8388611
+        - m_AssetGUID: efb7957f2e5ee814e9e8e0ebdc558287
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14957668
+        - m_AssetGUID: d699ecc28287ba0478438165d57a5539
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 33683458
+        - m_AssetGUID: a29a16ade22c9ea47ab608e7a2416c1a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 39559033
+        - m_AssetGUID: 74e9aca83a5214c4ca5efde8ed364c1c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 45733104
+        - m_AssetGUID: c8529d46baec90b4aa4efdc309404dd7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 49477751
+        - m_AssetGUID: dd4a2b1840cb2d347a6e32c4a6dfb47f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 53673734
+        - m_AssetGUID: 31f4c6011a4271f4c8a097e1c730fb3c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 102929164
+        - m_AssetGUID: fb4711afde804a144b6d406e4cb2b5e9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 104827316
+        - m_AssetGUID: f41b48fc7c8b1974b9f8220d61346abe
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 116719180
+        - m_AssetGUID: ecfa9fdc45c95b442aec00abf3e42a10
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 119353648
+        - m_AssetGUID: aa1f8657624a19e4684db246f72c3071
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 132771513
+        - m_AssetGUID: 46d77151e39adf649b5babf97d95c858
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 143965204
+        - m_AssetGUID: 0bfa5bb528a3043418d4f5aed685a43e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 153014722
+        - m_AssetGUID: ec90fd7e00b0bbd49848100f56106965
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 178588001
+        - m_AssetGUID: 37b4c34670626dc46b98b8718d96d4e8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 202225574
+        - m_AssetGUID: fb5c726e8a462c7408418f6c32ebc996
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 266145881
+        - m_AssetGUID: 1957d99c5959a3040b542bf3f8a60da2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 296360161
+        - m_AssetGUID: 146a2012d2cb21a4797cae07b57dc4ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 322755194
+        - m_AssetGUID: 4206eaa6017aebc4195d5e4d29475c44
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 342499831
+        - m_AssetGUID: 2a3f1ae40d1d6f4498abbc37be2d227d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 344446625
+        - m_AssetGUID: dd3f2333a57184a42b8b1258f492c571
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356390903
+        - m_AssetGUID: 109f5437871636345a266b3339aa517a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 364272523
+        - m_AssetGUID: 2d7b54fac49227a429b9f58907221597
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 365930505
+        - m_AssetGUID: 69bb0d8554a2b384e8ba36e27929b47b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 385822932
+        - m_AssetGUID: 0cd10121ebb37b240858e142d5c13d47
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 407520934
+        - m_AssetGUID: a215b0955c7e5364085f7b14e88d3529
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410336900
+        - m_AssetGUID: c2190e3ee84c92846a3f9f6077bc638b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 429931429
+        - m_AssetGUID: f952b3e7aaac3aa40ac07d459ecd63e4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 453492115
+        - m_AssetGUID: 7b4d669ff0b9c0a4b896ad6a77566720
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 455740515
+        - m_AssetGUID: 8a020d0407053c44ca850e40c49988b3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496826085
+        - m_AssetGUID: e4985a9f2d14c7a4d8e6718090842f35
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496903958
+        - m_AssetGUID: 0082b9465b0becc429a96de19ff5a7f1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496928831
+        - m_AssetGUID: 5177fcf5e14bffb409272df82df870b9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 522318198
+        - m_AssetGUID: 27c105a79ccd4a5469e048628746070d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 525305578
+        - m_AssetGUID: 8629380384a8191408e31d2a98d55dea
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 530532429
+        - m_AssetGUID: 24baa826a1efdf74eba70ed7aee8ba2a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 540855564
+        - m_AssetGUID: b1b2cdb80a4db434c9ea35503ec307d6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554911929
+        - m_AssetGUID: 1643bf8a0ddbf534ba09b6c0b238b78e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 577803606
+        - m_AssetGUID: 9b3c03651b4b3ae44b15446dc2911e63
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 583901935
+        - m_AssetGUID: cc5999ae6e80bc54482bdf368b271116
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 635987238
+        - m_AssetGUID: 8016730e6c0ae534ca4929095ff228d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 637273291
+        - m_AssetGUID: 000cf2946ad73ac418158e8e77fa07e8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 667068337
+        - m_AssetGUID: eff4c73f99068404bb0162e58b7a8e54
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 696644053
+        - m_AssetGUID: 7d1fb3ecb84706f4c8c28f093ff5308d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 703595723
+        - m_AssetGUID: 53cd7103884badb4d9da136af76f6347
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 732378326
+        - m_AssetGUID: 4dd0f9a12e33813438ba74764eaa3d26
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 752075389
+        - m_AssetGUID: a071c20d23de7e04f93341f60244bfa2
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 753765783
+        - m_AssetGUID: c296e79f5c7baa94bb80f9723fc9092d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 757959569
+        - m_AssetGUID: 59f135f6b2fba1c46a977f0f3f36f50a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 760464939
+        - m_AssetGUID: 9256e87622adda44a913295dea6d8cfc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 792378000
+        - m_AssetGUID: 406fc4335dcc40c429339475df502327
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 801526079
+        - m_AssetGUID: 6c32ee718e2b6164ba25176b39f7976d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 822197007
+        - m_AssetGUID: af53acf45ea40cf489fa275007d54c9e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 837771189
+        - m_AssetGUID: 0a6f446d291f75340b96a49515a636ec
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 854276690
+        - m_AssetGUID: 7743b5272adfe454384dae31caa1739f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 883974701
+        - m_AssetGUID: e3bff577bdaf3994c8e3200f2f36ef52
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910587157
+        - m_AssetGUID: 46365586375d7da4a93365eb333d4006
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910681776
+        - m_AssetGUID: ee5b003dd534f8d4889875c2291eddb8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 913403874
+        - m_AssetGUID: 0766b727b6643d24da0f3241bc8afe64
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 921153053
+        - m_AssetGUID: 02be8fb7dd4449e4d99e465c9e123ff8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 922231197
+        - m_AssetGUID: 19601ae9a5362114ca45a1302f8d86e1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 931613254
+        - m_AssetGUID: a8e3fa14e215b8f448e10f64343a8d28
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 982384280
+        - m_AssetGUID: 79f8aed74396b4b40a11a5b8e79ac64e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 983831217
+        - m_AssetGUID: e6fcdef7346035043b6c62176cfd1f6c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 990652976
+        - m_AssetGUID: 860357e7f6b585940acf0d307be039b7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 997161285
+        - m_AssetGUID: c051e1e2b6a76f24ca4b864bbb01e396
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1014240788
+        - m_AssetGUID: 02ffafd7d7189df4dada896136f1b2cb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1015351870
+        - m_AssetGUID: adba38ce12673ca45aa93ddf421c43fb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1030372648
+        - m_AssetGUID: 4086242721ccdbc4e8f3b5c3da486d7f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1031198508
+        - m_AssetGUID: 54f88d887fbb1174ea04d02319d6778a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055316309
+        - m_AssetGUID: 1c618df8b3de2e24da4be2445e265f92
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055878033
+        - m_AssetGUID: 010f546f91f90684eb49e5586401a24d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1059427751
+        - m_AssetGUID: 70875cadda3f876408b586dcd5e4fbf4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1072553374
+  currentPlatformAssets:
+    WwisePlatform: Windows
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 93c9d84b6669daa42bfc6af9fa673e79
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 47fbf6a2da5d90f4dbe4f314aedb842f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 103236
+        - m_AssetGUID: 61731704319c8b34aa32462e0e9498e3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 8388611
+        - m_AssetGUID: 290ad103990f0144dae0fcfc5e844cab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 14957668
+        - m_AssetGUID: 1f298685649759b4ba6760fc4bb9a1e5
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 33683458
+        - m_AssetGUID: bc74071f79a1d324da0cd235bf3ab95e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 39559033
+        - m_AssetGUID: 85c2c68fe2c0fea4e95c3aff639dcabb
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 45733104
+        - m_AssetGUID: d82171c479777d64489d0992a912f117
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 49477751
+        - m_AssetGUID: 9e3d90433dfb75a43900b40a80910b00
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 53673734
+        - m_AssetGUID: 047bd8fe8be0aef43894de368db284d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 102929164
+        - m_AssetGUID: c905c5dd7df3fe649a9e9f0f34619575
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 104827316
+        - m_AssetGUID: 15808939240524444b7f7db0885ef4c8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 116719180
+        - m_AssetGUID: 637e8ceec4b798f49a7b180ca362ced3
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 119353648
+        - m_AssetGUID: 8d1aa2c03d4e38241bd3884cfdaecb73
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 132771513
+        - m_AssetGUID: 744af6b5ba11e204489fcfb57fbc4d5f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 143965204
+        - m_AssetGUID: 630fd26772ad2fd409fd31c5628bc372
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 153014722
+        - m_AssetGUID: 9865d2c8e9ee7e84991ba6b751740ee1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 178588001
+        - m_AssetGUID: f03f80bf08d47624da9a609474316a1f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 202225574
+        - m_AssetGUID: 99f21f1c48f4b30478f2b6872bcb2e55
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 266145881
+        - m_AssetGUID: 37eedab1aafc57c449cd5353d6b24391
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 296360161
+        - m_AssetGUID: 16975f0056d4fa940ac123f6d8ab7ea8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 322755194
+        - m_AssetGUID: fd873b463c9c12249a89f75504a12b50
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 342499831
+        - m_AssetGUID: 386ab3513b40d094195c4a856004d7c8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 344446625
+        - m_AssetGUID: e085d60dcf44c8743a151be68744aa7e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356390903
+        - m_AssetGUID: 583fa269137754a488c03efd857238fd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 364272523
+        - m_AssetGUID: 6b2fc99540d885647b8f605bb5d1d43a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 365930505
+        - m_AssetGUID: d23e63213bab8ec46bb574206aabc8e9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 385822932
+        - m_AssetGUID: 9d154a1986e7c1547a45e09175138518
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 407520934
+        - m_AssetGUID: b61af141392b98544a98296c1a595a98
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 410336900
+        - m_AssetGUID: 3955ac51c220d4d48ab58e7c424a6b23
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 429931429
+        - m_AssetGUID: bd64ab8c543825b4097560c4271b7f4f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 453492115
+        - m_AssetGUID: 419183259207a5048b1ca71237a8707b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 455740515
+        - m_AssetGUID: d22c397a825bd74429c450767f0c29f1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496826085
+        - m_AssetGUID: 944351ada9efd4a408e5c286f64b3346
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496903958
+        - m_AssetGUID: e80021aebf1e61c4d86ac76a5852ac52
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 496928831
+        - m_AssetGUID: 82029477787d5094d9f9222b93c7920a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 522318198
+        - m_AssetGUID: b85cb9322d7406f48924eb2dbbe5dc23
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 525305578
+        - m_AssetGUID: e545acff9fdad27499a15ce0489397ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 530532429
+        - m_AssetGUID: f493609da90dd8c4089caddc115b2009
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 540855564
+        - m_AssetGUID: 122ce82a6ab3ac449960d3fd3e7e8371
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554911929
+        - m_AssetGUID: b2e4a9c2076e9964e9be0dbb54bd1533
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 577803606
+        - m_AssetGUID: 1bd5874cf6fcf40409559d4e2d5c60cc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 583901935
+        - m_AssetGUID: 4b1cbbb12c5b88b4989e1378fbed9801
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 635987238
+        - m_AssetGUID: 2f6fe00f583dc2f4e92f807de26ce2ac
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 637273291
+        - m_AssetGUID: a6fb780ac953c024894823eb0c57bb60
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 667068337
+        - m_AssetGUID: 3cbf0886a0ea9e24086561a9ca140909
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 696644053
+        - m_AssetGUID: c8eb981ec5344524296628748f4af7fc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 703595723
+        - m_AssetGUID: 8ae4e86b5a2271a478b91c07e8c75eab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 732378326
+        - m_AssetGUID: 859da3d35564dce41bc5b9db2cf09fb6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 752075389
+        - m_AssetGUID: 38f1c98e2e67c3c40a5e66713d2173df
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 753765783
+        - m_AssetGUID: 38db25484ecc2ad41b492fe1a149805d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 757959569
+        - m_AssetGUID: 43246d43ffabf9a4dbe0c2c7a3f8bdfe
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 760464939
+        - m_AssetGUID: fb11fc72a93a734448f83f8f67a82047
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 792378000
+        - m_AssetGUID: c838eac86e3c9484d9e22b2707c68afd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 801526079
+        - m_AssetGUID: 9d92d94037daa784d8af2c3e61074e50
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 822197007
+        - m_AssetGUID: 7502081c3b83c9a4991d21e8aa756fe0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 837771189
+        - m_AssetGUID: 46b44d7df7915f04f978d81f575b5f85
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 854276690
+        - m_AssetGUID: 61298069a46e88d44b088d2cbd475ecd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 883974701
+        - m_AssetGUID: 9edc5e267360cd3498ec513a816381f7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910587157
+        - m_AssetGUID: ff839e80901f7564282fd40a39a2ca8a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 910681776
+        - m_AssetGUID: 4ea603a428a583a49bd4093dd957d93b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 913403874
+        - m_AssetGUID: e058b7f0b829450428dc330b0a158448
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 921153053
+        - m_AssetGUID: bf027e181b69b6343a9ddc6d5b0f56f7
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 922231197
+        - m_AssetGUID: 0c016eb6928f4b94caa077df019113ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 931613254
+        - m_AssetGUID: 56953fb61631cfa498d09d249d5144d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 982384280
+        - m_AssetGUID: 00284bac4b8ff6b469fdd184cd72a85e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 983831217
+        - m_AssetGUID: 3038edb06550f544ea30e7baab1b4213
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 990652976
+        - m_AssetGUID: 6a9a389f7c0cccd4bade42b9172feb15
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 997161285
+        - m_AssetGUID: 0e3ce45ae006b174b918e56789e886b0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1014240788
+        - m_AssetGUID: c3ce2a0eb07eddc4dbf3b6a7b4bdb3ba
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1015351870
+        - m_AssetGUID: c0c8b16fbac9d424d94afaa9c75ff116
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1030372648
+        - m_AssetGUID: 35e68a93ccf6fc340807778830daa7ab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1031198508
+        - m_AssetGUID: 9455feff7411901448423771ece61051
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055316309
+        - m_AssetGUID: cb0795c09e45e864b80f09adebd512b0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1055878033
+        - m_AssetGUID: 89495ac0f5950554abd338bd70f6f35f
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1059427751
+        - m_AssetGUID: de894f1fd7d781a44a276ed51e131f6e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 1072553374

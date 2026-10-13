@@ -1,0 +1,393 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ac5ee7f652681b9cfbb4e7ac4b4f21, type: 3}
+  m_Name: WorldInteractionConfigFemale
+  m_EditorClassIdentifier:
+  _perType:
+  - Id: 0
+    IsInPlace: 0
+    IsVertical: 0
+    DisableAnimation: 0
+    PreviewGroundLift: 0.6
+    MinHeight: 0.3
+    MaxHeight: 1.5
+    MaxNormalAngle: 70
+    MaxFlatnessSpread: 0.2
+    IncludeTriggerSurfaces: 1
+    DefaultPose:
+      Id: 0
+      BodyOffset: {x: 0, y: 0.2, z: 0}
+      BodyEulerOffset: {x: 0, y: 0, z: 0}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: 0.12, y: -0.22, z: 0.41}
+      LeftFootEuler: {x: -153.4, y: 184.34, z: 43.7}
+      RightFootOffset: {x: -0.05, y: -0.4, z: 0.35}
+      RightFootEuler: {x: -18.4, y: 11.8, z: 169.8}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 1
+      UseShoulders: 1
+      LeftShoulderOffset: {x: -0.13, y: 0.4, z: 0}
+      RightShoulderOffset: {x: 0.13, y: 0.4, z: 0}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: -0.1, y: 0, z: 0.05}
+      RightThighOffset: {x: 0.1, y: 0, z: 0.05}
+      ThighWeight: 1
+      UseArmBend: 1
+      LeftElbowOffset: {x: -0.38, y: 0.1, z: -0.05}
+      RightElbowOffset: {x: 0.38, y: 0.1, z: -0.05}
+      ArmBendWeight: 1
+      UseLegBend: 1
+      LeftKneeOffset: {x: -0.02, y: 0.1, z: 0.41}
+      RightKneeOffset: {x: -0.06, y: 0.1, z: 0.42}
+      LegBendWeight: 1
+      UseHands: 1
+      LeftHandOffset: {x: -0.1, y: 0.23, z: 0.32}
+      LeftHandEuler: {x: 45, y: 100, z: 90}
+      RightHandOffset: {x: -0.04, y: 0.27, z: 0.32}
+      RightHandEuler: {x: 45, y: -100, z: -90}
+      LeftArmMappingWeight: 1
+      RightArmMappingWeight: 1
+      HandWeight: 1
+      HandRotationWeight: 1
+      MaintainHeadRot: 0
+      UseHeadLook: 0
+      HeadLookOffset: {x: 0, y: 1.4, z: 3}
+      HeadLookWeight: 0.85
+      ApproachDistance: 0.45
+  - Id: 2
+    IsInPlace: 0
+    IsVertical: 1
+    DisableAnimation: 0
+    PreviewGroundLift: 0
+    MinHeight: 0.35
+    MaxHeight: 0.6
+    MaxNormalAngle: 20
+    MaxFlatnessSpread: 0.06
+    IncludeTriggerSurfaces: 0
+    DefaultPose:
+      Id: 2
+      BodyOffset: {x: -0.062, y: 0.99, z: 0.036}
+      BodyEulerOffset: {x: -0, y: 0, z: 0}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: -0.042, y: 0.024997711, z: 0.12}
+      LeftFootEuler: {x: 300.5559, y: 358.0178, z: 190.3862}
+      RightFootOffset: {x: -0.13, y: 0.14, z: 0.231}
+      RightFootEuler: {x: 336.53442, y: 345.46573, z: 167.92683}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 1
+      UseShoulders: 1
+      LeftShoulderOffset: {x: -0.34, y: 1.37, z: -0.126}
+      RightShoulderOffset: {x: 0.17, y: 1.37, z: -0.026}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: -0.277, y: -0.03, z: 0.086}
+      RightThighOffset: {x: -0.042, y: -0.03, z: 0.086}
+      ThighWeight: 1
+      UseArmBend: 1
+      LeftElbowOffset: {x: -1.21, y: 7.46, z: -1.414}
+      RightElbowOffset: {x: -0, y: 1.07, z: -0.164}
+      ArmBendWeight: 0.7
+      UseLegBend: 1
+      LeftKneeOffset: {x: 0.088, y: 0.47, z: 0.386}
+      RightKneeOffset: {x: -0.009, y: 0.47, z: 0.386}
+      LegBendWeight: 1
+      UseHands: 1
+      LeftHandOffset: {x: -0, y: 0.49, z: -0.116}
+      LeftHandEuler: {x: -0, y: 0, z: 0}
+      RightHandOffset: {x: -0.22, y: -0.79, z: -0.296}
+      RightHandEuler: {x: -0, y: 0, z: 0}
+      LeftArmMappingWeight: 1
+      RightArmMappingWeight: 1
+      HandWeight: 1
+      HandRotationWeight: 0
+      MaintainHeadRot: 1
+      UseHeadLook: 0
+      HeadLookOffset: {x: 0, y: 1.6, z: 2.8}
+      HeadLookWeight: 0.85
+      ApproachDistance: 0.33
+  - Id: 3
+    IsInPlace: 0
+    IsVertical: 1
+    DisableAnimation: 0
+    PreviewGroundLift: 0
+    MinHeight: 0.35
+    MaxHeight: 0.6
+    MaxNormalAngle: 20
+    MaxFlatnessSpread: 0.06
+    IncludeTriggerSurfaces: 0
+    DefaultPose:
+      Id: 3
+      BodyOffset: {x: 0, y: 0.4, z: -0.04}
+      BodyEulerOffset: {x: -6, y: 12, z: 0}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: 0.1, y: 0.02, z: 0.38}
+      LeftFootEuler: {x: 0, y: 0, z: -99.12}
+      RightFootOffset: {x: 0.18, y: 0.03, z: 0.61}
+      RightFootEuler: {x: -55.04, y: -32.2, z: 211.97}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 1
+      UseShoulders: 1
+      LeftShoulderOffset: {x: -0.15, y: 0.48, z: -0.01}
+      RightShoulderOffset: {x: 0.24, y: 0.676, z: -0.13}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: -0.1, y: -1.35, z: -0.24}
+      RightThighOffset: {x: 0.1, y: 1.2, z: 0.06}
+      ThighWeight: 1
+      UseArmBend: 1
+      LeftElbowOffset: {x: -0.28, y: 0.51, z: -0.15}
+      RightElbowOffset: {x: 0.32, y: 0.5, z: -0.17}
+      ArmBendWeight: 0.6
+      UseLegBend: 1
+      LeftKneeOffset: {x: -3.71, y: 11.98, z: 75.31}
+      RightKneeOffset: {x: 1.2, y: 1.72, z: 3.54}
+      LegBendWeight: 1
+      UseHands: 1
+      LeftHandOffset: {x: -0.04, y: 0.38, z: 0.24}
+      LeftHandEuler: {x: 57.9, y: -65.45, z: -151.4}
+      RightHandOffset: {x: 0.1, y: 0.37, z: 0.24}
+      RightHandEuler: {x: 86.4, y: -75.12, z: 1.72}
+      LeftArmMappingWeight: 1
+      RightArmMappingWeight: 1
+      HandWeight: 1
+      HandRotationWeight: 0.401
+      MaintainHeadRot: 0
+      UseHeadLook: 0
+      HeadLookOffset: {x: 0, y: 1.2, z: -0.1}
+      HeadLookWeight: 0
+      ApproachDistance: 0.27
+  - Id: 1
+    IsInPlace: 1
+    IsVertical: 0
+    DisableAnimation: 0
+    PreviewGroundLift: 0
+    MinHeight: 0
+    MaxHeight: 0
+    MaxNormalAngle: 0
+    MaxFlatnessSpread: 0
+    IncludeTriggerSurfaces: 0
+    DefaultPose:
+      Id: 1
+      BodyOffset: {x: -0.06, y: 0.32, z: -0.271}
+      BodyEulerOffset: {x: -0, y: 0, z: 357.19}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: -0.141, y: 0.056, z: -0.155}
+      LeftFootEuler: {x: 303.92496, y: 298.45193, z: 294.06406}
+      RightFootOffset: {x: -0.011, y: 0.055, z: -0.145}
+      RightFootEuler: {x: 330.42865, y: 296.86362, z: 198.29074}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 0.159
+      UseShoulders: 1
+      LeftShoulderOffset: {x: -0.246, y: 0.595, z: -0.157}
+      RightShoulderOffset: {x: 0.069, y: 0.656, z: -0.138}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: -0.2, y: -0.408, z: -0.057}
+      RightThighOffset: {x: 0.06, y: -0.517, z: 0}
+      ThighWeight: 0.863
+      UseArmBend: 1
+      LeftElbowOffset: {x: -0.64, y: 0, z: 1}
+      RightElbowOffset: {x: 6, y: 0, z: 1}
+      ArmBendWeight: 1
+      UseLegBend: 1
+      LeftKneeOffset: {x: -0.179, y: 0.448, z: 0.049}
+      RightKneeOffset: {x: 0.072, y: 0.387, z: 0}
+      LegBendWeight: 1
+      UseHands: 1
+      LeftHandOffset: {x: -0.131, y: 0.2794, z: 0.202}
+      LeftHandEuler: {x: 63.4, y: 167.90001, z: 135.2}
+      RightHandOffset: {x: -0.012, y: 0.2994, z: 0.201}
+      RightHandEuler: {x: 35.068462, y: 220.86191, z: 205.09079}
+      LeftArmMappingWeight: 1
+      RightArmMappingWeight: 1
+      HandWeight: 1
+      HandRotationWeight: 1
+      MaintainHeadRot: 1
+      UseHeadLook: 0
+      HeadLookOffset: {x: 0, y: 1.42, z: -6.65}
+      HeadLookWeight: 1
+      ApproachDistance: 10
+  - Id: 10
+    IsInPlace: 1
+    IsVertical: 0
+    DisableAnimation: 0
+    PreviewGroundLift: 0
+    MinHeight: -10
+    MaxHeight: 10
+    MaxNormalAngle: 180
+    MaxFlatnessSpread: 0.06
+    IncludeTriggerSurfaces: 0
+    DefaultPose:
+      Id: 10
+      BodyOffset: {x: 0.008, y: 0.421, z: 0.051}
+      BodyEulerOffset: {x: -0, y: 0, z: 0}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: -0.179, y: 0.1, z: 0.016}
+      LeftFootEuler: {x: 321.61, y: 7.4000006, z: 176}
+      RightFootOffset: {x: 0.754, y: 0.046, z: -0.368}
+      RightFootEuler: {x: 313.3, y: 345.66602, z: 227.70001}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 1
+      UseShoulders: 1
+      LeftShoulderOffset: {x: 0.011, y: 0.595, z: 0.457}
+      RightShoulderOffset: {x: 0.104, y: 0.635, z: 0.102}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: -0.1, y: 0, z: 0.05}
+      RightThighOffset: {x: 0.1, y: 0.35, z: -0.14}
+      ThighWeight: 1
+      UseArmBend: 1
+      LeftElbowOffset: {x: -0.3, y: 0.381, z: 0.2}
+      RightElbowOffset: {x: 0.216, y: 0.634, z: -0.245}
+      ArmBendWeight: 0.871
+      UseLegBend: 1
+      LeftKneeOffset: {x: -0.263, y: 0.398, z: 0.634}
+      RightKneeOffset: {x: 0.75, y: 0.616, z: 0.17}
+      LegBendWeight: 0.61
+      UseHands: 1
+      LeftHandOffset: {x: 0.138, y: -0.143, z: 0.51}
+      LeftHandEuler: {x: 77.76505, y: 219.81001, z: 165.16002}
+      RightHandOffset: {x: 0.514, y: 0.678, z: -0.097}
+      RightHandEuler: {x: 70.578, y: 311.297, z: 200.66}
+      LeftArmMappingWeight: 0.6
+      RightArmMappingWeight: 0.6
+      HandWeight: 1
+      HandRotationWeight: 1
+      MaintainHeadRot: 0.618
+      UseHeadLook: 1
+      HeadLookOffset: {x: -11.04, y: 12.14, z: 3}
+      HeadLookWeight: 0.85
+      ApproachDistance: 0
+  - Id: 13
+    IsInPlace: 1
+    IsVertical: 1
+    DisableAnimation: 0
+    PreviewGroundLift: 0
+    MinHeight: -10
+    MaxHeight: 10
+    MaxNormalAngle: 180
+    MaxFlatnessSpread: 0.06
+    IncludeTriggerSurfaces: 0
+    DefaultPose:
+      Id: 13
+      BodyOffset: {x: 0.071, y: 1, z: 0.004}
+      BodyEulerOffset: {x: -0, y: 6.0000005, z: 355}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: -0.31, y: 0, z: 0.14}
+      LeftFootEuler: {x: 308.63995, y: 25.975641, z: 201.18002}
+      RightFootOffset: {x: 0.3, y: 0, z: -0.02}
+      RightFootEuler: {x: 298, y: 341.1, z: 194.29999}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 0.4
+      UseShoulders: 1
+      LeftShoulderOffset: {x: -0.158, y: 1.27, z: -0.014}
+      RightShoulderOffset: {x: 0.281, y: 1.18, z: -0.05}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: -0.024, y: 0.826, z: 0.014}
+      RightThighOffset: {x: 0.211, y: 0.898, z: -0.01}
+      ThighWeight: 0.903
+      UseArmBend: 1
+      LeftElbowOffset: {x: -0.16, y: 1, z: 0.23}
+      RightElbowOffset: {x: 0.06, y: 1, z: 0.06}
+      ArmBendWeight: 0.405
+      UseLegBend: 1
+      LeftKneeOffset: {x: -0.4, y: -27.6, z: 233.04}
+      RightKneeOffset: {x: 0.2, y: 0.5, z: 0.2}
+      LegBendWeight: 0.3
+      UseHands: 1
+      LeftHandOffset: {x: 0.243, y: 1.116, z: 0.176}
+      LeftHandEuler: {x: 321.6, y: 220.62, z: 84.3}
+      RightHandOffset: {x: 0.169, y: 0.966, z: 0.501}
+      RightHandEuler: {x: 22.699993, y: 195.42, z: 196.48}
+      LeftArmMappingWeight: 0.827
+      RightArmMappingWeight: 0.827
+      HandWeight: 0.85
+      HandRotationWeight: 1
+      MaintainHeadRot: 0
+      UseHeadLook: 1
+      HeadLookOffset: {x: -0.33, y: 1.38, z: 0.34}
+      HeadLookWeight: 1
+      ApproachDistance: 0.45
+  - Id: 12
+    IsInPlace: 1
+    IsVertical: 0
+    DisableAnimation: 1
+    PreviewGroundLift: 0
+    MinHeight: -10
+    MaxHeight: 10
+    MaxNormalAngle: 180
+    MaxFlatnessSpread: 0.06
+    IncludeTriggerSurfaces: 0
+    DefaultPose:
+      Id: 12
+      BodyOffset: {x: 0.05, y: 1.01, z: 0}
+      BodyEulerOffset: {x: 0, y: 0, z: 7}
+      BodyWeight: 1
+      UseFeet: 1
+      LeftFootOffset: {x: 0.23, y: 0.025, z: -0.07}
+      LeftFootEuler: {x: -45.3, y: 32.3, z: 177.28}
+      RightFootOffset: {x: -0.14, y: 0.025, z: -0.26}
+      RightFootEuler: {x: -23.2, y: -4.6, z: 177.72}
+      LeftLegMappingWeight: 1
+      RightLegMappingWeight: 1
+      FootWeight: 1
+      FootRotationWeight: 1
+      UseShoulders: 1
+      LeftShoulderOffset: {x: -0.08, y: 1.14, z: 0.037}
+      RightShoulderOffset: {x: 0.21, y: 1.23, z: -0.16}
+      ShoulderWeight: 1
+      UseThighs: 1
+      LeftThighOffset: {x: 0.2, y: 1.71, z: 0.05}
+      RightThighOffset: {x: 0.24, y: 0.03, z: -0.76}
+      ThighWeight: 0.169
+      UseArmBend: 1
+      LeftElbowOffset: {x: -0.63, y: 0.46, z: 0.05}
+      RightElbowOffset: {x: 0.06, y: 0.78, z: -0.67}
+      ArmBendWeight: 1
+      UseLegBend: 1
+      LeftKneeOffset: {x: 1.77, y: -7.56, z: 0.56}
+      RightKneeOffset: {x: 0.08, y: 0.5, z: 0.2}
+      LegBendWeight: 0.494
+      UseHands: 1
+      LeftHandOffset: {x: 0.04, y: 1.39, z: 0.11}
+      LeftHandEuler: {x: 50.2, y: 271.33, z: 95.82}
+      RightHandOffset: {x: 0.26, y: 0.97, z: -0.1}
+      RightHandEuler: {x: 25.57, y: -110.82, z: -111.07}
+      LeftArmMappingWeight: 1
+      RightArmMappingWeight: 1
+      HandWeight: 1
+      HandRotationWeight: 1
+      MaintainHeadRot: 0
+      UseHeadLook: 0
+      HeadLookOffset: {x: -1.22, y: 0.44, z: -1.95}
+      HeadLookWeight: 1
+      ApproachDistance: 0.45

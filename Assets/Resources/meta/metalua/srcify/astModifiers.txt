@@ -1,0 +1,204 @@
+local astModifiers = {}
+
+local function getAttr(node, attr)
+    local attrsIdx = node.tag == 'MethodDef' and 3 or 2
+    for i,p in ipairs(node[attrsIdx]) do
+        if p[1] == attr then
+            return p
+        end
+    end
+end
+
+function astModifiers.meta(classId, staticMembers, instanceMembers)
+    for i,p in ipairs(staticMembers) do
+        if p[1][1] == '.ctor' then
+            local body = p[2][2]
+            body[#body][1] = asth.Call{asth.Id{'setmetatable'}, asth.Id{'self'}, asth.Id{'self'}}
+        end
+    end
+end
+
+function astModifiers.buildable(classId, staticMembers, instanceMembers)
+    
+end
+
+function astModifiers.static(classId, staticMembers, instanceMembers)
+    assert(#instanceMembers == 0)
+    for i,p in ipairs(staticMembers) do
+        if p[1][1] == '.ctor' then
+            table.remove(staticMembers, i)
+            break
+        end
+    end
+end
+
+local function walk(node, enter, exit, depth)
+    depth = depth or 0
+    if type(node) == 'table' then
+        enter(node, depth)
+        for i, p in ipairs(node) do
+            walk(p, enter, exit, depth + 1)
+        end
+        exit(node, depth)
+    end
+end
+
+function astModifiers.precompile(classId, staticFields, staticMethods, instanceFields, instanceMethods)
+    for i, field in ipairs(staticFields) do
+        local default = getAttr(field, 'default')
+        if default and getAttr(field, 'lookup') then
+            local newDefault = {}
+            for _, value in ipairs(default[2][1]) do
+                table.insert(newDefault, asth.Pair{value, asth.True{}})
+            end
+            default[2] = {asth.Table{unpack(newDefault)}}
+        end
+    end
+
+    local cachedClosures = {}
+    local fors = {}
+    local enter = function(node) 
+        if node.tag == 'Op' and node[1] == 'CachedClosure' and node[2][1] == 'self' then
+            if not cachedClosures[node[3][1]] then
+                table.insert(cachedClosures, node[3][1])
+                cachedClosures[node[3][1]] = true
+            end
+        end
+        if node.tag == 'Forin' or node.tag == 'Fornum' then
+            table.insert(fors, node)
+        end
+        if node.tag == 'Continue' then
+            node.tag = 'Goto'
+            node[1] = '__continue__'
+            local lastFor = fors[#fors]
+            if lastFor.tag == 'Forin' then
+                table.insert(lastFor[3], asth.GotoLabel{'__continue__'})
+            else
+                error('not implemented for fornum yet')
+            end
+        end
+    end
+
+    local exit = function(node) 
+        if fors[#fors] == node then
+            table.remove(fors)
+        end
+    end
+    walk(instanceMethods, enter, exit)
+    walk(staticMethods, enter, exit)
+    for i,p in ipairs(cachedClosures) do
+        local capture = asth.Attr{'default', {asth.Function{{asth.Dots{}}, {asth.Return{asth.Call{asth.Index{classId, asth.String{p}}, asth.Id{'self'}, asth.Dots{}}}}}}}
+        table.insert(instanceFields, asth.FieldDef{asth.Id{'__captured__'..p}, asth.AttrList{capture}})
+    end
+end
+
+function astModifiers.json(classId, staticMembers, instanceMembers)
+    local serialize = asth.Function{{asth.Id{'self'}}, {asth.Local{{asth.Id{'json'}}, {asth.String{'{'}}}}}
+    local deserialize = asth.Function{{asth.Id{'json'}}, {asth.Local{{asth.Id{'result'}}, {asth.ConstructorExpr{asth.Id{classId[1]}, {}}}}}}
+    local firstField = true
+    for i,p in ipairs(instanceMembers) do
+        if p[3].tag == 'FieldDef' then
+            local fieldName = p[1][1]
+            local jbool = getAttr(p[3], 'jbool')
+            if not firstField then
+                table.insert(serialize[2], asth.CompoundConcat {{asth.Id{'json'}}, {asth.String{', '}}})
+            end
+            table.insert(serialize[2], asth.CompoundConcat {{asth.Id{'json'}}, {asth.String{'"'..fieldName..'": '}}})
+            if not jbool then 
+                table.insert(serialize[2], asth.CompoundConcat {{asth.Id{'json'}}, {asth.String{'"'}}})
+            end
+            table.insert(serialize[2], asth.CompoundConcat {{asth.Id{'json'}}, {asth.Call{asth.Id{'tostring'}, asth.Index{asth.Id{'self'}, asth.String{fieldName}}}}})
+            if not jbool then 
+                table.insert(serialize[2], asth.CompoundConcat {{asth.Id{'json'}}, {asth.String{'"'}}})
+            end
+            table.insert(deserialize[2], asth.Local{{asth.Id{'_'..fieldName}, asth.Id{'__'..fieldName}, asth.Id{'___'..fieldName}}, {asth.Invoke{asth.Id{'json'}, asth.Id{'find'}, asth.String{'%"'..fieldName..'%"%s-%:%s-%"(.-)%"'}}}})
+            table.insert(deserialize[2], asth.Set{{asth.Index{asth.Id{'result'}, asth.String{fieldName}}}, {asth.Id{'___'..fieldName}}})
+            firstField = false
+        end
+    end
+    table.insert(serialize[2], asth.CompoundConcat {{asth.Id{'json'}}, {asth.String{'}'}}})
+    table.insert(serialize[2], asth.Return{asth.Id{'json'}})
+    table.insert(deserialize[2], asth.Return{asth.Id{'result'}})
+    walk(staticMembers, function(node) 
+        if node.tag == 'Set' and node[1][1].tag == 'Id' and node[1][1][1] == 'self' then 
+            table.insert(node[2][1], asth.Pair{asth.String{'serialize'}, asth.Index{classId, asth.String{'serialize'}}})
+        end 
+    end, function() end)
+    table.insert(staticMembers, asth.Pair{asth.String{'serialize'}, serialize})
+    table.insert(staticMembers, asth.Pair{asth.String{'deserialize'}, deserialize})
+end
+
+function astModifiers.compile(classId, staticMembers, instanceMembers)
+    if 1 then return end
+    local staticMethods = {}
+    local staticFields = {}
+    for i,p in ipairs(staticMembers) do
+        if p[3].tag == 'MethodDef' then
+            assert(not staticMethods[p[1][1]], "Class " .. classId[1] .. ', duplicate `' .. p[1][1] .. '`')
+            local sanitized = p[2]
+            local attrs = {}
+            while sanitized.tag == 'Call' do
+                table.insert(attrs, sanitized[1]) -- attributes without args for now
+                sanitized = sanitized[2]
+            end
+            staticMethods[p[1][1]] = {sanitized, attrs}
+        elseif p[3].tag == 'FieldDef' then
+            assert(not staticFields[p[1][1]])
+            staticFields[p[1][1]] = p[2]
+        end
+    end
+    for k,v in pairs(staticMethods) do
+        local func = v[1]
+        local attributes = v[2]
+        local locals = {'ipairs', 'pairs', 'unpack', 'Async', 'assert', 'print', 'table', 'io'}
+        local function hasLocal(loc)
+            for i, p in ipairs(locals) do
+                if p == loc then
+                    return true
+                end
+            end
+        end
+        local function pushLocal(loc)
+            table.insert(locals, 1, loc)
+        end
+
+        local function popLocal(loc)
+            for i, p in ipairs(locals) do
+                if p == loc then
+                    table.remove(locals, i)
+                    return true
+                end
+            end
+        end
+        for i,p in ipairs(func[1]) do
+            pushLocal(p[1])
+        end
+        walk(func[2], function(node, depth) 
+            if node.tag == 'Forin' then
+                for i,p in ipairs(node[1]) do
+                    pushLocal(p[1])
+                end
+            end
+            if node.tag == 'Fornum' then
+                pushLocal(node[1][1])
+            end
+            if node.tag == 'Id' then
+                --assert(hasLocal(node[1]), 'Undefined variable:'..node[1])
+            end
+            if node.tag == 'Local' then
+                pushLocal(node[1][1][1])
+            end
+        end, function(node) 
+            if node.tag == 'Forin' or node.tag == 'Fornum' then
+                for i,p in ipairs(node[1]) do
+                    popLocal(p[1])
+                end
+            end
+            if node.tag == 'Fornum' then
+                popLocal(node[1][1])
+            end
+        end)
+    end
+end
+
+return astModifiers

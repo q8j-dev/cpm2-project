@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f085d208cd4538d8679f8d21cf60a27, type: 3}
+  m_Name: AnimationDataConfig
+  m_EditorClassIdentifier:
+  idleDelayRange: {x: 0.5, y: 1}
+  crossFadeDuration: 0.2
+  idleStateName: idle1
+  actions:
+  - StateName: listen
+    Duration: 10.000001
+  - StateName: talk1
+    Duration: 10.000001
+  - StateName: claphands
+    Duration: 4
+  - StateName: cheer
+    Duration: 9.166667
+  startAsActionChance: 0.75
+  cullingMode: 2

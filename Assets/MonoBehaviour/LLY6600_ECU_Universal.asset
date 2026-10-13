@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: LLY6600_ECU_Universal
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: LLY6600 ECU Universal
+  Description: ECU.Description.Universal
+  _partValA: 5058909515689574749
+  _partValB: -5668262346147742306
+  _partValC: 6330602793119614997
+  _partValD: -5621280477115890110
+  TypeId: 21
+  ModelId: 20021000
+  NoticeAboutPart: Good model id
+  Mass: 5.67
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 20fb9e9e9cec0ba7
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: -6126120056603358310
+  _partSourceRef: 200
+  FuelMap:
+  - RPM: 500
+    pressure: 9
+    Time: 2
+    Fuel: 1.8
+  - RPM: 1000
+    pressure: 9
+    Time: 1
+    Fuel: 2.255
+  - RPM: 1500
+    pressure: 9
+    Time: 1
+    Fuel: 2.193
+  - RPM: 2000
+    pressure: 9
+    Time: 1
+    Fuel: 1.61
+  - RPM: 2500
+    pressure: 9
+    Time: 1
+    Fuel: 1.266
+  - RPM: 3000
+    pressure: 9
+    Time: 1
+    Fuel: 1.038
+  - RPM: 3500
+    pressure: 9
+    Time: 1
+    Fuel: 0.75
+  - RPM: 4000
+    pressure: 9
+    Time: 1
+    Fuel: 0.303
+  - RPM: 4500
+    pressure: 9
+    Time: 1
+    Fuel: 0.182
+  - RPM: 5000
+    pressure: 9
+    Time: 1
+    Fuel: 0.1
+  - RPM: 5500
+    pressure: 9
+    Time: 0
+    Fuel: 0
+  - RPM: 6000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1068639727
+    hiddenValue: 2074448111
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 650
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1493014816
+    hiddenValue: 479849248
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 600
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 2044585296
+    hiddenValue: 1038456144
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1966144939
+    hiddenValue: 821917867
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 3200
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1704511717
+    hiddenValue: 543692005
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 4500
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

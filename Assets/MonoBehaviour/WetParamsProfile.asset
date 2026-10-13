@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecbcf23c2cf9c639571f0207078749f, type: 3}
+  m_Name: WetParamsProfile
+  m_EditorClassIdentifier:
+  GeneralWetnessScale: 1
+  PuddleExp: 0.69
+  PuddleFill: 0
+  PuddleEdgeSoftness: 0.15
+  PuddleDarkExtra: 0.157
+  PuddleNormalFlatten: 0.852
+  PuddleWetStart: 0
+  PuddleWetPower: 0.25
+  NormalBoostMax: 1
+  NormalBoostEarlyK: 0.5
+  SmoothFilmMul: 0.462
+  SmoothPuddleMul: 0.228
+  CoatMaskScale: 1
+  CoatSmoothness: 1
+  CoatFilmMul: 0
+  CoatPuddleMul: 1.211
+  PuddleSlopeStartDeg: 0
+  PuddleSlopeEndDeg: 19.1
+  PuddleSlopePow: 8
+  DryZoneFeather: {x: 8, y: 2, z: 8}
+  DryZoneEdgeGamma: 4
+  DryZoneEdgeWobble: 1.2
+  DryZoneWobbleFreq: 0.5
+  revision: 39468

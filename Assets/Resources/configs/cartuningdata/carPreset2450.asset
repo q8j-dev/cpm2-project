@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afbff089233a7f2a2a02564f7d8cca5a, type: 3}
+  m_Name: carPreset2450
+  m_EditorClassIdentifier:
+  Id:
+    currentCryptoKey: 1595522951
+    hiddenValue: 1595520625
+    inited: 1
+    fakeValue: 2550
+    fakeValueActive: 1
+  Style:
+    currentCryptoKey: 1190752613
+    hiddenValue: 1190752613
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 1
+  EngineDefaultConfig: {fileID: 11400000, guid: 3c837fb1bec56a5418c63d90a6237e9b, type: 2}
+  GearBox: {fileID: 0}
+  FrontDifferential: {fileID: 11400000, guid: b04500969fab00d4a876bce53805ecc6, type: 2}
+  RearDifferential: {fileID: 11400000, guid: e902138ee9b33e0469b6b661c68c6422, type: 2}
+  Parts: []
+  FrontWheelData:
+    BrakesData:
+      Diameter: 355
+      DiscType: 5
+      Pistons: 4
+      PistonDiameter: 36
+      CaliperMeshIndex: 3
+    Pressure: 2.4
+    tyreType: 0
+    RimModelId: 116
+    wheelSize: 18
+    tyreWidth: 225
+    tyreProfile: 40
+    rimWidth: 80
+    SpacerWidth: 90
+    Color1:
+      Color: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 0
+      SpringLength: 5.5
+      SpringRate: 5.5
+      Bump: 2000
+      Rebound: 7000
+      AntiSwayBarForce: 10000
+      Camber: -2.5
+      ToeIn: 0
+      Caster: 6.45
+      Ackerman: 40
+      MaxSteerAngle: 36
+  RearWheelData:
+    BrakesData:
+      Diameter: 300
+      DiscType: 5
+      Pistons: 2
+      PistonDiameter: 32
+      CaliperMeshIndex: 3
+    Pressure: 2.6
+    tyreType: 0
+    RimModelId: 116
+    wheelSize: 18
+    tyreWidth: 225
+    tyreProfile: 40
+    rimWidth: 80
+    SpacerWidth: 110
+    Color1:
+      Color: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 3
+      SpringLength: 5.5
+      SpringRate: 8
+      Bump: 2500
+      Rebound: 8000
+      AntiSwayBarForce: 5000
+      Camber: -2.5
+      ToeIn: 0.15
+  CarInfoMain:
+    CarID: 245
+    InstalledBodyKits:
+      FrontBumperId: 0
+      RearBumperId: 0
+      SpoilerId: 0
+      SkirtId: 0
+      FenderId: 0
+      HoodId: 0
+      HoodAirIntakeId: 0
+      RoofAirIntakeId: 0
+      Trims:
+      InteriorId: 0
+    Colors:
+      CarColor:
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      DirtColor: {r: 0, g: 0, b: 0, a: 0}
+      DirtAmount: 0
+      WindowColor:
+        R: 0
+        G: 0
+        B: 0
+        A: 0
+      WindowSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+      DiodColor: {r: 1, g: 1, b: 1, a: 1}
+      SmokeColor: {r: 1, g: 1, b: 1, a: 1}
+      BodyKits: {}
+    AdditionalData:
+      FlagId: 0
+      AccessoryId: 0
+      IsPolice: 0
+      WheelText:
+      WheelTextFont: 0
+      WheelTextFontStyle: 0
+      WheelTextColor: {r: 0, g: 0, b: 0, a: 0}
+      Fso:
+        ModelIndex: 0
+        PositionIndex: 0
+        LeftColor: {r: 0, g: 0, b: 0, a: 0}
+        RightColor: {r: 0, g: 0, b: 0, a: 0}
+      Police:
+        Bought: 0
+        Installed: 0
+        InstalledBodyKits:
+          TopLight: -1
+          Roobar: -1
+          FrontInterior: -1
+          RearInterior: -1
+          Skirt: -1
+        SirenSound:
+          InstalledIndex: 0
+      AirSuspension:
+        Bought: 0
+        Installed: 0

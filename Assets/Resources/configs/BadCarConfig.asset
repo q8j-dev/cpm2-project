@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc75cf498b174284eb8ed65582a89d4, type: 3}
+  m_Name: BadCarConfig
+  m_EditorClassIdentifier:
+  Color: {r: 1, g: 0.31, b: 0.8862745, a: 1}
+  CarMaterial: {fileID: 2100000, guid: c6a45878ba2c6894dbbf13e15d3c5582, type: 2}
+  MainModelPosition: {x: 0, y: -0.32, z: 0.21}
+  PlacesCount: 4
+  MainTPR:
+    LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: 0, y: 0, z: 0}
+    LHandRot: {x: 0, y: 0, z: 0}
+    RHandPosition: {x: 0, y: 0, z: 0}
+    RHandRot: {x: 0, y: 0, z: 0}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: 0, y: 0, z: 0}
+    RUpperArmPosition: {x: 0, y: 0, z: 0}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: 0, y: 0, z: 0}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: 0, y: 0, z: 0}
+    LFootRot: {x: 0, y: 0, z: 0}
+    RFootPosition: {x: 0, y: 0, z: 0}
+    RFootRot: {x: 0, y: 0, z: 0}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: 0, y: 0, z: 0}
+    RBendGoalPosition: {x: 0, y: 0, z: 0}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: 0, y: 0, z: 0}
+    RLegBendGoalPosition: {x: 0, y: 0, z: 0}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0, y: 0, z: 0}
+    ShifterRot: {x: 0, y: 0, z: 0}
+    ParentPosion: {x: 0, y: 0, z: 0}
+    ParentRot: {x: 0, y: 0, z: 0}
+  AllTargets:
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.123811424, y: 0.88850045, z: 0.38626885}
+    LHandRot: {x: 27.340364, y: 84.58769, z: 75.74882}
+    RHandPosition: {x: 0.2483, y: 0.8458, z: 0.3701}
+    RHandRot: {x: 16.23144, y: 284.5799, z: 284.52567}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.9435819, z: -0.005202342}
+    RUpperArmPosition: {x: 0.20201015, y: 0.9435819, z: -0.0052023428}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: -0.00010211393, y: 0.6229727, z: 0.122421876}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.1598, y: 0.4134, z: 0.7459}
+    LFootRot: {x: 298.56293, y: 182.44357, z: 350.00067}
+    RFootPosition: {x: 0.1381, y: 0.3951, z: 0.7828}
+    RFootRot: {x: 312.53928, y: 178.84944, z: 352.94727}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.26196384, y: 0.79500693, z: 0.15507597}
+    RBendGoalPosition: {x: 0.307, y: 0.581, z: 0.155}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.2717, y: 0.7091, z: 0.6725}
+    RLegBendGoalPosition: {x: 0.3341, y: 0.6497, z: 0.6725}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.3622, y: 0.6843, z: 0.6394}
+    ShifterRot: {x: 67.661, y: 56.815, z: 30.486}
+    ParentPosion: {x: -0.3918, y: -0.5003, z: 0}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.2065, y: 0.7755, z: 0.3859}
+    LHandRot: {x: 79.53649, y: 233.23036, z: 201.89842}
+    RHandPosition: {x: 0.201819, y: 0.7211998, z: 0.34065008}
+    RHandRot: {x: 81.89211, y: 215.38687, z: 253.14043}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.9435819, z: -0.005202342}
+    RUpperArmPosition: {x: 0.20201015, y: 0.9435819, z: -0.0052023428}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: -0.00010211393, y: 0.6229727, z: 0.122421876}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.15283504, y: 0.3433997, z: 0.73465157}
+    LFootRot: {x: 298.76004, y: 174.23448, z: 4.1418896}
+    RFootPosition: {x: 0.1449, y: 0.3366, z: 0.7657}
+    RFootRot: {x: 312.53928, y: 178.84944, z: 352.94727}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.204, y: 0.7883, z: 0.1551}
+    RBendGoalPosition: {x: 0.2468, y: 0.5813, z: 0.1551}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.2717, y: 0.7091, z: 0.6725}
+    RLegBendGoalPosition: {x: 0.3341, y: 0.6497, z: 0.6725}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.4678793, y: 0.6477351, z: 0.6073465}
+    ShifterRot: {x: 0.28650594, y: 286.25574, z: -8.441791E-05}
+    ParentPosion: {x: 0.3933, y: -0.5003, z: 0}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.2126225, y: 0.7276, z: 0.38221383}
+    LHandRot: {x: 87.003235, y: 281.23166, z: 242.60638}
+    RHandPosition: {x: 0.201819, y: 0.7211998, z: 0.34065008}
+    RHandRot: {x: 81.89211, y: 215.38687, z: 253.14043}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.9435819, z: -0.005202342}
+    RUpperArmPosition: {x: 0.20201015, y: 0.9435819, z: -0.0052023428}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: -0.00010211393, y: 0.6229727, z: 0.122421876}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.0294, y: 0.3156, z: 0.6983}
+    LFootRot: {x: 278.28442, y: 11.684764, z: 166.04169}
+    RFootPosition: {x: 0.1538, y: 0.3134, z: 0.7031}
+    RFootRot: {x: 282.65125, y: 331.85956, z: 202.27086}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.204, y: 0.7883, z: 0.1551}
+    RBendGoalPosition: {x: 0.2468, y: 0.5813, z: 0.1551}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.2717, y: 0.7091, z: 0.6725}
+    RLegBendGoalPosition: {x: 0.3341, y: 0.6497, z: 0.6725}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.4678793, y: 0.6477351, z: 0.6073465}
+    ShifterRot: {x: 0.28624272, y: 286.2572, z: 0.00051445846}
+    ParentPosion: {x: -0.4162, y: -0.4595, z: -0.8434}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.2126225, y: 0.7276, z: 0.38221383}
+    LHandRot: {x: 87.003235, y: 281.23166, z: 242.60638}
+    RHandPosition: {x: 0.201819, y: 0.7211998, z: 0.34065008}
+    RHandRot: {x: 81.89211, y: 215.38687, z: 253.14043}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.9435819, z: -0.005202342}
+    RUpperArmPosition: {x: 0.20201015, y: 0.9435819, z: -0.0052023428}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: -0.00010211393, y: 0.6229727, z: 0.122421876}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.0294, y: 0.3156, z: 0.6983}
+    LFootRot: {x: 278.28442, y: 11.684764, z: 166.04169}
+    RFootPosition: {x: 0.1538, y: 0.3134, z: 0.7031}
+    RFootRot: {x: 282.65125, y: 331.85956, z: 202.27086}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.204, y: 0.7883, z: 0.1551}
+    RBendGoalPosition: {x: 0.2468, y: 0.5813, z: 0.1551}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.2717, y: 0.7091, z: 0.6725}
+    RLegBendGoalPosition: {x: 0.3341, y: 0.6497, z: 0.6725}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.4678793, y: 0.6477351, z: 0.6073465}
+    ShifterRot: {x: 0.28635713, y: 286.23755, z: 0.0006680195}
+    ParentPosion: {x: 0.3638, y: -0.4595, z: -0.8434}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.1858, y: 0.967, z: 0.3788}
+    LHandRot: {x: 20.000013, y: 103, z: 73.00001}
+    RHandPosition: {x: 0.2803, y: 0.9523, z: 0.3846}
+    RHandRot: {x: 22.000006, y: 265, z: 296.99997}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.94400007, z: 0.023850393}
+    RUpperArmPosition: {x: 0.202, y: 0.944, z: 0.024}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: -4.887581E-06, y: 0.6229727, z: 0.122558594}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.092, y: 0.464, z: 0.852}
+    LFootRot: {x: 309.54593, y: 188.25336, z: 21.133223}
+    RFootPosition: {x: 0.11, y: 0.45, z: 0.877}
+    RFootRot: {x: 321.31915, y: 184.24536, z: 350.1253}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.238, y: 0.849, z: 0.227}
+    RBendGoalPosition: {x: 0.217, y: 0.774, z: -0.001}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.1753, y: 0.7547, z: 0.5226}
+    RLegBendGoalPosition: {x: 0.2232, y: 0.726, z: 0.534}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.3784, y: 0.7975, z: 0.471}
+    ShifterRot: {x: 80.56174, y: 1.6270076E-07, z: 1.6299953E-07}
+    ParentPosion: {x: -0.38, y: -0.569, z: 0}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.157, y: 0.8049, z: 0.379}
+    LHandRot: {x: 58.99152, y: 112.12086, z: 79.06253}
+    RHandPosition: {x: 0.075, y: 0.7711, z: 0.385}
+    RHandRot: {x: 38.613674, y: 256.88934, z: 292.59695}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.94400007, z: -0.010085154}
+    RUpperArmPosition: {x: 0.202, y: 0.944, z: -0.01}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: -4.887581E-06, y: 0.6229727, z: 0.122558594}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.1506, y: 0.464, z: 0.852}
+    LFootRot: {x: 304.80878, y: 165.57953, z: 19.089218}
+    RFootPosition: {x: -0.0102, y: 0.45, z: 0.877}
+    RFootRot: {x: 322.4519, y: 161.56451, z: 354.93637}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.21, y: 0.78, z: 0.227}
+    RBendGoalPosition: {x: 0.228, y: 0.774, z: 0.095}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.222, y: 0.755, z: 0.523}
+    RLegBendGoalPosition: {x: 0.114, y: 0.762, z: 0.534}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.3784, y: 0.7975, z: 0.471}
+    ShifterRot: {x: 80.56174, y: 1.6270076E-07, z: 1.6299953E-07}
+    ParentPosion: {x: 0.423, y: -0.569, z: 0}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.157, y: 0.877, z: 0.379}
+    LHandRot: {x: 61.395252, y: 70.975395, z: 48.490677}
+    RHandPosition: {x: 0.1628, y: 0.843, z: 0.385}
+    RHandRot: {x: 38.613674, y: 256.88934, z: 292.59695}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.94400007, z: -0.010085154}
+    RUpperArmPosition: {x: 0.202, y: 0.944, z: -0.01}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: 0, y: 0.623, z: 0.15}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.103, y: 0.464, z: 0.701}
+    LFootRot: {x: 287.45966, y: 14.062948, z: 174.04099}
+    RFootPosition: {x: 0.022, y: 0.468, z: 0.714}
+    RFootRot: {x: 291.3126, y: 347.04623, z: 173.17473}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.21, y: 0.78, z: 0.227}
+    RBendGoalPosition: {x: 0.228, y: 0.774, z: 0.095}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.222, y: 0.805, z: 0.483}
+    RLegBendGoalPosition: {x: 0.217, y: 0.779, z: 0.534}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.3784, y: 0.7975, z: 0.471}
+    ShifterRot: {x: 80.56174, y: 1.6270076E-07, z: 1.6299953E-07}
+    ParentPosion: {x: -0.373, y: -0.569, z: -0.829}
+    ParentRot: {x: 0, y: 0, z: 0}
+  - LHand: {fileID: 0}
+    RHand: {fileID: 0}
+    LHandPosition: {x: -0.2011, y: 0.8731, z: 0.3589}
+    LHandRot: {x: 61.395252, y: 70.975395, z: 48.490677}
+    RHandPosition: {x: 0.1849, y: 0.8713, z: 0.4003}
+    RHandRot: {x: 69.026054, y: 323.77612, z: 346.7099}
+    LUpperArm: {fileID: 0}
+    RUpperArm: {fileID: 0}
+    LUpperArmPosition: {x: -0.20200825, y: 0.94400007, z: -0.010085154}
+    RUpperArmPosition: {x: 0.202, y: 0.944, z: -0.01}
+    mainBody: {fileID: 0}
+    mainBodyPosition: {x: 0, y: 0.623, z: 0.15}
+    LFoot: {fileID: 0}
+    RFoot: {fileID: 0}
+    LFootPosition: {x: -0.103, y: 0.464, z: 0.701}
+    LFootRot: {x: 287.45966, y: 14.062948, z: 174.04099}
+    RFootPosition: {x: 0.101, y: 0.468, z: 0.714}
+    RFootRot: {x: 291.3126, y: 347.04623, z: 173.17473}
+    LBendGoal: {fileID: 0}
+    RBendGoal: {fileID: 0}
+    LBendGoalPosition: {x: -0.21, y: 0.78, z: 0.227}
+    RBendGoalPosition: {x: 0.228, y: 0.774, z: 0.095}
+    LLegBendGoal: {fileID: 0}
+    RLegBendGoal: {fileID: 0}
+    LLegBendGoalPosition: {x: -0.222, y: 0.805, z: 0.483}
+    RLegBendGoalPosition: {x: 0.217, y: 0.779, z: 0.534}
+    Head: {fileID: 0}
+    HeadPosition: {x: 0, y: 0, z: 0}
+    HeadRotationEuler: {x: 0, y: 0, z: 0}
+    Shifter: {fileID: 0}
+    ShifterPos: {x: 0.3784, y: 0.7975, z: 0.471}
+    ShifterRot: {x: 80.56174, y: 1.6270076E-07, z: 1.6299953E-07}
+    ParentPosion: {x: 0.387, y: -0.569, z: -0.829}
+    ParentRot: {x: 0, y: 0, z: 0}
+  Wheels:
+  - LocalPosition: {x: -0.68, y: 0.01, z: 1.38}
+    TopPos: {x: -0.68, y: 0.01, z: 1.38}
+  - LocalPosition: {x: 0.68, y: 0.01, z: 1.38}
+    TopPos: {x: 0.68, y: 0.01, z: 1.38}
+  - LocalPosition: {x: -0.68, y: 0.01, z: -1.16}
+    TopPos: {x: -0.68, y: 0.01, z: -1.16}
+  - LocalPosition: {x: 0.68, y: 0.01, z: -1.16}
+    TopPos: {x: 0.68, y: 0.01, z: -1.16}

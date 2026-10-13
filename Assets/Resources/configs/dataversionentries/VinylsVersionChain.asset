@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5991cebbfbeb8d0a7f60b448707d9c9, type: 3}
+  m_Name: VinylsVersionChain
+  m_EditorClassIdentifier:
+  id: vinyls
+  path: cars
+  entries:
+  - saveableType: Legacy.Database.VynilOneCar, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    migratorToType:
+    version: 0001
+  - saveableType: CPM.Database.VynilOneCar, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    migratorToType: _Car_Parking.Scripts.DataEntities.Migrators.VynilOneCarPrefsToEasySaveMigrator, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    version: 0002

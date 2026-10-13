@@ -1,0 +1,376 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -349573080, guid: c4497fe1cd352472b1311792dfe7edc3, type: 3}
+  m_Name: SFX_Main
+  m_EditorClassIdentifier:
+  m_dataPerPlatformList:
+  - WwisePlatform: Windows
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 53f94ea70d3c48343a656b9fcc7ed8e2
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 082d96511609d9748a65a76ab84a2a14
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 12438719
+        - m_AssetGUID: 75776799fab63d645ad42832fa65dc41
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172278878
+        - m_AssetGUID: 9509e725b09b05a4dbf367756f0b76ce
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172580004
+        - m_AssetGUID: e3fd96f038f5f4745b74506aefc06307
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356808811
+        - m_AssetGUID: 907d6e68bbfe66a4fa18ee82762c22cc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 451315399
+        - m_AssetGUID: b9f835c32e7c3d848a20c5ecb5aac42b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 536917270
+        - m_AssetGUID: c77c3d4f496b9254ab964adedfb50cc6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554173595
+        - m_AssetGUID: aefd6db04cb30b54f875c6bf77e159a1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 578876539
+        - m_AssetGUID: cfe65b8ea42b802409cc13863535f9ed
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 614806172
+        - m_AssetGUID: 3d96f1aa5fcf85f43bc49b26966b45c0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 841922805
+        - m_AssetGUID: 462eaf157a7816f46b7fd878d373ebea
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 851567756
+        - m_AssetGUID: c3bdf211480904240a6f08ff92eb6953
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 881906742
+  - WwisePlatform: Linux
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: e8292d9f1a842414a8ce34a160366e3a
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 53c9e63ef28049444843476877acc404
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 12438719
+        - m_AssetGUID: 6d10397694a231243a87e57988cba3d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172278878
+        - m_AssetGUID: 5bc3caf08f5fcf140a443149d624a51a
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172580004
+        - m_AssetGUID: 60f969fcf1075d4449346a18cd4c1f95
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356808811
+        - m_AssetGUID: 21a3ba3e1b81410469d7cfa84f285e41
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 451315399
+        - m_AssetGUID: 16c3cc7cfb7824e4fa448ad046a089bf
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 536917270
+        - m_AssetGUID: 88230002fc7b5ae4580e8bb21df49096
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554173595
+        - m_AssetGUID: 5ea2d072d20bd7f4198870ee81e63d9e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 578876539
+        - m_AssetGUID: 6eddcfcd7ed1e8245ac554f677788c23
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 614806172
+        - m_AssetGUID: f182417318f9c4546a6682bdcca51efc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 841922805
+        - m_AssetGUID: 0c2a2b85d70646e4f9d7246fad9c7032
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 851567756
+        - m_AssetGUID: 6c947c89d58c15a42a34ad7efe99c347
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 881906742
+  - WwisePlatform: Mac
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 077090e9047d0984ba22ccf962564a2c
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: e1598db2341722a46bf929e0c6950251
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 12438719
+        - m_AssetGUID: 370e22e80caac944293f1966f8b91a1c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172278878
+        - m_AssetGUID: 058ac07c586ea794b88b50f3f86f3319
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172580004
+        - m_AssetGUID: f9e02f06354c36a4cb3c021db6297d95
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356808811
+        - m_AssetGUID: 7368e2393cae5b342b30ec702137cece
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 451315399
+        - m_AssetGUID: 6fb03472155bdeb4e87785b83c18e6d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 536917270
+        - m_AssetGUID: 054cae51da9fbba47a4179c5680fd5e1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554173595
+        - m_AssetGUID: a36573f2784c4694980b6583e1e30130
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 578876539
+        - m_AssetGUID: 219bd3bbdc6f83b4fab032178449b539
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 614806172
+        - m_AssetGUID: af7e36098afc40c4fa20d7659f4eb0fd
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 841922805
+        - m_AssetGUID: f1af8e7f4efa6e74a855f47192f52f99
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 851567756
+        - m_AssetGUID: b85140e44f9814e42bec9a35acb5aad1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 881906742
+  - WwisePlatform: iOS
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 282c821c3a0f15149b3cc7ba095c3e87
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 90c7d81ee0691e340b5e562ead4675a0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 12438719
+        - m_AssetGUID: 6dcef22a1b0085542956f85d4ff57900
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172278878
+        - m_AssetGUID: 1ca1d729efb982841acec4c7afd5ded0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172580004
+        - m_AssetGUID: 1545d37717d08a6449cba45f7f80216d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356808811
+        - m_AssetGUID: 450675f792c249242a65f4198dd4b5c5
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 451315399
+        - m_AssetGUID: 1bdbc6c2b36fb1a478113285ed0a95b4
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 536917270
+        - m_AssetGUID: 5ba8213d47953d041adc48c095837323
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554173595
+        - m_AssetGUID: 3751c9c1d7ed3f54ba09d37d28afae6c
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 578876539
+        - m_AssetGUID: aa092d33bcbb2f843800b32a1b175bd9
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 614806172
+        - m_AssetGUID: ff0d82314fab3ed49a0de0898e18bdab
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 841922805
+        - m_AssetGUID: da6e7b5a8f06416439f098676011fd17
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 851567756
+        - m_AssetGUID: 06edadaa6df92c84796b77d5813c8b26
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 881906742
+  - WwisePlatform: Android
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 8df7b3cbc4c71e54fa303888399481de
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: c9f099c55c80e36499a6103843350b7b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 12438719
+        - m_AssetGUID: 93dfe2be75c2f1a4283916d810c38b0e
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172278878
+        - m_AssetGUID: 68bfe10ebf6b5c94db2eaafd32d8561d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172580004
+        - m_AssetGUID: 0608d66ba43e771459d97b462afc9fec
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356808811
+        - m_AssetGUID: 19a6c6529fbe65f44b04df5987712231
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 451315399
+        - m_AssetGUID: a98f8c6e07797a74aa978661a0a8a6e6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 536917270
+        - m_AssetGUID: 4a692467d743b08418e132586c4de5d8
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554173595
+        - m_AssetGUID: 8bd9409f7b6d0214db00e97701c151b6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 578876539
+        - m_AssetGUID: 9e867a34517b8f44fa8d277c829ea315
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 614806172
+        - m_AssetGUID: 3abebe5ebf12eb84892ab825d23ec065
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 841922805
+        - m_AssetGUID: 503ba40a5be1f9a4ea0e754e2b15425d
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 851567756
+        - m_AssetGUID: dc1f58358f810014e9fed94a7cb91770
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 881906742
+  currentPlatformAssets:
+    WwisePlatform: Windows
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 53f94ea70d3c48343a656b9fcc7ed8e2
+      m_SubObjectName:
+      m_SubObjectType:
+    LocalizedStreamingMediaKeys:
+    - SFX
+    LocalizedStreamingMediaValues:
+      localizedMediaList:
+      - media:
+        - m_AssetGUID: 082d96511609d9748a65a76ab84a2a14
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 12438719
+        - m_AssetGUID: 75776799fab63d645ad42832fa65dc41
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172278878
+        - m_AssetGUID: 9509e725b09b05a4dbf367756f0b76ce
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 172580004
+        - m_AssetGUID: e3fd96f038f5f4745b74506aefc06307
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 356808811
+        - m_AssetGUID: 907d6e68bbfe66a4fa18ee82762c22cc
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 451315399
+        - m_AssetGUID: b9f835c32e7c3d848a20c5ecb5aac42b
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 536917270
+        - m_AssetGUID: c77c3d4f496b9254ab964adedfb50cc6
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 554173595
+        - m_AssetGUID: aefd6db04cb30b54f875c6bf77e159a1
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 578876539
+        - m_AssetGUID: cfe65b8ea42b802409cc13863535f9ed
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 614806172
+        - m_AssetGUID: 3d96f1aa5fcf85f43bc49b26966b45c0
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 841922805
+        - m_AssetGUID: 462eaf157a7816f46b7fd878d373ebea
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 851567756
+        - m_AssetGUID: c3bdf211480904240a6f08ff92eb6953
+          m_SubObjectName:
+          m_SubObjectType:
+          id: 881906742

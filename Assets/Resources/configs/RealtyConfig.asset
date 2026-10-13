@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a370203997097b0230b11c494752024c, type: 3}
+  m_Name: RealtyConfig
+  m_EditorClassIdentifier:
+  RealtyData:
+  - MainImage: {fileID: 21300000, guid: 8fa8235659fb584448cc446ad162f89e, type: 2}
+    Icon: {fileID: 21300000, guid: 7aeae8da37844ef45b9e09803e91400b, type: 2}
+    RealtyNameKey: RealtyWindow.Homes
+    RealtyWindowName: SelectApartmentWindow
+  - MainImage: {fileID: 21300000, guid: 3fbf6829439dd854ea92d62b3325547e, type: 2}
+    Icon: {fileID: 21300000, guid: c4ff9494d775cf04ab2b3dcfacf178ee, type: 2}
+    RealtyNameKey: Garagewindow.Garages
+    RealtyWindowName: GarageSelectWindow

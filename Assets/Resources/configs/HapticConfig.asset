@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e34c0ee87c8d942af768e66b8477f6e2, type: 3}
+  m_Name: HapticConfig
+  m_EditorClassIdentifier:
+  UiNavigate:
+    Strength: 0.05
+    Seconds: 0.02
+    HighFreqRatio: 0.3
+    FadeSeconds: 0.3
+    ModulationHz: 0
+  GearChange:
+    Strength: 0.05
+    Seconds: 0.02
+    HighFreqRatio: 0.4
+    FadeSeconds: 0.3
+    ModulationHz: 0
+  CircularHover:
+    Strength: 0.05
+    Seconds: 0.02
+    HighFreqRatio: 0.3
+    FadeSeconds: 0.3
+    ModulationHz: 0
+  Collision:
+    Strength: 0.45
+    Seconds: 0.06
+    HighFreqRatio: 0.5
+    FadeSeconds: 0.08
+    ModulationHz: 0
+  CollisionMinImpactKmh: 8
+  CollisionFullImpactKmh: 45
+  CollisionCooldownSeconds: 0.15
+  EngineStartDelaySeconds: 0.5
+  EngineCrankMaxSeconds: 5
+  EngineCrankPulses: 7
+  EngineCrankStrength: 0.15
+  EngineCrankPulseSeconds: 0.05
+  EngineCrankInterval: 0.1
+  EngineCrankHighFreqRatio: 1
+  EngineCrankModulationHz: 8
+  EngineFireStrength: 0.5
+  EngineFireSeconds: 0.85
+  EngineFireHighFreqRatio: 0.15
+  EngineFireFadeSeconds: 0.15
+  EngineFireModulationHz: 8
+  BrakeMinSpeedKmh: 5
+  BrakeHoldMinCeiling: 0.25
+  BrakeHoldRampSeconds: 2
+  BrakeHoldReleaseSeconds: 0.15
+  BrakeModulationHz: 0
+  BrakeLevel: 0.18
+  HandbrakeLevel: 0.6
+  HandbrakeMinSpeedKmh: 8

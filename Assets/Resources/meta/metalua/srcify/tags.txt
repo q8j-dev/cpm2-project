@@ -1,0 +1,570 @@
+local tags = {}
+local astModifiers = require "metalua.srcify.astModifiers"
+function tags:Class(cls)
+    local classId = cls[1]
+    local members = cls[2]
+    local classAttributes = cls[3]
+    local primaryCtor = cls[4]
+    local inheritance = cls[5]
+    local staticFields = {}
+    local instanceFields = {}
+    local staticMethods = {}
+    local instanceMethods = {}
+
+    local function getAttr(node, attr)
+        local attrsIdx = node.tag == 'MethodDef' and 3 or 2
+        for i,p in ipairs(node[attrsIdx]) do
+            if p[1] == attr then
+                return p
+            end
+        end
+    end
+
+    if primaryCtor then
+        local args = {}
+        for i, p in ipairs(primaryCtor[1]) do
+            table.insert(instanceFields, p)
+            table.insert(args, p[1])
+        end
+        table.insert(members, asth.MethodDef{asth.Id{classId[1]}, asth.Function{args,{}}, asth.AttrList{asth.Attr{'static'}}})
+    end
+
+    local ctor = nil
+    for i,p in ipairs(members) do
+        if p.tag == 'MethodDef' then
+            if p[1][1] == classId[1] then
+                p[1][1] = '.ctor'
+                ctor = p
+                table.insert(p[3], asth.Attr{'static'})
+            end
+
+            if getAttr(p, 'static') then
+                table.insert(staticMethods, p)
+            else
+                table.insert(instanceMethods, p)
+            end
+        elseif p.tag == 'FieldDef' then
+            if getAttr(p, 'static') then
+                table.insert(staticFields, p)
+            else
+                table.insert(instanceFields, p)
+            end
+        end
+    end
+    if not ctor then
+        ctor = asth.MethodDef{asth.Id{'.ctor'}, asth.Function{{},{}}, asth.AttrList{asth.Attr{'static'}}}
+        table.insert(staticMethods, ctor)
+    end
+
+    astModifiers.precompile(classId, staticFields, staticMethods, instanceFields, instanceMethods)
+
+    local staticMembers = {}
+    for i,p in ipairs(staticFields) do
+        if getAttr(p, 'default') then
+            local default = getAttr(p, 'default')
+            table.insert(staticMembers, asth.Pair{asth.String{p[1][1]}, default[2][1], p})
+        end
+    end
+    for i,p in ipairs(staticMethods) do
+        local method = p[2]
+        for _, attr in ipairs(p[3]) do
+            if attr[1] ~= 'static' then
+                method = asth.Call{asth.Id{attr[1]}, method, unpack(attr[2] or {})}
+            end
+        end
+        table.insert(staticMembers, asth.Pair{asth.String{p[1][1]}, method, p})
+    end
+    
+    local instanceMembers = {}
+    local ctorArgs = {}
+    for i,p in ipairs(ctor[2][1]) do
+        ctorArgs[p[1]] = true
+    end
+    for i,p in ipairs(instanceFields) do
+        local pair = asth.Pair{asth.String{p[1][1]}, nil, p}
+        local fieldName = p[1][1]
+        if getAttr(p, 'default') then
+            local default = getAttr(p, 'default')
+            if ctorArgs[fieldName] then
+                pair[2] = asth.Op{'or', asth.Id{fieldName}, default[2][1]}
+            else
+                pair[2] = default[2][1]
+            end
+        else
+            if ctorArgs[fieldName] then
+                pair[2] = asth.Id{fieldName}
+            else
+                pair = nil
+            end
+        end
+        if pair then 
+            table.insert(instanceMembers, pair)
+        end
+    end
+    for i,p in ipairs(instanceMethods) do
+        local method = p[2]
+        table.insert(method[1], 1, asth.Id{'self'})
+        for _, attr in ipairs(p[3]) do
+            method = asth.Call{asth.Id{attr[1]}, method, unpack(attr[2] or {})}
+        end
+        table.insert(instanceMembers, asth.Pair{asth.String{p[1][1]}, asth.Index{classId, asth.String{p[1][1]}}})
+        table.insert(staticMembers, asth.Pair{asth.String{p[1][1]}, method, p})
+    end
+    table.insert(ctor[2][2], 1, asth.Local{{asth.Id{'self'}}, {}})
+    table.insert(ctor[2][2], 2, asth.Set{{asth.Id{'self'}}, {asth.Table{unpack(instanceMembers)}}})
+    table.insert(ctor[2][2], asth.Return{asth.Id{'self'}})
+
+    for i,p in ipairs(classAttributes) do
+        assert(astModifiers[p[1]], 'Missing AST modifier: '..p[1])
+        astModifiers[p[1]](classId, staticMembers, instanceMembers)
+    end
+
+    astModifiers.compile(classId, staticMembers, instanceMembers)
+
+    -- local reflectClassTable = asth.Table{}
+    -- table.insert(reflectClassTable, asth.Pair{asth.String{'impl'}, asth.Table{unpack(staticMembers)}})
+    -- table.insert(reflectClassTable, asth.Pair{asth.String{'name'}, asth.String{classId[1]}})
+    -- self:format(asth.AddToList{{asth.Id{'classesToReflect'}}, {reflectClassTable}})
+
+    self:format(asth.Set{{classId}, {asth.Table{unpack(staticMembers)}}})
+end
+
+function tags:Id(id)
+    if id[2] then
+        return self:format(asth.Invoke{asth.Id{id[1]}, asth.Id{'MakeGeneric'}, asth.MethodArg{id[2]}})
+    end
+    self:emit(id[1], 'id')
+end
+
+function tags:Set(set)
+    self:format(asth.List{set[1]})
+    self:space()
+    self:emit('=', 'set')
+    self:space()
+    self:format(asth.List{set[2]})
+end
+
+function tags:Table(t)
+    self:curly(function() 
+        if #t > 1 then
+            self:format(asth.IndentedBlock{t, function() 
+                self:emit(',', 'sep') 
+                self:newline()
+            end})
+        else
+            self:format(asth.List{t})
+        end
+    end)
+end
+local luaKeywords = {
+        ["and"] = true, 
+        ["async"] = true, 
+        ["break"] = true, ["do"] = true, ["else"] = true, ["elseif"] = true,
+        ["end"] = true, ["false"] = true, ["for"] = true, ["function"] = true,
+        ["goto"] = true, 
+        ["if"] = true,
+        ["in"] = true, 
+        ["local"] = true,
+        ["var"] = true,
+        ["nil"] = true, ["not"] = true, ["or"] = true, ["repeat"] = true,
+        ["return"] = true, 
+        ["static"] = true, 
+        
+        ["then"] = true, ["true"] = true, ["until"] = true, ["while"] = true,
+        ["..."] = true, [".."] = true, ["=="] = true, [">="] = true, ["<="] = true, ["~="] = true,
+        ["::"] = true 
+    }
+function tags:Pair(pair)
+    if pair[1].tag == 'String' and (pair[1][1]:match("^%w") or pair[1][1]:match("^_")) and not pair[1][1]:match('%-') and not luaKeywords[pair[1][1]] then
+        self:format(asth.Id{pair[1][1]})
+    else
+        self:square(function() self:format(pair[1]) end)
+    end
+    self:space()
+    self:emit("=", 'set')
+    self:space()
+    self:format(pair[2])
+end
+
+function tags:Localrec(localrec)
+    self:keyword('local')
+    self:space()
+    self:keyword('function')
+    self:space()
+    self:format(localrec[1][1])
+    self:format(localrec[2][1], localrec)
+end
+
+function tags:String(s)
+    local quote1 = s.xtra and s.xtra[1] or "'"
+    local quote2 = s.xtra and s.xtra[2] or "'"
+    self:emit(quote1, 'quote')
+    local toEmit = s[1]
+    if quote1 ~= '[[' then
+        toEmit = toEmit:gsub('\n', '\\n')
+        toEmit = toEmit:gsub('\t', '\\t')
+        toEmit = toEmit:gsub('\\', '\\\\')
+        toEmit = toEmit:gsub(quote1, '\\'..quote1)
+    end
+    self:emit(toEmit, 'string')
+    self:emit(quote2, 'quote')
+end
+
+function tags:Number(s)
+    self:emit(tostring(s[1]), 'number')
+end
+
+function tags:Function(fun, parentNode)
+    if not (parentNode and parentNode.tag == 'Localrec') then
+        self:keyword('function')
+        self:space()
+    end 
+    self:round(function() self:format(asth.List{fun[1]}) end)
+    self:format(asth.IndentedBlock{fun[2]})
+    self:keyword('end')
+end
+function tags:Index(index) 
+    self:format(index[1])
+    if index[2].tag == 'Id' and index[2][2] then
+        self:emit('.', 'dot')
+        self:format(index[2])
+        return
+    end
+    if index[2].tag =='String' and index[2][1]:match("^%w") then
+        self:emit('.', 'dot')
+        self:emit(index[2][1], 'index')
+    else
+        self:square(function() self:format(index[2]) end)
+    end
+end
+
+function tags:ConstructorExpr(constructor)
+    self:format(asth.Call{asth.Index{constructor[1], asth.String{".ctor"}}, unpack(constructor[2])})
+end
+
+function tags:Attribute(a)
+    self:format(asth.Set{
+        {a[1]},
+        {a[2]}
+    })
+end;
+function tags:Return(ret)
+    self:keyword('return')
+    if #ret > 0 then
+        self:space()
+        self:format(asth.List{ret})
+    end
+end;
+
+local ops = {
+        ['add'] = '+',
+        ['sub'] = '-',
+        ['mul'] = '*',
+        ['div'] = '/',
+        ['mod'] = '%',
+        ['pow'] = '^',
+        ['concat'] = '..',
+        ['eq'] = '==',
+        ['ne'] = '~=',
+        ['lt'] = '<',
+        ['le'] = '<=',
+        ['gt'] = '>',
+        ['ge'] = '>=',
+        ['and'] = 'and',
+        ['or'] = 'or',
+        ['not'] = 'not ',
+        ['len'] = '#',
+        ['unm'] = '-',
+        ['Is'] = '*',
+        ['Contains'] = '*',
+        ['Pipe'] = function(self, op)
+            local forin = asth.Forin{
+                {asth.Id{'_i_'}, asth.Id{'_p_'}}, 
+                {asth.Call{asth.Id{'ipairs'}, op[2]}}, 
+                {
+                    
+                }
+            }
+            self:format(asth.Call{asth.Paren{asth.Function{{}, {
+                forin
+            }}}}) 
+        end,
+        ['Walrus'] = '*',
+        ['CachedClosure'] = function(self, op) 
+            self:format(asth.Index{op[2], asth.String{'__captured__'..op[3][1]}})
+        end
+    }
+function tags:Op(op)
+    local operation = ops[op[1]]
+    assert(operation, op[1])
+    if type(operation) == 'function' then
+        return operation(self, op)
+    end
+    if op[3] then
+        self:format(op[2])
+        self:space()
+        self:emit(operation, 'op')
+        self:space()
+        self:format(op[3]) 
+    else
+        self:emit(operation, 'op')
+        self:format(op[2])
+    end
+end;
+function tags:Nil() self:emit('nil', '_nil') end
+function tags:True() self:emit('true', 'bool') end
+function tags:False() self:emit('false', 'bool') end
+function tags:Dots() self:emit('...', 'dots') end
+function tags:Call(c)
+    self:format(c[1])
+    self:round(function() self:format(asth.CallArgsList{c, 2}) end)
+end
+function tags:Invoke(c)
+    if c[2][2] then
+        return self:format(asth.Call{asth.Index{c[1], c[2]}, c[1], unpack(c[3][1])})
+    end
+    self:format(c[1])
+    self:emit(":", 'colon')
+    self:emit(c[2][1], 'method')
+    self:format(c[3])
+end
+function tags:AwaitStmt(c)
+    self:format(asth.Call{asth.Id{'__AwaitImpl'}, c[1]})
+end
+function tags:AwaitExpr(c)
+    self:format(asth.Call{asth.Id{'__AwaitImpl'}, c[1]})
+end
+function tags:AsyncFunction(c)
+    self:format(asth.Call{asth.Id{'Async'}, c[1]})
+end
+function tags:MethodArg(m)
+    self:round(function() self:format(asth.List{m[1]}) end)
+end
+function tags:TableMethodArg(m)
+    self:format(asth.Table{unpack(m[1])})
+end
+function tags:StringMethodArg(m)
+    self:format(m[1])
+end
+function tags:Paren(p)
+    self:round(function() self:format(p[1]) end)
+end
+function tags:If(ifStmt)
+    for i = 1, #ifStmt do
+        if i % 2 == 1 then
+            if i == #ifStmt then
+                self:keyword('else')
+                self:format(asth.IndentedBlock{ifStmt[i]})
+            else
+                if i == 1 then
+                    self:keyword('if')
+                else
+                    self:keyword('elseif')
+                end
+                self:space()
+                self:format(ifStmt[i])
+                self:space()
+                self:keyword('then')
+            end
+        else
+            self:format(asth.IndentedBlock{ifStmt[i]})
+        end
+    end
+    self:keyword('end')
+end
+function tags:NilCoalescingSet(m)
+    self:format(m[1][1])
+    self:space()
+    self:emit('=', 'set')
+    self:space()
+    self:format(m[1][1])
+    self:space()
+    self:emit('or', 'op')
+    self:space()
+    self:format(m[2][1])
+end
+function tags:Local(c)
+    self:keyword("local")
+    self:space()
+    self:format(asth.List{c[1]})
+    if c[2] and #c[2] > 0 then
+        self:space()
+        self:emit('=', 'set')
+        self:space()
+        self:format(asth.List{c[2]})
+    end
+end
+function tags:AddToList(atl)
+    self:format(asth.Call{asth.Index{asth.Id{'table'}, asth.String{'insert'}}, atl[1][1], atl[2][1]})
+end
+function tags:Forin(forin)
+    self:keyword('for')
+    self:space()
+    self:format(asth.List{forin[1]})
+    self:space()
+    self:keyword('in')
+    self:space()
+    self:format(asth.List{forin[2]})
+    self:space()
+    self:keyword('do')
+    self:format(asth.IndentedBlock{forin[3]})
+    self:keyword("end")
+end
+function tags:Do(doBlock)
+    self:keyword("do")
+    self:format(asth.IndentedBlock{doBlock})
+    self:keyword("end")
+end
+function tags:Fornum(fornum)
+    self:keyword('for')
+    self:space()
+    self:format(fornum[1])
+    self:space()
+    self:emit('=', 'set')
+    self:space()
+    self:format(asth.List{fornum, 2, #fornum - 1})
+    self:space()
+    self:keyword('do')
+    self:format(asth.IndentedBlock{fornum[#fornum]})
+    self:keyword("end")
+end
+function tags:Lambda(lambda)
+    self:format(asth.Function{lambda[1], {asth.Return{lambda[2]}}})
+end
+
+function tags:VoidLambda(lambda)
+    self:format(asth.Function{lambda[1], {lambda[2]}})
+end
+
+function tags:CallInfixFunction(cif)
+    self:format(asth.Call{cif[2][1], cif[1], cif[3]})
+end
+function tags:RemoveFromList(rfl)
+    local p = asth.Id{'_p_'}
+    local i = asth.Id{'_i_'}
+    self:format(asth.Forin{{i, p}, {asth.Call{asth.Id{'ipairs'}, rfl[1][1]}}, {asth.If{asth.Op{'eq', p, rfl[2][1]}, {
+        asth.Call{asth.Index{asth.Id{'table'}, asth.String{'remove'}}, rfl[1][1], i},
+        asth.Break{}}}}})
+end
+function tags:Break() 
+    self:keyword('break')
+end
+function tags:BreakGuard(g) 
+    self:format(asth.If{asth.Op{'not', asth.Paren{g[1]}}, {asth.Break{}}})
+end;
+function tags:CompoundAdd(compound) 
+    self:format(asth.Set{{compound[1][1]}, {asth.Op{'add', compound[1][1], compound[2][1]}}})
+end
+function tags:CompoundMul(compound) 
+    self:format(asth.Set{{compound[1][1]}, {asth.Op{'mul', compound[1][1], compound[2][1]}}})
+end
+function tags:CompoundDiv(compound) 
+    self:format(asth.Set{{compound[1][1]}, {asth.Op{'div', compound[1][1], compound[2][1]}}})
+end
+function tags:CompoundSub(compound) 
+    self:format(asth.Set{{compound[1][1]}, {asth.Op{'sub', compound[1][1], compound[2][1]}}})
+end
+
+function tags:While(wh) 
+    self:keyword('while')
+    self:space()
+    self:format(wh[1]) 
+    self:space()
+    self:keyword('do')
+    self:format(asth.IndentedBlock{wh[2]})
+    self:keyword('end')
+end
+
+-- local usingCount = 0
+function tags:Using(using)
+    local id = using[1]
+    local expr = using[2]
+    local str = ""
+    for i,p in ipairs(expr) do
+        str = str .. p[1]
+        if i ~= #expr then
+            str = str .. expr.__separators[i][1]
+        end
+    end
+    return self:format(asth.Set{{id}, {asth.Call{asth.Id{'RefineType'}, asth.String{str}}}})
+--     local expr = using[1]
+--     local inExpr = using[2]
+--     local block = using[3]
+--     usingCount = usingCount + 1
+--     if inExpr then
+--         self:format(asth.Block{
+--             {asth.AddToList{{inExpr}, {expr}},
+--             asth.Block{block},
+--             asth.RemoveFromList{{inExpr}, {expr}}}
+--         })
+--     else
+--         local id = asth.Id{'using_' .. tostring(usingCount)}
+--         self:format(asth.Block{
+--             {asth.Local{{id}, {expr}},
+--             asth.Invoke{id, asth.String{'enter'}, asth.MethodArg{{}}},
+--             asth.Block{block},
+--             asth.Invoke{id, asth.String{'exit'}, asth.MethodArg{{}}}}
+--         })
+--     end
+end
+
+
+function tags:Match(match)
+    local cases = {}
+    for i,case in ipairs(match[3]) do
+        if case[1][1][1][1] == '_' then
+            table.insert(cases, case[3])
+        else
+            table.insert(cases, asth.Op{'eq', case[1][1][1], match[1][1]})
+            table.insert(cases, case[3])
+        end
+    end
+    self:format(asth.If{unpack(cases)})
+end
+
+function tags:Block(block)
+    self:block(block[1])
+end
+
+function tags:List(list)
+    self:list(list[1], list[2], list[3])
+end
+function tags:CallArgsList(list)
+    self:list(list[1], list[2], list[3])
+end
+function tags:IndentedBlock(block)
+    self:indentedBlock(block[1], block[2])
+end
+
+function tags:Guard(g)
+    self:format(asth.If{asth.Op{'not', asth.Paren{g[1]}}, {asth.Return{}}})
+end
+
+function tags:Repeat(wh) 
+    self:keyword('repeat')
+    self:format(asth.IndentedBlock{wh[1]}) 
+    self:keyword('until')
+    self:space()
+    self:format(wh[2], wh)
+end
+
+function tags:Continue(c, parentNode)
+
+end
+
+function tags:Goto(gt)
+    self:keyword('goto')
+    self:space()
+    self:emit(gt[1], 'gotoLabel')
+end
+function tags:GotoLabel(gt)
+    self:keyword('::')
+    self:emit(gt[1], 'gotoLabel')
+    self:keyword('::')
+end
+
+function tags:EmptyArgs()
+    error('Do not use properties as instance methods; use dot instead')
+end
+
+return tags

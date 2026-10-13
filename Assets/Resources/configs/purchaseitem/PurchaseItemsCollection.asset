@@ -1,0 +1,1055 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0e6c7089c69bf96f8a587a2434ac38, type: 3}
+  m_Name: PurchaseItemsCollection
+  m_EditorClassIdentifier:
+  purchaseItems:
+  - purchaseItemType: 0
+    PurchaseId: garage1
+    BundleIdSuffix: garage2.unlock
+    AnalyticsProductId: garage_2_unlock
+    Price:
+      currentCryptoKey: 1125315323
+      hiddenValue: 1125315543
+      inited: 1
+      fakeValue: 300
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 5
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 1
+    SteamItem: {fileID: 11400000, guid: dc142aac36833d844a281495a9f47234, type: 2}
+  - purchaseItemType: 74
+    PurchaseId: garage2.unlock
+    BundleIdSuffix: unlockgarage2
+    AnalyticsProductId: unlock_garage_1
+    Price:
+      currentCryptoKey: 1774265643
+      hiddenValue: 1774265642
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 6
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 1
+    SteamItem: {fileID: 11400000, guid: dc142aac36833d844a281495a9f47234, type: 2}
+  - purchaseItemType: 1
+    PurchaseId: garageSlot
+    BundleIdSuffix:
+    AnalyticsProductId:
+    Price:
+      currentCryptoKey: 1378042748
+      hiddenValue: 1378042648
+      inited: 1
+      fakeValue: 100
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 0
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 2
+    PurchaseId: suspension
+    BundleIdSuffix:
+    AnalyticsProductId:
+    Price:
+      currentCryptoKey: 1728911899
+      hiddenValue: 1728911859
+      inited: 1
+      fakeValue: 1000
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 0
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 3
+    PurchaseId: car.25
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b229_1
+    Price:
+      currentCryptoKey: 1086638294
+      hiddenValue: 1086638295
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: b37cfa128f40aae4092ca3294f5172e8, type: 2}
+  - purchaseItemType: 4
+    PurchaseId: car.15
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b230_1
+    Price:
+      currentCryptoKey: 1924723706
+      hiddenValue: 1924723707
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: f005fd598f9415a41a31c5b224d0bbe8, type: 2}
+  - purchaseItemType: 5
+    PurchaseId: car.18
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b233_1
+    Price:
+      currentCryptoKey: 1457062125
+      hiddenValue: 1457062124
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: a3bbb24dcae229c42b045e02d47f2100, type: 2}
+  - purchaseItemType: 6
+    PurchaseId: car.25.165
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b165_1
+    Price:
+      currentCryptoKey: 1545612883
+      hiddenValue: 1545612882
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 2ff9581ef0c48dd4e90aeb303637d92f, type: 2}
+  - purchaseItemType: 7
+    PurchaseId: car.20
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b238_1
+    Price:
+      currentCryptoKey: 1330717238
+      hiddenValue: 1330717239
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 4034821da5e4efb488d3f7d727375d63, type: 2}
+  - purchaseItemType: 8
+    PurchaseId: car.20.241
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b241_1
+    Price:
+      currentCryptoKey: 1564104815
+      hiddenValue: 1564104814
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: df32551cc4ddc6d48be873f252a96853, type: 2}
+  - purchaseItemType: 9
+    PurchaseId: car.15.243
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b243_1
+    Price:
+      currentCryptoKey: 1355231115
+      hiddenValue: 1355231114
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 4f4b4b9de0addb74eb63637ee1b82016, type: 2}
+  - purchaseItemType: 10
+    PurchaseId: car.8.245
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b245_1
+    Price:
+      currentCryptoKey: 1138363054
+      hiddenValue: 1138363055
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: e6fc4159dd714e14e9725155cbdc3428, type: 2}
+  - purchaseItemType: 11
+    PurchaseId: car.4.255
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b255_1
+    Price:
+      currentCryptoKey: 1404974561
+      hiddenValue: 1404974560
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 9a8019edfc9333e45a6ff57b3f3d88a4, type: 2}
+  - purchaseItemType: 12
+    PurchaseId: car.15.257
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b257_1
+    Price:
+      currentCryptoKey: 1943114721
+      hiddenValue: 1943114720
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 51bdad915faa69347b91c9f6b71c2006, type: 2}
+  - purchaseItemType: 50
+    PurchaseId: 200kmoney
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.money.5
+    Price:
+      currentCryptoKey: 1465069837
+      hiddenValue: 1465069836
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 2
+      Amount:
+        currentCryptoKey: 1909434015
+        hiddenValue: 1909238751
+        inited: 1
+        fakeValue: 200000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 8f35c6eb68642dd4d9c32315edeecc94, type: 2}
+  - purchaseItemType: 51
+    PurchaseId: 500kmoney
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.money.7
+    Price:
+      currentCryptoKey: 1127548573
+      hiddenValue: 1127548572
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 2
+      Amount:
+        currentCryptoKey: 1273283827
+        hiddenValue: 1273193939
+        inited: 1
+        fakeValue: 500000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 7cd3c20d55970c6419a49d675debbb8d, type: 2}
+  - purchaseItemType: 52
+    PurchaseId: 1000kmoney
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.money.10
+    Price:
+      currentCryptoKey: 1814956605
+      hiddenValue: 1814956604
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 2
+      Amount:
+        currentCryptoKey: 1387851892
+        hiddenValue: 1387770420
+        inited: 1
+        fakeValue: 1000000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 28246a091ccde4f4b92e666d64001c84, type: 2}
+  - purchaseItemType: 53
+    PurchaseId: 5000kmoney
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.money.45
+    Price:
+      currentCryptoKey: 2029423933
+      hiddenValue: 2029423932
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 2
+      Amount:
+        currentCryptoKey: 1541394549
+        hiddenValue: 1536400181
+        inited: 1
+        fakeValue: 5000000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: db22088e3b625cd45adbc8097765b5a8, type: 2}
+  - purchaseItemType: 54
+    PurchaseId: 1coin
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.coin.2
+    Price:
+      currentCryptoKey: 1466456322
+      hiddenValue: 1466456323
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 2044739750
+        hiddenValue: 2044739778
+        inited: 1
+        fakeValue: 100
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: fd915032abdbdde4d9271828750fb990, type: 2}
+  - purchaseItemType: 55
+    PurchaseId: 2coin
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.coin.3
+    Price:
+      currentCryptoKey: 1034483071
+      hiddenValue: 1034483070
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 2018145321
+        hiddenValue: 2018145541
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 89cede6f1f0c56c478f0ff70497e1393, type: 2}
+  - purchaseItemType: 56
+    PurchaseId: 3coin
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.coin.5
+    Price:
+      currentCryptoKey: 1996135973
+      hiddenValue: 1996135972
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1639473715
+        hiddenValue: 1639473627
+        inited: 1
+        fakeValue: 1000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: ba423e8b0b0a01b43a5304880bac554a, type: 2}
+  - purchaseItemType: 57
+    PurchaseId: 4coin
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.coin.20
+    Price:
+      currentCryptoKey: 1202174400
+      hiddenValue: 1202174401
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1153897977
+        hiddenValue: 1153894001
+        inited: 1
+        fakeValue: 5000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 167590beb1a563e43bc0ec8c0b047497, type: 2}
+  - purchaseItemType: 58
+    PurchaseId: 5coin
+    BundleIdSuffix:
+    AnalyticsProductId: com.olzhas.carparking.multyplayer2.coin.35
+    Price:
+      currentCryptoKey: 2140577738
+      hiddenValue: 2140577739
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1762404731
+        hiddenValue: 1762397803
+        inited: 1
+        fakeValue: 10000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: f026174cfa488bc42b53627d9122baee, type: 2}
+  - purchaseItemType: 59
+    PurchaseId: 1coin.fp
+    BundleIdSuffix:
+    AnalyticsProductId: coins_first_purchase_1
+    Price:
+      currentCryptoKey: 1632347885
+      hiddenValue: 1632347884
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1238965347
+        hiddenValue: 1238965255
+        inited: 1
+        fakeValue: 100
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 5b7000369193caf4cac44ec1400fd22a, type: 2}
+  - purchaseItemType: 60
+    PurchaseId: 2coin.fp
+    BundleIdSuffix:
+    AnalyticsProductId: coins_first_purchase_2
+    Price:
+      currentCryptoKey: 1372794634
+      hiddenValue: 1372794635
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1906484912
+        hiddenValue: 1906485148
+        inited: 1
+        fakeValue: 300
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: ecff74f1fb8023049a41bc8c8ae568f5, type: 2}
+  - purchaseItemType: 61
+    PurchaseId: 3coin.fp
+    BundleIdSuffix:
+    AnalyticsProductId: coins_first_purchase_3
+    Price:
+      currentCryptoKey: 1785316158
+      hiddenValue: 1785316159
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1702497554
+        hiddenValue: 1702498042
+        inited: 1
+        fakeValue: 1000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 8fcb7eedef3d3564f9ce641a47b4252b, type: 2}
+  - purchaseItemType: 62
+    PurchaseId: 4coin.fp
+    BundleIdSuffix:
+    AnalyticsProductId: coins_first_purchase_4
+    Price:
+      currentCryptoKey: 1228366564
+      hiddenValue: 1228366565
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1562942448
+        hiddenValue: 1562937464
+        inited: 1
+        fakeValue: 5000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 05158ab88abdedf488f4d0b623bbe1b7, type: 2}
+  - purchaseItemType: 63
+    PurchaseId: 5coin.fp
+    BundleIdSuffix:
+    AnalyticsProductId: coins_first_purchase_5
+    Price:
+      currentCryptoKey: 2035778049
+      hiddenValue: 2035778048
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 1
+      Amount:
+        currentCryptoKey: 1312448936
+        hiddenValue: 1312442040
+        inited: 1
+        fakeValue: 10000
+        fakeValueActive: 1
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 38297e74f9aab9a4e87aef7bb5c5f9b0, type: 2}
+  - purchaseItemType: 71
+    PurchaseId: offer.conversion.6
+    BundleIdSuffix:
+    AnalyticsProductId: offer_conversion_1
+    Price:
+      currentCryptoKey: 1893588947
+      hiddenValue: 1893588946
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 72
+    PurchaseId: offer.conversion.4
+    BundleIdSuffix:
+    AnalyticsProductId: offer_conversion_2
+    Price:
+      currentCryptoKey: 1494171838
+      hiddenValue: 1494171839
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 73
+    PurchaseId: offer.conversion.5
+    BundleIdSuffix:
+    AnalyticsProductId: offer_conversion_3
+    Price:
+      currentCryptoKey: 1703606390
+      hiddenValue: 1703606391
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 2070121581
+        hiddenValue: 2070121581
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 64
+    PurchaseId: car.229.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b229_1
+    Price:
+      currentCryptoKey: 1044523386
+      hiddenValue: 1044523387
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 65
+    PurchaseId: car.230.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b230_1
+    Price:
+      currentCryptoKey: 1199138884
+      hiddenValue: 1199138885
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 66
+    PurchaseId: car.233.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b233_1
+    Price:
+      currentCryptoKey: 1312122597
+      hiddenValue: 1312122596
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 67
+    PurchaseId: car.238.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b238_1
+    Price:
+      currentCryptoKey: 1027334057
+      hiddenValue: 1027334056
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 68
+    PurchaseId: car.165.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b165_1
+    Price:
+      currentCryptoKey: 1348607778
+      hiddenValue: 1348607779
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 69
+    PurchaseId: car.241.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b241_1
+    Price:
+      currentCryptoKey: 1850829542
+      hiddenValue: 1850829543
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 70
+    PurchaseId: car.243.lto
+    BundleIdSuffix:
+    AnalyticsProductId: car_lto_purchase_b243_1
+    Price:
+      currentCryptoKey: 1241720537
+      hiddenValue: 1241720536
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 13
+    PurchaseId: car.7.259
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b259_1
+    Price:
+      currentCryptoKey: 1631241531
+      hiddenValue: 1631241530
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 1301178168
+        hiddenValue: 1301178168
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 598529c81c9416b4dbea26788c14ab7c, type: 2}
+  - purchaseItemType: 79
+    PurchaseId: car.18.266
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b266_1
+    Price:
+      currentCryptoKey: 1578396517
+      hiddenValue: 1578396516
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 2cfd834005f5c1c4e9fd51b29e14af9e, type: 2}
+  - purchaseItemType: 80
+    PurchaseId: car.8.262
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b262_1
+    Price:
+      currentCryptoKey: 1203655522
+      hiddenValue: 1203655523
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 8551eee56c2d222489fd4b98cf7d0ce2, type: 2}
+  - purchaseItemType: 81
+    PurchaseId: car.25.263
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b263_1
+    Price:
+      currentCryptoKey: 1586781625
+      hiddenValue: 1586781624
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: 5bbd5339ea5367e4186223d5906cbef1, type: 2}
+  - purchaseItemType: 75
+    PurchaseId: bundle.style.mafia
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_style_mafia
+    Price:
+      currentCryptoKey: 1051323326
+      hiddenValue: 1051323316
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1754262628
+        hiddenValue: 1754262628
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 76
+    PurchaseId: bundle.style.gladiator
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_style_gladiator
+    Price:
+      currentCryptoKey: 1349698278
+      hiddenValue: 1349698284
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1691623602
+        hiddenValue: 1691623602
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 77
+    PurchaseId: bundle.style.legionary
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_style_legionary
+    Price:
+      currentCryptoKey: 1366672662
+      hiddenValue: 1366672668
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1791811864
+        hiddenValue: 1791811864
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 78
+    PurchaseId: bundle.style.citizenrome
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_style_citizenrome
+    Price:
+      currentCryptoKey: 1844230608
+      hiddenValue: 1844230618
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1567997203
+        hiddenValue: 1567997203
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 82
+    PurchaseId: bundle.anim.urbanstances
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_anim_urbanstances
+    Price:
+      currentCryptoKey: 1740238612
+      hiddenValue: 1740238613
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1419082568
+        hiddenValue: 1419082568
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 83
+    PurchaseId: bundle.anim.viralmoves
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_anim_viralmoves
+    Price:
+      currentCryptoKey: 1637254200
+      hiddenValue: 1637254201
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1502398761
+        hiddenValue: 1502398761
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 84
+    PurchaseId: bundle.style.rodeo
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_style_rodeo
+    Price:
+      currentCryptoKey: 1861426336
+      hiddenValue: 1861426346
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1154930257
+        hiddenValue: 1154930257
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 85
+    PurchaseId: bundle.style.frontier
+    BundleIdSuffix:
+    AnalyticsProductId: bundle_style_frontier
+    Price:
+      currentCryptoKey: 1788241765
+      hiddenValue: 1788241775
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 4
+      Amount:
+        currentCryptoKey: 1502783882
+        hiddenValue: 1502783882
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 0}
+  - purchaseItemType: 86
+    PurchaseId: car.10.274
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b274_1
+    Price:
+      currentCryptoKey: 1647893216
+      hiddenValue: 1647893217
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: e25af145465a81b4d9f7806f0cb11aec, type: 2}
+  - purchaseItemType: 87
+    PurchaseId: car.8.276
+    BundleIdSuffix:
+    AnalyticsProductId: car_purchase_b276_1
+    Price:
+      currentCryptoKey: 1723456788
+      hiddenValue: 1723456789
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    RealPurchaseData:
+      Type: 3
+      Amount:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      GarageIndex: 0
+    SteamItem: {fileID: 11400000, guid: ef64cf13a4210f14c808eaf53850966d, type: 2}

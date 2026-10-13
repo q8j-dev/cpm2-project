@@ -1,0 +1,6588 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 330670497, guid: a7c8ed169960a6d09f38393641221f85, type: 3}
+  m_Name: GameInputController
+  m_EditorClassIdentifier:
+  m_ActionMaps:
+  - m_Name: UI
+    m_Id: 06d14b4c-0300-4f2f-afed-8bf9cbc8a31d
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Navigate
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: dfefe9e8-cab0-4b8e-a532-5278234dcf41
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: goBack
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 4d66fccc-dfc2-4e7f-9daa-6386157136f8
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 299b59cd-04f6-4a61-8df3-f35c4da273b5
+      m_Path: '<Gamepad>/dpad'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Gamepad;Default
+      m_Action: Navigate
+      m_Flags: 0
+    - m_Name: Keyboard
+      m_Id: b9f18c8b-014c-42ae-a504-8309360d6f9e
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Navigate
+      m_Flags: 4
+    - m_Name: up
+      m_Id: ce3dd64a-50a6-4577-90c4-c5253a802f64
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 385b1a2d-c0f2-441a-be7d-2dbdfc57b61e
+      m_Path: '<Keyboard>/downArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: left
+      m_Id: ae90fb95-2879-4e63-931a-d94e75814b83
+      m_Path: '<Keyboard>/leftArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 98de27c0-6471-4476-a596-2ba66d871322
+      m_Path: '<Keyboard>/rightArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: Moza
+      m_Id: 83fe84f4-ea01-41e1-9a70-6f1334c46518
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Navigate
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 50a3d381-96f9-4f01-86db-069729f6b6b0
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button5'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 3981b667-6588-424e-9f45-4fe31d84ac54
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button7'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: left
+      m_Id: bab50911-a4cc-472b-a211-a22863d53204
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button8'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: right
+      m_Id: ebbc7b54-1514-4507-8708-89b8a22182eb
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: G25
+      m_Id: d3716c25-6a58-43e6-ac5e-69425fe9d406
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Navigate
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 35cb4530-9a48-4700-9099-c4a7949a364a
+      m_Path: '<HID::G25 Racing Wheel>/hat/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 11636a99-98e6-415e-8df7-498bc7e9af44
+      m_Path: '<HID::G25 Racing Wheel>/hat/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: left
+      m_Id: fdfb2081-4332-406f-bec3-7c347763c425
+      m_Path: '<HID::G25 Racing Wheel>/hat/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name: right
+      m_Id: ee320364-918c-4220-85cf-e7339e8286bb
+      m_Path: '<HID::G25 Racing Wheel>/hat/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Navigate
+      m_Flags: 8
+    - m_Name:
+      m_Id: 91b8d7d7-8f4c-41b7-9254-57b24f44020c
+      m_Path: '<Mouse>/backButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: goBack
+      m_Flags: 0
+  - m_Name: UIAcceptCancel
+    m_Id: b3a2cb6f-068d-448d-86a5-0369daadf42c
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Submit
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 6ebdb7a8-007e-4af4-941c-eace9ff4dd59
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Cancel
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 3b449b8a-0083-4a0b-bdde-7555776cdafb
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 01fa04a5-de04-4584-b973-f680d6e1825b
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: bf5c29ae-2209-48bf-8173-ccba1bf953dc
+      m_Path: '<Keyboard>/escape'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4d6dc081-490b-4f1a-99f6-892ce412063b
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 04382ff4-ddd7-43f3-b50e-182db4809876
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6414c65d-9674-4e86-864b-76e593d9d3e7
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+    - m_Name:
+      m_Id: 590842e9-a9b8-4d4a-8e7b-7d996f097743
+      m_Path: '<Keyboard>/enter'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5aeff1cb-cd82-4637-9772-25fb2af0b7fd
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1ddedbda-da67-4156-8399-b1adf96f7b94
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+  - m_Name: AcceptCancel
+    m_Id: 4a2f1a42-d014-4af9-9ed9-f8e779d14e57
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Submit
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e87a6d5c-a287-4f4c-8e1c-2cc345e0ceb0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Cancel
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 4b9829f4-a60d-4aab-a6f4-fc6ddb1a99c4
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 571b0131-1b18-4aff-a053-c5a06db2d9a1
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: fc335c70-739a-4b13-96f6-2a3ce2d79514
+      m_Path: '<Keyboard>/escape'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6d8b2338-5a15-44a2-83f5-88f25e199399
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1e543346-ac4b-4e7e-9118-b5c1f831cea2
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 99e34bc4-38f8-46e8-9c83-4ab096a0a4c2
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+    - m_Name:
+      m_Id: 53d1285b-c759-4ad7-9eb7-218bd0063034
+      m_Path: '<Keyboard>/enter'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+    - m_Name:
+      m_Id: e78ad380-1169-4bf4-98da-8bd722ae2b52
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+    - m_Name:
+      m_Id: cccd4caf-6259-4375-b5d1-449545b83c8f
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Submit
+      m_Flags: 0
+  - m_Name: UiPointer
+    m_Id: 6c86b5d7-c0eb-4c70-a026-ecb9f4e65583
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Point
+      m_Type: 2
+      m_ExpectedControlType: Vector2
+      m_Id: f720bc7a-16dc-40a1-a51e-1d6fa136f8d0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: CursorMove
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 9787e019-0cfd-431e-8cc7-94b3ef6609cf
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: Click
+      m_Type: 2
+      m_ExpectedControlType: Button
+      m_Id: 2783f2d9-9af7-46e8-9b86-891782767188
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: RightClick
+      m_Type: 2
+      m_ExpectedControlType: Button
+      m_Id: 691d57a6-779b-4bfd-8415-19ea6bde4cfd
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: MiddleClick
+      m_Type: 2
+      m_ExpectedControlType: Button
+      m_Id: d1844aa8-20b8-49ff-9c72-1669c8250d1b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ScrollWheel
+      m_Type: 2
+      m_ExpectedControlType: Vector2
+      m_Id: ff9eba3e-2992-4923-8b2b-bd6cb2ffbc06
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: TrackedDevicePosition
+      m_Type: 2
+      m_ExpectedControlType: Vector3
+      m_Id: e5b054ad-0ad4-4fe9-9c14-83675a63ae73
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: TrackedDeviceOrientation
+      m_Type: 2
+      m_ExpectedControlType: Quaternion
+      m_Id: ceac41af-f4cc-4d3d-9fa6-1d4f03a82dba
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: PointerDelta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 976defa9-0b96-495c-83fa-812089a7a905
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: e9971f5f-e4a1-434b-8fa3-364763e63e1b
+      m_Path: '<Mouse>/position'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Point
+      m_Flags: 0
+    - m_Name:
+      m_Id: 76e4afd4-deb0-4056-982c-1b0ff080d029
+      m_Path: '<Pen>/position'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Point
+      m_Flags: 0
+    - m_Name:
+      m_Id: c29374f7-29d8-427c-b021-499440754624
+      m_Path: '<Touchscreen>/touch*/position'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Touch;Default
+      m_Action: Point
+      m_Flags: 0
+    - m_Name:
+      m_Id: adb28fa4-3f50-45fb-b6e0-82516dd76602
+      m_Path: '<Gamepad>/leftStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CursorMove
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0992325f-3bb6-45fd-8ae9-71fe202b1ab4
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3aaad145-a3f4-464e-bd2b-72e87c90a0ca
+      m_Path: '<Touchscreen>/touch*/press'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Touch
+      m_Action: Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: e70d8651-e100-4d0e-b664-301ca0fab628
+      m_Path: '<XRController>/trigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: XR
+      m_Action: Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9d6ed9ec-0043-44d2-8581-b5e4d50162ce
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: 223d6fcb-90c6-4ccf-90f6-1952345e60ec
+      m_Path: '<Mouse>/scroll'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Keyboard&Mouse;Default
+      m_Action: ScrollWheel
+      m_Flags: 0
+    - m_Name:
+      m_Id: 856a00f1-4cc0-4bfc-b295-0563a84c387f
+      m_Path: '<Mouse>/rightButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: RightClick
+      m_Flags: 0
+    - m_Name:
+      m_Id: fe3beb1c-14b3-49d1-9cbb-b2a42233030b
+      m_Path: '<Mouse>/middleButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Default
+      m_Action: MiddleClick
+      m_Flags: 0
+    - m_Name:
+      m_Id: b6b3595d-9f50-4ecc-9791-69cfbeb7a3a6
+      m_Path: '<XRController>/devicePosition'
+      m_Interactions:
+      m_Processors:
+      m_Groups: XR;Default
+      m_Action: TrackedDevicePosition
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5d5e6c88-10b5-454f-bf6a-8b785b161382
+      m_Path: '<XRController>/deviceRotation'
+      m_Interactions:
+      m_Processors:
+      m_Groups: XR;Default
+      m_Action: TrackedDeviceOrientation
+      m_Flags: 0
+    - m_Name:
+      m_Id: 08628023-4fba-4ff4-9906-0137123b72ab
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: PointerDelta
+      m_Flags: 0
+  - m_Name: UiNextPrevious
+    m_Id: cc6d0d1c-2199-4b56-82e4-befd69aff0bf
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Next
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: d1b7bf46-b6f5-4611-a390-42672d6e032c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Previous
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 1e4adb7b-9a77-46da-9be4-014d83bd2bce
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 3eca9619-f6a1-4551-ad1f-15be2580dd2a
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Next
+      m_Flags: 0
+    - m_Name:
+      m_Id: 152f6ba2-31ca-4d0b-853d-c27ce15bca3a
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button13'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Next
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5d23ba8d-2202-47c7-a301-20925a9f7761
+      m_Path: '<Keyboard>/e'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Next
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8603ea5b-e2af-4760-b7ab-74129f90ed91
+      m_Path: '<HID::G25 Racing Wheel>/button5'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: Next
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1865be77-7b3c-44c2-812a-12eeb3896745
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Previous
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3b644c96-6b75-4a7b-9e79-ad4388803d9d
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button14'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Previous
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1c59cec5-865d-4139-b548-1f2b2859adea
+      m_Path: '<Keyboard>/q'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Previous
+      m_Flags: 0
+    - m_Name:
+      m_Id: 75b21cfc-6cfa-446a-bb83-65d74d16c0c0
+      m_Path: '<HID::G25 Racing Wheel>/button6'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: Previous
+      m_Flags: 0
+  - m_Name: UiThrottle
+    m_Id: a038fd77-a575-4b7c-a94f-a5c90701736f
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Throttle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: f49ba53d-32ff-4889-9a72-383e2fa66db2
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 94689961-913b-448d-b701-dd2dd1daa114
+      m_Path: '<Keyboard>/w'
+      m_Interactions: Press(pressPoint=0.001)
+      m_Processors:
+      m_Groups: Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: cc2a9619-cc15-48bc-9837-641bd91dc797
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 79269b31-c714-446e-b408-24584dde665a
+      m_Path: '<HID::G25 Racing Wheel>/z'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: Invert,SliderRemap
+      m_Groups: ;Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: a139462c-3e77-4d15-a6b8-a11ffa8ec5cc
+      m_Path: '<HID::Gudsen MOZA R5 Base>/z'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: SliderRemap
+      m_Groups: ;Default
+      m_Action: Throttle
+      m_Flags: 0
+  - m_Name: Menu
+    m_Id: 1ebaddd3-2258-4a2e-9690-36f9670c55b5
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Menu
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e268090e-190d-4b4a-af11-af8b827fa590
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 578ab8eb-1c5f-4822-8e56-3ba9f03706a5
+      m_Path: '<Gamepad>/start'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Menu
+      m_Flags: 0
+    - m_Name:
+      m_Id: 05b5596c-1552-4403-997e-9dca7fb9dc28
+      m_Path: '<Keyboard>/escape'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Menu
+      m_Flags: 0
+    - m_Name:
+      m_Id: 46dfe28f-f333-4d2e-94fa-4b78d63f6093
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button38'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Menu
+      m_Flags: 0
+    - m_Name:
+      m_Id: e12059af-e595-4d79-a444-60be8149d95a
+      m_Path: '<HID::G25 Racing Wheel>/button4'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Menu
+      m_Flags: 0
+  - m_Name: ShowMap
+    m_Id: 70dad4ca-ff1e-42c7-a2f1-a6f2801b5969
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Map
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: cdcc717b-08f5-4d47-8aad-61bc72480150
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 07b2953a-00f2-4108-b985-d64c2852e914
+      m_Path: '<Keyboard>/M'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Map
+      m_Flags: 0
+    - m_Name:
+      m_Id: 41f752a6-2169-449b-95b2-1d2dca440515
+      m_Path: '<Gamepad>/select'
+      m_Interactions: Tap,Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Map
+      m_Flags: 0
+    - m_Name:
+      m_Id: 08239912-09dc-4c1f-b7ea-e1be701335e6
+      m_Path: VirtualPad/openMap
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Map
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6c0a2398-8711-49e0-95c2-269281f1b89f
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button25'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Map
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1e9346c3-8cff-44f7-b204-dd2cfb06aae8
+      m_Path: '<HID::G25 Racing Wheel>/button3'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Map
+      m_Flags: 0
+  - m_Name: MapUi
+    m_Id: 675104a2-d53b-43f0-88c0-2ca39bba137d
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: HideShow
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 608a95fc-ed68-4a0c-9e72-2c085e0eff5e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: HideShowAll
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 0c6ff4b3-834d-49e6-9282-516f8b0b0f26
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Expand
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 67c3e538-a779-4547-a3e8-9621ed27a7ce
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: CloseMap
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 8380ef70-8485-4dd5-9e66-50bb4bd8df76
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Mark
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b717110a-2cf5-4042-96fe-c1e5d8d92f9c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ShowMarkDetails
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b65376ed-b99f-4973-9acb-90fa61cc2a4b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 920213dd-81cc-4c87-9f89-5e403f03a257
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Mark
+      m_Flags: 0
+    - m_Name:
+      m_Id: 72881375-8a1b-4b03-9472-20f4e965befd
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Mark
+      m_Flags: 0
+    - m_Name:
+      m_Id: 49f2f081-95bf-4722-b579-c94c03ee4654
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Mark
+      m_Flags: 0
+    - m_Name:
+      m_Id: 20633d9e-e4ea-4d85-b261-b91c750ee063
+      m_Path: '<Keyboard>/space'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Mark
+      m_Flags: 0
+    - m_Name:
+      m_Id: 57de06a3-fcf6-4efd-b2b3-358cf356d0cc
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShowMarkDetails
+      m_Flags: 0
+    - m_Name:
+      m_Id: 47029fc7-a132-4fad-a7eb-c321f7ef62c2
+      m_Path: '<HID::G25 Racing Wheel>/button8'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShowMarkDetails
+      m_Flags: 0
+    - m_Name:
+      m_Id: 597146d7-30ce-4016-9f17-1b49bee61f3c
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideShow
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9f41e68b-c453-4251-ab0d-0df1048f6e87
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button3'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideShow
+      m_Flags: 0
+    - m_Name:
+      m_Id: dfc396fd-d87e-432e-b1f8-f3d67e190fd1
+      m_Path: '<HID::G25 Racing Wheel>/button17'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideShow
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3721c5b3-f513-477b-b8f3-6be6c71eda37
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Hold(duration=0.8)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideShowAll
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9aeb95c3-6540-45f1-81ed-0cbe9005a3d2
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button3'
+      m_Interactions: Hold(duration=0.8)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideShowAll
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1cafd2c9-066e-40e3-9ce4-b6be3223d96a
+      m_Path: '<HID::G25 Racing Wheel>/button17'
+      m_Interactions: Hold(duration=0.8)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideShowAll
+      m_Flags: 0
+    - m_Name:
+      m_Id: bd06d87f-4d85-4fa4-8334-66239538bffc
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Expand
+      m_Flags: 0
+    - m_Name:
+      m_Id: 61e89672-509b-4da1-b925-35adc9b83507
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button4'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Expand
+      m_Flags: 0
+    - m_Name:
+      m_Id: 236c6b53-ccd0-49a0-9054-d08e780f11a6
+      m_Path: '<HID::G25 Racing Wheel>/button16'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Expand
+      m_Flags: 0
+    - m_Name:
+      m_Id: d8c314c7-31f7-47bb-9a31-20bed4099f0d
+      m_Path: '<Gamepad>/select'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CloseMap
+      m_Flags: 0
+    - m_Name:
+      m_Id: b8cbf11e-f634-40b5-9fe1-b474a1dfd483
+      m_Path: '<Keyboard>/M'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: CloseMap
+      m_Flags: 0
+    - m_Name:
+      m_Id: 64104607-c754-46a2-b49d-7255e541e66b
+      m_Path: '*/{Cancel}'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: CloseMap
+      m_Flags: 0
+    - m_Name:
+      m_Id: e253c344-dfe3-409d-ae9c-4f5e9531ef25
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button25'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CloseMap
+      m_Flags: 0
+    - m_Name:
+      m_Id: bd4cd8ae-92eb-4163-b436-64d5fdb1ae17
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: Tap,Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CloseMap
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4b7502d2-6715-4380-a182-ea071243b449
+      m_Path: '<HID::G25 Racing Wheel>/button3'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CloseMap
+      m_Flags: 0
+    - m_Name:
+      m_Id: e8779f96-3f63-493d-a6ad-67ab5bbaf5f7
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CloseMap
+      m_Flags: 0
+  - m_Name: MapMove
+    m_Id: 99355849-d2b9-4bef-ae77-a9c639ed45a9
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 872a12ca-2f5f-432a-a2d4-82173bbf8093
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: MouseDragMove
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 6b97320d-2817-4888-b91d-7a756c562254
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: MouseDelta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 8e34d4df-d59a-4a9d-be3c-ba2071f6f173
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: c4843cd9-9eeb-4244-84ca-3280487706e5
+      m_Path: '<Gamepad>/rightStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 0
+    - m_Name: 2D Vector
+      m_Id: 02908d83-cbb4-4aab-919d-39c9a81be854
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: Up
+      m_Id: 11ead4de-48d0-461b-883c-11665b1db57c
+      m_Path: '<Keyboard>/w'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Down
+      m_Id: 79e598f6-1368-4702-9f87-05de241b3136
+      m_Path: '<Keyboard>/s'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: 57128af0-11ec-47c0-a123-74eacfc77b9a
+      m_Path: '<Keyboard>/a'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: b85f4fbc-ab7b-471b-ad76-974c3148819a
+      m_Path: '<Keyboard>/d'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Moza
+      m_Id: 2445af4a-1694-4ced-92ba-b4624183d616
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: Up
+      m_Id: 9ff25ae2-befb-40c8-9b1a-4534b73583b1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button5'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Down
+      m_Id: dfbf9663-2c5f-4ca7-8ab0-e5c9b145893e
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button7'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: 55cc5f9c-48f2-4167-8d7c-e0205e3f1a0b
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button8'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: cea70089-b094-476f-8c68-5be738201f19
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: G25
+      m_Id: 526a5738-d85c-44c0-a718-54945aced779
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: Up
+      m_Id: debdc8c5-8dc2-4ec4-b2fa-7bc20dc79d5f
+      m_Path: '<HID::G25 Racing Wheel>/hat/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Down
+      m_Id: 560f8a9f-1bb7-43af-9b85-6a9e49506b3d
+      m_Path: '<HID::G25 Racing Wheel>/hat/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: b0696496-b3e6-4a2b-8e6a-a03b92a33e7e
+      m_Path: '<HID::G25 Racing Wheel>/hat/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: 26701a4a-377d-4933-b956-60038cce84fc
+      m_Path: '<HID::G25 Racing Wheel>/hat/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: One Modifier
+      m_Id: bf43c34e-49d7-43e6-b27f-cf3331a55880
+      m_Path: OneModifier
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: MouseDragMove
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 5072ff80-93bf-41bb-817a-6fd8af5cd64c
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: MouseDragMove
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: ef192230-9a07-465d-9407-dc883d75a9f1
+      m_Path: '<Mouse>/position'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: MouseDragMove
+      m_Flags: 8
+    - m_Name:
+      m_Id: a1d29f9f-505c-4f08-a238-b3448075bd3c
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: MouseDelta
+      m_Flags: 0
+  - m_Name: Drone
+    m_Id: b7b938c4-b942-4db3-a084-ffe431bf8b8f
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: SpeedToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 67cb912f-aa53-44b7-982c-5d2fd6f51b9d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Tilt
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 1fc9c76f-8794-4f03-9979-9f9717325925
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: HideUi
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 98ee4dfc-5dc8-4f7d-b047-f88090c14d37
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Center
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 4733635d-bc6d-455a-a6a7-d0b463dc4cb7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Back
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: bb609614-6227-459a-9c47-b89594f48b39
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: OpenChat
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 52b169ed-1f42-4d5f-8b70-0f7c0ead5d47
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: c2a47653-6a3a-47c8-80e9-75589f2a6385
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: a26a6b7d-c775-4f88-b5eb-3a287d808001
+      m_Path: '<Keyboard>/r'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: aacddfda-d5f0-49cb-b1e6-3903239f847e
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: b4c1112f-567c-4f22-981c-9c72b34b0256
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: HideUi
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9d4366aa-1253-4e85-9050-95392cde2807
+      m_Path: '<Keyboard>/f'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HideUi
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5a87dd05-c74d-4fd7-85c3-9d3762017238
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Center
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5ecbbd97-f2c3-4303-bcde-9be9e90e1780
+      m_Path: '<Keyboard>/c'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Center
+      m_Flags: 0
+    - m_Name:
+      m_Id: fbfdcb5e-bab1-44b2-b0ca-f1edbbc55e05
+      m_Path: '<Keyboard>/v'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SpeedToggle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1319bfc1-bb1b-44e6-b01b-8b98bc021a7e
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: SpeedToggle
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: 965b39b1-6e2f-488d-8c61-a2b00bab216d
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Tilt
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: ba0d2a94-f01d-4516-b8c7-08d42a58000c
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Tilt
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6be565d7-3eba-4760-a4a1-fbb406b41f14
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Tilt
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 93091d1d-bd9c-4ab4-adaa-bcde81181cc5
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Tilt
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: ab8ce011-d6f9-4de7-85eb-058ffa0df811
+      m_Path: '<Keyboard>/q'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Tilt
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 9dfde43f-b2d2-442c-9be6-6503b9b12886
+      m_Path: '<Keyboard>/e'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Tilt
+      m_Flags: 8
+    - m_Name:
+      m_Id: 8b9bad38-9765-4764-b77a-17da487dba60
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenChat
+      m_Flags: 0
+    - m_Name:
+      m_Id: cac702bc-0399-4520-993d-ca4a9d6cbdac
+      m_Path: '<Keyboard>/t'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenChat
+      m_Flags: 0
+  - m_Name: DroneCamera
+    m_Id: bb4cb545-32e8-474e-bc7f-a8717810009a
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Reset
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 2147bc8a-a6c0-4245-82f9-a5cb3c39612a
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Snapshot
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 32270989-684b-440a-9045-e4547475973f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: b4e7d674-33cb-4cf2-8b09-1878b6274e3d
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Snapshot
+      m_Flags: 0
+    - m_Name:
+      m_Id: 24c19008-0cab-461a-bfeb-47bf026aca5a
+      m_Path: '<Keyboard>/space'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Snapshot
+      m_Flags: 0
+    - m_Name:
+      m_Id: c567ee88-a780-4595-ba2a-f0dd24de1114
+      m_Path: '<Keyboard>/z'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Reset
+      m_Flags: 0
+    - m_Name:
+      m_Id: 564dcca5-114d-4180-aeac-2ff8ede0b2c6
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Reset
+      m_Flags: 0
+  - m_Name: Photo
+    m_Id: 91fd6d06-4520-4065-ac71-36ffb20ce2a2
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Help
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: c3096269-1474-4068-a9df-8308174acd64
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ToggleFocus
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 197d9b46-13be-405a-b9c3-8c32f5e6aea0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Toggles
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: a11bd2e9-692c-4974-ada1-69e8dcee99ec
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: NavigateSettings
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 93162d0a-bb6e-47c0-9a7e-062863a3e47b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: Color
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: ecfc8761-3ea2-400c-8bdf-af70d2048597
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Optica
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 347c24bb-aaf9-4774-90c0-b88311b7773b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Camera
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 76c0bd2b-0805-4c8a-bd3c-20f36cc95e38
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ResetFilter
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 10673ae1-bf44-4317-88d4-66a8f62eb5c8
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 60f71c0d-32fb-48bd-8e35-9f925da9d45c
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Camera
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6ad3c39a-2ad9-4927-87a9-112679286dba
+      m_Path: '<Keyboard>/3'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Camera
+      m_Flags: 0
+    - m_Name:
+      m_Id: f04c7f99-fcf9-4f15-8f74-db042f7c52e3
+      m_Path: '<Keyboard>/c'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: ResetFilter
+      m_Flags: 0
+    - m_Name:
+      m_Id: 19afcd17-2544-4fc1-ae5b-de1ad68d2a54
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: ResetFilter
+      m_Flags: 0
+    - m_Name:
+      m_Id: 042c1552-7bdb-42aa-b627-83857f8bd3bb
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Color
+      m_Flags: 0
+    - m_Name:
+      m_Id: 05324c01-9af5-4134-b11a-dd51478fea1d
+      m_Path: '<Keyboard>/2'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Color
+      m_Flags: 0
+    - m_Name:
+      m_Id: 79c47cbf-894d-4511-a700-0cff80b09a8a
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Keyboard&Mouse;Gamepad;Touch;Joystick;XR;Default
+      m_Action: Optica
+      m_Flags: 0
+    - m_Name:
+      m_Id: 34698524-a88f-472d-b6a4-4418332ff9f8
+      m_Path: '<Keyboard>/1'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Optica
+      m_Flags: 0
+    - m_Name:
+      m_Id: 29f0e473-479e-495a-99e4-8d4a57fc6b25
+      m_Path: '<Keyboard>/tab'
+      m_Interactions: Press,Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Help
+      m_Flags: 0
+    - m_Name:
+      m_Id: 908d71f6-473a-4eb4-8fbe-c2cdd8d32e04
+      m_Path: '<Gamepad>/select'
+      m_Interactions: Tap,Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Help
+      m_Flags: 0
+    - m_Name:
+      m_Id: d56b5c95-60c3-4679-aafe-24b0ae06acc6
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: Default
+      m_Action: ToggleFocus
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8896c801-722e-4aeb-b692-b55f45fcda8b
+      m_Path: VirtualPad/changeCamera
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: Default
+      m_Action: ToggleFocus
+      m_Flags: 0
+    - m_Name:
+      m_Id: 17ca9bed-75ea-4cf7-8651-ae4d39b47a39
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button22'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToggleFocus
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: 02342638-2689-427d-8cc7-327e093ce8b0
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Toggles
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 9af5f64a-1bfd-41e8-85b9-6e2acc9de922
+      m_Path: '<Keyboard>/leftArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Toggles
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: d444f847-5598-4e23-ac31-59cfd4bb1b70
+      m_Path: '<Keyboard>/rightArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Toggles
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: b9043487-4290-4605-ba3e-7f2977566a3a
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Toggles
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 48c74525-7bf2-458f-90ba-d0b4c03697ec
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Toggles
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6f8f683e-3915-4e22-8477-3d84aeafb0e6
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Toggles
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 5d3884c8-f127-404a-b018-9ddfd5cd07d4
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: NavigateSettings
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 6f421096-aeec-4be0-89ae-7d4a1332ff66
+      m_Path: '<Keyboard>/downArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigateSettings
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c2922e1f-3f3d-4ec6-ae5f-949b3c0f2ff3
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigateSettings
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 40c5e154-5527-4896-88fd-0b644a93954e
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: NavigateSettings
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: a4dd02a6-c02c-44f7-9f7b-988096943372
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigateSettings
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 94f5bc18-637e-46fc-b5f5-42928a1061e5
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigateSettings
+      m_Flags: 8
+  - m_Name: PaintBase
+    m_Id: db828ebd-ae10-4e0b-a1ea-257cb1a72159
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: BlockCam
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 3521a3a9-7b58-4eb5-853b-e9ba8bed822c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ToggleUi
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 8480f81d-839f-4f80-bef7-3024a6af6013
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: DeleteAll
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: f4ddfcca-dc63-48da-8544-e06b9a6d6a72
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: DeleteSelected
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: a668bd8b-6215-466f-a198-e06ff75b8f30
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 0f18188d-858e-4b49-8008-e55020ca870f
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: BlockCam
+      m_Flags: 0
+    - m_Name:
+      m_Id: 991592d7-faf1-42f9-81ca-71fc496066b4
+      m_Path: '<Gamepad>/select'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToggleUi
+      m_Flags: 0
+    - m_Name:
+      m_Id: d0c18de0-9d2d-4b91-91da-702bb6ef996a
+      m_Path: '<Gamepad>/start'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: DeleteAll
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3df90fb8-39df-43b8-beb1-38494aa0c01c
+      m_Path: '<Gamepad>/start'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: DeleteSelected
+      m_Flags: 0
+  - m_Name: PaintFavoritesToggle
+    m_Id: 377a3513-177b-48bd-82ca-03dd7b3a9c35
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: FavoritesToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 3084764f-431c-484d-b939-861cd96e1063
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 9619f445-a885-438d-a126-fee099621976
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: FavoritesToggle
+      m_Flags: 0
+  - m_Name: PaintApplyCancel
+    m_Id: 2747251e-1b9d-42ad-a0c9-2ccbe0c9c6be
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: CancelChange
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: d52c607c-f276-4de7-9056-10de5aff3144
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 380dd8b3-0931-4447-89cc-88e20fefe7a0
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CancelChange
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5520f182-5211-4e84-9fd1-c30e77f4b897
+      m_Path: '<Keyboard>/escape'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CancelChange
+      m_Flags: 0
+  - m_Name: PaintMultiSelect
+    m_Id: f067beb2-0157-48ae-97fe-5a620d3fb167
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: MultiSelect
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 85b6b6ba-7226-40a6-8eb9-22af7a75fac9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 98b61325-17ec-4919-ac09-36f9a6282839
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: MultiSelect
+      m_Flags: 0
+  - m_Name: PaintSelectNew
+    m_Id: b4ac3e68-6303-4d47-a804-cb9bdeb80830
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: SelectNew
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 1ef56c19-7ac3-4e67-9145-dd49e2129489
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name: 1D Axis
+      m_Id: a835ae3d-4ab2-4b1a-b942-6a67ba5f47fd
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: SelectNew
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: a33af951-df96-48b0-8922-a78743ba7ca0
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectNew
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 9f4c57b9-788f-4a67-8766-459b481a0cbc
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectNew
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 577f216f-7d15-40c4-bcac-a1769dbc5647
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: SelectNew
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 93c503be-38c5-453d-8050-40a4653fa525
+      m_Path: '<Keyboard>/leftArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectNew
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6969ba2a-eca3-4fde-bfcd-6989d54d847d
+      m_Path: '<Keyboard>/rightArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectNew
+      m_Flags: 8
+  - m_Name: PaintPlates
+    m_Id: 7d116866-8292-4b42-a7d6-9fc4b3e217fc
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: NavigatePlateType
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: b25b26bd-7d6d-431e-b315-4470863144f8
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: FrontToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: f9ec7421-d7b5-44c0-8f67-8bd8e5f3ee79
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: BackToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e174b8b4-a18b-4ae6-8dc0-650b0cd959db
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name: 1D Axis
+      m_Id: 70e7d87e-e30a-416a-9797-3f2e8b1cc89d
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: NavigatePlateType
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: ee459bb4-c1e8-4acb-90ce-bbce68085540
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigatePlateType
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 681a0c4c-37de-4c8f-838d-6af7f01ee587
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigatePlateType
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 86db4871-d452-49c6-ae4c-f92a6a660ec1
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: NavigatePlateType
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 0780400d-6caa-49b8-8ca7-04dee7f8a36a
+      m_Path: '<Keyboard>/leftArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigatePlateType
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 361f38fb-aed6-49bb-be5f-f242aa48c576
+      m_Path: '<Keyboard>/rightArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: NavigatePlateType
+      m_Flags: 8
+    - m_Name:
+      m_Id: 75db2c9e-2adf-48fe-9864-2a43cf3bcf8a
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: FrontToggle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4c432067-2e1f-43dc-baf0-f741ef452685
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: BackToggle
+      m_Flags: 0
+  - m_Name: PaintSelectSet
+    m_Id: 8a274f87-08b8-4e9c-a3cc-69d0cd3fe92c
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: SelectSetVinyl
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 3f7ed622-8929-475b-b732-419f3b803cdc
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name: 1D Axis
+      m_Id: 6298e106-a1dc-4586-b179-7d2f6d32073a
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: SelectSetVinyl
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 76fd3737-5eaa-4b37-b911-cfa1fa6d9079
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectSetVinyl
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: ad520e61-f545-47dc-a50e-3982ae2e47f2
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectSetVinyl
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 96fd6418-53b5-4773-8524-ad794ba2cfa3
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: SelectSetVinyl
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 901cbd67-7f5b-4168-86d0-b28e85225295
+      m_Path: '<Keyboard>/downArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectSetVinyl
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: f365c5d6-e258-49be-b4cd-805ac23a207f
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SelectSetVinyl
+      m_Flags: 8
+  - m_Name: PaintCopy
+    m_Id: 8fcc3c6b-6368-4f0d-beac-fc5d49eecc62
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Copy
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e7527e9c-fed1-48ae-b80d-40420f475806
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 8a7a7e88-38b3-45da-b47b-36491a3b6ca7
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Copy
+      m_Flags: 0
+  - m_Name: PaintPlateTypes
+    m_Id: a53eef29-8cf9-468e-820c-0967bd45e471
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: EnterPlateTypes
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 0e460aa6-cf67-4232-b41c-84ffe09a58b4
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 1e08fee8-7423-49e9-b8bf-cf7f88e0b88c
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: EnterPlateTypes
+      m_Flags: 0
+  - m_Name: PaintFavorite
+    m_Id: 34e340c7-c14f-46b3-8757-980997884db5
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Favorite
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 884867f1-ed90-4509-a0b9-0053245855b8
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 13df256e-7017-474f-8128-a0b80f6e2517
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Favorite
+      m_Flags: 0
+  - m_Name: PaintSelectionMade
+    m_Id: 4626b384-23bf-4ab0-bbbd-10936e554a50
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: LayerUpDown
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: b3723dcf-bca7-4670-a5e8-6e4702928358
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: e945a168-71fb-4ce0-8858-911b16359444
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: SetSize
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: d46b7e4b-690f-45ad-9279-eb2e7c1ae9c4
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: SetColor
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 2322ce07-c99f-4a93-befc-23216678f838
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name: 1D Axis
+      m_Id: 97bd8906-f7ac-4f83-a8c1-dc2033b5c26b
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: LayerUpDown
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 7b15f3ac-542c-435d-8ccc-5c78d8a15b6f
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: LayerUpDown
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c1a118ca-935b-4635-b9ac-841b46fa3ee2
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: LayerUpDown
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 4334b8d8-de53-481c-8603-1f4bbc453871
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: LayerUpDown
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: b3fa4690-95e3-470b-afb4-61d4c0bcd23d
+      m_Path: '<Keyboard>/downArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: LayerUpDown
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c0c5fa5b-b4bd-4b47-93a8-2dce65b3fd2a
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: LayerUpDown
+      m_Flags: 8
+    - m_Name:
+      m_Id: 8ad74662-ea5c-46dc-b6f2-20047e9b2512
+      m_Path: '*/{Primary2DMotion}'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7ba4b023-b92b-43a6-83d8-e18ce57cd7bc
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions: Press,Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SetSize
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5fee9773-0b83-4445-9873-e8a49752c1f0
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions: Press,Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SetColor
+      m_Flags: 0
+  - m_Name: PaintColor
+    m_Id: 98eced64-86bd-4707-91a1-a21eeae495ca
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: ColorToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 218dccd1-7266-415f-99fc-62956e9fb713
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: TintToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fe195f90-be5b-47cc-b861-66c968cfe5b3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: AlphaValue
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 9e24d535-e8f5-4473-944a-9db2e1c88377
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: ColorMove
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 86a4a1d9-e25f-4c3a-99e9-30acaf2a6834
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: ColorCode
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 9575b984-8e37-4c72-a228-2d51e9627f68
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 4a8ac789-f907-42ef-83ef-236767be41f1
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ColorToggle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6b3e01f2-844f-4305-8906-7e1c4ad28d58
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: TintToggle
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: 787bf9dc-b23c-4d70-9f91-59e97eb6c09c
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: AlphaValue
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 225a04bb-3316-491b-b2bd-beb94ef80ca5
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: AlphaValue
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: af436948-5596-497c-ac5c-77b39357fca0
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: AlphaValue
+      m_Flags: 8
+    - m_Name:
+      m_Id: 30ec728a-31f0-4554-bd80-d1192aff50fe
+      m_Path: '<Gamepad>/leftStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ColorMove
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7702ddb7-2fdf-49df-8a56-58fc06200406
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ColorCode
+      m_Flags: 0
+  - m_Name: PaintSize
+    m_Id: 8777ffa1-3de4-4513-bccd-d5ee62cfc383
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Mirror
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 705644a4-0cac-450c-a098-3ca316caed3a
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Turn
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: d4cae4eb-a131-42e6-8549-9b4301b7dcd9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: SizeMove
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 414d8873-eb49-4f0f-a7b8-7f939310762d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: SetSize
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 1fccd20c-9651-489d-bad5-e28700b7f1ea
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 62823ac0-3252-4b64-98c6-84d72cbc4389
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Mirror
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: c23eb23d-e879-43b2-88c7-c7187429a6c7
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Turn
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 424eee36-a81b-44a1-b01d-d0f4a534edb1
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Turn
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: b814f82e-9bc0-41ac-b01f-7eefa14c4c64
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Turn
+      m_Flags: 8
+    - m_Name:
+      m_Id: 48ef42c1-123b-4470-a4d8-ea72a261e27e
+      m_Path: '<Gamepad>/leftStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SizeMove
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2326ac40-647b-4b32-9d8f-d48f5c64acdd
+      m_Path: '<Gamepad>/dpad'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SizeMove
+      m_Flags: 0
+    - m_Name:
+      m_Id: cf435b48-5804-4b3a-ab3b-a5ab2ed2b776
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SetSize
+      m_Flags: 0
+  - m_Name: PaintText
+    m_Id: 1267273c-6df8-44fd-8637-31f1571dca9e
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Font
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: f62b37dd-d947-48fd-9897-5f292fee4cf5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: Bold
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 7585d6f4-368c-4708-b6e1-40f9de0bfbfd
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Italics
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: ea3fbc37-df1e-4184-a9c2-250c5a9e4b91
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: EnterText
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fd27eebb-3218-4746-ab16-463e92993014
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 6692795f-0c0a-47ef-834c-de5f1b54c5f0
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Italics
+      m_Flags: 0
+    - m_Name:
+      m_Id: b41f98f9-b7d6-426e-a761-5516f211751c
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: EnterText
+      m_Flags: 0
+    - m_Name:
+      m_Id: a5beab78-7576-461c-aebf-2fb13ce0b4f3
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Bold
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: 2baccc3d-9316-4145-8c52-5cd71fb3583c
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: Font
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 3ac4f590-7ef1-4832-ace1-d1209f0c4c54
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Font
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 8ea00e60-ec26-4bd3-8ddc-9a7db4226264
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Font
+      m_Flags: 8
+  - m_Name: PaintEditText
+    m_Id: 34bbba4f-4295-4274-94cc-351b2a95a4c8
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: EditTextStyle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 0d9b39dc-1c75-4ce2-98af-824728377d71
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: da306c23-7533-4584-a17e-7826c9ebbc87
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: EditTextStyle
+      m_Flags: 0
+  - m_Name: Camera
+    m_Id: dbf60d4e-c795-4f10-9a84-6da23905849b
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Look
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 8bfdd12c-67eb-44b1-960e-b35b75ce5437
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: LookFree
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: e9ca1d2b-5503-4b20-8514-91ab0f4ed3fe
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: 2f7bdb34-6b8b-49a8-b423-ec99952fad5e
+      m_Path: '<Gamepad>/{Secondary2DMotion}'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Look
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: c0422ae9-4928-423e-93f3-235177c55610
+      m_Path: OneModifier
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 16e2ee12-969c-491d-856e-7c47ef7a73fd
+      m_Path: '<Mouse>/rightButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: a52f6e44-9d6a-4bb8-8013-ce9f4c9ab4df
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Look
+      m_Flags: 8
+    - m_Name:
+      m_Id: c0dd10bf-39a9-4eba-8b0a-26ab1106f93c
+      m_Path: '<Gamepad>/{Secondary2DMotion}'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: LookFree
+      m_Flags: 0
+    - m_Name:
+      m_Id: f631fa15-e719-4922-980f-5ec4c15c14fc
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: LookFree
+      m_Flags: 0
+  - m_Name: Move
+    m_Id: 0f27815c-96e3-4777-afa3-686c0b1109d6
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Move
+      m_Type: 2
+      m_ExpectedControlType: Vector2
+      m_Id: 9ab96baf-1d2a-44cb-bc93-381b0bc844f5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Rotate
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: eda8b048-61c1-4ce7-8c8b-3768c67dfe3e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: Height
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: f16b557d-fd39-453c-ad08-8e712fbd4558
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: dca38f77-cc57-47e1-b712-f5c2d511f913
+      m_Path: '<Gamepad>/{Primary2DMotion}'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 0
+    - m_Name: Moza
+      m_Id: bbf71316-b5f8-45b3-b16e-0631f2252e80
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 9a371604-aab3-4929-adf4-229b00049877
+      m_Path: '<HID::Gudsen MOZA R5 Base>/z'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 4f5d811f-58e7-45eb-9577-bdb2f47fc2b2
+      m_Path: '<HID::Gudsen MOZA R5 Base>/rz'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: aafd6691-f048-479c-81b2-5d2d238158ed
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: c0509049-5543-479e-9f36-651dbba99a95
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: G25
+      m_Id: 8074ff79-e8e3-4324-973f-71552b92746f
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 9e6fe324-f671-4320-a848-468a2a9e7f09
+      m_Path: '<HID::G25 Racing Wheel>/z'
+      m_Interactions:
+      m_Processors: Invert,SliderRemap
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: c4cb978a-accd-4e0f-b8db-36a8d9e96982
+      m_Path: '<HID::G25 Racing Wheel>/rz'
+      m_Interactions:
+      m_Processors: Invert,SliderRemap
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: bc1505a2-3ed6-4a04-b7f9-4bf304e2af6a
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 85f481f3-d14a-4cd8-afa0-8e54e5d24b14
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: 99e92558-f1a5-4da4-b7b1-2715cb5181e9
+      m_Path: 2DVector
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 6e9f08b4-983f-4b84-81b3-d277b4ad98aa
+      m_Path: '<Keyboard>/w'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 07979b99-24a5-4ad7-87d7-35bad541d9e2
+      m_Path: '<Keyboard>/s'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 9d90e04b-604e-4195-8302-68d2a8c0f697
+      m_Path: '<Keyboard>/a'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 3002f049-b15f-4071-9e96-1996a916bb03
+      m_Path: '<Keyboard>/d'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: a223344f-58c2-44cc-b955-f5b3e6b1c263
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Rotate
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 0d200d4a-94e0-4b1e-8dc7-08d56b9ec99e
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button13'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Rotate
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 594b59b7-f6f7-4e15-a8ea-4ef5b2e3da12
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Rotate
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: ce9292c1-464a-4524-9aae-6db0619e8771
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Rotate
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 870caafb-45fa-4100-81cb-274a5cc63ce5
+      m_Path: '<HID::G25 Racing Wheel>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Rotate
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 1d463ca3-e284-4ca6-b687-60f2e0b1f791
+      m_Path: '<HID::G25 Racing Wheel>/button5'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Rotate
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: f116877a-d8cb-4d16-9932-418b1ce4b7ce
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Height
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 9792b0f3-2a97-48a6-9eec-ea726021dd0e
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Height
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c8886c15-4b97-4252-b653-355d1ff42a13
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Height
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 56051000-443f-4947-b315-d6b0e638779b
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Height
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: a2535f59-3425-454c-b4f0-9208ddbc02b2
+      m_Path: '<Keyboard>/leftCtrl'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Height
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: b143453f-a2c0-4532-92f5-a6330ff9723b
+      m_Path: '<Keyboard>/shift'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Height
+      m_Flags: 8
+  - m_Name: ZoomMouse
+    m_Id: d87a54bf-af19-4d51-9717-e54228ecd963
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Zoom
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 274464a8-4f92-4a85-ada9-51b78a449bdf
+      m_Processors: Clamp(min=-1,max=1)
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: 6e5061b5-8845-4379-b07d-3d0267ac3023
+      m_Path: '<Mouse>/scroll/y'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 0
+  - m_Name: ZoomGamepad
+    m_Id: 00d4e129-95c3-4c4a-a6df-24cc222ac139
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Zoom
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 9d33be8a-70ce-4c28-9684-f83c11f0fcbd
+      m_Processors: Clamp(min=-1,max=1)
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name: 1D Axis
+      m_Id: d7968d75-9918-4885-b146-d66b6470f163
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 6ca88b43-4d78-47b7-aadf-8780980f6c84
+      m_Path: '<Gamepad>/leftTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6ccb7705-29fa-472d-b246-199cac5060db
+      m_Path: '<Gamepad>/rightTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 8
+  - m_Name: ZoomMoza
+    m_Id: 26b21266-1bfa-42cb-a64c-4dea815539d5
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Zoom
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: fe3bb074-3fe6-4ed6-beab-9ec65f6a46f7
+      m_Processors: Clamp(min=-1,max=1)
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name: Moza
+      m_Id: e6c58378-ca28-4baa-9dcd-6ac85be50fb6
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: Negative
+      m_Id: 19547441-56af-4422-8859-f8f1e312989c
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button13'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: Positive
+      m_Id: d1678971-affc-415b-b4f5-11c7ebef194f
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: Moza
+      m_Id: 2551c066-0e55-4030-a286-35b410247ec8
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: Negative
+      m_Id: 5483de7e-9564-4944-b892-26a476a34935
+      m_Path: '<HID::G25 Racing Wheel>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: Positive
+      m_Id: 35b6b401-8cf5-48a6-bbf3-c7332d1b2ce1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Zoom
+      m_Flags: 8
+  - m_Name: CameraCar
+    m_Id: f8668dad-d1c6-45e2-b543-d3687be4d971
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: CameraLookLeft
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e4ae9e55-7a2c-4510-af12-6f247476894f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: CameraLookRight
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 6a7cdb52-4d0d-49e1-9765-f0c34d93274c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: CameraLookBack
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 6a0dd2e5-8e13-4c6c-9c80-9c73f53413e9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: a5c1b305-b1c9-464b-b533-7f97ec8c5965
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button8'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookLeft
+      m_Flags: 0
+    - m_Name:
+      m_Id: 99f18ab9-1505-4e2b-9777-c74ee2eca64e
+      m_Path: '<HID::G25 Racing Wheel>/hat/left'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookLeft
+      m_Flags: 0
+    - m_Name:
+      m_Id: fd180167-86f4-44d1-b0fa-49b925b4baf7
+      m_Path: '<Keyboard>/leftArrow'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookLeft
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: c7e26551-75b5-4451-83e1-129c861fe14a
+      m_Path: OneModifier
+      m_Interactions: Press
+      m_Processors: AxisDeadzone(min=0.6)
+      m_Groups:
+      m_Action: CameraLookLeft
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: b7cef91e-ff9f-41c9-aff4-3cfc97cce836
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookLeft
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 3b184e7d-8117-407d-8058-d90e118ac55a
+      m_Path: '<Gamepad>/rightStick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookLeft
+      m_Flags: 8
+    - m_Name:
+      m_Id: 1dea0a5f-27ea-4b15-96a8-040e9d9c0105
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button6'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookRight
+      m_Flags: 0
+    - m_Name:
+      m_Id: c26245d9-07bb-4e09-be4a-34318071b3d2
+      m_Path: '<HID::G25 Racing Wheel>/hat/right'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookRight
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6f21b337-c38b-49f0-83e2-7f068211fb9a
+      m_Path: '<Keyboard>/rightArrow'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookRight
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: 5362156a-0fa2-42d4-ac54-4db130d1e413
+      m_Path: OneModifier
+      m_Interactions: Press
+      m_Processors: AxisDeadzone(min=0.6)
+      m_Groups:
+      m_Action: CameraLookRight
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 7da80020-59e5-4a25-b518-76e74b323458
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookRight
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: b79183f4-cfe7-40f1-abf2-aa95f90f1c6a
+      m_Path: '<Gamepad>/rightStick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookRight
+      m_Flags: 8
+    - m_Name:
+      m_Id: dea6fcf9-a7b1-430a-ad67-08bb12cdc635
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button7'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookBack
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8c4986f6-0f2c-467a-96e6-b7ebff2509bb
+      m_Path: '<HID::G25 Racing Wheel>/hat/down'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookBack
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: be488ec5-b33e-4efe-8cba-1857ef22ee91
+      m_Path: OneModifier
+      m_Interactions: Press
+      m_Processors: AxisDeadzone(min=0.6)
+      m_Groups:
+      m_Action: CameraLookBack
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: b70bd848-c839-4bfc-b523-1e235c05ef26
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookBack
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 4dedf829-4605-4914-b440-b9f3d981e16b
+      m_Path: '<Gamepad>/rightStick/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookBack
+      m_Flags: 8
+    - m_Name:
+      m_Id: 5d5b9f93-c834-44e3-a436-ebd7cc7e9f6d
+      m_Path: '<Keyboard>/downArrow'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CameraLookBack
+      m_Flags: 0
+  - m_Name: AimReticle
+    m_Id: 0972783a-1b33-46f9-8c77-92d968710ade
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: AimAt
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: cd6efb24-725d-438c-92bc-fc81b06fe3be
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 8a3fb6d1-3717-4543-ac06-f16c7abd1642
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: AimAt
+      m_Flags: 0
+    - m_Name:
+      m_Id: adb3909a-1add-4824-9373-93cd87911b13
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: AimAt
+      m_Flags: 0
+    - m_Name:
+      m_Id: d30e7143-cdb9-4ef5-ab60-bf30524498e6
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: AimAt
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6527b941-2b52-4ad4-87c0-515c933282ad
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: AimAt
+      m_Flags: 0
+  - m_Name: ChangeCamera
+    m_Id: 08bec1b0-cb6c-4ae4-9455-03815d8190be
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: ChangeCamera
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 325d0aed-dd4b-4e3f-94f7-ea26394344b2
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 5f31263d-e010-4126-b2f6-017407a2dd93
+      m_Path: '<HID::G25 Racing Wheel>/button8'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ChangeCamera
+      m_Flags: 0
+    - m_Name:
+      m_Id: 78e17fad-f70a-48e3-a43b-2d3b1c243796
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button22'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ChangeCamera
+      m_Flags: 0
+    - m_Name:
+      m_Id: e6342764-a309-4eb2-997a-fe88cc63a01b
+      m_Path: '<Keyboard>/c'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ChangeCamera
+      m_Flags: 0
+    - m_Name:
+      m_Id: 50f27c88-ff77-4e73-b32a-e4d42d025769
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ChangeCamera
+      m_Flags: 0
+  - m_Name: CarRacing
+    m_Id: 214c41e3-1f2a-4546-ae9c-b173881386fa
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: PhotoMode
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: d254c3aa-53d1-418d-b9cd-21ae00c8f905
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Timer
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 10be6956-c832-44ae-ad1e-7f20a729679e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: ea66e552-1664-498b-b8f2-a2559a93c9e6
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: PhotoMode
+      m_Flags: 0
+    - m_Name:
+      m_Id: 63dc4ed2-d6d7-4f9c-8d7e-75f283287f4c
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: PhotoMode
+      m_Flags: 0
+    - m_Name:
+      m_Id: f309b515-87db-413b-a2bb-d68cf50a2d97
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button5'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: PhotoMode
+      m_Flags: 0
+    - m_Name:
+      m_Id: bf136fec-8c4b-4582-8b59-5b792d702f1a
+      m_Path: '<HID::G25 Racing Wheel>/hat/up'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: PhotoMode
+      m_Flags: 0
+    - m_Name:
+      m_Id: 44153929-7c31-4f93-bbef-a52f5c946218
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Timer
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0514844a-e1cc-424b-955d-d03b6048447f
+      m_Path: '<Keyboard>/tab'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Timer
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8e736957-9e38-4c34-920c-fe8e0c17d71b
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button4'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Timer
+      m_Flags: 0
+    - m_Name:
+      m_Id: acdd7cc3-0541-444f-bca4-29b9144bef2b
+      m_Path: '<HID::G25 Racing Wheel>/button16'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Timer
+      m_Flags: 0
+  - m_Name: CarDrag
+    m_Id: 4781d685-b55f-4dc3-82ba-6a777621dfa5
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Burnout
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 092a06a6-45be-4303-aed9-598e93df27d6
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: KeepLane
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 2bf6803d-b34f-425a-b56f-a2b92ee2469b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 0d0a0f96-6467-441c-84c7-86f332756903
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Burnout
+      m_Flags: 0
+    - m_Name:
+      m_Id: be064a72-e46d-4b12-9598-daba0a1b750f
+      m_Path: '<Keyboard>/x'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Burnout
+      m_Flags: 0
+    - m_Name:
+      m_Id: 063df154-97fc-4258-8cd2-ac20b0478051
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button4'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Burnout
+      m_Flags: 0
+    - m_Name:
+      m_Id: d9333e52-de76-4f3e-b6fe-b2747aea1b0f
+      m_Path: '<HID::G25 Racing Wheel>/button16'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Burnout
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4cceb756-2bef-4e45-8b0d-054b0d0927c6
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: KeepLane
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3fed9013-b26e-4d22-b6e9-3b2eac609fbb
+      m_Path: '<Keyboard>/r'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: KeepLane
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2164fee3-cf77-4a4c-b3b1-dfd3948412df
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: KeepLane
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9c7b9bd6-74e9-43a4-a9a2-92dd4e29b23d
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: KeepLane
+      m_Flags: 0
+  - m_Name: BackToCar
+    m_Id: 564c1eb2-1abb-416d-980a-a8eafd8cab3e
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: BackToCar
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: d9a2c422-8528-4297-9703-a5d83eb57e9c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: c39deaef-b137-475e-8f86-1a94ab0fe116
+      m_Path: '<Gamepad>/select'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: BackToCar
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7e074158-7e12-4a80-a39f-f601b152878b
+      m_Path: '<Keyboard>/f'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: BackToCar
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0d97fe96-b4d9-493b-b110-3fec98ed6f24
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button19'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: BackToCar
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9bff1b43-d932-43ef-a74d-649bb0806ce4
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button19'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: BackToCar
+      m_Flags: 0
+  - m_Name: ToRoad
+    m_Id: 3e4ed0a9-1308-44ab-a517-7f7d7a0a32f5
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: ToRoad
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 86b1c7c5-6355-47cd-a5c4-fb979d3d5895
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 44eec61a-249a-44ac-bd25-526ba80dfac5
+      m_Path: '<Gamepad>/select'
+      m_Interactions: Hold(duration=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToRoad
+      m_Flags: 0
+    - m_Name:
+      m_Id: b9400020-73ab-41af-8d72-ea1a02a28ec0
+      m_Path: '<Keyboard>/x'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToRoad
+      m_Flags: 0
+  - m_Name: ToRoadSteeringWheel
+    m_Id: 55145fa9-d369-47c1-a30e-577149d86f38
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: ToRoad
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: f3d63d5b-da00-4ac9-b94e-d685ad38d0d3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 20ae3375-6333-4369-a700-dead65da90f6
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button19'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToRoad
+      m_Flags: 0
+    - m_Name:
+      m_Id: e53af699-4b94-4f2b-83f1-127043e65e9e
+      m_Path: '<HID::G25 Racing Wheel>/button2'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToRoad
+      m_Flags: 0
+  - m_Name: Headlights
+    m_Id: 15af9844-f80e-41ef-b06e-e8bf58f6893d
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Headlights
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 433d9d25-5554-4238-8664-9046cc2556a3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 9ab0510b-3631-4a88-9908-747411438295
+      m_Path: '<Keyboard>/l'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Headlights
+      m_Flags: 0
+    - m_Name:
+      m_Id: e508161e-6046-422a-8524-fb6921323c5d
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Headlights
+      m_Flags: 0
+    - m_Name:
+      m_Id: 889be609-0bb0-4a35-bc5a-56fef0896bf0
+      m_Path: VirtualPad/headlights
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Headlights
+      m_Flags: 0
+    - m_Name:
+      m_Id: 69ff7752-c86e-4559-a759-91f76dc37c88
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button32'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Headlights
+      m_Flags: 0
+  - m_Name: Door
+    m_Id: 8b25afbc-ab5d-4acc-99c5-e2f317569083
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: OpenDoor
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b92a84a2-d7fb-44d7-8167-366959e86dda
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 64115e51-e0a7-4272-8bab-c388b79a62c5
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: OpenDoor
+      m_Flags: 0
+    - m_Name:
+      m_Id: 67335ecd-2adf-41e5-bfee-d17f829beca9
+      m_Path: '<Keyboard>/f'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenDoor
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3127f8ed-8b0d-4ab2-ad5b-aac8186152ef
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button4'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenDoor
+      m_Flags: 0
+    - m_Name:
+      m_Id: e7c3b2d1-fb26-45c9-b5f6-3445a16866f1
+      m_Path: '<HID::G25 Racing Wheel>/button16'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenDoor
+      m_Flags: 0
+  - m_Name: FreeRace
+    m_Id: 331011f3-7345-40cd-8171-5edd79a97b40
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Restart
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 6c97b760-731a-436f-a2bd-241f457664f6
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: CancelRace
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: be950630-fffd-4679-8dc7-1b1f03640759
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: cc3e2178-45b3-4027-b2bb-4f38a55d797b
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: Default
+      m_Action: Restart
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6f760ba2-c243-43b3-986f-c78d399eb473
+      m_Path: '<Keyboard>/f'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Restart
+      m_Flags: 0
+    - m_Name:
+      m_Id: bbef1a65-7ba1-455a-9cdf-2d764adf4eaf
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button4'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Restart
+      m_Flags: 0
+    - m_Name:
+      m_Id: ce931536-2066-4358-9aa1-f02b2597f89d
+      m_Path: '<HID::G25 Racing Wheel>/button16'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Restart
+      m_Flags: 0
+    - m_Name:
+      m_Id: 67b25126-5a38-4b9d-aadc-a6e920b85142
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: Default
+      m_Action: CancelRace
+      m_Flags: 0
+    - m_Name:
+      m_Id: f50c9984-97fb-4588-bfee-b822db3bfb74
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CancelRace
+      m_Flags: 0
+    - m_Name:
+      m_Id: d7c6a3d5-8cb1-4a3b-8cb9-ebc5bba58b22
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button5'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CancelRace
+      m_Flags: 0
+    - m_Name:
+      m_Id: bb94c82d-eb6e-4b84-bbbe-3998dd8ecb7e
+      m_Path: '<HID::G25 Racing Wheel>/hat/up'
+      m_Interactions: Hold
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CancelRace
+      m_Flags: 0
+  - m_Name: Phone
+    m_Id: 8ce53280-9e9c-42bf-b283-bb2acdf00fb1
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Phone
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 1b8d03b5-43e9-4f00-abba-defa23de54df
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 8b2c5002-c7ba-4f1a-84ce-2c162e10fee5
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Phone
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5965f1e6-62e6-4028-9408-7af42ae2622d
+      m_Path: '<Mouse>/middleButton'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Phone
+      m_Flags: 0
+    - m_Name:
+      m_Id: dfa450e8-7a98-4e96-aef7-f7a2a20d32d3
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button5'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Phone
+      m_Flags: 0
+    - m_Name:
+      m_Id: 859d17f1-4898-492e-b0fb-7f8b58549eda
+      m_Path: '<HID::G25 Racing Wheel>/hat/up'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Phone
+      m_Flags: 0
+  - m_Name: Voice
+    m_Id: 29b38ba8-5f49-4812-a07b-d3dbea361702
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: VoiceChat
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 2b091b71-3fbd-4a8e-8c58-d73c06dd0201
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Chat
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 40888338-6d7b-43f7-b4c4-c3b4be3a1bb5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: f374ca17-f0e7-4592-a3eb-8035bd45001e
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: VoiceChat
+      m_Flags: 0
+    - m_Name:
+      m_Id: f711ae14-d819-4209-900a-1bf09ef52978
+      m_Path: '<Keyboard>/v'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: VoiceChat
+      m_Flags: 0
+    - m_Name:
+      m_Id: 20ab0567-9821-448a-98f9-bdce6ecd9758
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button23'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: VoiceChat
+      m_Flags: 0
+    - m_Name:
+      m_Id: be097600-aca0-48d5-9c60-691692d70017
+      m_Path: '<HID::G25 Racing Wheel>/hat/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: VoiceChat
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2aa6ca0f-2e1d-4941-b13e-bdaff6bd6c74
+      m_Path: '<Keyboard>/t'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Chat
+      m_Flags: 0
+  - m_Name: ChatGamepad
+    m_Id: 0d3a478c-6872-4692-a8fd-f07e695ebcb7
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Chat
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fc3b0267-2e6a-4737-9091-a909a939e060
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 73e594e7-900c-40a7-80ab-35294946f644
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Chat
+      m_Flags: 0
+  - m_Name: CircleMenu
+    m_Id: be86b661-0082-4413-81f9-bcb9236487e4
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: CircleMenuMove
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 82d6ed2c-742d-4c76-b977-94f1b2d4cbe9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: CircleMenuClose
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 8724036e-03c3-4431-8f67-0b453f4d3585
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: CircleMenuCloseCam
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b7e3faeb-2561-48b3-ae18-7415c6ed11f1
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: CircleMenuCloseAnim
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 3e4f5a6b-7c8d-4e9f-a0b1-2c3d4e5f6a71
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: CircleMenuScroll
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: bc10865c-835a-4bc1-bc47-5337bd67f36c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: 861e7f8b-4d7a-45a8-a1da-dc1a15703e05
+      m_Path: '<Gamepad>/rightStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuMove
+      m_Flags: 0
+    - m_Name:
+      m_Id: 48d43757-bb66-49ee-9d8e-3a0359b76d66
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuMove
+      m_Flags: 0
+    - m_Name:
+      m_Id: c737140c-0dd6-4b0c-802d-61092a4a688f
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuClose
+      m_Flags: 0
+    - m_Name:
+      m_Id: 88a65b1e-f7a5-45c4-ad6a-38a09d65a6e8
+      m_Path: '<Keyboard>/tab'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuClose
+      m_Flags: 0
+    - m_Name:
+      m_Id: 34aa39d7-dc78-49d9-bd78-d7885e7d5926
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuCloseCam
+      m_Flags: 0
+    - m_Name:
+      m_Id: bd701486-b14e-457c-9e6c-538c038972a5
+      m_Path: '<Keyboard>/c'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuCloseCam
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4f5a6b7c-8d9e-4f0a-b1c2-3d4e5f6a7b82
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuCloseAnim
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5a6b7c8d-9e0f-4a1b-c2d3-4e5f6a7b8c93
+      m_Path: '<Keyboard>/q'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuCloseAnim
+      m_Flags: 0
+    - m_Name:
+      m_Id: 03b8b2ad-4d34-45c8-b62b-45f5a6e53e9b
+      m_Path: '<Mouse>/scroll/y'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: CircleMenuScroll
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: 84ff233d-d6c6-4158-9f74-c3d73f820521
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: CircleMenuScroll
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 10ce2919-15ea-4003-a8b4-a9c48060fa4f
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: CircleMenuScroll
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: cdf05944-1f06-498d-bf3a-8bd210271d1b
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: CircleMenuScroll
+      m_Flags: 8
+  - m_Name: OpenCircleMenu
+    m_Id: a43b2826-77a4-4fbb-87b3-f8ea9dc6be83
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: OpenCircleMenu
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 4e9562a2-52c1-46d0-bae5-0555a0442f6b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: OpenCircleMenuCam
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e4fcbcab-4796-47e6-9c73-0aeec1e2b946
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 8530c839-c79b-48b9-b401-77b3a435f1bc
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenCircleMenu
+      m_Flags: 0
+    - m_Name:
+      m_Id: fa90c043-65a8-4a6a-b835-46fb2ae1c006
+      m_Path: '<Keyboard>/tab'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenCircleMenu
+      m_Flags: 0
+    - m_Name:
+      m_Id: 54ff0379-949e-4439-a70c-941bc35b058e
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions: Hold(duration=0.3)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenCircleMenuCam
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0318799d-d36b-4d76-85aa-334c91078ee9
+      m_Path: '<Keyboard>/c'
+      m_Interactions: Hold(duration=0.3)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: OpenCircleMenuCam
+      m_Flags: 0
+  - m_Name: CarBase
+    m_Id: c688ecce-df88-40e7-a24c-80365b46eecf
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Steering
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: fbe1dafd-5060-4060-a312-54bc5b7e8406
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: SteeringMouse
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 085147cf-d5c7-401d-a071-fd6800943848
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: SetGearVisible
+      m_Type: 2
+      m_ExpectedControlType: Button
+      m_Id: 240093be-c784-4812-ad87-3518cd5a64bf
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Throttle
+      m_Type: 2
+      m_ExpectedControlType: Axis
+      m_Id: 64264815-bb0e-44bd-bf88-64ba347856de
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Brake
+      m_Type: 2
+      m_ExpectedControlType: Axis
+      m_Id: b685e9cf-15da-4394-a0e3-9c89942556f6
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Clutch
+      m_Type: 2
+      m_ExpectedControlType: Axis
+      m_Id: 837bed47-b8f6-4cbf-8793-26b083c23af1
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Handbrake
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 9dc2e65f-1cc6-45c3-a845-bf6248323697
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: HandbrakeHold
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 2b8accc0-d057-4270-aac4-ca605281f1f5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: StartEngine
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e2a19586-e572-4b23-b44b-21bd432cede3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Horn
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 1db291b7-8524-49a2-b1ad-ee857489fa66
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 2dd65f49-a28c-4ce5-9391-f83bfdfe7239
+      m_Path: '<Keyboard>/w'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8b65ccfc-348f-4580-93f6-e1dd59917300
+      m_Path: '<Gamepad>/rightTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 67a7a150-42cf-4550-8606-4cc174c4f51d
+      m_Path: VirtualPad/throttle
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 20ac63c6-6d5a-4bb2-929b-4d69c8af7b89
+      m_Path: '<HID::G25 Racing Wheel>/z'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: Invert,SliderRemap
+      m_Groups: ;Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 53bdf077-208f-41bf-9b62-388ec0093428
+      m_Path: '<HID::Gudsen MOZA R5 Base>/z'
+      m_Interactions: SliderPress
+      m_Processors: SliderRemap
+      m_Groups: ;Default
+      m_Action: Throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: cf42e4b3-3e4e-43db-b71e-144400db6284
+      m_Path: '<Keyboard>/s'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Brake
+      m_Flags: 0
+    - m_Name:
+      m_Id: ae0b214f-6102-4427-8ff7-c5a2c0abe5cb
+      m_Path: '<Gamepad>/leftTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Brake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 938a1fd9-a2a1-4cdc-8427-326bbd382428
+      m_Path: VirtualPad/brake
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Brake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9208f4c3-b949-4bee-b7ad-4a5e925e9124
+      m_Path: '<HID::G25 Racing Wheel>/rz'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: Invert,SliderRemap
+      m_Groups: ;Default
+      m_Action: Brake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 28f3435c-2243-4b68-b458-41231760e9c9
+      m_Path: '<HID::Gudsen MOZA R5 Base>/rz'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: SliderRemap
+      m_Groups: ;Default
+      m_Action: Brake
+      m_Flags: 0
+    - m_Name:
+      m_Id: bcc64295-f8f3-4b91-b3e8-664c056450b5
+      m_Path: '<Keyboard>/shift'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: e821bc74-7f0e-4018-8e68-2d5fc689fe90
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions: Press(pressPoint=0.001)
+      m_Processors:
+      m_Groups: Default
+      m_Action: Clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5ea10a78-8744-4600-8a61-cea880d37502
+      m_Path: VirtualPad/clutch
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5538a5f5-be36-44e7-ae63-ffe0a7ecdafa
+      m_Path: '<HID::G25 Racing Wheel>/slider'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: Invert,SliderRemap
+      m_Groups: ;Default
+      m_Action: Clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 36fa19f1-c7b3-44a5-bdbd-6ad34f4f7a45
+      m_Path: '<HID::Gudsen MOZA R5 Base>/slider'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: SliderRemap
+      m_Groups: ;Default
+      m_Action: Clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 09a45b86-2cd7-41e7-93f5-f90375794c30
+      m_Path: '<Keyboard>/space'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Handbrake
+      m_Flags: 0
+    - m_Name:
+      m_Id: e7cb4441-1a4c-48e6-87be-b5c46b012a24
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Handbrake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 398c51ed-a54f-4497-b871-4e4b910d9334
+      m_Path: VirtualPad/handbrake
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Handbrake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 953d50a1-e124-48d2-8f24-35b53d8d44f7
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Handbrake
+      m_Flags: 0
+    - m_Name:
+      m_Id: bd80bb7d-b50f-4bad-bcdb-2dc6a3ab5490
+      m_Path: '<HID::G25 Racing Wheel>/button7'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Handbrake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7b93fffa-111e-4b6a-bc0a-ad4b62d4ece9
+      m_Path: '<HID::ZSC SIMAKER-Handbrake>/slider'
+      m_Interactions: SliderPress(pressPoint=0.99,releasePoint=0.01)
+      m_Processors: SliderRemap
+      m_Groups: ;Default
+      m_Action: Handbrake
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5d3dfc74-c227-4fd3-91dc-fb09ba5f1b81
+      m_Path: '<Keyboard>/leftCtrl'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: HandbrakeHold
+      m_Flags: 0
+    - m_Name:
+      m_Id: e1974111-4c57-4c0d-8add-fde3c664dfe6
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: HandbrakeHold
+      m_Flags: 0
+    - m_Name:
+      m_Id: b0f9bd73-addb-4edf-83ea-c42a5223d236
+      m_Path: '<Keyboard>/z'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: StartEngine
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9450aa8e-32d8-458d-8b47-45c1e54f30da
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions: Hold,Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: StartEngine
+      m_Flags: 0
+    - m_Name:
+      m_Id: a3edfaa9-c95e-49b5-9a07-1a3cd6e22ac1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button3'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: StartEngine
+      m_Flags: 0
+    - m_Name:
+      m_Id: cbeb35a1-d73f-4215-854c-7476ae157c40
+      m_Path: VirtualPad/starter
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: StartEngine
+      m_Flags: 0
+    - m_Name:
+      m_Id: 245d9d0f-ee09-4e6c-bbb1-c35aa47ad9ad
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button36'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: StartEngine
+      m_Flags: 0
+    - m_Name:
+      m_Id: c168d0ed-4335-4006-bf7d-7a7aecd706fa
+      m_Path: '<HID::G25 Racing Wheel>/button17'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: StartEngine
+      m_Flags: 0
+    - m_Name:
+      m_Id: 53e91f24-154b-425e-aaaf-8e4146850212
+      m_Path: '<Keyboard>/g'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Horn
+      m_Flags: 0
+    - m_Name:
+      m_Id: 440d15cc-cf3a-4ec3-8df1-c163f93a870d
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Horn
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0ac467d9-20cb-4f7d-860e-063b7494a566
+      m_Path: VirtualPad/horn
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: Default
+      m_Action: Horn
+      m_Flags: 0
+    - m_Name:
+      m_Id: b9e3fca1-7173-4bbb-9251-49cb07073b30
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Horn
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8eb82480-fa49-4bdb-bcb9-f89f73345ce7
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Horn
+      m_Flags: 0
+    - m_Name: Keyboard
+      m_Id: f8a16e0f-0ec5-49c9-a0cd-dff525538767
+      m_Path: 1DAxis
+      m_Interactions: Press
+      m_Processors:
+      m_Groups:
+      m_Action: Steering
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 875c385b-3d7d-44b2-a64a-871cf669d3b1
+      m_Path: '<Keyboard>/a'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Steering
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: f4768545-a892-42e6-98a7-7fd8551e8e70
+      m_Path: '<Keyboard>/d'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Default
+      m_Action: Steering
+      m_Flags: 8
+    - m_Name:
+      m_Id: 359be4e4-523d-4ac2-9c70-ad1d079d249f
+      m_Path: '<Gamepad>/leftStick/x'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Steering
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2e3e3903-9d35-40af-9f9e-907f6273799f
+      m_Path: '<HID::G25 Racing Wheel>/stick/x'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: Invert,SliderRemap
+      m_Groups: ;Default
+      m_Action: Steering
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0dc8fe64-bcd4-4bb2-b884-b6d90a55ea3e
+      m_Path: '<Joystick>/stick/x'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Steering
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: 16d46cc4-2d37-4d16-a26b-783f850680df
+      m_Path: OneModifier
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: SteeringMouse
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 2a3dac17-c9c2-4a75-a397-c91465256fb9
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SteeringMouse
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: bbe4aa90-bee0-41db-adf7-a263ff901511
+      m_Path: '<Mouse>/delta/x'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SteeringMouse
+      m_Flags: 8
+    - m_Name:
+      m_Id: d22f737c-3a75-4d5d-94d7-1ed11090a110
+      m_Path: '<Keyboard>/shift'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SetGearVisible
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7a54d3c4-c8bb-4ffe-9a72-759a4d53f3cc
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SetGearVisible
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0159639b-8bf7-4f28-8741-bb46b4882716
+      m_Path: '<HID::G25 Racing Wheel>/slider'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: Invert,SliderRemap
+      m_Groups: ;Default
+      m_Action: SetGearVisible
+      m_Flags: 0
+    - m_Name:
+      m_Id: bd779c47-9f92-4c45-8105-87b2a7d6fa65
+      m_Path: '<HID::Gudsen MOZA R5 Base>/slider'
+      m_Interactions: SliderPress(pressPoint=0.99)
+      m_Processors: SliderRemap
+      m_Groups: ;Default
+      m_Action: SetGearVisible
+      m_Flags: 0
+  - m_Name: SteeringWheelCar
+    m_Id: 5d812162-dfc5-4574-a531-f6fdfd1d42a4
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: gear1
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: f7627425-57e1-4aef-8287-6291564b174b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear2
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 202f6fe8-04fd-42cf-ac73-47a64678d060
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear3
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 82c74d3e-1461-4fc3-b9ad-da71421ae991
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear4
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 541a67c0-84a9-4593-b50c-63af82aa2cf1
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear5
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 48cfb531-c1c5-4bb2-a2a9-149267c9ea30
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear6
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e1b6e907-302f-4322-9d11-ffa46a4922e9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear7
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 4b39a3ad-cc9a-4e36-a509-f082a1323ddc
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gearR
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: bb6dfbeb-9f82-402c-b911-abae6c2e325c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gearN
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 1b9d60b5-694f-4348-8bcf-1b158b9430f7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gearUp
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fc76ecab-d4eb-4af0-8e3f-3e651d465e06
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearAMToggle
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 02203c48-b8b0-4178-b718-36dffda9f524
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearDown
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 1f6cd2bd-0000-447b-8c71-a3e308d173f0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: LeftSignal
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 280bf0f7-7401-46c6-a40f-a6f51a57f54f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: RightSignal
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 99b93b9a-d442-44e5-bdfc-9bd9a55a2e1b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Emergency
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 3f617b88-9e6d-4ee3-8d0f-d9b509436875
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 2a97084c-7b58-452d-ab6a-b57b1c0b8ef3
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button114'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear1
+      m_Flags: 0
+    - m_Name:
+      m_Id: a41ca65b-48bb-4077-abf8-a4ff66e44948
+      m_Path: '<HID::G25 Racing Wheel>/button9'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear1
+      m_Flags: 0
+    - m_Name:
+      m_Id: 100e1488-193b-4806-b698-1e5f991b2f70
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button115'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear2
+      m_Flags: 0
+    - m_Name:
+      m_Id: 02a7a568-8040-49d5-8ab0-ea9200a9e07e
+      m_Path: '<HID::G25 Racing Wheel>/button10'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear2
+      m_Flags: 0
+    - m_Name:
+      m_Id: c20c32b5-86f5-4d5f-8d11-0a4b3316323b
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button116'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear3
+      m_Flags: 0
+    - m_Name:
+      m_Id: 680c3ab2-2348-4bb5-9e6a-a02c1762038a
+      m_Path: '<HID::G25 Racing Wheel>/button11'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear3
+      m_Flags: 0
+    - m_Name:
+      m_Id: a6f060d7-40e2-4c07-a934-4cbe29da8c41
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button117'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear4
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3cb76f6a-df2e-45b7-a002-a3a9b0b47e90
+      m_Path: '<HID::G25 Racing Wheel>/button12'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear4
+      m_Flags: 0
+    - m_Name:
+      m_Id: 620c0474-1ade-42ea-b872-c739889493ce
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button118'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear5
+      m_Flags: 0
+    - m_Name:
+      m_Id: a71fb124-0e32-4860-a24c-3e2247be9611
+      m_Path: '<HID::G25 Racing Wheel>/button13'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear5
+      m_Flags: 0
+    - m_Name:
+      m_Id: 24f39afa-2f49-4c57-97e0-ada6af1e0511
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button119'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear6
+      m_Flags: 0
+    - m_Name:
+      m_Id: b7983ee4-5c2a-4fc6-8725-0105574fec8d
+      m_Path: '<HID::G25 Racing Wheel>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear6
+      m_Flags: 0
+    - m_Name:
+      m_Id: 60f6e189-5915-4080-828d-6087b52836a4
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button120'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gear7
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7c485cfd-400f-42f7-b698-db9e89951302
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button113'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearR
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5145398f-1046-41b1-895a-803b3a81a8a9
+      m_Path: '<HID::G25 Racing Wheel>/button15'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearR
+      m_Flags: 0
+    - m_Name:
+      m_Id: df15e4fb-f7cf-4633-9299-a1b6760a7738
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button113'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 097a4890-014d-4b87-bde5-0c09f8ccd76b
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button120'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: c815df80-658f-407c-aebd-187f903cffd8
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button119'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9374622d-954a-457b-99f7-1a2a3aee025d
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button118'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6034f3b6-5d15-4e17-9335-b10f1f155e5c
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button117'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: c6efbc78-e789-4ae7-bdb7-6e41038e3040
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button116'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8b60e018-eaf7-427a-9d5a-6eb74b5a22dc
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button115'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 43b56528-5401-4bef-8004-7394a1d031a9
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button114'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 96c91863-5622-4ae8-9887-e4b0cfaf67aa
+      m_Path: '<HID::G25 Racing Wheel>/button15'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 11cf90d8-ebf4-4f8a-9590-e7c319330d00
+      m_Path: '<HID::G25 Racing Wheel>/button14'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6d019785-0e59-4819-aae4-8479368485bb
+      m_Path: '<HID::G25 Racing Wheel>/button13'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: b90fcf83-7dd5-4e18-b0aa-df2f7844b4a5
+      m_Path: '<HID::G25 Racing Wheel>/button12'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: e5e59e1f-7862-4897-8794-7b138e1ee5f0
+      m_Path: '<HID::G25 Racing Wheel>/button11'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: c8ed22c8-8c11-40dc-a765-bcbe994cc127
+      m_Path: '<HID::G25 Racing Wheel>/button10'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8be52f2a-87c3-488f-9d00-abde5f75a5a6
+      m_Path: '<HID::G25 Racing Wheel>/button9'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearN
+      m_Flags: 0
+    - m_Name:
+      m_Id: 13e59377-6379-46d2-a5b7-ca609b4a85b3
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearUp
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3fd8f953-a1bb-40a1-96a8-54bfeea85695
+      m_Path: '<HID::G25 Racing Wheel>/button5'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearUp
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1a03ccd9-7084-4102-8d15-6359c7b6915e
+      m_Path: '<HID::G25 Racing Wheel>/button9'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearUp
+      m_Flags: 0
+    - m_Name:
+      m_Id: d378a366-0484-48da-8cbd-20de94c3c4b6
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button33'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearAMToggle
+      m_Flags: 0
+    - m_Name:
+      m_Id: f5256300-e3fe-4626-be20-1b12539f20af
+      m_Path: '<HID::G25 Racing Wheel>/trigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearAMToggle
+      m_Flags: 0
+    - m_Name:
+      m_Id: d725399e-02d1-41dc-91f5-117e286a7f74
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button13'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearDown
+      m_Flags: 0
+    - m_Name:
+      m_Id: 53c6a5f0-ad27-4209-82e0-ceda8835ffe8
+      m_Path: '<HID::G25 Racing Wheel>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearDown
+      m_Flags: 0
+    - m_Name:
+      m_Id: 59641856-f103-43fc-8e9b-263333d035db
+      m_Path: '<HID::G25 Racing Wheel>/button10'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: gearDown
+      m_Flags: 0
+    - m_Name:
+      m_Id: a84fef36-8ff1-4f53-a826-db1f8ad82337
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button21'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: LeftSignal
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7df55f2e-ace3-4a52-9d03-9777220dd2e1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button34'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: RightSignal
+      m_Flags: 0
+    - m_Name:
+      m_Id: b0a9b6ad-4854-4b2a-8b5f-56cad5814d82
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button20'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Emergency
+      m_Flags: 0
+  - m_Name: Shifter
+    m_Id: b237cf9e-7086-40f2-99bd-39f6f7a9b17f
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: ShiftM
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 51b0564a-c4ad-48dd-8e05-96959d91e102
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: ToggleMA
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 9e6ffc8f-24cb-4c31-8426-baa478122dc5
+      m_Processors: AxisDeadzone
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ShiftDown
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 6de8bd5c-5594-42e5-b7c3-a7f779505063
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: ShiftUp
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: f3c113af-90d7-493e-afb4-3dda797076c5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: ShiftPRND
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 5adb4b92-22c9-497b-b72a-5bdc46765dd1
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: ShifterMove
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 0ec0a320-a65c-4d1a-87d8-97a2041228bd
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name: One Modifier
+      m_Id: c2f351bf-d4aa-4bca-bcd7-a90fbddad751
+      m_Path: OneModifier
+      m_Interactions: Tap(pressPoint=0.8)
+      m_Processors: AxisDeadzone(min=0.5)
+      m_Groups:
+      m_Action: ShiftM
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: bfd70bee-7dbe-45b4-88cf-b54152d9f675
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftM
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 5ddea859-b8e7-4933-99f5-ff66250ef715
+      m_Path: '<Gamepad>/rightStick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftM
+      m_Flags: 8
+    - m_Name:
+      m_Id: 671d54d6-0db1-48d5-b416-a31bfa3d95cc
+      m_Path: '<Keyboard>/shift'
+      m_Interactions: Tap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToggleMA
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: bb982170-22e6-48a6-8341-8d8cb3cc43d6
+      m_Path: OneModifier
+      m_Interactions: Tap(pressPoint=0.8)
+      m_Processors:
+      m_Groups:
+      m_Action: ShiftDown
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: e083698b-dddf-49a1-883e-e3ad5094fd4a
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftDown
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: bcd5950d-c312-4fec-922b-810ccf7c75e2
+      m_Path: '<Gamepad>/rightStick/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftDown
+      m_Flags: 8
+    - m_Name:
+      m_Id: 545977a6-aaa4-4109-8908-ed390a932c24
+      m_Path: '<Keyboard>/q'
+      m_Interactions: Tap(pressPoint=0.8)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftDown
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: e94ca110-c08a-4d53-8318-3c731bd17fff
+      m_Path: OneModifier
+      m_Interactions: Tap(pressPoint=0.8)
+      m_Processors:
+      m_Groups:
+      m_Action: ShiftUp
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: c758d1c4-ceaf-4904-9714-f030fe6c44a1
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftUp
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 02a1b7a6-2229-42e2-bd5d-bf3d8762a35c
+      m_Path: '<Gamepad>/rightStick/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftUp
+      m_Flags: 8
+    - m_Name:
+      m_Id: f7f5cc33-b106-4e58-8135-ff7538d69a2e
+      m_Path: '<Keyboard>/e'
+      m_Interactions: Tap(pressPoint=0.8)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftUp
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: 45afdefe-be45-48ba-93ae-3aabed945e22
+      m_Path: OneModifier
+      m_Interactions: Tap(pressPoint=0.8)
+      m_Processors:
+      m_Groups:
+      m_Action: ShiftPRND
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 17a57cbf-3e0c-4f5c-bfde-052e6ef3ad1a
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftPRND
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: d2855e45-44db-4f04-8897-8740b935d8ff
+      m_Path: '<Gamepad>/rightStick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShiftPRND
+      m_Flags: 8
+    - m_Name: One Modifier
+      m_Id: b5010ff6-7a24-4355-b5f7-9b13436c6922
+      m_Path: OneModifier(overrideModifiersNeedToBePressedFirst=true)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: ShifterMove
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 94f2971e-d444-45d0-a4a2-520d05843fe8
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShifterMove
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: e9bf890e-4f84-471d-98b4-2f051abb7d3b
+      m_Path: '<Gamepad>/rightStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShifterMove
+      m_Flags: 8
+    - m_Name: One Modifier
+      m_Id: ee8daf59-4ac4-4b2f-be21-d836faa459c7
+      m_Path: OneModifier(overrideModifiersNeedToBePressedFirst=true)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: ShifterMove
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 26ffcba6-f53f-4c6a-b5ee-68e71ee020e4
+      m_Path: '<Keyboard>/shift'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShifterMove
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 938d9bef-b7ec-42e4-84cb-e3adea0d294e
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ShifterMove
+      m_Flags: 8
+  - m_Name: ToggleUi
+    m_Id: 17ddf5b9-23f8-4e3b-9290-3e4a37ba2c90
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: ToggleUi
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e28cc5d1-c55d-4fd4-b7c5-6ea8be079bd7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: 907fabf6-9c93-46bc-a7cb-799f6ae9a182
+      m_Path: '<Gamepad>/select'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToggleUi
+      m_Flags: 0
+    - m_Name:
+      m_Id: 801fe1e7-6b9b-4302-bb84-404c6bf3b953
+      m_Path: '<Keyboard>/f'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: ToggleUi
+      m_Flags: 0
+  - m_Name: Debug
+    m_Id: f7f44e57-810d-44d0-8728-c77a529d4e12
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: RestoreInput
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 230cce23-d903-4f0e-a7d1-364711f30d1c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: SendLogs
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 20fd177d-4534-43a7-8d16-5bf4b83edf8b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: SimulateDismissKeyboard
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 9e339d9d-3436-4359-855b-5d2aaa5b248d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: SimulateSubmitKeyboard
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 99169965-e8ae-4fc7-9b23-962d8e1e44c0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: togglecasual
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 676118bd-6bc6-470f-9299-f916b21f16cb
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: StartCursorOnly
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 77e5892b-2eb9-4333-95b8-f095386a42ca
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: StopCursorOnly
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: a0adca78-e715-4948-a348-e410fda137b8
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: dc6b00ab-8879-47ae-b95d-bfd07e8b023a
+      m_Path: '<Keyboard>/f5'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: RestoreInput
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7c6ed4bf-f910-4493-a665-459d100d281e
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: MultiTap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: RestoreInput
+      m_Flags: 0
+    - m_Name:
+      m_Id: 437cbbda-5c51-43e8-944d-a2d910cccef9
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: MultiTap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: RestoreInput
+      m_Flags: 0
+    - m_Name:
+      m_Id: 16f3a7e4-d65b-4e83-b266-2fb22f425363
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions: MultiTap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: RestoreInput
+      m_Flags: 0
+    - m_Name: Two Modifiers
+      m_Id: 6344372d-6f89-4174-a735-79bca88654ad
+      m_Path: TwoModifiers
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: SendLogs
+      m_Flags: 4
+    - m_Name: modifier1
+      m_Id: e0caddf1-d608-4b06-a065-a6b2d0884afe
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SendLogs
+      m_Flags: 8
+    - m_Name: modifier2
+      m_Id: 8ed1a0e9-850e-4750-aa2c-7cb2c6193f75
+      m_Path: '<Gamepad>/rightShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SendLogs
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 4204a362-641c-4b04-8fbc-85c168df51bc
+      m_Path: '<Gamepad>/dpad'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SendLogs
+      m_Flags: 8
+    - m_Name:
+      m_Id: 76e395bf-59ab-441c-a965-23ae2dea3f3e
+      m_Path: '<Keyboard>/f9'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SendLogs
+      m_Flags: 0
+    - m_Name:
+      m_Id: 004ab6bf-e660-4a8d-88ec-706f68690007
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button23'
+      m_Interactions: MultiTap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SendLogs
+      m_Flags: 0
+    - m_Name:
+      m_Id: 52e54a2a-f21d-41e1-9a52-deaa08a2aa5d
+      m_Path: '<HID::G25 Racing Wheel>/trigger'
+      m_Interactions: MultiTap
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SendLogs
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8fed05a3-a091-47f3-b465-b0faa31d98e6
+      m_Path: '<Keyboard>/escape'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateDismissKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: 09763165-81df-47da-b09f-7af05941b48b
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateDismissKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7f574884-9682-4c32-91c7-1618fdcf50d9
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateDismissKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: 82a2e61f-5e63-4217-b78c-30aa621f302d
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateDismissKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7aebd1f6-e4ff-4298-b725-f96c1a92cc0d
+      m_Path: '<Keyboard>/enter'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateSubmitKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5915e173-f504-4702-9ba8-afa01ecb76db
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateSubmitKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: f25be929-3be9-406d-ab78-e09912de63da
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateSubmitKeyboard
+      m_Flags: 0
+    - m_Name:
+      m_Id: c9f43530-8e29-4c8b-a823-0cda33e4a73e
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: SimulateSubmitKeyboard
+      m_Flags: 0
+    - m_Name: One Modifier
+      m_Id: 6f9bb7ab-fddc-4c02-a92b-2c2e8152edac
+      m_Path: OneModifier
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups:
+      m_Action: togglecasual
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 631d94d8-bba1-41a0-93df-491ae9985782
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: togglecasual
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: d68c4b11-af5c-4a8a-a682-ce66c0112308
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: togglecasual
+      m_Flags: 8
+    - m_Name: G25
+      m_Id: eba175f8-0337-4ce3-904e-499fbaaee4b0
+      m_Path: OneModifier
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups:
+      m_Action: togglecasual
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 93425055-3c33-40ec-baef-9ec3ef866f99
+      m_Path: '<HID::G25 Racing Wheel>/button8'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: togglecasual
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 28565c30-c8b6-470d-a3d4-3867560631aa
+      m_Path: '<HID::G25 Racing Wheel>/button7'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: togglecasual
+      m_Flags: 8
+    - m_Name:
+      m_Id: 5fec88bb-739e-4c51-9b05-8f3959286e0f
+      m_Path: '<Keyboard>/f6'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: togglecasual
+      m_Flags: 0
+    - m_Name:
+      m_Id: d42c68f7-8465-409d-8379-fd7bcfb3b236
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button24'
+      m_Interactions: Hold(duration=1.5)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: togglecasual
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5a514dbf-d1de-4fb0-95e1-d8e3969eaa1d
+      m_Path: '<Keyboard>/alt'
+      m_Interactions: Press
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: StartCursorOnly
+      m_Flags: 0
+    - m_Name:
+      m_Id: 276a40af-ceff-4650-adeb-b12f64ac4897
+      m_Path: '<Keyboard>/alt'
+      m_Interactions: Press(behavior=1)
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: StopCursorOnly
+      m_Flags: 0
+  - m_Name: MozaHelp
+    m_Id: 386dfe3c-664e-4e31-b060-6bcef3a2a04a
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: x-south
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: c522204c-5f52-4156-8ecd-7be5669241e9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: b-east
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: dd897ec2-ff84-4951-81df-18e88bd1926d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: b-west
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 2fe655e0-8282-4d1b-807e-a6cdaab651c6
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: b-north
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 5ee35907-f082-4337-8476-fc618e39b436
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: d-right
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 819e1d3f-440d-49f8-9bd9-d5c3314b6e7c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: d-left
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: a0554e7e-0e3f-452c-8880-0da3168fabc0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: d-down
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fb045cbd-a58d-4cde-9ecc-fbed69088563
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: d-up
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b4b52bb5-8991-4264-bed3-5dac3da620c2
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: menu
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: a00b9fc6-e851-4c54-a1dc-94eac94e224b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: home
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 679d7594-cb84-4e80-8899-42831736e36c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: START
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: f721d0b9-3314-49d5-ab99-26972745be3b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: radio
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 9af31c23-0198-4ace-97cc-c7f3453c0387
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: cam
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fb16b95d-897a-498e-a57d-8cc973c75c53
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: W-N
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 9217ec91-fcb4-4df1-a87d-df43afef2a9d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: WIP
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 10fea721-93ff-4c11-b237-1588c101ed18
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: W-P
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 7e7bb3f3-d74b-4333-b7c8-7133db33cf8c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: BOX
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 4549f6be-5dea-4355-8ab8-c78ea19484a1
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: W-R
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 8c1f56fe-c533-4a37-874a-5c5ef55effbb
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: FL
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 0285e52a-c829-4dd3-a089-6a5505e466ad
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: PL
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 07c47238-30dc-4c7e-837c-753e5ce4a95e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: S1
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 7fbe0e0c-ff95-4ffd-9992-915eb2b124bb
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: S2
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 482a7c4f-1dbd-4ab6-85a9-a7f43c1d93bc
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: left-wing
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 3e8add8b-95c3-4148-b0c5-2f3ebf58bca9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: right-wing
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 709092cb-d8fd-4e3a-b3d2-b5078bab2749
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: wheel
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 1af6ff58-a188-4296-baf4-2871cfe4c77a
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: throttle
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 3dca28b8-96a9-417a-8795-440dfe874e5b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: break
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 39e47f1b-ca9d-46a2-aef3-03bd08c3a782
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: clutch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: a4809043-043c-4c64-a994-86f41614b902
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: gear-1
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 261cc0e7-28c9-46eb-a953-4a4afc4aa4fd
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-2
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 311b558f-793d-4034-8bf1-8f739c680441
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-3
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 08d25ff0-62b0-4960-ae78-ad687e21488b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-4
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: fd887947-78a7-4372-b373-a662792cf021
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-5
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 6aef210b-aab0-4320-bbf8-20fc85451a4d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-6
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: ee837080-7a37-44fe-9b96-c4c33db51cb7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-7
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e1d0a6d7-eb22-4953-bb9a-e24d0c77a161
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-R
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 21fc2d57-5a5e-4615-9a21-13078f771e99
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gear-N
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 12ee5931-f013-4a23-bc77-6fe8ef4be06f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: wheelLButton
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 62531dac-97e6-4573-b997-3e4699354957
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: wheelRButton
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 61786225-fdd0-48df-aea5-63d0c08f47b5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearboxButton1
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 0271b1b7-01a4-4483-a45d-305943649c13
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearboxButton2
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 5b2101b2-c987-456e-99e7-90588b0050b7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearboxButton3
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b8e67cc3-266b-4a6a-a13e-476605f1056c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearboxButton4
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: dc670455-8d3a-4731-9c08-ce796799580a
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: gearup
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: 567f9793-2464-45bd-bd4c-8cbf100b1ce5
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: geardown
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: e83ddbe5-c5d0-4718-be9b-55f3b56685a2
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: handbrake
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: d2ad2971-a3f4-48b3-921b-ca14721867da
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    m_Bindings:
+    - m_Name:
+      m_Id: f40e8241-377f-4dce-ab8d-a4eb3e1e0d37
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: x-south
+      m_Flags: 0
+    - m_Name:
+      m_Id: 76438f38-a5f6-4bd8-b606-b59627f0dbaf
+      m_Path: '<HID::Gudsen MOZA R5 Base>/trigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: x-south
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2d34d127-3ea9-47fd-b184-6f390eea82bb
+      m_Path: '<HID::G25 Racing Wheel>/button18'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: x-south
+      m_Flags: 0
+    - m_Name:
+      m_Id: c8ff0079-ebd4-46d9-bd85-beb9f7870d55
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-east
+      m_Flags: 0
+    - m_Name:
+      m_Id: 652b8de9-4a9a-44b6-8d8f-f8034bfcf58d
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button2'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-east
+      m_Flags: 0
+    - m_Name:
+      m_Id: 73a6f634-179d-4ed0-9fcf-b19ef374f12d
+      m_Path: '<HID::G25 Racing Wheel>/button19'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-east
+      m_Flags: 0
+    - m_Name:
+      m_Id: e9e0c033-05c7-42a6-b054-d423f1bbd799
+      m_Path: '<Gamepad>/buttonWest'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-west
+      m_Flags: 0
+    - m_Name:
+      m_Id: a091bd72-c890-492d-9948-e91c79e7f994
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button3'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-west
+      m_Flags: 0
+    - m_Name:
+      m_Id: c8f1fe3d-d6a0-41b7-9db9-67fcc3a32dcc
+      m_Path: '<HID::G25 Racing Wheel>/button17'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-west
+      m_Flags: 0
+    - m_Name:
+      m_Id: 33caa6ad-ce99-4bfe-8ab3-3c25b834d22d
+      m_Path: '<Gamepad>/buttonNorth'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-north
+      m_Flags: 0
+    - m_Name:
+      m_Id: a891730b-44c9-4664-820a-48ac9fadbcb2
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button4'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-north
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5a0fc42a-f167-4f16-b0b6-865c1c701df6
+      m_Path: '<HID::G25 Racing Wheel>/button16'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: b-north
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9ceda465-4507-4abf-9df4-6a4881c3c18f
+      m_Path: '<Gamepad>/dpad/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-right
+      m_Flags: 0
+    - m_Name:
+      m_Id: 204738e9-1915-4ff0-8d32-7e89b1a7bcb4
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-right
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6c24acac-faf3-442c-a756-6951b292e7a2
+      m_Path: '<HID::G25 Racing Wheel>/hat/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-right
+      m_Flags: 0
+    - m_Name:
+      m_Id: e7285f02-f65a-4582-a315-bceca1b97054
+      m_Path: '<Gamepad>/dpad/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-left
+      m_Flags: 0
+    - m_Name:
+      m_Id: e81b4d79-9371-48b6-8467-8bbffb3587ac
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button8'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-left
+      m_Flags: 0
+    - m_Name:
+      m_Id: 58f8be8f-3e43-4e60-950a-d3f5ac24f94f
+      m_Path: '<HID::G25 Racing Wheel>/hat/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-left
+      m_Flags: 0
+    - m_Name:
+      m_Id: 57099b8d-fa68-427a-85df-b4f16c2af3f3
+      m_Path: '<Gamepad>/dpad/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-down
+      m_Flags: 0
+    - m_Name:
+      m_Id: b8233be7-7ca0-4804-8ef6-8d74d768cebf
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button7'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-down
+      m_Flags: 0
+    - m_Name:
+      m_Id: f0b4552e-7873-45ea-bd71-43a7f8252f96
+      m_Path: '<HID::G25 Racing Wheel>/hat/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-down
+      m_Flags: 0
+    - m_Name:
+      m_Id: f38c8006-08e2-47cd-a259-f46fcce62baf
+      m_Path: '<Gamepad>/dpad/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-up
+      m_Flags: 0
+    - m_Name:
+      m_Id: de906743-85bb-4a14-9f1c-fcf40f9273a1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button5'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-up
+      m_Flags: 0
+    - m_Name:
+      m_Id: d214eba2-9e67-4189-87ca-f2d03381fd81
+      m_Path: '<HID::G25 Racing Wheel>/hat/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: d-up
+      m_Flags: 0
+    - m_Name:
+      m_Id: a9cd898f-9a6a-4b19-aecd-b83c19764692
+      m_Path: '<Gamepad>/start'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: menu
+      m_Flags: 0
+    - m_Name:
+      m_Id: b08647d8-1b9b-4b76-b25a-9d53944d5d5a
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button38'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: menu
+      m_Flags: 0
+    - m_Name:
+      m_Id: c0c46199-fa16-4325-a0e4-64ffd43c2e68
+      m_Path: '<Gamepad>/select'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: home
+      m_Flags: 0
+    - m_Name:
+      m_Id: 06e96945-b92a-423e-8111-934b5781b378
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button25'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: home
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7d4509af-0e4a-4820-867a-c1b11921fbf7
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button36'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: START
+      m_Flags: 0
+    - m_Name:
+      m_Id: f0cb0abc-d075-49a6-8ed7-9f24322dccf1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button23'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: radio
+      m_Flags: 0
+    - m_Name:
+      m_Id: b7e89869-a6c2-4e60-bb4a-eaa1011b8cfc
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button22'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: cam
+      m_Flags: 0
+    - m_Name:
+      m_Id: 5798f2b1-cacb-427b-a8e1-fb7f4e1e9d99
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button19'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: W-N
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3a6881c7-705f-4322-8f06-1f7e50952790
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button20'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: WIP
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6de12970-2da0-4da0-8cd6-085954da0925
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button32'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: W-P
+      m_Flags: 0
+    - m_Name:
+      m_Id: 32543b73-b0fc-4f57-9e92-f507b75ab1da
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button33'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: BOX
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1d23b85-37c5-49a0-bd4d-874e95874663
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button35'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: W-R
+      m_Flags: 0
+    - m_Name:
+      m_Id: cb4e51cc-45b1-40fd-87bd-8196e00b53c5
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button21'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: FL
+      m_Flags: 0
+    - m_Name:
+      m_Id: c268738e-8068-4c84-8cdd-bd9b8f69d72c
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button34'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: PL
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3b4d2e7c-8bfa-4b57-b231-203cc342d67d
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button24'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: S1
+      m_Flags: 0
+    - m_Name:
+      m_Id: 22bae6ac-1c45-46da-a242-17cd6189fa40
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button37'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: S2
+      m_Flags: 0
+    - m_Name:
+      m_Id: ef68204a-eb4d-49d1-8ad0-8552a650da13
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button13'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: left-wing
+      m_Flags: 0
+    - m_Name:
+      m_Id: f94ea507-8274-48d6-827f-691f06e7b4f8
+      m_Path: '<HID::G25 Racing Wheel>/button6'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: left-wing
+      m_Flags: 0
+    - m_Name:
+      m_Id: e83953a4-9ff9-4651-97ab-6d9613a5a668
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: right-wing
+      m_Flags: 0
+    - m_Name:
+      m_Id: 42cffcb9-de78-4b08-9be5-778526ec3659
+      m_Path: '<HID::G25 Racing Wheel>/button5'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: right-wing
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4d6f61f5-b8fd-402f-88bc-e3082648a67d
+      m_Path: '<HID::Gudsen MOZA R5 Base>/stick'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 0
+    - m_Name:
+      m_Id: d3cadadb-de07-4d94-874a-9df66488e17d
+      m_Path: '<HID::G25 Racing Wheel>/stick/x'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 0
+    - m_Name: 1D Axis
+      m_Id: d43818c5-fe8e-4ff1-adb6-7ccf171fbab4
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 33dc426d-77d9-40cb-86d9-4215bcc86ada
+      m_Path: '<HID::Gudsen MOZA R5 Base>/stick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c3d97334-50d7-4b94-919f-4336f4d201df
+      m_Path: '<HID::Gudsen MOZA R5 Base>/stick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: 4071ea89-d898-41e6-b79f-f5df5c47b36d
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 79debd88-bbe3-45c4-a7f6-784f9c98e455
+      m_Path: '<HID::G25 Racing Wheel>/stick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: bb04ebd3-796a-4438-9b5e-88c1ed918952
+      m_Path: '<HID::G25 Racing Wheel>/stick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheel
+      m_Flags: 8
+    - m_Name:
+      m_Id: 2af0b389-1db9-41ee-affd-c81748597562
+      m_Path: '<HID::Gudsen MOZA R5 Base>/z'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 119584e8-34bb-4c9f-aee5-7ffb530ad69f
+      m_Path: '<HID::G25 Racing Wheel>/z'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: throttle
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7c4da551-96f8-4931-84cf-3cbe70ba135c
+      m_Path: '<HID::Gudsen MOZA R5 Base>/rz'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: break
+      m_Flags: 0
+    - m_Name:
+      m_Id: e7a0323b-d43b-453e-9bb3-1cc97edfa768
+      m_Path: '<HID::G25 Racing Wheel>/rz'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: break
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9685f78e-baf3-4b8a-b55c-019630c529be
+      m_Path: '<HID::Gudsen MOZA R5 Base>/slider'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 964738be-728a-4001-ba86-9afaa3b388e3
+      m_Path: '<HID::G25 Racing Wheel>/slider'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: clutch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0e37c438-5454-45ec-81fd-489f438eb9a0
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button114'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-1
+      m_Flags: 0
+    - m_Name:
+      m_Id: e4dfd4aa-6507-4c5e-89f9-666d72476bc6
+      m_Path: '<HID::G25 Racing Wheel>/button9'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-1
+      m_Flags: 0
+    - m_Name:
+      m_Id: 923dcec1-c4a8-44b5-a3f5-63b03a9ea11e
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button115'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-2
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7a632b26-2e67-466d-aee1-ffdb4885ef3e
+      m_Path: '<HID::G25 Racing Wheel>/button10'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-2
+      m_Flags: 0
+    - m_Name:
+      m_Id: 67c53e7d-0a1f-420b-98f6-1daf635cbe0e
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button116'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-3
+      m_Flags: 0
+    - m_Name:
+      m_Id: ac8671ee-9152-45d8-aafe-dc454cf59dfb
+      m_Path: '<HID::G25 Racing Wheel>/button11'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-3
+      m_Flags: 0
+    - m_Name:
+      m_Id: 91cf740d-e9f9-4a01-b060-9fc241998eb8
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button117'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-4
+      m_Flags: 0
+    - m_Name:
+      m_Id: 42ca31ed-1be5-4c3e-b503-469fe2fde651
+      m_Path: '<HID::G25 Racing Wheel>/button12'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-4
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4e330300-52e4-4f9e-aefe-54701d3dd5aa
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button118'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-5
+      m_Flags: 0
+    - m_Name:
+      m_Id: b70e67a0-975c-46ec-8eca-c2a6cc220c53
+      m_Path: '<HID::G25 Racing Wheel>/button13'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-5
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9ee1594d-521d-4b49-abdf-7e7877c65a67
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button119'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-6
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8b423ffd-6172-4854-9d29-4b6306cdd38d
+      m_Path: '<HID::G25 Racing Wheel>/button14'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-6
+      m_Flags: 0
+    - m_Name:
+      m_Id: b2775b6c-6670-4c40-9343-ca92d5bea2d1
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button120'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-7
+      m_Flags: 0
+    - m_Name:
+      m_Id: b6ace4b3-e349-42b8-b260-61e4149d7f33
+      m_Path: '<HID::Gudsen MOZA R5 Base>/button113'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-R
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8fa2075a-a4e1-45a5-a0d5-758df51ff704
+      m_Path: '<HID::G25 Racing Wheel>/button15'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-R
+      m_Flags: 0
+    - m_Name:
+      m_Id: fa1b0722-7e1e-4d82-8286-0c239e5b1976
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gear-N
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0c945b98-e082-4c2e-87e0-5cdbd972e4ba
+      m_Path: '<HID::G25 Racing Wheel>/button8'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheelLButton
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9f6cf4d0-fc07-4706-b141-fd633b7dac8f
+      m_Path: '<HID::G25 Racing Wheel>/button7'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: wheelRButton
+      m_Flags: 0
+    - m_Name:
+      m_Id: ba80d80e-b694-4c31-b02b-32f6e3fd5dce
+      m_Path: '<HID::G25 Racing Wheel>/trigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gearboxButton1
+      m_Flags: 0
+    - m_Name:
+      m_Id: afef39dd-546f-4d3f-9651-de7ad2d94460
+      m_Path: '<HID::G25 Racing Wheel>/button2'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gearboxButton2
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6df303c0-4d95-4d32-bbd1-783e0cd27224
+      m_Path: '<HID::G25 Racing Wheel>/button3'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gearboxButton3
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7e8c800b-b613-49fa-8eff-aa060f19d59c
+      m_Path: '<HID::G25 Racing Wheel>/button4'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gearboxButton4
+      m_Flags: 0
+    - m_Name:
+      m_Id: c8a01cb7-56b9-4fd0-9c92-b9ee3333b3af
+      m_Path: '<HID::G25 Racing Wheel>/button9'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: gearup
+      m_Flags: 0
+    - m_Name:
+      m_Id: 009a5227-f708-47dd-bcab-03ce06ae179c
+      m_Path: '<HID::G25 Racing Wheel>/button10'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: geardown
+      m_Flags: 0
+    - m_Name:
+      m_Id: e001124b-fe6e-4afd-8159-4cad4054265f
+      m_Path: '<HID::ZSC SIMAKER-Handbrake>/slider'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: handbrake
+      m_Flags: 0
+  - m_Name: Person
+    m_Id: 3e31e888-4b5d-4452-ad3e-f4aa1293c8e7
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Run
+      m_Type: 1
+      m_ExpectedControlType:
+      m_Id: b1a10001-0000-4000-8000-000000000001
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 1
+    - m_Name: Crouch
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b1a10002-0000-4000-8000-000000000002
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Jump
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b1a10003-0000-4000-8000-000000000003
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: WalkRunToggle
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b1a10004-0000-4000-8000-000000000004
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name:
+      m_Id: b1a10011-0000-4000-8000-000000000011
+      m_Path: '<Keyboard>/shift'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Run
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10012-0000-4000-8000-000000000012
+      m_Path: '<Gamepad>/rightTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Run
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10021-0000-4000-8000-000000000021
+      m_Path: '<Keyboard>/leftCtrl'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Crouch
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10022-0000-4000-8000-000000000022
+      m_Path: '<Gamepad>/leftShoulder'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Crouch
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10031-0000-4000-8000-000000000031
+      m_Path: '<Keyboard>/space'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Jump
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10032-0000-4000-8000-000000000032
+      m_Path: '<Gamepad>/leftTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: Jump
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10041-0000-4000-8000-000000000041
+      m_Path: '<Keyboard>/capsLock'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: WalkRunToggle
+      m_Flags: 0
+    - m_Name:
+      m_Id: b1a10042-0000-4000-8000-000000000042
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups: ;Default
+      m_Action: WalkRunToggle
+      m_Flags: 0
+  m_ControlSchemes:
+  - m_Name: Default
+    m_BindingGroup: Default
+    m_DeviceRequirements: []
+  m_IsProjectWide: 1

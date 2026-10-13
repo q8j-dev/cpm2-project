@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: K20_ECU_Car29
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: K20 ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: 241959002680140981
+  _partValB: -2939818969951164746
+  _partValC: -4530281237526657247
+  _partValD: -8294294805009609066
+  TypeId: 21
+  ModelId: 11921004
+  NoticeAboutPart: Good model id
+  Mass: 0.78
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 0
+  _partLinkKeysA: 19debf70b43e25f7
+  _partLinkKeysB: 938ba92013844da6
+  _partLinkKeysC:
+  _partLinkStamp: -462572089961110439
+  _partSourceRef: 119
+  FuelMap:
+  - RPM: 500
+    pressure: 4
+    Time: 2
+    Fuel: 4.083
+  - RPM: 1000
+    pressure: 4
+    Time: 2
+    Fuel: 2.178
+  - RPM: 1500
+    pressure: 4
+    Time: 2
+    Fuel: 2.171
+  - RPM: 2000
+    pressure: 4
+    Time: 2
+    Fuel: 1.894
+  - RPM: 2500
+    pressure: 4
+    Time: 2
+    Fuel: 1.646
+  - RPM: 3000
+    pressure: 4
+    Time: 2
+    Fuel: 1.447
+  - RPM: 3500
+    pressure: 4
+    Time: 2
+    Fuel: 1.286
+  - RPM: 4000
+    pressure: 4
+    Time: 2
+    Fuel: 1.158
+  - RPM: 4500
+    pressure: 4
+    Time: 2
+    Fuel: 1.054
+  - RPM: 5000
+    pressure: 4
+    Time: 2
+    Fuel: 0.968
+  - RPM: 5500
+    pressure: 4
+    Time: 2
+    Fuel: 0.896
+  - RPM: 6000
+    pressure: 4
+    Time: 2
+    Fuel: 0.826
+  - RPM: 6500
+    pressure: 4
+    Time: 2
+    Fuel: 0.763
+  - RPM: 7000
+    pressure: 4
+    Time: 2
+    Fuel: 0.7
+  - RPM: 7500
+    pressure: 4
+    Time: 2
+    Fuel: 0.644
+  - RPM: 8000
+    pressure: 4
+    Time: 2
+    Fuel: 0.588
+  - RPM: 8500
+    pressure: 4
+    Time: 2
+    Fuel: 0.471
+  - RPM: 9000
+    pressure: 4
+    Time: 2
+    Fuel: 0.353
+  - RPM: 9500
+    pressure: 4
+    Time: 2
+    Fuel: 0.264
+  - RPM: 10000
+    pressure: 4
+    Time: 2
+    Fuel: 0.167
+  - RPM: 10500
+    pressure: 4
+    Time: 2
+    Fuel: 0.122
+  - RPM: 11000
+    pressure: 4
+    Time: 2
+    Fuel: 0.1
+  - RPM: 11500
+    pressure: 4
+    Time: 2
+    Fuel: 0.056
+  - RPM: 12000
+    pressure: 4
+    Time: 2
+    Fuel: 0.06
+  - RPM: 12500
+    pressure: 4
+    Time: 2
+    Fuel: 0.059
+  speedLimit: 255
+  RpmIdle:
+    currentCryptoKey: 1745912242
+    hiddenValue: 738274226
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 750
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1159337405
+    hiddenValue: 26556605
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 650
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1033338754
+    hiddenValue: 2038429314
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 900
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1863320255
+    hiddenValue: 694294207
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8600
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1273035224
+    hiddenValue: 219794392
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 11000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

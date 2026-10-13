@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c7bae4d478df1444a5db2577313d35, type: 3}
+  m_Name: GaragePositionsConfig
+  m_EditorClassIdentifier:
+  GaragePositionsDatas:
+  - Name: City Unit
+    NameLocalizedKey: Garagewindow.CityUnitGarage
+    LocationKey: Garagewindow.City
+    Index: 0
+    SceneIndex: 37
+    SceneName: Hangar_Garage_Scene
+    DefaultCarSpotCount: 3
+    ForSale: 0
+    MoneyCost:
+      currentCryptoKey: 1591544813
+      hiddenValue: 1591544813
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    CoinCost:
+      currentCryptoKey: 1416006433
+      hiddenValue: 1416006433
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    MaxCarSpotCount: 20
+    _price:
+      Price:
+        currentCryptoKey: 1646547278
+        hiddenValue: 1646547278
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      PriceType: 0
+    FreeDriverPlace:
+      Position: {x: 0.008712422, y: 4.238, z: 29.199}
+      Rotation: {x: 0, y: -0.9982357, z: 0, w: 0.05937606}
+    SellCarPoint:
+      Position: {x: -2431.846, y: 11.75, z: -80.35}
+      Rotation: {x: 0, y: 0, z: 0, w: 1}
+    CarPaintbox:
+      Position: {x: -2452.499, y: 11.5, z: -75.551}
+      Rotation: {x: 0, y: -0.70710677, z: 0, w: 0.70710677}
+    RWDLocalPosDynoStand: {x: 19, y: 0, z: 0}
+    FWDLocalPosDynoStand: {x: 21.7, y: 0, z: 0}
+    SWDLocalPosDynoStand: {x: 22.2, y: 0, z: 0}
+    PersonShopCameraXAxis: 180
+    DynoChecker:
+      Position: {x: 20.158, y: 0.277, z: -26.707}
+      Rotation: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+    VisualTuningChecker:
+      Position: {x: -21.34, y: 0.705, z: -26.4}
+      Rotation: {x: 0, y: -0.70710677, z: 0, w: 0.70710677}
+    PersonCustomizationPosition:
+      Position: {x: -1.604, y: 4.218, z: 29.669}
+      Rotation: {x: 0, y: 0, z: 0, w: 1}
+    GarageIconAddressablePath: Garages/Icons/Garage 1.png
+    StartPlaceToMovePlayerToShop:
+      Position: {x: -1.604, y: 4.218, z: 29.02}
+      Rotation: {x: 0, y: 1, z: 0, w: -4.371139E-08}
+    PositionTargetForCamera: {x: -1.66, y: 5.14, z: 29.164}
+    SellCarPointForCustomMoveCam:
+      Position: {x: -1.491188, y: 2.72144, z: -26.13506}
+      Rotation: {x: 0.03220587, y: 0.9569585, z: -0.23479508, w: 0.16752471}
+  - Name: Redrock Garage
+    NameLocalizedKey: Garagewindow.RedrockGarage
+    LocationKey: Garagewindow.Desert
+    Index: 1
+    SceneIndex: 48
+    SceneName: Desert_Garage_Scene
+    DefaultCarSpotCount: 3
+    ForSale: 1
+    MoneyCost:
+      currentCryptoKey: 1356370557
+      hiddenValue: 1356570429
+      inited: 1
+      fakeValue: 200000
+      fakeValueActive: 1
+    CoinCost:
+      currentCryptoKey: 1444142258
+      hiddenValue: 1444141422
+      inited: 1
+      fakeValue: 1500
+      fakeValueActive: 1
+    MaxCarSpotCount: 15
+    _price:
+      Price:
+        currentCryptoKey: 1010138534
+        hiddenValue: 1010138194
+        inited: 1
+        fakeValue: 500
+        fakeValueActive: 1
+      PriceType: 2
+    FreeDriverPlace:
+      Position: {x: 26.952, y: 4.63, z: 4.903}
+      Rotation: {x: 0, y: 0.4213761, z: 0, w: -0.906886}
+    SellCarPoint:
+      Position: {x: -2349.76, y: 12.1, z: -51.48}
+      Rotation: {x: 0, y: -0.70710677, z: 0, w: 0.70710677}
+    CarPaintbox:
+      Position: {x: -2386.047, y: 11.9, z: -23.606}
+      Rotation: {x: 0, y: 0, z: 0, w: 0}
+    RWDLocalPosDynoStand: {x: 24.2, y: 0, z: 0}
+    FWDLocalPosDynoStand: {x: 27, y: 0, z: 0}
+    SWDLocalPosDynoStand: {x: 27.5, y: 0, z: 0}
+    PersonShopCameraXAxis: -100
+    DynoChecker:
+      Position: {x: 34.34, y: 0.277, z: 25.397}
+      Rotation: {x: 0, y: 0, z: 0, w: 1}
+    VisualTuningChecker:
+      Position: {x: 45.803, y: 0.705, z: 27.619}
+      Rotation: {x: 0, y: 0, z: 0, w: 0}
+    PersonCustomizationPosition:
+      Position: {x: 52.632, y: 0.07, z: 15.487}
+      Rotation: {x: 0, y: 0.76604444, z: 0, w: 0.64278764}
+    GarageIconAddressablePath: Garages/Icons/Garage 2.png
+    StartPlaceToMovePlayerToShop:
+      Position: {x: 52.632, y: 0.07, z: 12}
+      Rotation: {x: 0, y: 0, z: 0, w: 1}
+    PositionTargetForCamera: {x: 52.632, y: 1, z: 15.487}
+    SellCarPointForCustomMoveCam:
+      Position: {x: 76.10815, y: 1.67284, z: -4.299176}
+      Rotation: {x: 0.115907826, y: 0.55047643, z: -0.080176786, w: 0.8228686}

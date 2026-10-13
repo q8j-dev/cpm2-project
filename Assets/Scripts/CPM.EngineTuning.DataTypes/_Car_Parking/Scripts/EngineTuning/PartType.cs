@@ -1,0 +1,43 @@
+namespace _Car_Parking.Scripts.EngineTuning
+{
+	public enum PartType
+	{
+		None = 0,
+		Engine = 1,
+		EngineId = 32,
+		Block_Inline = 2,
+		Block_Vee = 3,
+		Crankshaft = 4,
+		ConnectionRod = 5,
+		Pistons = 6,
+		Flywheel = 7,
+		SOHC_CylinderHead = 8,
+		DOHC_CylinderHead = 9,
+		OHV_CylinderHead = 10,
+		SOHC_Camshaft = 11,
+		DOHC_Camshaft_Intake = 12,
+		DOHC_Camshaft_Exhaust = 31,
+		OHV_Camshaft = 13,
+		IntakeManifold = 14,
+		AirFilter = 29,
+		FuelRail = 15,
+		FuelPump = 22,
+		FuelInjectors = 30,
+		ExhaustHeader = 16,
+		ExhaustPipe = 17,
+		ThrottleValve = 18,
+		GearBox = 19,
+		Clutch = 20,
+		ECU = 21,
+		TurboCharger = 23,
+		SuperCharger = 35,
+		Radiator = 33,
+		Intercooler = 34,
+		FrontLSD = 36,
+		RearLSD = 37,
+		RotorHousing = 38,
+		EccentricShaft = 39,
+		RotorTrackingGear = 40,
+		Rotor = 41
+	}
+}

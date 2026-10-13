@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ba3e9e01b7b318ae834a9869e58850, type: 3}
+  m_Name: ObstacleRaceConfig
+  m_EditorClassIdentifier:
+  ArenaId: 4
+  ModeType: 3
+  Enabled: 1
+  MinPlayers: 2
+  MaxPlayersDefault: 32
+  AverageWaitTime: {x: 30, y: 60}
+  WaitSeconds: 120
+  CountdownSeconds: 5
+  MinPlayersWaitSeconds: -1
+  ReadyBarrierTimeoutSeconds: 25
+  MatchStartCountdownSeconds: 3
+  WaitingLocation: 1
+  Title: SurvivorRace.Title
+  Description: SurvivorRace.Description
+  ForcedKits:
+  - Slot: 7
+    MaleKitId: 0700000008000000090000000a000000
+    FemaleKitId: 090000000a0000000b0000000c000000
+  Rewards:
+  - _coin:
+      currentCryptoKey: 1781037008
+      hiddenValue: 1781037048
+      inited: 1
+      fakeValue: 40
+      fakeValueActive: 1
+    _money:
+      currentCryptoKey: 1472636033
+      hiddenValue: 1472636777
+      inited: 1
+      fakeValue: 1000
+      fakeValueActive: 1
+  - _coin:
+      currentCryptoKey: 1367122033
+      hiddenValue: 1367122033
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    _money:
+      currentCryptoKey: 1213807070
+      hiddenValue: 1213807158
+      inited: 1
+      fakeValue: 1000
+      fakeValueActive: 1
+  - _coin:
+      currentCryptoKey: 1834860080
+      hiddenValue: 1834860080
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    _money:
+      currentCryptoKey: 1715168744
+      hiddenValue: 1715169200
+      inited: 1
+      fakeValue: 600
+      fakeValueActive: 1
+  ZoneParts:
+  - KeepOrder: 0
+    Block: 00000000
+  - KeepOrder: 0
+    Block: 01000000
+  - KeepOrder: 0
+    Block: 000000000100000001000000
+  - KeepOrder: 0
+    Block: 0200000001000000
+  CollapseTimer: 15
+  AllTouchedCollapseTimer: 3
+  FallingZone:
+    Radius: 12
+    Count: 3
+    OffsetSpawn: 4
+    TileDestroy:
+      Delay: 0.2
+      Duration: 0.8
+      Color: {r: 1, g: 0, b: 0, a: 1}

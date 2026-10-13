@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: Tipo037_ECU_Universal
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: Tipo 037 ECU Universal
+  Description: ECU.Description.Universal
+  _partValA: -6140134371435289207
+  _partValB: -7521882058611583902
+  _partValC: 122250457171999989
+  _partValD: -5210785726547913886
+  TypeId: 21
+  ModelId: 18521000
+  NoticeAboutPart: Good model id
+  Mass: 0.51
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 03dc4cbe0aa8441c
+  _partLinkKeysB: f9d61ff8070a46f8a72eb067d7550460
+  _partLinkKeysC:
+  _partLinkStamp: -2915406709067633301
+  _partSourceRef: 185
+  FuelMap:
+  - RPM: 500
+    pressure: 8
+    Time: 1
+    Fuel: 0.5
+  - RPM: 1000
+    pressure: 8
+    Time: 1
+    Fuel: 0.52
+  - RPM: 1500
+    pressure: 8
+    Time: 1
+    Fuel: 0.715
+  - RPM: 2000
+    pressure: 8
+    Time: 1
+    Fuel: 0.524
+  - RPM: 2500
+    pressure: 8
+    Time: 1
+    Fuel: 0.548
+  - RPM: 3000
+    pressure: 8
+    Time: 1
+    Fuel: 0.55
+  - RPM: 3500
+    pressure: 8
+    Time: 1
+    Fuel: 0.535
+  - RPM: 4000
+    pressure: 8
+    Time: 1
+    Fuel: 0.481
+  - RPM: 4500
+    pressure: 8
+    Time: 1
+    Fuel: 0.44
+  - RPM: 5000
+    pressure: 8
+    Time: 1
+    Fuel: 0.406
+  - RPM: 5500
+    pressure: 8
+    Time: 1
+    Fuel: 0.383
+  - RPM: 6000
+    pressure: 8
+    Time: 1
+    Fuel: 0.363
+  - RPM: 6500
+    pressure: 8
+    Time: 1
+    Fuel: 0.349
+  - RPM: 7000
+    pressure: 8
+    Time: 1
+    Fuel: 0.34
+  - RPM: 7500
+    pressure: 5
+    Time: 1
+    Fuel: 0.332
+  - RPM: 8000
+    pressure: 5
+    Time: 1
+    Fuel: 0.327
+  - RPM: 8500
+    pressure: 4
+    Time: 1
+    Fuel: 0.324
+  - RPM: 9000
+    pressure: 8
+    Time: 1
+    Fuel: 0.322
+  - RPM: 9500
+    pressure: 8
+    Time: 1
+    Fuel: 0.318
+  - RPM: 10000
+    pressure: 8
+    Time: 1
+    Fuel: 0.314
+  - RPM: 10500
+    pressure: 8
+    Time: 1
+    Fuel: 0.308
+  - RPM: 11000
+    pressure: 8
+    Time: 0.99
+    Fuel: 0.305
+  - RPM: 11500
+    pressure: 8
+    Time: 1
+    Fuel: 0.294
+  - RPM: 12000
+    pressure: 8
+    Time: 1
+    Fuel: 0.286
+  - RPM: 12500
+    pressure: 8
+    Time: 1
+    Fuel: 0.277
+  - RPM: 13000
+    pressure: 8
+    Time: 1
+    Fuel: 0.268
+  - RPM: 13500
+    pressure: 8
+    Time: 1
+    Fuel: 0.255
+  - RPM: 14000
+    pressure: 8
+    Time: 0.999
+    Fuel: 0.242
+  - RPM: 14500
+    pressure: 8
+    Time: 1
+    Fuel: 0.224
+  - RPM: 15000
+    pressure: 8
+    Time: 1
+    Fuel: 0.204
+  - RPM: 15500
+    pressure: 8
+    Time: 1
+    Fuel: 0.144
+  - RPM: 16000
+    pressure: 8
+    Time: 1
+    Fuel: 0.1
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1468726813
+    hiddenValue: 306106397
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 3500
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1986470872
+    hiddenValue: 870530520
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 3500
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 2010808285
+    hiddenValue: 847225053
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 4000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1831960329
+    hiddenValue: 737104649
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 14500
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 2104890699
+    hiddenValue: 991235147
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 16000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

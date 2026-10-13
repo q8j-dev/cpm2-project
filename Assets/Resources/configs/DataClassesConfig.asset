@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf03e1465bd60b7d10ae9dbe7149a4bb, type: 3}
+  m_Name: DataClassesConfig
+  m_EditorClassIdentifier:
+  assembly: Assets/_Car Parking/Scripts/CPMMessenger/CPM.Messenger.asmdef
+  namespaceName: CPM.Messenger.Persistence
+  dataPairs:
+  - classType: CPM.Messenger.Persistence.FriendsPersistentData, CPM.Messenger, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    saveFileName: friends
+    createSampleFile: 0
+  - classType: CPM.Messenger.Persistence.FriendConversationPersistentData, CPM.Messenger, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    saveFileName: conversation
+    createSampleFile: 0
+  - classType: Persistence.Systems.DataClassesVersionStorage, Persistence, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    saveFileName: dataVersions
+    createSampleFile: 0
+  saveFilesExtension: .hrgtdyuh
+  sampleFilesFolder: DataFilesSamples
+  cipherStrategy: Persistence.Systems.ObscuredStringCipherStrategy, CPM.CommonUtility, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  pathCipherStrategy: Persistence.Systems.PaddedUTFEncodingStrategy, CPM.CommonUtility, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

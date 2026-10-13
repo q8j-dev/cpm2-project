@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: EA825_ECU_ST1
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: EA825 Nekomoto ECU
+  Description: ECU.Description.St1
+  _partValA: -7958610821826135916
+  _partValB: -5286798515983952093
+  _partValC: -7148754564297860534
+  _partValD: 8958829462556177835
+  TypeId: 21
+  ModelId: 13721001
+  NoticeAboutPart: Good model id
+  Mass: 0.76
+  MaxMileage: 1000000
+  VendorId: 2
+  Rarity: 4
+  _partLinkKeysA: 840dcd79277b2768
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: 7338389093296979262
+  _partSourceRef: 137
+  FuelMap:
+  - RPM: 500
+    pressure: 5
+    Time: 3
+    Fuel: 2.1
+  - RPM: 1000
+    pressure: 5
+    Time: 3
+    Fuel: 1.12
+  - RPM: 1500
+    pressure: 5
+    Time: 3
+    Fuel: 1.1
+  - RPM: 2000
+    pressure: 5
+    Time: 3
+    Fuel: 0.9
+  - RPM: 2500
+    pressure: 5
+    Time: 3
+    Fuel: 0.653
+  - RPM: 3000
+    pressure: 5
+    Time: 3
+    Fuel: 0.493
+  - RPM: 3500
+    pressure: 5
+    Time: 3
+    Fuel: 0.422
+  - RPM: 4000
+    pressure: 5
+    Time: 3
+    Fuel: 0.366
+  - RPM: 4500
+    pressure: 5
+    Time: 3
+    Fuel: 0.32
+  - RPM: 5000
+    pressure: 5
+    Time: 3
+    Fuel: 0.272
+  - RPM: 5500
+    pressure: 5
+    Time: 3
+    Fuel: 0.24
+  - RPM: 6000
+    pressure: 5
+    Time: 3
+    Fuel: 0.207
+  - RPM: 6500
+    pressure: 5
+    Time: 3
+    Fuel: 0.18
+  - RPM: 7000
+    pressure: 5
+    Time: 3
+    Fuel: 0.12
+  - RPM: 7500
+    pressure: 5
+    Time: 3
+    Fuel: 0.062
+  - RPM: 8000
+    pressure: 5
+    Time: 3
+    Fuel: 0.01
+  - RPM: 8500
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 9000
+    pressure: 5
+    Time: 3
+    Fuel: 0.003
+  - RPM: 9500
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 10000
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 10500
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 11000
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 11500
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 12000
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  - RPM: 12500
+    pressure: 5
+    Time: 3
+    Fuel: 0
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1789085120
+    hiddenValue: 776334272
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1531049444
+    hiddenValue: 536178404
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1763478306
+    hiddenValue: 764110370
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 2098609056
+    hiddenValue: 945552544
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7500
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1170803635
+    hiddenValue: 62638259
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8300
+    fakeValueActive: 1
+  canTuning: 1
+  unlockRpmRedline: 1
+  unlockSpeedLimit: 0

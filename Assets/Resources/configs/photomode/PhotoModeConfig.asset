@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671458018789e41288d08512a30918e8, type: 3}
+  m_Name: PhotoModeConfig
+  m_EditorClassIdentifier:
+  DefaultZoom: 0
+  DefaultCameraTilt: 0
+  DefaultAperture: 4
+  DefaultShutterSpeed: 11
+  DefaultDistortion: 1
+  DefaultColorCorrection: 0
+  DefaultTemperature: 0
+  DefaultExposure: 0
+  DefaultPanningMode: 0
+  DefaultFilter: 0
+  PanningTutorSprites:
+  - {fileID: 21300000, guid: 88d51c17e7e26bf4792c0fb0d2919e36, type: 2}
+  - {fileID: 21300000, guid: e7fbeb8b167fc7540962f324c17c724c, type: 2}
+  - {fileID: 21300000, guid: cc2b864326e82a345b749f72bd34ac1b, type: 2}
+  Apertures: 0e000000140000001c0000002800000038000000500000006e000000a0000000
+  ShutterSpeeds: feffffffffffffff0200000004000000080000000f0000001e0000003c0000007d000000fa000000f4010000e8030000
+  Categories:
+  - Name: PhotoMode.CameraOptions
+    Parameters:
+    - Id: 0
+      NameKey: PhotoMode.CameraTilt
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 21300000, guid: 05ea834c4137b5f449673ccc44ea8a67, type: 2}
+      ScrollDefaultValues:
+        Min: -180
+        Max: 180
+        ItemsCount: 25
+        DefaultItemIndex: 12
+    - Id: 1
+      NameKey: PhotoMode.Aperture
+      InfoKey:
+      DefaultValue: 4
+      Icon: {fileID: 21300000, guid: 52a2882a5c155e64dac8bf9afa799c7f, type: 2}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 7
+        ItemsCount: 8
+        DefaultItemIndex: 7
+    - Id: 2
+      NameKey: PhotoMode.ShutterSpeed
+      InfoKey:
+      DefaultValue: 11
+      Icon: {fileID: 21300000, guid: 6d74ff2dbabf7f04db0637c5e5a5dacf, type: 2}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 11
+        ItemsCount: 12
+        DefaultItemIndex: 11
+    - Id: 3
+      NameKey: PhotoMode.Distortion
+      InfoKey:
+      DefaultValue: 1
+      Icon: {fileID: 21300000, guid: 3d39b1b553e14124faa81da75683d8cf, type: 2}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 1
+        ItemsCount: 26
+        DefaultItemIndex: 25
+  - Name: PhotoMode.Effects
+    Parameters:
+    - Id: 0
+      NameKey: PhotoMode.Filters
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 21300000, guid: 999c16ed06653bd4fa178e3a55fb2b31, type: 2}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 0
+        ItemsCount: 0
+        DefaultItemIndex: 0
+    - Id: 1
+      NameKey: PhotoMode.ColorCorrection
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 21300000, guid: 6cdfe8c9c7cd8664aab92e4e90786682, type: 2}
+      ScrollDefaultValues:
+        Min: -100
+        Max: 100
+        ItemsCount: 21
+        DefaultItemIndex: 10
+    - Id: 2
+      NameKey: PhotoMode.Temperature
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 21300000, guid: 123bfc13c8db61943b5c95662b7e9cbe, type: 2}
+      ScrollDefaultValues:
+        Min: -100
+        Max: 100
+        ItemsCount: 25
+        DefaultItemIndex: 12
+    - Id: 3
+      NameKey: PhotoMode.Exposure
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 21300000, guid: 8a64bba574bc69149ad8f12806709812, type: 2}
+      ScrollDefaultValues:
+        Min: -5
+        Max: 5
+        ItemsCount: 21
+        DefaultItemIndex: 10
+  - Name: PhotoMode.PanningModes
+    Parameters:
+    - Id: 0
+      NameKey: PhotoMode.FixedCamera
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 0}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 0
+        ItemsCount: 0
+        DefaultItemIndex: 0
+    - Id: 1
+      NameKey: PhotoMode.FollowingCamera
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 0}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 0
+        ItemsCount: 0
+        DefaultItemIndex: 0
+    - Id: 2
+      NameKey: PhotoMode.AttachedCamera
+      InfoKey:
+      DefaultValue: 0
+      Icon: {fileID: 0}
+      ScrollDefaultValues:
+        Min: 0
+        Max: 0
+        ItemsCount: 0
+        DefaultItemIndex: 0

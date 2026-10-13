@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  m_Layer: 0
+  m_Name: GraphicsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.206406, y: -2.0252242, z: -128.95901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81200285cc9a377db5398963184210b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _graphicsSettings:
+    m_RenderScale: 1
+    m_AAQuality: 1
+    m_SteamDeckAAQuality: 5
+    m_TextureResolution: 0
+    m_MaxFramerate: 60
+    m_VSync: 1
+    m_HighFpsDefaultsApplied: 0
+    BatterySaveMode: 0
+    m_CameraRenderDistance: 2000
+    m_ObjectsLodQuality: 1
+    m_SteamLodBias: 10
+    m_MaximumLodLevel: 0
+    ClipDistance: 15
+    CarDetailDistance: 40
+    m_FogQuality: 3
+    m_ShadingQuality: 1
+    m_ShadowsQuality: 0
+    m_AdditionalEffects: 0
+    m_UseDecalShadows: 1
+    m_UseTyreDeformation: 0
+    m_RainQuality: 2
+    m_UseSky: 1
+    m_UseBlur: 0
+    m_UseLensFlares: 0
+    m_NightAmbientLightingCompensation: 0
+    m_Cloudiness: 1
+    m_RealtimeReflections: 0
+    m_UseStaticReflectons: 1
+    m_Tonemapping: 2
+    m_UseBloom: 0
+    m_UseVignette: 0
+    m_UseMotionBlur: 0
+    m_ColorCorrectionLut: 0
+    m_EVCompensation: 0
+    m_WBCompensation: 0
+  ColorCorrectionLUTS:
+  - {fileID: 2800000, guid: bfbceb46bfb38af428844c87bdd0e388, type: 3}
+  - {fileID: 2800000, guid: ba443fc520df50444b4f6b03a24e9895, type: 3}
+  - {fileID: 2800000, guid: e0419778c7c31fc439c73e5c83f61a3d, type: 3}
+  - {fileID: 2800000, guid: feef7725adeda16409eeb1fff9975c0c, type: 3}
+  UrpRenderer: {fileID: 11400000, guid: a2ec1aaef0f1e0c4c93175b4cff8b976, type: 2}
+  Decals: {fileID: 11400000, guid: bcc846ff6d7cc8e459fc9af9fa775b51, type: 2}
+  blur: {fileID: 11400000, guid: 0a659edbd5f07a74eac81b4e4d295aba, type: 2}
+  Sky: {fileID: 0}
+  fog: {fileID: 11400000, guid: 09644cac70646e649ada89a01daf30af, type: 2}
+  mainPipeLine: {fileID: 11400000, guid: c63bcdbd566619b4ab5a66af1fef38fb, type: 2}
+  BlurFallBackTex: {fileID: 0}
+  m_Presets: {fileID: 11400000, guid: 9a3eed4875cbf5d4499dfde5c9770cca, type: 2}
+  m_DefaultVolume: {fileID: 11400000, guid: 8562197f372f9da4f9ac9a75fbc38b14, type: 2}
+  ReflectionProbes: []
+  RealtimeReflectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4881
+  RenderReflections: 0
+  SkyboxFallBack: {fileID: 2100000, guid: 74ba731f8675d3a459d1878dda7f16c3, type: 2}
+  AcesAdjustment: 0

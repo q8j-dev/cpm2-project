@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: S85_ECU_Universal
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: S85 ECU Universal
+  Description: ECU.Description.Universal
+  _partValA: 7966086609190973425
+  _partValB: 430347729129215306
+  _partValC: -8629736586197959243
+  _partValD: -4775131796460395998
+  TypeId: 21
+  ModelId: 13121000
+  NoticeAboutPart: Good model id
+  Mass: 0.99
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 4148d067270f733d
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: 3495714701173356795
+  _partSourceRef: 131
+  FuelMap:
+  - RPM: 500
+    pressure: 5
+    Time: 1.2
+    Fuel: 2
+  - RPM: 1000
+    pressure: 5
+    Time: 1.01
+    Fuel: 1.56
+  - RPM: 1500
+    pressure: 5
+    Time: 1
+    Fuel: 1.58
+  - RPM: 2000
+    pressure: 5
+    Time: 1
+    Fuel: 1.38
+  - RPM: 2500
+    pressure: 5
+    Time: 1
+    Fuel: 1.2
+  - RPM: 3000
+    pressure: 5
+    Time: 1
+    Fuel: 1.053
+  - RPM: 3500
+    pressure: 5
+    Time: 1
+    Fuel: 0.934
+  - RPM: 4000
+    pressure: 5
+    Time: 1
+    Fuel: 0.838
+  - RPM: 4500
+    pressure: 5
+    Time: 1
+    Fuel: 0.76
+  - RPM: 5000
+    pressure: 5
+    Time: 0.99
+    Fuel: 0.702
+  - RPM: 5500
+    pressure: 5
+    Time: 1
+    Fuel: 0.64
+  - RPM: 6000
+    pressure: 5
+    Time: 1
+    Fuel: 0.592
+  - RPM: 6500
+    pressure: 5
+    Time: 1
+    Fuel: 0.543
+  - RPM: 7000
+    pressure: 5
+    Time: 1
+    Fuel: 0.491
+  - RPM: 7500
+    pressure: 5
+    Time: 1
+    Fuel: 0.434
+  - RPM: 8000
+    pressure: 5
+    Time: 1
+    Fuel: 0.371
+  - RPM: 8500
+    pressure: 5
+    Time: 1
+    Fuel: 0.28
+  - RPM: 9000
+    pressure: 5
+    Time: 1
+    Fuel: 0.2
+  - RPM: 9500
+    pressure: 5
+    Time: 1
+    Fuel: 0.01
+  - RPM: 10000
+    pressure: 5
+    Time: 0
+    Fuel: 0
+  - RPM: 10500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 11000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 11500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 12000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 12500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1110217599
+    hiddenValue: 110322815
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 2083893004
+    hiddenValue: 950999564
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1688589279
+    hiddenValue: 550756319
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1292525758
+    hiddenValue: 193465022
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8250
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1344300158
+    hiddenValue: 381955198
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 9000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

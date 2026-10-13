@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: B58_ECU_ST1
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: B58 ForgeSpeed ECU
+  Description: ECU.Description.St1
+  _partValA: 2706616651093446424
+  _partValB: 6122597652918541791
+  _partValC: 7846306498490572234
+  _partValD: 7832507237244245035
+  TypeId: 21
+  ModelId: 10121001
+  NoticeAboutPart: Good model id
+  Mass: 0.33
+  MaxMileage: 1000000
+  VendorId: 4
+  Rarity: 3
+  _partLinkKeysA: 30e4934c32a2cf90
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: -7115712791065930614
+  _partSourceRef: 101
+  FuelMap:
+  - RPM: 500
+    pressure: 4
+    Time: 2
+    Fuel: 3.098
+  - RPM: 1000
+    pressure: 4
+    Time: 2
+    Fuel: 2.899
+  - RPM: 1500
+    pressure: 4
+    Time: 2
+    Fuel: 1.552
+  - RPM: 2000
+    pressure: 4
+    Time: 2
+    Fuel: 1.126
+  - RPM: 2500
+    pressure: 4
+    Time: 2
+    Fuel: 0.857
+  - RPM: 3000
+    pressure: 4
+    Time: 2
+    Fuel: 0.678
+  - RPM: 3500
+    pressure: 4
+    Time: 2
+    Fuel: 0.55
+  - RPM: 4000
+    pressure: 4
+    Time: 2
+    Fuel: 0.468
+  - RPM: 4500
+    pressure: 4
+    Time: 2
+    Fuel: 0.416
+  - RPM: 5000
+    pressure: 4
+    Time: 2
+    Fuel: 0.368
+  - RPM: 5500
+    pressure: 4
+    Time: 2
+    Fuel: 0.271
+  - RPM: 6000
+    pressure: 4
+    Time: 2
+    Fuel: 0.191
+  - RPM: 6500
+    pressure: 4
+    Time: 2
+    Fuel: 0.135
+  - RPM: 7000
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 7500
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 8000
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  speedLimit: 240
+  RpmIdle:
+    currentCryptoKey: 1330009176
+    hiddenValue: 194276952
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 675
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1046026185
+    hiddenValue: 2048348105
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 600
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1284381059
+    hiddenValue: 135906947
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1924122685
+    hiddenValue: 923301181
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7000
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1644901109
+    hiddenValue: 618794997
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8500
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

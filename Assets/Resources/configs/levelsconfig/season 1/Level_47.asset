@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685f7eeed5dfd558534ef3cbc1b6b268, type: 3}
+  m_Name: Level_47
+  m_EditorClassIdentifier:
+  Type: 0
+  ID: 32
+  SceneForLoad: 4
+  IndexInScene: 0
+  Title: Level.SuvParking
+  CategoryIndex: 0
+  LevelTimeObscured:
+    currentCryptoKey: 1262088662
+    hiddenValue: 150015446
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 180
+    fakeValueActive: 1
+  RewardByTime:
+    currentCryptoKey: 127
+    hiddenValue: 170
+    inited: 1
+    fakeValue: 1
+    fakeValueActive: 1
+  CarId: 168
+  CarConfig: {fileID: 0}
+  RacingCarId: 0
+  RacingCarInitialPos: {x: 0, y: 0, z: 0}
+  RacingCarInitialRot: {x: 0, y: 0, z: 0}
+  Reward:
+    currentCryptoKey: 1091414304
+    hiddenValue: 1091414304
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  InitialCamPos: {x: 394, y: 6.9, z: -63.1}
+  InitialCamRot: {x: 36.00002, y: -38.20001, z: 0}
+  CarInitialPos: {x: 135.63, y: 0.621, z: 79.2}
+  CarInitRot: {x: 0, y: 180, z: 0}
+  CarTargetPos: {x: 387.6, y: 1.51, z: -54.69}
+  CarTargetRot: {x: -1, y: -90, z: 0}
+  SetCarTargetPos: 0
+  SetCarTargetRot: 1
+  ParkingTriggerParentPos: {x: 387.69, y: 1.41, z: -54.69}
+  ParkingTriggerParentRot: {x: 0.5, y: 90, z: 0}
+  WithTrailer: 0
+  LoadTrailer: 0
+  TrailerIndex: 0
+  HasLoad: 0
+  TowCarLevel: 0
+  TowCarId: 0
+  TowCarPos: {x: 0, y: 0, z: 0}
+  HasFixedCam: 0
+  DisableCamChange: 0
+  IsReverseParking: 0
+  FixedCamPos: {x: 375.71, y: 6.26, z: -29}
+  StopCarCompletely: 1
+  InParkingScene: 0
+  OutSideStart: 0
+  DriverOutSideBegin: 0
+  DriverStartPos: {x: 137, y: 1, z: 82}
+  DriverStartRot: {x: 0, y: -140, z: 0}
+  ChangeCamToFixed: 0
+  InitialCamIndex: -1
+  CameraData: []
+  RelativeTrailerAngle: 0
+  StartGear: 1
+  ParkingToUse: 1
+  ShowPartsWhenStartPressed: 0
+  EnableOtherSceneStart: 0
+  EnableParkingSceneStart: 0
+  CheckForStop: 0
+  FieldOfView: 60
+  Messages:
+  - Level.MoveForward
+  - Level.MoveBack
+  - Level.ToMiddle
+  - Level.ToMiddle
+  - Level.ParkCarStraight
+  - Level.SuvParking
+  - Level.LetSParkThisSuv
+  ignoreCollision: 0
+  HideTopLabel: 0
+  IsCarCameraSettingForLevel: 0
+  LimitCarDamaged: 0
+  DisableAdContinue: 0

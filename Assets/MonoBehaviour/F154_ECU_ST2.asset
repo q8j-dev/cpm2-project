@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: F154_ECU_ST2
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: F154 COBB Tech ECU
+  Description: ECU.Description.St2
+  _partValA: -8872135503383587873
+  _partValB: 2330508598027666376
+  _partValC: 7818029194522120351
+  _partValD: 4847184725710180220
+  TypeId: 21
+  ModelId: 15321002
+  NoticeAboutPart: Good model id
+  Mass: 0.97
+  MaxMileage: 1000000
+  VendorId: 5
+  Rarity: 4
+  _partLinkKeysA: 299410dceb3ee809
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: 295113539533448339
+  _partSourceRef: 153
+  FuelMap:
+  - RPM: 500
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.4
+  - RPM: 1000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.73
+  - RPM: 1500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.61
+  - RPM: 2000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.46
+  - RPM: 2500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.3265
+  - RPM: 3000
+    pressure: 4
+    Time: 1
+    Fuel: 0.2223
+  - RPM: 3500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.1528
+  - RPM: 4000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.121
+  - RPM: 4500
+    pressure: 3.5
+    Time: 0.4
+    Fuel: 0.248
+  - RPM: 5000
+    pressure: 3.5
+    Time: 0.4
+    Fuel: 0.205
+  - RPM: 5500
+    pressure: 3.5
+    Time: 0.4
+    Fuel: 0.169
+  - RPM: 6000
+    pressure: 3.5
+    Time: 0.4
+    Fuel: 0.132
+  - RPM: 6500
+    pressure: 3.5
+    Time: 0.35
+    Fuel: 0.101
+  - RPM: 7000
+    pressure: 3.5
+    Time: 0.14
+    Fuel: 0.106
+  - RPM: 7500
+    pressure: 0
+    Time: 0.01
+    Fuel: 0.002
+  - RPM: 8000
+    pressure: 2
+    Time: 0.01
+    Fuel: 0.001
+  - RPM: 8500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 9000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 9500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 10000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 10500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 11000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 11500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 12000
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  - RPM: 12500
+    pressure: 2
+    Time: 0
+    Fuel: 0
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1649027146
+    hiddenValue: 640156234
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1477861034
+    hiddenValue: 475937194
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1152888784
+    hiddenValue: 11521488
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1532746830
+    hiddenValue: 519880526
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7300
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1052460185
+    hiddenValue: 2068070809
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8000
+    fakeValueActive: 1
+  canTuning: 1
+  unlockRpmRedline: 1
+  unlockSpeedLimit: 0

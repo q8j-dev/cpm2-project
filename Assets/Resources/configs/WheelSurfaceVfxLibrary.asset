@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62176b387d630e0cadf37016494d2e2, type: 3}
+  m_Name: WheelSurfaceVfxLibrary
+  m_EditorClassIdentifier:
+  entries:
+  - ID: Dirt
+    Prefab: {fileID: 198724804207875695, guid: 4d92c3b2e571a0b4ba585ff582ff83a9, type: 2}
+    Surfaces:
+    - Surface: 3
+      Color: {r: 0.67058825, g: 0.48627454, b: 0.30588236, a: 1}
+      Size: 3
+    - Surface: 5
+      Color: {r: 0.40000004, g: 0.27450982, b: 0.16862746, a: 1}
+      Size: 3
+    - Surface: 6
+      Color: {r: 0.3921569, g: 0.2627451, b: 0.17254902, a: 1}
+      Size: 3
+    - Surface: 7
+      Color: {r: 0.3647059, g: 0.3372549, b: 0.09411766, a: 1}
+      Size: 3
+    - Surface: 9
+      Color: {r: 0.82745105, g: 0.65882355, b: 0.5529412, a: 1}
+      Size: 1
+    - Surface: 12
+      Color: {r: 0.86666673, g: 0.8352942, b: 0.80392164, a: 1}
+      Size: 1
+    - Surface: 14
+      Color: {r: 0.8745099, g: 0.8431373, b: 0.8117648, a: 1}
+      Size: 1
+    - Surface: 16
+      Color: {r: 0.8588236, g: 0.8235295, b: 0.79215693, a: 1}
+      Size: 1
+    MinWheelLinearSpeed: 0.5
+    MinSlipRatio: 0
+    MinSlipAngle: 0
+    RequireThrottle: 0
+    EmitOnRearDuringDrift: 1
+    EmitOnFrontDuringDrift: 1
+    SkipEmitOnDriftWithoutWheelSpin: 1
+    EmitForOnlineCarsAtLowQuality: 0
+    FrameSkip: 2
+    EmitCount: 1
+    UseWheelSmokeVelocityForParticles: 1
+    EmitUpwardAngleDegrees: 10
+    EmitOrigin: 0
+    MaxLaunchSpeed: 8
+    LaunchSpeedMultiplier: 0.6
+    SpreadAngleDegrees: 5
+    SpeedRandomness: 0.3
+    ParticleAngularSpeed: 1
+    OuterSideOffset: 0
+  - ID: Mud splatter
+    Prefab: {fileID: 198724804207875695, guid: 62c129e092adbf04188d7204bde6d4f4, type: 2}
+    Surfaces:
+    - Surface: 3
+      Color: {r: 0.67058825, g: 0.48627454, b: 0.30588236, a: 1}
+      Size: 0
+    - Surface: 5
+      Color: {r: 0.40000004, g: 0.27450982, b: 0.16862746, a: 1}
+      Size: 0
+    - Surface: 6
+      Color: {r: 0.3921569, g: 0.2627451, b: 0.17254902, a: 1}
+      Size: 0
+    - Surface: 7
+      Color: {r: 0.3647059, g: 0.3372549, b: 0.09411766, a: 1}
+      Size: 0
+    - Surface: 9
+      Color: {r: 0.8352942, g: 0.7058824, b: 0.6117647, a: 1}
+      Size: 0
+    - Surface: 12
+      Color: {r: 0.86666673, g: 0.8352942, b: 0.80392164, a: 1}
+      Size: 0
+    - Surface: 16
+      Color: {r: 0.8588236, g: 0.8235295, b: 0.79215693, a: 1}
+      Size: 0
+    MinWheelLinearSpeed: 2
+    MinSlipRatio: 0.5
+    MinSlipAngle: 0
+    RequireThrottle: 1
+    EmitOnRearDuringDrift: 1
+    EmitOnFrontDuringDrift: 1
+    SkipEmitOnDriftWithoutWheelSpin: 1
+    EmitForOnlineCarsAtLowQuality: 0
+    FrameSkip: 2
+    EmitCount: 2
+    UseWheelSmokeVelocityForParticles: 1
+    EmitUpwardAngleDegrees: 0
+    EmitOrigin: 1
+    MaxLaunchSpeed: 0
+    LaunchSpeedMultiplier: 1
+    SpreadAngleDegrees: 0
+    SpeedRandomness: 0
+    ParticleAngularSpeed: 10
+    OuterSideOffset: 0.2
+  - ID: Gravel stones
+    Prefab: {fileID: 198724804207875695, guid: 62c129e092adbf04188d7204bde6d4f4, type: 2}
+    Surfaces:
+    - Surface: 17
+      Color: {r: 0.68235296, g: 0.6784314, b: 0.654902, a: 1}
+      Size: 0
+    MinWheelLinearSpeed: 3
+    MinSlipRatio: 0
+    MinSlipAngle: 0
+    RequireThrottle: 0
+    EmitOnRearDuringDrift: 1
+    EmitOnFrontDuringDrift: 1
+    SkipEmitOnDriftWithoutWheelSpin: 1
+    EmitForOnlineCarsAtLowQuality: 0
+    FrameSkip: 2
+    EmitCount: 1
+    UseWheelSmokeVelocityForParticles: 1
+    EmitUpwardAngleDegrees: 0
+    EmitOrigin: 1
+    MaxLaunchSpeed: 0
+    LaunchSpeedMultiplier: 1
+    SpreadAngleDegrees: 0
+    SpeedRandomness: 0
+    ParticleAngularSpeed: 8
+    OuterSideOffset: 0.2

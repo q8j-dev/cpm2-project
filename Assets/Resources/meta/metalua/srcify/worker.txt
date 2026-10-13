@@ -1,0 +1,84 @@
+return function(tags) 
+    local worker = {text = "", indent = 0}
+    function worker:clear()
+        self.text = ""
+    end
+
+    function worker:emit(txt)
+        self.text = self.text .. txt
+    end
+
+    function worker:newline()
+        self:emit('\n')
+        self:emit(string.rep(' ', self.indent * 4))
+    end
+
+    function worker:space()
+        self:emit(' ')
+    end
+    function worker:keyword(kw)
+        self:emit(kw)
+    end;
+
+    function worker:round(callback)
+        self:emit('(')
+        callback()
+        self:emit(')')
+    end
+    function worker:square(callback)
+        self:emit('[')
+        callback()
+        self:emit(']')
+    end
+    function worker:curly(callback)
+        self:emit('{')
+        callback()
+        self:emit('}')
+    end
+    function worker:straight(callback)
+        self:emit('|')
+        callback()
+        self:emit('|')
+    end
+    function worker:doubleStraight(callback)
+        self:emit('|:')
+        callback()
+        self:emit(':|')
+    end
+
+    function worker:enumerate(ast, callback, startIdx, endIdx)
+        startIdx = startIdx or 1
+        endIdx = endIdx or #ast
+        for i, p in ipairs(ast) do
+            if i >= startIdx and i <= endIdx then
+                self:format(p, ast)
+                if i < endIdx then
+                    callback(self)
+                end
+            end
+        end
+    end
+
+    function worker:block(ast, callback, ...)
+        callback = callback or worker.newline
+        self:enumerate(ast, callback, ...)
+    end
+    function worker:indentedBlock(ast, ...)
+        self.indent = self.indent + 1
+        self:newline()
+        self:block(ast, ...)
+        self.indent = self.indent - 1
+        self:newline()
+    end
+    function worker:list(ast, ...)
+        self:enumerate(ast, function(w) w:emit(', ') end, ...)
+    end
+
+    function worker:format(node, parentNode)
+        assert(tags[node.tag], '<fmt> tag: '..tostring(node.tag))
+        tags[node.tag](self, node, parentNode)
+    end
+
+    return worker
+
+end

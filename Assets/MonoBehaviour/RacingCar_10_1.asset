@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8c4f2c08c271e9cde836d8bb5dc6d4, type: 3}
+  m_Name: RacingCar_10_1
+  m_EditorClassIdentifier:
+  driver: {fileID: 0}
+  gender: 1
+  timeClass: 10
+  CarID: 14
+  WheelInwardOffset: 0
+  Class: 4
+  PerformanceScore: 557
+  torque: 450
+  torqueRPM: 4800
+  redlineRPM: 7800
+  IdleRPM: 850
+  maxRPM: 9000
+  EngineInertiaRatio: 0.31
+  GearBoxLoss: 0
+  drivingWheel: 4
+  ShiftTime: 0.15
+  LCrpm: 6000
+  bodyMass: 1720
+  Induction: 3
+  turboPressure: 1.3
+  minTurboRPM: 1100
+  maxTurboRPM: 4200
+  FrontLsd: 4
+  FrontLsdLockPercent: 50
+  RearLsd: 4
+  RearLsdLockPercent: 75
+  gears:
+  - 3.383
+  - 0
+  - 4.056
+  - 2.301
+  - 1.595
+  - 1.248
+  - 1.001
+  - 0.796
+  finalGearRatio: 3.7
+  TorqueSplit4Wd: 0.5
+  Options:
+    AbsLevel: 10
+    TrcLevel: 3
+    EspLevel: 0
+    Lc: 1
+    MTAssist: 0
+    ArcadeMode: 0
+    AnalogClutch: 0
+    AnalogThrottle: 0
+    AnalogBrake: 0
+  UseStockFrontData: 0
+  FrontWheelData:
+    BrakesData:
+      Diameter: 390
+      DiscType: 4
+      Pistons: 6
+      PistonDiameter: 38
+      CaliperMeshIndex: 0
+    Pressure: 2.2
+    tyreType: 0
+    RimModelId: 167
+    wheelSize: 20
+    tyreWidth: 295
+    tyreProfile: 40
+    rimWidth: 85
+    SpacerWidth: 44.3
+    Color1:
+      Color: {r: 0.22518769, g: 0.029073773, b: 0.2941176, a: 1}
+      CarMatType: 5
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0.22518769, g: 0.029073773, b: 0.2941176, a: 1}
+      CarMatType: 5
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 2
+      SpringLength: 10
+      SpringRate: 5.5
+      Bump: 4800
+      Rebound: 8800
+      AntiSwayBarForce: 12000
+      Camber: -0.9
+      ToeIn: 0.05
+      Caster: 7.3
+      Ackerman: 82
+      MaxSteerAngle: 35
+  UseStockRearData: 0
+  RearWheelData:
+    BrakesData:
+      Diameter: 380
+      DiscType: 4
+      Pistons: 4
+      PistonDiameter: 44
+      CaliperMeshIndex: 0
+    Pressure: 2.2
+    tyreType: 0
+    RimModelId: 167
+    wheelSize: 20
+    tyreWidth: 305
+    tyreProfile: 45
+    rimWidth: 95
+    SpacerWidth: 20
+    Color1:
+      Color: {r: 0.22518769, g: 0.029073773, b: 0.2941176, a: 1}
+      CarMatType: 5
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0.22518769, g: 0.029073773, b: 0.2941176, a: 1}
+      CarMatType: 5
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 3
+      SpringLength: 9.5
+      SpringRate: 5
+      Bump: 4200
+      Rebound: 8000
+      AntiSwayBarForce: 8500
+      Camber: -1.5
+      ToeIn: 0.08
+  MaxSpeedTurnCoefficient: 1.5
+  MinSpeedTurnCoefficient: 1.5
+  BodyKitTypeInstall: bb00000002000000020000000200000002000000000000000200000002000000
+  Gearbox: 1
+  steeringToSpeedCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  speedAdjustmentCoefficient: 0
+  GripForwardPressureMultiplier: 0.3
+  GripSidewaysPressureMultiplier: 0.1
+  IsUser: 0
+  RallyTransmission: 0

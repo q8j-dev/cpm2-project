@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: F140_ECU_Car206
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: F140 ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: -5164746931403247808
+  _partValB: -5186176136811384649
+  _partValC: 9126154585087112310
+  _partValD: -5846442735857581857
+  TypeId: 21
+  ModelId: 19921005
+  NoticeAboutPart: Good model id
+  Mass: 0.67
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 0
+  _partLinkKeysA: 4e487d59cfbc5cd7
+  _partLinkKeysB: 78a44d906a68fcf8
+  _partLinkKeysC:
+  _partLinkStamp: -9075416764175889533
+  _partSourceRef: 199
+  FuelMap:
+  - RPM: 500
+    pressure: 4
+    Time: 1
+    Fuel: 1.9
+  - RPM: 1000
+    pressure: 4
+    Time: 1
+    Fuel: 1.115
+  - RPM: 1500
+    pressure: 4
+    Time: 1
+    Fuel: 1.114
+  - RPM: 2000
+    pressure: 4
+    Time: 1
+    Fuel: 0.974
+  - RPM: 2500
+    pressure: 4
+    Time: 1
+    Fuel: 0.845
+  - RPM: 3000
+    pressure: 4
+    Time: 1
+    Fuel: 0.742
+  - RPM: 3500
+    pressure: 4
+    Time: 1
+    Fuel: 0.659
+  - RPM: 4000
+    pressure: 4
+    Time: 1
+    Fuel: 0.592
+  - RPM: 4500
+    pressure: 4
+    Time: 1
+    Fuel: 0.536
+  - RPM: 5000
+    pressure: 4
+    Time: 1
+    Fuel: 0.489
+  - RPM: 5500
+    pressure: 4
+    Time: 1
+    Fuel: 0.451
+  - RPM: 6000
+    pressure: 4
+    Time: 1
+    Fuel: 0.418
+  - RPM: 6500
+    pressure: 4
+    Time: 1
+    Fuel: 0.389
+  - RPM: 7000
+    pressure: 4
+    Time: 0.999
+    Fuel: 0.362
+  - RPM: 7500
+    pressure: 4
+    Time: 0.999
+    Fuel: 0.332
+  - RPM: 8000
+    pressure: 4
+    Time: 0.999
+    Fuel: 0.298
+  - RPM: 8500
+    pressure: 4
+    Time: 0.998
+    Fuel: 0.264
+  - RPM: 9000
+    pressure: 4
+    Time: 1
+    Fuel: 0.235
+  - RPM: 9500
+    pressure: 4
+    Time: 1
+    Fuel: 0.18
+  - RPM: 10000
+    pressure: 4
+    Time: 1
+    Fuel: 0.12
+  - RPM: 10500
+    pressure: 4
+    Time: 1
+    Fuel: 0.07
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1568971782
+    hiddenValue: 429712646
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 900
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1254108799
+    hiddenValue: 237930623
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1280841178
+    hiddenValue: 144036314
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1100
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1019546422
+    hiddenValue: 2055460150
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 9250
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1463577044
+    hiddenValue: 287908052
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 10000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

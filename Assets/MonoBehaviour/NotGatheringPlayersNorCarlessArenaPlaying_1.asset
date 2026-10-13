@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced75d539bb43e059a9d9e86c64797ee, type: 3}
+  m_Name: NotGatheringPlayersNorCarlessArenaPlaying
+  m_EditorClassIdentifier:
+  Root:
+    rid: 5819493539657023494
+  references:
+    version: 2
+    RefIds:
+    - rid: 5819493539657023494
+      type: {class: NotCondition, ns: _Car_Parking.Scripts.GameFacts.Conditions, asm: CPM.GameFacts.Conditions}
+      data:
+        Inner:
+          rid: 5819493539657023495
+    - rid: 5819493539657023495
+      type: {class: AnyCondition, ns: _Car_Parking.Scripts.GameFacts.Conditions, asm: CPM.GameFacts.Conditions}
+      data:
+        Items:
+        - rid: 5819493539657023496
+        - rid: 5819493539657023497
+    - rid: 5819493539657023496
+      type: {class: FactCondition, ns: _Car_Parking.Scripts.GameFacts.Conditions, asm: CPM.GameFacts.Conditions}
+      data:
+        Fact: 2
+    - rid: 5819493539657023497
+      type: {class: AllCondition, ns: _Car_Parking.Scripts.GameFacts.Conditions, asm: CPM.GameFacts.Conditions}
+      data:
+        Items:
+        - rid: 5819493539657023498
+        - rid: 5819493539657023499
+    - rid: 5819493539657023498
+      type: {class: FactCondition, ns: _Car_Parking.Scripts.GameFacts.Conditions, asm: CPM.GameFacts.Conditions}
+      data:
+        Fact: 10
+    - rid: 5819493539657023499
+      type: {class: FactCondition, ns: _Car_Parking.Scripts.GameFacts.Conditions, asm: CPM.GameFacts.Conditions}
+      data:
+        Fact: 3

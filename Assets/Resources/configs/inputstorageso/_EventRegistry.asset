@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52286463bc73663f04487d08bfa250b, type: 3}
+  m_Name: _EventRegistry
+  m_EditorClassIdentifier:
+  entryRegions:
+  - isUsed: 1
+    entries:
+    - ID: openPhone
+      Asset: {fileID: 11400000, guid: c59a1602bec709b4183c2f69d36f8b17, type: 2}
+      EnumIndex: 0
+    - ID: onMenu
+      Asset: {fileID: 11400000, guid: 1e102235ececa7a47a05cfa1dcd5f7e3, type: 2}
+      EnumIndex: 1
+    - ID: onThrottle
+      Asset: {fileID: 11400000, guid: a154bcab8995ba64a97f6f98c7b7a3e2, type: 2}
+      EnumIndex: 2
+    - ID: onStartEngine
+      Asset: {fileID: 11400000, guid: c5d90e840af60274c88f01960e04c4d0, type: 2}
+      EnumIndex: 3
+    - ID: onLook
+      Asset: {fileID: 11400000, guid: 6d9ed3b435ea1ba4fbac998ef1de00a2, type: 2}
+      EnumIndex: 4
+    - ID: cancel
+      Asset: {fileID: 11400000, guid: ae964eb52a9cfe0449f95a2909b914cf, type: 2}
+      EnumIndex: 5
+    - ID: accept
+      Asset: {fileID: 11400000, guid: 677452c9bb8ba214b99173f60312ee79, type: 2}
+      EnumIndex: 6
+    - ID: changeCamera
+      Asset: {fileID: 11400000, guid: 786ca81df36e68a47b04a23f72f293c5, type: 2}
+      EnumIndex: 7
+    - ID: circleMenu
+      Asset: {fileID: 11400000, guid: c91c15f635f3c034fab39b851cad7358, type: 2}
+      EnumIndex: 9
+    - ID: circleMenuScroll
+      Asset: {fileID: 11400000, guid: 6ef1f48a668f0624ebaaf6ab638675db, type: 2}
+      EnumIndex: 10
+    - ID: closeCircleMenu
+      Asset: {fileID: 11400000, guid: fc195074afa749842bce59a79f4fb2ff, type: 2}
+      EnumIndex: 11
+    - ID: doorStartCancel
+      Asset: {fileID: 11400000, guid: f4b700d21404f9644afb4bc8a62d9475, type: 2}
+      EnumIndex: 12
+    - ID: shifterUpDown
+      Asset: {fileID: 11400000, guid: 16fd09e743d20a843813a600803a3188, type: 2}
+      EnumIndex: 13
+    - ID: shifterMA
+      Asset: {fileID: 11400000, guid: 3c6d03799cd4bb6438b975cbc1457f23, type: 2}
+      EnumIndex: 14
+    - ID: shifterMoveStarted
+      Asset: {fileID: 11400000, guid: be83909a89c21dc46ba413bbc9afb9ef, type: 2}
+      EnumIndex: 15
+    - ID: shiftToggleMA
+      Asset: {fileID: 11400000, guid: 5a632c9346fc076438fdef4b80697452, type: 2}
+      EnumIndex: 16
+    - ID: onHorn
+      Asset: {fileID: 11400000, guid: b62cfda532c36c0488573f75d8ab8a82, type: 2}
+      EnumIndex: 17
+    - ID: onHeadlights
+      Asset: {fileID: 11400000, guid: 058a7edadd05e5a42ba91e7c375e9568, type: 2}
+      EnumIndex: 18
+    - ID: onHandbrake
+      Asset: {fileID: 11400000, guid: c5893d17bf94f8147b8df76d429e1225, type: 2}
+      EnumIndex: 71
+    - ID: onHandbrakeHold
+      Asset: {fileID: 11400000, guid: 505b088cbb2a97c4aab85101d742b54c, type: 2}
+      EnumIndex: 72
+    - ID: gear
+      Asset: {fileID: 11400000, guid: a67452647fce03b4fa0ab8cdc38c9611, type: 2}
+      EnumIndex: 36
+    - ID: onVoice
+      Asset: {fileID: 11400000, guid: 8936efdb7aafe7c45a64c16c3b14bd35, type: 2}
+      EnumIndex: 114
+    - ID: onCircleMenuCam
+      Asset: {fileID: 11400000, guid: dc1877b6d647cfc448fb9fbbd8906d08, type: 2}
+      EnumIndex: 115
+    - ID: closeCircleMenuCam
+      Asset: {fileID: 11400000, guid: cc720248fb16a244ca50c0e4d69081e0, type: 2}
+      EnumIndex: 116
+    - ID: onCircleMenuAnim
+      Asset: {fileID: 11400000, guid: 4a595335b8130464894c560bf4a42775, type: 2}
+      EnumIndex: 121
+    - ID: onLookFree
+      Asset: {fileID: 11400000, guid: d7b9e4087251c8c4f8a93094d42cdf9d, type: 2}
+      EnumIndex: 117
+    - ID: onMapMove
+      Asset: {fileID: 11400000, guid: 410f11279d1bccd44bef3ac8fc477edf, type: 2}
+      EnumIndex: 119
+    - ID: toggleFocus
+      Asset: {fileID: 11400000, guid: 80e5718610717fd4abe5fc42493f4ab0, type: 2}
+      EnumIndex: 120
+    - ID: showPupUpOnMap
+      Asset: {fileID: 11400000, guid: 9151b3913fd2d4e4990a87e0c139d826, type: 2}
+      EnumIndex: 123
+    - ID: toggleSlowMove
+      Asset: {fileID: 11400000, guid: 47f632c1db51ee245839d90f10eea60f, type: 2}
+      EnumIndex: 129
+    - ID: interact
+      Asset: {fileID: 11400000, guid: b34fbe13df116ba4ab5052df3378f127, type: 2}
+      EnumIndex: 134
+  - isUsed: 1
+    entries:
+    - ID: throttle
+      Asset: {fileID: 11400000, guid: b329c8107120c384c90c4be12058fba2, type: 2}
+      EnumIndex: 19
+    - ID: brake
+      Asset: {fileID: 11400000, guid: 43e30ff4786961e4ba0a85eb876b2c79, type: 2}
+      EnumIndex: 20
+    - ID: clutch
+      Asset: {fileID: 11400000, guid: e1106333a51200d4fa1f1d3b577c80d9, type: 2}
+      EnumIndex: 21
+    - ID: steer
+      Asset: {fileID: 11400000, guid: a08860dd63e736945aefe89bdebc7e60, type: 2}
+      EnumIndex: 22
+    - ID: handbrake
+      Asset: {fileID: 11400000, guid: 03272919c70e4754283b1805cdba9757, type: 2}
+      EnumIndex: 23
+    - ID: zoom
+      Asset: {fileID: 11400000, guid: e75005cd998370e40982b42e03ed585f, type: 2}
+      EnumIndex: 24
+    - ID: look
+      Asset: {fileID: 11400000, guid: b85b881377ea53a429c0bd5eba8cb8d8, type: 2}
+      EnumIndex: 25
+    - ID: movePerson
+      Asset: {fileID: 11400000, guid: 361e755b50e491342a9f97dd1dd3ab3d, type: 2}
+      EnumIndex: 26
+    - ID: circleMenuMove
+      Asset: {fileID: 11400000, guid: 068ad88279ca1ee40aba4bf22d8bce43, type: 2}
+      EnumIndex: 28
+    - ID: shifterMove
+      Asset: {fileID: 11400000, guid: 30f28e580766ee048b2d4a5f9cd86801, type: 2}
+      EnumIndex: 29
+    - ID: lookRotate
+      Asset: {fileID: 11400000, guid: 37995ba54ee15ae4ba6a769d1e6f67cf, type: 2}
+      EnumIndex: 113
+    - ID: lookFree
+      Asset: {fileID: 11400000, guid: d39393435aaacdd4dbe05bf13372c942, type: 2}
+      EnumIndex: 118
+    - ID: mapDragMoveValueEvent
+      Asset: {fileID: 11400000, guid: ee097068ebaf6a140bef76c69d3bd912, type: 2}
+      EnumIndex: 124
+  - isUsed: 1
+    entries:
+    - ID: setActionsActive
+      Asset: {fileID: 11400000, guid: fcd3274bfe6094e4699cf8f302b78b86, type: 2}
+      EnumIndex: 30
+    - ID: onConfirmClick
+      Asset: {fileID: 11400000, guid: e85d517103919e54ba6222fef11e2aa6, type: 2}
+      EnumIndex: 31
+    - ID: stickCursorMove
+      Asset: {fileID: 11400000, guid: 208a873e7aea935438aa0108480b9644, type: 2}
+      EnumIndex: 33
+    - ID: bindingsChanged
+      Asset: {fileID: 11400000, guid: 3d557b31d1e73d04bafe384f583260ea, type: 2}
+      EnumIndex: 95
+    - ID: bindingCaptureState
+      Asset: {fileID: 11400000, guid: 21312c821e76baa49bb0207e994919f9, type: 2}
+      EnumIndex: 96
+    - ID: bindingPresetChanged
+      Asset: {fileID: 11400000, guid: f442f9a10197912488092a239729966d, type: 2}
+      EnumIndex: 97
+    - ID: scrollValueEvent
+      Asset: {fileID: 11400000, guid: 9ae43347ba5c9884888b741ca64d4743, type: 2}
+      EnumIndex: 56
+    - ID: aimAt
+      Asset: {fileID: 11400000, guid: ec6d86e456d6ba04d9dd49e588bfd2f2, type: 2}
+      EnumIndex: 109
+    - ID: acceptHold
+      Asset: {fileID: 11400000, guid: b7666284cf74fea498e117cece13bf13, type: 2}
+      EnumIndex: 125
+  - isUsed: 1
+    entries:
+    - ID: onNextPrevious
+      Asset: {fileID: 11400000, guid: 29910da7bcaf9cc4b8029cecbddc8ffa, type: 2}
+      EnumIndex: 34
+    - ID: onLayerUpDown
+      Asset: {fileID: 11400000, guid: 5839e76628dfbba459f65f3d429d78e7, type: 2}
+      EnumIndex: 35
+    - ID: toggleToSize
+      Asset: {fileID: 11400000, guid: 6bc086110a063364b85b637b9f9b55e3, type: 2}
+      EnumIndex: 38
+    - ID: toggleToColor
+      Asset: {fileID: 11400000, guid: 11ba2ffede9068f42833712d1c7928bc, type: 2}
+      EnumIndex: 39
+    - ID: addFavorite
+      Asset: {fileID: 11400000, guid: 979874f6c811aa24da19a11150343267, type: 2}
+      EnumIndex: 40
+    - ID: copy
+      Asset: {fileID: 11400000, guid: b6a8939671824f6459c58b212c5ce974, type: 2}
+      EnumIndex: 41
+    - ID: deleteAll
+      Asset: {fileID: 11400000, guid: 1addc1d20af79cb4ca55857dabb8db91, type: 2}
+      EnumIndex: 42
+    - ID: deleteSelected
+      Asset: {fileID: 11400000, guid: a75a8ab40aca0b546b417f9c2b4b34b5, type: 2}
+      EnumIndex: 43
+    - ID: mirror
+      Asset: {fileID: 11400000, guid: b8b9ef582523b9e4e91e46b623e84378, type: 2}
+      EnumIndex: 44
+    - ID: setColor
+      Asset: {fileID: 11400000, guid: ed815df94a121af4e9f4ffebae17c688, type: 2}
+      EnumIndex: 45
+    - ID: setSize
+      Asset: {fileID: 11400000, guid: 48c0a8126c2c6d74dbc61ed272a7ddcf, type: 2}
+      EnumIndex: 46
+    - ID: blockCamera
+      Asset: {fileID: 11400000, guid: 19122970d2399dc4b8bda276f1262af4, type: 2}
+      EnumIndex: 47
+    - ID: toggleFavorites
+      Asset: {fileID: 11400000, guid: 65f91892cac13ff4ca3f02c819785249, type: 2}
+      EnumIndex: 48
+    - ID: toggleMultiSelect
+      Asset: {fileID: 11400000, guid: c0f021eb6bc5b7a419ed1d6835fa6fe0, type: 2}
+      EnumIndex: 49
+    - ID: toggleUi
+      Asset: {fileID: 11400000, guid: 698e97db06bc2a04da7183187f945a8c, type: 2}
+      EnumIndex: 50
+    - ID: opacityChange
+      Asset: {fileID: 11400000, guid: c47b78fd57aa2944d9e7d55dd85bb0f9, type: 2}
+      EnumIndex: 51
+    - ID: turnLeftRight
+      Asset: {fileID: 11400000, guid: 2a2d8d6e2e0a0324594325b51c86abdc, type: 2}
+      EnumIndex: 52
+    - ID: colorChange
+      Asset: {fileID: 11400000, guid: 7d1fe2e85433fb549b8b8a455abe396f, type: 2}
+      EnumIndex: 53
+    - ID: sizeChange
+      Asset: {fileID: 11400000, guid: 5a2960f292c0fe947b7655f16d690baa, type: 2}
+      EnumIndex: 54
+    - ID: positionChange
+      Asset: {fileID: 11400000, guid: ab505f12d50a5bb41a328afc2884d60c, type: 2}
+      EnumIndex: 55
+    - ID: onCancelChanges
+      Asset: {fileID: 11400000, guid: f71effca9cc108c42ae1e8852083d6c6, type: 2}
+      EnumIndex: 57
+    - ID: onStartColorMove
+      Asset: {fileID: 11400000, guid: 9fedc187271cd52489e484a517d166ed, type: 2}
+      EnumIndex: 58
+    - ID: onStartTintMove
+      Asset: {fileID: 11400000, guid: b48005be840078643b69df511caed203, type: 2}
+      EnumIndex: 59
+    - ID: onUnselectOrBack
+      Asset: {fileID: 11400000, guid: efc40b0ac05420447bf9d9482b242e67, type: 2}
+      EnumIndex: 66
+    - ID: onSetText
+      Asset: {fileID: 11400000, guid: 35072579c517727458d9d1330594bb67, type: 2}
+      EnumIndex: 61
+    - ID: toggleToText
+      Asset: {fileID: 11400000, guid: ae27b4ab651d43b45a5d963dfb3dab87, type: 2}
+      EnumIndex: 62
+    - ID: toggleBold
+      Asset: {fileID: 11400000, guid: cd95932b4b497f0498750b1313a3c177, type: 2}
+      EnumIndex: 63
+    - ID: toggleItalics
+      Asset: {fileID: 11400000, guid: f07811e61303e40418e4ec264f53e2de, type: 2}
+      EnumIndex: 64
+    - ID: onFontUpDown
+      Asset: {fileID: 11400000, guid: 74191461dd6b54d439be347c952c52b4, type: 2}
+      EnumIndex: 65
+    - ID: onToggleFrontPlate
+      Asset: {fileID: 11400000, guid: 533a046b7e6454c4687823e85ca4f71b, type: 2}
+      EnumIndex: 67
+    - ID: onToggleBackPlate
+      Asset: {fileID: 11400000, guid: a8256a55a1ec6c640bdcef8962feeb7b, type: 2}
+      EnumIndex: 68
+    - ID: onEnterPlateTypes
+      Asset: {fileID: 11400000, guid: 1ee41bb43059ee141aa7482263a95fd8, type: 2}
+      EnumIndex: 70
+    - ID: lookVinyl
+      Asset: {fileID: 11400000, guid: 9818a9933bd309546a17e586d70cde21, type: 2}
+      EnumIndex: 93
+    - ID: zoomVinyl
+      Asset: {fileID: 11400000, guid: b1a6a0796a532504b817f1547b170bcf, type: 2}
+      EnumIndex: 94
+  - isUsed: 1
+    entries:
+    - ID: toggleMap
+      Asset: {fileID: 11400000, guid: 0eb5df7ef116fc94988257d5ed45fed6, type: 2}
+      EnumIndex: 8
+    - ID: mapMove
+      Asset: {fileID: 11400000, guid: 9ba23e6c713b72048b1e4a88f2ff1545, type: 2}
+      EnumIndex: 27
+    - ID: toggleFilterOnMap
+      Asset: {fileID: 11400000, guid: bc284b06386185248b4167b94b268848, type: 2}
+      EnumIndex: 77
+    - ID: toggleShowHideMapFilters
+      Asset: {fileID: 11400000, guid: b2a601695b89f6543bf749694de548ce, type: 2}
+      EnumIndex: 76
+    - ID: markOnMap
+      Asset: {fileID: 11400000, guid: 72067f3d04e68f347ab879267e17574b, type: 2}
+      EnumIndex: 78
+    - ID: hideShowAllFilters
+      Asset: {fileID: 11400000, guid: 9dd968e2457cef54bab12eb8016b8c72, type: 2}
+      EnumIndex: 79
+  - isUsed: 1
+    entries:
+    - ID: droneCameraHeight
+      Asset: {fileID: 11400000, guid: c58dbe89eb8f5784e88a5a682d773b9d, type: 2}
+      EnumIndex: 80
+    - ID: droneCameraMove
+      Asset: {fileID: 11400000, guid: 8e7a18f40c9634f4bb8d7504b018f1ba, type: 2}
+      EnumIndex: 81
+    - ID: droneCameraTilt
+      Asset: {fileID: 11400000, guid: 61094988404154d42a616d3ec0f1df6a, type: 2}
+      EnumIndex: 82
+    - ID: onSnapshot
+      Asset: {fileID: 11400000, guid: 16210e8bc0c41e04ca44fbd4a306831e, type: 2}
+      EnumIndex: 60
+    - ID: onResetDroneCamera
+      Asset: {fileID: 11400000, guid: 0ff51490961cab94d9dd3346aaf59541, type: 2}
+      EnumIndex: 83
+    - ID: toggleDroneSpeed
+      Asset: {fileID: 11400000, guid: 7aae0a992179cef44862c40b9b216b91, type: 2}
+      EnumIndex: 84
+    - ID: onCenterDroneCamera
+      Asset: {fileID: 11400000, guid: a69dfbc6bf3351a4ea9d424ab6da2e06, type: 2}
+      EnumIndex: 85
+    - ID: closeDrone
+      Asset: {fileID: 11400000, guid: 28b988dbfa4ebd448ae61914251d7759, type: 2}
+      EnumIndex: 32
+    - ID: onPhotoHelp
+      Asset: {fileID: 11400000, guid: ae2a2cb7897f05f4db95921a75892ae6, type: 2}
+      EnumIndex: 73
+    - ID: navigatePhotoSettings
+      Asset: {fileID: 11400000, guid: 9660fc905d5596d4fba93a81d7c5bab5, type: 2}
+      EnumIndex: 74
+    - ID: setPhotoSettings
+      Asset: {fileID: 11400000, guid: 18aea8240a013304282994eafbc60a24, type: 2}
+      EnumIndex: 75
+    - ID: onPhotoColor
+      Asset: {fileID: 11400000, guid: d543e30dce07e4143914baf45e3f7ebb, type: 2}
+      EnumIndex: 86
+    - ID: onPhotoOptics
+      Asset: {fileID: 11400000, guid: e1004525fa733c248b0dca073bcff51c, type: 2}
+      EnumIndex: 87
+    - ID: onPhotoCamera
+      Asset: {fileID: 11400000, guid: af7b68d3d7a9c3049b8649f618864090, type: 2}
+      EnumIndex: 88
+    - ID: onCameraMove
+      Asset: {fileID: 11400000, guid: 3b387889ade6aeb439121cf883d4065c, type: 2}
+      EnumIndex: 89
+    - ID: onCameraHeight
+      Asset: {fileID: 11400000, guid: f94f8647f113c5540b0735d603a70d12, type: 2}
+      EnumIndex: 91
+    - ID: onCameraTilt
+      Asset: {fileID: 11400000, guid: 8f21feaa2c6eefb4b8b17e6c9b15e365, type: 2}
+      EnumIndex: 90
+    - ID: onOpenChat
+      Asset: {fileID: 11400000, guid: 753e58b26390d914d9ddc008a9e9dc24, type: 2}
+      EnumIndex: 92
+    - ID: onResetFilter
+      Asset: {fileID: 11400000, guid: 7092a680b04b1d84597dae37e6ceae23, type: 2}
+      EnumIndex: 112
+  - isUsed: 1
+    entries:
+    - ID: toggleLeftSignal
+      Asset: {fileID: 11400000, guid: 098e9bbde0449f74da530301671855cf, type: 2}
+      EnumIndex: 98
+    - ID: toggleRightSignal
+      Asset: {fileID: 11400000, guid: 7d5e8c19a8ff8ec44afc969fb57561b5, type: 2}
+      EnumIndex: 99
+    - ID: toggleEmergencySignal
+      Asset: {fileID: 11400000, guid: 7889fd73b2fe47948b80fa7d28e21ffd, type: 2}
+      EnumIndex: 100
+    - ID: startStopLookLeft
+      Asset: {fileID: 11400000, guid: 16fc76d8ac873924da9a552528cf178b, type: 2}
+      EnumIndex: 101
+    - ID: startStopLookBack
+      Asset: {fileID: 11400000, guid: 0f37058ab90c443468b64bd6b064c010, type: 2}
+      EnumIndex: 102
+    - ID: startStopLookRight
+      Asset: {fileID: 11400000, guid: ceb3e0d6d59fa2c439bce6efb3987edc, type: 2}
+      EnumIndex: 103
+    - ID: personRotateRightLeft
+      Asset: {fileID: 11400000, guid: 833a9e6ebf55144438b1dfc57e967099, type: 2}
+      EnumIndex: 69
+  - isUsed: 1
+    entries:
+    - ID: toggleCameraSettings
+      Asset: {fileID: 11400000, guid: c2feaf25d0b890b41a1dfa1473456f58, type: 2}
+      EnumIndex: 108
+    - ID: keepLane
+      Asset: {fileID: 11400000, guid: 4edda5d6db23c874293e21909124dda6, type: 2}
+      EnumIndex: 107
+    - ID: startStopBurnout
+      Asset: {fileID: 11400000, guid: 9d3eaef7695740e46915bbfccac79a44, type: 2}
+      EnumIndex: 106
+    - ID: toggleTimer
+      Asset: {fileID: 11400000, guid: 4ca621c74a9734940a90bd0a8a4096c8, type: 2}
+      EnumIndex: 105
+    - ID: openPhotoMode
+      Asset: {fileID: 11400000, guid: 6ac32ac027a63e645a2cee9e9a367fe3, type: 2}
+      EnumIndex: 104
+    - ID: toRoad
+      Asset: {fileID: 11400000, guid: aaef97e3a6c8d0d4f88a206ef4351340, type: 2}
+      EnumIndex: 37
+    - ID: restartRace
+      Asset: {fileID: 11400000, guid: d66add93a9ff9d149b5f5287fc0d251c, type: 2}
+      EnumIndex: 110
+    - ID: cancelRace
+      Asset: {fileID: 11400000, guid: edc3728c7de4ea84ab4657d3ce8a48b4, type: 2}
+      EnumIndex: 111
+    - ID: backToCar
+      Asset: {fileID: 11400000, guid: 95b4849ed4df5b4418a6a2007d13ecdb, type: 2}
+      EnumIndex: 122
+  - isUsed: 1
+    entries:
+    - ID: cameraSetupMove
+      Asset: {fileID: 11400000, guid: fc6538eea00169f4097dddfac3086307, type: 2}
+      EnumIndex: 126
+    - ID: CameraSetupHeight
+      Asset: {fileID: 11400000, guid: b5721e1af3f74b94bb21be581d749bbc, type: 2}
+      EnumIndex: 128
+    - ID: personRun
+      Asset: {fileID: 11400000, guid: 9f5709dde4023a349a624aad1fee3593, type: 2}
+      EnumIndex: 130
+    - ID: personCrouch
+      Asset: {fileID: 11400000, guid: dcc6b8239e7bc1c4496ca5c9fe817009, type: 2}
+      EnumIndex: 131
+    - ID: personJump
+      Asset: {fileID: 11400000, guid: e8fea419e8738504c9cfd3e27292af3f, type: 2}
+      EnumIndex: 132
+    - ID: personWalkRunToggle
+      Asset: {fileID: 11400000, guid: 66bc74f471acc7d4fbd2206108e2f098, type: 2}
+      EnumIndex: 133

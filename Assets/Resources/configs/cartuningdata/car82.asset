@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24f38460575f65aa332ffb62edf52f0, type: 3}
+  m_Name: car82
+  m_EditorClassIdentifier:
+  PurchaseItem: -99
+  Class: 2
+  Score:
+    currentCryptoKey: 2065163802
+    hiddenValue: 2065164136
+    inited: 1
+    fakeValue: 370
+    fakeValueActive: 1
+  StyleDefault:
+    currentCryptoKey: 2109025056
+    hiddenValue: -2109025057
+    inited: 1
+    fakeValue: -1
+    fakeValueActive: 1
+  Nfs: 0
+  IsRewardCar:
+    currentCryptoKey: 165
+    hiddenValue: 16
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Year: 2005
+  CarTypes: 00000000
+  region: 0
+  Tuning:
+    ChassisData:
+      _chassisKeys: ca6a79ccd8395f140e36f3c88836daa2765c070b353667cb18512ffd5d0f3ada711dbdd92bbe7723a083f00b5e0d0e6915d438d8a2db56eacc8f1515c1a80ee6ad29642bfc7519bf563d22b203a1607343dd4b572da8bd5a49e3b7fea488165b39e504aca7fc4a3802f3ccf2b58e27bf3d79b2a1686e6804
+      _chassisStamp: -5037404207020329427
+    EngineKitOffer: {fileID: 11400000, guid: ba3a1b8a2589e6045adbf38853e2c729, type: 2}
+    ECU: {fileID: 11400000, guid: a7401906a2c04cd4aa1de51c37f2cbc1, type: 2}
+    GearBox: {fileID: 11400000, guid: 86b7053ea2b6626488f85f51b0237ad9, type: 2}
+    FrontDifferential: {fileID: 11400000, guid: da8dc60518d40514489f0706a5146efd, type: 2}
+    RearDifferential: {fileID: 11400000, guid: 205f1820dd4a8bf4fbee1744efb8b6e3, type: 2}
+    TransferCase:
+      Enabled: 0
+      HasLowRange: 1
+      LowRangeRatio: 2.5
+      DefaultMode: 1
+      HasFrontLock: 0
+      HasRearLock: 0
+      IsFullTime: 0
+      HasCenterLock: 0
+    FrontWheelData:
+      BrakesData:
+        Diameter: 320
+        DiscType: 2
+        Pistons: 4
+        PistonDiameter: 28
+        CaliperMeshIndex: 0
+      Pressure: 2.4
+      tyreType: 0
+      RimModelId: 4
+      wheelSize: 17
+      tyreWidth: 235
+      tyreProfile: 45
+      rimWidth: 80
+      SpacerWidth: 0
+      Color1:
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      Color2:
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      SuspensionData:
+        SuspensionState: 0
+        SuspensionType: 0
+        SpringLength: 11
+        SpringRate: 5
+        Bump: 2600
+        Rebound: 4600
+        AntiSwayBarForce: 5000
+        Camber: -1.4
+        ToeIn: 0
+        Caster: 5.5
+        Ackerman: 60
+        MaxSteerAngle: 34
+    RearWheelData:
+      BrakesData:
+        Diameter: 300
+        DiscType: 2
+        Pistons: 2
+        PistonDiameter: 24
+        CaliperMeshIndex: 0
+      Pressure: 2.3
+      tyreType: 0
+      RimModelId: 4
+      wheelSize: 17
+      tyreWidth: 235
+      tyreProfile: 45
+      rimWidth: 80
+      SpacerWidth: 0
+      Color1:
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      Color2:
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      SuspensionData:
+        SuspensionState: 0
+        SuspensionType: 3
+        SpringLength: 10.5
+        SpringRate: 4.6
+        Bump: 2400
+        Rebound: 4400
+        AntiSwayBarForce: 6500
+        Camber: -1.5
+        ToeIn: 0.05
+    FrontWheelDataLimits:
+      SpringLengthMin: 7
+      SpringLengthMax: 12
+      SpringRateMin: 4
+      SpringRateMax: 8
+      BumpMin: 1000
+      BumpMax: 6000
+      ReboundMin: 3000
+      ReboundMax: 8000
+      AntiSwayBarForceMin: 0
+      AntiSwayBarForceMax: 20000
+      CamberMin: -10
+      CamberMax: 3
+      SteerAngleMin: 28
+      SteerAngleMax: 70
+      AckermanMin: 0
+      AckermanMax: 100
+      CasterMin: -12
+      CasterMax: 12
+      ToeMin: -2
+      ToeMax: 2
+      BrakesPistonsMax: 6
+      MaxDiskDiameter: 21
+      MaxWheelRadius: 0.38
+      MaxWheelPressure: 3.5
+    RearWheelDataLimits:
+      SpringLengthMin: 5.5
+      SpringLengthMax: 12
+      SpringRateMin: 3.5
+      SpringRateMax: 8
+      BumpMin: 1000
+      BumpMax: 6000
+      ReboundMin: 3000
+      ReboundMax: 8000
+      AntiSwayBarForceMin: 0
+      AntiSwayBarForceMax: 20000
+      CamberMin: -10
+      CamberMax: 3
+      SteerAngleMin: 28
+      SteerAngleMax: 70
+      AckermanMin: 0
+      AckermanMax: 100
+      CasterMin: -12
+      CasterMax: 12
+      ToeMin: -2
+      ToeMax: 2
+      BrakesPistonsMax: 6
+      MaxDiskDiameter: 21
+      MaxWheelRadius: 0.38
+      MaxWheelPressure: 3.5
+  Presets: []
+  CarInfoDefault:
+    CarID: 82
+    InstalledBodyKits:
+      FrontBumperId: 0
+      RearBumperId: 0
+      SpoilerId: 0
+      SkirtId: 0
+      FenderId: 0
+      HoodId: 0
+      HoodAirIntakeId: 0
+      RoofAirIntakeId: 0
+      Trims:
+      InteriorId: 0
+    Colors:
+      CarColor:
+        Color: {r: 0.47843137, g: 0.078431375, b: 0.078431375, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      DirtColor: {r: 0, g: 0, b: 0, a: 0}
+      DirtAmount: 0
+      WindowColor:
+        R: 0
+        G: 0
+        B: 0
+        A: 0
+      WindowSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+      DiodColor: {r: 0, g: 0, b: 0, a: 0}
+      SmokeColor: {r: 1, g: 1, b: 1, a: 1}
+      BodyKits: {}
+    AdditionalData:
+      FlagId: 0
+      AccessoryId: 0
+      IsPolice: 0
+      WheelText:
+      WheelTextFont: 0
+      WheelTextFontStyle: 0
+      WheelTextColor: {r: 0, g: 0, b: 0, a: 0}
+      Fso:
+        ModelIndex: 0
+        PositionIndex: 0
+        LeftColor: {r: 1, g: 1, b: 1, a: 1}
+        RightColor: {r: 1, g: 1, b: 1, a: 1}
+      Police:
+        Bought: 0
+        Installed: 0
+        InstalledBodyKits:
+          TopLight: -1
+          Roobar: -1
+          FrontInterior: -1
+          RearInterior: -1
+          Skirt: -1
+        SirenSound:
+          InstalledIndex: 0
+      AirSuspension:
+        Bought: 0
+        Installed: 0

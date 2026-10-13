@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf7877b7c5ea14a23fddaff0f07f02f, type: 3}
+  m_Name: PersonFootIKConfig
+  m_EditorClassIdentifier:
+  Enable: 1
+  Quality: 2
+  MaxStep: 0.35
+  FootSpeed: 2.5
+  FootRadius: 0.05
+  Prediction: 0.05
+  FootRotationWeight: 0.5
+  FootRotationSpeed: 7
+  MaxFootRotationAngle: 45
+  BendToTargetWeight: 0
+  AnimatedBendNormal: 1
+  PelvisSpeed: 5
+  PelvisDamper: 0.403
+  LowerPelvisWeight: 1
+  HeightOffset: -0.01
+  SpineBend: 0
+  WeightLerpSpeed: 6
+  MaxSlopeForIK: 45
+  StopGroundWeight: 1
+  DirectionalDescent: 1
+  DescendStartDot: 0.15
+  DescendFullDot: 0.5
+  DescendFootRotationScale: 1
+  DescendMaxStepScale: 1
+  DescendPredictionScale: 1
+  DescendPelvisDamper: 0.403
+  DescendPelvisSpeed: 5
+  PlatformIKCompensation: 1
+  PlatformIKCompensationMax: 0.1
+  PlatformDamperCutoffSpeed: 0.5

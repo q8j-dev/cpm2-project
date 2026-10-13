@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: 4B11_ECU_ST1
+  m_EditorClassIdentifier:
+  IsNotForSale: 1
+  Name: 4B11 Nekomoto ECU
+  Description: ECU.Description.St1
+  _partValA: 6802861558981878995
+  _partValB: -9027865612325268724
+  _partValC: 9126378866581994207
+  _partValD: 6994346304669366460
+  TypeId: 21
+  ModelId: 14321002
+  NoticeAboutPart: Good model id
+  Mass: 0.93
+  MaxMileage: 1000000
+  VendorId: 2
+  Rarity: 2
+  _partLinkKeysA: a76e1d127a4f1f32
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: 4606907139619905053
+  _partSourceRef: 143
+  FuelMap:
+  - RPM: 500
+    pressure: 4
+    Time: 1
+    Fuel: 1.848
+  - RPM: 1000
+    pressure: 4
+    Time: 1
+    Fuel: 1.446
+  - RPM: 1500
+    pressure: 4
+    Time: 1
+    Fuel: 1.313
+  - RPM: 2000
+    pressure: 4
+    Time: 1
+    Fuel: 1.045
+  - RPM: 2500
+    pressure: 4
+    Time: 1
+    Fuel: 0.828
+  - RPM: 3000
+    pressure: 4
+    Time: 1
+    Fuel: 0.714
+  - RPM: 3500
+    pressure: 4
+    Time: 1
+    Fuel: 0.63
+  - RPM: 4000
+    pressure: 4
+    Time: 1
+    Fuel: 0.562
+  - RPM: 4500
+    pressure: 4
+    Time: 1
+    Fuel: 0.491
+  - RPM: 5000
+    pressure: 4
+    Time: 1
+    Fuel: 0.426
+  - RPM: 5500
+    pressure: 4
+    Time: 1
+    Fuel: 0.365
+  - RPM: 6000
+    pressure: 4
+    Time: 1
+    Fuel: 0.301
+  - RPM: 6500
+    pressure: 4
+    Time: 1
+    Fuel: 0.251
+  - RPM: 7000
+    pressure: 4
+    Time: 1
+    Fuel: 0.186
+  - RPM: 7500
+    pressure: 4
+    Time: 1
+    Fuel: 0.1
+  - RPM: 8000
+    pressure: 4
+    Time: 1
+    Fuel: 0.037
+  - RPM: 8500
+    pressure: 4
+    Time: 1
+    Fuel: 0
+  speedLimit: 255
+  RpmIdle:
+    currentCryptoKey: 2004663046
+    hiddenValue: 863720454
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 675
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1369376718
+    hiddenValue: 352815566
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 600
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1091727710
+    hiddenValue: 91314782
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1021433055
+    hiddenValue: 2041842655
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7500
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1529347783
+    hiddenValue: 492710855
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 9000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

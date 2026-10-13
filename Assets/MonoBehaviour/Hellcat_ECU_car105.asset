@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: Hellcat_ECU_car105
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: Hellcat ECU Stock
+  Description: ECU.Description.Stock
+  _partValA: -6550322916723051528
+  _partValB: -1988349178931455617
+  _partValC: -5080131577946390646
+  _partValD: 1238040687526810859
+  TypeId: 21
+  ModelId: 17521001
+  NoticeAboutPart: Good model id
+  Mass: 0.64
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 0
+  _partLinkKeysA: ea0f9bc95c985853
+  _partLinkKeysB: 64a5e5c8e0262447
+  _partLinkKeysC:
+  _partLinkStamp: 3554845219875636643
+  _partSourceRef: 175
+  FuelMap:
+  - RPM: 500
+    pressure: 4.4
+    Time: 1
+    Fuel: 1.32
+  - RPM: 1000
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.705
+  - RPM: 1500
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.713
+  - RPM: 2000
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.625
+  - RPM: 2500
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.541
+  - RPM: 3000
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.473
+  - RPM: 3500
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.418
+  - RPM: 4000
+    pressure: 4.4
+    Time: 0.998
+    Fuel: 0.374
+  - RPM: 4500
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.337
+  - RPM: 5000
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.306
+  - RPM: 5500
+    pressure: 4.4
+    Time: 1.001
+    Fuel: 0.273
+  - RPM: 6000
+    pressure: 4.4
+    Time: 1.003
+    Fuel: 0.24
+  - RPM: 6500
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.199
+  - RPM: 7000
+    pressure: 4.4
+    Time: 1
+    Fuel: 0.134
+  - RPM: 7500
+    pressure: 4.4
+    Time: 0.81
+    Fuel: 0.1
+  - RPM: 8000
+    pressure: 4.4
+    Time: 0.3
+    Fuel: 0.1
+  - RPM: 8500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 9000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 9500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 10000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 10500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 11000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 11500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 12000
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  - RPM: 12500
+    pressure: 0
+    Time: 0
+    Fuel: 0
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1039509888
+    hiddenValue: 2041174656
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1066941462
+    hiddenValue: 2075965974
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 650
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1340924875
+    hiddenValue: 199462347
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 900
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1673424490
+    hiddenValue: 648970090
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 6200
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1925365512
+    hiddenValue: 937371656
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7500
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

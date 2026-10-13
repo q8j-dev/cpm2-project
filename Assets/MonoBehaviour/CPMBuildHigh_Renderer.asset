@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1575395517, guid: c88ab7b37c4f350242674d2efd621c19, type: 3}
+  m_Name: CPMBuildHigh_Renderer
+  m_EditorClassIdentifier:
+  debugShaders:
+    debugReplacementPS: {fileID: 4800000, guid: c3d2526d999ef214b9e14ff9bf86faec, type: 3}
+    hdrDebugViewPS: {fileID: 4800000, guid: 14ff62803eba7d44d91792906345ef9a, type: 3}
+  m_RendererFeatures:
+  - {fileID: 11400000, guid: e2eb37825a57c0948a76719611d47580, type: 2}
+  - {fileID: 11400000, guid: b1a258f2f4012ec438c89067471aac5f, type: 2}
+  m_RendererFeatureMap: 493d9caad836d4c117907648ce522daa
+  m_UseNativeRenderPass: 1
+  postProcessData: {fileID: 11400000, guid: 425bafd48dcee84498c1639748a38a32, type: 2}
+  xrSystemData: {fileID: 11400000, guid: a3917845f78a4c143943974ba2532409, type: 2}
+  shaders:
+    blitPS: {fileID: 4800000, guid: dea218c7c01cd7443a4c47547d4afcb7, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: 66087c7ddaccfc74faea518b054143f1, type: 3}
+    screenSpaceShadowPS: {fileID: 0}
+    samplingPS: {fileID: 4800000, guid: 77d3e5051277790409118877c6ec5c90, type: 3}
+    stencilDeferredPS: {fileID: 4800000, guid: 303b5bc25cea75e4bbe72a7e6650d7e2, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: 21b0fe32add0d434496c2350c681816b, type: 3}
+    fallbackLoadingPS: {fileID: 4800000, guid: 8e7ddb0f86a83b349875c5730b89af9e, type: 3}
+    materialErrorPS: {fileID: 4800000, guid: 7d413eb12c1220a48b14ace5c2c5edb5, type: 3}
+    coreBlitPS: {fileID: 4800000, guid: 197e88cd5ec293145b9d023f67f69cd8, type: 3}
+    coreBlitColorAndDepthPS: {fileID: 4800000, guid: 03ab6b882c2c27a4eb812af0c4af2196, type: 3}
+    blitHDROverlay: {fileID: 4800000, guid: 87f6f9c94dcc3cd4e9b7727ae52fc190, type: 3}
+    cameraMotionVector: {fileID: 4800000, guid: 83a2df91322bdc84d87d583e580d974d, type: 3}
+    objectMotionVector: {fileID: 4800000, guid: 7bf7a1ff74d06fa49acdc521e2567a1d, type: 3}
+    dataDrivenLensFlare: {fileID: 4800000, guid: c16509ac8758c914a9cf0f2e4b47b6f3, type: 3}
+  m_AssetVersion: 2
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 2013069311
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+  m_RenderingMode: 2
+  m_DepthPrimingMode: 0
+  m_CopyDepthMode: 1
+  m_AccurateGbufferNormals: 0
+  m_IntermediateTextureMode: 0

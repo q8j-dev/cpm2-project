@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158dc1da04928029f413aa7d7e60b2d8, type: 3}
+  m_Name: RallyRaceModeData
+  m_EditorClassIdentifier:
+  RaceModeData:
+    RaceMode: 3
+    AdditiveLoadSceneIndex: 15
+    CineMachinePathData:
+      Resolution: 20
+      PathLength: 0
+      Loopped: 0
+      Waypoints:
+      - position: {x: 1459.2, y: 2.4207125, z: -937}
+        tangent: {x: -0.760822, y: 0, z: 0.64896053}
+        roll: 0
+      - position: {x: 1455.8, y: 2.4207125, z: -934.1}
+        tangent: {x: -0.760822, y: 0, z: 0.64896053}
+        roll: 0
+    NeedToInstantiatePrefabForMode: {fileID: 1709254077376921, guid: dabee099b2c38e0408111ebb27988c9e, type: 2}
+    CameraPreset:
+      CloseOffset: {x: 0, y: 2, z: -7}
+      CloseFOV: 40
+      CloseSlopeUp: 0
+      CloseSlopeDown: 0
+      MiddleOffset: {x: 0, y: 2.5, z: -9}
+      MiddleFOV: 40
+      MiddleSlopeUp: 0
+      MiddleSlopeDown: 0
+      FarOffset: {x: 0, y: 2.3, z: -5.2}
+      FarFOV: 50
+      FarSlopeUp: 0
+      FarSlopeDown: 0
+      ComposerOffset: {x: 0, y: 0.5, z: 0}
+      VelocityLookSpeed: 3
+      VerticalAngleMin: -15
+      VerticalAngleMax: 70
+      RotateResetDelay: 0.2
+      LookAtVelocity: 1
+      RotationLerpSpeed: 0.05
+      VerticalFollowSpeed: 6
+      AccelerationEffect: 0
+      MaxPullback: 4.4
+      AccelerationSmoothSpeed: 2
+      MaxOffsetMoveSpeed: 5
+      AccelerationClamp: 15
+      StartFOVSpeed: 40
+      EndFOVSpeed: 85
+      FieldAdjustment: 0.6
+      SpeedFOV: 6
+      MaxHeightBoost: 0.5
+      HeightBoostMaxSpeed: 27
+      CollideAgainstLayers:
+        serializedVersion: 2
+        m_Bits: 2098945
+      CameraRadius: 0.1
+      MinimumOcclusionTime: 0.25
+      CollisionDamping: 0.4
+      CollisionDampingWhenOccluded: 0.2
+      DriverViewShockFilterTime: 0.05
+      DriverViewShockFilterClamp: 0.12
+      ShakeOnKerb: 0
+      ShakeOnOffRoad: 0
+      ShakeMultiplier: 0.1
+      ShakeTransitionSpeed: 5
+    DefaultCameraPreset:
+      CloseOffset: {x: 0, y: 1.8, z: -6}
+      CloseFOV: 40
+      CloseSlopeUp: 0
+      CloseSlopeDown: 0
+      MiddleOffset: {x: 0, y: 1.8, z: -9}
+      MiddleFOV: 40
+      MiddleSlopeUp: 0
+      MiddleSlopeDown: 0
+      FarOffset: {x: 0, y: 2.3, z: -5.2}
+      FarFOV: 50
+      FarSlopeUp: 0
+      FarSlopeDown: 0
+      ComposerOffset: {x: 0, y: 0.5, z: 0}
+      VelocityLookSpeed: 3
+      VerticalAngleMin: -15
+      VerticalAngleMax: 70
+      RotateResetDelay: 0.2
+      LookAtVelocity: 0
+      RotationLerpSpeed: 0.05
+      VerticalFollowSpeed: 6
+      AccelerationEffect: 0
+      MaxPullback: 4.4
+      AccelerationSmoothSpeed: 2
+      MaxOffsetMoveSpeed: 5
+      AccelerationClamp: 15
+      StartFOVSpeed: 40
+      EndFOVSpeed: 85
+      FieldAdjustment: 0.6
+      SpeedFOV: 6
+      MaxHeightBoost: 0.5
+      HeightBoostMaxSpeed: 27
+      CollideAgainstLayers:
+        serializedVersion: 2
+        m_Bits: 2098945
+      CameraRadius: 0.1
+      MinimumOcclusionTime: 0.25
+      CollisionDamping: 0.4
+      CollisionDampingWhenOccluded: 0.2
+      DriverViewShockFilterTime: 0.05
+      DriverViewShockFilterClamp: 0.12
+      ShakeOnKerb: 0
+      ShakeOnOffRoad: 0
+      ShakeMultiplier: 0.1
+      ShakeTransitionSpeed: 5

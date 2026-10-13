@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  - component: {fileID: 114618682377417806}
+  - component: {fileID: 114703437598541787}
+  - component: {fileID: 114884547391421755}
+  - component: {fileID: 114099118695303065}
+  - component: {fileID: 114243736805655561}
+  m_Layer: 0
+  m_Name: Bar3DMultiple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1246211130, guid: b2dee907db967f551cf2298ee95e69d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mPreviewObject: {fileID: 0}
+  OnRedraw:
+    m_PersistentCalls:
+      m_Calls: []
+  keepOrthoSize: 0
+  paperEffectText: 0
+  vRSpaceText: 0
+  vRSpaceScale: 0.1
+  maintainLabelSize: 0
+  viewType: 0
+  negativeBars: 0
+  stacked: 0
+  BarClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  BarHovered:
+    m_PersistentCalls:
+      m_Calls: []
+  NonHovered:
+    m_PersistentCalls:
+      m_Calls: []
+  Data:
+    mCategories:
+    - Name: Category 1
+      Materials:
+        Normal: {fileID: 2100000, guid: d444b1a7adaf39c4ca35073986dbadaa, type: 2}
+        Hover: {r: 1, g: 1, b: 1, a: 1}
+        Selected: {r: 0, g: 0, b: 0, a: 0}
+    - Name: Category 2
+      Materials:
+        Normal: {fileID: 2100000, guid: 1fe58743b7716a145b8f7a2c18ddc909, type: 2}
+        Hover: {r: 1, g: 1, b: 1, a: 0}
+        Selected: {r: 0, g: 0, b: 0, a: 0}
+    - Name: Category 3
+      Materials:
+        Normal: {fileID: 2100000, guid: bc8a359676d9fea448a192ac446d7c8f, type: 2}
+        Hover: {r: 1, g: 1, b: 1, a: 0}
+        Selected: {r: 0, g: 0, b: 0, a: 0}
+    mGroups:
+    - Group 1
+    - Group 2
+    - Group 3
+    mData:
+    - GroupName: Group 1
+      ColumnName: Category 1
+      Amount: 4
+    - GroupName: Group 1
+      ColumnName: Category 2
+      Amount: 2
+    - GroupName: Group 1
+      ColumnName: Category 3
+      Amount: 1
+    - GroupName: Group 2
+      ColumnName: Category 1
+      Amount: 6
+    - GroupName: Group 2
+      ColumnName: Category 2
+      Amount: 4
+    - GroupName: Group 2
+      ColumnName: Category 3
+      Amount: 2
+    - GroupName: Group 3
+      ColumnName: Category 1
+      Amount: 8
+    - GroupName: Group 3
+      ColumnName: Category 2
+      Amount: 6
+    - GroupName: Group 3
+      ColumnName: Category 3
+      Amount: 4
+    automaticMaxValue: 1
+    maxValue: 10
+    automaticMinValue: 0
+    minValue: 0
+  transitionTimeBetaFeature: -1
+  heightRatio: 5
+  totalWidth: 7.32
+  totalDepth: 0
+  textCamera: {fileID: 0}
+  textIdleDistance: 20
+  barPrefab: {fileID: 1709254077376921, guid: c3d0243b482b88c4e8a6b59a41793eca, type: 2}
+  AxisSeperation:
+    Breadth: 1.63
+    Depth: 0.67
+  barSeperation:
+    Breadth: 1.63
+    Depth: 0
+  groupSeperation:
+    Breadth: 0
+    Depth: 2
+  barSize:
+    Breadth: 0.8
+    Depth: 0.8
+--- !u!114 &114618682377417806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -630148602, guid: b2dee907db967f551cf2298ee95e69d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  textPrefab: {fileID: 114618682377417806, guid: 4c7650e5a27f89c4d942e35c42d24ea5, type: 2}
+  textFormat:
+    prefix:
+    suffix:
+    customFormat:
+  fontSize: 7
+  fontSharpness: 3
+  seperation: 0.43
+  location:
+    Breadth: 0
+    Depth: 0
+  alignment: 0
+  fractionDigits: 0
+--- !u!114 &114703437598541787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 806065330, guid: b2dee907db967f551cf2298ee95e69d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  textPrefab: {fileID: 0}
+  textFormat:
+    prefix:
+    suffix:
+    customFormat:
+  fontSize: 4
+  fontSharpness: 3
+  seperation: -4.98
+  location:
+    Breadth: 1.06
+    Depth: 0
+  alignment: 1
+--- !u!114 &114884547391421755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -400479392, guid: b2dee907db967f551cf2298ee95e69d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SimpleView: 1
+  format: 0
+  withEdges2: 1
+  depth:
+    Automatic: 0
+    Value: 0
+  mainDivisions:
+    messure: 0
+    unitsPerDivision: 0
+    total: 3
+    material: {fileID: 2100000, guid: 27cadcdd3e44e014c8be2923bc18cefc, type: 2}
+    materialTiling:
+      EnableTiling: 0
+      TileFactor: 100
+    markBackLength:
+      Automatic: 1
+      Value: 0.5
+    markLength:
+      Automatic: 0
+      Value: -0.41
+    markDepth:
+      Automatic: 1
+      Value: 0.5
+    markThickness: 0.17
+    textPrefab: {fileID: 0}
+    textPrefix:
+    textSuffix:
+    fractionDigits: 2
+    fontSize: 4
+    fontSharpness: 3
+    textDepth: -0.18
+    textSeperation: -0.71
+    alignment: 1
+  subDivisions:
+    messure: 0
+    unitsPerDivision: 0
+    total: 3
+    material: {fileID: 2100000, guid: 402d16071866cad4f8c6d6f3aa92f18b, type: 2}
+    materialTiling:
+      EnableTiling: 0
+      TileFactor: 100
+    markBackLength:
+      Automatic: 1
+      Value: 0.5
+    markLength:
+      Automatic: 0
+      Value: -0.41
+    markDepth:
+      Automatic: 1
+      Value: 0.5
+    markThickness: 0.17
+    textPrefab: {fileID: 0}
+    textPrefix:
+    textSuffix:
+    fractionDigits: 2
+    fontSize: 4
+    fontSharpness: 3
+    textDepth: -0.18
+    textSeperation: -0.71
+    alignment: 1
+--- !u!114 &114099118695303065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -725662486, guid: b2dee907db967f551cf2298ee95e69d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  textPrefab: {fileID: 0}
+  textFormat:
+    prefix:
+    suffix:
+    customFormat:
+  fontSize: 4
+  fontSharpness: 3
+  seperation: 0
+  location:
+    Breadth: 0
+    Depth: -0.95
+  alignment: 1
+  visibleLabels: 1
+--- !u!114 &114243736805655561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1429454721, guid: b2dee907db967f551cf2298ee95e69d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  AnimateOnStart: 1
+  AnimationTime: 3

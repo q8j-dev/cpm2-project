@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a3391bba511ef262cf524bcec472a6, type: 3}
+  m_Name: 1.2.1.0
+  m_EditorClassIdentifier:
+  Features:
+  - Reworked Sign Up and Sign In.
+  - Time Attack Event. Silverstone Racing, show the fastest lap time and claim a limited reward.
+  - User Profile. Spectator Mode in Multiplayer
+  - Updated Arrow Control's Sensitivity
+  - Physics Rework
+  - Engine Sounds Check in New Cars section
+  - 'Garage car positions are now saved on the spot. Reset in the slot manager tab if needed. '
+  - Racing Mode Camera updates
+  - Ragdoll. Players are thrown out of the car in high-speed car accidents (no harm)
+  - Character's inertia and head animation towards the player's camera or other players
+  - Sound. Wind Sound ambient while driving added.
+  - Interactive Map
+  - Cloudness settings. Dynamic change of the clouds from clear sky to cloudy.
+  - Wheel Blur. The rims are now blurred at high speed (high graphics or higher)
+  - 'Racing mode: F1 class added'
+  - Delete Car moved to Slot Manager
+  Items:
+  - 'New location: Tropics'
+  - 'Reworked location: Road to Desert'
+  - Updated Silverstone racing area
+  Fix:
+  - Racing Mode. NPC Rebalance
+  - Characters' body parts not rendering issue fixed
+  - UI. Arrow Controls increased the interaction area
+  - iOS. Earpods Bluetooth connection fixes
+  - iOS. Thai language support added
+  - Game Optimization
+  - General Bug Fixes
+  - Car and Sound Fixes
+  Cars:
+  - Text: In Limited Event
+    Index: 235
+    IsSpecial: 0
+    PatchNoteCarType: 2
+    EventType: 0
+  - Text: In the dealership
+    Index: 165
+    IsSpecial: 1
+    PatchNoteCarType: 0
+    EventType: 0
+  - Text: In the dealership
+    Index: 238
+    IsSpecial: 1
+    PatchNoteCarType: 0
+    EventType: 0
+  - Text: In the dealership
+    Index: 155
+    IsSpecial: 0
+    PatchNoteCarType: 0
+    EventType: 0
+  - Text: In the dealership
+    Index: 234
+    IsSpecial: 0
+    PatchNoteCarType: 0
+    EventType: 0
+  - Text: In the dealership
+    Index: 239
+    IsSpecial: 0
+    PatchNoteCarType: 0
+    EventType: 0

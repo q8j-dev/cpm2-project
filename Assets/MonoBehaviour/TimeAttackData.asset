@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59986c6712fd6700f6f2e1e5ea3f7aa, type: 3}
+  m_Name: TimeAttackData
+  m_EditorClassIdentifier:
+  TimeAttackDatas:
+  - EventType: 0
+    Name: TimeAttack.SilverStoneTrack
+    Description: MapGlossary.TimeAttackRace
+    IconType: 26
+    TrackIndex: 0
+    TimeAttackMode: 0
+    RequiredSurfaces: 01000000020000000d000000
+  - EventType: 6
+    Name: EventBigBaner.NurbTimeAttack
+    Description: MapGlossary.TimeAttackRace
+    IconType: 26
+    TrackIndex: 1
+    TimeAttackMode: 0
+    RequiredSurfaces: 01000000020000000d0000000f000000
+  - EventType: 5
+    Name: TimeAttack.Japan
+    Description: MapGlossary.TimeAttackDrift
+    IconType: 31
+    TrackIndex: 2
+    TimeAttackMode: 1
+    RequiredSurfaces: 01000000020000000d000000
+  - EventType: 5
+    Name: TimeAttack.Japan1
+    Description: MapGlossary.TimeAttackDrift
+    IconType: 31
+    TrackIndex: 2
+    TimeAttackMode: 1
+    RequiredSurfaces: 01000000020000000d000000
+  - EventType: 7
+    Name: TimeAttack.JapanSuburban
+    Description: MapGlossary.TimeAttackRace
+    IconType: 32
+    TrackIndex: 3
+    TimeAttackMode: 3
+    RequiredSurfaces:
+  - EventType: 7
+    Name: Selectlocationwindow.Italy
+    Description: MapGlossary.TimeAttackRace
+    IconType: 32
+    TrackIndex: 4
+    TimeAttackMode: 3
+    RequiredSurfaces:
+  - EventType: 7
+    Name: TimeAttack.StraightRoad
+    Description: MapGlossary.TimeAttackRace
+    IconType: 32
+    TrackIndex: 5
+    TimeAttackMode: 3
+    RequiredSurfaces:

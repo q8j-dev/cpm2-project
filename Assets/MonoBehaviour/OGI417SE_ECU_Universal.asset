@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: OGI417SE_ECU_Universal
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: OGI417 ECU Universal
+  Description: ECU.Description.Universal
+  _partValA: 227453838326306009
+  _partValB: -6574237216210966670
+  _partValC: -1031389647116315787
+  _partValD: -6976336605162292510
+  TypeId: 21
+  ModelId: 14121000
+  NoticeAboutPart: Good model id
+  Mass: 1.89
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 6fd7843795cb2399
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: -7722686765213358123
+  _partSourceRef: 141
+  FuelMap:
+  - RPM: 500
+    pressure: 4
+    Time: 2
+    Fuel: 3
+  - RPM: 1000
+    pressure: 4
+    Time: 2
+    Fuel: 2
+  - RPM: 1500
+    pressure: 4
+    Time: 2
+    Fuel: 1.6
+  - RPM: 2000
+    pressure: 4
+    Time: 2
+    Fuel: 1.5
+  - RPM: 2500
+    pressure: 4
+    Time: 2
+    Fuel: 1.5
+  - RPM: 3000
+    pressure: 4
+    Time: 2
+    Fuel: 1.5
+  - RPM: 3500
+    pressure: 4
+    Time: 2
+    Fuel: 1.395
+  - RPM: 4000
+    pressure: 4
+    Time: 2
+    Fuel: 1.28
+  - RPM: 4500
+    pressure: 4
+    Time: 2
+    Fuel: 1.125
+  - RPM: 5000
+    pressure: 4
+    Time: 2
+    Fuel: 1
+  - RPM: 5500
+    pressure: 4
+    Time: 2
+    Fuel: 0.855
+  - RPM: 6000
+    pressure: 4
+    Time: 2
+    Fuel: 0.712
+  - RPM: 6500
+    pressure: 4
+    Time: 2
+    Fuel: 0.55
+  - RPM: 7000
+    pressure: 4
+    Time: 2
+    Fuel: 0.4
+  - RPM: 7500
+    pressure: 4
+    Time: 2
+    Fuel: 0.235
+  - RPM: 8000
+    pressure: 4
+    Time: 2
+    Fuel: 0.1
+  - RPM: 8500
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 9000
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 9500
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 10000
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 10500
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 11000
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 11500
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 12000
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  - RPM: 12500
+    pressure: 4
+    Time: 2
+    Fuel: 0
+  speedLimit: 255
+  RpmIdle:
+    currentCryptoKey: 1623783319
+    hiddenValue: 616007319
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 825
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1854896901
+    hiddenValue: 712744965
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1078117822
+    hiddenValue: 80028606
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 900
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1523365194
+    hiddenValue: 523597642
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 6000
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1959032330
+    hiddenValue: 829832714
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 8000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

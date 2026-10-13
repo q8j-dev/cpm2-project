@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: M80_ECU_ST1
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: M80 COBB Tech ECU
+  Description: ECU.Description.St1
+  _partValA: 5595694873381213624
+  _partValB: -7275089509969616577
+  _partValC: -4961026714194779574
+  _partValD: 9177252875449884075
+  TypeId: 21
+  ModelId: 20121001
+  NoticeAboutPart: Good model id
+  Mass: 0.5
+  MaxMileage: 1000000
+  VendorId: 5
+  Rarity: 4
+  _partLinkKeysA: c42dc85d823fdb30
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: 4407745693437140350
+  _partSourceRef: 201
+  FuelMap:
+  - RPM: 500
+    pressure: 3
+    Time: 1
+    Fuel: 1.65
+  - RPM: 1000
+    pressure: 3
+    Time: 1
+    Fuel: 1
+  - RPM: 1500
+    pressure: 3
+    Time: 1
+    Fuel: 1.002
+  - RPM: 2000
+    pressure: 3
+    Time: 1
+    Fuel: 0.877
+  - RPM: 2500
+    pressure: 3
+    Time: 1
+    Fuel: 0.761
+  - RPM: 3000
+    pressure: 3
+    Time: 1
+    Fuel: 0.668
+  - RPM: 3500
+    pressure: 3
+    Time: 1
+    Fuel: 0.592
+  - RPM: 4000
+    pressure: 3
+    Time: 1
+    Fuel: 0.533
+  - RPM: 4500
+    pressure: 3
+    Time: 1
+    Fuel: 0.483
+  - RPM: 5000
+    pressure: 3
+    Time: 1
+    Fuel: 0.441
+  - RPM: 5500
+    pressure: 3
+    Time: 1
+    Fuel: 0.406
+  - RPM: 6000
+    pressure: 3
+    Time: 1
+    Fuel: 0.379
+  - RPM: 6500
+    pressure: 3
+    Time: 1
+    Fuel: 0.35
+  - RPM: 7000
+    pressure: 3
+    Time: 1
+    Fuel: 0.32
+  - RPM: 7500
+    pressure: 5
+    Time: 1
+    Fuel: 0.273
+  - RPM: 8000
+    pressure: 2
+    Time: 1
+    Fuel: 0.355
+  - RPM: 8500
+    pressure: 2
+    Time: 1
+    Fuel: 0.32
+  - RPM: 9000
+    pressure: 2
+    Time: 1
+    Fuel: 0.21
+  - RPM: 9500
+    pressure: 2
+    Time: 1
+    Fuel: 0.12
+  - RPM: 10000
+    pressure: 2
+    Time: 0.2
+    Fuel: 0.1
+  speedLimit: 280
+  RpmIdle:
+    currentCryptoKey: 1960713206
+    hiddenValue: 807114486
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 800
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1188213693
+    hiddenValue: 45350333
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 700
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1404122694
+    hiddenValue: 389466950
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 1000
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1239146280
+    hiddenValue: 260036392
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 9000
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1937247857
+    hiddenValue: 894329969
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 10000
+    fakeValueActive: 1
+  canTuning: 1
+  unlockRpmRedline: 1
+  unlockSpeedLimit: 0

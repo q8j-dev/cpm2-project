@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afbff089233a7f2a2a02564f7d8cca5a, type: 3}
+  m_Name: carPreset1290
+  m_EditorClassIdentifier:
+  Id:
+    currentCryptoKey: 1595522951
+    hiddenValue: 1595520625
+    inited: 1
+    fakeValue: 2550
+    fakeValueActive: 1
+  Style:
+    currentCryptoKey: 1190752613
+    hiddenValue: 1190752613
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 1
+  EngineDefaultConfig: {fileID: 11400000, guid: 16af669212b0a2f46bafba8b5da618c7, type: 2}
+  GearBox: {fileID: 0}
+  FrontDifferential: {fileID: 0}
+  RearDifferential: {fileID: 11400000, guid: 060cbd2944e49e8408f86618863e7549, type: 2}
+  Parts: []
+  FrontWheelData:
+    BrakesData:
+      Diameter: 294
+      DiscType: 2
+      Pistons: 4
+      PistonDiameter: 42
+      CaliperMeshIndex: 0
+    Pressure: 2.2
+    tyreType: 0
+    RimModelId: 60
+    wheelSize: 17
+    tyreWidth: 235
+    tyreProfile: 45
+    rimWidth: 85
+    SpacerWidth: 0
+    Color1:
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 2
+      SpringLength: 6.3
+      SpringRate: 4.6
+      Bump: 3300
+      Rebound: 9000
+      AntiSwayBarForce: 13200
+      Camber: -2
+      ToeIn: 0.1
+      Caster: 5
+      Ackerman: 10
+      MaxSteerAngle: 46
+  RearWheelData:
+    BrakesData:
+      Diameter: 290
+      DiscType: 2
+      Pistons: 2
+      PistonDiameter: 40
+      CaliperMeshIndex: 0
+    Pressure: 2.2
+    tyreType: 0
+    RimModelId: 60
+    wheelSize: 17
+    tyreWidth: 285
+    tyreProfile: 40
+    rimWidth: 105
+    SpacerWidth: 0
+    Color1:
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    Color2:
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      CarMatType: 0
+      IridescenceThickness: 0
+      IridescencePower: 0
+    SuspensionData:
+      SuspensionState: 0
+      SuspensionType: 2
+      SpringLength: 6.3
+      SpringRate: 4
+      Bump: 2800
+      Rebound: 8000
+      AntiSwayBarForce: 11000
+      Camber: -1.5
+      ToeIn: 0.1
+  CarInfoMain:
+    CarID: 129
+    InstalledBodyKits:
+      FrontBumperId: 3
+      RearBumperId: 2
+      SpoilerId: 67
+      SkirtId: 3
+      FenderId: 0
+      HoodId: 0
+      HoodAirIntakeId: 0
+      RoofAirIntakeId: 0
+      Trims:
+      InteriorId: 0
+    Colors:
+      CarColor:
+        Color: {r: 0.34901962, g: 0.72156864, b: 0.59607846, a: 1}
+        CarMatType: 0
+        IridescenceThickness: 0
+        IridescencePower: 0
+      DirtColor: {r: 0, g: 0, b: 0, a: 0}
+      DirtAmount: 0
+      WindowColor:
+        R: 0
+        G: 0
+        B: 0
+        A: 0
+      WindowSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+      DiodColor: {r: 1, g: 1, b: 1, a: 1}
+      SmokeColor: {r: 1, g: 1, b: 1, a: 1}
+      BodyKits: {}
+    AdditionalData:
+      FlagId: 0
+      AccessoryId: 0
+      IsPolice: 0
+      WheelText:
+      WheelTextFont: 0
+      WheelTextFontStyle: 0
+      WheelTextColor: {r: 0, g: 0, b: 0, a: 0}
+      Fso:
+        ModelIndex: 0
+        PositionIndex: 0
+        LeftColor: {r: 0, g: 0, b: 0, a: 0}
+        RightColor: {r: 0, g: 0, b: 0, a: 0}
+      Police:
+        Bought: 0
+        Installed: 0
+        InstalledBodyKits:
+          TopLight: -1
+          Roobar: -1
+          FrontInterior: -1
+          RearInterior: -1
+          Skirt: -1
+        SirenSound:
+          InstalledIndex: 0
+      AirSuspension:
+        Bought: 0
+        Installed: 0

@@ -1,0 +1,28 @@
+local gg = require 'metalua.grammar.generator'
+
+return function(M)
+    local _M = gg.future(M)
+
+    M.lexer:add{ "match", "with", "->" }
+    M.block.terminators:add "|"
+
+    local match_cases_list_parser = gg.list{ name = "match cases list",
+        gg.sequence{ name = "match case",
+                     gg.list{ name  = "match case patterns list",
+                              primary     = _M.expr_list,
+                              separators  = "|",
+                              terminators = { "->", "if" } },
+                     gg.onkeyword{ "if", _M.expr, consume = true },
+                     "->",
+                     _M.block, builder='MatchCase' },
+        separators  = "|",
+        terminators = "end" }
+
+    M.stat:add{ name = "match statement",
+                  "match",
+                  _M.expr_list,
+                  "with", gg.optkeyword "|",
+                  match_cases_list_parser,
+                  "end",
+                  builder = 'Match' }
+end

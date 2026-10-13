@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f38da4b1c82efcb0590c7ce2cd27b75, type: 3}
+  m_Name: Default Remote Config
+  m_EditorClassIdentifier:
+  configValuesStorage:
+    needToUpdateGame: 0
+    needHoldRootDevices: 0
+    photonGameVersion: 200
+    maxPlayers: 20
+    multiPlayerStatus: 0
+    worldSaleStatus: 4
+    adsCount: 0
+    autoSaveFromMainMenu: 0
+    autoSaveFromMainMenuOneTime: 1
+    autoSaveFromMainOnlinePlayerMenu: 1
+    autoSaveAllCarsAfterGetAllCars: 1
+    autoSaveCarAfterBuy: 1
+    saveCarsInAutoSave: 0
+    delayInAutoSaveInSec: 2
+    blockAppStatus: 0
+    blockAppStatus2: 0
+    messageFromDevelopers:
+    nfsCarIds: '[]'
+    nfsCarInstances:
+    banCarsIds: '[]'
+    unsafeImagesThreshold: 0.7
+    textureSize: 512
+    modelVersion: 0
+    parentalControlStatus: 0
+    appCheckLogs: 0
+    raceRewardCoinsLimit: 0
+    raceRewardMoneyLimit: 0
+    legacyRating: 0
+    analytics:
+      enabled: 1
+      eventBatchSize: 15
+      eventTTL: 604800
+      eventSendCooldown: 15
+      disableEvents: []
+      errorReportingEnvironments:
+      - DEV
+      - BETA
+    masterMigration:
+      enabled: 0
+      sampleIntervalSec: 1
+      warmupSec: 15
+      maxPingBufferSize: 30
+      minSamplesForAverage: 5
+      pingBufferMs: 40
+      cooldownSec: 60
+      masterPingThresholdMs: 120
+      masterPingCheckIntervalSec: 10
+      fallbackPollIntervalSec: 180
+      responseBufferSec: 3
+      maxWaitForRpcRrClearMs: 2000
+    coinsDiscount: 0
+    funcRegion: 1
+    legacyGarage: 0
+    multiplayerCarLegitCheckEnabled: 0
+    useNewRatingBackend: 0
+    adsAudienceTarget: 0

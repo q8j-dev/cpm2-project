@@ -1,0 +1,20 @@
+return function(M)
+    require "metalua.extensions.match"(M)
+    require "metalua.extensions.class"(M)
+    PRINTED = true
+    if not PRINTED then
+        PRINTED = true
+        print(' -- Expressions --')
+        for i,p in pairs(M.expr.primary.sequences) do
+            print(p.name, p.builder)
+        end
+        print(' -- Statements --')
+        for i,p in pairs(M.stat.sequences) do
+            print(p.name, p.builder)
+        end
+        print(' -- Assignments --')
+        for i,p in pairs(M.assignments) do
+            print(i, p)
+        end
+    end
+end

@@ -1,0 +1,745 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ec3d9418ab41dba4812c7fa78c92e8, type: 3}
+  m_Name: InputHintSpawnerConfig_DroneModeWindow
+  m_EditorClassIdentifier:
+  Hints:
+  - DontSpawn: 0
+    ObjectName: ScreenShotButton
+    ActionReference: {fileID: 11400000, guid: 47914aa4237cc1c47b7cfe39298384d0, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -25, y: 35}
+    AnchorMin: {x: 0.5, y: 1}
+    AnchorMax: {x: 0.5, y: 1}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: HideUIButton
+    ActionReference: {fileID: 11400000, guid: 194976c21a64c614d8f4ab97ec2b5141, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -25, y: 35}
+    AnchorMin: {x: 0.5, y: 1}
+    AnchorMax: {x: 0.5, y: 1}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: FocusButton
+    ActionReference: {fileID: 11400000, guid: 5f7ab9eb4d4f66c4694ecdd0a2ad2f5d, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -25, y: 35}
+    AnchorMin: {x: 0.5, y: 1}
+    AnchorMax: {x: 0.5, y: 1}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: SportModeButton
+    ActionReference: {fileID: 11400000, guid: 323dde7a895f90847b52459862e12953, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -25, y: 35}
+    AnchorMin: {x: 0.5, y: 1}
+    AnchorMax: {x: 0.5, y: 1}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: RotResetButton
+    ActionReference: {fileID: 11400000, guid: c095d739e4eec3940916afc20fe0c3de, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -55, y: 0}
+    AnchorMin: {x: 0, y: 0.5}
+    AnchorMax: {x: 0, y: 0.5}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: CloseButton
+    ActionReference: {fileID: 11400000, guid: cd5ca7ae116b5a74580729d7b1aea9a2, type: 2}
+    CompositePart:
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -22.5, y: -35.5}
+    AnchorMin: {x: 0.5, y: 0}
+    AnchorMax: {x: 0.5, y: 0}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: DroneControlWindow
+    ActionReference: {fileID: 11400000, guid: 2be8f60796214944698e6102756aa14f, type: 2}
+    CompositePart: Positive
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey: Level.Up
+      Localized: 1
+    ShowLabel: 1
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 1
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: 50, y: -100}
+    AnchorMin: {x: 0, y: 0.5}
+    AnchorMax: {x: 0, y: 0.5}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: DroneControlWindow
+    ActionReference: {fileID: 11400000, guid: 2be8f60796214944698e6102756aa14f, type: 2}
+    CompositePart: Negative
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey: Level.Down
+      Localized: 1
+    ShowLabel: 1
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: 50, y: -165}
+    AnchorMin: {x: 0, y: 0.5}
+    AnchorMax: {x: 0, y: 0.5}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: RotResetButton
+    ActionReference: {fileID: 11400000, guid: 1f3ed6d5009b0e34e81d667f78ba6c49, type: 2}
+    CompositePart: Negative
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -22.5, y: 32.5}
+    AnchorMin: {x: 0.5, y: 1}
+    AnchorMax: {x: 0.5, y: 1}
+    Pivot: {x: 0, y: 0.5}
+  - DontSpawn: 0
+    ObjectName: RotResetButton
+    ActionReference: {fileID: 11400000, guid: 1f3ed6d5009b0e34e81d667f78ba6c49, type: 2}
+    CompositePart: Positive
+    ShowHoldArrow: 0
+    ShowPositionArrow: 0
+    HoldTime: 1
+    FillColor: {r: 0.3, g: 1, b: 0.3, a: 0.7}
+    HoldArrowPressOffset: 6
+    HoldArrowPressDuration: 0.08
+    SuppressHoldAnimation: 0
+    HintText:
+      LocalizationKey:
+      Localized: 0
+    ShowLabel: 0
+    LabelSprite: {fileID: 0}
+    LabelFontSize: 0
+    LabelSpriteSize: 0
+    IconBeforeText: 1
+    InvertAlignment: 0
+    IconHeight: 50
+    PinWorldPosition: 0
+    HideHint: 0
+    UseGamepadOverride: 0
+    GamepadProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    UseWheelOverride: 0
+    WheelProfile:
+      HideHint: 0
+      ActionReference: {fileID: 0}
+      CompositePart:
+      HintText:
+        LocalizationKey:
+        Localized: 0
+      ShowLabel: 0
+      ShowHoldArrow: 0
+      HoldTime: 0
+      FillColor: {r: 0, g: 0, b: 0, a: 0}
+      HoldArrowPressOffset: 0
+      HoldArrowPressDuration: 0
+      ShowPositionArrow: 0
+      IconBeforeText: 0
+      InvertAlignment: 0
+      IconHeight: 0
+      IgnoreParentGroups: 0
+    WheelFallbackToDevice: 1
+    WheelFallbackDevice: 0
+    IgnoreParentGroups: 0
+    IgnoreLayout: 0
+    IgnoreCleanUi: 0
+    DisableNavigation: 0
+    ForceInputDeviceType: 0
+    ForcedInputDeviceType: 0
+    AnchoredPosition: {x: -22.5, y: -32.5}
+    AnchorMin: {x: 0.5, y: 0}
+    AnchorMax: {x: 0.5, y: 0}
+    Pivot: {x: 0, y: 0.5}

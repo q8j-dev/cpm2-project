@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685f7eeed5dfd558534ef3cbc1b6b268, type: 3}
+  m_Name: Level_62
+  m_EditorClassIdentifier:
+  Type: 0
+  ID: 46
+  SceneForLoad: 3
+  IndexInScene: 13
+  Title: Level.GasStationTrailer2
+  CategoryIndex: 0
+  LevelTimeObscured:
+    currentCryptoKey: 1112164474
+    hiddenValue: 4766330
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 120
+    fakeValueActive: 1
+  RewardByTime:
+    currentCryptoKey: 101
+    hiddenValue: 176
+    inited: 1
+    fakeValue: 1
+    fakeValueActive: 1
+  CarId: 70
+  CarConfig: {fileID: 0}
+  RacingCarId: 0
+  RacingCarInitialPos: {x: 0, y: 0, z: 0}
+  RacingCarInitialRot: {x: 0, y: 0, z: 0}
+  Reward:
+    currentCryptoKey: 1550456738
+    hiddenValue: 1550456738
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  InitialCamPos: {x: -1575.8, y: 4.8, z: -527}
+  InitialCamRot: {x: 21.77, y: -152.5, z: 0}
+  CarInitialPos: {x: -1599.38, y: 1.506, z: -566.02}
+  CarInitRot: {x: 0, y: -28.9, z: 0}
+  CarTargetPos: {x: -1579, y: 2.45, z: -534.63}
+  CarTargetRot: {x: -1579, y: 2.45, z: -534.63}
+  SetCarTargetPos: 0
+  SetCarTargetRot: 0
+  ParkingTriggerParentPos: {x: -1579, y: 2.15, z: -534.63}
+  ParkingTriggerParentRot: {x: 0, y: 180, z: 0}
+  WithTrailer: 1
+  LoadTrailer: 1
+  TrailerIndex: 2
+  HasLoad: 0
+  TowCarLevel: 0
+  TowCarId: 0
+  TowCarPos: {x: 0, y: 0, z: 0}
+  HasFixedCam: 0
+  DisableCamChange: 0
+  IsReverseParking: 0
+  FixedCamPos: {x: 133, y: 4.2, z: 70.08}
+  StopCarCompletely: 1
+  InParkingScene: 0
+  OutSideStart: 0
+  DriverOutSideBegin: 0
+  DriverStartPos: {x: 0, y: 0, z: 0}
+  DriverStartRot: {x: 0, y: 0, z: 0}
+  ChangeCamToFixed: 0
+  InitialCamIndex: 2
+  CameraData:
+  - distance: 0
+    height: 9
+    pitchAngleOffset: 15
+    YawAngle: 2
+    SmoothFollowAdd: 16
+  - distance: 16
+    height: 12
+    pitchAngleOffset: 0
+    YawAngle: 0
+    SmoothFollowAdd: 16
+  - distance: 20
+    height: 20
+    pitchAngleOffset: 3
+    YawAngle: 0
+    SmoothFollowAdd: 0
+  - distance: 10
+    height: 7
+    pitchAngleOffset: 0
+    YawAngle: 0
+    SmoothFollowAdd: 0
+  - distance: 10
+    height: 3
+    pitchAngleOffset: 0
+    YawAngle: 130
+    SmoothFollowAdd: 0
+  - distance: 0
+    height: 23
+    pitchAngleOffset: 0
+    YawAngle: 0
+    SmoothFollowAdd: 0
+  RelativeTrailerAngle: 0
+  StartGear: 1
+  ParkingToUse: 1
+  ShowPartsWhenStartPressed: 0
+  EnableOtherSceneStart: 0
+  EnableParkingSceneStart: 0
+  CheckForStop: 0
+  FieldOfView: 60
+  Messages:
+  - Level.MoveForward
+  - Level.MoveBack
+  - Level.ToMiddle
+  - Level.ToMiddle
+  - Level.ParkCarStraight
+  - Level.GasStationTrailer2
+  - Level.LetSParkThisBigTruck
+  ignoreCollision: 0
+  HideTopLabel: 0
+  IsCarCameraSettingForLevel: 1
+  LimitCarDamaged: 0
+  DisableAdContinue: 0

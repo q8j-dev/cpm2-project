@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124b30890fd52728576419ad32de9f2, type: 3}
+  m_Name: SocialsConfig
+  m_EditorClassIdentifier:
+  timeToShowButtonAgain: 4
+  reward:
+    currentCryptoKey: 1882889146
+    hiddenValue: 1882884146
+    inited: 1
+    fakeValue: 5000
+    fakeValueActive: 1
+  socials:
+  - buttonTexture: {fileID: 2800000, guid: 05948048c3579ec4ba4e03ae5fa012e6, type: 3}
+    url: https://www.instagram.com/olzhass_games/
+    prefsKey: insta
+  - buttonTexture: {fileID: 2800000, guid: ced2dfdd2f4d9b142a1edbd31838c09a, type: 3}
+    url: https://t.me/olzhass_games_tg
+    prefsKey: telegram
+  - buttonTexture: {fileID: 2800000, guid: 521cb44d3f1a26e4699dcf5d504f6d8c, type: 3}
+    url: https://discord.com/invite/A5CgdeX5AS
+    prefsKey: discord
+  - buttonTexture: {fileID: 2800000, guid: d137a30f0421969448dce35323f99b05, type: 3}
+    url: http://tiktok.com/@olzhass_games_tiktok
+    prefsKey: tiktok
+  - buttonTexture: {fileID: 2800000, guid: e20e27873e640614998a31df57b3d847, type: 3}
+    url: https://www.youtube.com/watch?v=vgezX_37Ucs
+    prefsKey: youpup

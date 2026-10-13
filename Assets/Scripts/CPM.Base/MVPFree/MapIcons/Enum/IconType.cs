@@ -1,0 +1,41 @@
+namespace MVPFree.MapIcons.Enum
+{
+	public enum IconType
+	{
+		CarBlack = 0,
+		YourGarage = 1,
+		BuyGarage = 2,
+		YourHome = 3,
+		BuyHome = 4,
+		YourMotel = 5,
+		BuyMotel = 6,
+		YourRestaurant = 7,
+		BuyRestaurant = 8,
+		YourGasStation = 9,
+		BuyGasStation = 10,
+		GasStation = 11,
+		Treasure = 12,
+		AirPort = 13,
+		CarWash = 14,
+		FireStation = 15,
+		Hospital = 16,
+		Tire = 17,
+		Police = 18,
+		SellCar = 19,
+		Service = 20,
+		Football = 21,
+		Player = 22,
+		CarWhite = 23,
+		Ramp = 24,
+		OtherPlayers = 25,
+		RaceZone = 26,
+		EventCollectible = 27,
+		None = 28,
+		SnowMen = 29,
+		ProfitBusiness = 30,
+		DriftZone = 31,
+		Rally = 32,
+		ArenaMarathon = 33,
+		ArenaObstacleRace = 34
+	}
+}

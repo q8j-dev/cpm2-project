@@ -1,0 +1,1216 @@
+<linker>
+  <assembly fullname="Addler, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Addler.Runtime.Core.LifetimeBinding.MonoBehaviourBasedReleaseEvent" preserve="all" />
+  </assembly>
+  <assembly fullname="AK.Wwise.Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.WwiseAddressableSoundBank" preserve="all" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.WwiseSoundBankAsset" preserve="all" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.WwiseStreamingMediaAsset" preserve="all" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.AssetReferenceWwiseBankData" preserve="nothing" serialized="true" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.LocalizedStreamingMediaList" preserve="nothing" serialized="true" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.WwiseBankPerPlatformEntry" preserve="nothing" serialized="true" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.AssetReferenceStreamingMedia" preserve="nothing" serialized="true" />
+    <type fullname="AK.Wwise.Unity.WwiseAddressables.StreamingMediaList" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="AK.Wwise.Unity.API.WwiseTypes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="WwiseBankReference" preserve="all" />
+    <type fullname="WwiseEventReference" preserve="all" />
+    <type fullname="WwiseSwitchGroupReference" preserve="all" />
+    <type fullname="WwiseSwitchReference" preserve="all" />
+    <type fullname="AK.Wwise.Bank" preserve="nothing" serialized="true" />
+    <type fullname="AK.Wwise.Event" preserve="nothing" serialized="true" />
+    <type fullname="AK.Wwise.Switch" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="AK.Wwise.Unity.MonoBehaviour, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AkGameObj" preserve="all" />
+    <type fullname="AkRoomAwareObject" preserve="all" />
+    <type fullname="AkGameObjListenerList" preserve="nothing" serialized="true" />
+    <type fullname="AkGameObjPositionOffsetData" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="_Car_Parking.Art.UI.Prefabs.NewUI.Scripts1.Elements.ButtonHelper" preserve="all" />
+    <type fullname="_Car_Parking.Configs.InteriorInfoConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.AkTriggerPlaySound" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Animations.Emotes.Locker.EmoteLockerGrid" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Animations.Emotes.Locker.EmoteLockerItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Animations.Emotes.Locker.EmoteLockerWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Audio.ObstacleSoundPlayer" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Audio.SoundBanks.SoundBankCatalog" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Basket.BasketItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Basket.BasketItemsVisualPersonKitConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Basket.BasketView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.BuyNewCar.BuyBodyKitsUIButtonPositionGetter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.BodyKitReferences" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.BodyKitsAdditionalParentSetter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.BodyKitsSpecificTransform" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.BodyKitsSpecificTransformUpdater" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.car_animations_scripts.BodyKitSkirtsAnimators" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.car_animations_scripts.CarWithoutDoorsBodyKit" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.car_animations_scripts.SetupCarPartAnimationBodyKitValues" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.CarBodyReferences" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.CarInteriorReferences" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.InteriorSpeedometer.SpeedometerController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.Physics.IgnoreCarDamageTag" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.PoliceLights.PoliceLightControl" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.Sounds.EngineSound" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.Sounds.ExhaustSound" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.TachometerCustom.CarIndicatorsGraphicReferences" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.TachometerCustom.TachometerHolder" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.TachometerCustom.TachometerHolderGradient" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.TachometerCustom.TachometerPointsConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Car.Visual.IgnoreChangeCarLayer" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CarCellCircle" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CarExchangeCircle" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CarSlots.CircuitSlotCollectionUIHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CarSlots.GameObjectsActiveBySlotColumnPosition" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CarSlots.SlotCollectionUIHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CarSlots.SlotUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.ButtonOpenDailyRewardsWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardItemTypeViewCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardItemTypeViewCoin" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardItemTypeViewMoney" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardsAwardRewardWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardStatusGameObjects" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardsWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardsWindowNextPrevWeek" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardTypeGameObjects" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Database.GameUpdater.ButtonToMarket" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Database.GameUpdater.LinksToMarketConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.AFController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.BoostControllerGadget" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.ConfirmWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.CurrencyItemView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.EngineFilterWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.EngineUIWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.EventMapPopupPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.FlashPopup" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.FuelTankGadget" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.GameOverlayWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.GarageMenuWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.GearboxConfigPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.GearboxFilterWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.GearboxUIWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.InventoryPartUIElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.InventoryUIElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.MainMenuWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.ManagerUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.MarketInvButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.MarketInventoryWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.RacingModesWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.RacingRewardAdWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.RPMController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.TimeAttackMapRacePopupWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.TuningTimerElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.TuningTimerWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.UIInventory" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.WaitingWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Drag.WheelsUIWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditableHUDCanvasGameplay" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditableHUDConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditableHUDController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditableHUDElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditableHUDElementEditorGraphics" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditHUDButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.ElementParentInCanvasGameplay" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.ElementParentInCanvasViewPosition" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.ElementParentInCanvasViewScale" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.ElementParentInCanvasViewVisibleGameObjectActive" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.FakeElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.IsActiveGetterAllGameObjectsActive" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.IsActiveGetterOutOfCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EngineTuning.SellCarWheel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EngineTuning.TuningTimer.TuningTimerUi" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.SnowmanEventHudWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.BannerView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.DriftTimeAttackBanner" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.Elements.BannerActionButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.Elements.BannerClaimButtonLock" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.Elements.BannerClaimStateElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.Elements.BannerImageElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.Elements.BannerSteamLinkElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.Elements.BannerTextElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.ObstacleRaceBannerView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.OffroadRainBanner" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.ProgressSlider" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.RallyOffroadBannerView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.TimeAttackBanner" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.TimeAttackBannerHelper" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.TimeAttackMaxTime" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.TimeAttackNurbBanner" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.ButtonEnableDisableColor" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.CharacterEquipmentPresetsSo" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.GenderSwitchView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.Presets.PersonPresetsView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.Presets.PersonPresetToggle" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.UnpurchasedItemsWindowView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Free_drive.Scenes.LoadedScenesDebugOverlay" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.FriendCircle" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameFacts.Consumers.ConditionState" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameFacts.Consumers.GameFactVisibility" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameObjectStateUpdaterContainer" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameObjectStateUpdaterFader" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameObjectStateUpdaterGOActiveSelf" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameObjectStateUpdaterImageColor" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameObjectStateUpdaterImageSprite" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Gley.TrafficLoader" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GooglePlayServices.PlayGamesSignInButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Interior.DownloadAssetButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.LapRaceMode.UI.RaceGroupItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Levels.LevelPreviewsConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.Animation.PulseAnimation" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.ArrowsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.ClutchSliderControl" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.GarageUIRootInitializer" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LanguagesIconsConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LayoutTMPUpdater" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LocalizationUI.LocalizedText" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LocalizationUI.LocalizedTextMeshPro" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LocalizationUI.LocalizedTMPText" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LocalizationUI.UILanguageListElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.MessageFromDeveloperConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.MessageFromDeveloperUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.Person.AnimationShopTabCategory" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.Person.PackCategory" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.PointerEnterExitHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.Shifter.ShifterGamepadBridge" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.SocialsConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.TransferCaseUI.TransferCaseDiffIndicators" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.TransferCaseUI.TransferCaseHudButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.TransferCaseUI.TransferCasePanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.VisualPolicePanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.VisualTuning.PlateCameraMoveConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.FallingTile" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.FallingZone" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.ObstacleRaceGameModeData" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.ObstacleRaceZone" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.ObstacleRaceZonePool" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.ToRoadPointTrigger" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ArenaLobbyWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceEventProgressScreen" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceResultRowElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceResultWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceSelectedRowHintAnchor" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceSpectatorListView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceSpectatorPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Arena.UI.ObstacleRaceSpectatorRow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Chat.ChatDataSO" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.MultiplayerLobbyHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.PodiumOnline" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.WorldObstacles.ServerClockObstacleSimulator" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.NewUI.CarControlUIPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.NewUI.PneumaticCarControlUIPart" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Offers.OfferBigBannerView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Offers.OfferSmallBannerView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.CopySpriteImage" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.FaderCanvas" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.FaderRawImage" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.FirstTimeFadeOn" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.FsoStrobeLights.FsoStrobeLightsAdditionalPoints" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.HandIKTarget" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.CarClassFilterVisibleController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.DecorsInFreeGarageController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.ForceRebuildLayoutImmediate" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.GameObjectsActiveByQualityLevel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.MoverAndRotatorByTween" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.MoverByTween" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.MoveToTransformByTween" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.RectTransformMaxWidth" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.RotatorByTween" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.TransformSaverForPrefabCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.LampLightGroup" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.LampLightMaterialColor" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.LampLightMaterialColorAlpha" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.RectTransformSizeSetter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Other.TweenAnimations.TweenAnimationScale" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PatchNotesConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PatchNotesData" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PatchNotesItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PatchNotesItemWithImage" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Person.Locomotion.AutoRunIconView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.HideOnPhotoMode" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.PhotoModeScroll" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.PhotoModeTutorPlayer" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.ApertureParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.CameraPanningCategory" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.CameraTiltParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.ColorCorrectionParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.DistortionParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.ExposureParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.PhotoModeCameraParameterWithToggles" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.PhotoModeCategoryWithScrolls" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.PhotoModeInfoPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.PhotoModeParameterItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.PhotoModeScrollItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.PhotoModeScrollItemWithText" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.ShutterSpeedParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.TemperatureParameter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.TouchDetector" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.UI.ZoomPhotoModeUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PhotoMode.VideoPlayerUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PlayerProperty.Business.BusinessProfitWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.PlayerProperty.Business.BusinessWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.BuyPoliceButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.CarSpeedLimitIcon" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.DisablePoliceButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.EnablePoliceButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.GameplayPoliceButtonsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.GarageWindowPoliceButtonsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarBodyKitFrontInterior" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarBodyKitRearInterior" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarBodyKitRoobar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarBodyKitTopLight" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarLampsAnimationConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarLampsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceRoobarSpecificTransform" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceSirenSoundEnableButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceSirenStatusUpdateButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.SirenSoundControlPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Police.VisualTuningPoliceElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.CircuitPlayWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RaceInfo.RaceClassInfoView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RaceInfo.RaceInfoDropdown" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RaceInfo.RaceWonPlacesItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.Rally.Ghost.GhostToggleWidget" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.Rally.Leaderboard.LeaderboardPickController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.Rally.Leaderboard.RallyLeaderboardWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyAdvanceTrigger" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyCrowd.CPMCrowdDataSO" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyMapDataSO" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyProps.RallyPropDataSO" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallySelectLocationWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyTrajectoryWeatherDataSO" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RewardUI.RaceRewardItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Rally.RallyFinishWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Rally.RallyMenuWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Rally.RallyPauseMenuWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Rally.UI.RallyInfoWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Rally.UI.RallySettingsWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Scopes.NewCarsScope" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Scopes.SummaryOfEventsScope" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintSpriteMap" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintsSpawner" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintsSpawnerConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.MainMenuRotateHintGate" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.SteamUIConfigApplier" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.UI.FpvCameraSetupUIHider" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Steam.UI.SmoothWheelScrollRect" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SteeringWheelHandPositions" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ContentChildNavigationDisabler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemLogIn" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemOffer" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemPatchNotes" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemViews.Event.ItemEvent" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemViews.Event.ItemEventObstacleRace" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemViews.ItemEventImageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemViews.ItemEventViewCollectable" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.ItemViews.ItemSteamConnect" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.OtherSmallBannerItemBase" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.SummaryOfEventsConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.SummaryOfEventsNavButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SummaryOfEvents.SummaryOfEventsView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UI.CountdownUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.AnimationUI.AnimationPresetItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.AnimationUI.MenuGarageAnimationPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ApartmentPlaceUIItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ArrowsLeftRight" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ButtonBuyNewCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ButtonSpiteUpdater" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ButtonUpDown" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ButtonWithState" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ChartListElementView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ChartListView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.ActiveChatPlayerInfo" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.BlockMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.CarExchangeMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.CarSellMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.ChatNotification" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.ChatSmileChoose" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.CollapsedTextMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.ConnectionMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.GeneralChatHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.InviteToFriendsMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.MuteMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.PersonalChatHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.PersonalChatPool" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.PersonalChatView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.PersonalSmileMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.PersonalTextMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.ProgressbarImage" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.SendMoneyMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.SmileMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Chat.TextMessageView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CircularMenu.CircularMenuController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CircularMenu.CircularMenuItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CircularMenu.CircularMenuPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CircularMenu.CircularMenuSpawner" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ClickDetector" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ClothItemAvailableGameObjectActive" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ColorCorrectionPresetUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CombinedPriceView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ConfirmPopupBuyNewCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CrossedLine" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CrossFadeImageSwitcher" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CustomSliderValueHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DealerWindowFilterClassArrow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DealerWindowFiltersController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DealerWindowFilterSelectedFilterView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DraggyUIElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DropDownListArrow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DropDownListListView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DropDownListSelectedView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.DropDownListView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Emoji.EmojiElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.FalloutLimitsView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.FalloutRaceSessionClaimResult" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.FriendsListItemUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.GameObjectsActiveByUIState" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.GameObjectStateUpdaterByButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.GamepadScrollCenter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.GarageBuyButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.GaragePlaceUIItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.HornButtonHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.HUD.HudColorChanger" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.InputFieldSizeFitter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.InputFieldStateController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.JoinToFriendElementView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.MaxContentSizeFitter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.NewGarageMarkView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.NewMarkIcon" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.OnePlayerUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PatchNotesMainMenuButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PersonAvailableGameObjectActive" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PersonCrouchButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PersonJumpButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PersonSprintButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PersonSprintLockArmButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PersonStaminaBar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PhoneButtonHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.PlayerListWindowPlayerUserView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.QuicklyGarageSelector.QuicklyGarageItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.RawImageLoadAsync" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.RealCurrencyView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.RealtyPlaceUIItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.RectTransformEventSender" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.RectTransformInCanvasSpace" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.RemainingTimeView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollRectItemsCenterController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollSnapBar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent.AddItemViewController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent.DragAndDropItemContentConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent.ItemContentDraggableAnimationConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViews.ScrollBarController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViews.SizeByContent" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ServiceMapTouchHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ServiceOrderUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.AccountSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.CameraControlsSubSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.CarSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.ControlsSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.DropdownArrowFlipper" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.DropdownItemTextHighlight" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.EffectsSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.GamepadControlsSubSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.GeneralSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.GraphicsSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.InfoSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.InputBindingsGroupSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.LanguageSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.MouseKeyboardControlsSubSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.MultiplayerSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.PatchNotesSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.PrivacySection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.SocialSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.SoundSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.SteamControlsLayoutPage" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.SteamControlsMain" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.WheelControlsSubSection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ShowHideVinylForOtherCarButton" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SliderScrollBarSync" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SliderStepRepeater" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SliderValueHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ButtonBuyGarage" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ButtonBuySlot" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ButtonOpenSlotManager" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ButtonRemoveCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ButtonRemoveCarV2" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ButtonSwapCar" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.FakeSlotItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ResetCarPosition" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.ScrollViewSlots" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotIsBusySetter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotItemContent" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotManagerUISoundController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotManagerWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotsViewColumn" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SpawnPlaceItemUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SpeedometerTireView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.StepProgress.SpriteSwapProgressCellView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.StepProgress.StepProgressView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SurvivalTimerView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.TabIconsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleAdditionalView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleAnimation" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleSwitchHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.UIAnimations.UIPulseAnimator" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.UniqueFontSizeSetter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.VisualItemBodyKitElement" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.VoiceChat.VoiceChatButtonHandler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.UIElement.VynilStickerUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Vinyls.UIElements.ResettingSlider" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.Vinyls.UIElements.VinylJoystick" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.VisualTuning.Wheels.WheelDiskTexturesConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.VisualTuningFavourite.FavouriteVinylsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.VisualTuningFavourite.FavouriteWheelsController" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.VisualTuningFavourite.FavouriteWheelsUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.VisualTuningFavourite.VisualTuningFavouriteUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowsBuild.DisableOnWindowsStandalone" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ActivityListItem" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ApartmentWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ArenaDetailEventView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.AuthorizationWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.BigOfferAnimationWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.BigOfferBundleWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.BigOfferCarsWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.BigOfferPoseWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.BigOfferSkinsWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.CarSelectorByTouch" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.CarSelectorPanel" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ChatWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.CircuitRacePauseWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ColorPresetWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ConfirmApartmentBuyWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.Confirmation.SimpleConfirmWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ConfirmGarageBuyWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ConfirmGarageSellWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.DriftDetailView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.DroneControlWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.EmojiWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.EventButtonPhone" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.EventViewWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.FreeDragRacingWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.FreeWalkWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.GarageSelectWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.HudSlotAnchor" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.HudSlotFollower" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.LevelPauseWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.LobbyWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.MatchmakingDataView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.MoneySetter" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ObstacleRaceDetailView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ObstacleRaceGameplayWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.OccupiedCarSlotsUI" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneGameActivityCanvasInfo" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneGameActivityCanvasList" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneGameActivityCanvasRoot" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneGameActivityCreateMatch" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneGameActivityFindRace" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneGameActivityWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneHorizontalVerticalRotator" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhoneWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhotoModePauseWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PhotoModeWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PlayerReviewWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PopupNotificationWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PrivacyPolicy.LegalDocumentWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PrivacyPolicy.OnlineWarningWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PrivacyPolicy.PrivacyAgeConfirmationWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ProgressWindows.ProgressWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PropertyPopupWindow.BusinessMapPopupWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PropertyPopupWindow.GarageMapPopupWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PropertyPopupWindow.HouseMapPopupWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PropertyWindow.PropertiesUISection" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PropertyWindow.PropertyWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.RallyDetailView" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.RequestWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.SelectMapWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.ServiceProgressWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.SettingsWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.SingleEventViewWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.SnowmenMapIconInfoWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.SubmitCircleWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.SuspensionTuningWindow" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.TimeAttackDetailView" preserve="all" />
+    <type fullname="_Car_Parking.Windows.FirstGameWindow.FirstGameWindow" preserve="all" />
+    <type fullname="AchievementsWindow" preserve="all" />
+    <type fullname="achievmentItemUI" preserve="all" />
+    <type fullname="ActionButton" preserve="all" />
+    <type fullname="AllDataInventoryElement" preserve="all" />
+    <type fullname="AllInventoryFilterGridElement" preserve="all" />
+    <type fullname="AllInventoryFilterLineElement" preserve="all" />
+    <type fullname="AllInventoryFilterWindow" preserve="all" />
+    <type fullname="AllInventoryPopup" preserve="all" />
+    <type fullname="AllPartsInventoryUIWindow" preserve="all" />
+    <type fullname="AllVinylPreset" preserve="all" />
+    <type fullname="AllwaysLookAtCam" preserve="all" />
+    <type fullname="AlphaHidableObject" preserve="all" />
+    <type fullname="AnimatedTimePanel" preserve="all" />
+    <type fullname="AnimationDataSO" preserve="all" />
+    <type fullname="AnimationShop" preserve="all" />
+    <type fullname="AnimationShopItem" preserve="all" />
+    <type fullname="Arikan.MiniMapView" preserve="all" />
+    <type fullname="AutoShifterController" preserve="all" />
+    <type fullname="BlinkAnimationComponent" preserve="all" />
+    <type fullname="bodyKitValues" preserve="all" />
+    <type fullname="bodyLOD" preserve="all" />
+    <type fullname="BodyMarker" preserve="all" />
+    <type fullname="BrakeSliderControl" preserve="all" />
+    <type fullname="BrakesViusalTuningPanel" preserve="all" />
+    <type fullname="BuyCarWorldWindow" preserve="all" />
+    <type fullname="BuyThisCarWindow" preserve="all" />
+    <type fullname="CalipersTuningPanel" preserve="all" />
+    <type fullname="CameraSetupMove" preserve="all" />
+    <type fullname="Car_Parking.Scripts.Drag.MultiplayerTimeRacePlayWindow" preserve="all" />
+    <type fullname="Car_Parking.Scripts.Drag.TimeAttackDriftUIController" preserve="all" />
+    <type fullname="Car_Parking.Scripts.Racing.DriftUIPanel" preserve="all" />
+    <type fullname="Car_Parking.Scripts.Racing.TimeBannerUIElement" preserve="all" />
+    <type fullname="Car_Parking.Scripts.Racing.UITimeBannerController" preserve="all" />
+    <type fullname="CarAnimationScripts.CarAnimationReferences" preserve="all" />
+    <type fullname="CarAnimationScripts.CarAnimationsPoints" preserve="all" />
+    <type fullname="CarAnimationScripts.OpenCloseLightsAnimationsController" preserve="all" />
+    <type fullname="CarAnimationScripts.RadiatorFanSpinner" preserve="all" />
+    <type fullname="CarAnimationScripts.SuspensionVisualAnimator" preserve="all" />
+    <type fullname="CarExchangeLongInfoPanel" preserve="all" />
+    <type fullname="CarTuningExchangeUIElement" preserve="all" />
+    <type fullname="CarTuningPartsUIWindow" preserve="all" />
+    <type fullname="CarTuningUISlider" preserve="all" />
+    <type fullname="CarTuningWindow" preserve="all" />
+    <type fullname="CharacterMenuCategoryItem" preserve="all" />
+    <type fullname="CheckDevice.UpdateAndroidMessageWindow" preserve="all" />
+    <type fullname="CircuitCarSelectWindow" preserve="all" />
+    <type fullname="CircuitDisqualifiedWindow" preserve="all" />
+    <type fullname="CircuitFinishSplashWindow" preserve="all" />
+    <type fullname="CircuitPitStopWindow" preserve="all" />
+    <type fullname="CircuitQualificationFinishWindow" preserve="all" />
+    <type fullname="CircuitRaceMenuWindow" preserve="all" />
+    <type fullname="CircuitRaceSelectMapWindow" preserve="all" />
+    <type fullname="CircuitRacingConfig" preserve="all" />
+    <type fullname="CircuitRealtimeChartlistElement" preserve="all" />
+    <type fullname="CircuitRewardUiElement" preserve="all" />
+    <type fullname="CircuitTopUserMeshLabel" preserve="all" />
+    <type fullname="ClothItemCategory" preserve="all" />
+    <type fullname="CoinShopWindow" preserve="all" />
+    <type fullname="ColorPicker" preserve="all" />
+    <type fullname="CoolingUIWindow" preserve="all" />
+    <type fullname="CPM.DailyTasks.DailyTaskWindowManager" preserve="all" />
+    <type fullname="CPM.DailyTasks.MiniTaskLabel" preserve="all" />
+    <type fullname="CPM.Leaderboard.UI.LeaderboardListView" preserve="all" />
+    <type fullname="CPM.Leaderboard.UI.RecordRowUiElement" preserve="all" />
+    <type fullname="CPM.NightLighting.DecalLight" preserve="all" />
+    <type fullname="CPM.Scripts.Plugins.Car.BodyKits.BodyKitsOneCarConfig" preserve="all" />
+    <type fullname="CPM.Scripts.VinylDrawer.FontsInitializer" preserve="all" />
+    <type fullname="CPM.Scripts.VinylDrawer.PlateFreeLookWindow" preserve="all" />
+    <type fullname="CPM.Scripts.VinylDrawer.SteamUIStateConfigSwitcher" preserve="all" />
+    <type fullname="CPM.Scripts.VinylDrawer.VinylsEditor" preserve="all" />
+    <type fullname="CPMEngine.Axles" preserve="all" />
+    <type fullname="CPMEngine.Powertrain" preserve="all" />
+    <type fullname="CPMEngine.WheelProvider" preserve="all" />
+    <type fullname="Crystal.SafeArea" preserve="all" />
+    <type fullname="Crystal.SafeAreaLayoutElement" preserve="all" />
+    <type fullname="CurrencyShopWindow" preserve="all" />
+    <type fullname="DailyTaskFullWindow" preserve="all" />
+    <type fullname="DealerUIElement" preserve="all" />
+    <type fullname="DealerWindow" preserve="all" />
+    <type fullname="DecalIcon" preserve="all" />
+    <type fullname="DefaultEngineInventoryUIElement" preserve="all" />
+    <type fullname="DefaultEngineMarketWindow" preserve="all" />
+    <type fullname="DrawLine" preserve="all" />
+    <type fullname="DropdownWithAnimatedArrow" preserve="all" />
+    <type fullname="DynorunUIElement" preserve="all" />
+    <type fullname="DynoWindow" preserve="all" />
+    <type fullname="EmotionController" preserve="all" />
+    <type fullname="EngineImageRotator" preserve="all" />
+    <type fullname="EngineMarketInventoryPopupWindow" preserve="all" />
+    <type fullname="EngineMarketInventoryShowcaseWindow" preserve="all" />
+    <type fullname="ExhaustSystem" preserve="all" />
+    <type fullname="FillableImage" preserve="all" />
+    <type fullname="FilterElementToggle" preserve="all" />
+    <type fullname="FinishFlashController" preserve="all" />
+    <type fullname="FinishFlashFeature" preserve="all" />
+    <type fullname="FixedJoystick" preserve="all" />
+    <type fullname="FloatingJoystick" preserve="all" />
+    <type fullname="FuelDriveUIWindow" preserve="all" />
+    <type fullname="GameModes" preserve="all" />
+    <type fullname="Gley.TrafficSystem.Internal.IntersectionsData" preserve="all" />
+    <type fullname="Gley.TrafficSystem.Internal.PriorityIntersectionSettings" preserve="all" />
+    <type fullname="Gley.TrafficSystem.Internal.TrafficLightsIntersectionSettings" preserve="all" />
+    <type fullname="Gley.TrafficSystem.Internal.TrafficModules" preserve="all" />
+    <type fullname="Gley.TrafficSystem.Internal.TrafficWaypointsData" preserve="all" />
+    <type fullname="Gley.TrafficSystem.Internal.WaypointSettings" preserve="all" />
+    <type fullname="Gley.TrafficSystem.VehicleComponent" preserve="all" />
+    <type fullname="Gley.TrafficSystem.VehiclePool" preserve="all" />
+    <type fullname="Gley.UrbanSystem.Internal.GridData" preserve="all" />
+    <type fullname="Gley.UrbanSystem.Internal.VehicleLightsComponent" preserve="all" />
+    <type fullname="Gley.UrbanSystem.Internal.VisibilityScript" preserve="all" />
+    <type fullname="HDHeadLightFlare" preserve="all" />
+    <type fullname="IGMShopWindow" preserve="all" />
+    <type fullname="ImageWithTextElement" preserve="all" />
+    <type fullname="InputTouch" preserve="all" />
+    <type fullname="InsideCamMove" preserve="all" />
+    <type fullname="InteractableRaceMapHandler" preserve="all" />
+    <type fullname="InventroyPopupElement" preserve="all" />
+    <type fullname="Joystick" preserve="all" />
+    <type fullname="LapRaceLeaderboardUIPanel" preserve="all" />
+    <type fullname="LapRaceLeaderbordUiElement" preserve="all" />
+    <type fullname="LapRaceTrafficLightUI" preserve="all" />
+    <type fullname="LevelCategoryItem" preserve="all" />
+    <type fullname="LevelLoader" preserve="all" />
+    <type fullname="LevelsMenuWindow" preserve="all" />
+    <type fullname="LoadingImageRotate" preserve="all" />
+    <type fullname="LockableUiToggleElement" preserve="all" />
+    <type fullname="MainCarValues" preserve="all" />
+    <type fullname="MaintenanceConfirmWindow" preserve="all" />
+    <type fullname="MaintenanceUIWindow" preserve="all" />
+    <type fullname="ManualHShifterController" preserve="all" />
+    <type fullname="ManualHShifterInput" preserve="all" />
+    <type fullname="ManualHShifterView" preserve="all" />
+    <type fullname="MapIconBehaviour" preserve="all" />
+    <type fullname="MarketInventoryFilterWindow" preserve="all" />
+    <type fullname="MarketInventoryItem" preserve="all" />
+    <type fullname="MarketInventoryPopup" preserve="all" />
+    <type fullname="MarketInventoryShowCasePanel" preserve="all" />
+    <type fullname="MarketPopupWindow" preserve="all" />
+    <type fullname="MenuGarageNavigationWindow" preserve="all" />
+    <type fullname="MultiplayerEventStartHandler" preserve="all" />
+    <type fullname="MVPFree.MapIcons.Views.IconMapView" preserve="all" />
+    <type fullname="NewCarsFilterElement" preserve="all" />
+    <type fullname="NewUI.Scripts.MarketSpecialPriceElement" preserve="all" />
+    <type fullname="NewUI.Scripts1.Elements.CanvasGroupStateTweener" preserve="all" />
+    <type fullname="NewUI.Scripts1.UGUIHandBrakeControl" preserve="all" />
+    <type fullname="NewUIPlaySound" preserve="all" />
+    <type fullname="NotificationWindow" preserve="all" />
+    <type fullname="ObstacleRagdollTrigger" preserve="all" />
+    <type fullname="OneKitMenuItem" preserve="all" />
+    <type fullname="PersonWindow" preserve="all" />
+    <type fullname="PhoneSuspensionToggle" preserve="all" />
+    <type fullname="PhotoModePrototype" preserve="all" />
+    <type fullname="PlayerProfileWindow" preserve="all" />
+    <type fullname="PlayerRotationTouchField" preserve="all" />
+    <type fullname="PlayersListControl" preserve="all" />
+    <type fullname="PlayersListFlag" preserve="all" />
+    <type fullname="PopupButtonPanel" preserve="all" />
+    <type fullname="QuickCarSettings" preserve="all" />
+    <type fullname="RaceConfigSO" preserve="all" />
+    <type fullname="Racing.Scripts.UserColors.SavedColorUIElement" preserve="all" />
+    <type fullname="Racing.Scripts.UserColors.SavedColorUIHandler" preserve="all" />
+    <type fullname="RacingCarChangeTyreWindow" preserve="all" />
+    <type fullname="RacingCarControllerUI" preserve="all" />
+    <type fullname="RacingScripts.RaceControllers.RacingProgressUIController" preserve="all" />
+    <type fullname="RacingUIMap" preserve="all" />
+    <type fullname="RallyCarsDatasSO" preserve="all" />
+    <type fullname="RallyLockableUiToggleElement" preserve="all" />
+    <type fullname="RallyMapTrajectorySO" preserve="all" />
+    <type fullname="RallyPenaltyIconElement" preserve="all" />
+    <type fullname="RallyPlayWindow" preserve="all" />
+    <type fullname="RallyRecordsUIPanel" preserve="all" />
+    <type fullname="RallyTrajectoryLockableToggle" preserve="all" />
+    <type fullname="RealtySelectWindow" preserve="all" />
+    <type fullname="RequestWindowTemplate" preserve="all" />
+    <type fullname="RewardDayControll" preserve="all" />
+    <type fullname="RuntimePrefabSaver" preserve="all" />
+    <type fullname="SceneTransitionWaitingWindow" preserve="all" />
+    <type fullname="ScrollSnapSoundComponent" preserve="all" />
+    <type fullname="SelectMapUIElement" preserve="all" />
+    <type fullname="SellCarValues" preserve="all" />
+    <type fullname="SellCarWindow" preserve="all" />
+    <type fullname="Service.Cargo.OuterCollisionDetector" preserve="all" />
+    <type fullname="Service.Cargo.TrailerController" preserve="all" />
+    <type fullname="ShifterController" preserve="all" />
+    <type fullname="ShockAbsorberCarControlUIPart" preserve="all" />
+    <type fullname="ShowcaseUIItem" preserve="all" />
+    <type fullname="SideMenuArrowTweener" preserve="all" />
+    <type fullname="SignHandler" preserve="all" />
+    <type fullname="Slicer" preserve="all" />
+    <type fullname="SliderFillTweener" preserve="all" />
+    <type fullname="SliderWithCountPrefix" preserve="all" />
+    <type fullname="SmoothFill" preserve="all" />
+    <type fullname="SpectatorWindow" preserve="all" />
+    <type fullname="SpeedCheckActionButton" preserve="all" />
+    <type fullname="SpeedometerUI" preserve="all" />
+    <type fullname="SpoilerSystem" preserve="all" />
+    <type fullname="SpriteSwitcher" preserve="all" />
+    <type fullname="StageLightingPreset" preserve="all" />
+    <type fullname="StarterEngineButton" preserve="all" />
+    <type fullname="SteeringWheel" preserve="all" />
+    <type fullname="StickerItem" preserve="all" />
+    <type fullname="SuspensionTabToggleElement" preserve="all" />
+    <type fullname="TaskLabel" preserve="all" />
+    <type fullname="TempCameraRotationDisabler" preserve="all" />
+    <type fullname="ThrottleSliderControl" preserve="all" />
+    <type fullname="ToggleColorSwitcher" preserve="all" />
+    <type fullname="TouchField" preserve="all" />
+    <type fullname="TrailerEntity" preserve="all" />
+    <type fullname="TrailerPosControll" preserve="all" />
+    <type fullname="TrailerTrigger" preserve="all" />
+    <type fullname="TweenerCanvas" preserve="all" />
+    <type fullname="TweenMover" preserve="all" />
+    <type fullname="TweenPulseAnimator" preserve="all" />
+    <type fullname="TweenRotator" preserve="all" />
+    <type fullname="TyreTypeUIElement" preserve="all" />
+    <type fullname="TyreWidthUIElement" preserve="all" />
+    <type fullname="UGUISteeringWheel" preserve="all" />
+    <type fullname="UIActionButton" preserve="all" />
+    <type fullname="UICupElement" preserve="all" />
+    <type fullname="UIHider" preserve="all" />
+    <type fullname="UIMapLeaderboardWindow" preserve="all" />
+    <type fullname="UIPartCategoryChecker" preserve="all" />
+    <type fullname="UIPartElement" preserve="all" />
+    <type fullname="UIPartsController" preserve="all" />
+    <type fullname="UIPartsPlace" preserve="all" />
+    <type fullname="UiScrollRectOcclusiion" preserve="all" />
+    <type fullname="UserCard" preserve="all" />
+    <type fullname="VAO_MeshInfo" preserve="all" />
+    <type fullname="VisualColorPanel" preserve="all" />
+    <type fullname="VisualItemColorElement" preserve="all" />
+    <type fullname="VisualItemElement" preserve="all" />
+    <type fullname="VisualTuningBodyKitsPanel" preserve="all" />
+    <type fullname="VisualTuningElementSpawner" preserve="all" />
+    <type fullname="VisualTuningToggle" preserve="all" />
+    <type fullname="VisualTuningWindow" preserve="all" />
+    <type fullname="WheelModel" preserve="all" />
+    <type fullname="WheelSpinEffect" preserve="all" />
+    <type fullname="WheelSurfaceDataListSO" preserve="all" />
+    <type fullname="WheelUIChangerPanel" preserve="all" />
+    <type fullname="CarAnimationScripts.SuspensionParts" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Configs.InteriorInfo" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Other.FsoStrobeLights.FsoStrobeLights/SpawnPoint" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.BuyNewCar.BuyBodyKitsUIButtonPositionGetter/BodyKitPositionData" preserve="nothing" serialized="true" />
+    <type fullname="SurfaceDirtColor" preserve="nothing" serialized="true" />
+    <type fullname="WheelMaterialSurfaceData" preserve="nothing" serialized="true" />
+    <type fullname="WheelSurfaceData" preserve="nothing" serialized="true" />
+    <type fullname="WheelVertexBlendSurfaceData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Audio.SoundBanks.SoundBankCatalog/Entry" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Car.CarBodyReferences/TransformSnapshot" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Car.CarBodyReferences/WiperBlade" preserve="nothing" serialized="true" />
+    <type fullname="CarAnimationScripts.CarPartAnimationSequence" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Car.TachometerCustom.TachometerPoint" preserve="nothing" serialized="true" />
+    <type fullname="BrakesData" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.Axle" preserve="nothing" serialized="true" />
+    <type fullname="RearWheelData" preserve="nothing" serialized="true" />
+    <type fullname="SuspensionData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Drag.Engine.ChassisData" preserve="nothing" serialized="true" />
+    <type fullname="AnimationDataSO/AnimationDataItem" preserve="nothing" serialized="true" />
+    <type fullname="CPM.Database.VynilOneCar" preserve="nothing" serialized="true" />
+    <type fullname="CPM.Scripts.VinylDrawer.FontSelect" preserve="nothing" serialized="true" />
+    <type fullname="CPM.Scripts.VinylDrawer.SteamUIStateConfigSwitcher/StateConfigEntry" preserve="nothing" serialized="true" />
+    <type fullname="CircuitRaceConfigItem" preserve="nothing" serialized="true" />
+    <type fullname="CircuitRaceMapData" preserve="nothing" serialized="true" />
+    <type fullname="DataEntities.Vinyl.VinylData" preserve="nothing" serialized="true" />
+    <type fullname="FrontWheelData" preserve="nothing" serialized="true" />
+    <type fullname="OneVinylsPreset" preserve="nothing" serialized="true" />
+    <type fullname="RallyCarData" preserve="nothing" serialized="true" />
+    <type fullname="SteerSuspensionData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Basket.BasketItemVisualPersonKit" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.DailyRewards.DailyRewardsAwardRewardWindow/CarPanelData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Drag.ButtonsSlots" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.IsActiveGetterGameObjectsBase/GameObjectActiveSelfData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.EventSystem.View.SnapController" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.CharacterEquipmentPreset" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.ColorImageSetup" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.FirstGameSetup.ColorTMPTextSetup" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameObjectsActiveByEnum`1/GameObjectWithEnum[OneKitMenuItem/AvailableToBuyType]" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameObjectsActiveByEnum`1/GameObjectWithEnum[PersonElements/AvailableType]" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameObjectsActiveByEnum`1/GameObjectWithEnum[_Car_Parking.Scripts.DailyRewards.DailyRewardData/StatusType]" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameObjectsActiveByEnum`1/GameObjectWithEnum[_Car_Parking.Scripts.DailyRewards.DailyRewardData/TypeReward]" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameObjectsActiveByEnum`1/GameObjectWithEnum[_Car_Parking.Scripts.UIElement.GameObjectsActiveByUIState/StateType]" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameObjectsActiveByEnum`1/GameObjectWithEnum[_Car_Parking.Scripts.UIElement.Slots.SlotsViewColumn/PositionType]" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Localization.LocalizedString" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.LanguagesIconsConfig/LanguageIcon" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.MenuUI.SocialsConfig/SocialData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Other.RangeFloat" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Other.RemapVar" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.PatchNotesData/CarItem" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.DayTimeType" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyLocationData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyTimes" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyWeatherData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.WeatherType" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RaceGaragePoint" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RallySequenceData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RallySequenceData/RewardData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RallySequenceItem" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RallySequenceLink" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RallySequenceMark" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.RallySequenceTurnType" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Rally.Data.TriggerSize" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintProfile" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.InputHintSpriteMap/BindingSprite" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CircularMenu.CircularItemBinding" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.CircularMenu.CircularMenuPanelGroup" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent.DragAndDropItemContentConfig/ScrollByItemDragData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViewDragAndDropContent.DragAndDropItemContentConfig/SwapData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViews.ScrollViewConfig/DragData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViews.ScrollViewConfig/InertiaData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ScrollViews.ScrollViewConfig/ItemSelectData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Slots.SlotManagerUISoundController/SoundData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleSwitchHandler/BackgroundElements" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleSwitchHandler/InteractableElements" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleSwitchHandler/TextElements" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleSwitchHandler/ToggleImageElements" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ToggleSwitchHandler/ToggleRawImageElements" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.WindowSystem.PropertyWindow.PropertyUIObject" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.GameObjectsActiveByQualityLevel/GameObjectsData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Police.PoliceCarLampsAnimationConfig/AnimationOneLightData" preserve="nothing" serialized="true" />
+    <type fullname="FinishFlashFeature/Settings" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.EditableHUD.EditableHUDConfig/EditorData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Chat.PersonalChatData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Multiplayer.Chat.SmileData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Other.TweenAnimations.TweenAnimationBase/LoopData" preserve="nothing" serialized="true" />
+    <type fullname="BakedTrajectory" preserve="nothing" serialized="true" />
+    <type fullname="MoneyType" preserve="nothing" serialized="true" />
+    <type fullname="RoadMapElement" preserve="nothing" serialized="true" />
+    <type fullname="WaypointData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.PenaltyType" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyCrowd.CPMCrowdNpcData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Racing_Scripts.RallyProps.RallyPropData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.SpeedometerTireView/TireImages" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.CarType" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.IntersectionDataType" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.IntersectionStopWaypointsSettings" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.LightsStopWaypoints" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.PriorityIntersectionData" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.PriorityStopWaypoints" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.TrafficLightsIntersectionData" preserve="nothing" serialized="true" />
+    <type fullname="Gley.TrafficSystem.Internal.Wheel" preserve="nothing" serialized="true" />
+    <type fullname="Gley.UrbanSystem.Internal.CellData" preserve="nothing" serialized="true" />
+    <type fullname="Gley.UrbanSystem.Internal.CellProperties" preserve="nothing" serialized="true" />
+    <type fullname="Gley.UrbanSystem.Internal.CellWaypointsData" preserve="nothing" serialized="true" />
+    <type fullname="Gley.UrbanSystem.Internal.SpawnWaypoint" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Gley.SemaphoresEnabler/SemaphoreGroup" preserve="nothing" serialized="true" />
+    <type fullname="CarInteractionAnimationsScripts.CarSoundConditionHaveBodyKit" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.EngineTuning.EngineKitData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/ActionLabelOverride" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/DeviceExcludedAction" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/GroupCategory" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/GroupLabelOverride" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/HoldArrowOverride" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/MapLabelOverride" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/SectionMerge" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.ControlsLayoutFilterConfig/UnusedRow" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Steam.InputHints.MainMenuRotateHintGate/RotateGroupHint" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ButtonSpiteUpdater/SpriteData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.PatchNotesSection/ScrollAndTitleData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.Settings.RebindHighlightStyle" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Car.car_animations_scripts.NewSitGetOutAnimationsLengthSetup" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.VisualTuning.Wheels.TextureData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Levels.LevelPreviewData" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Audio.ObstacleSoundPlayer/Entry" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.UIElement.ResultRowColors" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.Base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="_Car_Parking.Scripts.Base.TriggerRelay" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SpawnLayoutProvider" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.SpawnLayoutSettings" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.CommonUtility, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="_Car_Parking.Scripts.CommonUtility.NestedCanvasScaler" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CommonUtility.ScriptableObjects.SteamUILayoutConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CommonUtility.ScriptableObjects.SteamUIParentChangerInitializator" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CommonUtility.ScriptableObjects.SteamUISceneConfig" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.CommonUtility.SteamUIParentChanger" preserve="all" />
+    <type fullname="CircularMenuPanelsConfig" preserve="all" />
+    <type fullname="CircularMenuPanelConfig" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.CommonUtility.ScriptableObjects.UIItemValues" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.CommonUtility.UITarget" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.GameFacts.Conditions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="_Car_Parking.Scripts.GameFacts.Conditions.GameFactCondition" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameFacts.Conditions.FactCondition" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameFacts.Conditions.NotCondition" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameFacts.Conditions.AllCondition" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.GameFacts.Conditions.AnyCondition" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.Obstacles, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="CPM.Obstacles.FallingGate" preserve="all" />
+    <type fullname="CPM.Obstacles.HexGridSpawner" preserve="all" />
+    <type fullname="CPM.Obstacles.MovingPlatform" preserve="all" />
+    <type fullname="CPM.Obstacles.RotatingPlatform" preserve="all" />
+    <type fullname="CPM.Obstacles.RouteRunner" preserve="all" />
+    <type fullname="CPM.Obstacles.SwingingPlatform" preserve="all" />
+    <type fullname="CPM.Obstacles.HexGridSettings" preserve="nothing" serialized="true" />
+    <type fullname="CPM.Obstacles.RagdollImpact" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="HierarchyIcons, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="HierarchyIcons.HierarchyIcon" preserve="all" />
+  </assembly>
+  <assembly fullname="PhotonUnityNetworking, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Photon.Pun.PhotonTransformViewClassic" preserve="all" />
+    <type fullname="Photon.Pun.PhotonView" preserve="all" />
+    <type fullname="Photon.Pun.PhotonTransformViewPositionModel" preserve="nothing" serialized="true" />
+    <type fullname="Photon.Pun.PhotonTransformViewRotationModel" preserve="nothing" serialized="true" />
+    <type fullname="Photon.Pun.PhotonTransformViewScaleModel" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="SimpleScrollSnap, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="DanielLochner.Assets.SimpleScrollSnap.SimpleScrollSnap" preserve="all" />
+  </assembly>
+  <assembly fullname="SOAPCustom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="_Car_Parking.Scripts.SOAP_Registry.InputMapSetEvent" preserve="all" />
+    <type fullname="_Car_Parking.Scripts.GameInput.InputMapGroup" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.SOAP_Registry.InputGroupsEnum" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.SOAP_Registry.InputMapEnum" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UniRx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UniRx.Triggers.ObservableDestroyTrigger" preserve="all" />
+    <type fullname="UniRx.Triggers.ObservablePointerClickTrigger" preserve="all" />
+    <type fullname="UniRx.Triggers.ObservablePointerDownTrigger" preserve="all" />
+    <type fullname="UniRx.Triggers.ObservablePointerUpTrigger" preserve="all" />
+    <type fullname="UniRx.ReactiveProperty`1[System.Boolean]" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.InputSystem, Version=1.14.2.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.InputActionReference" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputActionMap" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputBinding" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputControlScheme" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.RenderPipelines.Core.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Rendering.VolumeProfile" preserve="all" />
+    <type fullname="UnityEngine.Rendering.BoolParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.ClampedFloatParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.ClampedIntParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.ColorParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.FloatParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.MinFloatParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.TextureParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Vector4Parameter" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Rendering.Universal.Bloom" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.ColorAdjustments" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.ColorLookup" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.DecalProjector" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.DepthOfField" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.LiftGammaGain" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.PaniniProjection" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.Tonemapping" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.DepthOfFieldModeParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.DownscaleParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.HDRACESPresetParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.TonemappingModeParameter" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshPro" preserve="all" />
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_Dropdown" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.TMP_InputField" preserve="all" />
+    <type fullname="TMPro.TMP_SpriteAnimator" preserve="all" />
+    <type fullname="TMPro.TMP_StyleSheet" preserve="all" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_GlyphValueRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Style" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Animation" preserve="all" />
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.Avatar" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioListener" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Camera" preserve="all" />
+    <type fullname="UnityEngine.Cubemap" preserve="all" />
+    <type fullname="UnityEngine.CustomRenderTexture" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.LODGroup" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Texture2DArray" preserve="all" />
+    <type fullname="UnityEngine.Texture3D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[System.Boolean]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[System.Int32]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[UnityEngine.Color]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`2[System.Int32,System.Int32]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`2[UnityEngine.GameObject,System.Single]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+    <type fullname="UnityEngine.ConfigurableJoint" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.PhysicMaterial" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Font" preserve="all" />
+    <type fullname="UnityEngine.TextMesh" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.EventSystems.EventTrigger" preserve="all" />
+    <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
+    <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.Outline" preserve="all" />
+    <type fullname="UnityEngine.UI.RawImage" preserve="all" />
+    <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.Toggle" preserve="all" />
+    <type fullname="UnityEngine.UI.ToggleGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger/Entry" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger/TriggerEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Dropdown/OptionData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Dropdown/OptionDataList" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.InputField/EndEditEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.InputField/OnChangeEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.InputField/SubmitEvent" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Video.VideoClip" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoPlayer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityUIExtensions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.UI.Extensions.Gradient" preserve="all" />
+    <type fullname="UnityEngine.UI.Extensions.HorizontalScrollSnap" preserve="all" />
+    <type fullname="UnityEngine.UI.Extensions.RadialLayout" preserve="all" />
+    <type fullname="UnityEngine.UI.Extensions.UI_InfiniteScroll" preserve="all" />
+    <type fullname="UnityEngine.UI.Extensions.UILineRenderer" preserve="all" />
+    <type fullname="UnityEngine.UI.Extensions.ScrollSnapBase/SelectionChangeEndEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Extensions.ScrollSnapBase/SelectionChangeStartEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Extensions.ScrollSnapBase/SelectionPageChangedEvent" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="WDebug, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="_Car_Parking.Scripts.Other.Helpers.WDebugNamespace.EnablerDebug" preserve="all" />
+  </assembly>
+  <assembly fullname="ACTk.Runtime">
+    <type fullname="CodeStage.AntiCheat.Common.ACTkByte4" preserve="nothing" serialized="true" />
+    <type fullname="CodeStage.AntiCheat.ObscuredTypes.ObscuredBool" preserve="nothing" serialized="true" />
+    <type fullname="CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat" preserve="nothing" serialized="true" />
+    <type fullname="CodeStage.AntiCheat.ObscuredTypes.ObscuredInt" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.EngineTuning.DataTypes">
+    <type fullname="_Car_Parking.Scripts.Car.CarSetter.CarPaintColor" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.EngineTuning.PartData" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.EventSystem.Dto">
+    <type fullname="_Car_Parking.Scripts.EventSystem.EventType" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.Offer">
+    <type fullname="_Car_Parking.Scripts.Offers.RewardItemSuitData" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="CPM.Vehicle.Physics">
+    <type fullname="_Car_Parking.Scripts.Drag.Engine.CarOptionsValues" preserve="nothing" serialized="true" />
+    <type fullname="_Car_Parking.Scripts.Drag.Engine.LSDValues" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/AeroDynamics" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/Body" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/CarEngine" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/Gearbox" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/LSD" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/PneumaticBagSystem" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/SteerSuspension" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/Suspension" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/Tranny" preserve="nothing" serialized="true" />
+    <type fullname="CPMEngine.DynoData/Tyre" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="SimpleInspectorAttributes">
+    <type fullname="DanielLochner.Assets.Margins" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Mathematics">
+    <type fullname="Unity.Mathematics.float2" preserve="nothing" serialized="true" />
+    <type fullname="Unity.Mathematics.float3" preserve="nothing" serialized="true" />
+    <type fullname="Unity.Mathematics.float4" preserve="nothing" serialized="true" />
+    <type fullname="Unity.Mathematics.quaternion" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Splines">
+    <type fullname="UnityEngine.Splines.BezierKnot" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.Spline" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.Spline/MetaData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.SplineDataDictionary`1[System.Int32]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.SplineDataDictionary`1[System.Single]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.SplineDataDictionary`1[Unity.Mathematics.float4]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.SplineDataDictionary`1[UnityEngine.Object]" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextCoreFontEngineModule">
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="VContainer">
+    <type fullname="VContainer.Unity.ParentReference" preserve="nothing" serialized="true" />
+  </assembly>
+</linker>

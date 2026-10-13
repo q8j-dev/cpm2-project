@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1968e7c8bb221e57f7a3d4b5da4d79, type: 3}
+  m_Name: TJet_ECU_Universal
+  m_EditorClassIdentifier:
+  IsNotForSale: 0
+  Name: TJet ECU Universal
+  Description: ECU.Description.Universal
+  _partValA: 2382261088481951333
+  _partValB: -6653890050703671162
+  _partValC: 6185639714688524213
+  _partValD: -7545408763012712414
+  TypeId: 21
+  ModelId: 17921000
+  NoticeAboutPart: Good model id
+  Mass: 0.68
+  MaxMileage: 1000000
+  VendorId: 0
+  Rarity: 1
+  _partLinkKeysA: 713f64c3ea653757
+  _partLinkKeysB:
+  _partLinkKeysC:
+  _partLinkStamp: 6541248876701552587
+  _partSourceRef: 179
+  FuelMap:
+  - RPM: 500
+    pressure: 3.5
+    Time: 1
+    Fuel: 4.723
+  - RPM: 1000
+    pressure: 3.5
+    Time: 1
+    Fuel: 3.853
+  - RPM: 1500
+    pressure: 3.5
+    Time: 1
+    Fuel: 4.208
+  - RPM: 2000
+    pressure: 3.5
+    Time: 1
+    Fuel: 3.422
+  - RPM: 2500
+    pressure: 3.5
+    Time: 1
+    Fuel: 2.699
+  - RPM: 3000
+    pressure: 3.5
+    Time: 1
+    Fuel: 2.193
+  - RPM: 3500
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.81
+  - RPM: 4000
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.505
+  - RPM: 4500
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.252
+  - RPM: 5000
+    pressure: 3.5
+    Time: 1
+    Fuel: 1.034
+  - RPM: 5500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.736
+  - RPM: 6000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.375
+  - RPM: 6500
+    pressure: 3.5
+    Time: 1
+    Fuel: 0.172
+  - RPM: 7000
+    pressure: 3.5
+    Time: 1
+    Fuel: 0
+  speedLimit: 255
+  RpmIdle:
+    currentCryptoKey: 1337014672
+    hiddenValue: 196709008
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 750
+    fakeValueActive: 1
+  RpmIdleMin:
+    currentCryptoKey: 1214393917
+    hiddenValue: 212746301
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 650
+    fakeValueActive: 1
+  RpmIdleMax:
+    currentCryptoKey: 1866679073
+    hiddenValue: 725819937
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 900
+    fakeValueActive: 1
+  RpmLimit:
+    currentCryptoKey: 1894106384
+    hiddenValue: 902122000
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 5600
+    fakeValueActive: 1
+  RpmLimitMax:
+    currentCryptoKey: 1926784393
+    hiddenValue: 933560969
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    inited: 1
+    fakeValue: 7000
+    fakeValueActive: 1
+  canTuning: 0
+  unlockRpmRedline: 0
+  unlockSpeedLimit: 0

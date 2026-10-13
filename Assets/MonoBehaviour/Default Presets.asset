@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df0c54d1a443edac124f92eb2c5462f, type: 3}
+  m_Name: Default Presets
+  m_EditorClassIdentifier:
+  m_Presets:
+  - m_Name: Low
+    m_Preset:
+      m_RenderScale: 0.4
+      m_AAQuality: 6
+      m_SteamDeckAAQuality: 5
+      m_TextureResolution: 2
+      m_MaxFramerate: 240
+      m_VSync: 1
+      m_HighFpsDefaultsApplied: 0
+      BatterySaveMode: 0
+      m_CameraRenderDistance: 150
+      m_ObjectsLodQuality: 1
+      m_SteamLodBias: 10
+      m_MaximumLodLevel: 0
+      ClipDistance: 30
+      CarDetailDistance: 15
+      m_FogQuality: 0
+      m_ShadingQuality: 2
+      m_ShadowsQuality: 3
+      m_AdditionalEffects: 2
+      m_UseDecalShadows: 1
+      m_UseTyreDeformation: 0
+      m_RainQuality: 0
+      m_UseSky: 1
+      m_UseBlur: 0
+      m_UseLensFlares: 0
+      m_NightAmbientLightingCompensation: 0
+      m_Cloudiness: 1
+      m_RealtimeReflections: 0
+      m_UseStaticReflectons: 0
+      m_Tonemapping: 4
+      m_UseBloom: 0
+      m_UseVignette: 0
+      m_UseMotionBlur: 0
+      m_ColorCorrectionLut: 0
+      m_EVCompensation: 0
+      m_WBCompensation: 0
+  - m_Name: Medium
+    m_Preset:
+      m_RenderScale: 0.5
+      m_AAQuality: 6
+      m_SteamDeckAAQuality: 5
+      m_TextureResolution: 1
+      m_MaxFramerate: 240
+      m_VSync: 1
+      m_HighFpsDefaultsApplied: 0
+      BatterySaveMode: 0
+      m_CameraRenderDistance: 250
+      m_ObjectsLodQuality: 1
+      m_SteamLodBias: 10
+      m_MaximumLodLevel: 0
+      ClipDistance: 60
+      CarDetailDistance: 40
+      m_FogQuality: 1
+      m_ShadingQuality: 1
+      m_ShadowsQuality: 3
+      m_AdditionalEffects: 1
+      m_UseDecalShadows: 1
+      m_UseTyreDeformation: 0
+      m_RainQuality: 1
+      m_UseSky: 1
+      m_UseBlur: 0
+      m_UseLensFlares: 1
+      m_NightAmbientLightingCompensation: 0
+      m_Cloudiness: 1
+      m_RealtimeReflections: 0
+      m_UseStaticReflectons: 1
+      m_Tonemapping: 4
+      m_UseBloom: 0
+      m_UseVignette: 0
+      m_UseMotionBlur: 0
+      m_ColorCorrectionLut: 3
+      m_EVCompensation: 0
+      m_WBCompensation: 0
+  - m_Name: High
+    m_Preset:
+      m_RenderScale: 0.8
+      m_AAQuality: 6
+      m_SteamDeckAAQuality: 5
+      m_TextureResolution: 0
+      m_MaxFramerate: 240
+      m_VSync: 1
+      m_HighFpsDefaultsApplied: 0
+      BatterySaveMode: 0
+      m_CameraRenderDistance: 300
+      m_ObjectsLodQuality: 1
+      m_SteamLodBias: 10
+      m_MaximumLodLevel: 0
+      ClipDistance: 100
+      CarDetailDistance: 60
+      m_FogQuality: 1
+      m_ShadingQuality: 1
+      m_ShadowsQuality: 2
+      m_AdditionalEffects: 0
+      m_UseDecalShadows: 1
+      m_UseTyreDeformation: 0
+      m_RainQuality: 2
+      m_UseSky: 1
+      m_UseBlur: 0
+      m_UseLensFlares: 1
+      m_NightAmbientLightingCompensation: 0
+      m_Cloudiness: 1
+      m_RealtimeReflections: 0
+      m_UseStaticReflectons: 1
+      m_Tonemapping: 4
+      m_UseBloom: 1
+      m_UseVignette: 0
+      m_UseMotionBlur: 0
+      m_ColorCorrectionLut: 3
+      m_EVCompensation: 0
+      m_WBCompensation: 0
+  - m_Name: Ultra
+    m_Preset:
+      m_RenderScale: 0.8
+      m_AAQuality: 3
+      m_SteamDeckAAQuality: 5
+      m_TextureResolution: 0
+      m_MaxFramerate: 240
+      m_VSync: 1
+      m_HighFpsDefaultsApplied: 0
+      BatterySaveMode: 0
+      m_CameraRenderDistance: 400
+      m_ObjectsLodQuality: 1
+      m_SteamLodBias: 10
+      m_MaximumLodLevel: 0
+      ClipDistance: 120
+      CarDetailDistance: 60
+      m_FogQuality: 1
+      m_ShadingQuality: 0
+      m_ShadowsQuality: 0
+      m_AdditionalEffects: 0
+      m_UseDecalShadows: 1
+      m_UseTyreDeformation: 1
+      m_RainQuality: 2
+      m_UseSky: 1
+      m_UseBlur: 0
+      m_UseLensFlares: 1
+      m_NightAmbientLightingCompensation: 0
+      m_Cloudiness: 1
+      m_RealtimeReflections: 1
+      m_UseStaticReflectons: 1
+      m_Tonemapping: 4
+      m_UseBloom: 1
+      m_UseVignette: 0
+      m_UseMotionBlur: 1
+      m_ColorCorrectionLut: 0
+      m_EVCompensation: 0
+      m_WBCompensation: 0
+  - m_Name: PC_Ultra
+    m_Preset:
+      m_RenderScale: 1
+      m_AAQuality: 3
+      m_SteamDeckAAQuality: 5
+      m_TextureResolution: 0
+      m_MaxFramerate: 240
+      m_VSync: 1
+      m_HighFpsDefaultsApplied: 0
+      BatterySaveMode: 0
+      m_CameraRenderDistance: 2000
+      m_ObjectsLodQuality: 1
+      m_SteamLodBias: 5
+      m_MaximumLodLevel: 0
+      ClipDistance: 1000
+      CarDetailDistance: 100
+      m_FogQuality: 1
+      m_ShadingQuality: 0
+      m_ShadowsQuality: 4
+      m_AdditionalEffects: 0
+      m_UseDecalShadows: 1
+      m_UseTyreDeformation: 1
+      m_RainQuality: 2
+      m_UseSky: 1
+      m_UseBlur: 1
+      m_UseLensFlares: 1
+      m_NightAmbientLightingCompensation: 0
+      m_Cloudiness: 1
+      m_RealtimeReflections: 1
+      m_UseStaticReflectons: 1
+      m_Tonemapping: 4
+      m_UseBloom: 1
+      m_UseVignette: 0
+      m_UseMotionBlur: 1
+      m_ColorCorrectionLut: 0
+      m_EVCompensation: 0
+      m_WBCompensation: 0
